@@ -1,0 +1,34 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/send-e-mail",
+  "title": "Send E-Mail",
+  "retrievedAt": "2026-11-13T21:12:56.017154+00:00",
+  "text": "Breadcrumbs\nThe\nSend e-mail\nblock is used to send an email while a case is running. This is useful for office automation, notifications, monitoring flows, or adding extra logging and debugging information.\nTo use this block, an\ne-mail connection must be configured and working in Email settings\n. Add the link to the Email settings article here so users can access the configuration steps.\nSee the\nHTTP Request\nlesson for an example of how to use the Send E-mail block in a flow.\nIt should be noted that “scheduled actions” in the\nScheduler\ncan also send e-mail when an automation case is completed. This is typically more useful for reporting failures. Take the\nSchedule and reports\nlesson to learn how to configure e-mail as part of a schedule.\nFully expanded, the\nSend e-mail\nblock looks like this:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nSend e-mail\nonto the canvas where you want the message to be sent in the flow.\nSpecify the main email fields, at minimum\nTo (e-mail)\n,\nSubject\n, and\nBody\n, and optionally add\nText fields\nfor dynamic content and\nAttachments\n.\nRun the flow when it’s ready; the email is sent when the block executes, and you can branch on\nCould not send\nif delivery fails.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nSend e-mail\nblock. You can rename it by double-clicking the header and typing a new title. The green input connector starts the send operation when the flow reaches this block, and the green output connector triggers when the email has been sent successfully.\nTo (e-mail):\nSpecifies the recipient email address (or addresses).\nYou can type the address directly or feed it in dynamically from other blocks via the blue input connector.\nThe value can also be passed on to other blocks using the blue output connector.\nSubject:\nDefines the subject line of the email.\nCan be entered manually or injected dynamically from other blocks.\nThe subject value can be reused downstream via the blue output connector.\nBody:\nContains the main content of the email.\nYou can type the message directly or populate it dynamically from other blocks.\nThe body text can also be passed to other blocks through the blue output connector.\nText fields:\nAdds dynamic fields that can be referenced in\nTo\n,\nSubject\n, and\nBody\n.\nClick\nAdd field\nto create a field.\nTo insert a field value, right-click in\nSubject\nor\nBody\n, choose\nInsert token\n, and select the field name.\nFields can be renamed by double-clicking them; any tokens using that field are updated automatically.\nAttachments:\nLets you include files with the email.\nClick\nAdd Attachment\nto add one or more files.\nAttachments can also be supplied dynamically via the input connector.\nTo remove an attachment, click the\nX\nicon next to the file.\nNote:\nAvailable from release\n2025.1\nonward.\nCould not send:\nGreen output connector that triggers if the email cannot be sent, for example due to an invalid address, network issues, or authentication errors. Use this connector to branch the flow when sending fails, for logging, retries, or alternative handling.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "HTTP Request",
+      "url": "https://docs.leapwork.com/com/leapwork/www/services/learning-center/http-requests.html"
+    },
+    {
+      "title": "Scheduler",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists/schedules"
+    },
+    {
+      "title": "Schedule and reports",
+      "url": "https://www.leapwork.com/services/learning-center/schedules-and-reports"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260119-081150.png",
+      "url": "https://docs.leapwork.com/__attachments/a_977d3624049645ccdd1a38cb973667b5b12788dbac447142a4540c6736ce2c13/image-20260119-081150.png?cb=23b154d40720cf3f75b2c290877de5ad"
+    }
+  ]
+}

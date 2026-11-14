@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/calculate",
+  "title": "Calculate",
+  "retrievedAt": "2026-11-13T19:24:45.765803+00:00",
+  "text": "Breadcrumbs\nThe\nCalculate\nblock performs an arithmetic operation on two numbers. It can add, subtract, multiply, or divide Value A and Value B, and it can optionally round the result. The resulting number can be passed to other blocks in your flow. See the\nUse Numbers and Variables\nlesson for examples of how this works.\nFully expanded, the Calculate block shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nCalculate\nonto the canvas.\nIn the block panel, specify\nValue A\n,\nValue B\n, and\nCalculation method\n.\nConnect\nResult number\nto a block that uses or outputs the value, then run the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the Calculate block. You can rename it by double-clicking the header and typing a new title.\nThis block has no green input or output connectors in the header because it is not explicitly executed. It is used to calculate a value and provide the result to other blocks.\nValue A\n: Specifies the first numeric value used in the calculation. You can either type the value directly in the field, or provide it dynamically by connecting an input from another block to Value A. This value must be provided for the block to produce a result.\nValue B\n: Specifies the second numeric value used in the calculation. You can either type the value directly in the field, or provide it dynamically by connecting an input from another block to Value B. This value must be provided for the block to produce a result.\nCalculation method:\nSelects the arithmetic operation to apply to Value A and Value B. The available methods are addition, subtraction, multiplication, and division.\nResult number:\nProvides the result of the calculation so it can be used in other blocks.\nRound result:\nDetermines whether the result should be rounded to a specific number of decimals. Midpoint values are rounded to the nearest even number. For example, 4.45 rounded to one decimal becomes 4.4, and 4.35 rounded to one decimal also becomes 4.4.\nRound decimals:\nSpecifies how many decimal digits to round the result to when Round result is enabled.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Use Numbers and Variables",
+      "url": "https://www.leapwork.com/services/learning-center/use-numbers-and-variables"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251222-094143.png",
+      "url": "https://docs.leapwork.com/__attachments/a_eaaa54371de0883411ff491e0d388c81f2a4f26de3991f29b14e941b0a999728/image-20251222-094143.png?cb=703c5bd1beee69e1610f7af9865401c7"
+    }
+  ]
+}

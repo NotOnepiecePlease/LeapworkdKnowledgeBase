@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "desktop-introducao",
+    "video": "-51LTRplY48",
+    "officialTitle": "Introduction to desktop UI automation",
+    "section": "Desktop",
+    "source": "https://leapwork.com/learning-center/self-paced-training/"
+  },
+  {
+    "slug": "desktop-contatos",
+    "video": "TXWo3qK9Oy8",
+    "officialTitle": "Automating new contact creation",
+    "section": "Desktop",
+    "source": "https://leapwork.com/learning-center/self-paced-training/"
+  },
+  {
+    "slug": "desktop-web",
+    "video": "23YBj_t1EjA",
+    "officialTitle": "Automating across different technologies",
+    "section": "Desktop",
+    "source": "https://leapwork.com/learning-center/self-paced-training/"
+  },
+  {
+    "slug": "virtual-introducao",
+    "video": "ynF7HY2ux_c",
+    "officialTitle": "Introduction to virtual desktop automation",
+    "section": "Virtual",
+    "source": "https://leapwork.com/learning-center/self-paced-training/"
+  },
+  {
+    "slug": "virtual-imagens",
+    "video": "sJ3Fa3kSiJg",
+    "officialTitle": "Using image recognition in virtual automation",
+    "section": "Virtual",
+    "source": "https://leapwork.com/learning-center/self-paced-training/"
+  },
+  {
+    "slug": "virtual-textos",
+    "video": "qGGNbk0UY-0",
+    "officialTitle": "Text and numbers in virtual automation",
+    "section": "Virtual",
+    "source": "https://leapwork.com/learning-center/self-paced-training/"
+  },
+  {
+    "slug": "virtual-cliques",
+    "video": "fO6aVmNKUCc",
+    "officialTitle": "Clicking elements in virtual automation",
+    "section": "Virtual",
+    "source": "https://leapwork.com/learning-center/self-paced-training/"
+  },
+  {
+    "slug": "virtual-teclado",
+    "video": "akmkQk8sc40",
+    "officialTitle": "Driving keyboard actions",
+    "section": "Virtual",
+    "source": "https://leapwork.com/learning-center/self-paced-training/"
+  },
+  {
+    "slug": "virtual-areas",
+    "video": "rK8qIFccfbk",
+    "officialTitle": "Position and areas",
+    "section": "Virtual",
+    "source": "https://leapwork.com/learning-center/self-paced-training/"
+  }
+]

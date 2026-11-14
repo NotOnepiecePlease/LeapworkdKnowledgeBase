@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/get-clipboard",
+  "title": "Get Clipboard",
+  "retrievedAt": "2026-11-13T21:12:56.637414+00:00",
+  "text": "Breadcrumbs\nThe\nGet clipboard\nbuilding block retrieves the current clipboard value. This can be used to work with text that was previously selected and copied from the screen, and then pass that value to other building blocks.\nSee the\nGet clipboard content lesson\nfor an example of how to use the Get clipboard block.\nFully expanded, the\nGet clipboard\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nGet clipboard\nonto the canvas.\nConnect\nText\nto the next block that should use the clipboard value.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: Shows the current title of the block. You can rename it by double-clicking the header text and typing a new title. This block has\nno green input or output connectors\nin the header because it is not explicitly executed. Instead, it retrieves the clipboard value and delivers it to other blocks.\nText\n: Outputs the current text value of the clipboard.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Get clipboard content lesson",
+      "url": "https://www.leapwork.com/services/learning-center/get-clipboard-content"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260202-172945.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d3923dccacba33caf6b541e4d4e6586c6bde3f6bb77ac76aed6cc6baa10993cd/image-20260202-172945.png?cb=b3d7c0b20f44f3fe8ec4ff800a39551e"
+    }
+  ]
+}

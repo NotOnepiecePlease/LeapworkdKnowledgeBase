@@ -1,0 +1,25 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/start-stop",
+  "title": "",
+  "retrievedAt": "2026-11-13T18:44:28.706599+00:00",
+  "text": "Breadcrumbs\nThese building blocks are used to start and stop an automation flow.\nThe\nStart\nblock is the starting point of all automation flows, is always present and cannot be deleted.\nThe\nPass\nand\nFail\nblocks are used to explicitly end a case run immediately in a passed or failed state, while the\nDone\nblock is used to end a case run in a state that is neither. This distinction can be very useful in some test automation scenarios, whereas others may not need it.",
+  "links": [
+    {
+      "title": "Start",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/start-stop/start"
+    },
+    {
+      "title": "Pass",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/start-stop/pass"
+    },
+    {
+      "title": "Fail",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/start-stop/fail"
+    },
+    {
+      "title": "Done",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/start-stop/done"
+    }
+  ],
+  "images": []
+}

@@ -1,0 +1,131 @@
+00:00:05.990 Welcome back to testing the internet
+00:00:06.000 series. You're watching part 20 key
+00:00:08.480 presses. In the last video, you learned
+00:00:10.960 how to handle the three different
+00:00:12.240 JavaScript alert types, alert, confirm,
+00:00:15.440 and prompt. In the case of prompt, we
+00:00:18.720 also showed how to verify the entered
+00:00:20.560 result by inspecting an element on the
+00:00:22.880 actual page. In this video, you will
+00:00:25.680 learn how to send special keystrokes
+00:00:27.760 like ESC, enter, or alt using Leapworks
+00:00:32.079 type web text block. When clicks aren't
+00:00:34.399 enough, automating keystrokes becomes
+00:00:36.640 the real challenge. Have you ever run
+00:00:39.120 into a test where clicking just wasn't
+00:00:40.960 enough and you needed to press a key to
+00:00:43.040 move forward? Like hitting enter to
+00:00:45.680 submit a form, pressing ESC to close a
+00:00:48.399 popup, or using arrow keys to move
+00:00:50.640 through a drop down.
+00:00:52.480 These issues happen because most
+00:00:54.160 automation tools don't handle special
+00:00:56.000 keystrokes well. They either ignore
+00:00:58.239 them, require complex scripting, or fail
+00:01:01.199 due to bad timing. That's where Leapwork
+00:01:04.239 makes a difference, letting you send any
+00:01:06.320 keystroke easily and codelessly, so your
+00:01:08.799 test stays smooth, accurate, and
+00:01:11.040 stress-free. To demonstrate, we'll show
+00:01:13.680 you a simple scenario. When you press
+00:01:15.680 the tab key, it shows tab inserted. The
+00:01:18.720 same goes for alt. It shows alt
+00:01:20.799 inserted.
+00:01:22.560 For our purpose, what we're going to do
+00:01:24.159 is to send a tab keystroke to the web
+00:01:26.159 application. And then we're going to
+00:01:27.680 test that the word tap was entered into
+00:01:29.520 this element on the web page. Let's
+00:01:31.840 create our automation flow and begin by
+00:01:34.079 starting the recorder to launch the test
+00:01:35.759 case.
+00:01:51.429 First, we'll capture the key presses
+00:01:51.439 text element on the page and select find
+00:01:54.000 web element block. Once the element is
+00:01:57.040 selected, we save and close the
+00:01:58.960 recorder. This step is needed because
+00:02:01.360 the type web text block requires a web
+00:02:03.680 element as input even when we're not
+00:02:06.000 typing into a field. In most cases, when
+00:02:08.319 we type any text on the web, there's
+00:02:10.479 usually a field involved. That's why we
+00:02:12.640 need the source element. But in this
+00:02:14.959 case, we want to add the keystrokes
+00:02:16.879 directly into the page so the page
+00:02:18.400 itself picks them up. A keystroke just
+00:02:21.520 means pressing a key on the keyboard,
+00:02:23.440 like tab or enter. We want to send a tab
+00:02:27.040 key press. So, we'll enable the capture,
+00:02:29.440 press the tab key, and then disable the
+00:02:31.760 capture again. Let's check if tab
+00:02:33.920 appears on the page to confirm the key
+00:02:35.599 press worked. Now let's run the test
+00:02:37.120 case till here and check if it shows up
+00:02:39.120 on the page.
+00:02:51.030 Yes, we can see the tab key has been
+00:02:51.040 pressed successfully. Now let's capture
+00:02:53.440 this element to verify its appearance.
+00:03:00.070 Let's launch the recorder and capture
+00:03:00.080 it.
+00:03:08.550 Yes, we'll use find web element block
+00:03:08.560 here so as to find the result area where
+00:03:10.800 the key press response appears. Let's
+00:03:13.200 save and close the recorder.
+00:03:22.149 To get the text from that element, we'll
+00:03:22.159 use a get web text block.
+00:03:29.670 We'll connect the element we just
+00:03:29.680 captured to the source input of this
+00:03:31.440 block. It will tell the get web text
+00:03:33.360 block exactly where to look on the page
+00:03:35.200 to find the text. The nice thing about
+00:03:38.000 using get web text is that we can look
+00:03:40.000 for specific text patterns. For example,
+00:03:43.360 if we type you entered as the format, it
+00:03:46.480 will return the text that comes after
+00:03:48.159 that phrase. If you look at the website,
+00:03:50.959 the result shows you entered tab. So, we
+00:03:54.159 should get tab as the output. Next, we
+00:03:57.599 use a compare block to check if the text
+00:03:59.680 we got is actually tab. Here
+00:04:09.350 we'll use the text we got from the get
+00:04:09.360 web text block. If the comparison
+00:04:11.920 passes, we'll add a pass block to
+00:04:13.840 confirm it worked.
+00:04:17.199 Let's run our flow.
+00:04:25.030 And yes, we can see that our flow passed
+00:04:25.040 with the expected outcomes. find web
+00:04:28.000 element block successfully located the
+00:04:30.000 header element H3.
+00:04:33.040 The type web text block typed the tab
+00:04:35.280 key and the find web element block
+00:04:37.600 captured the result area. Then the get
+00:04:40.639 web text block read the text tab which
+00:04:43.360 the compare block confirmed as correct.
+00:04:46.400 Finally, the pass block showed that the
+00:04:48.320 flow ran successfully. And that's how
+00:04:50.479 you can simulate key presses in Leapwork
+00:04:52.479 with just a few clicks. Quick and code
+00:04:54.800 free. Now let's quickly recap the flow
+00:04:57.199 we followed to build this key presses
+00:04:58.960 automation scenario. We opened the web
+00:05:01.680 page, used the type web text block to
+00:05:04.000 send the tab key, captured the result
+00:05:06.080 area, and used get web text to read the
+00:05:08.479 output. We then compared the result and
+00:05:11.120 confirmed success with a pass block.
+00:05:18.550 What you learned? Now you know how
+00:05:18.560 simple it is to automate and validate
+00:05:20.240 key presses in leapwork by sending
+00:05:22.240 special keys through the typeweb text
+00:05:24.080 block.
+00:05:25.199 Automate key presses in seconds. No
+00:05:27.360 coding, no hassle, just results. Give
+00:05:30.000 this exercise a try yourself and see how
+00:05:32.240 much faster your automation can be.
+00:05:34.240 Moreover, to keep learning or if you
+00:05:36.320 ever feel stuck, explore our
+00:05:38.080 documentation knowledge base and reach
+00:05:40.720 out to support if needed. The answers
+00:05:42.400 are just a click away. Thank you for
+00:05:44.560 staying with us and see you in the next
+00:05:46.320 automation journey.

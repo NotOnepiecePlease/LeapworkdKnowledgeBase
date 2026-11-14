@@ -1,0 +1,100 @@
+00:00:02.310 [Music]
+00:00:02.320 Welcome back to testing the internet
+00:00:04.160 series. You're watching part 26,
+00:00:06.640 shifting content images. In the previous
+00:00:10.480 video, you learned how to test a
+00:00:12.320 redirect link in a browser. In this
+00:00:14.240 video, you'll learn how to handle
+00:00:15.759 shifting content during test automation,
+00:00:18.160 like images that move slightly each time
+00:00:20.160 the page loads. You've probably faced
+00:00:22.880 challenges where elements shift or
+00:00:24.640 reload unpredictably. Maybe the images
+00:00:27.279 position changes, content loads late, or
+00:00:30.320 modules rearrange on refresh. It happens
+00:00:33.280 because traditional locators can't adapt
+00:00:35.280 to layout shifts. That's where leapwork
+00:00:38.000 helps by letting you use smart locator
+00:00:40.399 strategies that work even when the UI
+00:00:42.320 moves around. To demonstrate, we'll show
+00:00:45.040 you a simple scenario.
+00:00:47.520 See, if we click here, the image will
+00:00:49.600 shift. And just to make it more obvious,
+00:00:52.480 instead of shifting it 100 pixels, what
+00:00:54.800 we're going to do is to shift 300
+00:00:56.480 pixels. And this means that every time
+00:00:58.800 we refresh the browser, it will move
+00:01:00.879 significantly from left to right.
+00:01:04.720 So what we're going to do is to do a
+00:01:06.240 loop 10 times and then we're going to
+00:01:08.159 find the image each time. And if you
+00:01:10.320 can't find the image, then we're going
+00:01:11.920 to fail. Let's automate this scenario.
+00:01:15.119 We'll begin by launching the test case
+00:01:16.960 page.
+00:01:24.310 We're using the 300 pixel shift URL
+00:01:24.320 mentioned in the scenario.
+00:01:32.149 And let's capture the image using the
+00:01:32.159 find web element block to make sure it
+00:01:34.560 consistently appears on every page
+00:01:36.479 refresh.
+00:01:38.079 Once done, we'll save and close the
+00:01:40.159 recorder. Next, we'll check that the
+00:01:42.560 browser window is set to maximized. This
+00:01:45.360 ensures we can clearly observe the image
+00:01:47.360 movement during each refresh. Now let's
+00:01:50.320 add a loop block in between the start
+00:01:52.000 web browser and find web element block.
+00:01:56.640 We'll set the loop to run 10 times
+00:01:58.960 because we want to repeat this check
+00:02:00.640 multiple times to make sure the image is
+00:02:02.479 reliably found no matter where it
+00:02:04.399 appears. In the find web element block,
+00:02:07.040 we'll enable require valid images to
+00:02:09.440 ensure the image is fully loaded before
+00:02:11.360 proceeding. inside the loop. If the
+00:02:13.840 image isn't found, the flow will fail.
+00:02:21.430 But if it is found, we'll use the
+00:02:21.440 navigate web block set to refresh page.
+00:02:24.080 So, we reload the browser and check
+00:02:25.680 again in the next iteration. Finally,
+00:02:28.560 after 10 successful passes, the flow
+00:02:30.879 ends with a pass block. That's it. We're
+00:02:33.840 ready to run our flow.
+00:02:53.830 And yes, we can see our flow passed. As
+00:02:53.840 you can see, the test flow ran smoothly.
+00:02:56.239 It loaded the page and enters a loop
+00:02:58.480 that ran 10 times. In each loop, it
+00:03:01.680 successfully found the image, even
+00:03:03.680 though its position shifts with every
+00:03:05.440 refresh. After each find, the page was
+00:03:08.720 refreshed using the navigate web block.
+00:03:11.440 Once all 10 iterations were completed
+00:03:13.440 with the image consistently detected,
+00:03:15.599 the test ended with a pass. Now, let's
+00:03:18.080 quickly recap the flow we followed to
+00:03:20.080 automate the shifting image scenario. We
+00:03:23.040 launched the browser with a 300 pixel
+00:03:25.120 shift URL, made sure the window was
+00:03:27.519 maximized, captured the image using the
+00:03:30.000 find web element block, enabled require
+00:03:33.040 valid images to ensure it's fully
+00:03:34.799 loaded, and added a loop block to repeat
+00:03:37.120 this check 10 times. After each check,
+00:03:40.239 we refresh the page using the navigate
+00:03:42.319 web block. If the image wasn't found,
+00:03:45.120 the flow would fail. Otherwise, the page
+00:03:47.280 keeps refreshing until the image is
+00:03:48.879 found each time. Then the test passes.
+00:03:56.229 What you learned? Now you know how to
+00:03:56.239 handle dynamic or moving UI elements by
+00:03:58.480 using smart locator strategies that
+00:04:00.239 don't rely on screen position. Give this
+00:04:02.239 exercise a try yourself and see how much
+00:04:04.400 faster your automation can be. Moreover,
+00:04:06.959 to keep learning or if you ever feel
+00:04:08.720 stuck, explore our documentation
+00:04:11.280 knowledge base and reach out to support
+00:04:13.280 if needed. The answers are just a click
+00:04:15.200 away. Thank you for staying with us and
+00:04:17.440 see you in the next automation journey.

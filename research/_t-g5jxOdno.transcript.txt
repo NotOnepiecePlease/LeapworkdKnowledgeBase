@@ -1,0 +1,113 @@
+00:00:02.230 [Music]
+00:00:02.240 Welcome back to testing the internet
+00:00:04.000 series. You're watching part 15 forms
+00:00:06.640 authentication.
+00:00:08.400 In the last video, you learned how to
+00:00:10.880 handle floating elements on a web page
+00:00:12.800 using position property in find web
+00:00:15.360 element block.
+00:00:17.520 In this video, you will learn how to
+00:00:19.520 fill in a login form with a username and
+00:00:21.760 password and submit it using the enter
+00:00:24.160 key. Form authentication isn't always
+00:00:26.720 that straightforward. Have you faced
+00:00:29.199 challenges like enter not triggering the
+00:00:31.840 login tests passing even though the
+00:00:34.000 login failed or flows breaking because
+00:00:36.320 the welcome page wasn't detected? It
+00:00:39.120 happens because many automation tools
+00:00:41.040 struggle with simulating real user
+00:00:42.800 actions and validating post login
+00:00:45.040 behavior. They often don't handle
+00:00:46.879 dynamic page transitions well,
+00:00:49.280 especially when elements load
+00:00:50.719 asynchronously. and they lack context
+00:00:53.199 awareness, like recognizing whether a
+00:00:55.520 login truly succeeded based on actual
+00:00:57.840 content or session changes rather than
+00:01:00.160 just element presence.
+00:01:02.640 That's where Leapwork can help you. With
+00:01:05.280 easy to use visual building blocks and
+00:01:07.280 powerful capture features, automating
+00:01:09.439 form authentication will be super quick
+00:01:11.280 for you. To demonstrate, we will show
+00:01:13.360 you a simple scenario. We'll start with
+00:01:15.920 a straightforward login page where we
+00:01:17.759 enter a username and password. In this
+00:01:20.560 case, Tom Smith and the super secret
+00:01:22.960 password exclamation mark. We'll log in
+00:01:25.439 using capture with tab to switch fields
+00:01:27.439 and enter to submit. And once submitted,
+00:01:30.159 we'll get a confirmation message
+00:01:31.680 indicating that the login was
+00:01:33.200 successful. Let's quickly automate this
+00:01:35.600 scenario in Leapwork. Let's jump right
+00:01:37.840 in and launch the test case page using
+00:01:39.759 the start recorder.
+00:01:48.069 First, we'll capture the username field
+00:01:48.079 and using the type web text block, we'll
+00:01:50.320 enter the username Tom Smith.
+00:01:54.399 The type web text block offers two
+00:01:56.560 options,
+00:01:58.159 text and password. We'll use text here
+00:02:00.560 to input the username. That's it. Let's
+00:02:02.799 save and close the recorder. We've set
+00:02:04.640 up the login flow and stopped before
+00:02:06.399 entering the password because next we'll
+00:02:08.720 use a smart trick to type and send keys
+00:02:11.280 like tab or enter. Let's click the
+00:02:13.440 capture button. Press the tab key. Type
+00:02:15.920 the password.
+00:02:23.110 Then we'll turn on capture again and hit
+00:02:23.120 enter to log in. Now let's run the flow
+00:02:26.160 to see it in action.
+00:02:36.869 And yes, we can see the username and
+00:02:36.879 password was successfully typed and
+00:02:38.959 login happened successfully. This is how
+00:02:41.280 capture makes form login a breeze.
+00:02:44.239 The next step is to locate the success
+00:02:46.160 message to validate login. Let's turn on
+00:02:48.640 the recorder and capture the welcome
+00:02:50.160 message using find web element block and
+00:02:52.480 close the recorder.
+00:02:59.589 It's time to connect pass block and run
+00:02:59.599 the flow.
+00:03:08.229 And yes, our flow got passed with the
+00:03:08.239 expected results. At first the input
+00:03:10.800 field was found and the text Tom Smith
+00:03:13.200 was typed followed by a tab key to move
+00:03:15.760 to the password field. Then super secret
+00:03:19.120 password was entered and the enter key
+00:03:21.680 was pressed to submit the form. The
+00:03:24.159 success message element was found and
+00:03:26.400 the flow passed successfully. This is
+00:03:28.720 how it's super easy for you now to
+00:03:30.799 simplify authentication testing
+00:03:32.560 processes. Now, let's quickly recap the
+00:03:35.440 flow we followed to build this form's
+00:03:37.440 authentication automation scenario. At
+00:03:40.319 first, we started the recorder to launch
+00:03:42.319 the login page. Then, we captured the
+00:03:44.959 username field and used the type web
+00:03:47.040 text block to enter Tom Smith. We then
+00:03:49.360 used the capture feature in the type web
+00:03:51.360 text block to press tab to switch fields
+00:03:54.000 and enter to log in. Finally, we waited
+00:03:57.599 for the confirmation message to appear
+00:03:59.599 and captured it to verify that the login
+00:04:01.760 was successful. And just like that, we
+00:04:04.799 completed a fully automated end-to-end
+00:04:07.120 login scenario.
+00:04:13.589 What you learned? You learned the secret
+00:04:13.599 to smooth forms authentication
+00:04:15.360 automation. Realistic typing, smart
+00:04:18.320 clicking, and foolproof validation all
+00:04:20.720 in one flow. Give this exercise a try
+00:04:23.360 yourself and see how much faster your
+00:04:25.199 automation can be. Moreover, to keep
+00:04:27.600 learning or if you ever feel stuck,
+00:04:29.520 explore our documentation knowledge base
+00:04:32.320 and reach out to support if needed. The
+00:04:34.240 answers are just a click away. Thank you
+00:04:36.479 for staying with us and see you in the
+00:04:38.240 next automation journey.

@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/hover-text",
+  "title": "Hover Text",
+  "retrievedAt": "2026-11-13T20:21:23.821371+00:00",
+  "text": "Breadcrumbs\nThe\nHover text\nblock searches for a given text on the screen (or within a defined area) using OCR, then moves the mouse pointer to hover where the text is found. Because it uses OCR, searches on a full screen can take several seconds and require more processing than image based blocks.\nWhen fully expanded, the\nHover text\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nHover text\nonto the canvas.\nConnect the block in the flow (green input and output connectors).\nSet\nText to hover\n(and\nLanguage\nif needed).\nOptionally adjust parameters such as\nArea\n, use outputs like\nPosition hovered\nand\nArea found\n, and branch via\nNot found\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nRename the block by double-clicking the title. The green input connector starts the block when the flow reaches it. The green output connector triggers when the hover completes successfully (and if\nUse occurred\nis set to iterate all occurrences, it can trigger on each occurrence).\nText to hover:\nThe text to search for and hover over. If the text is found, the mouse pointer hovers in the middle of the matched text. Supports dynamic values via tokens when\nText fields\nare used (right-click and select\nInsert token\n).\nText fields:\nAdd fields that can hold dynamic content and be used as tokens in\nText to hover\n.\nLanguage:\nSelect the language used for text recognition.\nNot found:\nGreen output connector that triggers if the text is not found before the timeout. Use it to branch the flow or link to a Fail block.\nPosition hovered:\nOutput with the X,Y screen position where the pointer hovered (0,0 is the top-left). Can be expanded to work with X and Y separately.\nArea found:\nOutput with the X,Y,Width,Height area where the text was found (starting from the upper-leftmost pixel). Can be expanded to work with nested position and size values.\nArea:\nThe screen area (X,Y,Width,Height) to search in. If not defined, the entire screen is searched.\nSpeed:\nMouse movement speed. Default is\nMedium\n.\nIs case sensitive:\nControls whether OCR matching is case sensitive.\nEngine:\nOCR engine used for text recognition (for example, OCR 2.0).\nOCR Mode:\nOCR processing mode (for example, Fast speed).\nOCR Precision:\nCharacter-level confidence threshold for matching (for example, Medium).\nUse occurred:\nSelect which occurrence to hover if the text appears multiple times. If set to iterate all occurrences, the block can loop through each match.\nDefault timeout:\nIf enabled, the block uses the default timeout from Flow settings. If disabled, it uses the\nTimeout (sec)\nvalue.\nTimeout (sec):\nMaximum time to search before giving up and triggering\nNot found\n. Default is\n20\nseconds.\nScroll to find:\nEnables scrolling while searching for the text (for example in scrollable pages).\nNone\ndisables scrolling.\nAwait no movement:\nWaits to start searching until the screen has been stable (no movement) for a period of time.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260128-122548.png",
+      "url": "https://docs.leapwork.com/__attachments/a_11f26b90e6335e44fcf2d6c1accff7bfa62c7245daf5a2d0d05a33ce417c727a/image-20260128-122548.png?cb=a24a9a497f15555de9eefa82dd00e1f0"
+    }
+  ]
+}

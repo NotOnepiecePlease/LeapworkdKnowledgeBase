@@ -1,0 +1,325 @@
+00:00:05.269 [Music]
+00:00:05.279 Hey there, welcome back. We're so happy
+00:00:08.240 to have you with us as we move into the
+00:00:10.000 next series of virtual automation. Let's
+00:00:12.480 build on what you've learned and take
+00:00:14.000 your skills to the next level. In the
+00:00:16.400 previous videos, we learned about
+00:00:18.080 desktop UI automation and an example. We
+00:00:21.439 took demo desktop application. We
+00:00:24.320 learned automating the process of
+00:00:25.840 launching desktop apps, automating its
+00:00:28.480 form fields, working with subflows and
+00:00:31.039 reusability, controlling multiple
+00:00:33.200 windows, and even using datadriven
+00:00:35.440 approaches in UI automation. We also
+00:00:38.480 learned how to work with lists of
+00:00:39.920 elements, build automation flows with
+00:00:42.239 Excel data, and automate across both
+00:00:44.719 desktop and web environments. All of
+00:00:47.520 this was made possible by object
+00:00:49.280 inspection. So, what exactly is object
+00:00:52.719 inspection? It's simple to understand.
+00:00:55.199 Think of it as a technology that lets
+00:00:57.120 Leapwork see and understand the
+00:00:59.600 individual parts of an application like
+00:01:01.840 buttons, text fields, or checkboxes.
+00:01:05.280 This allows the automation tool to
+00:01:07.119 interact with these components directly
+00:01:09.439 just as if you were using the
+00:01:10.799 application yourself. It's like giving
+00:01:13.280 Leapwork the ability to recognize the
+00:01:15.119 elements in an app and know how to
+00:01:17.439 interact with them. But what if the
+00:01:19.759 application you're trying to automate is
+00:01:21.520 running in a virtual environment like
+00:01:23.759 Citrix or a remote desktop session?
+00:01:27.360 In this case, the application is still
+00:01:29.200 running on a server and what you see on
+00:01:31.280 your screen is simply an image of that
+00:01:32.960 app running remotely. This creates a bit
+00:01:35.680 of a challenge for automation because
+00:01:37.680 there's a boundary between your local
+00:01:39.280 machine and the virtual environment. In
+00:01:41.840 this video, we'll show you how to
+00:01:43.439 overcome this challenge with Leapwork
+00:01:45.280 virtual automation blocks. These tools
+00:01:47.920 allow us to interact with applications
+00:01:49.759 in virtual environments, even though
+00:01:52.000 they appear as images on your screen. By
+00:01:54.159 the end of this video, you'll be ready
+00:01:56.079 to automate applications running in
+00:01:58.000 virtual environments just as easily as
+00:01:59.840 you did with local desktop applications
+00:02:01.920 and web applications. Let's jump into
+00:02:04.240 this exciting journey of virtual
+00:02:05.920 automation. Before we proceed further,
+00:02:08.879 let's understand the scenario overview
+00:02:10.720 that we will be following in the today's
+00:02:12.640 tutorial. In this automation flow, we
+00:02:15.920 will be using the image and text
+00:02:17.360 building blocks to open browser and open
+00:02:19.680 linkedin.com website. At first, we will
+00:02:23.200 use the click image building block to
+00:02:25.120 click on the browser icon to open it.
+00:02:27.840 After this, we will use the click image
+00:02:30.000 element to focus on the area displaying
+00:02:32.239 the browser URL. Then, we will utilize
+00:02:35.440 the type text block to input the
+00:02:37.519 LinkedIn URL into the browser. Then to
+00:02:40.720 capture text on the newly opened page,
+00:02:43.120 we will utilize the find text block
+00:02:45.440 confirming that it has loaded correctly.
+00:02:48.160 At the end, we will insert a pass block
+00:02:50.560 to indicate that the automation flow has
+00:02:52.640 successfully completed this series of
+00:02:54.400 actions. We'll keep everything simple
+00:02:56.800 and easy to follow. So by the end of
+00:02:58.879 this video, you'll have your first
+00:03:00.640 automation running in a virtual desktop
+00:03:02.720 environment.
+00:03:04.560 Let's get started. We will start with
+00:03:06.959 the start block. It's the pillar
+00:03:08.959 building block of your automation.
+00:03:10.879 Without start block, you cannot work
+00:03:12.800 with your automation flows as per the
+00:03:15.599 scenario. Since the very first step is
+00:03:18.400 to open the chrome browser, let's
+00:03:20.319 connect click image building block to do
+00:03:22.319 it.
+00:03:33.270 Yes, here's click image building block.
+00:03:33.280 Now, what does this block actually do?
+00:03:36.080 The click image building block in
+00:03:37.760 Leapwork allows you to interact with
+00:03:39.760 visual elements on the screen by
+00:03:41.760 recognizing and clicking on images,
+00:03:44.159 making it perfect for automating tasks
+00:03:46.080 in virtual environments where
+00:03:47.760 traditional element locators don't work.
+00:03:50.400 It's especially useful in virtual
+00:03:52.159 desktops as it can click buttons, icons,
+00:03:55.760 or any graphical interface element just
+00:03:57.920 by identifying the image. Over here you
+00:04:00.799 can see the instruction select image to
+00:04:03.040 click. This means we need to tell click
+00:04:05.200 image block that which image it has to
+00:04:07.360 click. Let's capture the icon.
+00:04:15.030 One tip always capture image very
+00:04:15.040 properly with the focus so that click
+00:04:17.040 image building block can easily identify
+00:04:25.909 And yes it's simple. Now let's run the
+00:04:25.919 flow till here to check if the browser
+00:04:28.000 icon is clicked.
+00:04:38.469 And yes, we can see the mouse moved and
+00:04:38.479 click on the browser icon. The browser
+00:04:40.639 is opened. Let's get back to our
+00:04:42.479 automation flow and edit it.
+00:04:49.990 The next step is to enter LinkedIn URL
+00:04:50.000 in the browser. To do it, we need to
+00:04:52.800 select the area where the URL will be
+00:04:54.880 typed. To do it, let's connect click
+00:04:57.759 image block.
+00:05:10.230 Capture the URL area.
+00:05:10.240 See one point to take care while
+00:05:12.240 capturing elements. Make sure you
+00:05:14.080 capture it very properly so that it's
+00:05:16.080 easy for blocks to recognize it.
+00:05:23.510 Moreover, you can also set the focus on
+00:05:23.520 the exact area to type in. Let's do it.
+00:05:26.880 Click on the captured image.
+00:05:29.520 Simply, we have to arrange this focus
+00:05:31.360 over the exact location where URL will
+00:05:33.520 be written.
+00:05:39.029 After setting the focus, the next step
+00:05:39.039 is to type URL in the browser. Now,
+00:05:41.360 before we move ahead, here's an
+00:05:43.120 important point to understand. What if
+00:05:45.199 you want to create focus on the exact
+00:05:47.120 area in which image search has to
+00:05:48.800 happen? Therefore, if we expand the
+00:05:51.759 click image block,
+00:05:59.990 we can see area property here. The area
+00:06:00.000 property of the click image block allows
+00:06:01.840 you to define a specific region on the
+00:06:03.680 screen for image recognition that
+00:06:05.680 improves accuracy by limiting the search
+00:06:07.600 to that area. To create focus, simply
+00:06:10.800 rightclick here and click on capture the
+00:06:13.199 area. By doing this, you can easily
+00:06:16.000 select the region by drawing a box
+00:06:17.680 around it on your screen. Let's select
+00:06:20.160 the area. Now, this is the exact
+00:06:22.319 location which click image block will
+00:06:24.240 recognize to type. And yes, the specific
+00:06:27.520 area is defined now. This helps focus
+00:06:30.639 the search, especially when there are
+00:06:32.639 multiple similar elements, ensuring
+00:06:34.720 faster and more precise automation.
+00:06:44.070 Just a quick reminder, when running your
+00:06:44.080 automation, make sure the agent or
+00:06:46.080 virtual machine's screen resolution
+00:06:48.240 matches the resolution you used when you
+00:06:50.160 created and configured your automation
+00:06:51.840 flow. This setup is important because
+00:06:54.479 when you build the flow, you specify
+00:06:56.560 actions based on screen positions, like
+00:06:58.880 clicking on buttons or selecting items.
+00:07:01.520 If the resolution changes, the
+00:07:03.520 automation might not work as expected
+00:07:05.599 since the positions of elements on the
+00:07:07.360 screen could shift. Now, let me
+00:07:09.120 demonstrate that how can you check
+00:07:10.639 screen resolution on the virtual machine
+00:07:12.880 and match with the one you had while
+00:07:14.639 creating the automation flow.
+00:07:17.360 Simply click on this forward arrow
+00:07:19.039 button.
+00:07:25.909 The click on agents. Now you simply have
+00:07:25.919 to click on new button. Then click on
+00:07:27.919 remote agent.
+00:07:30.080 Double click on the agent you have
+00:07:31.680 configured. Here we have agent settings
+00:07:34.000 and from here only you have to check
+00:07:35.840 screen resolution. You can note it down
+00:07:38.720 and then match it with the screen
+00:07:40.160 resolution your device had where you
+00:07:42.160 created the automation flow. This is how
+00:07:44.800 you can make sure to sync with screen
+00:07:46.400 resolution and achieve smooth automation
+00:07:48.800 results.
+00:07:51.199 Now let's proceed to enter URL in the
+00:07:53.840 search area of browser. Let's connect
+00:07:56.639 the type block.
+00:08:08.629 The type text block in Leapwork lets you
+00:08:08.639 automatically type text into fields like
+00:08:11.199 search boxes or forms. Instead of
+00:08:13.919 manually typing, Leapwork does it for
+00:08:16.240 you by entering the exact text where you
+00:08:18.319 need it. In this automation flow, it
+00:08:21.199 will enter the URL in search box. Now
+00:08:24.560 since we have to open LinkedIn in the
+00:08:26.879 text value write the URL as
+00:08:29.039 linkedin.com.
+00:08:39.110 Now think what can be the next step
+00:08:39.120 after typing URL. Hit on the enter key.
+00:08:42.240 Right? Doing this only LinkedIn page
+00:08:45.040 will be opened. Now how does the capture
+00:08:47.360 button works? The capture button in the
+00:08:50.000 type text block allows you to
+00:08:51.600 automatically capture and input text
+00:08:53.600 into a specific field by selecting it
+00:08:55.920 directly from the screen.
+00:08:58.880 The next step is to click and hold
+00:09:00.399 capture button and press enter key so as
+00:09:02.720 to capture enter keystroke. Let's do it.
+00:09:06.080 Make sure you keep the capture button
+00:09:07.519 hold. This means it should appear green
+00:09:10.000 when you hit enter key.
+00:09:12.640 Click on capture button and hit the
+00:09:14.240 enter key on your keyboard.
+00:09:16.560 By pressing the enter key, we are
+00:09:18.640 instructing the text block to capture
+00:09:20.320 the enter key keystroke after the
+00:09:22.399 LinkedIn URL is typed. During the flow,
+00:09:26.000 enter key will automatically be pressed
+00:09:27.839 when LinkedIn URL is typed in search
+00:09:30.000 bar.
+00:09:31.600 Let's run the flow till this block to
+00:09:33.200 see the results.
+00:09:49.829 And yeah, our automation flow is
+00:09:49.839 perfectly opening the browser and it
+00:09:51.760 opened the LinkedIn page. Since page is
+00:09:54.640 opened, how will we verify that it
+00:09:56.640 successfully opened? Verify with some
+00:09:59.360 text on the page. Exactly. Let's do it.
+00:10:03.519 Over here, we can see there are a lot of
+00:10:05.200 elements to verify with. But for now,
+00:10:07.519 let's take the text welcome.
+00:10:10.560 Let's get back to our flow.
+00:10:22.310 Let me arrange the block to give you a
+00:10:22.320 better view of the entire flow.
+00:10:45.110 The find text block in leapwork is used
+00:10:45.120 to search and detect specific text on
+00:10:47.040 the screen. It helps you verify if
+00:10:49.440 certain text appears during your
+00:10:50.880 automation flow. In our flow, it will
+00:10:53.839 detect the word welcome on the loaded
+00:10:55.920 page.
+00:11:01.590 In text to find field, let's write the
+00:11:01.600 text welcome. Now with this keyword it
+00:11:04.800 will search and detect. Let's expand the
+00:11:07.600 block.
+00:11:14.150 What I'm trying to explain by expanding
+00:11:14.160 the block is you can see area field
+00:11:16.560 here. This property in the fine text
+00:11:19.040 block helps to specify a particular
+00:11:21.040 region on the screen to search for the
+00:11:23.040 text. It majorly creates a deep focus
+00:11:26.000 for the search within a defined space
+00:11:28.320 improving accuracy and speed in finding
+00:11:30.720 the text. Let me show you how to specify
+00:11:33.519 it. Simply right click, click on capture
+00:11:37.120 the area.
+00:11:40.240 Now select the area within which welcome
+00:11:43.040 keyword is there.
+00:11:52.550 Yes, it's done.
+00:12:03.910 This is how you can automate your
+00:12:03.920 virtual tasks using Leapworks mouse and
+00:12:06.959 keyboard blocks combined with image and
+00:12:09.200 text recognition building blocks. These
+00:12:11.760 tools make it easy to handle tasks like
+00:12:14.000 clicking, typing, and verifying text all
+00:12:17.040 without writing a single line of code.
+00:12:19.839 Now that we have set the verification
+00:12:21.600 step, the final step is to connect the
+00:12:23.680 pass block and complete the flow. If the
+00:12:26.639 flow successfully executed the steps,
+00:12:28.959 our flow will pass. Let's run the flow.
+00:13:07.110 and yes, our automation flow is
+00:13:07.120 successfully passed. As we can see here
+00:13:11.440 in the recording section, we can see
+00:13:13.440 that the LinkedIn page is successfully
+00:13:15.360 opened. Now if you check the activity
+00:13:18.240 log,
+00:13:23.670 yes, we can see each step is running
+00:13:23.680 successfully. The browser image is
+00:13:26.240 clicked, it is opened, LinkedIn URL is
+00:13:29.279 typed, the page is loaded, and welcome
+00:13:31.680 text is found that verifies the
+00:13:33.600 successful loading of the page. This is
+00:13:35.519 how easily you can create automation
+00:13:37.360 flow for your virtual applications or
+00:13:39.600 virtual machines. Let's look at the
+00:13:41.440 summary of the today's automation flow.
+00:13:57.030 At first we began with the start block.
+00:13:57.040 Then with the help of click image block
+00:13:59.199 we clicked on browser image to open it.
+00:14:02.959 After that we clicked URL area to type
+00:14:05.839 LinkedIn URL inside it. Then to type the
+00:14:09.120 URL we used type text block. We added
+00:14:12.079 enter key token to press enter. After
+00:14:14.480 typing the URL to verify the successful
+00:14:17.360 loading of the page, we used find text
+00:14:19.920 block. To complete the flow, we
+00:14:22.480 connected the pass block. I would
+00:14:24.720 definitely like to recommend you try
+00:14:26.160 this flow on your Citrix application or
+00:14:28.639 the virtual desktop application with
+00:14:30.560 which you are working. This was all
+00:14:32.720 about the today's first tutorial on
+00:14:34.480 virtual automation series. We will be
+00:14:37.120 coming up with next interesting topics
+00:14:38.880 of this series and help you automate
+00:14:40.800 your virtual tasks like a pro and
+00:14:43.120 achieve highquality outcomes as a
+00:14:44.959 result. For any doubts and queries, feel
+00:14:48.000 free to contact us through Leapwork
+00:14:49.920 support or connect via live chat. And
+00:14:53.279 remember, with virtual automation, you
+00:14:56.320 can transform the way your team works,
+00:14:58.480 cutting down on repetitive tasks and
+00:15:00.320 freeing up time to focus on innovation
+00:15:02.160 and growth. It's all about working
+00:15:04.399 smarter and driving your business to new
+00:15:06.160 heights. Keep automating. Keep
+00:15:08.639 succeeding. Thank you for watching.

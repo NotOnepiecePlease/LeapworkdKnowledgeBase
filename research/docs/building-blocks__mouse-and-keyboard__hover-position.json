@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/hover-position",
+  "title": "Hover Position",
+  "retrievedAt": "2026-11-13T20:21:23.368313+00:00",
+  "text": "Breadcrumbs\nThe\nHover Position\nblock moves the mouse pointer to a specific location on the screen. It is typically used to simulate a user hover at a fixed coordinate, often in combination with upstream blocks like Find Image, Get Text, or Get Number, which output positional data.\nThis block is useful in scenarios where the application reacts visually or functionally to mouse-over behavior, such as\nDrive mouse actions\n.\nFully expanded, the\nHover Position\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nHover Position\nonto the canvas.\nSpecify the basic parameter required for this block to operate:\nPosition\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when a screenshot has been successfully taken. You can rename the block title (“Hover Position”) by double-clicking it and typing in a new title.\nPosition:\nDefines the exact X and Y screen coordinates to which the mouse pointer should move. The position is relative to the top-left corner of the screen (0, 0). You can expand this field to edit X and Y values separately or connect a dynamic position from another block.\nSpeed:\nSets how quickly the pointer moves to the defined position.\nAvailable options:\nSlow\n: Moves the cursor gradually, useful when a slower visual transition is required.\nMedium\n: The default speed, balanced for clarity and performance; works well for recordings or UI that responds to visible motion.\nFast\n: Quicker movement with less visual delay than Medium.\nInstantaneous\n: Moves the pointer immediately to the position without animation, ideal for performance-focused flows.\nAwait no movement:\nDelays the hover action until no screen activity has been detected for a specified time. This is useful for waiting on UI transitions or page loads. Even if enabled, the maximum wait time is capped at 30 seconds.\nAwait Timeout:\nSets how many seconds the screen must remain static before the hover action proceeds. Only takes effect if\nAwait no movement\nis enabled.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Drive mouse actions",
+      "url": "https://www.leapwork.com/services/learning-center/drive-mouse-actions"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251117-103722.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f405506aca185b72ab2b1e3d96692bbdf50f9a143247090118aaa4497bc31e45/image-20251117-103722.png?cb=ea02a0136ad156625f62c66904e2763d"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/regular-expression",
+  "title": "Regular Expression",
+  "retrievedAt": "2026-11-13T21:12:55.962690+00:00",
+  "text": "Breadcrumbs\nThe\nRegular expression\nblock performs regular expression operations on strings. You can use it to search for matches, split text into parts, or replace matching content. The block returns the resulting text so it can be used by subsequent blocks in the flow.\nFully expanded, the\nRegular expression\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nRegular expression\nonto the canvas.\nConnect the block in the flow and specify\nText\n,\nExpression\n, and\nMethod\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nRegular expression\nblock. You can rename it by double-clicking the header and typing a new title.\nText:\nDefines the text to parse. You can type the text directly, feed it as input from a previous block, or insert dynamic values using tokens from\nText fields\n.\nText fields:\nStores key value pairs that enable external values to be inserted into\nText\n. To use a value, right-click in\nText\n, select\nInsert token\n, and then insert the field name.\nAdd field:\nAdds a field that can be used as a token in\nText\n.\nExpression:\nHolds the regular expression pattern used by the selected method. This is the pattern the block uses to match, split, or identify content to replace.\nMethod:\nDefines how the regular expression is applied. The available methods are:\nMatch\n: Searches the input text for substrings that match the pattern and returns the occurrences. In this method, the input string is matched against the rule defined in\nExpression\n.\nSplit\n: Splits the input text into an array of substrings at positions defined by the pattern in\nExpression\n, which acts as the delimiter.\nReplace\n: Replaces parts of the input text that match a pattern with a specified replacement string. This method uses two expressions, one to match part of the input string and one to insert the matched substring into.\nResult:\nReturns the text result of the regular expression operation. If you select\nAll\nin\nUse occurred\n, each occurrence produces its own result, and the block can provide each result to subsequent blocks.\nUse occurred:\nSpecifies which occurrence to use when multiple matches are found. You can select a specific occurrence or select\nAll\nto iterate through all matching results. If you select\nAll\n, the top green connector triggers once per result found.\nCount:\nReturns the total number of results found. This shows the count of all occurrences even if\nUse occurred\nis set to a single specific occurrence.\nNot found:\nTriggers when no match is found for the selected method. When a match is found, the top green output connector triggers instead. This output is typically used to branch execution flow or explicitly fail a case by linking it to a\nFail\nblock.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Regular expression",
+      "url": "http://regexstorm.net/reference"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251222-101855.png",
+      "url": "https://docs.leapwork.com/__attachments/a_9c7674b3096340c9d789ef53f743ccf6cf5cd9851f98d390e0e97e05632aa70f/image-20251222-101855.png?cb=f2d16e0c72578e4861b75772449a0a43"
+    }
+  ]
+}

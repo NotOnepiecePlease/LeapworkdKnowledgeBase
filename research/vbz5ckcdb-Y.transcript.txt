@@ -1,0 +1,144 @@
+00:00:03.350 [Music]
+00:00:03.360 Welcome back to testing the internet
+00:00:05.040 series. You're watching part 18,
+00:00:06.879 infinite scroll. In the previous video,
+00:00:09.679 you learned how to capture an element in
+00:00:11.920 an iframes and it is just as easy as
+00:00:14.400 capturing any native element on a web
+00:00:16.320 page, which speeds up the test design
+00:00:18.560 and ensures robustness in the test case.
+00:00:21.439 In this video, you will learn how to
+00:00:23.519 automate infinite scroll behavior on
+00:00:25.600 modern websites using leapwork, a must
+00:00:29.039 when dealing with endless lists of
+00:00:30.720 articles, blog posts, or products. Maybe
+00:00:34.239 your test didn't scroll far enough to
+00:00:36.079 load more content, the element wasn't
+00:00:38.160 found because it hadn't appeared yet, or
+00:00:40.559 the flow broke because the scroll didn't
+00:00:42.480 trigger dynamic loading. This happens
+00:00:45.040 because the content keeps loading as you
+00:00:47.039 scroll. Some elements only show up when
+00:00:49.200 they're on screen, and most automation
+00:00:51.440 tools can't keep up with those changes.
+00:00:54.160 As this kind of interaction breaks most
+00:00:56.239 traditional automation, it becomes hard
+00:00:58.399 to test reliably.
+00:01:00.480 That's where Leapwork helps. Using
+00:01:02.399 features like scroll into view and
+00:01:04.640 flexible strategies, you can handle
+00:01:06.880 infinite scroll with total control.
+00:01:10.080 To demonstrate, we'll show you a simple
+00:01:12.240 test scenario. So the test case here is
+00:01:15.360 to scroll down and identify that you
+00:01:17.280 keep on adding new paragraphs. And maybe
+00:01:20.000 at five or 10 elements later, you'll see
+00:01:22.080 that the test case is now passed. Let's
+00:01:24.479 automate this scenario in Leapwork and
+00:01:26.720 see how quick it is. Let's launch the
+00:01:29.040 test case page using the start web
+00:01:31.040 browser block
+00:01:40.230 and we'll capture one of the paragraphs
+00:01:40.240 on the infinite scroll page. We'll use
+00:01:42.560 the find web element block because we
+00:01:45.119 want to identify a text paragraph that
+00:01:47.040 triggers the infinite scroll behavior.
+00:01:49.840 That's it for now. Let's save and close
+00:01:51.600 the recorder. Let's edit the strategy so
+00:01:53.840 that the test will automatically scroll
+00:01:55.600 down to each paragraph as it appears.
+00:01:58.320 Since the text inside the paragraphs
+00:02:00.240 changes every time the page reloads, and
+00:02:02.719 we don't really care about the specific
+00:02:04.240 text, we'll remove all references to the
+00:02:06.560 actual content. Instead of matching
+00:02:09.119 text, we'll set the selection to simply
+00:02:11.280 look for all paragraph elements, making
+00:02:13.520 it completely independent of what's
+00:02:15.200 inside them.
+00:02:25.350 After that, we'll enable scroll into
+00:02:25.360 view on the find web element. This makes
+00:02:28.400 sure that each found paragraph gets
+00:02:30.080 scrolled into the visible area of the
+00:02:31.920 page, triggering the infinite scroll.
+00:02:35.120 We'll also set the block to use all
+00:02:36.720 occurrences so we can iterate over every
+00:02:38.879 paragraph that gets loaded. And to avoid
+00:02:41.440 running the flow while the page is still
+00:02:43.360 updating, enable a wait DOM change and
+00:02:46.400 set it to 1 second. This ensures the
+00:02:49.120 test only continues when the page has
+00:02:51.120 stopped changing for a moment. Finally,
+00:02:54.239 to keep our flow from running endlessly,
+00:02:56.480 we'll add a compare block to check the
+00:02:58.400 current iteration index.
+00:03:04.550 We'll compare the current index with the
+00:03:04.560 value five using the greater than or
+00:03:07.760 equal to method. This means the flow
+00:03:10.720 will only pass once at least five
+00:03:12.560 paragraphs have been scrolled into view.
+00:03:15.040 We chose five as a reasonable checkpoint
+00:03:17.599 to confirm that the infinite scroll is
+00:03:19.599 working and that new content is loading
+00:03:21.760 as expected without looping endlessly.
+00:03:24.879 If the index reaches five or more, we'll
+00:03:27.360 assume enough scrolling has occurred and
+00:03:29.200 pass the flow. Let's run the test and
+00:03:31.760 see those paragraphs load smoothly.
+00:03:42.869 And as expected, our flow passed.
+00:03:42.879 Leapwork found the first paragraph on
+00:03:44.799 scroll index one, which wasn't enough to
+00:03:47.599 pass the flow. As the scroll continued,
+00:03:50.560 the second, third, and fourth paragraphs
+00:03:52.720 were found one by one. Finally, on
+00:03:55.760 reaching the fifth paragraph, our
+00:03:57.920 condition of greater than or equal to 5
+00:04:00.799 was met and the flow passed
+00:04:02.720 successfully.
+00:04:04.239 That's how easily you can handle even
+00:04:06.080 tricky infinite scroll scenarios using
+00:04:08.159 Leapwork.
+00:04:09.840 With just a few visual blocks, no
+00:04:12.080 coding, no complex scripting, you're
+00:04:14.560 able to simulate real scroll behavior,
+00:04:16.799 wait for content to load, and verify
+00:04:18.880 conditions visually and reliably. Now,
+00:04:21.680 let's quickly recap the flow. We
+00:04:24.160 launched the scroll page, captured a
+00:04:26.240 paragraph, edited the strategy to make
+00:04:28.479 it dynamic, enabled scroll into view,
+00:04:31.759 set it to iterate through all matches,
+00:04:34.000 added a short wait for content load, and
+00:04:36.400 finally used a compare block to validate
+00:04:38.639 the index. We ran the flow, and it
+00:04:41.360 passed as soon as the first five
+00:04:42.800 paragraphs were successfully scrolled
+00:04:44.400 into view, just as our condition
+00:04:46.320 required.
+00:04:51.270 So, what's been the key learning in this
+00:04:51.280 video? You learned how to automate
+00:04:53.520 infinite scroll using Leapworks visual
+00:04:55.680 blocks. Now it's super easy for you to
+00:04:57.840 take on modern web patterns like
+00:04:59.520 infinite scroll, dynamic rendering, and
+00:05:02.160 lazy loading with no code and full
+00:05:04.560 confidence. Give this exercise a try
+00:05:06.960 yourself and see how much faster your
+00:05:08.800 automation can be. Thank you for being
+00:05:11.039 part of the testing the internet series.
+00:05:13.360 You're making great progress and there's
+00:05:15.520 still more to explore in this series, so
+00:05:17.600 keep learning at your own pace.
+00:05:19.440 Moreover, you can continue your learning
+00:05:21.600 through our product documentation that
+00:05:23.680 offers detailed feature overviews and
+00:05:25.840 functionality details. In addition to
+00:05:28.560 this, explore the knowledgebased section
+00:05:30.720 that complements this with real world
+00:05:32.720 guidance and practical automation
+00:05:34.400 examples. If you have any questions or
+00:05:36.560 need support, you can reach out to us
+00:05:38.720 anytime through live support. We're
+00:05:40.960 always here to help you succeed. Thanks
+00:05:42.880 for being with us. See you in the next
+00:05:45.120 lesson.

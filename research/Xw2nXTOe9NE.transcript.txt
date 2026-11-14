@@ -1,0 +1,128 @@
+00:00:03.669 [Music]
+00:00:03.679 Welcome to testing the internet series.
+00:00:06.000 You're watching part 14, floating menu.
+00:00:08.720 In the last video, you learned how to
+00:00:10.800 automate the process of uploading files
+00:00:12.800 on the web pages. In this video, you
+00:00:15.679 will learn how to handle floating
+00:00:17.039 elements on a web page like sticky top
+00:00:19.359 menus or cookie consent banners that
+00:00:21.760 remain in view while scrolling. These
+00:00:24.000 elements can often cause confusion and
+00:00:25.760 failed test cases. Have you faced
+00:00:28.160 challenges like a menu that's clearly on
+00:00:30.080 the page, but your test says it's not
+00:00:32.160 visible, a cookie banner blocking a
+00:00:34.079 button your test needs to click, or a
+00:00:36.239 section that doesn't scroll into view
+00:00:37.840 reliably across runs? These issues
+00:00:40.800 usually happen because the element isn't
+00:00:42.640 actually within the visible part of the
+00:00:44.399 screen, the viewport, even though it
+00:00:46.800 exists in the DOM. That's where Leapwork
+00:00:49.760 can help. Making it simple to detect,
+00:00:52.239 scroll to, and interact with such
+00:00:54.399 elements using visual automation. To
+00:00:56.879 demonstrate, we will show you a simple
+00:00:58.960 scenario involving fixed elements on a
+00:01:01.039 web page. In this case, we have a top
+00:01:04.000 menu that stays in place while the rest
+00:01:05.760 of the page scrolls. As we scroll the
+00:01:08.479 page, you'll notice that the menu items
+00:01:10.560 remain fixed at the top while the text
+00:01:12.720 in the background moves. The goal is to
+00:01:15.680 scroll the page and check that the top
+00:01:17.600 menu items stay within the visible area
+00:01:19.840 of the web page at all times. Let's get
+00:01:23.040 started to create our flow in Leapwork
+00:01:25.200 Studio. We'll begin with launching the
+00:01:27.200 test case page.
+00:01:40.390 Let's capture this paragraph and use the
+00:01:40.400 find web element block so the test can
+00:01:42.400 scroll down to it.
+00:01:47.670 The next step is to capture the home
+00:01:47.680 button since we want to check if it
+00:01:49.520 stays fixed at the top while scrolling.
+00:01:51.520 We'll use find web element block to do
+00:01:53.680 it. That's all we need for now. So,
+00:01:56.320 let's save and close the recorder. Now,
+00:01:58.880 it's time to edit the strategy.
+00:02:07.030 We'll select the last strategy. Since
+00:02:07.040 the paragraph text changes every time
+00:02:08.959 the page is refreshed, we don't want to
+00:02:11.120 rely on the content itself for
+00:02:12.879 selection. Instead, we'll target the
+00:02:15.840 paragraph element based on its position
+00:02:17.599 in the layout.
+00:02:19.520 So, instead of selecting the first
+00:02:21.040 paragraph, we'll specifically choose the
+00:02:23.200 eighth paragraph in the container.
+00:02:26.080 Let's save the strategy.
+00:02:37.589 We'll enable scroll into view on this
+00:02:37.599 paragraph element so the browser scrolls
+00:02:39.920 down automatically.
+00:02:46.790 Then we'll check the Y position of the
+00:02:46.800 home button. This tells us if it's
+00:02:49.200 within the visible part of the page. Now
+00:02:52.080 we'll use a compare block to check if
+00:02:54.080 the Y position is greater than or equal
+00:02:56.160 to zero.
+00:02:58.480 and we'll set the comparison method as
+00:03:00.319 greater than or equal to. This means
+00:03:02.400 we're simply checking if the element is
+00:03:04.159 still on screen.
+00:03:11.589 If the value meets this condition, we
+00:03:11.599 connect it to a pass block to mark the
+00:03:13.360 test as successful. If not, we connected
+00:03:16.640 to a fail block to flag the test as
+00:03:18.480 failed. Our flow is ready to be
+00:03:20.560 executed. Let's run it now.
+00:03:25.120 Our
+00:03:32.390 test case is passed. As you can see, the
+00:03:32.400 paragraph was found further down the
+00:03:34.000 page. We can see in the recording panel
+00:03:36.159 as well. Then the home button was found
+00:03:38.879 right at the top of the screen. The Y
+00:03:41.120 position of the home button is zero or
+00:03:42.959 more, which means it's still visible,
+00:03:45.280 confirming the top menu stays in view
+00:03:47.280 after scrolling. And just like that, the
+00:03:50.080 test passed. This test proves your
+00:03:52.159 sticky menu stays exactly where it
+00:03:54.000 should, even when the page scrolls. Now,
+00:03:57.120 let's quickly recap the flow we followed
+00:03:59.120 to build this floating element
+00:04:00.480 automation scenario. At first, we
+00:04:03.120 launched the test page and captured a
+00:04:05.040 paragraph located further down the page
+00:04:06.879 to trigger the scroll. We then enabled
+00:04:09.680 the scroll into view option to make sure
+00:04:11.920 the page scrolls automatically to that
+00:04:13.920 paragraph.
+00:04:15.680 Next, we captured the home button from
+00:04:18.000 the top menu to verify its position
+00:04:20.239 after scrolling. Using the Y position,
+00:04:22.960 we checked if the button was still
+00:04:24.400 within the visible screen area. We added
+00:04:26.960 a compare block to see if the position
+00:04:28.960 was greater than or equal to zero,
+00:04:31.440 meaning it's still in view. Finally, we
+00:04:34.320 connected the result to pass or fail
+00:04:36.320 blocks depending on the outcome.
+00:04:42.710 What you learned through this? You
+00:04:42.720 learned how to visually automate the
+00:04:44.240 testing of floating elements and verify
+00:04:46.560 their visibility without writing a
+00:04:48.479 single line of code. So next time a
+00:04:50.800 sticky header or banner causes trouble
+00:04:52.639 in your test, you'll know exactly how to
+00:04:54.880 handle it quickly, clearly, and visually
+00:04:57.680 with Leapwork. Give this exercise a try
+00:05:00.160 yourself and see how much faster your
+00:05:02.000 automation can be. Moreover, to keep
+00:05:04.400 learning or if you ever feel stuck,
+00:05:06.320 explore our documentation knowledge base
+00:05:09.120 and reach out to support if needed. The
+00:05:11.039 answers are just a click away. Thank you
+00:05:13.280 for staying with us and see you in the
+00:05:15.039 next automation journey.

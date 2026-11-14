@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/find-ui-element",
+  "title": "Find UI Element",
+  "retrievedAt": "2026-11-13T19:24:41.910270+00:00",
+  "text": "Breadcrumbs\nThe\nFind UI Element\nblock searches for a UI element (for example, a button or text box) in an already open application window when working with\nDesktop UI automation\n. If the element is found, the block returns details such as the found element itself and its position and area on screen, which can be reused in later blocks.\nWhen fully expanded, the\nFind UI Element\nblock displays the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nFind UI Element\nonto the canvas.\nConnect the block in the flow and set the required parameter\nSelect UI Element\n. You can optionally adjust other parameters such as\nSource element\n,\nUse occurred\n, and\nDefault timeout\nif needed.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nShows the current title of the\nFind UI Element\nblock. You can rename it by double-clicking the header and typing a new title.\nThe green input connector triggers the block when the flow reaches it, and the green output connector triggers when the UI element has been successfully found.\nSelect UI Element:\nContains the locator for the UI element to find. You can capture a locator by selecting\nCapture new element\n, and later update it using\nEdit element\n, or remove it using\nClear element\n.\nThis parameter is\nmandatory\n.\nFound element:\nReturns the UI element that was found in the application window. This output can be reused in other blocks (for example, as a\nSource element\nto narrow a later search). If the element is not found, this output is empty.\nNot found:\nTriggers if the UI element is not found within the configured timeout. If nothing is connected to this output and the element is not found, the case ends with status\nFail\n. This output is typically used to branch the flow for error handling or recovery.\nPosition found:\nReturns the screen position where the UI element was found as\nX, Y\ncoordinates relative to the top-left corner of the screen (typically\n0, 0\n). In multi-screen setups, coordinates can be negative or exceed a single screen’s resolution depending on where the window is located. UI elements that are not visible can return position\n0, 0\n.\nArea found:\nReturns the screen area occupied by the found UI element as\nX, Y, Width, Height\n, starting from the upper-leftmost pixel. In multi-screen setups, values can be negative or exceed a single screen’s resolution depending on where the window is located.\nSource element:\nRestricts the search to only occur inside the provided source element instead of searching broadly in the application window. This is useful when you want to work within a specific container, such as finding a cell inside a previously captured table row.\nUse occurred:\nSelects which occurrence to use if more than one matching UI element is found. If you select\nAll\n, the block iterates through each occurrence and exposes additional iteration-related outputs (such as the current index and a completion trigger) while it runs.\nCount:\nReturns the total number of found UI elements that match the locator.\nDefault timeout:\nControls whether the block uses a fixed timeout or the flow’s default timeout. If the\nDefault timeout\ncheckbox is not selected, the timeout is\n10 seconds\n. If it is selected, the\nDefault timeout\nvalue from the flow settings is applied.\nScroll to find:\nEnables scrolling while searching for the UI element when a value other than\nNone\nis selected. This can be useful in scrollable content where elements load asynchronously.\nAwait no changes:\nWhen selected, the block waits for the screen to stop changing (within the configured wait behavior) before it begins searching for the specified UI element.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.\nStrategy Editor\nGuidelines for understanding and using the Strategy Editor in Leapwork to define, refine, and validate robust locator strategies for UI elements using DOM structure, tokens, and wildcards.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    },
+    {
+      "title": "Strategy Editor",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/strategy-editor"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260127-125615.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f906ce1a4d635a94eced7effb89c6a19b5208915fcc738216f379ff0c50c5097/image-20260127-125615.png?cb=dd9f0f30b397137e8ea12c856d69d377"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven",
+  "title": "Data-Driven",
+  "retrievedAt": "2026-11-13T21:12:54.513708+00:00",
+  "text": "Breadcrumbs\nThese blocks are used to drive automation cases with external data; whether it comes from web services, spreadsheets, files on disk, or relational databases.\nCommand‑line\n:\nExecutes operating‑system commands, PowerShell/Bash scripts, and other CLI tools, then captures their standard output and exit code for conditional logic.\nCompress File\n:\nZips or unzips files and folders on the fly, allowing you to package test artifacts or extract data sets before they are consumed.\nDatabase\n:\nConnects through ODBC/JDBC, runs SQL statements, and exposes the result set so each record can drive a test iteration or be validated inside the flow.\nHTTP Request\n:\nCalls any URL with an HTTP/HTTPS request (GET, POST, PUT, DELETE, etc.) and passes the response, status code, headers, and body, on to the next block in the case.\nRead Excel\n:\nOpens a .xlsx/.xls file, reads row‑by‑row or by range, and feeds each row’s values into subsequent blocks as variables.\nSave File\n:\nWrites any text, binary, or image data travelling through the flow to a file whose path and name can be built at runtime.\nSend Email\n:\nSends SMTP e‑mails directly from a case, with dynamic recipients, subject, body, and attachments.\nSet File\n:\nInjects an existing file, template, media asset, large data set, so later blocks (for example, Send Email or Compress File) can use it without manual uploads.\nWrite Excel\n:\nCreates or updates workbooks during execution, ideal for logging evidence, exporting transformed data, or preparing input files for downstream processes.",
+  "links": [
+    {
+      "title": "Command‑line",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/command-line"
+    },
+    {
+      "title": "Compress File",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/compress-file"
+    },
+    {
+      "title": "Database",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/database"
+    },
+    {
+      "title": "HTTP Request",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/http-request"
+    },
+    {
+      "title": "Read Excel",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/read-excel"
+    },
+    {
+      "title": "Save File",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/save-file"
+    },
+    {
+      "title": "Send Email",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/send-e-mail"
+    },
+    {
+      "title": "Set File",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/set-file"
+    },
+    {
+      "title": "Write Excel",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/write-excel"
+    }
+  ],
+  "images": []
+}

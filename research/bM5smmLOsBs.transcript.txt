@@ -1,0 +1,124 @@
+00:00:05.910 Welcome back to testing the internet
+00:00:05.920 series. You're watching part 13, file
+00:00:08.400 upload. In the last lesson, you learned
+00:00:11.200 how to easily capture a list of file
+00:00:13.120 links on a web page and download all the
+00:00:15.519 files with only one building block. In
+00:00:18.800 this video, you'll learn how to automate
+00:00:20.720 the file upload process in a web
+00:00:22.640 application using Leapwork. If uploading
+00:00:25.519 files during test automation brings
+00:00:27.359 challenges, it can slow you down and
+00:00:29.599 break your flow. Have you faced issues
+00:00:32.160 like not being able to interact with
+00:00:33.840 native file pickers, tests failing when
+00:00:36.160 file paths change, or upload buttons not
+00:00:38.960 being recognized during playback? This
+00:00:41.200 usually happens because file upload
+00:00:43.200 elements behave differently across
+00:00:44.800 browsers. Some rely on OS level
+00:00:47.360 dialogues and test tools can't always
+00:00:49.680 interact with them directly. That's
+00:00:52.000 where Leapwork can help you simplify the
+00:00:53.840 entire process. To demonstrate, we'll
+00:00:56.399 walk you through automating a simple
+00:00:57.920 file upload scenario. It's easy, visual,
+00:01:01.039 and gets the job done. In this test
+00:01:03.760 case, you can choose two ways of
+00:01:05.680 uploading a file. You can either drag
+00:01:08.159 and drop a file into this red square or
+00:01:10.720 you can choose a more classical approach
+00:01:12.400 and browse for a file. Once you click on
+00:01:15.040 choose file button and upload it and
+00:01:17.520 once it's uploaded you'll get a
+00:01:19.200 confirmation containing the file name.
+00:01:21.680 In this video we're going to look at
+00:01:23.360 this classical approach where we choose
+00:01:25.040 the file we click the upload and then we
+00:01:27.680 test that the file name in the
+00:01:29.119 confirmation matches the file name that
+00:01:30.960 we selected to upload. Let's get started
+00:01:33.600 to build the flow. We'll begin by
+00:01:35.439 launching the test case page using the
+00:01:37.200 start recorder.
+00:01:46.950 First, we capture and click the choose
+00:01:46.960 file button.
+00:01:49.360 That's all we need for now. So, we'll
+00:01:51.119 save and close the recorder.
+00:01:54.479 Next, we add a wait block to give the
+00:01:56.399 browser a moment to open the native file
+00:01:58.399 dialogue. Just a 1 second pause is
+00:02:00.960 enough. Next, we'll use the type text
+00:02:03.360 block to enter the file path into the
+00:02:05.119 upload window. Since it's a local file,
+00:02:07.840 we just type the path here. Then using
+00:02:10.879 the capture button, we will press the
+00:02:12.800 enter key to confirm and complete the
+00:02:14.640 upload.
+00:02:16.160 The next step is to click the upload
+00:02:17.920 button. We reopen the recorder, capture
+00:02:20.959 that button, and add a click action.
+00:02:28.630 And here's the confirmation message. To
+00:02:28.640 verify the upload was successful, we
+00:02:30.959 capture that confirmation message using
+00:02:32.800 the find web element block. Let's save
+00:02:35.280 and close the recorder. Now we need to
+00:02:38.160 extract the visible text from the
+00:02:39.760 captured element. This we will do with
+00:02:41.840 help of get web attribute block. We'll
+00:02:44.160 connect the found element to the get web
+00:02:46.160 attribute block to extract and verify
+00:02:48.319 the file name. We'll simply enter txt in
+00:02:51.440 the attribute name field of the get web
+00:02:53.360 attribute block.
+00:02:55.840 We then compare that text to the
+00:02:57.519 expected file name happy automation.jpg.
+00:03:04.390 And if it matches, we pass the test
+00:03:04.400 using a pass block. Let's arrange the
+00:03:06.480 blocks so they match what you see in the
+00:03:08.239 activity log when the test runs
+00:03:10.000 successfully. Let's run the test case
+00:03:12.640 now.
+00:03:20.630 And as you can see, it was passed
+00:03:20.640 successfully. At first, the choose file
+00:03:23.360 button was clicked followed by a short
+00:03:25.360 wait to let the file dialogue appear.
+00:03:28.080 Then the file path was typed and enter
+00:03:30.640 was pressed to confirm the upload. Next,
+00:03:33.280 the upload button was clicked. After
+00:03:35.120 that, the uploaded file name was found
+00:03:37.280 and extracted using get web attribute
+00:03:39.920 and it was compared with the expected
+00:03:41.599 name. Since they matched, the test
+00:03:44.239 passed successfully. This is how easily
+00:03:46.799 you can handle native file uploads using
+00:03:48.640 leapwork, even when dealing with tricky
+00:03:50.879 file dialogues. Now, let's quickly recap
+00:03:53.680 the flow we followed to build the file
+00:03:55.599 upload automation scenario. First, we
+00:03:58.720 launched the test case page and we
+00:04:01.120 clicked the choose file button. Then we
+00:04:04.080 added a short wait to let the file
+00:04:05.840 dialogue appear. After that, we used the
+00:04:08.959 type text block to enter the file path
+00:04:11.120 and simulate pressing enter. Next, we
+00:04:13.920 click the upload button, captured the
+00:04:15.840 confirmation message using find web
+00:04:17.759 element, extracted the file name using
+00:04:19.919 get web attribute and compared it with
+00:04:22.320 the expected name. We ran the flow and
+00:04:24.639 since the file name matched, the test
+00:04:26.639 passed as expected.
+00:04:32.629 What you learned? You learned how to
+00:04:32.639 automate a complete file upload flow,
+00:04:35.120 including handling native dialogues and
+00:04:37.199 verifying the result using smart
+00:04:38.880 validations. Give this exercise a try
+00:04:41.360 yourself and see how much faster your
+00:04:43.199 automation can be. Moreover, to keep
+00:04:45.600 learning or if you ever feel stuck,
+00:04:47.520 explore our documentation knowledge base
+00:04:50.320 and reach out to support if needed. The
+00:04:52.240 answers are just a click away. Thank you
+00:04:54.400 for staying with us and see you in the
+00:04:56.160 next automation journey.

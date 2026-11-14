@@ -1,0 +1,292 @@
+00:00:10.070 Welcome back to the virtual automation
+00:00:10.080 series. You're now moving into video six
+00:00:13.040 and I hope you've been enjoying the
+00:00:14.639 exercises and making great progress.
+00:00:17.359 Remember, if you ever find yourself
+00:00:19.039 stuck or have any questions about any
+00:00:21.119 topic, don't hesitate to reach out. We
+00:00:23.840 are here to help you through the
+00:00:25.119 challenges. In our previous video, we
+00:00:28.320 learned how to automate advanced mouse
+00:00:30.080 actions like dragging and dropping,
+00:00:32.399 iterating through images, and using
+00:00:34.399 positions and offsets for more precise
+00:00:36.559 control. If you missed the video, you
+00:00:39.280 can check the link in the description.
+00:00:41.520 In this tutorial, we're going to focus
+00:00:43.520 on automating text insertion and
+00:00:45.360 advanced keyboard operations in virtual
+00:00:47.600 environment. You'll learn different
+00:00:49.760 approaches for typing text and how to
+00:00:51.840 simulate real keyboard actions in your
+00:00:53.840 automation flows. If we talk about
+00:00:56.399 industry examples that how automating
+00:00:58.640 keyboard actions can help. So for
+00:01:01.120 example in customer support automating
+00:01:03.680 keyboard actions can help speed up tasks
+00:01:05.760 like typing responses or updating
+00:01:08.000 records. Similarly in data entry
+00:01:11.360 automating text input saves time and
+00:01:13.680 reduces errors when entering large
+00:01:15.360 volumes of data into forms or systems.
+00:01:18.640 By the end of this tutorial, you'll be
+00:01:20.640 able to automate text input and keyboard
+00:01:22.640 actions to make your processes more
+00:01:24.560 efficient. Let's get started. Here's the
+00:01:27.360 scenario overview. At first, we will
+00:01:29.520 learn how to insert text as part of a
+00:01:31.439 virtual automation flow. Then we will
+00:01:34.320 work with the different approaches for
+00:01:35.680 inserting text. And after this, we will
+00:01:38.000 learn how to automate advanced keyboard
+00:01:39.920 operations. Let's proceed.
+00:01:42.960 And yeah, start block is all set to help
+00:01:45.119 us create the automation flow. We'll
+00:01:46.880 start with the type text block first.
+00:01:49.119 Let's connect it with start block.
+00:01:58.870 The type text block in Leapwork
+00:01:58.880 simulates typing on a keyboard. You can
+00:02:01.600 use it to send text to an input field.
+00:02:04.240 When you use this block, Leapwork types
+00:02:06.640 the text as if a user were typing, and
+00:02:09.039 you can adjust typing speed with delays
+00:02:11.039 between keystrokes. We'll cover it
+00:02:13.040 further in this video. Now what are
+00:02:15.520 keystrokes? Keystrokes are individual
+00:02:18.480 actions or presses of keys on a
+00:02:20.319 keyboard. Each time a key is pressed, it
+00:02:23.360 is counted as one keystroke. For
+00:02:25.840 example, pressing the A key once is one
+00:02:28.480 keystroke. And typing hello would
+00:02:31.360 involve five keystrokes, one for each
+00:02:33.599 letter. In automation, keystrokes
+00:02:36.640 represent the actual input of
+00:02:38.400 characters, letters, numbers, or special
+00:02:40.959 characters sent to an application or
+00:02:43.280 field. just like a user would type them.
+00:02:46.319 Now the goal is to type in the Notepad++
+00:02:48.959 application running in the background.
+00:02:53.200 To do that, we simply have to write text
+00:02:55.519 in this block. We can see the text value
+00:02:58.319 field here. Simply type the text. Let's
+00:03:00.800 say I want to write happy automation in
+00:03:02.640 Notepad++.
+00:03:04.159 So I'm writing this text.
+00:03:34.070 And yes, we can see that the flow
+00:03:34.080 executed. And we can see in the activity
+00:03:36.239 log that the text is typed successfully.
+00:03:43.270 Now let's consider the another scenario.
+00:03:43.280 I want to type the text happy automation
+00:03:45.599 and put dash sign. And then I want to
+00:03:47.840 type the text let's say keep succeeding.
+00:03:50.959 To do this, first let's add set text
+00:03:53.840 block.
+00:04:09.429 The set text block in Leapwork allows
+00:04:09.439 you to automatically enter specific text
+00:04:11.439 into a field or application.
+00:04:14.319 In set text block, let's type the text
+00:04:16.639 as space then dash and again space. Keep
+00:04:22.400 succeeding text.
+00:04:28.870 You can take any other example or text
+00:04:28.880 as per choice. Now in type text block
+00:04:32.080 add the token so that we can define the
+00:04:34.000 text field for keep succeeding text
+00:04:36.320 after happy automation.
+00:04:39.680 Now connect this text value to field one
+00:04:42.160 property here. By doing this, the value
+00:04:45.199 from set text block will pass to text
+00:04:47.280 field field one in the type text block
+00:04:49.759 through blue connector. Now understand
+00:04:52.639 how this works. At first type text block
+00:04:56.320 will execute to write happy automating
+00:04:58.639 text. Then it will identify the token
+00:05:01.040 added after it which is receiving the
+00:05:03.120 text value from set text block and
+00:05:05.680 therefore it will type the text we have
+00:05:07.759 set in set text block. Let's run the
+00:05:10.560 flow.
+00:05:25.990 And yes we can see that the defined text
+00:05:26.000 was successfully typed. This is how you
+00:05:28.720 have to think of scenarios and try out
+00:05:30.880 automating keyboard actions.
+00:05:39.830 We can see in Notepad++ that the text is
+00:05:39.840 typed in the exact format that we had
+00:05:41.759 defined in the set text block.
+00:05:49.189 And in activity log, we can see each
+00:05:49.199 step executed successfully during
+00:05:51.120 automation. After this, let's try
+00:05:53.520 automating processes that involves the
+00:05:55.360 combination of keys. See the goal is to
+00:05:58.639 open run window type notepad++ and click
+00:06:02.000 on enter key that will lead to open
+00:06:03.919 notepad++.
+00:06:06.000 Once opened the same process of typing
+00:06:08.400 text will occur. Okay. Let's edit our
+00:06:18.390 You simply need to add type text block
+00:06:18.400 before this type text block. Let's
+00:06:20.479 connect it.
+00:06:32.950 Now what steps you normally do to open
+00:06:32.960 run window? Click on windows key and R
+00:06:36.080 key. Right based on same steps, let's
+00:06:39.520 click on capture button here and press
+00:06:41.680 Windows key and R key together.
+00:06:48.469 It will add the token telling type text
+00:06:48.479 block to type Windows key and R key
+00:06:51.199 together on keyboard. Now release
+00:06:54.000 capture button.
+00:06:57.199 Now write notepad++
+00:06:59.360 since we want to open it.
+00:07:05.670 Now again click on capture button and
+00:07:05.680 press enter key. Pressing and holding
+00:07:08.319 the capture button means we are
+00:07:10.080 recording a sequence of keystrokes that
+00:07:11.840 involves multiple keys being pressed
+00:07:13.599 together or in sequence. Now to ensure
+00:07:16.800 the flow is robust, let's enable a
+00:07:19.199 weight movement in this type text block.
+00:07:21.759 This simply means this block will not
+00:07:24.080 start typing until the Notepad++ is
+00:07:26.400 completely opened. You can change the
+00:07:28.319 timeout setting in the type text block
+00:07:30.319 to define how long Leapwork should wait
+00:07:32.319 for the Notepad++ screen to load
+00:07:34.479 completely and then start typing. It
+00:07:37.039 ensures efficiency in process. Now let's
+00:07:40.000 run the flow.
+00:07:45.670 And yes, we can see the run window is
+00:07:45.680 successfully opened. then the Notepad++
+00:07:48.639 window and our text has been
+00:07:50.319 successfully typed.
+00:08:00.469 If we check the activity log, we can see
+00:08:00.479 the activity message that each step is
+00:08:02.479 executed successfully and the text is
+00:08:09.990 This is how you can work on automating
+00:08:10.000 processes involving keys combination
+00:08:12.080 with type text block. Moving ahead now
+00:08:15.599 we are going to learn about some
+00:08:16.879 interesting properties of type text
+00:08:18.560 block through which you can set typing
+00:08:20.400 speed set text type. Let's proceed.
+00:08:24.400 Now see here we can see the type
+00:08:26.479 property. This means that you can set
+00:08:28.319 the type of the text you want to write
+00:08:29.919 in your application. Let's say if you
+00:08:32.959 want to write a password which is not
+00:08:34.560 supposed to be seen to others since it's
+00:08:36.399 a hidden information. So from these
+00:08:38.880 options you can select
+00:08:51.990 It will now appear as dots. During the
+00:08:52.000 automation runtime, it will be visible
+00:08:54.320 as normal text, but it will depend on
+00:08:56.720 the input receiving application which
+00:08:58.480 format it's taking. Let's say the login
+00:09:00.880 form will take it as dots and not the
+00:09:03.120 normal text. Let's set it again to text
+00:09:05.920 and write our previous text.
+00:09:19.030 Now the next property is key speed. With
+00:09:19.040 the help of this property, you can set
+00:09:21.440 the text insertion or the typing speed
+00:09:23.600 based on your requirements. These are
+00:09:25.440 the options. Very slow, slow, fast. As
+00:09:29.360 human means, it will type in the speed
+00:09:31.680 as the person types on the keyboard.
+00:09:34.240 Let's select fast.
+00:09:36.959 Let's say typing login information would
+00:09:39.120 need fast speed of typing. So we can
+00:09:41.279 decide accordingly.
+00:09:43.600 Let's run the flow from here.
+00:09:54.550 And we can see that the text was typed
+00:09:54.560 so fast.
+00:10:05.509 This is how you can set the typing speed
+00:10:05.519 of keyboard in virtual automation so
+00:10:07.920 effectively.
+00:10:22.310 The next interesting property to learn
+00:10:22.320 is type as keys. If you enable it, the
+00:10:24.880 text is not entered as characters but as
+00:10:26.800 keystrokes. The type as keys property in
+00:10:29.920 the type text block allows you to
+00:10:31.600 include special key actions as part of
+00:10:33.440 the keystroke sequence. For example,
+00:10:36.079 instead of just typing characters, you
+00:10:38.240 can add actions like pressing enter tab
+00:10:40.880 to the sequence of keystrokes. Consider
+00:10:43.519 an example in the login process. We type
+00:10:46.399 the username, the press tab to move to
+00:10:48.800 the password field. Then we type the
+00:10:50.959 password and press enter to submit the
+00:10:52.880 form. Simulating the keystrokes a user
+00:10:55.200 would perform to log in.
+00:11:05.509 The last thing to learn in this video is
+00:11:05.519 about the press key and release key
+00:11:07.440 blocks
+00:11:26.069 as the name says press and release. So
+00:11:26.079 with these blocks you can work on
+00:11:27.760 scenarios involving pressing and holding
+00:11:29.600 the keys while doing other actions. They
+00:11:32.560 work together. We need to specify keys
+00:11:35.440 in the press key section just like the
+00:11:37.519 way we did in type text block with
+00:11:39.200 capture button. Let's capture the left
+00:11:41.120 control. See once the automation flow
+00:11:44.160 will hit this press key block it will
+00:11:46.160 hold the key pressed until it is
+00:11:47.519 encountering the release key block. So
+00:11:49.760 this is how these blocks can keep the
+00:11:51.360 keys pressed till flow is doing other
+00:11:53.440 actions.
+00:12:08.710 like dragging the element from start
+00:12:08.720 position to end position using drag
+00:12:11.040 mouse block. Keeping the control key
+00:12:13.600 pressed and dragging the mouse will
+00:12:15.600 let's say in applications like
+00:12:17.120 PowerPoint copies the element. So this
+00:12:20.079 is how these blocks will help in the
+00:12:21.680 scenarios of holding the keys while
+00:12:23.360 doing other actions. The next step is to
+00:12:26.079 define the keys in the release key or we
+00:12:28.480 can release all keys based on the
+00:12:30.560 required situation. This is how you can
+00:12:33.200 work with press key and release key.
+00:12:35.760 This was all about the today's video. In
+00:12:38.720 summary, we learned how to insert text
+00:12:40.800 in applications. We took notepad++ an
+00:12:43.839 example. Then we saw the steps to how to
+00:12:46.160 use different approaches for inserting
+00:12:47.680 text. how to set text type and set
+00:12:50.240 typing speed. We learned about type as
+00:12:52.959 keys feature and at the end we learned
+00:12:55.680 how to automate advanced keyboard
+00:12:57.279 operations with the help of press key
+00:12:59.360 and release key. Keep trying these
+00:13:01.920 exercises at your end to see how these
+00:13:04.320 blocks can help you simply automating
+00:13:06.000 keyboard actions in your virtual
+00:13:07.519 environment tasks.
+00:13:09.680 Now, as I also told in previous lessons,
+00:13:12.639 always make sure to take care that the
+00:13:14.240 screen resolution of your automation
+00:13:16.000 flow and your virtual machine should be
+00:13:18.160 same. And along with this, always take
+00:13:20.720 care while capturing elements positions
+00:13:22.560 in the right manner because these
+00:13:24.320 factors play a very crucial role in
+00:13:26.480 successful automation of virtual
+00:13:28.160 environment tasks as it involves
+00:13:30.160 position of elements at each and every
+00:13:31.920 step. This was all about the today's
+00:13:34.480 tutorial. We will be coming up with next
+00:13:36.959 interesting topics of this series and
+00:13:38.880 help you automate your virtual tasks
+00:13:40.800 like a pro and achieve highquality
+00:13:43.040 outcomes as a result. For any doubts and
+00:13:45.920 queries, feel free to contact us through
+00:13:48.160 Leapwork support or connect via live
+00:13:51.200 chat. And remember, with virtual
+00:13:54.079 automation, you can transform the way
+00:13:56.079 your team works, cutting down on
+00:13:58.079 repetitive tasks and freeing up time to
+00:14:00.000 focus on innovation and growth. It's all
+00:14:02.720 about working smarter and driving your
+00:14:04.399 business to new heights. Keep
+00:14:06.480 automating. Keep succeeding. Thank you
+00:14:08.959 for watching.

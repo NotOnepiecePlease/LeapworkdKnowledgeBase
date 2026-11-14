@@ -1,0 +1,260 @@
+00:00:06.230 [Music]
+00:00:06.240 With the journey well being carried out,
+00:00:08.400 it's time for video 4, where we'll
+00:00:10.559 continue exploring the potential of
+00:00:12.080 automation in your virtual environment.
+00:00:14.880 Let's begin. In our previous tutorial,
+00:00:18.400 we explored text and numbers recognition
+00:00:20.960 where we worked with get text, hover
+00:00:23.119 text, and get number blocks to automate
+00:00:25.439 tasks that involve extracting and
+00:00:27.840 interacting with data. If you missed
+00:00:30.240 that video session, you can check the
+00:00:31.760 link in the description. In this
+00:00:33.920 session, we're moving ahead towards the
+00:00:35.760 next crucial step in virtual automation.
+00:00:38.719 You'll learn how can you click elements
+00:00:40.399 within a virtual environment. Skills
+00:00:43.040 that are essential across many
+00:00:44.559 industries like finance, healthcare, and
+00:00:47.120 customer service.
+00:00:49.120 For example, you'll see how to click a
+00:00:51.200 button to confirm a transaction or
+00:00:53.280 select an option in a drop-own menu to
+00:00:55.600 trigger actions in a customer service
+00:00:57.520 portal. We'll also cover how to set
+00:01:00.239 focus in form fields and use areas to
+00:01:03.120 optimize OCR engine performance,
+00:01:05.600 improving the accuracy and speed of text
+00:01:08.080 recognition in documents and forms. And
+00:01:11.280 yes, by the end of this video, you'll be
+00:01:13.680 able to perfectly automate clicking
+00:01:15.280 elements and optimize OCR performance in
+00:01:17.600 your virtual environment, making your
+00:01:19.600 workflows faster, more reliable, and
+00:01:22.240 ready for the future. Let's get started.
+00:01:25.040 Let's understand the scenario. At first
+00:01:27.759 we will work with click image block to
+00:01:29.759 click image on web page and see results.
+00:01:32.400 We will learn about different properties
+00:01:33.840 of click image block. Then we will work
+00:01:36.880 with click text block to click selected
+00:01:39.119 text on the web page. Let's get started.
+00:01:42.640 Let's start with the click image block.
+00:01:45.200 I'm connecting it with start block.
+00:01:57.429 The click image block lets you set up
+00:01:57.439 automatic clicks on images on your
+00:01:59.360 screen. Imagine you want to click a
+00:02:01.680 button or picture, but instead of doing
+00:02:03.759 it yourself, the automation will click
+00:02:05.920 it for you whenever it sees the image.
+00:02:08.479 This helps save time and makes things
+00:02:10.479 easier. Now, let's select the image on
+00:02:13.120 the web page that we want to be clicked.
+00:02:26.309 The image is captured and we can see it
+00:02:26.319 here. Let's run the flow.
+00:02:36.710 And yes, we can see the mouse was moved
+00:02:36.720 and the image was clicked. On clicking,
+00:02:39.760 it opened the another page. And if we
+00:02:42.160 can check the activity log, we can see
+00:02:44.160 the position details where a click
+00:02:45.760 occurred. In the recording panel, we can
+00:02:48.560 see the spot here. It's showing the
+00:02:50.480 position we had set to click. Moreover,
+00:02:53.360 you can also adjust the position of the
+00:02:55.120 click based on your requirements. Now,
+00:02:57.760 see in scenarios where let's say you
+00:03:00.400 want to scroll the page and find the
+00:03:02.080 image to be clicked. So as we discussed
+00:03:04.239 in the previous tutorial, you must be
+00:03:06.239 getting the idea that we only will have
+00:03:07.760 to connect scroll wheel block and find
+00:03:09.680 image block in combination with click
+00:03:11.599 image block. So it will first scroll the
+00:03:14.879 page to find your target image, find it
+00:03:17.280 and click on it. Likewise, there can be
+00:03:19.519 several scenarios to click elements in
+00:03:21.440 virtual environment based on which
+00:03:23.360 you'll have to create flows and see how
+00:03:25.120 it works.
+00:03:27.920 Moving ahead now let's look at the
+00:03:30.400 properties of click image block.
+00:03:40.470 We discussed to change or adjust the
+00:03:40.480 position of the click you simply have to
+00:03:42.560 click on the image captured. You can see
+00:03:44.720 the red intersectional lines. Simply you
+00:03:47.360 have to set them according to your
+00:03:48.720 desired position and click image block
+00:03:50.720 will click on it.
+00:03:54.319 Now let's expand the block.
+00:04:02.149 We can see the button feature. This
+00:04:02.159 feature lets you click on a specific
+00:04:03.760 button or image on your screen
+00:04:05.280 automatically by deciding where you want
+00:04:07.360 click to happen just like if you were
+00:04:09.439 clicking it yourself. You can select
+00:04:11.760 from the different options in the drop
+00:04:13.280 down.
+00:04:16.239 The default is middle. Based on the
+00:04:18.400 option you select the click image block
+00:04:20.720 will click accordingly. Let's select
+00:04:23.040 middle for now. You can try this
+00:04:25.040 exercise with all the options one by
+00:04:27.040 one. The next feature is speed. The
+00:04:30.479 speed feature in the click image block
+00:04:32.560 controls how fast or slow the automation
+00:04:34.880 will click on the image or button. Let's
+00:04:37.199 say fast speed means the automation will
+00:04:39.919 click quickly which is useful if you're
+00:04:41.919 automating tasks that don't need to wait
+00:04:43.759 for anything to load. One option you can
+00:04:46.479 see is the instantaneous. So it is the
+00:04:49.280 setting in the drop down that makes the
+00:04:50.800 click happen immediately without any
+00:04:52.639 delay. It's like saying click now no
+00:04:55.840 waiting at all. This can be useful when
+00:04:57.919 you know the screen or app is ready for
+00:04:59.759 the click and you want it to happen as
+00:05:01.600 fast as possible. Let me run the flow
+00:05:04.160 and show you.
+00:05:13.189 And you can see the click happened
+00:05:13.199 instantaneously without any delay and
+00:05:15.680 the image was clicked. So this is how
+00:05:17.600 you can select the speed based on your
+00:05:19.280 needs. In the recording panel area we
+00:05:21.840 can see the highlight on the spot where
+00:05:23.360 instantaneous click occurred.
+00:05:27.280 Now let's edit the flow
+00:05:31.360 and it's time to learn another scenario
+00:05:33.360 of setting focus on the form fields in
+00:05:35.680 virtual automation. This time I have
+00:05:38.639 opened a registration page where we will
+00:05:40.560 work with form fields. So when I say
+00:05:42.800 setting focus on form fields, what comes
+00:05:45.280 in your mind? The area where the click
+00:05:47.600 will happen and how the field will be
+00:05:49.600 selected to type in. Right? Yes, this is
+00:05:52.639 what we will do. Now understand you
+00:05:54.960 simply have to capture the image in such
+00:05:56.639 a way that click image block can
+00:05:58.479 understand where to click so that the
+00:06:00.000 field will be selected. Now let's
+00:06:02.400 capture the new image. Over here I'm
+00:06:05.360 selecting the area in such a way that
+00:06:07.120 I'm covering some part of the field as
+00:06:08.800 well. This will instruct click image
+00:06:10.880 block to select the field by recognizing
+00:06:12.960 the selected image and clicking it. It's
+00:06:16.319 captured. Let's run the flow.
+00:06:24.790 And yeah, we can see the field is
+00:06:24.800 selected successfully.
+00:06:31.270 And here's the position details. We can
+00:06:31.280 see in the recording panel that the
+00:06:32.720 target area was clicked, but there's red
+00:06:34.720 highlight too in the next field. This
+00:06:36.880 happens when there's challenge finding
+00:06:38.400 the right match for selected image. This
+00:06:41.039 can easily be solved if we tell click
+00:06:42.800 image to click in the specified area
+00:06:44.960 only.
+00:06:51.990 The area feature can help here. The area
+00:06:52.000 feature in the click image block lets
+00:06:53.759 you tell Leapwork exactly where on the
+00:06:55.680 screen to look for an image or button.
+00:06:58.000 Instead of scanning the entire screen,
+00:07:00.319 you can define a specific area or
+00:07:02.319 section where the image is most likely
+00:07:04.240 to appear. Like here we are dealing with
+00:07:06.319 a form field. By defining a specific
+00:07:09.120 area, automation find and interact with
+00:07:11.840 the form field more accurately. Let's
+00:07:14.080 capture the area.
+00:07:19.670 I'm also including some text part of the
+00:07:19.680 form label in the captured area for OCR
+00:07:22.560 engine to recognize the label more
+00:07:24.240 easily. Yes, its coordinates are
+00:07:26.639 defined. Let's run the flow now.
+00:07:41.749 And yeah, we can see the exact image is
+00:07:41.759 clicked and the form field is selected
+00:07:43.840 now.
+00:07:45.759 And here's the position details.
+00:07:49.680 We can see in the recording panel that
+00:07:51.520 this time the mouse moved to the exact
+00:07:53.759 area and selected the form field. This
+00:07:56.160 is how area feature helps you click
+00:07:57.919 target element and give you quick
+00:07:59.680 results thus saving your time. This is
+00:08:02.479 how easily you can set the focus on the
+00:08:04.400 form fields and automate it without any
+00:08:06.639 challenge. The area feature ensures OCR
+00:08:10.479 optical character recognition only
+00:08:12.960 searches the relevant part of the screen
+00:08:15.120 improving both speed and accuracy when
+00:08:17.440 selecting the right field. This means
+00:08:20.080 leapwork can identify specific form
+00:08:22.319 labels or input fields by recognizing
+00:08:24.720 the text inside the defined region. This
+00:08:27.360 was the reason why we had covered some
+00:08:28.960 text part two in the form label while
+00:08:31.039 setting area so that it will be easy for
+00:08:33.440 OCR engine to recognize the label
+00:08:35.519 easily. Now let's move to another block.
+00:08:38.320 Click text. Let's remove click image
+00:08:40.640 block and connect click text block.
+00:08:58.630 The click text block in Leapwork helps
+00:08:58.640 you automate clicks on text instead of
+00:09:00.560 images. Instead of looking for a button
+00:09:03.120 or an image on the screen, you can tell
+00:09:05.360 the automation to look for specific
+00:09:06.959 words or phrases and click on them. Now
+00:09:10.240 I'm moving to the same web page. We can
+00:09:13.200 select any text to be clicked. I'm
+00:09:15.680 selecting the text create. You can also
+00:09:18.240 select any text as per your choices.
+00:09:25.590 And let's write the text to be clicked.
+00:09:25.600 Create as we can see here. Now the click
+00:09:28.560 text block will look for this text on
+00:09:30.560 the screen. and click on it. To ensure
+00:09:33.120 the click text block doesn't have to
+00:09:34.800 search the entire screen and only look
+00:09:36.880 for text in specified area, let's define
+00:09:39.519 the area. Simply expand the block and
+00:09:41.920 right click on area field to capture.
+00:09:58.150 Yes, the area coordinates are defined.
+00:09:58.160 Let's run the flow.
+00:10:13.190 and yes, we can see the mouse moved and
+00:10:13.200 click on this text.
+00:10:20.310 We can see the text click position
+00:10:20.320 details in the activity log. This is how
+00:10:22.800 click text block works. You must be
+00:10:25.600 observing how interesting these virtual
+00:10:27.440 automation block words to simplify your
+00:10:29.680 automation tasks in virtual environment.
+00:10:32.720 This was all about the today's tutorial.
+00:10:35.360 Let's look at the summary. At first, we
+00:10:37.920 learned how to click image elements on
+00:10:40.000 the screen and set focus on the form
+00:10:42.079 fields and labels. Along with this, we
+00:10:44.399 learned how does OCR works to give us
+00:10:46.959 effective elements recognition and click
+00:10:48.959 results. Then we learned how to click
+00:10:51.279 text with the help of click text blocks.
+00:10:54.079 There's yet a lot in our upcoming
+00:10:55.839 virtual automation series to help you
+00:10:57.760 enhance your automation skills in
+00:10:59.680 virtual environment. We will be coming
+00:11:02.000 up with next interesting topics of this
+00:11:04.000 series and help you automate your
+00:11:05.680 virtual tasks like a pro and achieve
+00:11:08.160 highquality outcomes as a result. For
+00:11:10.959 any doubts and queries, feel free to
+00:11:13.040 contact us through Leapwork support or
+00:11:15.760 connect via live chat. And remember,
+00:11:19.120 with virtual automation, you can
+00:11:21.120 transform the way your team works,
+00:11:23.120 cutting down on repetitive tasks and
+00:11:24.959 freeing up time to focus on innovation
+00:11:26.800 and growth. It's all about working
+00:11:29.120 smarter and driving your business to new
+00:11:30.800 heights. Keep automating. Keep
+00:11:33.279 succeeding. Thank you for watching.

@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/handle-web-alert",
+  "title": "Handle Web Alert",
+  "retrievedAt": "2026-11-13T20:40:16.078101+00:00",
+  "text": "Breadcrumbs\nThe\nHandle Web Alert\nbuilding block handles an alert popup in an open browser window. This block only works with browser windows that were previously opened using the\nStart Web Browser\nblock (or their child windows).\nFully expanded, the\nHandle Web Alert\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nHandle Web Alert\nonto the canvas.\nConnect the block in the flow and optionally specify\nAction\n. Optionally, you can adjust other parameters if needed.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when the selected action (for example accepting the alert) has been completed. You can rename the block by double-clicking the header text and typing a new title.\nAction\n: Selects what to do with the alert popup. Options are\nAccept\nor\nDismiss\n.\nText value\n: Contains any text shown in the alert popup. In some browser versions, the alert text may not be delivered correctly, and this value can be blank.\nDefault timeout\n: If the checkbox is not selected, the timeout is\n10 seconds\n. If the checkbox is selected, the\nDefault timeout\nvalue from the flow settings applies.\nTimeout\n: The maximum time spent performing the selected action before giving up. This is separate from the case\nglobal timeout\nin\nSettings\n, which can cancel a run if the whole case exceeds it.\nBrowser window\n: Makes the block use a specific browser window. Multiple browser windows are not supported by Selenium Grid or external cloud providers such as Sauce Labs and BrowserStack.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260205-135332.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5de59e6c9c8b3a46e5512c56f6e2f6a22c87c6e4ec2a94c884e75dbfd8c55a1a/image-20260205-135332.png?cb=995ea459424a386347985ade2cea0f82"
+    }
+  ]
+}

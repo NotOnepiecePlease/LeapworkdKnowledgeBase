@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/scroll-wheel",
+  "title": "Scroll Wheel",
+  "retrievedAt": "2026-11-13T20:21:24.247993+00:00",
+  "text": "Breadcrumbs\nThe\nScroll wheel\nbuilding block performs a scroll action on screen in a specific position. If no position is specified, the block scrolls at the position of the last mouse action performed by LEAPWORK. If no other mouse action has been performed, scrolling happens at screen coordinates\n0, 0\n.\nNote:\nMany other building blocks include a built-in\nScroll to find\noption, which can be used instead of a manual scroll in some scenarios.\nSee the\nAutomation using image recognition lesson\nfor an example of how this works.\nFully expanded, the\nScroll wheel\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nScroll wheel\nonto the canvas.\nConnect the block in the flow and specify\nDirection\nand\nAmount\n. Optionally set Position, Delay (sec), Speed, and Await no movement.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when the scroll has been performed. You can rename the block by double-clicking the header text and typing in a new title.\nDirection\n: Selects the scroll direction (for example\nDown\nor\nUp\n).\nPosition\n: Sets where the scroll is performed using\nX, Y\nscreen coordinates. The top-left corner of the screen is\n0, 0\n. If\nPosition\nis not set, LEAPWORK uses the position of the last mouse action. If no mouse action has been performed, scrolling happens at\n0, 0\n. Use the expander to work with X and Y separately.\nAmount\n: Defines how much scrolling is performed.\nDelay (sec)\n: Sets the delay in seconds between each scroll action.\nSpeed\n: Selects mouse movement speed.\nMedium\nis the default and is recommended because it replays well on video.\nInstantaneous\nrepositions the mouse without visible movement.\nAwait no movement\n: Delays the scroll action until there has been no movement on the screen for a specified period (for example, two seconds). This is useful when waiting for a screen update (such as a page loading). Regardless of this checkbox, the scroll action will occur after waiting a maximum of\n30 seconds\n.\nAwait Timeout\n: Sets the number of seconds the screen must have seen no movement before proceeding.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Automation using image recognition lesson",
+      "url": "https://www.leapwork.com/services/learning-center/automation-using-image-recognition"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260204-142700.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f88b0706a034452d94399a9126e47d3e84a4bddd8687ed9af3d3ba149caf1066/image-20260204-142700.png?cb=a046578fc096101600af74c63227ba3c"
+    }
+  ]
+}

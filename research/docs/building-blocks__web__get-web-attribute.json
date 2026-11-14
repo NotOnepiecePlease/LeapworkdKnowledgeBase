@@ -1,0 +1,30 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/get-web-attribute",
+  "title": "Get Web Attribute",
+  "retrievedAt": "2026-11-13T20:40:17.084608+00:00",
+  "text": "Breadcrumbs\nThe\nGet Web Attribute\nblock retrieves the value of a specific HTML attribute from a web element, typically found using the Find Web Element block. This block only works within browser windows opened using the Start Web Browser block or one of its child windows.\nIt is often used to extract dynamic properties such as\nhref\n,\nsrc\n,\nalt\n,\ntitle\n, or\nchecked\nfrom web elements during test execution.\nFully expanded, the\nGet Web Attribute\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nGet Web Attribute\nonto the canvas.\nConnect\nSource element\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: You can rename the block title (“Get Web Attribute”) by double-clicking it and typing a new title.\nSource element\n: The element the attribute will be read from. This is typically connected from a previous block’s\nFound element\n(for example from\nFind Web Element\n).\nAttribute name\n: The name of the HTML attribute to retrieve from the source element (for example,\nsrc\nwhen the source element is an\n<img>\ntag).\nAttribute value\n: Contains the retrieved attribute value. This output can be connected and used in other building blocks.\nExists\n: Returns\nTrue\nif the attribute exists and\nFalse\nif it does not. Note that some HTML attributes can exist without having a value (for example a checked checkbox can include a\nchecked\nattribute with no value).\nBrowser window\n: Makes the block use a specific browser window. Multiple browser windows are not supported by Selenium Grid or external cloud providers such as\nSauce Labs\nand\nBrowserStack\n.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Sauce Labs",
+      "url": "https://saucelabs.com/"
+    },
+    {
+      "title": "BrowserStack",
+      "url": "https://browserstack.com/"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251113-092651.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f57e7ff318b50e92ccb42850126e40bcfbfa062922994e50552144d738fbcc50/image-20251113-092651.png?cb=e9c8de5b6e6a9ad74e5cafce354b1701"
+    }
+  ]
+}

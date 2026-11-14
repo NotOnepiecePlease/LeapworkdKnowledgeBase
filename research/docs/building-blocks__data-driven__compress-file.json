@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/compress-file",
+  "title": "Compress File",
+  "retrievedAt": "2026-11-13T21:12:55.504188+00:00",
+  "text": "Breadcrumbs\nThe\nCompress File\nblock generates a ZIP archive from one or more input files during the execution of a flow. This is especially useful when you need to pass multiple files to downstream blocks (for example\nSend email\nor\nWeb File Upload\n) as a single attachment.\nWhen fully expanded, the following is an example of the\nCompress File\nblock:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nCompress File\nonto the canvas.\nAdd one or more files in\nFiles\n(either by using\nAdd File\nor by connecting file outputs from earlier blocks).\nRun the flow when it’s ready and connect\nZip File\nto the next block that should use the compressed file.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nCompress File\nblock. You can rename it by double-clicking the header and typing a new title to keep flows readable and organized.\nFiles:\nDefines the list of files that will be compressed into a single ZIP archive.\nClick\nAdd File\nto select one or more files.\nFiles can also be provided dynamically from other blocks via the input connector.\nAll selected files are packaged together when the block executes.\nZip File:\nContains the resulting ZIP archive created by the block.\nUse the output connector to pass this ZIP file directly to other blocks, such as\nSend email\n,\nWeb File Upload\n, or\nSave file\n, as part of a larger workflow.\nFailed:\nTriggers if compression cannot be completed. Typical reasons include:\nNo input files were provided.\nThe input files exceed the 500 MB size limit.\nAn internal error occurred during compression.\nUse this connector to branch the flow for error handling, logging, or retry logic.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260114-081748.png",
+      "url": "https://docs.leapwork.com/__attachments/a_e57db4e8c2f019ec5dc48ed0fcc87c49186b24d891fb6665627ee72bad17d5ea/image-20260114-081748.png?cb=5f39f4179f875d5f8565a2f5caf74927"
+    }
+  ]
+}

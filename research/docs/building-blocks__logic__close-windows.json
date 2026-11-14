@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/close-windows",
+  "title": "Close Windows",
+  "retrievedAt": "2026-11-13T21:12:56.836718+00:00",
+  "text": "Breadcrumbs\nThe\nClose windows\nblock is used in Desktop automation to close or minimize all open windows on the desktop. When the block runs, it performs the selected action on every open window and then returns control to the rest of the flow.\nFully expanded, the block shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nClose windows\nonto the canvas.\nConnect the block in the flow and optionally adjust parameters such as\nAction\nand\nAwait no movement\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nClose windows\nblock. You can rename it at any time by double-clicking the header and typing a new title, which helps keep flows readable and organized.\nAction:\nDefines what should happen to the open windows when the block executes. You select in the dropdown whether all windows should be\nclosed\nor\nminimized\n, and the block will apply that action to every open window on the desktop.\nAwait no movement:\nWhen this option is selected, the block delays the close or minimize action until there has been no visible movement on the screen for a specified period (set in\nAwait Timeout\n). This is useful when you want to wait for a screen update to finish, such as a page loading in a browser window. Regardless of this setting, the action will still be performed after a maximum wait of 30 seconds.\nAwait Timeout:\nSpecifies, in seconds, how long the screen must remain without detected movement before the block proceeds when\nAwait no movement\nis enabled.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260108-131638.png",
+      "url": "https://docs.leapwork.com/__attachments/a_25cea2e21b9a92b02ada82407c0e3efabaee3d95d606572e6457de1d2961929a/image-20260108-131638.png?cb=5e69315264275099d2076804c778a5fa"
+    }
+  ]
+}

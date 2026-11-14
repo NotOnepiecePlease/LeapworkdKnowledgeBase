@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/setting-values/set-area",
+  "title": "Set Area",
+  "retrievedAt": "2026-11-13T20:25:34.487449+00:00",
+  "text": "Breadcrumbs\nThe\nSet area\nblock is used to define an area value, typically a region of the screen, using a position and size. This area value is then reused in other blocks such as\nFind text\nor\nClick image\nto limit their operation to a specific part of the screen.\nThe Set area block has only one property:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nSet area\nonto the canvas.\nSpecify the\nArea value\nand connect it to the blocks that should use this area.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nShows the name of the\nSet area\nblock. You can rename it by double-clicking the header and typing a new title. This block has no green execution connectors in the header because it is not executed on its own; it only provides an area value to other blocks.\nArea value:\nDefines the area as\nX, Y, Width, Height\ncoordinates, starting from the upper-left pixel of the screen. The top-left corner of the screen is position\n0, 0\n.\nYou can expand this parameter to work with the position (\nX, Y\n) and size (\nWidth, Height\n) separately, and you can pass the value to other blocks that accept an area input.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260108-101518.png",
+      "url": "https://docs.leapwork.com/__attachments/a_6a1ccadfe2e64d54a46bb0241984f0666bfa3975b7b2532dcbc16e4f684aa277/image-20260108-101518.png?cb=d7c4e6d35e4452aff7ebcee556f7043c"
+    }
+  ]
+}

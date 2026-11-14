@@ -1,0 +1,94 @@
+00:00:03.110 [Music]
+00:00:03.120 Welcome back to the testing the internet
+00:00:05.120 series. You're watching part five, drag
+00:00:07.839 and drop. In the last video, you learned
+00:00:10.880 how to automate checkbox interactions on
+00:00:12.880 a web page using Leapworks set web
+00:00:15.599 checkbox toggling checkbox states with
+00:00:18.480 ease. In this video, you're going to
+00:00:20.880 learn how to automate drag and drop
+00:00:22.560 actions in web automation. one of the
+00:00:24.640 more challenging parts of web testing
+00:00:26.800 because drag and drop can act
+00:00:28.240 differently depending on how the website
+00:00:29.920 is built. Have you ever struggled with
+00:00:32.320 automating drag and drop on web pages?
+00:00:35.200 Maybe you've tested sortable lists,
+00:00:37.280 moved cards around in a canban board, or
+00:00:39.920 rearranged items in a grid and noticed
+00:00:42.559 the automation either fails silently,
+00:00:44.800 drops in the wrong spot, or doesn't
+00:00:46.960 trigger the expected event.
+00:00:49.360 Drag and drop is one of the most common
+00:00:51.200 points of failure in web automation
+00:00:53.760 caused by dynamic DOM updates, front-end
+00:00:56.480 frameworks, or inconsistent drag
+00:00:58.559 behaviors across browsers. What if
+00:01:00.640 automating drag and drop took no code
+00:01:02.719 and no stress? Watch how Leapwork makes
+00:01:05.760 it effortless.
+00:01:07.520 The scenario is simple. We'll create an
+00:01:10.240 automation flow that drags the first web
+00:01:12.320 element and drops it onto the position
+00:01:14.240 of the second element using the drag web
+00:01:16.640 element block in Leapwork. Let's get
+00:01:18.960 started and build a drag and drop
+00:01:20.479 automation flow.
+00:01:22.960 Let's begin by starting the recorder and
+00:01:24.799 launching the drag and drop test case
+00:01:26.560 page.
+00:01:36.870 Once it's open, great. That's all we
+00:01:36.880 need. So, we'll save and close the
+00:01:38.799 recorder.
+00:01:46.389 Next, we'll add a weight block just to
+00:01:46.399 give us a quick pause before the drag
+00:01:48.079 action happens so we can see it clearly.
+00:01:51.680 Then, we'll add the drag web element
+00:01:53.680 block. This works by selecting one
+00:01:56.240 element to drag from and another to drag
+00:01:58.719 to. So, we'll capture the first box,
+00:02:01.759 element A.
+00:02:08.389 Then capture the second box, element B,
+00:02:08.399 as the drop target. To finish, we'll add
+00:02:11.360 a pass block.
+00:02:13.440 And now we're ready to run the test.
+00:02:26.710 The browser launches, opens the test
+00:02:26.720 case, waits for a second, performs the
+00:02:29.120 drag and drop,
+00:02:31.280 and just like that, the test passes. And
+00:02:34.640 that's how with the help of the drag web
+00:02:36.640 element block, you can make drag and
+00:02:38.800 drop automation simple, smooth, and done
+00:02:41.599 in just a few quick steps. Now, let's
+00:02:44.080 quickly recap the flow we followed to
+00:02:46.080 build the drag and drop automation
+00:02:47.920 scenario. We started by launching the
+00:02:50.480 recorder and opening the drag and drop
+00:02:52.640 test case page. Then, we saved and
+00:02:55.280 closed the recorder after capturing the
+00:02:57.120 page. Next, we added a wait block to
+00:02:59.920 pause briefly before the action. We used
+00:03:02.720 the drag web element block where we
+00:03:04.879 captured the first element box A to drag
+00:03:07.760 from and the second element box B to
+00:03:10.800 drag to. We added a pass block to end
+00:03:14.080 the flow successfully. Finally, we ran
+00:03:17.360 the test. Leapwork launched the browser,
+00:03:20.480 performed the drag and drop, and passed
+00:03:22.640 the test.
+00:03:28.309 What you learned? You learned how to
+00:03:28.319 automate drag and drop actions on a web
+00:03:30.640 page using Leapwork in just a few simple
+00:03:33.360 steps. From moving cards on a canban
+00:03:36.319 board to reordering lists, it's all
+00:03:38.560 possible and super easy for you now. If
+00:03:40.720 you can drag it, you can automate it.
+00:03:43.120 Give this exercise a try yourself and
+00:03:45.200 see how much faster your automation can
+00:03:47.200 be. Moreover, to keep learning or if you
+00:03:49.680 ever feel stuck, explore our
+00:03:51.440 documentation knowledge base and reach
+00:03:54.080 out to support if needed. The answers
+00:03:55.760 are just a click away. Thank you for
+00:03:57.920 staying with us and see you in the next
+00:03:59.680 automation journey.

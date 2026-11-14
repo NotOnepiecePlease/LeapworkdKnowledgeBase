@@ -1,0 +1,38 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/click-web-element",
+  "title": "",
+  "retrievedAt": "2026-11-13T18:44:23.472638+00:00",
+  "text": "Breadcrumbs\nThe\nClick Web Element\nbuilding block clicks a web element (for example a button or a div) in an already open browser window. When clicked, the web element is automatically scrolled into view. This block only works with browser windows that were previously opened using the\nStart Web Browser\nblock (or their child windows).\nSee the many different\nLearning Center video examples\nof how this works.\nFully expanded, the\nClick Web Element\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nClick Web Element\nonto the canvas.\nConnect the block in the flow and specify the basic parameters required for this block to operate:\nSelect Web Element\n. Optionally, you can adjust other parameters if needed.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when the web element has been successfully clicked. You can rename the block title (“Click Web Element”) by double-clicking it and typing a new title.\nSelect Web Element\n: The locator for the web element to click. You can capture a locator by right-clicking and selecting\nCapture new web element\n, edit it via\nEdit web element\n, and clear it via\nClear web element\n.\nButton\n: Selects which mouse button to use and whether the click should be a single or double click. By default, the left mouse button is selected.\nFound element\n: Contains the found web element in the browser window, which can be reused as a source element in other building blocks to narrow down later searches (for example, inside a table).\nNot found\n: Triggers if the web element is not found before the timeout. This is typically used to branch execution flow or to explicitly fail a case by linking it to a\nFail\nblock.\nPosition found\n: The browser canvas position where the web element was found in\nX, Y\ncoordinates (top-left is\n0, 0\n). Use the expander to work with X and Y separately. Web elements that are not visible (for example hidden by CSS) will have position\n0, 0\n.\nArea found\n: The browser canvas position and size of the found web element in\nX, Y, Width, Height\ncoordinates, starting with the upper-leftmost pixel. Use the expander to work with position/size and nested sub-properties separately.\nAttributes\n: A list of all attributes on the found web element as key–value pairs (including standard HTML attributes such as class/style/href and custom data-xxx attributes). For direct attribute lookup, the\nGet Web Attribute\nbuilding block can be useful.\nCSS values\n: Currently unused.\nVisible\n: Returns\nTrue\nif the found web element is visible.\nTag name\n: The tag name of the found web element (for example\ndiv\n,\ntr\n,\nbutton\n, or\ninput\n).\nSource element\n: Limits the locator to only search inside the specified source element (for example, searching for a specific\ntr\n/\ntd\ninside a previously found table element).\nBrowser window\n: Makes the block use a specific browser window. Multiple browser windows are not supported by Selenium Grid or external cloud providers such as Sauce Labs and BrowserStack.\nUse occurred\n: Selects which occurrence of the web element to click when more than one match is found. Select\nAll\nto iterate through all occurrences (this shows\nCurrent index\nand\nCompleted\n).\nCount\n: The total number of found web elements that match the configured locator.\nCurrent index\n: When iterating through all occurrences, contains the current index (for example\n1\n, then\n2\n, then\n3\n).\nCompleted\n: Triggers when the iteration of all occurrences has completed.\nDefault timeout\n: If the checkbox is not selected, the timeout is\n10 seconds\n. If the checkbox is selected, the\nDefault timeout\nvalue from the flow settings applies.\nTimeout\n: The maximum time spent searching for the web element before giving up and triggering\nNot found\n. This is separate from the case\nglobal timeout\nin\nSettings\n, which can cancel a run if the whole case exceeds it.\nScroll to find\n: When set to a value other than\nNone\n, the block uses scrolling while searching for the web element. This can be useful for scrollable pages where elements load asynchronously (for example infinite scroll).\nMax repeats\n: The maximum number of scroll actions to perform before giving up searching for the web element.\nAmount\n: The amount of scrolling performed on each scroll repeat.\nDelay (sec)\n: The delay in seconds between each scroll amount.\nRequire valid imgs\n: When checked, any locator that targets an image (img tag) also validates that the image loads correctly by sending an HTTP request to the image source and verifying a\n200\nresponse.\nAwait DOM change\n: Delays the search until there have been no changes to the page’s DOM for a specified period (for example, 3 seconds). Regardless of this checkbox, the search proceeds after waiting a maximum of\n30 seconds\n.\nAwait Timeout\n: The number of seconds the DOM must have had no changes before proceeding.\nAwait Requests\n: Delays the search until there have been no active XHR requests for a specified period (for example, 3 seconds). Regardless of this checkbox, the search proceeds after waiting a maximum of\n30 seconds\n.\nAwait Timeout\n: The number of seconds no XHR requests must have been active before proceeding.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.\nStrategy Editor\nGuidelines for understanding and using the Strategy Editor in Leapwork to define, refine, and validate robust locator strategies for UI elements using DOM structure, tokens, and wildcards.",
+  "links": [
+    {
+      "title": "Learning Center video examples",
+      "url": "https://www.leapwork.com/services/learning-center/home"
+    },
+    {
+      "title": "Fail",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/start-stop/fail"
+    },
+    {
+      "title": "Get Web Attribute",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/get-web-attribute"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    },
+    {
+      "title": "Strategy Editor",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/strategy-editor"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260207-112317.png",
+      "url": "https://docs.leapwork.com/__attachments/a_e2f69b5ba79e87d6dbd162a6db9725afd446736b1fb5f96ddbe88b377d4c8cfd/image-20260207-112317.png?cb=77913c88c1cb3e8ba1a8e005932998fa"
+    }
+  ]
+}

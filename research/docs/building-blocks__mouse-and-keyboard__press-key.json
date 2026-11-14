@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/press-key",
+  "title": "Press Key",
+  "retrievedAt": "2026-11-13T20:18:29.111528+00:00",
+  "text": "Breadcrumbs\nThe\nPress Key\nbuilding block presses and\nholds\na keyboard key (or key combination) until it is released. This is useful when you need to keep a modifier key pressed during another action, such as holding\nCTRL\nwhile dragging the mouse. The block is typically used together with the\nRelease Key\nblock.\nSee the\nPress and hold a key lesson\nfor an example of how this works.\nFully expanded, the\nPress key\nblock shows the following properties:\nQuick-start\nDrag\nPress Key\nonto the canvas.\nConnect the block in the flow and optionally specify the basic parameters required for this block to operate:\nKeys\n(use\nCapture\n) and, if needed,\nAwait no movement\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing and press (and hold) the selected key(s) until released. The green output connector triggers when the key has been pressed. You can rename the block by double-clicking the header text and typing a new title.\nKeys\n: Defines a single key or a combination of keys to press and hold. This value can only be entered by clicking\nCapture\n.\nCapture\n: Captures a key or key combination into\nKeys\n. This makes it easier to use special key combinations such as\nCTRL+C\nor\nENTER\n.\nAwait no movement\n: Delays the key press until there has been no movement on the screen for a specified period (for example, two seconds). This is useful when waiting for a screen update (such as a page loading). Regardless of this checkbox, the key press occurs after waiting a maximum of\n30 seconds\n.\nAwait Timeout\n: Sets the number of seconds the screen must have seen no movement before the block proceeds.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Press and hold a key lesson",
+      "url": "https://www.leapwork.com/services/learning-center/pressing-the-keys"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260129-133810.png",
+      "url": "https://docs.leapwork.com/__attachments/a_000cd45db1642db3b0c7e5bb2f8fa9b1278f373a8ff60299e7c8b9e593e96591/image-20260129-133810.png?cb=65f1ef34bd494a2e07f06636707c81b2"
+    }
+  ]
+}

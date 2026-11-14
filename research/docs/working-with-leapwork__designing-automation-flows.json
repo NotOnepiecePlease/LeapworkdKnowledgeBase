@@ -1,0 +1,98 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows",
+  "title": "",
+  "retrievedAt": "2026-11-13T18:44:20.610880+00:00",
+  "text": "Breadcrumbs\nAutomation flows in Leapwork are designed visually, without writing any code.\nIn Leapwork Flow, every flow is built by\nconnecting\nbuilding blocks\non the\nDesign Canvas\nto define:\nLogic\nData flow\nOutcomes\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nUnderstanding the studio layout\nLeapwork Flow consists of four main areas:\nLeft navigation menu:\nAccess modules such as\nFlows\n,\nRun Lists\n,\nReporting\n,\nAgents\n,\nSettings\n, and more.\nFlows panel:\nOrganizes your flows, folders, and subflows in a structured tree view, allowing you to manage and navigate automation assets.\nTop toolbar:\nContains key controls like\nRun\n,\nSave\n,\nZoom\n,\nAgent selection\n, and\nStatus settings\n.\nDesign canvas:\nThe central workspace where automation flows are built using visual building blocks and connectors. It supports zoom, pan, and alignment tools to help you arrange blocks neatly and keep flows easy to read.\nInspector panel:\nLocated on the right, it displays and allows editing of the properties for the selected block.\nThe flows panel\nThe Flows panel is where your automation assets live. It includes:\nFolders\n: to group flows and related items\nFlows\n:\nthe individual automation processes\nSubflows\n:\nreusable flow components\nCaptured elements\n: UI elements used during automation\nThis section allows you to organize your work, create new assets, and interact with flows via right-click or the\nNew\nbutton.\nHow to design a flow\nDesigning a flow in Leapwork Flow means building automation visually on the design canvas using building blocks connected in sequence to define both logic and data flow. Each flow begins with a\nStart\nblock by default, and from there, you can expand it into simple or complex automation, all without writing a single line of code.\nThe design canvas\nThe\nDesign Canvas\nis the central workspace where flows are created and edited. Here, you connect blocks to define the order of execution and how data moves between steps.\nThe canvas supports full\nzoom\n,\npan\n, and\nalignment tools\n, helping you keep your flows organized and readable. Blocks are connected using two types of visual connectors:\nGreen connectors\ndefine the execution order and indicate what happens next.\nBlue connectors\npass data or properties between blocks and show how values flow.\nWith the latest design update, connectors (or\nwires\n) are now more flexible. You can\ncreate elbows by double-clicking on a wire\n, allowing you to shape paths, tidy up complex layouts, and align flows for better clarity.\nSteps to Design a Flow\nCreate a new flow\n: In the Flows Panel, click the New Flow button or right-click and select New Flow from the list (\nManual and Build with AI\n). A blank canvas opens with a Start block in place, ready for you to begin designing.\nAdd building blocks:\nOnce the flow is created, you can start adding blocks to define the automation logic.\nHover over the green connector of the Start block (or any block) and drag to open the Building Block Library. You can also right-click anywhere on the canvas and choose Add Building Block.\nb. Select a block from the list to add it to the flow.\nConnect blocks:\nLink the blocks together using connectors to define execution order and data flow.\na.\nGreen connectors\ndefine the execution order and indicate what happens next.\nb.\nBlue connectors\npass data or properties between blocks and show how values flow. You can use both types of connectors between the same two blocks when a step requires both logic and data exchange.\nConfigure block properties:\nClick on a block to open its Inspector Panel on the right side of the screen.\na. Configure each block’s parameters, inputs, and outputs.\nb. Expose additional data paths by toggling the small green or blue checkboxes beside each property.\nReorganize and refine your flow\na. Rearrange blocks by dragging them across the canvas to improve layout and readability.\nb. Create elbows by double-clicking on a wire to shape paths and align flows neatly.\nc. Use alignment and zoom tools to keep complex flows structured and clear.\nRun the flow\na. Select the execution agent in the top toolbar: Local (Display 1) or a Remote Agent.\nb. Click Run to execute the flow.\nNote:\nLocal (Display 1) runs in Preview mode and is visible on your screen. Any Remote Agent runs as a standard Run, intended for scheduled or unattended executions.\nVerifying Flows\nVerification ensures your automation ends with a clear and meaningful result. Leapwork encourages the explicit use of\noutput blocks\nto mark the outcome of every flow. We recommend always ending a flow with one of the following:\nPass\n: When the flow completes successfully\nDone\n: For neutral or informational end states\nFail\n: When the automation detects a failure condition\nIf none of these blocks are reached during execution, Leapwork automatically considers the flow\nfailed\n.\nThis prevents silent errors and ensures accurate reporting in dashboards and analytics.\nBest practice:\nAlways end with a Pass, Fail, or Done block to ensure predictable results.\nBranching Flows\nFlows often include logic branches that determine which path to take based on conditions during execution.\nFor example, a\nCompare\nblock can evaluate a condition and output through:\nThe\ntop green connector\nfor\nTrue\nThe\n“Incorrect” output connector\nfor\nFalse\nUsing these exact connector labels helps users trace logic directly in the interface.\nYou can also create branches with blocks like\nFind\nimage which trigger alternate paths depending on whether the image is found or not.\nYou can create elbows on branch wires to keep paths tidy and readable in complex designs.\nLooping Inside Flows\nUse the\nLoop\nblock to repeat steps.\nIt cycles through a range (for example, 1–10) or collection, executing the connected blocks in each iteration.\nLoops are especially useful for working with tables, lists, repeated form fields, or dynamic UI elements.\nPreview Panel and Activity Log\nLeapwork's new design offers an improved way to debug flows directly on the canvas.\nUse blocks from the\nError Handling\nsection, such as\nAny Error,\nto capture and analyze issues during execution.\nWhen a flow encounters an error, the\nAny Error\nblock provides:\nImmediate feedback on the\ntype of error\nthat occurred.\nA clear indication of\nwhere in the process\nthe error occurred.\nA\ndirect link\nto the block that caused the issue, enabling quick inspection and resolution.\nIn the\nActivity Log\n,\nEach error entry links directly to its block on the canvas.\nThe video and debug view clearly explain why the flow failed and where to focus your investigation, step by step.\nThis debugging method enhances visibility and shortens troubleshooting time by enabling identification, reproduction, and resolution of automation issues within the canvas.\nCoPilot Investigation Analysis\nCoPilot\nexplains\nwhy\na flow failed by analyzing the run and providing likely root causes with actionable recommendations within the\nActivity Log\n.\nYou can configure this behavior in\nDefault Flow Settings\n, to apply CoPilot automatically to:\nPreview Runs\nRun Lists & Schedules\nOr both\nIf enabled, CoPilot analysis appears after a failed run. Otherwise, trigger it manually by clicking the\nCoPilot Analysis\nbutton in the Activity Log.\nCoPilot assists by:\nHighlighting the most probable reason for failure\nSuggesting what to check or modify\nReducing trial-and-error debugging time\nThis feature is especially useful for new users and for diagnosing complex flows quickly.\nCoPilot helps speed up troubleshooting by:\nHighlighting the most likely reason for failure\nSuggesting what to check or modify\nReducing the need for trial-and-error debugging\nThis helps new users and clarifies complex flows where issues may be unclear.\nVersioning and Collaboration\nLeapwork provides version history to track and manage changes. When saving a flow, you’re prompted to add a description.\nEach version can be:\nPreviewed\nRestored\nusing one of three methods:\nThe three methods are:\nOnly Flow:\nRestores the flow’s structure and logic (building blocks and their connections), but\nkeeps the most recent Locators (captured UI elements).\nThis is useful when logic needs to be rolled back but element selectors remain valid and updated.\nFull Restore:\nRestores both the flow’s structure and the captured Locators as they were at the time of that version. Use this when you need a complete rollback, including the exact UI elements that were captured earlier.\nBe cautious: if the application has changed since the version was saved, outdated Locators may cause the flow to fail.\nFull Copy:\nRestores the selected version into a duplicate flow, including all Locators — without overwriting the current flow.\nThis is ideal when you want to compare versions side-by-side or keep the current flow intact.\nDeleted\n: The Delete option in the Version History panel allows you to either archive or permanently delete the corresponding version data.  Here’s what each option entails:\nArchive\n: This option archives a version of a flow. A single confirmation dialog will appear, explaining that the flow will no longer be visible in the Flow but will remain in the database.\nNote\n: Archiving a version will create an audit log entry showing Archived in the Details column.\nPermanent Delete\n: This option permanently deletes a version of a flow. There will be two confirmation dialogs:\nOne to explain that the flow will be removed from both the database and Flow\nOthers to explain that the operation is irreversible.\nNote\n: Deleting a version permanently will create an audit log entry showing Permanently deleted in the Details column.\nIf someone is editing a flow, Leapwork warns you before you override their work.",
+  "links": [
+    {
+      "title": "building blocks",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks"
+    },
+    {
+      "title": "Flows :",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/flows"
+    },
+    {
+      "title": "Subflows :",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/sub-flows"
+    },
+    {
+      "title": "Find",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/find-image"
+    },
+    {
+      "title": "Loop",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/loop"
+    },
+    {
+      "title": "Error Handling",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/error-handling"
+    },
+    {
+      "title": "Default Flow Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/default-flow-settings"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260525-104737.png",
+      "url": "https://docs.leapwork.com/__attachments/a_674fff735673f16ca5be127207260912afbce38052fd580b94832cf6daa1841c/image-20260525-104737.png?cb=97b87fec6e4991f234ae95a72c03ecf2"
+    },
+    {
+      "alt": "image-20260525-105020.png",
+      "url": "https://docs.leapwork.com/__attachments/a_44314b1d2f01247862ce986ed0cfa12141e82b014362a463d504226fbc6bcda8/image-20260525-105020.png?cb=5e34ccc360b7feb87adbe294a5e5d7ee"
+    },
+    {
+      "alt": "designing_2",
+      "url": "https://docs.leapwork.com/__attachments/a_1b12250d5589cec94d1a4ee05bde2a81e891f42a425db650d9754dea42a022ce/designing_2.png%3Fwidth=1838&height=791&name=designing_2.png?cb=8feeed30998eb8a98b3457ed541a7a61"
+    },
+    {
+      "alt": "image-20260520-130219.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f5bc02ca7ab06a77469ccb3417be383ddfec1642e4c0a21d8ef38ec2ea8982ab/image-20260520-130219.png?cb=f8dde02ef58f21b8b267c4fa530f68f8"
+    },
+    {
+      "alt": "image-20260520-125830.png",
+      "url": "https://docs.leapwork.com/__attachments/a_8b8b712ce16c208e51bb083ba052cd89258f58272960f600efe55f0922413c9b/image-20260520-125830.png?cb=76d79e99a45e69240b94a98791cd6ebe"
+    },
+    {
+      "alt": "image-20260313-065812.png",
+      "url": "https://docs.leapwork.com/__attachments/a_ebbd92fb0dee87ee5d0309727ecca33f47f8dedcc54363361655b6e13354b37c/image-20260313-065812.png?cb=d8605fe4ad1746bb9a3a0fd3c8c9a5cb"
+    },
+    {
+      "alt": "image-20260109-091118.png",
+      "url": "https://docs.leapwork.com/__attachments/a_360c1bef50f603e600d56eb1cba3186bfbf33cad970ca5a018b6b7c058d854d4/image-20260109-091118.png?cb=8bd7ce98bc614a416a1a35c23f1e6935"
+    },
+    {
+      "alt": "image-20260520-130724.png",
+      "url": "https://docs.leapwork.com/__attachments/a_8a1dc35f79143f2d844fd18238fcc565e7726d87056fecfb1f33b10414a8ee4c/image-20260520-130724.png?cb=2df66219e68182795c459d23c93d9074"
+    },
+    {
+      "alt": "designing_branching",
+      "url": "https://docs.leapwork.com/__attachments/a_58283c8c97dcab9cebfeba31434841eb4a52df564fb93b7652e0e60806d3b4f3/designing_branching.png%3Fwidth=416&height=179&name=designing_branching.png?cb=e068ba222f108ffe04b96fc0a32eec11"
+    },
+    {
+      "alt": "designing_branching2",
+      "url": "https://docs.leapwork.com/__attachments/a_57b379d110c60c970a29ac06f47991abdf3d95943486e7bfc82daf1012735a36/designing_branching2.png%3Fwidth=126&height=461&name=designing_branching2.png?cb=476f302814fd406543eef3ffba693c73"
+    },
+    {
+      "alt": "image-20260520-142147.png",
+      "url": "https://docs.leapwork.com/__attachments/a_97713ae9455421be2e0581dd0db8c2d2be5bfabedb0cccf42f926d5d19a2c7eb/image-20260520-142147.png?cb=11c3d1a67d74c871290b37ad7606236b"
+    },
+    {
+      "alt": "image-20260520-134023.png",
+      "url": "https://docs.leapwork.com/__attachments/a_1cb46a004d40c017e507de62500e818276554c21823b1cc153122e41656e2091/image-20260520-134023.png?cb=c4ca19850f024ea62fc183149b41bb20"
+    },
+    {
+      "alt": "designing_verifying_fail_2",
+      "url": "https://docs.leapwork.com/__attachments/a_eba2a182ec54f3b0600493d81fde7aba260275178bf1999642d38d9739c1960b/designing_verifying_fail_2.png%3Fwidth=703&height=494&name=designing_verifying_fail_2.png?cb=25528e0827f850dec8f77dd47e6c831e"
+    },
+    {
+      "alt": "image-png-Jun-22-2023-07-29-05-2291-PM.png?width=283&height=195&name=image-png-Jun-22-2023-07-29-05-2291-PM.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d0d88eb9f0ac4ac41f9c4b279cfcf42ad76b5a3da5f4a76aaece01af06281e8e/image-png-Jun-22-2023-07-29-05-2291-PM.png%3Fwidth=283&height=195&name=image-png-Jun-22-2023-07-29-05-2291-PM.png?cb=bfae5f135c4e369f88039fe18b391b28"
+    },
+    {
+      "alt": "image-20260313-102729.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d03437325e0f0a72965c7715b2ba6daca27cd2de9e485f869e2e815c7e2959c5/image-20260313-102729.png?cb=b772030e773cd4a1f38056314f85a9e8"
+    }
+  ]
+}

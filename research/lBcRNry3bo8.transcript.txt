@@ -1,0 +1,118 @@
+00:00:03.190 [Music]
+00:00:03.200 Welcome to the part 29 in testing the
+00:00:05.359 internet series typos. In the previous
+00:00:08.320 video, you looked at the data tables
+00:00:10.320 test case in the internet app. In this
+00:00:12.559 video, you'll learn how to test web
+00:00:14.320 elements even when the text isn't always
+00:00:16.320 perfect, like typos or slight
+00:00:18.400 variations. When automating web tests,
+00:00:21.520 you've likely run into problems like
+00:00:23.119 misspelled button labels, text that
+00:00:25.199 changes across environments, or dynamic
+00:00:27.760 content that shifts just enough to break
+00:00:29.679 exact matches. These issues stem from
+00:00:32.640 most automation tools depending on exact
+00:00:34.880 text comparisons. That's where Leapwork
+00:00:37.600 can help you. We'll take a simple
+00:00:39.520 scenario to demonstrate. In this case,
+00:00:41.680 we can see that each time I refresh the
+00:00:43.680 browser, sometimes it's a comma. If I
+00:00:46.160 again refresh the page,
+00:00:48.879 sometimes it's an apostrophe. And as you
+00:00:51.440 can see, it seems kind of random when it
+00:00:53.360 comes in, but no matter how it's
+00:00:55.039 spelled, we should be able to select
+00:00:56.640 this whole element. So in leapwork, what
+00:00:59.359 we're going to do is to loop 10 times
+00:01:01.039 over this. Just refresh the page and
+00:01:03.600 make sure that we select the whole
+00:01:04.960 element each time, even though that
+00:01:06.960 there might be typos from time to time.
+00:01:09.680 Let's automate this scenario in
+00:01:11.200 leapwork. We start by launching the test
+00:01:13.920 case.
+00:01:32.149 Then we'll capture the target text using
+00:01:32.159 the find web element block. Since we
+00:01:34.400 need to locate it despite shifting
+00:01:35.920 positions,
+00:01:37.600 let's save and close the recorder. And
+00:01:39.600 then we've to add a loop block 1 to 10
+00:01:41.759 between start web browser and find web
+00:01:44.000 element block. So the check runs
+00:01:46.000 multiple times.
+00:01:56.069 We've set the minimum value of one and
+00:01:56.079 maximum value of 10 to repeat the check
+00:01:58.560 10 times.
+00:02:00.479 We'll edit the web element to review the
+00:02:02.399 strategy and make sure it doesn't rely
+00:02:04.240 on any text that could contain typos.
+00:02:17.830 In this case, we can simply select the
+00:02:17.840 div with class example that includes a
+00:02:20.480 tag. This is enough to identify the
+00:02:22.800 element regardless of any typos in the
+00:02:25.200 visible text. Let's save the strategy.
+00:02:29.599 If the target text is found, we'll add a
+00:02:32.080 navigate web block to refresh the page.
+00:02:47.589 And if it can't find it, we're going to
+00:02:47.599 add a failed block.
+00:03:08.390 So after we hopefully iterated all of
+00:03:08.400 these, we're going to add a passing
+00:03:10.159 block like this.
+00:03:53.509 So as we can see the typos comes in and
+00:03:53.519 out and the test case ended in status
+00:03:55.840 passed meaning that it found the element
+00:03:58.000 all 10 times. So this is a good example
+00:04:01.120 of just by selecting the right locator
+00:04:03.120 strategy. You will be independent of
+00:04:05.280 typos and other variations that you're
+00:04:07.120 not really interested in handling within
+00:04:08.879 your test. This was all about the
+00:04:11.120 today's video. Let's look at the
+00:04:13.360 summary.
+00:04:15.680 We launched the browser with the help of
+00:04:17.440 start recorder and launch typos test
+00:04:19.680 case page. Then we added a loop block
+00:04:23.120 configured to run 10 times to ensure
+00:04:25.120 consistency across multiple refreshes.
+00:04:28.479 Inside the loop, we used a find web
+00:04:30.880 element block to locate the element
+00:04:32.880 containing the paragraph text. Selecting
+00:04:35.040 the strategy that ignores the typo
+00:04:36.960 variations, specifically targeting a div
+00:04:39.680 with the class example and its child p
+00:04:41.919 tag. We verified and edited the web
+00:04:44.720 element strategy to ensure it wasn't
+00:04:46.560 dependent on any dynamic or typonerone
+00:04:49.120 text content. After locating the
+00:04:51.520 element, we inserted a navigate web
+00:04:53.919 block to refresh the page and included a
+00:04:56.639 fail block in case the element wasn't
+00:04:58.560 found. Finally, after the loop completed
+00:05:01.759 successfully all 10 times, we added a
+00:05:04.479 pass block to mark the test as passed.
+00:05:07.280 This demonstrated that using a robust
+00:05:09.440 locator strategy can make the automation
+00:05:11.840 resilient to minor text changes like
+00:05:14.000 typos.
+00:05:16.960 Now you know how to make your automation
+00:05:18.800 smart enough to handle typos and text
+00:05:20.720 changes, keeping your test strong and
+00:05:22.880 running smoothly no matter what. Give
+00:05:24.880 this exercise a try yourself and see how
+00:05:27.120 much faster your automation can be. And
+00:05:29.199 that brings us to the end of this
+00:05:30.720 series. If you've made it this far,
+00:05:33.680 great job. You've taken a big step
+00:05:36.160 forward in mastering smart no test
+00:05:38.720 automation. We'll be back soon with more
+00:05:40.639 videos to take your automation skills
+00:05:42.320 even further. Until then, stay curious
+00:05:45.520 and keep building better tests the
+00:05:47.360 leapwork way. Moreover, to keep learning
+00:05:50.080 or if you ever feel stuck, explore our
+00:05:52.400 documentation knowledge base and reach
+00:05:54.960 out to support if needed. The answers
+00:05:56.639 are just a click away. Thank you for
+00:05:58.800 staying with us and see you in the next
+00:06:00.560 automation journey.

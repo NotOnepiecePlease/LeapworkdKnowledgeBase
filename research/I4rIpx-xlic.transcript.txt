@@ -1,0 +1,111 @@
+00:00:02.230 [Music]
+00:00:02.240 Welcome back to testing the internet
+00:00:04.080 series. You're watching part 17 iframes.
+00:00:08.160 In the previous video, you learned how
+00:00:10.240 to handle hover effects on web pages
+00:00:12.080 using leapwork. In this video, you'll
+00:00:14.960 learn how to simplify automating
+00:00:16.560 interactions with iframes,
+00:00:19.279 something that often slows down or
+00:00:21.039 complicates web test automation. Are you
+00:00:23.600 also facing the similar challenge? Are
+00:00:26.160 you trying to automate a login form, a
+00:00:28.320 payment popup, or a text editor? Is your
+00:00:31.519 test failing to click, type, scroll, or
+00:00:34.480 even detect the element even though
+00:00:36.399 everything looks fine in the browser?
+00:00:38.719 You inspect the element and it's right
+00:00:40.559 there, but nothing works. Chances are
+00:00:43.680 it's inside an iframe. If you've used
+00:00:45.760 Selenium, you know it takes extra steps,
+00:00:48.480 switching frames, handling X paths, and
+00:00:51.360 it often takes more time than expected.
+00:00:54.160 In this video, we'll show you a simpler
+00:00:56.399 way to automate iframes using Leapwork.
+00:00:58.719 No code, just a few easy steps. To begin
+00:01:01.280 the test case, we'll use the Tiny MCE
+00:01:03.920 editor inside an iframe as an example.
+00:01:06.320 The goal is we will type some text here
+00:01:08.240 and we'll turn it into a list. Let's get
+00:01:10.479 started. In Leapwork Studio, we'll start
+00:01:13.520 the recorder and capture each step one
+00:01:15.360 by one.
+00:01:23.030 Click on the plus sign and select start
+00:01:23.040 web browser. In the web address field,
+00:01:25.840 enter the URL pointing to iframes test
+00:01:28.159 case and click on start button. The page
+00:01:31.280 loads and it's here. Next, let's capture
+00:01:34.479 the allow all cookies button and set it
+00:01:36.560 to be clicked. We'll use the click web
+00:01:38.479 element to click the allow all cookies
+00:01:40.479 button. Click apply.
+00:01:47.429 The button is successfully clicked. The
+00:01:47.439 next step is to type text in iframes
+00:01:49.600 editor. Let's capture this area to focus
+00:01:51.759 and type the text.
+00:01:54.720 Now we will select type web text. Then
+00:01:58.079 enter Leapwork support iframes in the
+00:02:00.159 text value field.
+00:02:07.990 Since we're entering text, we'll set the
+00:02:08.000 type to text.
+00:02:10.720 You can also choose password if needed.
+00:02:13.120 For now, we'll pick text and click
+00:02:15.120 apply.
+00:02:24.309 The text appears correctly in the input
+00:02:24.319 field. Now to open formatting toolbar
+00:02:26.560 options, we will simply capture this
+00:02:28.879 three dots icon and set it to be
+00:02:30.560 clicked. We'll go with click web element
+00:02:32.720 to click the toolbar icon.
+00:02:42.150 It's clicked. And now we can choose from
+00:02:42.160 the available toolbar options. Let's
+00:02:44.319 capture the bullet list option. We'll
+00:02:47.120 use click web element again to select
+00:02:49.040 the bulleted list.
+00:02:51.680 The text is now bulleted as expected.
+00:02:54.720 After completing all steps, now we just
+00:02:57.120 save and close the recorder.
+00:03:05.670 Yes. Did you see how fast that was? All
+00:03:05.680 done in just a few clicks. Let's connect
+00:03:08.640 pass block.
+00:03:16.869 We're all set to execute the flow. Let's
+00:03:16.879 click on run. Let's see the automation
+00:03:19.280 flow in action.
+00:03:46.390 The flow executes successfully and it is
+00:03:46.400 passed. You can check the activity log
+00:03:48.560 to see that all steps executed smoothly.
+00:03:51.440 The test case page was launched using
+00:03:53.280 the start web browser block followed by
+00:03:55.519 clicking the allow all cookies button.
+00:03:58.319 The text was then typed into the editor
+00:04:00.480 which is also visible in the recording
+00:04:02.239 panel. The three dots icon was clicked
+00:04:05.120 to reveal formatting options and bullet
+00:04:07.680 list option was clicked to convert the
+00:04:09.360 text into a bulleted list. And that's
+00:04:11.599 it. Leapwork makes automating iframes
+00:04:14.560 simple, fast, and stress-free. Now,
+00:04:17.280 let's quickly recap the flow we followed
+00:04:19.199 to build this iframe automation
+00:04:20.959 scenario.
+00:04:22.639 We began by working with an Ira
+00:04:24.720 containing a tiny MCE editor. After
+00:04:27.440 allowing cookies, we typed text inside
+00:04:30.160 the iframe editor and turned it to a
+00:04:32.400 bulleted list. Each step was recorded
+00:04:34.800 and executed smoothly through start
+00:04:36.720 recorder feature. Our test case ran
+00:04:38.960 successfully with each step executed as
+00:04:41.520 expected. What you learned today? How
+00:04:44.240 easy it is to automate iframes using
+00:04:46.160 leapwork visually and without code. Now
+00:04:49.600 automating I frames is easy for you.
+00:04:51.919 Give this exercise a try yourself and
+00:04:53.919 see how much faster your automation can
+00:04:55.919 be. Moreover, to keep learning or if you
+00:04:58.320 ever feel stuck, explore our
+00:05:00.160 documentation knowledge base and reach
+00:05:02.720 out to support if needed. The answers
+00:05:04.400 are just a click away. Thank you for
+00:05:06.560 staying with us and see you in the next
+00:05:08.400 automation journey.

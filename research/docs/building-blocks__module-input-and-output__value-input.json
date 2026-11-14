@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/value-input",
+  "title": "Value Input",
+  "retrievedAt": "2026-11-13T18:59:35.742841+00:00",
+  "text": "Breadcrumbs\nThe\nValue Input\nblock is used to provide an input value into a sub-flow from outside that sub-flow. It exposes a value that can be mapped when the sub-flow is called and then reused by any blocks inside the sub-flow that need that value.\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nValue Input\nonto the canvas.\nSpecify the basic parameters required for this block to operate:\nInput\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\nThe block header shows the current name of the Value Input block. You can rename it at any time by double-clicking the header and typing a new title, which helps keep sub-flows readable and easier to understand.\nInput\nThe\nInput\nparameter represents the value that is passed into the sub-flow from the calling flow. To make this value available inside the sub-flow, you connect\nInput\nto the desired properties of the blocks that need it. When the sub-flow is used, the calling flow provides the actual value, which is then distributed wherever the\nInput\noutput has been connected.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251203-095349.png",
+      "url": "https://docs.leapwork.com/__attachments/a_87d67a3bec63173c2d35736dd337c138f666ec6e31080620544cc91766ed9d11/image-20251203-095349.png?cb=c893a802d65283f7432e9c1c5946d606"
+    }
+  ]
+}

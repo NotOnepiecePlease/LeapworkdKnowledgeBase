@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-number",
+  "title": "Generate‎ Number",
+  "retrievedAt": "2026-11-13T21:12:57.061132+00:00",
+  "text": "Breadcrumbs\nThe\nGenerate number\nbuilding block generates whole or decimal numbers within a minimum and maximum range, and it can optionally generate only odd or even values.\nSee the\nDrive data with Excel\nlesson for examples on how to use the Generate number block.\nFully expanded, the\nGenerate number\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nGenerate number\nonto the canvas.\nConnect the block in the flow and specify the basic parameters required for this block to operate:\nMinimum, Maximum\n. Optionally, you can adjust other parameters if needed.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing and generate one new number value. The green output connector triggers when the number has been generated. You can rename the block title (“Generate number”) by double-clicking it and typing a new title.\nMinimum\n: The minimum (inclusive) number to generate.\nMaximum\n: The maximum (inclusive) number to generate.\nResult value\n: The generated number value.\nType\n: Selects whether to generate\neven numbers\n,\nodd numbers\n, or\nboth\n.\nDecimals\n: Sets how many decimal digits the random value is rounded to. The default is\n0\n, which means generated values are integers.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Drive data with Excel",
+      "url": "https://www.leapwork.com/services/learning-center/drive-data-with-excel"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260207-103113.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d2df793adef2308f6b214e7600c3eae824ed403570ed0f80c0c6f54323f39b57/image-20260207-103113.png?cb=1909deff84e0934682166d921794dd6d"
+    }
+  ]
+}

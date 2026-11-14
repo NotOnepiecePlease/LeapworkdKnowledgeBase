@@ -1,0 +1,30 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/variables/get-variable",
+  "title": "Get Variable",
+  "retrievedAt": "2026-11-13T19:24:45.353247+00:00",
+  "text": "Breadcrumbs\nThe\nGet variable\nbuilding block retrieves the value of a variable and makes it available to other building blocks. Variables can be scoped so they are available only within the same case run, across all cases in a schedule run, or permanently for as long as the project exists.\nA variable must be defined using\nSet Variable\nbefore you use\nGet variable\n. If the variable does not exist, the block throws an error and the\nDefault value\nis used instead (for example:\nVariable 'NameOnGetVariable' does not exist, default value ...\n).\nSee the\nUse Numbers and Variables\nlesson for examples on how to use variables.\nFully expanded, the\nGet Variable\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nGet variable\nonto the canvas.\nSpecify\nVariable name\n, choose\nScope\n, and optionally set\nDefault value\n. Then connect\nResult value\nto the next block that needs the variable value.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: Shows the current title of the block. You can rename it by double-clicking the header text and typing a new title. This block has\nno green input or output connectors\nin the header because it is not explicitly executed. Instead, it retrieves a value and delivers it to other blocks.\nVariable name\n: The name of the variable to retrieve. Variable names are\ncase-sensitive\n.\nResult value\n: Outputs the retrieved variable value so it can be passed to other building blocks.\nScope\n: Defines where the block looks for the variable.\nOnly this case\n: The variable exists only during the execution of the current case run. This is the default and usually the most appropriate choice.\nSchedule\n: The variable exists across all cases in the same schedule run.\nPermanent\n: The variable persists across runs and remains available day after day for as long as the project exists.\nVariables with different scopes are\nunique\n, so a variable named “test” in\nPermanent\nscope is not the same as a variable named “test” in\nOnly this case\nscope.\nDefault value\n: A fallback value to use if the variable cannot be found in the selected scope.\nNote:\nIf you leave\nDefault value\nempty and the variable does not exist, the block uses an\nempty string\n(\n''\n) as the default, which means downstream blocks (for example, Log message) may receive and display a blank value.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Set Variable",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/variables/set-variable"
+    },
+    {
+      "title": "Use Numbers and Variables",
+      "url": "https://www.leapwork.com/services/learning-center/use-numbers-and-variables"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260202-101650.png",
+      "url": "https://docs.leapwork.com/__attachments/a_de682c4b0e052f26bc753bb3718eba8f27c1da7d4113307eb2333eeaefed0496/image-20260202-101650.png?cb=01ba307b9dff8aa978e9305a5ff30319"
+    }
+  ]
+}

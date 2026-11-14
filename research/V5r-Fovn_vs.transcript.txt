@@ -1,0 +1,30 @@
+00:00:05.910 to scale the test flow to multiple data
+00:00:05.920 sets Ed a building block allowing you to
+00:00:08.000 pull data from a spreadsheet or database
+00:00:10.639 pick your data source make a data
+00:00:12.559 selection and save you can now Drive
+00:00:15.440 data into the test flow using the blue
+00:00:21.550 connectors I now want to import some
+00:00:21.560 test data to do that I can select my
+00:00:24.199 read Excel building block from the list
+00:00:26.240 of data driven components select the
+00:00:28.840 spreadsheet with my test data
+00:00:35.709 and Define the range I want to
+00:00:35.719 use so for One customer it would be one
+00:00:38.800 row of data in the columns for each
+00:00:40.520 field I want to enter into my test this
+00:00:43.760 now creates connectors on the right hand
+00:00:45.440 side allowing you to easily pass in that
+00:00:48.079 data using the blue connectors into the
+00:00:50.000 Le hand side of each building block
+00:00:51.760 without using any code which is entirely
+00:00:54.239 visual this means you can now scale out
+00:00:56.559 your test cases with different data
+00:00:58.079 permutations and combinations to
+00:01:00.280 increase coverage and save time when we
+00:01:02.760 build our test
+00:01:04.960 cases you can also iterate through each
+00:01:07.280 flow which means I've created a flow in
+00:01:09.479 under a couple of minutes and I can
+00:01:10.960 scale it out to create multiple
+00:01:12.320 customers even hundreds

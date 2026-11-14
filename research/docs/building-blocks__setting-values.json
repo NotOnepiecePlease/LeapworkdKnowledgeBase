@@ -1,0 +1,37 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/setting-values",
+  "title": "Set Value",
+  "retrievedAt": "2026-11-13T20:22:37.361773+00:00",
+  "text": "Breadcrumbs\nThe set value blocks are used to define (set) an\narea\n,\nnumber\n,\nposition\n,\ndate/time\nor\ntext\nvalue.\nThe set value is then typically used in other blocks such as\nFind text\nor\nClick position\n.",
+  "links": [
+    {
+      "title": "area",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/setting-values/set-area"
+    },
+    {
+      "title": "number",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/setting-values/set-number"
+    },
+    {
+      "title": "position",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/setting-values/set-position"
+    },
+    {
+      "title": "date/time",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/setting-values/set-date-time"
+    },
+    {
+      "title": "text",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/setting-values/set-text"
+    },
+    {
+      "title": "Find text",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/find-text"
+    },
+    {
+      "title": "Click position",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-position"
+    }
+  ],
+  "images": []
+}

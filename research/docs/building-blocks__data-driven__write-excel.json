@@ -1,0 +1,42 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/write-excel",
+  "title": "Write Excel",
+  "retrievedAt": "2026-11-13T21:12:54.811793+00:00",
+  "text": "Breadcrumbs\nThe\nWrite Excel\nblock writes data into an Excel file. After you select a header range, the block lets you insert or append data under those columns based on the fields you connect in the flow.\nWhen fully expanded, the following is an example of the\nWrite Excel\nblock:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nWrite Excel\nonto the canvas.\nConnect the block in the flow and set the key parameters, such as\nSource type, Path to file or Cloud file properties (Connection, Site URL, File Name), Range, Method\n, then connect the column fields you want to write.\nRun the flow when it’s ready.\nFor a minimal setup, point the block to an existing Excel file, define a\nRange\n, keep the default\nMethod\n, and map only the columns you need.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nWrite Excel\nblock. You can rename it at any time by double-clicking the header and entering a new title to keep flows readable and organized.\nSource type:\nDefines where the Excel file is stored. Options include:\nLocal path\n: the file is referenced from a path on disk or a network share.\nCloud file\n: the file is accessed from an external cloud service (currently SharePoint) using a configured connection.\nNote:\nAvailable from\n2025.1.173 onward\nfor local and remote agents, and extended to\ncloud agents from 2025.3.0 onward\n.\nPath to file:\nWhen Source type is Local path. Clicking the ellipsis button opens a file dialog where you can choose the Excel file, including files on shared network paths. Once selected, the full path appears in the text box.\nBecause the file is not stored in Leapwork, you can update its content directly at that path and the block will write to the updated file.\nText fields:\nLets you define key–value fields whose values can be inserted as tokens into\nPath to file\n.\nAdd fields for dynamic parts of the path (for example, environment or date folders).\nRight-click in\nPath to file\nand choose\nInsert token\n, then select a field name to include its value.\nRenaming a field updates all tokens that reference it, making it easy to maintain dynamic paths.\nConnection:\nUsed when\nSource type = Cloud file\n. Lists available configured connections, currently\nSharePoint Connection\n.\nA SharePoint connection must be configured in advance to use this parameter. Follow the instructions in the\nMicrosoft Graph connection guide\nto set up the connection.\nNote:\nAvailable from\n2025.1 onward\n.\nSite URL:\nSpecifies the SharePoint site or sub-site where the Excel file is stored (for example,\nhttps://company.sharepoint.com/sites/FinanceTeam\n).\nThis field is\nmandatory\nwhen\nSource type = Cloud file\n, and must contain a valid.\n​\nNote:\nThe URL must be correctly formatted to match the SharePoint environment.\nFile Name:\nDefines the name of the Excel file within the selected SharePoint site, including its extension (for example,\nQuarterly_Report.xlsx\n). After\nSite URL\nis set, this field points the block to the exact file to write to.\n​\nNote:\nThe file must exist in the specified SharePoint site, and the user must have write permissions. If the file is moved or renamed, the connection may fail.\nRange:\nSelects the sheet and cell range in the Excel file where data will be written.\nClicking\nDefine range\nopens the\nSelect Range\npopup, where you choose the columns and rows to use.\nYou can select data from any sheet but only\none range per Write Excel block\n.\nCheck\nUse first row as header\nin the popup if you want the first row’s column values (for example,\nS. No.\n,\nFirst Name\n,\nRole\n,\nStatus\n) to become field names in the block.\nAuto-apply formatting:\nControls how cell formatting is applied when values are written:\nChecked\n: the block detects the data type (decimal number, integer, date, or text) and applies the corresponding Excel cell format automatically.\nUnchecked\n: all values are written as text without automatic formatting.\nNot written:\nTriggers if the block cannot write to the Excel file or if the file cannot be found. You can connect this output to branch the flow, for example to log an error, attempt recovery, or fail the case explicitly.\nFields (named columns):\nOnce the Excel file is loaded and a\nRange\nis selected, each column in that range appears as a field on the block with its header name.\nConnect values to these fields (from other blocks or tokens) to insert or update data in the corresponding columns.\nThese fields act as data connectors, making it easy to map flow values into the Excel sheet.\nMethod:\nSpecifies how rows are chosen for writing data:\nRow index\n: writes to a specific row within the selected range.\nAppend\n: writes to the first empty row after the existing data in the selected range.\nRow index:\nUsed when\nMethod = Row index\n. Indicates which row number within the selected range should receive the data (for example,\n1\nfor the first row of the range,\n5\nfor the fifth).\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.\nSharepoint Connection\nConfiguration and usage of the SharePoint connection in Leapwork to read from and write to Excel files stored in SharePoint.",
+  "links": [
+    {
+      "title": "Microsoft Graph connection guide",
+      "url": "https://www.leapwork.com/product/documentation/administration/connections/microsoft-graph"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    },
+    {
+      "title": "Sharepoint Connection",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/wip-microsoft-graph-sharepoint-connection"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260112-081258.png",
+      "url": "https://docs.leapwork.com/__attachments/a_eb466e241ba98db32864f7d856c2902aac03fbaf64e09507e4ce636db9a9e508/image-20260112-081258.png?cb=6cc8dd2493c3031ca614d9bd1d9ff6e1"
+    },
+    {
+      "alt": "image-20260112-081635.png",
+      "url": "https://docs.leapwork.com/__attachments/a_441c21a7a29ff11feb22937f1df987e0d5353b57d87e40abd17534857a873310/image-20260112-081635.png?cb=921230b855af3c570f9d66cfff8b49ca"
+    },
+    {
+      "alt": "image-20260112-081815.png",
+      "url": "https://docs.leapwork.com/__attachments/a_2ee9ec31b1f3b4c3c81a1ead8c2701433ddc6f39ed554aa919ee6bdf6b418ab1/image-20260112-081815.png?cb=5018f7ad878a0d586bb2e1b65b99e0ae"
+    },
+    {
+      "alt": "image-20260112-082522.png",
+      "url": "https://docs.leapwork.com/__attachments/a_c641a437065079b37385c6b9ab068bde739005f83667d44828cf4e6b26c6a501/image-20260112-082522.png?cb=512328a2cf3809ea4c41d028636ed34c"
+    }
+  ]
+}

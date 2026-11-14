@@ -1,0 +1,13 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web",
+  "title": "",
+  "retrievedAt": "2026-11-13T18:44:21.745322+00:00",
+  "text": "Breadcrumbs\nLeapwork’s\nWeb building blocks\nprovide the core capabilities for designing, running, and validating automation flows in\nweb applications\nacross desktop browsers and mobile web. They cover the full lifecycle of a browser based journey:\nstarting a browser session\n,\nnavigating pages\n,\ninteracting with web elements\n(clicking, typing, selecting), and\nextracting information from the UI\nto assert outcomes or reuse values later in the flow.\nIn addition to standard interactions, the Web blocks also support more advanced scenarios such as handling dynamic behavior and edge cases, including the option to\nrun JavaScript\nwhen needed to interact with pages that cannot be reliably automated through standard element actions alone.\nTo learn more and get hands on practice, follow the\nWeb Automation Training\n.",
+  "links": [
+    {
+      "title": "Web Automation Training",
+      "url": "https://www.leapwork.com/learn/web-automation-training"
+    }
+  ],
+  "images": []
+}

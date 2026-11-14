@@ -1,0 +1,46 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/read-excel",
+  "title": "Read Excel",
+  "retrievedAt": "2026-11-13T19:24:46.207862+00:00",
+  "text": "Breadcrumbs\nThe\nRead Excel\nblock is used to read an Excel file, select a range of data and then use that data to drive an automation case.\nSee the\nDrive data with Excel\nlesson to get an example of how to use the\nRead Excel\nblock.\nWhen fully expanded, the following is an example of the\nRead Excel\nblock:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nRead Excel\nonto the canvas.\nChoose a\nSource type\n(Data File, Local Path, or Cloud File).\nUpload / point to\nthe Excel file\nfor that Source type.\nSelect the\nsheet and cell range\nyou want the block to read.\nPick a\nMethod\n, depending on how you want rows returned.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The left green input connector is used to trigger the block to execute. The right green output connector triggers when a row has been read. If\nMethod\nis set to\nIterate\n, this output connector triggers on each iteration until all rows in the selected range have been iterated through. You can rename the block title by double-clicking it and typing a new title.\nSource Type\n: Defines where the Excel file is read from:\nData File\n: The file is uploaded and saved inside Leapwork.\nLocal Path\n: The file is referenced from a specified path.\nCloud file\n: The file is accessed from SharePoint via a configured connection. Available from\nRelease 2025.1.173 onward\n(local and remote agents) and from\nRelease 2025.3.0 onward\nfor cloud agents.\nSelect Data File to read\n: Used when\nSource Type\nis\nData File\n. Selecting a file uploads it and saves it inside Leapwork. If the file content changes, the file must be re-uploaded.\nPath to file\n: Used when\nSource Type\nis\nLocal Path\n. Selecting it opens a file dialog where you choose a file path (which can be a shared network path).\nThe file is not saved inside Leapwork; it is referenced from the path. If the file is updated and rows/columns have been added, you must define the\nRange\nagain, otherwise the updated content from a previously defined range will be used.\nText fields\n: Stores key–value fields that enable the use of external values (dynamic data) in\nPath to file\n. To use a field value, right-click the text field below\nPath to file\n, select\nInsert token\n, and insert the field’s name. Fields can be renamed by double-clicking them, and tokens update their visual appearance accordingly.\nConnection\n: Used when\nSource Type\nis\nCloud file\nto select a configured connection. Currently, the available option is\nSharePoint Connection\n. A\nSharePoint connection\nmust be configured in advance (available from\nRelease 2025.1.173\nonward).\nSite URL\n: Specifies the SharePoint site URL where the Excel file is stored. When\nSource Type\nis\nCloud file\n, this field is mandatory and must be filled in before proceeding.\nFile Name\n: Specifies the exact Excel file name (including extension such as\n.xls\nor\n.xlsx\n) to access from the SharePoint site.\nThe file must exist and you must have read access. If the same name exists in multiple folders, include the folder path (for example,\nFinance/Quarterly_Report.xlsx\n).\nRange\n: Lets you select the sheet and the data range in a popup window. You can select from any sheet, but only one range can be selected per Read Excel block. If you enable\nUse first row as header\nwhen selecting the range, the first row’s column values become the field names.\nNot read\n: Triggers if the block is not able to read the Excel file or if the file is not found. This can be used to branch the execution flow based on failure to read the data.\nFields (named or columns)\n: After the Excel file is loaded and a\nRange\nis selected, each row’s column values are exposed as fields that can be used in the flow.\nMethod\n: Controls how rows are selected from the chosen range. Options are\nFirst row\n(always reads the first row in the range),\nRow index\n(reads a specific row), and\nIterate\n(reads all rows; the top connector triggers for each row).\nRow index\n: Used when\nMethod\nis\nRow index\nto specify which row to read from the selected range.\nCompleted\n: Used with\nMethod = Iterate\n. When all rows have been processed, the right green output connector triggers to indicate the iteration is complete.\nUsing SharePoint as the Excel Source\nWhen reading Excel files stored on Microsoft SharePoint via a Microsoft Graph SharePoint Connection, follow these path formatting rules to prevent\n404 Not Found\nor file resolution errors.\n1. File Path Guidelines\nDo NOT prepend the Document Library name\nto the file path. Because Leapwork automatically scans all document libraries in the site, including library names like\nShared Documents\n,\nDocumenten\n, or custom library names will cause file lookup failures.\n2. Path Syntax Examples\nFile Location\nHow to Specify in Leapwork\nExample\nRoot of any Document Library\nFileName.xlsx\nMatrixborden.xlsx\nInside a Folder / Subfolder\nFolder/Subfolder/FileName.xlsx\nReports/2026/Matrixborden.xlsx\nWith Library in Path (Incorrect)\n❌\nDo not include library name\n❌\nDocumenten/Reports/Matrixborden.xlsx\n3. Duplicate File Name Resolution\nIf identically named files (e.g.,\nMatrixborden.xlsx\n) exist at the root level of multiple Document Libraries on the same site:\nLeapwork will read the\nfirst matching file\nit discovers during library iteration.\nBest Practice:\nPlace files in dedicated folders and specify the relative path (e.g.,\nFinancials/Matrixborden.xlsx\n) to ensure deterministic file selection.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.\nSharepoint Connection\nConfiguration and usage of the SharePoint connection in Leapwork to read from and write to Excel files stored in SharePoint.",
+  "links": [
+    {
+      "title": "Drive data with Excel",
+      "url": "https://www.youtube.com/watch?v=txICdysNNwE"
+    },
+    {
+      "title": "SharePoint connection",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/wip-microsoft-graph-sharepoint-connection"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-studio-troubleshooting/flows-troubleshooting"
+    },
+    {
+      "title": "Sharepoint Connection",
+      "url": "https://docs.leapwork.com/leapwork-studio/latest/administration/connections/wip-microsoft-graph-sharepoint-connection"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260206-090645.png",
+      "url": "https://docs.leapwork.com/__attachments/a_873a1e4341db2636c5ea29b43d92d7072722074df0c8fd63a09a7d89ea3a806b/image-20260206-090645.png?cb=6207878e46370cde8ca0bb57e9c01830"
+    },
+    {
+      "alt": "image-20260206-091527.png",
+      "url": "https://docs.leapwork.com/__attachments/a_1d5332f6b9f17cc1f046006586b971e224c9872edb5a84a9f56e5a3a0dda55a5/image-20260206-091527.png?cb=cccb3a5d78cd1d0110a9db2378be5642"
+    },
+    {
+      "alt": "image-20260206-091634.png",
+      "url": "https://docs.leapwork.com/__attachments/a_91c3d249c751fa3cdac9eb3ee624980066d0d4fcaf919cc0cbbf92f1915b39bc/image-20260206-091634.png?cb=39228782f88171c58fc2c1ac9dea6c11"
+    },
+    {
+      "alt": "image-20260206-092120.png",
+      "url": "https://docs.leapwork.com/__attachments/a_7eb86dfe078e5db906b6ae9759ce624a3e23fd81851ebf802b0beb558f8dd5f7/image-20260206-092120.png?cb=c47ee1343a0104065d2ab4897b679d43"
+    }
+  ]
+}

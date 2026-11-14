@@ -1,0 +1,6 @@
+
+VIDEO V5r-Fovn_vs Data Driven Automation Demo DURATION 80
+00:00:05.910 to scale the test flow to multiple data sets Ed a building block allowing you to pull data from a spreadsheet or database pick your data source make a data selection and save you can now Drive data into the test flow using the blue connectors I now want to import some test data to do that I can select my read Excel building block from the list
+00:00:26.240 of data driven components select the spreadsheet with my test data and Define the range I want to use so for One customer it would be one row of data in the columns for each field I want to enter into my test this now creates connectors on the right hand side allowing you to easily pass in that data using the blue connectors into the
+00:00:50.000 Le hand side of each building block without using any code which is entirely visual this means you can now scale out your test cases with different data permutations and combinations to increase coverage and save time when we build our test cases you can also iterate through each flow which means I've created a flow in
+00:01:09.479 under a couple of minutes and I can scale it out to create multiple customers even hundreds

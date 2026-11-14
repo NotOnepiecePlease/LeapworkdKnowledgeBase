@@ -1,0 +1,103 @@
+00:00:03.669 [Music]
+00:00:03.679 Welcome back to testing the internet
+00:00:05.440 series. You're watching part 12 file
+00:00:08.000 download. In the previous video, you
+00:00:10.719 learned how to handle dynamic addition
+00:00:12.480 of controls or web elements in a test
+00:00:15.040 case. In this video, you will learn how
+00:00:17.840 to quickly capture and download multiple
+00:00:19.760 files from a web page using just one
+00:00:22.080 simple building block.
+00:00:24.560 Have you faced issues like manually
+00:00:26.320 capturing each link, missing downloads
+00:00:28.720 due to inconsistent selection, or test
+00:00:31.359 breaking when the number of files
+00:00:32.880 changes? This happens because file links
+00:00:35.920 are often generated dynamically or
+00:00:38.079 follow patterns that are tricky to
+00:00:39.520 manage manually. That's where Leapwork
+00:00:42.000 makes things easier for you by helping
+00:00:44.239 you capture all links at once and
+00:00:46.239 automate the entire download process
+00:00:48.000 with ease. Let's see how simple it can
+00:00:50.640 be. We will take a simple scenario. The
+00:00:53.680 file downloader is basically just
+00:00:55.360 clicking a link on a web page and start
+00:00:57.520 downloading a file. In this case, we
+00:01:00.320 have around 50 plus links. So the test
+00:01:03.039 case here is just to iterate these links
+00:01:05.199 and click on each of them. Let's create
+00:01:07.119 an automation flow in Leapwork for this
+00:01:09.280 scenario. We'll start by launching the
+00:01:11.360 test case page using the start recorder,
+00:01:13.840 our go-to tool throughout this series
+00:01:15.760 for quickly capturing actions and
+00:01:17.439 building flows with ease.
+00:01:25.270 Then we simply capture one of the file
+00:01:25.280 links. Let's pick the first one.
+00:01:28.799 Then we select click web element to
+00:01:31.600 perform the click. That's it. Let's save
+00:01:34.560 and close the recorder. Next, we edit
+00:01:37.200 the selection strategy to make sure all
+00:01:39.119 links on the page are selected, not just
+00:01:41.360 the first one. We have these strategies
+00:01:44.400 here. Let's select the one right for our
+00:01:46.479 need.
+00:01:48.000 Yes, this one. So here we choose a
+00:01:50.960 parent element with a common class and
+00:01:53.119 we'll use that to include all the links.
+00:01:55.840 We remove the specific attribute to
+00:01:57.680 target all links on the page. Keeping it
+00:02:00.399 would limit the selection to just one,
+00:02:02.479 but removing it ensures the flow can
+00:02:04.320 iterate and click each link
+00:02:05.759 individually. Once we validate,
+00:02:13.270 we can see all the links are detected.
+00:02:13.280 Let's save this strategy. Then let's
+00:02:16.239 expand this block to iterate through all
+00:02:18.160 of them. Simply we have to set use occur
+00:02:20.720 to all. So the automation clicks each
+00:02:22.879 link one by one. Once all links are
+00:02:25.760 clicked, the flow will pass.
+00:02:29.599 Running the test now.
+00:02:35.110 You can see the files being clicked one
+00:02:35.120 by one and each one starts downloading
+00:02:37.360 automatically.
+00:03:03.350 Automate all your bulk downloads in
+00:03:03.360 seconds. Leapwork makes it as easy as a
+00:03:06.319 single click.
+00:03:20.470 flow is passed with the expected
+00:03:20.480 results.
+00:03:22.159 And as you can see, every file is
+00:03:23.840 downloaded as each link is clicked in
+00:03:25.599 sequence. And we finish with a
+00:03:27.120 successful pass. That's automation done
+00:03:29.440 right now. Let's quickly recap the flow
+00:03:31.920 we followed to automate file downloads
+00:03:34.080 from a web page. We started by launching
+00:03:36.799 the test case page using the start
+00:03:38.640 recorder. Then we captured just one of
+00:03:41.920 the file links and used a smart
+00:03:43.840 selection strategy to target all similar
+00:03:46.080 links. With the help of use occur
+00:03:48.480 property, we set up the flow to click
+00:03:50.480 each link one by one and trigger the
+00:03:52.720 downloads automatically. After running
+00:03:55.200 the test, we saw each file downloaded
+00:03:57.680 successfully and the test passed.
+00:04:01.760 What you learned? You learned how to
+00:04:03.920 automate bulk file downloads using just
+00:04:06.000 one building block and a smart capture
+00:04:08.080 strategy. Leapwork makes even repetitive
+00:04:10.799 tasks like downloading multiple files
+00:04:13.120 effortless so you can save time, avoid
+00:04:15.760 errors and focus on scaling your
+00:04:17.600 automation, not fighting it. Give this
+00:04:19.759 exercise a try yourself and see how much
+00:04:22.000 faster your automation can be. Moreover,
+00:04:24.479 to keep learning or if you ever feel
+00:04:26.240 stuck, explore our documentation
+00:04:28.800 knowledge base and reach out to support
+00:04:30.800 if needed. The answers are just a click
+00:04:32.720 away. Thank you for staying with us and
+00:04:34.960 see you in the next automation journey.

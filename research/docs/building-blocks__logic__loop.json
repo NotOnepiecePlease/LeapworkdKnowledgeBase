@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/loop",
+  "title": "‎ Loop",
+  "retrievedAt": "2026-11-13T20:21:24.678171+00:00",
+  "text": "Breadcrumbs\nThe\nLoop\nblock creates an explicit loop in your flow, triggering its connected logic a defined number of times. It counts from a\nMinimum\nvalue to a\nMaximum\nvalue, incrementing by a configurable\nStep\n. On each iteration, the current counter is available as\nCurrent value\n, and when the loop is finished, the\nCompleted\nconnector indicates that no further iterations will run.\nFully expanded, the\nLoop\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nLoop\nonto the canvas.\nConnect the block where you need repeated logic and set the basic parameters\nMinimum\n,\nMaximum\n, and\nStep\nto define how many times the loop should run.\nRun the flow when it’s ready; use\nCurrent value\ninside the looped sequence and\nCompleted\nto continue when all iterations are done.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nLoop\nblock. You can rename it at any time by double-clicking the header and typing a new title. The green input connector starts the loop when the flow reaches this block, and the green output connector triggers on every iteration.\nMinimum:\nSets the inclusive starting value for the loop counter. For example, in a loop from 1 to 10, the\nMinimum\nvalue is\n1\n.\nMaximum:\nSets the inclusive end value for the loop counter. For example, in a loop from 1 to 10, the\nMaximum\nvalue is\n10\n.\nCurrent value:\nHolds the current value of the loop counter for the active iteration. In a loop from 1 to 10 with\nStep\n= 1, on the third iteration\nCurrent value\nis\n3\n.\nWhen the loop finishes,\nCurrent value\nwill be the last value used, typically the\nMaximum\n.\nCompleted:\nGreen output connector that triggers once after the loop has finished all iterations. It activates when the loop reaches the\nMaximum\nvalue, or the closest possible value without exceeding it when the\nStep\ndoes not divide the range evenly.\nStep:\nDefines how much\nCurrent value\nincreases on each iteration. For example, in a loop from 1 to 10:\nWith\nStep\n= 1, the loop runs 10 times (1, 2, 3, 4, 5, 6, 7, 8, 9, 10).\nWith\nStep\n= 4, the loop runs 3 times (1, 5, 9), because the next value (13) would exceed the\nMaximum\n.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260115-104335.png",
+      "url": "https://docs.leapwork.com/__attachments/a_217b645dbf9341bc8f7a8554742e1c8f45bf650f7c44a6662f94522ae6b4f4f8/image-20260115-104335.png?cb=28d93647257003686b2672cb9836e503"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators",
+  "title": "Generators",
+  "retrievedAt": "2026-11-13T21:12:54.571203+00:00",
+  "text": "Breadcrumbs\nGenerator blocks are used to generate dynamic data such as random or sequenced numbers, passwords, date/time and more.\nThere are three generator building blocks such as:\nDate and time generator\n:  Generate date\\time is used to generate the system dates/times in region-specific formats. Date/time format can be selected by expanding the date/time field. date can be in year, month and day format. Time can be in hour, minute, second and millisecond format.\nNumber generator\n: Random numbers or sequence of numbers to specify the number of decimals to round the result. Also generate the odd, even and all type of numbers.\nPassword generator\n: Random password in region-specific, human-readable form with multiple formatting options (e.g. “\nJohn@007\n”, “\njohnSmith@123\n”, etc). It includes upper case character, number and symbol.\nUpdated August 9th 2023.",
+  "links": [
+    {
+      "title": "Date and time generator",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-date-time"
+    },
+    {
+      "title": "Number generator",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-number"
+    },
+    {
+      "title": "Password generator",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-password"
+    }
+  ],
+  "images": []
+}

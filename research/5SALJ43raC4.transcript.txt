@@ -1,0 +1,133 @@
+00:00:03.669 [Music]
+00:00:03.679 Welcome back to testing the internet
+00:00:05.359 series. You're watching part 16, hovers.
+00:00:08.320 In the previous video, you learned how
+00:00:10.800 to insert a username and a password into
+00:00:13.120 a login form and submit the form by
+00:00:15.360 pressing enter.
+00:00:17.279 In this video, you will learn how to
+00:00:19.119 handle hover effects on web pages using
+00:00:21.119 Leapwork. If you've ever struggled with
+00:00:23.840 elements that only appear when you
+00:00:25.359 hover, you know how frustrating it can
+00:00:27.760 be. Maybe you couldn't capture a hidden
+00:00:30.160 element. Your test failed because the UI
+00:00:32.399 shifted on hover or a drop down refused
+00:00:34.880 to open during playback. It happens
+00:00:37.440 because many automation tools can't
+00:00:39.200 simulate real mouseover actions. They
+00:00:41.600 fail to detect UI changes triggered by
+00:00:43.680 hover or they don't allow targeting
+00:00:45.840 elements inside dynamically revealed
+00:00:47.840 containers. That's where Leapwork can
+00:00:50.399 help you. To demonstrate, we'll show you
+00:00:52.480 a simple scenario.
+00:00:55.199 This test case is about hovering
+00:00:56.960 elements and what happens when you hover
+00:00:58.640 them. And in this case, we can see that
+00:01:00.559 hovering one of the person images
+00:01:02.960 reveals some additional information
+00:01:04.559 about this person. And you can see the
+00:01:06.720 changes when we are hovering over the
+00:01:08.479 different images. So the test case here
+00:01:11.119 is to hover all the images one by one
+00:01:13.520 and make sure that the information below
+00:01:15.439 the images are visible on hovering.
+00:01:18.560 Let's proceed to create an automation
+00:01:20.479 flow for this scenario in Leapwork
+00:01:22.880 Studio. Let's begin with start recorder
+00:01:25.680 to launch the test case page.
+00:01:37.190 First, we'll capture one of the user
+00:01:37.200 images on the page and apply the hover
+00:01:39.520 web element block. This block simulates
+00:01:42.320 moving the mouse over an element.
+00:01:44.320 Perfect for when something only becomes
+00:01:46.320 visible on hover, like the user details
+00:01:48.560 below each image. Next, we'll capture
+00:01:51.600 the text that appears under the image
+00:01:53.280 after the hover using find web element.
+00:01:56.720 That's it for now. Let's save and close
+00:01:58.719 the recorder. After that, we'll go into
+00:02:01.680 edit web element to refine our hover
+00:02:03.520 target. We'll open the web tree and
+00:02:06.000 click validate, giving us access to the
+00:02:08.160 full markup. You'll see we've selected
+00:02:10.720 the image use avatar, but for our
+00:02:13.200 purpose, we want to select the figure
+00:02:14.800 tag. So, we'll rightclick it and click
+00:02:16.959 capture. Once we do this, the browser
+00:02:20.000 highlights the selected element with a
+00:02:21.680 red square. We actually want to target
+00:02:24.319 all three views that have the class
+00:02:26.000 figure. To do that, we'll remove any
+00:02:28.959 reference to the first user by deleting
+00:02:30.720 the condition and clicking validate.
+00:02:33.440 Now, all three figure elements are
+00:02:35.840 matched. Let's save the strategy. Next,
+00:02:39.280 we'll edit the strategy for the caption.
+00:02:42.720 Here we'll simply remove any reference
+00:02:45.360 to user one and click validate. This
+00:02:48.480 makes it work for all similar elements
+00:02:50.080 on the page. Saving the strategy, let's
+00:02:52.560 move ahead.
+00:02:59.589 The next step is to connect the found
+00:02:59.599 element of hover web element block to
+00:03:02.000 the source of the find web element
+00:03:03.760 block. This will do a query inside a
+00:03:06.480 query, meaning whatever element we
+00:03:08.800 search for next, like the caption text,
+00:03:11.280 will only be searched inside the
+00:03:13.519 specific image container we hovered. In
+00:03:16.239 this case, we're looking for the text
+00:03:18.159 element inside the div we hovered using
+00:03:20.000 the hover web element. Finally, we'll
+00:03:22.800 check if the caption is visible by
+00:03:24.400 comparing its visibility property to
+00:03:26.640 true.
+00:03:32.949 If the details don't show on hover, the
+00:03:32.959 test fails.
+00:03:38.869 But since we set use occurrence to all,
+00:03:38.879 each element is hovered one by one. If
+00:03:41.760 the information appears for all, the
+00:03:43.760 flow passes. Our flow is ready to be
+00:03:46.480 executed. Let's run it.
+00:04:11.270 First, Leapwork hovered over the first
+00:04:11.280 image container and found the heading
+00:04:13.120 text H5 inside it. It checked if the
+00:04:16.239 text was visible, and yes, it was. Next,
+00:04:19.680 it moved to the second image container,
+00:04:21.600 hovered over it, found the text again,
+00:04:23.919 and confirmed it was visible. It hovered
+00:04:26.000 over the third image container, located
+00:04:28.000 the same kind of text inside, and once
+00:04:30.320 again verified the visibility. And
+00:04:32.720 finally, since all three elements were
+00:04:34.720 successfully hovered, and the details
+00:04:36.639 were visible each time. The flow passed,
+00:04:39.280 simple, smooth, and reliable. Now, let's
+00:04:42.960 quickly recap the flow we followed to
+00:04:45.040 build our automation scenario.
+00:04:47.600 We started the test case, hovered over
+00:04:49.759 the image container using the hover web
+00:04:51.600 element block, then used find web
+00:04:54.000 element to capture the text that appears
+00:04:55.919 on hover. After saving and refining our
+00:04:58.880 strategies for both image and caption
+00:05:00.880 elements, we verified visibility using a
+00:05:03.759 compare block and set it to run on all
+00:05:06.000 similar elements. And finally, the flow
+00:05:08.639 ran perfectly with all the expected
+00:05:10.479 results.
+00:05:12.160 Let's wrap up what this lesson taught
+00:05:14.000 you. You learned how to automate real
+00:05:16.479 hover actions, capture dynamic content,
+00:05:19.280 and validate visibility all in one
+00:05:21.840 smooth, no code flow. Give this exercise
+00:05:24.639 a try yourself and see how much faster
+00:05:26.720 your automation can be. Moreover, to
+00:05:29.120 keep learning or if you ever feel stuck,
+00:05:31.280 explore our documentation knowledge base
+00:05:34.080 and reach out to support if needed. The
+00:05:36.000 answers are just a click away. Thank you
+00:05:38.160 for staying with us and see you in the
+00:05:39.919 next automation journey.

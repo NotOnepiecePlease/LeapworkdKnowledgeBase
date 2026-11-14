@@ -1,0 +1,576 @@
+00:00:00.540 --> 00:00:05.510 align:start position:0%
+[Music]
+00:00:05.510 --> 00:00:05.520 align:start position:0%
+00:00:05.520 --> 00:00:07.670 align:start position:0%
+Hello and welcome to an introduction to
+00:00:07.670 --> 00:00:07.680 align:start position:0%
+00:00:07.680 --> 00:00:10.549 align:start position:0%
+the web automation using leapwork.
+00:00:10.549 --> 00:00:10.559 align:start position:0%
+00:00:10.559 --> 00:00:12.230 align:start position:0%
+In this video, you will learn how to
+00:00:12.230 --> 00:00:12.240 align:start position:0%
+00:00:12.240 --> 00:00:14.070 align:start position:0%
+design web automation flows by
+00:00:14.070 --> 00:00:14.080 align:start position:0%
+00:00:14.080 --> 00:00:15.749 align:start position:0%
+connecting the leapwork basic building
+00:00:15.749 --> 00:00:15.759 align:start position:0%
+00:00:15.759 --> 00:00:18.950 align:start position:0%
+blocks. We are taking Microsoft Dynamics
+00:00:18.950 --> 00:00:18.960 align:start position:0%
+00:00:18.960 --> 00:00:21.590 align:start position:0%
+365 as an example to show you how to
+00:00:21.590 --> 00:00:21.600 align:start position:0%
+00:00:21.600 --> 00:00:23.269 align:start position:0%
+automate the sign-in process for the
+00:00:23.269 --> 00:00:23.279 align:start position:0%
+00:00:23.279 --> 00:00:27.670 align:start position:0%
+Microsoft Dynamics 365 application.
+00:00:27.670 --> 00:00:27.680 align:start position:0%
+00:00:27.680 --> 00:00:29.269 align:start position:0%
+Let's double click on the Leapwork
+00:00:29.269 --> 00:00:29.279 align:start position:0%
+00:00:29.279 --> 00:00:32.470 align:start position:0%
+shortcut to open it.
+00:00:32.470 --> 00:00:32.480 align:start position:0%
+00:00:32.480 --> 00:00:34.470 align:start position:0%
+Here is how Leapwork looks after it's
+00:00:34.470 --> 00:00:34.480 align:start position:0%
+00:00:34.480 --> 00:00:37.110 align:start position:0%
+fully loaded. To start with, you need to
+00:00:37.110 --> 00:00:37.120 align:start position:0%
+00:00:37.120 --> 00:00:39.190 align:start position:0%
+create a new flow.
+00:00:39.190 --> 00:00:39.200 align:start position:0%
+00:00:39.200 --> 00:00:41.990 align:start position:0%
+Click new from the left menu.
+00:00:41.990 --> 00:00:42.000 align:start position:0%
+00:00:42.000 --> 00:00:43.990 align:start position:0%
+Click on flow and give a meaningful
+00:00:43.990 --> 00:00:44.000 align:start position:0%
+00:00:44.000 --> 00:00:47.270 align:start position:0%
+name. As you can see, you begin with a
+00:00:47.270 --> 00:00:47.280 align:start position:0%
+00:00:47.280 --> 00:00:49.990 align:start position:0%
+start block.
+00:00:49.990 --> 00:00:50.000 align:start position:0%
+00:00:50.000 --> 00:00:52.150 align:start position:0%
+Here with Leapwork, we have an option of
+00:00:52.150 --> 00:00:52.160 align:start position:0%
+00:00:52.160 --> 00:00:54.310 align:start position:0%
+record and play. So we do the recording
+00:00:54.310 --> 00:00:54.320 align:start position:0%
+00:00:54.320 --> 00:00:58.389 align:start position:0%
+of our steps to create our first flow.
+00:00:58.389 --> 00:00:58.399 align:start position:0%
+00:00:58.399 --> 00:01:00.549 align:start position:0%
+To start the recording, we need to drag
+00:01:00.549 --> 00:01:00.559 align:start position:0%
+00:01:00.559 --> 00:01:02.389 align:start position:0%
+the start blocks green connector and
+00:01:02.389 --> 00:01:02.399 align:start position:0%
+00:01:02.399 --> 00:01:05.270 align:start position:0%
+leave the mouse.
+00:01:05.270 --> 00:01:05.280 align:start position:0%
+00:01:05.280 --> 00:01:07.590 align:start position:0%
+We get the add building block menu. You
+00:01:07.590 --> 00:01:07.600 align:start position:0%
+00:01:07.600 --> 00:01:09.510 align:start position:0%
+can see the start recorder option on the
+00:01:09.510 --> 00:01:09.520 align:start position:0%
+00:01:09.520 --> 00:01:11.750 align:start position:0%
+top. Select the start recorder option
+00:01:11.750 --> 00:01:11.760 align:start position:0%
+00:01:11.760 --> 00:01:15.670 align:start position:0%
+and you can see the recording started.
+00:01:15.670 --> 00:01:15.680 align:start position:0%
+00:01:15.680 --> 00:01:17.510 align:start position:0%
+On the bottom left corner, we start
+00:01:17.510 --> 00:01:17.520 align:start position:0%
+00:01:17.520 --> 00:01:19.830 align:start position:0%
+getting the recording button. Hover on
+00:01:19.830 --> 00:01:19.840 align:start position:0%
+00:01:19.840 --> 00:01:22.630 align:start position:0%
+the red dot and click on the plus icon.
+00:01:22.630 --> 00:01:22.640 align:start position:0%
+00:01:22.640 --> 00:01:24.710 align:start position:0%
+We got the option to start the browser
+00:01:24.710 --> 00:01:24.720 align:start position:0%
+00:01:24.720 --> 00:01:27.590 align:start position:0%
+or the application. Here we choose start
+00:01:27.590 --> 00:01:27.600 align:start position:0%
+00:01:27.600 --> 00:01:29.910 align:start position:0%
+web browser to launch the URL in the
+00:01:29.910 --> 00:01:29.920 align:start position:0%
+00:01:29.920 --> 00:01:32.789 align:start position:0%
+Chrome browser.
+00:01:32.789 --> 00:01:32.799 align:start position:0%
+00:01:32.799 --> 00:01:35.030 align:start position:0%
+The selected browser is Chrome and enter
+00:01:35.030 --> 00:01:35.040 align:start position:0%
+00:01:35.040 --> 00:01:37.670 align:start position:0%
+the URL in the web address URL text
+00:01:37.670 --> 00:01:37.680 align:start position:0%
+00:01:37.680 --> 00:01:40.870 align:start position:0%
+field. After entering the details, click
+00:01:40.870 --> 00:01:40.880 align:start position:0%
+00:01:40.880 --> 00:01:43.910 align:start position:0%
+on the start button.
+00:01:43.910 --> 00:01:43.920 align:start position:0%
+00:01:43.920 --> 00:01:45.670 align:start position:0%
+It launches the browser with the given
+00:01:45.670 --> 00:01:45.680 align:start position:0%
+00:01:45.680 --> 00:01:48.389 align:start position:0%
+URL.
+00:01:48.389 --> 00:01:48.399 align:start position:0%
+00:01:48.399 --> 00:01:50.630 align:start position:0%
+Hover on the page. We can see leapwork
+00:01:50.630 --> 00:01:50.640 align:start position:0%
+00:01:50.640 --> 00:01:54.149 align:start position:0%
+starts capturing the elements.
+00:01:54.149 --> 00:01:54.159 align:start position:0%
+00:01:54.159 --> 00:01:56.469 align:start position:0%
+Now capture the sign-in text field and
+00:01:56.469 --> 00:01:56.479 align:start position:0%
+00:01:56.479 --> 00:01:58.870 align:start position:0%
+select the type web text block from the
+00:01:58.870 --> 00:01:58.880 align:start position:0%
+00:01:58.880 --> 00:02:01.749 align:start position:0%
+list of blocks.
+00:02:01.749 --> 00:02:01.759 align:start position:0%
+00:02:01.759 --> 00:02:03.990 align:start position:0%
+Enter the email ID in the type value
+00:02:03.990 --> 00:02:04.000 align:start position:0%
+00:02:04.000 --> 00:02:06.950 align:start position:0%
+field and click on apply button. This
+00:02:06.950 --> 00:02:06.960 align:start position:0%
+00:02:06.960 --> 00:02:08.710 align:start position:0%
+will record the step and shows the
+00:02:08.710 --> 00:02:08.720 align:start position:0%
+00:02:08.720 --> 00:02:12.390 align:start position:0%
+entered data in the application.
+00:02:12.390 --> 00:02:12.400 align:start position:0%
+00:02:12.400 --> 00:02:14.710 align:start position:0%
+Capture the next button and select click
+00:02:14.710 --> 00:02:14.720 align:start position:0%
+00:02:14.720 --> 00:02:17.350 align:start position:0%
+web element from the displayed option.
+00:02:17.350 --> 00:02:17.360 align:start position:0%
+00:02:17.360 --> 00:02:20.710 align:start position:0%
+Select apply button.
+00:02:20.710 --> 00:02:20.720 align:start position:0%
+00:02:20.720 --> 00:02:22.869 align:start position:0%
+Capture the text field and select type
+00:02:22.869 --> 00:02:22.879 align:start position:0%
+00:02:22.879 --> 00:02:27.270 align:start position:0%
+web text block from the list of blocks.
+00:02:27.270 --> 00:02:27.280 align:start position:0%
+00:02:27.280 --> 00:02:29.190 align:start position:0%
+You can expand this field and set the
+00:02:29.190 --> 00:02:29.200 align:start position:0%
+00:02:29.200 --> 00:02:31.190 align:start position:0%
+password as hidden rather than plain
+00:02:31.190 --> 00:02:31.200 align:start position:0%
+00:02:31.200 --> 00:02:33.430 align:start position:0%
+text by changing the type value to
+00:02:33.430 --> 00:02:33.440 align:start position:0%
+00:02:33.440 --> 00:02:37.509 align:start position:0%
+password and click on apply button.
+00:02:37.509 --> 00:02:37.519 align:start position:0%
+00:02:37.519 --> 00:02:39.270 align:start position:0%
+The data entered in the text field is
+00:02:39.270 --> 00:02:39.280 align:start position:0%
+00:02:39.280 --> 00:02:42.150 align:start position:0%
+masked. Now
+00:02:42.150 --> 00:02:42.160 align:start position:0%
+00:02:42.160 --> 00:02:43.990 align:start position:0%
+capture the sign-in button and select
+00:02:43.990 --> 00:02:44.000 align:start position:0%
+00:02:44.000 --> 00:02:45.990 align:start position:0%
+the click web element from the displayed
+00:02:45.990 --> 00:02:46.000 align:start position:0%
+00:02:46.000 --> 00:02:50.150 align:start position:0%
+option and select the apply button.
+00:02:50.150 --> 00:02:50.160 align:start position:0%
+00:02:50.160 --> 00:02:52.070 align:start position:0%
+capture the no button and select the
+00:02:52.070 --> 00:02:52.080 align:start position:0%
+00:02:52.080 --> 00:02:53.670 align:start position:0%
+click web element from the displayed
+00:02:53.670 --> 00:02:53.680 align:start position:0%
+00:02:53.680 --> 00:02:57.830 align:start position:0%
+00:02:57.830 --> 00:02:57.840 align:start position:0%
+00:02:57.840 --> 00:03:00.150 align:start position:0%
+Excellent. It works and we are signed
+00:03:00.150 --> 00:03:00.160 align:start position:0%
+00:03:00.160 --> 00:03:03.110 align:start position:0%
+in. Let's stop the recording and save
+00:03:03.110 --> 00:03:03.120 align:start position:0%
+00:03:03.120 --> 00:03:04.949 align:start position:0%
+the recorded steps by hovering on the
+00:03:04.949 --> 00:03:04.959 align:start position:0%
+00:03:04.959 --> 00:03:06.710 align:start position:0%
+red dot displayed on the bottom left
+00:03:06.710 --> 00:03:06.720 align:start position:0%
+00:03:06.720 --> 00:03:08.790 align:start position:0%
+corner of the screen and click on the
+00:03:08.790 --> 00:03:08.800 align:start position:0%
+00:03:08.800 --> 00:03:11.750 align:start position:0%
+tick icon.
+00:03:11.750 --> 00:03:11.760 align:start position:0%
+00:03:11.760 --> 00:03:13.589 align:start position:0%
+Here the recording is stopped and the
+00:03:13.589 --> 00:03:13.599 align:start position:0%
+00:03:13.599 --> 00:03:15.270 align:start position:0%
+recorded steps are visible on the
+00:03:15.270 --> 00:03:15.280 align:start position:0%
+00:03:15.280 --> 00:03:17.750 align:start position:0%
+canvas.
+00:03:17.750 --> 00:03:17.760 align:start position:0%
+00:03:17.760 --> 00:03:19.589 align:start position:0%
+Please note all blocks are connected
+00:03:19.589 --> 00:03:19.599 align:start position:0%
+00:03:19.599 --> 00:03:21.430 align:start position:0%
+with the green connector pointing to the
+00:03:21.430 --> 00:03:21.440 align:start position:0%
+00:03:21.440 --> 00:03:23.750 align:start position:0%
+direction of the execution of the flow.
+00:03:23.750 --> 00:03:23.760 align:start position:0%
+00:03:23.760 --> 00:03:25.509 align:start position:0%
+This means the flow will execute the
+00:03:25.509 --> 00:03:25.519 align:start position:0%
+00:03:25.519 --> 00:03:26.869 align:start position:0%
+sequence defined by the green
+00:03:26.869 --> 00:03:26.879 align:start position:0%
+00:03:26.879 --> 00:03:29.589 align:start position:0%
+connectors.
+00:03:29.589 --> 00:03:29.599 align:start position:0%
+00:03:29.599 --> 00:03:31.509 align:start position:0%
+Before moving further, let's do some
+00:03:31.509 --> 00:03:31.519 align:start position:0%
+00:03:31.519 --> 00:03:34.070 align:start position:0%
+changes on the leapwork screen. To see
+00:03:34.070 --> 00:03:34.080 align:start position:0%
+00:03:34.080 --> 00:03:36.229 align:start position:0%
+the whole block on the screen, use zoom
+00:03:36.229 --> 00:03:36.239 align:start position:0%
+00:03:36.239 --> 00:03:40.710 align:start position:0%
+to fit flow icon from the top bar.
+00:03:40.710 --> 00:03:40.720 align:start position:0%
+00:03:40.720 --> 00:03:43.030 align:start position:0%
+Now we can see the complete block.
+00:03:43.030 --> 00:03:43.040 align:start position:0%
+00:03:43.040 --> 00:03:44.949 align:start position:0%
+Minimize the left panel by clicking on
+00:03:44.949 --> 00:03:44.959 align:start position:0%
+00:03:44.959 --> 00:03:47.430 align:start position:0%
+the arrow at the left bottom corner. Ah,
+00:03:47.430 --> 00:03:47.440 align:start position:0%
+00:03:47.440 --> 00:03:49.830 align:start position:0%
+the screen looks good now. Let's run the
+00:03:49.830 --> 00:03:49.840 align:start position:0%
+00:03:49.840 --> 00:04:01.830 align:start position:0%
+flow now.
+00:04:01.830 --> 00:04:01.840 align:start position:0%
+00:04:01.840 --> 00:04:05.350 align:start position:0%
+Oh, the flow failed.
+00:04:05.350 --> 00:04:05.360 align:start position:0%
+00:04:05.360 --> 00:04:07.270 align:start position:0%
+We can see the type password block
+00:04:07.270 --> 00:04:07.280 align:start position:0%
+00:04:07.280 --> 00:04:09.190 align:start position:0%
+highlighted with a red border indicating
+00:04:09.190 --> 00:04:09.200 align:start position:0%
+00:04:09.200 --> 00:04:12.789 align:start position:0%
+that the flow failed. At this point,
+00:04:12.789 --> 00:04:12.799 align:start position:0%
+00:04:12.799 --> 00:04:15.270 align:start position:0%
+the error message states web element was
+00:04:15.270 --> 00:04:15.280 align:start position:0%
+00:04:15.280 --> 00:04:17.430 align:start position:0%
+not found and the video screen shows
+00:04:17.430 --> 00:04:17.440 align:start position:0%
+00:04:17.440 --> 00:04:19.670 align:start position:0%
+that the text box was not loaded yet. So
+00:04:19.670 --> 00:04:19.680 align:start position:0%
+00:04:19.680 --> 00:04:21.909 align:start position:0%
+the type text action was unable to find
+00:04:21.909 --> 00:04:21.919 align:start position:0%
+00:04:21.919 --> 00:04:24.629 align:start position:0%
+the control.
+00:04:24.629 --> 00:04:24.639 align:start position:0%
+00:04:24.639 --> 00:04:26.390 align:start position:0%
+This happens when the application is
+00:04:26.390 --> 00:04:26.400 align:start position:0%
+00:04:26.400 --> 00:04:28.950 align:start position:0%
+slower than the leapwork block expected.
+00:04:28.950 --> 00:04:28.960 align:start position:0%
+00:04:28.960 --> 00:04:31.030 align:start position:0%
+To handle this situation, leapwork
+00:04:31.030 --> 00:04:31.040 align:start position:0%
+00:04:31.040 --> 00:04:33.510 align:start position:0%
+provides an await DOM change option in
+00:04:33.510 --> 00:04:33.520 align:start position:0%
+00:04:33.520 --> 00:04:36.390 align:start position:0%
+all blocks. This option allows the block
+00:04:36.390 --> 00:04:36.400 align:start position:0%
+00:04:36.400 --> 00:04:37.909 align:start position:0%
+to wait for the web page to finish
+00:04:37.909 --> 00:04:37.919 align:start position:0%
+00:04:37.919 --> 00:04:39.909 align:start position:0%
+loading instead of rushing ahead during
+00:04:39.909 --> 00:04:39.919 align:start position:0%
+00:04:39.919 --> 00:04:42.870 align:start position:0%
+execution. It also ensures not to wait
+00:04:42.870 --> 00:04:42.880 align:start position:0%
+00:04:42.880 --> 00:04:44.710 align:start position:0%
+if the element is visible to block
+00:04:44.710 --> 00:04:44.720 align:start position:0%
+00:04:44.720 --> 00:04:47.110 align:start position:0%
+within defined seconds to save critical
+00:04:47.110 --> 00:04:47.120 align:start position:0%
+00:04:47.120 --> 00:04:50.550 align:start position:0%
+time during execution.
+00:04:50.550 --> 00:04:50.560 align:start position:0%
+00:04:50.560 --> 00:04:52.070 align:start position:0%
+Let's edit the flow to make the
+00:04:52.070 --> 00:04:52.080 align:start position:0%
+00:04:52.080 --> 00:04:53.990 align:start position:0%
+necessary change by clicking the edit
+00:04:53.990 --> 00:04:54.000 align:start position:0%
+00:04:54.000 --> 00:04:55.510 align:start position:0%
+button.
+00:04:55.510 --> 00:04:55.520 align:start position:0%
+00:04:55.520 --> 00:04:58.070 align:start position:0%
+Now expand the type web text block by
+00:04:58.070 --> 00:04:58.080 align:start position:0%
+00:04:58.080 --> 00:05:00.390 align:start position:0%
+clicking on expand.
+00:05:00.390 --> 00:05:00.400 align:start position:0%
+00:05:00.400 --> 00:05:02.710 align:start position:0%
+Tick the check box labeled await DOM
+00:05:02.710 --> 00:05:02.720 align:start position:0%
+00:05:02.720 --> 00:05:04.230 align:start position:0%
+change
+00:05:04.230 --> 00:05:04.240 align:start position:0%
+00:05:04.240 --> 00:05:06.469 align:start position:0%
+and close the expanded block by pressing
+00:05:06.469 --> 00:05:06.479 align:start position:0%
+00:05:06.479 --> 00:05:09.670 align:start position:0%
+collapse in the type web text block.
+00:05:09.670 --> 00:05:09.680 align:start position:0%
+00:05:09.680 --> 00:05:11.590 align:start position:0%
+Save the flow will ensure the changes
+00:05:11.590 --> 00:05:11.600 align:start position:0%
+00:05:11.600 --> 00:05:14.070 align:start position:0%
+are saved. Now the flow will not fail
+00:05:14.070 --> 00:05:14.080 align:start position:0%
+00:05:14.080 --> 00:05:16.950 align:start position:0%
+due to timing issues. Let's continue the
+00:05:16.950 --> 00:05:16.960 align:start position:0%
+00:05:16.960 --> 00:05:18.710 align:start position:0%
+flow.
+00:05:18.710 --> 00:05:18.720 align:start position:0%
+00:05:18.720 --> 00:05:20.790 align:start position:0%
+Now to prove that the flow works, we
+00:05:20.790 --> 00:05:20.800 align:start position:0%
+00:05:20.800 --> 00:05:22.310 align:start position:0%
+need to verify something after the
+00:05:22.310 --> 00:05:22.320 align:start position:0%
+00:05:22.320 --> 00:05:25.029 align:start position:0%
+signin. An easy way to determine this is
+00:05:25.029 --> 00:05:25.039 align:start position:0%
+00:05:25.039 --> 00:05:27.670 align:start position:0%
+to find PC, which is the user initials
+00:05:27.670 --> 00:05:27.680 align:start position:0%
+00:05:27.680 --> 00:05:30.230 align:start position:0%
+of our username, Phyllis Cowser. In this
+00:05:30.230 --> 00:05:30.240 align:start position:0%
+00:05:30.240 --> 00:05:32.629 align:start position:0%
+case
+00:05:32.629 --> 00:05:32.639 align:start position:0%
+00:05:32.639 --> 00:05:34.629 align:start position:0%
+here, we will use a find web element
+00:05:34.629 --> 00:05:34.639 align:start position:0%
+00:05:34.639 --> 00:05:37.189 align:start position:0%
+block to capture the PC initial. This
+00:05:37.189 --> 00:05:37.199 align:start position:0%
+00:05:37.199 --> 00:05:39.350 align:start position:0%
+block doesn't do anything except verify
+00:05:39.350 --> 00:05:39.360 align:start position:0%
+00:05:39.360 --> 00:05:42.629 align:start position:0%
+that it can see the element.
+00:05:42.629 --> 00:05:42.639 align:start position:0%
+00:05:42.639 --> 00:05:44.469 align:start position:0%
+To continue adding the steps to complete
+00:05:44.469 --> 00:05:44.479 align:start position:0%
+00:05:44.479 --> 00:05:46.870 align:start position:0%
+the flow again, drag the green connector
+00:05:46.870 --> 00:05:46.880 align:start position:0%
+00:05:46.880 --> 00:05:48.950 align:start position:0%
+of the last block and select the start
+00:05:48.950 --> 00:05:48.960 align:start position:0%
+00:05:48.960 --> 00:05:51.749 align:start position:0%
+recorder option. Now we can see the
+00:05:51.749 --> 00:05:51.759 align:start position:0%
+00:05:51.759 --> 00:05:54.870 align:start position:0%
+recording is started.
+00:05:54.870 --> 00:05:54.880 align:start position:0%
+00:05:54.880 --> 00:05:56.550 align:start position:0%
+Capture the username displayed on the
+00:05:56.550 --> 00:05:56.560 align:start position:0%
+00:05:56.560 --> 00:05:59.110 align:start position:0%
+top right corner of the screen. Here it
+00:05:59.110 --> 00:05:59.120 align:start position:0%
+00:05:59.120 --> 00:06:01.990 align:start position:0%
+is PC and select the find web element
+00:06:01.990 --> 00:06:02.000 align:start position:0%
+00:06:02.000 --> 00:06:05.430 align:start position:0%
+from the displayed option.
+00:06:05.430 --> 00:06:05.440 align:start position:0%
+00:06:05.440 --> 00:06:07.350 align:start position:0%
+Now stop the recording by hovering on
+00:06:07.350 --> 00:06:07.360 align:start position:0%
+00:06:07.360 --> 00:06:09.110 align:start position:0%
+the recording option and click on the
+00:06:09.110 --> 00:06:09.120 align:start position:0%
+00:06:09.120 --> 00:06:13.670 align:start position:0%
+tick i.e save and close recorder.
+00:06:13.670 --> 00:06:13.680 align:start position:0%
+00:06:13.680 --> 00:06:15.749 align:start position:0%
+Now to get the pass after the successful
+00:06:15.749 --> 00:06:15.759 align:start position:0%
+00:06:15.759 --> 00:06:17.909 align:start position:0%
+execution, add the pass block as the
+00:06:17.909 --> 00:06:17.919 align:start position:0%
+00:06:17.919 --> 00:06:20.230 align:start position:0%
+last block. Otherwise the flow will fail
+00:06:20.230 --> 00:06:20.240 align:start position:0%
+00:06:20.240 --> 00:06:23.350 align:start position:0%
+by default. Passing means the flow must
+00:06:23.350 --> 00:06:23.360 align:start position:0%
+00:06:23.360 --> 00:06:25.270 align:start position:0%
+sign me in and find evidence that I've
+00:06:25.270 --> 00:06:25.280 align:start position:0%
+00:06:25.280 --> 00:06:28.870 align:start position:0%
+been signed in to pass.
+00:06:28.870 --> 00:06:28.880 align:start position:0%
+00:06:28.880 --> 00:06:30.710 align:start position:0%
+To add the pass block at the end of the
+00:06:30.710 --> 00:06:30.720 align:start position:0%
+00:06:30.720 --> 00:06:32.790 align:start position:0%
+flow, drag the green connector of the
+00:06:32.790 --> 00:06:32.800 align:start position:0%
+00:06:32.800 --> 00:06:35.110 align:start position:0%
+last block. You get the add new building
+00:06:35.110 --> 00:06:35.120 align:start position:0%
+00:06:35.120 --> 00:06:37.909 align:start position:0%
+block there and start typing pass and
+00:06:37.909 --> 00:06:37.919 align:start position:0%
+00:06:37.919 --> 00:06:39.749 align:start position:0%
+select the pass block from the selected
+00:06:39.749 --> 00:06:39.759 align:start position:0%
+00:06:39.759 --> 00:06:42.309 align:start position:0%
+blocks.
+00:06:42.309 --> 00:06:42.319 align:start position:0%
+00:06:42.319 --> 00:06:45.749 align:start position:0%
+Now the flow is completed.
+00:06:45.749 --> 00:06:45.759 align:start position:0%
+00:06:45.759 --> 00:06:47.590 align:start position:0%
+Let's execute the complete flow by
+00:06:47.590 --> 00:06:47.600 align:start position:0%
+00:06:47.600 --> 00:07:03.189 align:start position:0%
+clicking on the run button.
+00:07:03.189 --> 00:07:03.199 align:start position:0%
+00:07:03.199 --> 00:07:05.189 align:start position:0%
+Once the execution is successfully done,
+00:07:05.189 --> 00:07:05.199 align:start position:0%
+00:07:05.199 --> 00:07:07.029 align:start position:0%
+we will get access to a video recording
+00:07:07.029 --> 00:07:07.039 align:start position:0%
+00:07:07.039 --> 00:07:08.870 align:start position:0%
+of the flow. And we can follow the
+00:07:08.870 --> 00:07:08.880 align:start position:0%
+00:07:08.880 --> 00:07:10.710 align:start position:0%
+execution of the flow by watching the
+00:07:10.710 --> 00:07:10.720 align:start position:0%
+00:07:10.720 --> 00:07:12.469 align:start position:0%
+orange border around the building block
+00:07:12.469 --> 00:07:12.479 align:start position:0%
+00:07:12.479 --> 00:07:29.510 align:start position:0%
+as the video plays.
+00:07:29.510 --> 00:07:29.520 align:start position:0%
+00:07:29.520 --> 00:07:31.350 align:start position:0%
+One can see the complete step-by-step
+00:07:31.350 --> 00:07:31.360 align:start position:0%
+00:07:31.360 --> 00:07:33.270 align:start position:0%
+execution by clicking on the activity
+00:07:33.270 --> 00:07:33.280 align:start position:0%
+00:07:33.280 --> 00:07:37.830 align:start position:0%
+log which shows the time, block name
+00:07:37.830 --> 00:07:37.840 align:start position:0%
+00:07:37.840 --> 00:07:41.350 align:start position:0%
+and message in the logs.
+00:07:41.350 --> 00:07:41.360 align:start position:0%
+00:07:41.360 --> 00:07:43.189 align:start position:0%
+When we click on the individual log
+00:07:43.189 --> 00:07:43.199 align:start position:0%
+00:07:43.199 --> 00:07:45.270 align:start position:0%
+entry, the video of the application
+00:07:45.270 --> 00:07:45.280 align:start position:0%
+00:07:45.280 --> 00:07:47.110 align:start position:0%
+displays the state of the application
+00:07:47.110 --> 00:07:47.120 align:start position:0%
+00:07:47.120 --> 00:07:49.029 align:start position:0%
+during the execution with the field
+00:07:49.029 --> 00:07:49.039 align:start position:0%
+00:07:49.039 --> 00:07:53.110 align:start position:0%
+highlighted in green color on the video.
+00:07:53.110 --> 00:07:53.120 align:start position:0%
+00:07:53.120 --> 00:07:54.869 align:start position:0%
+At the same time, the block under
+00:07:54.869 --> 00:07:54.879 align:start position:0%
+00:07:54.879 --> 00:07:56.869 align:start position:0%
+execution is highlighted on the canvas
+00:07:56.869 --> 00:07:56.879 align:start position:0%
+00:07:56.879 --> 00:07:59.189 align:start position:0%
+with an orange border. This helps in
+00:07:59.189 --> 00:07:59.199 align:start position:0%
+00:07:59.199 --> 00:08:03.029 align:start position:0%
+verifying and debugging the flow.
+00:08:03.029 --> 00:08:03.039 align:start position:0%
+00:08:03.039 --> 00:08:04.950 align:start position:0%
+The last log entry shows the state of
+00:08:04.950 --> 00:08:04.960 align:start position:0%
+00:08:04.960 --> 00:08:07.589 align:start position:0%
+the flow. It is either fail, pass, or
+00:08:07.589 --> 00:08:07.599 align:start position:0%
+00:08:07.599 --> 00:08:12.629 align:start position:0%
+done. In this case, our test passed.
+00:08:12.629 --> 00:08:12.639 align:start position:0%
+00:08:12.639 --> 00:08:14.629 align:start position:0%
+In this video, we learned how to create
+00:08:14.629 --> 00:08:14.639 align:start position:0%
+00:08:14.639 --> 00:08:16.950 align:start position:0%
+a basic sign-in flow and how to use the
+00:08:16.950 --> 00:08:16.960 align:start position:0%
+00:08:16.960 --> 00:08:19.189 align:start position:0%
+canvas to debug the flow at a high level
+00:08:19.189 --> 00:08:19.199 align:start position:0%
+00:08:19.199 --> 00:08:22.710 align:start position:0%
+using activity logs.
+00:08:22.710 --> 00:08:22.720 align:start position:0%
+00:08:22.720 --> 00:08:24.790 align:start position:0%
+Now, try creating this simple sign-in
+00:08:24.790 --> 00:08:24.800 align:start position:0%
+00:08:24.800 --> 00:08:27.110 align:start position:0%
+flow in your application to experience
+00:08:27.110 --> 00:08:27.120 align:start position:0%
+00:08:27.120 --> 00:08:29.029 align:start position:0%
+how easy it is to build your own flow
+00:08:29.029 --> 00:08:29.039 align:start position:0%
+00:08:29.039 --> 00:08:32.549 align:start position:0%
+with leapwork. Happy automation.
+00:08:32.549 --> 00:08:32.559 align:start position:0%
+00:08:32.559 --> 00:08:38.129 align:start position:0%

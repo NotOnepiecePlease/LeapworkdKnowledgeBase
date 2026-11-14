@@ -1,0 +1,325 @@
+00:00:06.950 Hey everyone, welcome back to video 3 of
+00:00:06.960 our desktop UI automation series. In the
+00:00:10.400 last video, we learned how to automate
+00:00:12.400 form fields and verify updates in a
+00:00:14.639 desktop application. If you need a quick
+00:00:17.520 refresher, just check out the link in
+00:00:19.439 the video description. Today, we're
+00:00:21.680 taking things a step further. You will
+00:00:23.760 learn how to automate the entire process
+00:00:25.600 of creating a new contact in the demo
+00:00:28.000 desktop app.
+00:00:29.760 So what happens when you create a new
+00:00:31.920 contact on any website or the
+00:00:33.760 application?
+00:00:35.280 You need to enter details, right?
+00:00:37.520 Usually that means typing in the first
+00:00:39.360 name, last name, and email manually.
+00:00:43.360 But wouldn't it be great if you could
+00:00:44.640 just automate that? That's exactly what
+00:00:47.280 we'll do. Instead of typing in each
+00:00:49.760 field, we'll be pulling the values
+00:00:51.520 straight from an Excel sheet using
+00:00:53.199 Leapwork's datadriven approach. This
+00:00:55.760 will help us fill out the form
+00:00:57.120 automatically based on external data.
+00:01:00.239 Now, why is this useful for industries
+00:01:02.800 dealing with tons of data like sales or
+00:01:05.360 customer management? This is a huge
+00:01:07.360 timesaver. You avoid repeating the same
+00:01:10.080 process over and over, making the
+00:01:12.080 automation more dynamic. Whether you're
+00:01:14.479 running tests with different sets of
+00:01:16.080 data or entering data in bulk, using
+00:01:18.799 Excel as a source helps streamline the
+00:01:21.200 entire process and solve the issue of
+00:01:23.520 manual repetitive input. So let's get
+00:01:26.720 started and automate the creation of a
+00:01:28.799 new contact. We will continue from this
+00:01:31.200 login flow which we created in the last
+00:01:33.280 lesson to launch the demo application
+00:01:35.520 using a subflow. Here's our demo
+00:01:38.240 application opened. Now we will create
+00:01:40.880 another subflow to create a new contact.
+00:01:45.200 At first, let's delete the pass block to
+00:01:47.759 continue flow creation
+00:01:53.910 with the help of start recorder feature.
+00:01:53.920 Capture new button.
+00:02:02.069 Select click UI element. The click type
+00:02:02.079 is left. Click on apply button.
+00:02:05.840 You can see the form is opened. Now we
+00:02:08.080 will fill only mandatory fields. Last
+00:02:10.479 name, first name and email.
+00:02:13.040 Let's capture these fields one by one.
+00:02:15.840 Capture last name.
+00:02:18.560 Select set UI element block. In text
+00:02:21.760 value, enter the text as last name.
+00:02:26.160 The type is text. Click on apply button.
+00:02:40.959 value, enter first name.
+00:02:49.360 Let's repeat for our next field that's
+00:02:51.280 email.
+00:03:07.030 We have successfully captured all the
+00:03:07.040 three fields. After filling the
+00:03:09.200 mandatory fields, the next step is to
+00:03:11.360 click save button. Now capture save
+00:03:14.239 button.
+00:03:21.430 Select click UI element. Button click
+00:03:21.440 type will be left. Click on apply
+00:03:23.440 button. Now close and save the
+00:03:26.239 recording.
+00:03:34.390 We can see the automation flow to create
+00:03:34.400 a new contact is created.
+00:03:37.040 Let me adjust the flow to give you a
+00:03:38.720 clear view. Yeah. Now let's connect the
+00:03:41.680 pass block to complete the flow.
+00:03:51.350 Now we will create a subflow of these
+00:03:51.360 steps which we captured for new contact
+00:03:53.519 creation.
+00:03:56.480 You must be able to sync that. Why we
+00:03:59.120 didn't put the exact value in all three
+00:04:01.200 fields?
+00:04:02.799 because we will be passing values from
+00:04:04.720 Excel sheet to these fields. Let's
+00:04:07.040 continue. Simply select all these blocks
+00:04:09.680 used to create new contact.
+00:04:22.390 Let's keep the name of subflow as new
+00:04:22.400 contact 2
+00:04:34.710 Yes, the subflow is created. We can
+00:04:34.720 identify all subflows with their purple
+00:04:36.720 color. Subflows in leapwork extremely
+00:04:40.320 simplify complex tasks by breaking them
+00:04:42.960 into smaller and manageable parts. You
+00:04:46.479 don't have to recreate flows. Just reuse
+00:04:48.960 your subflows in automation flows and
+00:04:51.040 save your time. You can see that they
+00:04:53.360 also enhance the visual structure of
+00:04:55.120 your canvas by minimizing the number of
+00:04:57.440 blocks. Plus, you can create subflows
+00:05:00.320 within subflows that allows you to
+00:05:02.240 organize even more complex workflows in
+00:05:04.560 a well ststructured manner. It becomes
+00:05:06.720 so easier to manage and scale
+00:05:08.479 automation. Now the question comes since
+00:05:11.440 we have created the subflow how will we
+00:05:13.840 pass the values for last name, first
+00:05:15.600 name and email ID fields.
+00:05:18.560 In leapwork you can pull data from
+00:05:20.880 various external sources like Excel, SQL
+00:05:24.080 databases etc. But the most commonly
+00:05:26.960 used source is the Excel block. To learn
+00:05:29.440 more about datadriven automation and the
+00:05:31.360 supported platforms, please visit the
+00:05:33.360 Leapwork Learning Center. The link is in
+00:05:35.759 the description. Now, let's add building
+00:05:38.320 block Excel.
+00:05:46.390 And yes, we have read Excel building
+00:05:46.400 block here. Yeah, with the help of read
+00:05:49.039 Excel block, we will pull data from an
+00:05:51.280 Excel file into our automation flow. Now
+00:05:54.560 let me explain the source types this
+00:05:56.240 block provides you to select from. Here
+00:05:59.199 you can see if click on the drop- down
+00:06:01.440 of source type we have two options data
+00:06:04.080 file and the second one is local path.
+00:06:07.360 So basically data file refers to the
+00:06:10.000 anxel file which we have to upload or we
+00:06:13.039 can say that we have to import to
+00:06:14.560 leapwork and the local path is an excel
+00:06:17.199 file that is saved on your own computer.
+00:06:19.919 You can select either of the two source
+00:06:21.680 types that how you want to select your
+00:06:24.000 data file. Let's go ahead with data file
+00:06:26.400 source type for now.
+00:06:29.120 Now since we have to keep the read excel
+00:06:30.960 block before the subflow new contact 2.
+00:06:33.360 Let's arrange it.
+00:06:36.319 Yes. Delete this connector then place
+00:06:38.880 and connect read excel block in between
+00:06:41.680 these blocks. By doing this the values
+00:06:44.639 from read excel block will be passed to
+00:06:46.639 the subflow.
+00:06:53.110 And yes, it's arranged. Now the next
+00:06:53.120 step is to select the file from where
+00:06:54.800 this read Excel block will read the
+00:06:56.639 data. I'm selecting the file from my
+00:06:59.120 device. I had prepared the data
+00:07:01.199 beforehand.
+00:07:11.110 The Excel file is added with the help of
+00:07:11.120 define property. You have to define the
+00:07:13.199 range from where Leapwork will pull data
+00:07:15.360 or you can say take data. Click on
+00:07:18.160 define.
+00:07:32.790 And here you have to select use first
+00:07:32.800 row as header and click on save button.
+00:07:35.520 Checking first row as header means
+00:07:37.199 leapwork will treat the first row as the
+00:07:38.960 label for each column in the selected
+00:07:40.720 range.
+00:07:43.199 We have successfully added Excel file to
+00:07:45.680 our flow and define the range to select
+00:07:48.080 data from it. Now it's time to enter
+00:07:50.639 data from Excel sheet to the form fields
+00:07:53.199 last name, first name, and email ID. To
+00:07:57.280 do it, open this subflow, rightclick,
+00:07:59.919 and select edit subflow.
+00:08:03.759 Here's our subflow. Let me little
+00:08:06.400 arrange to give you a proper look.
+00:08:15.830 Yes, you can see these three blocks that
+00:08:15.840 capture last name, first name and email
+00:08:18.240 ID. We can type the values directly, but
+00:08:20.879 we will use value input block to put
+00:08:23.280 data in each. You can see here the use
+00:08:26.720 UI window block. So, this is
+00:08:28.720 automatically added during action
+00:08:30.240 capturing with Leapworks start recorder
+00:08:32.560 to ensure that the automation flow is
+00:08:34.479 targeting the correct application
+00:08:36.159 window. It helps leapwork identify and
+00:08:39.200 interact with the specific window where
+00:08:41.200 the actions are being performed. We will
+00:08:44.000 learn about use UI window more in
+00:08:45.839 details in the next videos.
+00:08:48.560 Let's add value input block. Right click
+00:08:51.519 and select value input block.
+00:09:02.230 Now understand, imagine you're setting
+00:09:02.240 up a flow in leapwork and you need it to
+00:09:04.800 use different information each time like
+00:09:06.959 names or numbers. The value input block
+00:09:10.240 is where you type in that information.
+00:09:13.040 The value input block tells leapwork use
+00:09:15.920 this specific value when running the
+00:09:17.519 flow. So instead of changing the flow
+00:09:20.399 every time, you just have to update the
+00:09:22.800 value in this block. Once you update the
+00:09:25.760 value, leapwork will automatically use
+00:09:27.839 that new data the next time the flow
+00:09:29.680 runs. It's that super interesting and
+00:09:32.240 time-saving. Rename it.
+00:09:41.990 Connect input property to text value
+00:09:42.000 property of set UI element block.
+00:10:08.870 and connect it to text value property of
+00:10:08.880 set UI element block.
+00:10:12.640 Let me little arrange the flow.
+00:10:29.750 Similarly, we will repeat the steps for
+00:10:29.760 the email ID field.
+00:10:44.389 Rename it and connect input property to
+00:10:44.399 text value property of set UI element
+00:10:47.519 block.
+00:10:58.389 Before we proceed, let's replace these
+00:10:58.399 blocks with execution input and output
+00:11:00.800 blocks to make the subflow more
+00:11:02.959 flexible. This pass block is yes making
+00:11:06.000 the flow complete, but if we will keep
+00:11:08.000 it, we'll not be able to connect further
+00:11:09.839 blocks to this subflow. Replacing it
+00:11:12.399 with execution input and execution
+00:11:14.800 output blocks. The subflow can connect
+00:11:17.200 smoothly to other parts of your
+00:11:18.640 automation flow, allowing it to start
+00:11:20.720 and finish based on specific triggers
+00:11:23.040 rather than just passing through
+00:11:24.480 automatically.
+00:11:38.790 Now, this helps you control how and when
+00:11:38.800 the subflow runs within a larger
+00:11:40.720 automation process. Let's save this
+00:11:43.600 particular version of automation flow.
+00:11:51.030 In comments, let's write comment the
+00:11:51.040 value input blocks added.
+00:12:05.990 Yeah, we can see the input fields have
+00:12:06.000 been successfully added in the new
+00:12:07.519 contact subflow.
+00:12:13.829 Now it's quite easy. Let's connect all
+00:12:13.839 fields with the help of blue connector.
+00:12:27.030 Once we do it, Leapwork will be able to
+00:12:27.040 read data from Excel sheet and input
+00:12:29.360 them in form fields. We have connected
+00:12:31.519 the fields. Close the demo application.
+00:12:34.320 Minimize all other apps to avoid any
+00:12:36.639 challenge. Run the flow.
+00:13:04.230 And yes, we can see that our flow is
+00:13:04.240 passed. If we check the application,
+00:13:11.110 if you try to search with firstn name
+00:13:11.120 Bill,
+00:13:13.440 yes, we can see the result and our new
+00:13:15.519 contact is created successfully.
+00:13:18.160 This is how quick and easy it is to
+00:13:20.000 automate the process of creating new
+00:13:21.839 contacts in the demo application through
+00:13:24.160 Leapwork. Now, let's say if you want to
+00:13:26.399 create multiple contacts in one go, what
+00:13:28.959 would you do? It's simple. We just have
+00:13:31.440 to tell read Excel block to check each
+00:13:33.360 and every row of the data and create new
+00:13:35.600 contacts based on it. Let me show you
+00:13:38.000 how can you do it. Expand read Excel
+00:13:40.639 block
+00:13:52.790 and yes in method if we open the
+00:13:52.800 drop-down
+00:13:54.880 you can see three options first row row
+00:13:57.839 index and iterate.
+00:14:04.150 At first, the selected method was first
+00:14:04.160 row since we were creating a one contact
+00:14:06.480 whose details were in the first row of
+00:14:08.240 the Excel data.
+00:14:15.350 If you select index, you will have to
+00:14:15.360 specify the row to pick data from. So,
+00:14:17.519 read Excel block will read that row only
+00:14:19.680 and perform actions accordingly. Now,
+00:14:22.399 since we have to create contacts for all
+00:14:24.560 rows in our Excel data, let's select
+00:14:26.639 iterate. Doing this read excel block
+00:14:29.519 will loop through all the rows and
+00:14:31.440 create new contacts based on it. Once
+00:14:34.240 iteration is completed the flow will
+00:14:36.240 pass. When we say pass it means we now
+00:14:39.760 need to connect pass block to the
+00:14:41.360 completed property of read excel block.
+00:14:45.440 Simply delete this connector and connect
+00:14:48.240 pass block to completed property.
+00:14:59.750 Now let's run the flow again. See one
+00:14:59.760 point. Always avoid to move your mouse
+00:15:01.920 when clicking the run button because
+00:15:03.760 Leapwork captures your screen
+00:15:05.199 interactions. Any movement can interfere
+00:15:08.000 with automation accuracy by affecting
+00:15:09.920 how it recognizes and executes actions.
+00:15:14.560 And yes, we can see both contacts are
+00:15:16.720 created one by one. Flow is successfully
+00:15:19.760 passed. Now if we check the activity log
+00:15:23.199 on the right hand side,
+00:15:28.790 we can see each contact details are
+00:15:28.800 successfully entered in form and
+00:15:30.560 contacts are created.
+00:15:36.230 I would like to suggest you try this
+00:15:36.240 exercise at your end. Moreover, to again
+00:15:39.040 see the entire automation process, you
+00:15:41.600 can check the recording of your
+00:15:42.800 automation flow anytime you want with
+00:15:44.639 this recording panel.
+00:15:47.440 Likewise, you can handle data in bulk so
+00:15:49.680 efficiently that it will not only
+00:15:51.440 simplify the way you automate data
+00:15:53.199 management but also scale your
+00:15:55.040 automation results and deliver quality
+00:15:56.880 outcomes. Let's recap. In the today's
+00:15:59.759 video, we learned how to automate the
+00:16:01.440 process of creating a new contact in the
+00:16:03.759 demo application through subflow. We
+00:16:06.480 also learned how to do parameterization
+00:16:08.959 that is how to enter values in form
+00:16:10.959 fields dynamically through Excel sheet
+00:16:13.519 and how to iterate through all rows in
+00:16:15.519 the Excel data. At the end we run the
+00:16:18.800 flow and verified new contact creation.
+00:16:21.120 This was all about the today's tutorial.
+00:16:23.120 I hope you understood the concepts
+00:16:24.720 today. Stay tuned for more interesting
+00:16:27.120 videos in this series where we will
+00:16:29.920 bring more concepts and help you master
+00:16:32.160 desktop UI automation with ease. For any
+00:16:35.600 doubts and queries, feel free to contact
+00:16:37.839 us through Leapwork support or connect
+00:16:40.720 via live chat. Thank you for watching
+00:16:43.120 and remember with every click brings you
+00:16:45.519 close to innovation turning complexity
+00:16:47.839 into simplicity.

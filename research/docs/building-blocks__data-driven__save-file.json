@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/save-file",
+  "title": "Save File",
+  "retrievedAt": "2026-11-13T21:12:55.241386+00:00",
+  "text": "Breadcrumbs\nThe\nSave File\nblock allows you to store files generated during test execution in a fixed location. This ensures that file-based output (such as logs, reports, or exports) can be reused, analyzed, or retrieved by other parts of the automation flow.\nThis block supports common formats like\n.txt\n,\n.csv\n,\n.json\n,\n.pdf\n,\n.xlsx\n, and\n.xml\n, and does not require a manual file path. Content is passed dynamically and saved in the Leapwork database and file system.\nExample:\nA test case generates a JSON report containing API response data. Using the Save File block, this report is saved in a predefined storage location, allowing subsequent test cases to retrieve and analyze it.\nWhen fully expanded, the following is an example of the\nSave File\nblock with sample data:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick Start\nDrag\nSave File\nonto the canvas.\nConnect\nFile Input\nto the output of a block that provides file content (e.g., a block that generates or returns a file).\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nThe left green input connector in the header is used to trigger the block to execute and save the file. The right green output connector in the header is triggered once the file has been successfully saved. This allows subsequent blocks in the automation flow to continue execution only after the file is stored.\nThe block title\nSave File\n, can be changed by double-clicking on it and typing a new title.\nFile Input:\nReceives the file content to be saved. Supports multiple formats:\n.txt\n,\n.csv\n,\n.json\n,\n.pdf\n,\n.xlsx\n,\n.xml\n. Content is passed from upstream blocks and saved automatically with a unique filename.\nNot saved:\nTriggers if the file could not be saved (e.g., due to empty input, internal error, or storage failure). If triggered, the log message will state:\n\"Cannot save the file. Please add content before saving.\"\nDefault timeout:\nAllows the use of the global timeout defined in the flow settings. If not selected, the block will default to a local timeout of 10 seconds.\nTimeout:\nSpecifies the maximum time allowed for saving the file. If this time is exceeded, the block will trigger\nNot saved\n.\nAdditional behavior\nSuccessful execution\nWhen the Save File block completes successfully, the file is stored and the run log will display the message:\n\"File {file name.ext} saved successfully.\"\nThe filename is automatically generated to ensure uniqueness. This confirms that the file content was written and stored as expected.\nDownload option\nAfter execution, the saved file can be downloaded directly from the\nKeyframes\npanel by selecting the block and accessing the file under\nMedia\n.\nThe same download option is available in test reports for completed runs, making it easy to retrieve generated files even after execution has finished.\nStorage path\nFiles are saved automatically to the following default directory on the agent machine:\nC:\\Program Files\\Leapwork\\Assets\\AutomationRunMedia\\SomeFolder\\SomeFolder\\Files\\\nThe exact subfolders depend on the run context, but Leapwork manages the full path internally. No manual path configuration is required.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251112-145845.png",
+      "url": "https://docs.leapwork.com/__attachments/a_58da359bd6e0d94ab0b224619a5de0f20f7b9740dd33dc609d9cad653a012477/image-20251112-145845.png?cb=ca9a719e6bd1606e629fa2552e9d5208"
+    }
+  ]
+}

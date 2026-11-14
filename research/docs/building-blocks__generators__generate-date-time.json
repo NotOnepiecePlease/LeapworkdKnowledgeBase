@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-date-time",
+  "title": "Generate date/time",
+  "retrievedAt": "2026-11-13T21:12:57.680686+00:00",
+  "text": "Breadcrumbs\nThe\nGenerate date/time\nbuilding block generates a date/time value containing the current system date and time.\nFully expanded, the\nGenerate date/time\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nGenerate date/time\nonto the canvas.\nConnect the block in the flow. Trigger it where you need the current date/time, and use\nDate/time\nlater in the flow. Optionally, you can expand and use the individual date and time parts.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to execute and generate the current date/time value. The green output connector triggers when the date/time value has been generated. You can rename the block title (“Generate date/time”) by double-clicking it and typing a new title.\nDate/time\n: The current system date/time value. You can expand it to use the individual date and time values separately, including\nYear\n,\nMonth\n,\nDay\n,\nHour\n,\nMinute\n, and\nSecond\n(and\nMillisecond\nwhere available).\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260207-102706.png",
+      "url": "https://docs.leapwork.com/__attachments/a_937c6af68834632a20b4ed384eed05c191ab984e97e5ef3182c802d99542c716/image-20260207-102706.png?cb=b556500ab76236a4c216bd582565c550"
+    }
+  ]
+}

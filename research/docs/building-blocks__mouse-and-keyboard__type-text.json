@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/type-text",
+  "title": "Type Text",
+  "retrievedAt": "2026-11-13T20:18:28.698456+00:00",
+  "text": "Breadcrumbs\nThe\nType text\nbuilding block types text and captured keystrokes on the keyboard. Captured keystrokes are useful for using special keys and keyboard shortcuts in the system under test.\nSee the\nCapture text on screen lesson\nfor examples of how to use the Type text block.\nFully expanded, the\nType text\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when the text has been typed. The block title (“Type text”) can be renamed by double-clicking it and typing a new title.\nText value\n: The text to type. It can include tokens for values provided via\nText fields\n. To insert a token, right-click and select\nInsert token\n, then choose one or more field tokens.\nCapture\n: Captures keystrokes into\nText value\n, which makes it easier to include special keys and key combinations such as CTRL+C or ENTER. You can also type special keys manually by wrapping the key or combination in double percentage signs, for example\n%%CTRL+P%%\nor\n%%ENTER%%\n.\nText fields\n: Key–value fields that let you use external values in the typed text. To use a field value, insert its token into\nText value\nvia\nInsert token\n.\nAdd field\n: Adds a field that can be inserted as a token into\nText value\n.\nType\n: Select\nText\nfor normal typing, or\nPassword\nfor entering secret information such as passwords. A password value can’t be read by other users.\nKey speed\n: Sets typing speed. In some cases you may need to type more slowly to trigger events, such as on certain web pages.\nType as keys\n: Sends the text as keystrokes instead of characters. This is typically required for some terminal clients (for example Citrix, Remote Desktop, 3270 terminals) and some applications based on older frameworks.\nAwait no movement\n: Waits until there has been no movement on the screen for a specified period (for example 2 seconds) before typing. This is useful when waiting for screen updates such as a browser page load. Regardless of this checkbox, typing will proceed after waiting a maximum of\n30 seconds\n.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Capture text on screen lesson",
+      "url": "https://www.youtube.com/watch?v=qGGNbk0UY-0"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260205-125138.png",
+      "url": "https://docs.leapwork.com/__attachments/a_115d3b0951b9f3816438a037049230bf8b5b82b18fbb2d92232d001f608ff878/image-20260205-125138.png?cb=f63c0468cec33176bfb1f4a3def8a68d"
+    }
+  ]
+}

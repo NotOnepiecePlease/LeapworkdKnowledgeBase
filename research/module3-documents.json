@@ -1,0 +1,321 @@
+[
+  {
+    "path": "building-blocks/data-driven/read-excel",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/read-excel",
+    "title": "Read Excel",
+    "size": [
+      249,
+      467
+    ],
+    "image": "assets/docs/m3-read-excel.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_873a1e4341db2636c5ea29b43d92d7072722074df0c8fd63a09a7d89ea3a806b/image-20260206-090645.png?cb=6207878e46370cde8ca0bb57e9c01830"
+  },
+  {
+    "path": "building-blocks/data-driven/write-excel",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/write-excel",
+    "title": "Write Excel",
+    "size": [
+      362,
+      591
+    ],
+    "image": "assets/docs/m3-write-excel.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_eb466e241ba98db32864f7d856c2902aac03fbaf64e09507e4ce636db9a9e508/image-20260112-081258.png?cb=6cc8dd2493c3031ca614d9bd1d9ff6e1"
+  },
+  {
+    "path": "building-blocks/data-driven/database",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/database",
+    "title": "Database",
+    "size": [
+      287,
+      709
+    ],
+    "image": "assets/docs/m3-database.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_eee94da474ed753cc62fa777d8fb04360598f636658e3aba33572805a595fa53/image-20260129-091645.png?cb=bfebc8a8f1acff61d7453534da600b20"
+  },
+  {
+    "path": "building-blocks/data-driven/http-request",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/http-request",
+    "title": "HTTP Request",
+    "size": [
+      241,
+      672
+    ],
+    "image": "assets/docs/m3-http-request.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_6767dccc7c744dc58bff7bf53880d455a4899cc478486b0148fa594337da6b88/image-20260207-130528.png?cb=aaf97f5fbafa2d0a416f43e768a4cacd"
+  },
+  {
+    "path": "building-blocks/data-driven/compress-file",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/compress-file",
+    "title": "Compress File",
+    "size": [
+      214,
+      217
+    ],
+    "image": "assets/docs/m3-compress-file.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_e57db4e8c2f019ec5dc48ed0fcc87c49186b24d891fb6665627ee72bad17d5ea/image-20260114-081748.png?cb=5f39f4179f875d5f8565a2f5caf74927"
+  },
+  {
+    "path": "building-blocks/data-driven/save-file",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/save-file",
+    "title": "Save File",
+    "size": [
+      265,
+      294
+    ],
+    "image": "assets/docs/m3-save-file.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_58da359bd6e0d94ab0b224619a5de0f20f7b9740dd33dc609d9cad653a012477/image-20251112-145845.png?cb=ca9a719e6bd1606e629fa2552e9d5208"
+  },
+  {
+    "path": "building-blocks/data-driven/set-file",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/set-file",
+    "title": "Set File",
+    "size": [
+      255,
+      338
+    ],
+    "image": "assets/docs/m3-set-file.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_66d580d1ffbbcdb5bc40e374f4e7aefc5f05dd6d5affa83b50ec0d0a3d6586bf/image-20260203-161328.png?cb=1f7c113cedac05ce189366e68aa0e934"
+  },
+  {
+    "path": "building-blocks/data-driven/command-line",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/command-line",
+    "title": "Command-line",
+    "size": [
+      310,
+      775
+    ],
+    "image": "assets/docs/m3-command-line.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_5fb9a222e7f918288cd20100ff72dab207d9cb70a9d811c9e2f32712cdf0e4f3/image-20260116-114120.png?cb=1187abf682ab266da570472e6512a95b"
+  },
+  {
+    "path": "building-blocks/data-driven/send-e-mail",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/send-e-mail",
+    "title": "Send E-Mail",
+    "size": [
+      254,
+      506
+    ],
+    "image": "assets/docs/m3-send-e-mail.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_977d3624049645ccdd1a38cb973667b5b12788dbac447142a4540c6736ce2c13/image-20260119-081150.png?cb=23b154d40720cf3f75b2c290877de5ad"
+  },
+  {
+    "path": "building-blocks/logic/compare",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/compare",
+    "title": "Compare",
+    "size": [
+      194,
+      305
+    ],
+    "image": "assets/docs/m3-compare.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_34902acd646de3befdc13744ec49b989204ad024a4321e21015278278e8ab497/image-20251222-132625.png?cb=bdf158eb3b7ad764d73e260776d5d880"
+  },
+  {
+    "path": "building-blocks/logic/switch",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/switch",
+    "title": "Switch",
+    "size": [
+      234,
+      334
+    ],
+    "image": "assets/docs/m3-switch.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_7e48356487940db84169898ad2df9d94889e7195f99522adaba63abeafb9308e/image-20251222-135741.png?cb=c24b4e142d750b6e901ea2d4f619d4be"
+  },
+  {
+    "path": "building-blocks/logic/loop",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/loop",
+    "title": "‎ Loop",
+    "size": [
+      257,
+      377
+    ],
+    "image": "assets/docs/m3-loop.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_217b645dbf9341bc8f7a8554742e1c8f45bf650f7c44a6662f94522ae6b4f4f8/image-20260115-104335.png?cb=28d93647257003686b2672cb9836e503"
+  },
+  {
+    "path": "building-blocks/logic/break-iteration",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/break-iteration",
+    "title": "Break Iteration",
+    "size": [
+      206,
+      118
+    ],
+    "image": "assets/docs/m3-break-iteration.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_49bdf18ce17dc3a414e7d4b5f75ad484baf5e97ecb9fb68c00972e1a62b85a7d/image-20260127-142604.png?cb=388e512150ec894b6346b83648a7160e"
+  },
+  {
+    "path": "building-blocks/logic/calculate",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/calculate",
+    "title": "Calculate",
+    "size": [
+      176,
+      223
+    ],
+    "image": "assets/docs/m3-calculate.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_eaaa54371de0883411ff491e0d388c81f2a4f26de3991f29b14e941b0a999728/image-20251222-094143.png?cb=703c5bd1beee69e1610f7af9865401c7"
+  },
+  {
+    "path": "building-blocks/logic/change-text",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/change-text",
+    "title": "Change Text",
+    "size": [
+      192,
+      351
+    ],
+    "image": "assets/docs/m3-change-text.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_bbc6f25f84b38cb9db23fd8f5abf293aa083805c29c0d4853f4fee386d4a8a1b/image-20251222-150527.png?cb=2562f4267a80f4e09b8f8e4edf0afeaf"
+  },
+  {
+    "path": "building-blocks/logic/regular-expression",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/regular-expression",
+    "title": "Regular Expression",
+    "size": [
+      264,
+      545
+    ],
+    "image": "assets/docs/m3-regular-expression.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_9c7674b3096340c9d789ef53f743ccf6cf5cd9851f98d390e0e97e05632aa70f/image-20251222-101855.png?cb=f2d16e0c72578e4861b75772449a0a43"
+  },
+  {
+    "path": "building-blocks/logic/offset-date-time",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/offset-date-time",
+    "title": "Offset Date/Time",
+    "size": [
+      188,
+      224
+    ],
+    "image": "assets/docs/m3-offset-date-time.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_1f7451189bb586d05210c17c774784d4edd0bc02e0a46cb04f175a17f9b94cb9/image-20251222-154821.png?cb=5db0c2567dd8cc0ee41e24a11776bcfc"
+  },
+  {
+    "path": "building-blocks/logic/offset-area",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/offset-area",
+    "title": "Offset Area",
+    "size": [
+      198,
+      255
+    ],
+    "image": "assets/docs/m3-offset-area.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_efe3812aa79bc9f34697e5911754d5b0fcca3542b86ae2f5d6749ac7bfe76284/image-20251222-153834.png?cb=cdf1ed3b8a4e3765832ae747e62d476a"
+  },
+  {
+    "path": "building-blocks/logic/offset-position",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/offset-position",
+    "title": "Offset Position",
+    "size": [
+      197,
+      222
+    ],
+    "image": "assets/docs/m3-offset-position.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_8069548c8987963576596f9f567fb8e2274869ae9806ee5c94c7744f02349696/image-20260207-111735.png?cb=030b6e03bc128ca79f5fe68c32a56ea1"
+  },
+  {
+    "path": "building-blocks/logic/get-clipboard",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/get-clipboard",
+    "title": "Get Clipboard",
+    "size": [
+      193,
+      82
+    ],
+    "image": "assets/docs/m3-get-clipboard.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_d3923dccacba33caf6b541e4d4e6586c6bde3f6bb77ac76aed6cc6baa10993cd/image-20260202-172945.png?cb=b3d7c0b20f44f3fe8ec4ff800a39551e"
+  },
+  {
+    "path": "building-blocks/logic/set-clipboard",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/set-clipboard",
+    "title": "Set Clipboard",
+    "size": [
+      212,
+      201
+    ],
+    "image": "assets/docs/m3-set-clipboard.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_8adda98c14e93f7fa6900149617a3b8d05e36788792fc13bb8c5c5daa45c0fcc/image-20260127-143145.png?cb=0efa98a67fb0427dc677fac0ed905a27"
+  },
+  {
+    "path": "building-blocks/logic/close-windows",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/close-windows",
+    "title": "Close Windows",
+    "size": [
+      263,
+      171
+    ],
+    "image": "assets/docs/m3-close-windows.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_25cea2e21b9a92b02ada82407c0e3efabaee3d95d606572e6457de1d2961929a/image-20260108-131638.png?cb=5e69315264275099d2076804c778a5fa"
+  },
+  {
+    "path": "building-blocks/logic/wait",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/wait",
+    "title": "Wait",
+    "size": [
+      235,
+      132
+    ],
+    "image": "assets/docs/m3-wait.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_ba2026a142c1054764b88a0ce10e20d8a063a99d8f7a7c9a6728af2a67eb9ced/image-20260203-115743.png?cb=9de63d228bfd342000a4158e22359fbb"
+  },
+  {
+    "path": "building-blocks/logic/c-sharp-code",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/c-sharp-code",
+    "title": "C# Code",
+    "size": [
+      1396,
+      768
+    ],
+    "image": "assets/docs/m3-c-sharp-code.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_7ce35192f956b8f7a2141438143233f3d744255843a5cea60612d6fa62c265a5/image-20260428-070509.png?cb=05bf600eb6671762dfd675eb08cd4bc2"
+  },
+  {
+    "path": "building-blocks/variables/set-variable",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/variables/set-variable",
+    "title": "Set Variable",
+    "size": [
+      271,
+      364
+    ],
+    "image": "assets/docs/m3-set-variable.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_3593ba80826963783ae75b3190aa930bc2dfd67d6a4fd7f332f207e754c56a1a/image-20260112-132053.png?cb=721f2e9e4e7af6b48ee378a722b2de49"
+  },
+  {
+    "path": "building-blocks/variables/get-variable",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/variables/get-variable",
+    "title": "Get Variable",
+    "size": [
+      298,
+      301
+    ],
+    "image": "assets/docs/m3-get-variable.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_de682c4b0e052f26bc753bb3718eba8f27c1da7d4113307eb2333eeaefed0496/image-20260202-101650.png?cb=01ba307b9dff8aa978e9305a5ff30319"
+  },
+  {
+    "path": "building-blocks/generators/generate-number",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-number",
+    "title": "Generate‎ Number",
+    "size": [
+      199,
+      305
+    ],
+    "image": "assets/docs/m3-generate-number.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_d2df793adef2308f6b214e7600c3eae824ed403570ed0f80c0c6f54323f39b57/image-20260207-103113.png?cb=1909deff84e0934682166d921794dd6d"
+  },
+  {
+    "path": "building-blocks/generators/generate-password",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-password",
+    "title": "‎Generate‎ Password",
+    "size": [
+      273,
+      318
+    ],
+    "image": "assets/docs/m3-generate-password.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_9682386b71334bec9d5ce6c36d3623ea36f89d3c882742cd07235be1b9ba6acc/image-20251219-095228.png?cb=78e13bbb905776ede4463224f05ba2c4"
+  },
+  {
+    "path": "building-blocks/generators/generate-date-time",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-date-time",
+    "title": "Generate date/time",
+    "size": [
+      241,
+      421
+    ],
+    "image": "assets/docs/m3-generate-date-time.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_937c6af68834632a20b4ed384eed05c191ab984e97e5ef3182c802d99542c716/image-20260207-102706.png?cb=b556500ab76236a4c216bd582565c550"
+  }
+]

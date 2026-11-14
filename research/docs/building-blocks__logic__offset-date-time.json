@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/offset-date-time",
+  "title": "Offset Date/Time",
+  "retrievedAt": "2026-11-13T21:12:56.609657+00:00",
+  "text": "Breadcrumbs\nThe\nOffset date/time\nblock offsets a date and time value by a specified number of years, months, days, hours, minutes, or seconds. For example, if the original date and time is 01.01.2017 10:00:05 and the offset is 1 year and 2 minutes with\nOffset method\nset to\nAdd\n, the result is 01.01.2018 10:02:05.\nThis block has no green input or output connectors in the header because it is not explicitly executed. It is used to change a date and time value and deliver the result to other building blocks.\nFully expanded, the\nOffset date/time\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nOffset date/time\nonto the canvas.\nConnect the block in the flow and specify\nDate/time to offset\n,\nOffset date/time\n, and\nOffset method\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nOffset date/time\nblock. You can rename it by double-clicking the header and typing a new title.\nDate/time to offset\n: Specifies the original date and time value to change. You can enter it as separate date and time values, and you can further expand it into year, month, day, and hour, minute, second fields.\nOffset date/time\n: Specifies the offset value to apply. You can enter it as separate date and time values, and you can further expand it into year, month, day, and hour, minute, second fields.\nOffset method\n: Selects how the offset is applied. The available options are:\nAdd\n: Adds the specified offset values to the original date and time.\nSubtract\n: Subtracts the specified offset values from the original date and time.\nSet\n: Sets one or more parts of the original date and time to specific values, for example setting the year to 2020.\nResult date/time\n:\nProvides the resulting date and time value after applying the offset operation.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251222-154821.png",
+      "url": "https://docs.leapwork.com/__attachments/a_1f7451189bb586d05210c17c774784d4edd0bc02e0a46cb04f175a17f9b94cb9/image-20251222-154821.png?cb=5db0c2567dd8cc0ee41e24a11776bcfc"
+    }
+  ]
+}

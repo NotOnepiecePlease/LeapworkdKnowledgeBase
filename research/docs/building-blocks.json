@@ -1,0 +1,37 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks",
+  "title": "",
+  "retrievedAt": "2026-11-13T18:44:19.492657+00:00",
+  "text": "Breadcrumbs\nBuilding blocks are the core components you use to create automation flows in Leapwork. Each building block represents a step in your automation, for example interacting with an application, reading data, applying logic, handling errors, or controlling execution. By connecting building blocks together, you define the path your flow follows from start to finish.\nThis article explains how to add, find, and connect building blocks while you design a flow in Leapwork Flow.\nWhat building blocks represent\nBuilding blocks are the fundamental units of a Leapwork flow. Each block represents either:\nAn action\n(for example, interacting with an application, clicking, reading data, calling a system operation)\nA control step\n(for example, branching, waiting, looping, stopping the flow, handling errors)\nA data step\n(for example, setting values, working with variables, consuming data driven input)\nBy selecting and connecting building blocks, you define both the\nbehavior\nof the automation and the\npath\nit follows through the flow.\nHow to add a building block\nYou can add building blocks in two common ways, depending on where you are in your flow.\nOption 1: Add a block from an empty step or the canvas\nIf you are starting a new flow, or you want to add a step in a blank spot:\nRight click in the flow area (for example on an empty placeholder block).\nSelect\nAdd Building Block\n(keyboard shortcut:\nCtrl+N\n).\nIn the\nAdd building block\ndialog, search or browse to find the block you want.\nSelect the block to add it to the flow.\nOption 2: Add a block by dragging from an output\nIf your flow already contains blocks and you want to continue the sequence:\nLocate the block you want to extend.\nDrag from the block’s\noutput connector\n(the arrow/connector point).\nRelease to open the\nAdd building block\ndialog.\nPick a block to insert as the next step.\nFind the right building block\nThe\nAdd building block\ndialog is designed to help you quickly locate blocks:\nUse the\nSearch\nfield to find a block by name or keyword.\nBrowse categories to explore blocks by purpose or technology area.\nCategories can include areas such as recorders, AI, cloud, data driven, debugging, desktop UI, specific applications (for example Dynamics 365, Salesforce, SAP), logic, variables, system, start and stop, and more. Some categories may appear or differ depending on what is available in your environment.\nIf you see labels such as\nExperimental\non a category, treat those blocks as features that may evolve. Use them when they fit your use case and you are comfortable validating behavior in your environment.\nConfigure a building block with the Inspector panel\nAfter you add a building block to the flow, you configure it by setting its parameters.\nClick the building block you want to configure.\nOn the right side of the editor, the\nInspector panel\nopens.\nIn the Inspector panel, review the available parameters for that block and set the values you need.\nImportant:\nNot all parameters are shown directly on the building block by default. In the Inspector panel, you choose which parameters should be visible on the block itself, including which\ninputs and outputs\nyou want to expose.\nOnce selected, those inputs, outputs, or other parameter fields appear on the building block so you can connect and work with them directly in the flow.\nConnect building blocks using inputs and outputs\nMost blocks have:\nAt least one\ninput\n, where the flow enters the block\nAt least one\noutput\n, where the flow continues\nTo connect blocks, connect an output from one block to the input of the next block. If a block provides multiple outputs, those outputs can represent different paths, such as conditional branches or different outcomes, depending on the block.",
+  "links": [],
+  "images": [
+    {
+      "alt": "image-20260211-100829.png",
+      "url": "https://docs.leapwork.com/__attachments/a_704a4d8cc267023e501cf7fea9844f3d61254b309d697eedd75a0d4b0a20e3e3/image-20260211-100829.png?cb=7eb8ada5e4071398b1bb608e9e73588f"
+    },
+    {
+      "alt": "image-20260211-101116.png",
+      "url": "https://docs.leapwork.com/__attachments/a_7c854cb739f195d6a6635cff849ecff6aba00956946ad463dd38882ce5509aa6/image-20260211-101116.png?cb=7c73bac212a359b3a35f7fa05fbb41fa"
+    },
+    {
+      "alt": "image-20260211-101156.png",
+      "url": "https://docs.leapwork.com/__attachments/a_9e8f2ce28f4cea9eb8555207f9c090b95111371fb16f43c007a5c52c65aeffa3/image-20260211-101156.png?cb=0dc7a8a98f2c03babedfd1a0457b43bd"
+    },
+    {
+      "alt": "image-20260211-101253.png",
+      "url": "https://docs.leapwork.com/__attachments/a_aeb86f5515f5d0b883b29ca0b19b69410db84dec5356366904541e5aa3e7f4e6/image-20260211-101253.png?cb=30bf3286111760b6ecc6d1aea3701791"
+    },
+    {
+      "alt": "image-20260211-101326.png",
+      "url": "https://docs.leapwork.com/__attachments/a_7789a99b73cdf2b51a4ba6999aa3547ca301fc23b6be6877de0ba3c51c0a80c2/image-20260211-101326.png?cb=956001ce25cb6cf41ac60addf66cd0c5"
+    },
+    {
+      "alt": "image-20260211-103425.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5720ebbaeb0c04ce30b5e3ef55480d68a07ac69d21d0e13a52b43158c21ee2d6/image-20260211-103425.png?cb=135f5162c54246db2b48d74937a97065"
+    },
+    {
+      "alt": "image-20251222-140405.png",
+      "url": "https://docs.leapwork.com/__attachments/a_ae53fb2033c56272c15beccce8ef95dbfa25d137c1c7f9ac6b52ac090f79c6d4/image-20251222-140405.png?cb=d6ec961ef8e6a939d8184aaaf79ffbac"
+    }
+  ]
+}

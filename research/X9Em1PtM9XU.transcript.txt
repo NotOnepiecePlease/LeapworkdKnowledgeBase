@@ -1,0 +1,95 @@
+00:00:02.230 [Music]
+00:00:02.240 Welcome back to testing the internet
+00:00:03.919 series. You're watching part 27,
+00:00:06.240 shifting content, in which we will
+00:00:08.320 discuss about working with lists. In the
+00:00:10.800 previous video, you learned how to
+00:00:12.880 handle web scenarios when images or
+00:00:15.519 other content shifts slightly every time
+00:00:17.440 you reload the page. In this video, you
+00:00:20.160 will learn how to test shifting content.
+00:00:22.720 You might have faced the challenges
+00:00:24.160 where a list that loads in random order,
+00:00:26.960 content shifting after dynamic ads load
+00:00:29.519 or tests failing because the elements
+00:00:31.519 position changed. This happens because
+00:00:34.079 many automation tools rely on fixed
+00:00:36.160 positions or static structure which
+00:00:38.239 doesn't work well with dynamic content.
+00:00:40.879 That's where Leapwork helps by letting
+00:00:43.200 you locate elements based on unique
+00:00:45.120 content instead of position. To
+00:00:46.719 demonstrate, we'll show you a simple
+00:00:48.559 scenario. If I check for this line, see
+00:00:51.039 with each refresh its position changes.
+00:00:55.199 Likewise, as the lines keep shifting on
+00:00:57.680 every refresh, the goal is to locate any
+00:01:00.079 of them reliably using a dynamic
+00:01:01.920 strategy each time. We'll automate this
+00:01:04.000 in leapwork. We'll launch the test case
+00:01:06.320 through start recorder.
+00:01:19.910 Let's capture this whole element with
+00:01:19.920 find web element.
+00:01:23.360 Let's save and close the recorder. Let's
+00:01:25.680 add the loop block.
+00:01:35.429 We'll set it for 1 to 10 so it can check
+00:01:35.439 for the element's appearance across 10
+00:01:37.200 page refreshes, helping us confirm it's
+00:01:39.680 consistently found despite changing
+00:01:41.360 positions. The next step is to make the
+00:01:44.000 strategy dynamic to handle the shifting
+00:01:46.320 lines. And we're going to select a
+00:01:48.159 strategy that's based on the text inside
+00:01:50.240 the element. We want a row with the
+00:01:52.399 class row and text that contains text is
+00:01:55.439 here. We're looking for a view that
+00:01:57.759 matches a specific pattern.
+00:02:00.240 So we'll use the contains condition
+00:02:02.079 instead of starts with. We'll click
+00:02:04.560 save. Next, we'll add a navigate web
+00:02:07.520 block to refresh the browser page after
+00:02:09.520 each check.
+00:02:16.710 If the element can't be found, we'll
+00:02:16.720 fail the test case. Otherwise, once the
+00:02:19.440 loop completes, we'll pass the test
+00:02:21.440 case. Let's organize the blocks
+00:02:23.520 properly. It's important in Leapwork to
+00:02:25.760 clearly see how each block impacts the
+00:02:27.680 flow and reflects in the activity log.
+00:02:30.319 Now, we're ready to run it.
+00:02:39.430 You can see the lines shifting with each
+00:02:39.440 refresh and leapwork is tracking them
+00:02:41.680 every time. And as you can see, the test
+00:02:44.400 case passed. It found the web element
+00:02:47.040 all 10 times. It successfully refreshed
+00:02:50.080 the page and element was found so
+00:02:52.160 quickly. This is how Leapworks locator
+00:02:54.959 strategy can handle shifting page
+00:02:56.640 content with just few steps. Now let's
+00:03:00.000 quickly recap the flow we followed to
+00:03:01.920 build the automation scenario. We
+00:03:04.480 started by launching the browser and
+00:03:06.159 capturing the target element using the
+00:03:08.000 find web element block. Next, we added a
+00:03:11.440 loop block to check for consistency over
+00:03:13.519 10 refresh cycles. Inside the loop, we
+00:03:16.800 either refresh the page using the
+00:03:18.480 navigate web block or fail the test if
+00:03:20.879 the element isn't found. Once all
+00:03:23.519 iterations succeeded, we marked the flow
+00:03:25.920 as passed.
+00:03:32.470 What you learned? You saw how to handle
+00:03:32.480 shifting content by using dynamic
+00:03:34.560 locator strategies instead of relying on
+00:03:36.720 fixed element positions. When the UI
+00:03:39.599 changes, your test doesn't have to. You
+00:03:42.000 can now handle even the most complex
+00:03:43.680 lists with ease. Give this exercise a
+00:03:46.080 try yourself and see how much faster
+00:03:47.920 your automation can be. Moreover, to
+00:03:50.319 keep learning or if you ever feel stuck,
+00:03:52.480 explore our documentation knowledge base
+00:03:55.280 and reach out to support if needed. The
+00:03:57.200 answers are just a click away. Thank you
+00:03:59.439 for staying with us and see you in the
+00:04:01.120 next automation journey.

@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/navigate-web",
+  "title": "Navigate Web",
+  "retrievedAt": "2026-11-13T20:46:07.809673+00:00",
+  "text": "Breadcrumbs\nThe\nNavigate Web\nbuilding block navigates to a different web address (URL), refreshes the current page, or uses the browser’s back/forward functions. This block only works with browser windows that were previously opened using the\nStart Web Browser\nblock. After navigation, the next web building block starts executing on the new page when the client-side\nDOMReady\nevent is triggered.\nFully expanded, the\nNavigate Web\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nNavigate Web\nonto the canvas.\nConnect the block in the flow and specify the basic parameters required for this block to operate:\nNavigation mode\nand\nWeb address (URL)\n. Optionally, you can adjust other parameters if needed.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when the selected navigation action has been completed. You can rename the block title (“Navigate Web”) by double-clicking it and typing a new title.\nNavigation mode\n: Selects which navigation action to perform on the current browser window:\nGo to URL\n: Navigates to a new URL specified in\nWeb address (URL)\n.\nGo back\n: Navigates back, similar to pressing the browser’s\nBack\nbutton.\nGo forward\n: Navigates forward, similar to pressing the browser’s\nForward\nbutton.\nRefresh page\n: Refreshes the current page, similar to pressing\nF5\n.\nNew Tab\n: Opens a new browser tab to the URL specified in\nWeb address (URL)\n.\nWeb address (URL)\n: The URL to navigate to (used with\nGo to URL\nand\nNew Tab\n). It can include tokens for values provided via\nText fields\n. To insert a token, right-click and select\nInsert token\n.\nText fields\n: Key–value fields that enable the use of external values in\nWeb address (URL)\n. To use a value, right-click the URL field, select\nInsert token\n, and insert the field name. Fields can be renamed by double-clicking them, and inserted tokens update their visual appearance accordingly.\nAdd field\n: Adds a field that can be inserted as a token into\nWeb address (URL)\n.\nBrowser window\n: Makes the block use a specific browser window. Multiple browser windows are not supported by Selenium Grid or external cloud providers such as Sauce Labs and BrowserStack.\nTimeout occurred\n: Triggers if the navigation action is not completed, such as when a URL is not loaded within the configured timeout.\nDefault timeout\n: If the checkbox is not selected, the timeout is\n10 seconds\n. If the checkbox is selected, the\nDefault timeout\nvalue from the flow settings applies.\nTimeout\n: The maximum time spent performing the navigation action before giving up and triggering\nTimeout occurred\n. This is separate from the case\nglobal timeout\nin\nSettings\n, which can cancel a run if the whole case exceeds it.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260207-093423.png",
+      "url": "https://docs.leapwork.com/__attachments/a_568eaf8388ec0c2664ffb46601e19969b9443a1fe9e099dc15274874c2ccdcaa/image-20260207-093423.png?cb=f2172ca7949bdf7aefeed051d18ef3e8"
+    }
+  ]
+}

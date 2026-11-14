@@ -1,0 +1,73 @@
+00:00:03.350 [Music]
+00:00:03.360 Welcome back to testing the internet
+00:00:05.040 series. You're watching part 22, nested
+00:00:08.000 frames. In the previous video, you
+00:00:10.880 learned how to handle complex web
+00:00:12.480 applications with deeply nested elements
+00:00:14.719 and large tables during test automation.
+00:00:17.680 You saw how to avoid performance
+00:00:19.279 bottlenecks by using fast and precise
+00:00:21.199 locator strategies. In this video,
+00:00:23.439 you'll learn how to capture elements
+00:00:24.960 inside frame sets, a common challenge in
+00:00:27.519 older web applications. If you've ever
+00:00:30.160 struggled to find elements inside a
+00:00:32.000 frame, had tests fail unexpectedly, or
+00:00:35.200 felt confused about switching between
+00:00:37.040 frames, it's a familiar challenge in
+00:00:39.120 test automation. That's often because
+00:00:41.600 test tools fail to detect or access
+00:00:44.000 content inside frames properly, breaking
+00:00:46.640 your flows or causing false errors.
+00:00:49.200 Leapwork makes it easy, allowing you to
+00:00:51.680 capture and work with elements inside
+00:00:53.600 any frame, just like on a regular web
+00:00:56.000 page. To demonstrate, we'll take a
+00:00:58.640 simple scenario. Our goal is to work
+00:01:01.280 with different frames on a web page and
+00:01:03.199 see how easy it is with Leapwork. Once
+00:01:05.920 you select a frame, you can interact
+00:01:07.920 with its content and perform tests just
+00:01:09.920 like you would on any standard web
+00:01:11.520 element. Let's start by launching the
+00:01:13.840 test case using the start recorder.
+00:01:22.710 Once the page opens, you'll notice it's
+00:01:22.720 built with a frame set. Just like on any
+00:01:25.439 regular page, we can easily capture
+00:01:27.600 elements inside the frame, whether it's
+00:01:29.840 the the body, full frame, or specific
+00:01:32.640 text. Let's capture the middle text with
+00:01:34.720 the find web element.
+00:01:41.190 Save and close. The find web element
+00:01:41.200 block lets you easily find elements.
+00:01:43.280 Once captured, you can use that element
+00:01:45.520 just like any other for clicking,
+00:01:47.759 validating content, or passing data.
+00:01:50.960 Testing inside a frame set is just as
+00:01:53.119 easy as testing any standard web page.
+00:01:55.840 Leapwork handles it all smoothly. Let's
+00:01:58.159 look at the summary.
+00:02:00.479 This was a quick flow where we launched
+00:02:02.079 the test case, explored a frame set
+00:02:04.320 structure, captured an element, and
+00:02:06.479 showed how easily you can interact with
+00:02:08.239 it.
+00:02:14.150 What you learned? You learned how to
+00:02:14.160 handle hard-to-reach elements in complex
+00:02:16.239 frames using find web element that helps
+00:02:18.720 to directly target elements inside
+00:02:20.560 nested frames without manually
+00:02:22.640 navigating the entire page or frame
+00:02:24.640 structure. It saves time and removes the
+00:02:27.599 guesswork from tricky setups like frame
+00:02:29.440 sets. If you've ever thought, why can't
+00:02:31.680 my test see this element? This video
+00:02:33.840 just gave you the answer. Give this
+00:02:35.840 exercise a try yourself and see how much
+00:02:38.000 faster your automation can be. Moreover,
+00:02:40.560 to keep learning or if you ever feel
+00:02:42.239 stuck, explore our documentation
+00:02:44.800 knowledge base and reach out to support
+00:02:46.879 if needed. The answers are just a click
+00:02:48.720 away. Thank you for staying with us and
+00:02:50.959 see you in the next automation journey.

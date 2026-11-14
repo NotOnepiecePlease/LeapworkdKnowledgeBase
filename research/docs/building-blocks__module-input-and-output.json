@@ -1,0 +1,13 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output",
+  "title": "",
+  "retrievedAt": "2026-11-13T18:44:27.788076+00:00",
+  "text": "Breadcrumbs\nModule Input and Output blocks are only available for usage under\nSubflows\n.",
+  "links": [
+    {
+      "title": "Subflows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/sub-flows"
+    }
+  ],
+  "images": []
+}

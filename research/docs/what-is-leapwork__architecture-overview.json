@@ -1,0 +1,38 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview",
+  "title": "",
+  "retrievedAt": "2026-11-13T18:44:19.088315+00:00",
+  "text": "Breadcrumbs\nLeapwork is a no-code automation platform that empowers users at all business levels to automate web, desktop, and virtual desktop applications in just minutes. Test cases are built using flowcharts and can be executed without writing a single line of code. This means your team can build, schedule, and run automation flows without the need for specialized technical skills or external consultants.\nLeapwork is composed of the three key components:\nFlow\n: A visual designer used to build and manage automation flows.\nController\n: A server that manages execution, data storage, and scheduling.\nAgent\n: A runtime service that executes automation flows.\nThese components work together to support end-to-end automation across your infrastructure, whether hosted on premises, in the cloud, or in a hybrid setup.\nComponent Overview\nLeapwork Flow\nis a Windows-based desktop application. It allows users to create automation cases, schedule executions, and view results through dashboards and logs.\nLeapwork Controller\nis a background service that stores all automation assets (cases, images, schedules, reports) and coordinates execution across Agents.\nLeapwork Agent\nis the runtime service that executes automation flows on request, either from the Flow or the Controller.\nLearn More: See our\nLearning Center\nfor step-by-step guides and tutorials.\nCommunication Protocols\nLeapwork components communicate using different protocols:\nFlow\n↔️\nController\n: REST API. This protocol is hosted on the Controller and can also be used by external scripts and integration mechanisms.\nController\n↔️\nAgents\n: Internal remote-control protocol (similar to VNC, with added security and control)\nFlow\n↔️\nAgents\n(\nduring design/preview\n): Same remote-control protocol\nAll components can be deployed in protected environments behind firewalls and without internet access if required.\nYou can find examples of using the REST API to integrate Leapwork with ALM systems such as HP Quality Center, Jira, Jenkins, and others in the\nLearning Center\n.\nDeployment Scenarios\nLeapwork supports three main deployment models. The choice depends on your infrastructure, security policies, and scalability needs.\nOn-Premises Deployment\nIn this traditional model, all components, Flow, Controller, and Agents, are installed and maintained within the client’s local infrastructure.\nTypical Use Case:\nEnterprises with specific security requirements or isolated networks.\nCharacteristics:\nComplete control over infrastructure and data\nNo internet access required\nFull support for all types of automation (web, desktop, virtual desktop)\nIn full on-premises deployments, execution is primarily handled by Remote Agents. However, Cloud Agents can also be configured upon request, turning the setup into a hybrid scenario.\nCloud Deployment\nThis model hosts both the\nController\nand\nAgents\nin the cloud. Leapwork Flow remains on the user’s local environment.\nNote:\nCloud Controller OS\nsupport both Windows 11 and Windows Server.\nCloud Agent OS\nsupport\nboth Windows 11 and Windows Server.\nCloud deployments can be configured with different connection methods, including\nAzure VPN, Azure Firewall or direct deployment via Azure Marketplace.\nTypical Use Case:\nTeams needing fast deployment, scalability, and remote access without maintaining servers or hardware.\nCharacteristics:\nNo need to manage infrastructure\nScalable cloud resources\nSupports only web automation with Cloud Agents\nAccess secured via VPN, Azure Firewall, or direct access depending on the setup.\nIn full cloud deployments, execution is primarily handled by Cloud Agents. However, Remote Agents can also be configured upon request, turning the setup into a hybrid scenario.\nHybrid Deployment\nLeapwork supports hybrid setups where components are distributed between local infrastructure and the cloud.\nCharacteristics:\nFlow always runs on-premises\nController can be hosted either on-premises or in the cloud upon request\nAgent can be hosted either remote or in the cloud upon request. Cloud Agents support\nweb automation only.\nHybrid deployments can be configured with different connection methods, including\nAzure VPN, Azure Firewall or direct deployment via Azure Marketplace.\nNote:\nIf your test flow includes desktop or mobile automation, Cloud Agents cannot execute it. In that case, select Remote Agents or adjust your schedule accordingly.\nTypical Use Case:\nOrganizations that combine local infrastructure with cloud components for flexibility, scalability, or gradual migration to the cloud.\nOrganizations that want to balance control and scalability, or migrate gradually to a cloud-based setup.\nOrganizations that want to keep control of test design and management, while leveraging cloud scalability for execution.\nDeployment Summary\nComponent\nOn-Premises\nHybrid\nCloud\nFlow\nOn Premise\nOn Premise\nOn Premise\nController\nOn Premise\nOn Premise/Cloud\nCloud\nAgents\nRemote\nCloud/Remote\nCloud (web automation only)\nInfrastructure\nClient-managed\nMixed\nLeapwork-managed\nSuitable for\nAll automation types\nWeb + (optional desktop/mobile depending on Agent)\nWeb automation only\nDatabase\nIn on-premises deployments where the Controller is hosted locally, the database requirements are managed by the client:\nThe Leapwork Platform edition uses an onboard SQLite database.\nThe Enterprise edition requires a Microsoft SQL Server (license not included). Any edition beyond Express is supported.\nIn full cloud deployments or hybrid setups where the Controller is hosted in the cloud,\nLeapwork manages the database infrastructure, licensing, and associated costs\n.\nFor more information about how to deploy Leapwork in your organization, please see the\nLicensing and Deployment\npage.",
+  "links": [
+    {
+      "title": "Learning Center",
+      "url": "https://leapwork.com/learning-center/"
+    },
+    {
+      "title": "Learning Center",
+      "url": "https://leapwork.com/learning-center/"
+    },
+    {
+      "title": "Licensing and Deployment",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/licensing-and-deployment"
+    }
+  ],
+  "images": [
+    {
+      "alt": "architecture-overview.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f2c2f8ed4a811956fe345a6fb599dd0c359b066f1d9fea9a1b3372820c903a6e/architecture-overview.png?cb=3a5484da2d4698e01aa7b24aec369379"
+    },
+    {
+      "alt": "architecture-overview2-20260812-105235.png",
+      "url": "https://docs.leapwork.com/__attachments/a_b97444e97e4ef3a28eb21559a718b005e70acdfe6f9a236476b569e251349fa4/architecture-overview2-20260812-105235.png?cb=26ef1a7b71dad8c0dec705d59941b3f7"
+    },
+    {
+      "alt": "architecture-overview2-20260812-105235.png",
+      "url": "https://docs.leapwork.com/__attachments/a_b97444e97e4ef3a28eb21559a718b005e70acdfe6f9a236476b569e251349fa4/architecture-overview2-20260812-105235.png?cb=26ef1a7b71dad8c0dec705d59941b3f7"
+    },
+    {
+      "alt": "architecture-overview3.png",
+      "url": "https://docs.leapwork.com/__attachments/a_731b172732f8f7b0eb66a0f5c8b0dede8882d3f6eda10362bafe89c3853ce95d/architecture-overview3.png?cb=6a3e4b56edc9b74a39a9d1c583788609"
+    }
+  ]
+}

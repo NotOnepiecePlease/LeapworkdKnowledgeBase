@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/offset-position",
+  "title": "Offset Position",
+  "retrievedAt": "2026-11-13T20:18:31.344978+00:00",
+  "text": "Breadcrumbs\nThe\nOffset position\nbuilding block offsets (translates) one screen position into another. It is typically used to calculate a new position for mouse actions. See the\nDrive mouse actions lesson\nfor an example of how to use the Offset position block.\nThe\nOffset position\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nOffset position\nonto the canvas.\nConnect it by providing\nPosition to offset\nand\nOffset value\n, and use\nResult position\nas input in another building block. Optionally, adjust\nOffset method\nif needed.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: This block has no green input or output connectors because it is not explicitly executed. It performs a calculation on position values and provides the result to other building blocks. You can rename the block title (“Offset position”) by double-clicking it and typing a new title.\nPosition to offset\n: The base position to offset, in\nX, Y\ncoordinates (top-left of the screen is\n0, 0\n). You can expand it to work with X and Y separately.\nOffset value\n: The position offset to apply to the base position, in\nX, Y\ncoordinates (top-left of the screen is\n0, 0\n). You can expand it to work with X and Y separately.\nOffset method\n: The calculation method used to apply the offset:\nAdd\nor\nMultiply\n. For example, adding\n10, 20\nto a position\n500, 500\nresults in\n510, 520\n.\nResult position\n: The resulting position after the offset operation, in\nX, Y\ncoordinates (top-left of the screen is\n0, 0\n).\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Drive mouse actions lesson",
+      "url": "https://www.leapwork.com/services/learning-center/drive-mouse-actions"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260207-111735.png",
+      "url": "https://docs.leapwork.com/__attachments/a_8069548c8987963576596f9f567fb8e2274869ae9806ee5c94c7744f02349696/image-20260207-111735.png?cb=030b6e03bc128ca79f5fe68c32a56ea1"
+    }
+  ]
+}

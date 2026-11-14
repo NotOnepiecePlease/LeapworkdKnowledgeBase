@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/variables/set-variable",
+  "title": "Set Variable",
+  "retrievedAt": "2026-11-13T19:24:44.839616+00:00",
+  "text": "Breadcrumbs\nThe\nSet variable\nblock is used to assign a value to a variable. Variables can be scoped so they are only available during a single case run, across all cases in the same schedule run, or permanently for as long as the project exists.\nFully expanded, the\nSet variable\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nSet variable\nonto the canvas.\nEnter a\nVariable name\nand\nValue\n(both required), and optionally adjust the\nScope\nand add\nText fields\nfor dynamic content.\nRun the flow when it’s ready.\nFor a minimal setup, provide a name and value, keep the default scope, and place the block where you want the variable to be updated.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nSet variable\nblock. You can rename it at any time by double-clicking the header and typing a new title to keep flows readable and organized.\nVariable name:\nDefines the name of the variable to set. A variable name can contain any characters and is\ncase-sensitive\n(for example,\nStatus\nand\nstatus\nare different variables).\nValue:\nSpecifies the value that will be stored in the variable. This field can contain static text or dynamic content using tokens.\nRight-click in the field and choose\nInsert token\nto insert one or more tokens from\nText fields\nor other available sources.\nText fields:\nAllows you to add any number of custom fields that hold dynamic values (for example, results, IDs, timestamps).\nClick\nAdd field\nto create a field and assign it a value.\nThese fields can then be inserted into\nValue\nvia\nInsert token\n, so the variable can store data that changes at runtime.\nScope:\nControls where and for how long the variable exists:\nOnly this case\n(in the UI this may appear as\nOnly this flow\n): the variable exists only during the execution of the current case/flow instance. This is the default and most commonly used scope.\nSchedule:\nthe variable is shared across all cases in the same schedule run and is reset when the schedule run finishes.\nPermanent:\nthe variable persists across runs and remains stored in the project until it is changed or deleted.\nVariables with the same name but different scopes are treated as\ndistinct\n. For example, a variable named\ntest\nwith\nPermanent\nscope is not the same as a variable named\ntest\nwith\nOnly this case/flow\nscope.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260112-132053.png",
+      "url": "https://docs.leapwork.com/__attachments/a_3593ba80826963783ae75b3190aa930bc2dfd67d6a4fd7f332f207e754c56a1a/image-20260112-132053.png?cb=721f2e9e4e7af6b48ee378a722b2de49"
+    }
+  ]
+}

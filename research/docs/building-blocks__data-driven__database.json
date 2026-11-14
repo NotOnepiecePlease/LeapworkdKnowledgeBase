@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/database",
+  "title": "Database",
+  "retrievedAt": "2026-11-13T21:12:55.015613+00:00",
+  "text": "Breadcrumbs\nThe\nDatabase\nblock executes an\nODBC-compliant query\nagainst a database (for example Oracle, SQL Server, DB2, MySQL, MongoDB, or any other ODBC-compliant database). This is useful for driving automation cases with database data and validating outcomes based on query results.\nSee the\nDatabase lesson\nto see examples of how to use data from databases in test cases.\nFully expanded, the\nDatabase\nblock looks like this:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nDatabase\nonto the canvas.\nConnect the block in the flow and optionally specify the basic parameters required for this block to operate:\nConnection, Query, Method\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when the database query has been executed and the result is ready. You can rename the block by double-clicking its title and entering a new name.\nConnection\n: Specifies the name of a previously configured\nODBC connection\non the computer where the case will run. For some ODBC drivers, it may not be possible to store the user and/or password when setting up the ODBC connection. In that case, include them in the connection string, for example:\nDSN=ODBC_connectionName;UID=username;PWD=xyz\n.\nText fields\n(Connection): Stores key–value pairs that can be inserted as dynamic tokens into the\nConnection\nfield via\nInsert token\n.\nQuery\n: The ODBC-compliant SQL query statement that will be executed on the database.\nText fields\n(Query): Stores key–value pairs that can be inserted as dynamic tokens into the\nQuery\nfield via\nInsert token\n.\nColumns\n: Shows the columns returned by the query. Use\nRefresh\nto execute the query and update the list of returned columns.\nRefresh\n: Executes the query and returns the columns defined by the query.\nNote:\nYou cannot click\nRefresh\nif the\nQuery\nfield contains any dynamic fields added via\nAdd field\n. In this situation, the building block will always return an error.\nMethod\n: Controls how the query results are returned (as displayed in the block UI, for example\nFirst row\n).\nRow count\n: Defines how many rows to return (as configured in the block UI).\nError\n: This output connector can be used to branch the flow when the block returns an error.\nResponse time\n: The time in milliseconds from the query is sent until the last byte of the response was received.\nDefault timeout\n: Controls whether the block uses the default timeout from the flow settings or a custom timeout value.\nTimeout\n: The maximum time spent waiting for the database query to complete before giving up and continuing from the block’s normal (success) output connector.\nHandle NULL values\n: When enabled, the block handles database NULL values according to the block’s configured behavior.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Database lesson",
+      "url": "https://www.youtube.com/watch?v=txICdysNNwE&t=2s&pp=ygUibGVhcHdvcmsgZHJpdmUgZGF0YSB3aXRoIGRhdGFiYXNlcw%3D%3D"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260129-091645.png",
+      "url": "https://docs.leapwork.com/__attachments/a_eee94da474ed753cc62fa777d8fb04360598f636658e3aba33572805a595fa53/image-20260129-091645.png?cb=bfebc8a8f1acff61d7453534da600b20"
+    }
+  ]
+}

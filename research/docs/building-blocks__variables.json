@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/variables",
+  "title": "Variables",
+  "retrievedAt": "2026-11-13T21:12:54.639387+00:00",
+  "text": "Breadcrumbs\nThe variables building blocks are used to get and set variable values for later use. Variables can be temporary or be persisted forever.\nThe Get variable block retrieves an existing named variable value from a desired scope, while the Set variable block sets a named variable value.",
+  "links": [],
+  "images": []
+}

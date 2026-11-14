@@ -1,0 +1,53 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard",
+  "title": "Mouse and keyboard",
+  "retrievedAt": "2026-11-13T20:17:47.729085+00:00",
+  "text": "Breadcrumbs\nMouse and keyboard building blocks can move the mouse pointer, click, scroll and type text. They are among the most used building blocks because they combine Leapwork’s image and text recognition abilities with user interface control.\nThe\nClick image\nand\nClick text\nblocks are used to find an image or text on screen, move the mouse pointer and click where it is found.\nClick position\nis used to click in a specific position on screen.\nThe\nHover image\n,\nHover text\nand\nHover position\nblocks are similar, but hover the mouse pointer without clicking.\nThe\nScroll wheel\nblock is used to perform an explicit mouse scroll at a specific position on screen, while the\nDrag mouse\nblock is used to drag (and optionally drop) using the mouse pointer.\nThe\nType text\nblock is used to type text using the keyboard.\nThe\nPress Key\nand\nRelease Key\nblocks are used to keep keys pressed while performing other actions, e.g. dragging with the mouse.",
+  "links": [
+    {
+      "title": "Click image",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-image"
+    },
+    {
+      "title": "Click text",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-text"
+    },
+    {
+      "title": "Click position",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-position"
+    },
+    {
+      "title": "Hover image",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/hover-image"
+    },
+    {
+      "title": "Hover text",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/hover-text"
+    },
+    {
+      "title": "Hover position",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/hover-position"
+    },
+    {
+      "title": "Scroll wheel",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/scroll-wheel"
+    },
+    {
+      "title": "Drag mouse",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/drag-mouse"
+    },
+    {
+      "title": "Type text",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/type-text"
+    },
+    {
+      "title": "Press Key",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/press-key"
+    },
+    {
+      "title": "Release Key",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/release-key"
+    }
+  ],
+  "images": []
+}

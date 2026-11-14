@@ -1,0 +1,58 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/strategy-editor",
+  "title": "Strategy Editor",
+  "retrievedAt": "2026-11-13T18:59:37.262878+00:00",
+  "text": "Breadcrumbs\nWhile Leapwork's recording capabilities make it easy to build test automation\nflows\nwithout worrying about how elements are located, some advanced scenarios might require you to investigate and optimize how locators are identified.\nLeapwork’s Strategy Editor is a powerful feature that shows how UI elements are identified and lets you adjust the approach to target the right element.\nThis level of control is rare in no-code tools and is what sets Leapwork apart combining ease of use with powerful customization when needed.\nWhat is the Strategy Editor?\nWhen you capture an element on the screen, Leapwork needs to know\nexactly how to identify it\n, even when there are many others that look similar.\nThink of it as teaching Leapwork to recognize a specific face in a crowd: you define the unique features, like position, label, shape, or attributes, so that it doesn’t mistake it for something else.\nThe Strategy Editor helps you to:\nReview multiple strategies for identifying the element (by text, ID, attributes, position, etc.).\nEdit or prioritize those strategies.\nUse wildcards or dynamic values (tokens) to make them more flexible.\nVisually validate that the element being targeted is the correct one.\nThis allows you to build automations that are reliable, resistant to UI changes, and easy to maintain, even as the application evolves.\nWhat do you see when you open the Strategy Editor?\nWhen you open the Strategy Editor in Leapwork, you’ll see a visual interface that helps you define how Leapwork finds and interacts with UI elements. It lets you configure and fine-tune strategies, so the right element is selected reliably, even in complex applications.\nTabs at the top\nThe Strategy Editor includes three main tabs:\nStrategy\n: Displays and allows editing of different locator strategies based on HTML element structure and properties.\nWeb Tree\n: Provides a structured, visual representation of the HTML DOM to locate elements by navigating through the page hierarchy.\nToken Fields\n: Lets you define and manage dynamic values (tokens) that can be reused in the strategy conditions.\nTop-right toolbar\nAt the top-right of the editor, you’ll find several key actions:\nValidate:\nVerifies the strategy and retrieves all relevant information about the UI element. This step is required to populate the Web Tree tab.\nShow XPath:\nDisplays the XPath of the selected strategy just below the toolbar. This can help you understand or reuse the path Leapwork uses internally.\nRename:\nLets you edit the name of the element shown in the top header of the modal window. Useful for clarity when working with many elements.\nValidation Delay:\nAllows you to set a delay (from 1 to 20 seconds) before validation is performed. This is helpful when elements appear after a short loading time.\nReset:\nRestores the Strategy Editor to its original state by removing unsaved conditions or selections.\nUI Element Preview\nJust below the toolbar, you’ll see a live preview of the UI element you just captured. This helps you confirm that you are on the right element.\nUse Occurrence section\nThis area appears just below the preview.\nIt includes:\nUse Occurrence\n: A textbox to specify which instance of a matching element to use (e.g. the second or third if there are multiple similar elements).\nFound: X of Y\n: Indicates how many elements match the current strategy and which one is currently highlighted.\nSet Current\n: Applies the value in “Use Occurrence” to select that specific instance among multiple matches.\nConditions panel\nThe\nconditions panel\ndefines how Leapwork identifies the target element through simple rules.\nEach condition specifies:\nWhat to target\n(the element itself, a parent, ancestor, or XPath),\nWhich property to use\n(ID, class, text, or other attributes),\nHow to compare it\n(equals, contains, starts with, etc.).\nThese rules can be combined to reliably locate elements, even in complex or changing UIs. You can also insert\ndynamic tokens\nto make strategies flexible for variable content.\nTo learn how to use this panel and its tabs effectively, watch the related video on\nLeapwork Learning Center\n.\nHow to use the Strategy Editor in Leapwork\nThe\nStrategy Editor\nlets you define exactly how Leapwork should locate a specific UI element, especially when there are many similar ones on the screen. Here's how to use it effectively:\nStep 1: Open the Strategy Editor\nTo open the Strategy Editor:\nRight-click on the\nelement box\ninside a UI-related block.\nFrom the dropdown menu, choose\nEdit web element\n.\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nThis action opens the Strategy Editor window, where you’ll fine-tune how Leapwork identifies the element.\nStep 2: Validate the Element\nOnce inside the Strategy Editor, you must click the\nValidate\nbutton before continuing.\nNote:\nThis is essential, if you don’t validate the element, the\nWeb Tree tab will remain empty\n, and you won’t be able to inspect the DOM structure.\nStep 3: Strategy Tab: Build a Strategy Using DOM Relations\nIn the\nStrategy\ntab, you define how Leapwork should locate the element using declarative conditions based on the HTML structure and attributes that were present when the element was captured.\nIn the image below, you can see the Strategy tab with its hierarchy types highlighted.\nThis view groups strategies based on DOM relationships, helping you understand how each condition relates to the element's position in the structure.\nThe tab displays multiple strategies grouped by relationship types, such as:\nSelf-Parent-Ancestor:\nUses the properties of the element itself and its immediate parents.\nRoot-Descendant-Child:\nBuilds a path from the root of the DOM down to the element.\nYou can view, edit, or combine these conditions to ensure a stable strategy. The conditions here are generated using the DOM structure visible in the Web Tree at the moment of capture, which means the two tabs are closely related.\nStep 4: Web Tree Tab: Build a Strategy Using the Full HTML Tree\nThe\nWeb Tree\ntab provides a live view of the actual DOM (Document Object Model) at validation time. It shows the full HTML structure, where you can:\nNavigate through the element hierarchy (parents, children, siblings).\nClick on any node to inspect its properties (e.g., tag, class, href, text).\nUse this structure to define or refine your selection manually.\nThe image below shows the\nWeb Tree\ntab, where you can see the HTML hierarchy on the left and the element’s available properties on the right, both highlighted. You can use these structural and attribute-based details to build or refine your locator strategy more easily.\nNote:\nWhile Strategy and Web Tree are different ways of viewing and editing locator strategies, they are\nnot mutually exclusive\n. The Strategy tab builds on the structure shown in the Web Tree at the time of capture, and both can be used together to create and validate an effective locator.\nStep 5: Insert Tokens – Dynamic Strategies\nAnywhere you can type inside the Strategy Editor, you can right-click to\ninsert tokens\n:\nRight-click on a textbox (e.g., attribute value).\nSelect\nInsert token\n, then choose:\nWildcard (\n*\n)\n: Matches any number of characters. Useful when part of a value may vary, such as dynamic IDs or links.\nAdd new field\n: Lets you define a custom token (e.g.,\nField 1\n). Tokens act as placeholders for dynamic values, ideal for data-driven tests.\nFor more details, explore this resource to deepen your understanding:\nWildcards vs Tokens in Leapwork\nStep 6: Token Fields Tab – Manage Dynamic Inputs\nEvery time you add a token in the strategy (like\nField 1\n), it appears in the\nToken Fields tab\n.\nHere’s where you define what each token should represent:\nIn the typebox next to\nField 1\n, you enter the\nactual dynamic content\n(e.g.,\na product name, a username, etc.\n).\nThis field can be connected to data sources or variables in your test case.\nTokens make your element locators\nflexible and reusable\n, especially when testing with multiple data inputs.\nThe image below shows the\nToken Fields tab\n, where a token named\nField 1\nhas been manually labeled as\nDynamic Content\n. This field corresponds to a token previously inserted in the Strategy tab, and its value can now be defined here to be used during execution.\nIf you're working with mobile automation, be aware that the Strategy Editor has some platform-specific differences. You can learn more in the official knowledge base article,\nKey Differences Between Web and Mobile Strategy Editors.\nFor hands-on learning and real-world examples, visit the\nLeapwork Learning Center\n, where step-by-step video tutorials guide you through using the Strategy Editor, working with tokens and wildcards, and creating robust, reliable element locators.",
+  "links": [
+    {
+      "title": "flows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/flows"
+    },
+    {
+      "title": "Leapwork Learning Center",
+      "url": "https://www.leapwork.com/services/learning-center/web-automation-tutorial-3"
+    },
+    {
+      "title": "Wildcards vs Tokens in Leapwork",
+      "url": "https://support.leapwork.com/s/article/Whatisthedifferencebetweentokenandawildcard63307bfc095bf"
+    },
+    {
+      "title": "Key Differences Between Web and Mobile Strategy Editors.",
+      "url": "https://support.leapwork.com/s/article/Key-Differences-Between-Web-and-Mobile-Strategy-Editors-in-Leapwork"
+    },
+    {
+      "title": "Leapwork Learning Center",
+      "url": "https://www.leapwork.com/services/learning-center/home"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260603-112858.png",
+      "url": "https://docs.leapwork.com/__attachments/a_55cb7a7994cdcafcdb2b7625273a6076460e913d4b6d132f819f623224191325/image-20260603-112858.png?cb=a24b2f367d6e2e4110647f0e31781f28"
+    },
+    {
+      "alt": "image-20260603-083406.png",
+      "url": "https://docs.leapwork.com/__attachments/a_a8b71df5c5fee6b9813c329a8df3baad44d8217acbad952c568a093c7c4c8ec5/image-20260603-083406.png?cb=d4c74f71604536d6ccdc797f2f74e8e7"
+    },
+    {
+      "alt": "Untitled design (10).jpg",
+      "url": "https://docs.leapwork.com/__attachments/a_55b2f29bf24d723cbcc10d04b4a855b3ad346a97c02e8584869566755ad273fe/Untitled%20design%20(10).jpg?cb=8093cbc161b14fc28abb6f4db913e252"
+    },
+    {
+      "alt": "Untitled design (11).jpg",
+      "url": "https://docs.leapwork.com/__attachments/a_3a589b000918391c5358741de9347b33810970adb06f37b3df55334b948db17e/Untitled%20design%20(11).jpg?cb=d8cd7dd1e6d111c6ed73406b592d8140"
+    },
+    {
+      "alt": "Untitled design (12).jpg",
+      "url": "https://docs.leapwork.com/__attachments/a_210b9e3010f716909f565947ef3d5e94c8826ac531cf47d4129cf99a5ea0574c/Untitled%20design%20(12).jpg?cb=55474339c140e0801ddcba492dface7a"
+    },
+    {
+      "alt": "image-20260603-125946.png",
+      "url": "https://docs.leapwork.com/__attachments/a_26a73d9a060990a942957d4d6c0b564cab6c6ceab44a8d777cfc68cbfa582bc0/image-20260603-125946.png?cb=b2675a86dc13c94d64612fa870ad11e8"
+    },
+    {
+      "alt": "image-20260603-130107.png",
+      "url": "https://docs.leapwork.com/__attachments/a_2395f409e60d99d9c8d5b33c23d4348a3ebfb47c1c6cf3bb4ab70507df19802d/image-20260603-130107.png?cb=b3646479579e5a0f35261f9afa20184b"
+    }
+  ]
+}

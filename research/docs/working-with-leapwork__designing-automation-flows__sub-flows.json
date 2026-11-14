@@ -1,0 +1,70 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/sub-flows",
+  "title": "",
+  "retrievedAt": "2026-11-13T18:44:21.022993+00:00",
+  "text": "Breadcrumbs\nIn Leapwork, you can build reusable automation components, known as\nsub-flows\n.\nThey enable you to design automation flows faster and significantly reduces maintenance time.\nSub-flows consist of existing building blocks that fulfil a repetitive step, for example, actions such as login and logout.\nThey can also be made up of other sub-flows.\nSub-flows can be added as many times as needed inside any automation flow.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nCreating and organizing sub-flows\nSub-flows can be created in two ways:\nOne way is to select building blocks that make up part of an existing automation flow:\nRight-click on one of the selected elements.\nChoose\nCreate Sub-flow\n. This wraps all selected\nbuilding blocks\nand connectors into a new sub-flow, then prompts you to title it:\nIn the example above, four building blocks form a new sub-flow named\nCheck total\n:\nThe second way to create a sub-flow is to right-click anywhere in the flow tree-view and select the\nCreate sub-flow\noption. This creates a new, empty sub-flow.\nSub-flows are shown with this icon in the flow-tree:\nYou can drag sub-flows to any folder or below a specific flow. Since sub-flows are shared across all folders and flows in the tree view, organizing them in a dedicated folder makes them easier to find and clarifies their purpose.\nAdding sub-flows to a flow\nTo add a sub-flow to a flow:\nDrag the sub-flow from the tree view onto the Leapwork Design Canvas.\nAnother way is to right-click the design canvas:\nSelect\nAdd new building block\n.\nThen choose the sub-flow from the\nSub-flows\ncategory.\nEditing a sub-flow\nThere are several instances where you would want to edit an existing sub-flow. For example,\nTo add parameters and additional connectors\nTo simply update the functionality inside the sub-flow\nTo rename the sub-flow.\nWhen a sub-flow is updated, all dependents (flows using the sub-flow) are automatically updated. This is why using sub-flows is a great way to reduce the burden of maintenance.\nTo edit a sub-flow:\nEither right-click the building block from the Design Canvas.\nSelect\nEdit Sub-flow\nor open it from the tree-view structure:\nAdding parameters\nAdding parameters is a valuable feature of sub-flows. This increases the re-usability and allows for the sub-flows to be completely data driven.\nParameters are defined by a specific category of building blocks that can only be used inside sub-flows:\nValue Input\nand\nValue Output\n.\nA sub-flow can have any number of input and output parameters. You can rename these parameters by changing the names of the Value Input and Value Output building blocks.\nTo change the name:\nDouble-click on the title of the building block.\nEnter the new title.\nIn the example below, one input parameter is added to the sub-flow. The parameter is renamed\nValue A\n:\nWhen this sub-flow is added to a flow it will look like this:\nConnectors to sub-flows\nThe green connectors on a sub-flow are defined by a specific category of building blocks called\nExecution Input\nand\nExecution Output\n. It is possible to have multiple connectors to and from a sub-flow, although typically only multiple\noutput connectors\nare used.\nMultiple output connectors means the sub-flow can handle branching of the flow.\nIn the example below:\nThe sub-flow has two output connectors depending on the comparison operation. If the input value matches\n200\n, then the top green connector is triggered. Otherwise, the\nIncorrect\ngreen connector is triggered.\nTo make the sub-flow even more useful, the second green connector has been renamed to\nNo match\n.\nWhen this sub-flow is used in a flow it looks like this:\nRenaming a Sub-flow\nWhen a sub-flow is added to an automation flow, the sub-flow will by default have the given name of the sub-flow, i.e. the name shown in the tree-view.\nNote\n: Whenever a sub-flow is changed, it is automatically reflected in the flows containing the sub-flow,\nexcept\nfor changes made to the name of the sub-flow.\nOnce you have added a sub-flow to a flow, you are free to change the title of the specific instance of the sub-flow building block inside the flow. This means that if the name of the sub-flow is changed, i.e. by right-clicking in the tree-view and selecting\nRename\n, then the title of the sub-flow block in the current flow will be changed.\nWant to learn more about Sub-Flows? Follow\nthis resource\nto begin.",
+  "links": [
+    {
+      "title": "building blocks",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks"
+    },
+    {
+      "title": "Value Input",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/value-input"
+    },
+    {
+      "title": "Value Output",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/value-output"
+    },
+    {
+      "title": "Execution Input",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/execution-input"
+    },
+    {
+      "title": "Execution Output",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/execution-output"
+    },
+    {
+      "title": "this resource",
+      "url": "https://www.leapwork.com/learn/reusable-sub-flows"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260225-131618.png",
+      "url": "https://docs.leapwork.com/__attachments/a_2424515f49d716d20a6782cf23cce24e744e9e233a0cc77bd94efb3d949a4777/image-20260225-131618.png?cb=32a361931d2207d9fc46ad43038137a0"
+    },
+    {
+      "alt": "image-20260225-131649.png",
+      "url": "https://docs.leapwork.com/__attachments/a_cc00468e8b0f5b6582e2a411030d7b6e2bb706255957455a1588cb054452da35/image-20260225-131649.png?cb=a74d8cce5ef7118d08468be03a2d51f3"
+    },
+    {
+      "alt": "sub-flow icon",
+      "url": "https://www.leapwork.com/hs-fs/hubfs/sub-flow%20icon.png?width=28&name=sub-flow%20icon.png"
+    },
+    {
+      "alt": "image-20260109-115102.png",
+      "url": "https://docs.leapwork.com/__attachments/a_24469c08fa99659ce386583388b591e1ddd847cd770bf4ef93ca8b3fc8710052/image-20260109-115102.png?cb=c0e5c1ee4403489ed4ce79c3edee1901"
+    },
+    {
+      "alt": "https://www.leapwork.com/hs-fs/hubfs/image-png-Jun-22-2023-08-20-29-6899-PM.png?width=215&height=390&name=image-png-Jun-22-2023-08-20-29-6899-PM.png",
+      "url": "https://www.leapwork.com/hs-fs/hubfs/image-png-Jun-22-2023-08-20-29-6899-PM.png?width=215&height=390&name=image-png-Jun-22-2023-08-20-29-6899-PM.png"
+    },
+    {
+      "alt": "value input output",
+      "url": "https://www.leapwork.com/hs-fs/hubfs/value%20input%20output.png?width=498&height=273&name=value%20input%20output.png"
+    },
+    {
+      "alt": "sub-flow parameters",
+      "url": "https://www.leapwork.com/hs-fs/hubfs/sub-flow%20parameters.png?width=216&name=sub-flow%20parameters.png"
+    },
+    {
+      "alt": "sub-flow connectors",
+      "url": "https://www.leapwork.com/hs-fs/hubfs/sub-flow%20connectors.png?width=550&height=298&name=sub-flow%20connectors.png"
+    },
+    {
+      "alt": "branching flow with sub-flow",
+      "url": "https://www.leapwork.com/hs-fs/hubfs/branching%20flow%20with%20sub-flow.png?width=533&height=278&name=branching%20flow%20with%20sub-flow.png"
+    }
+  ]
+}

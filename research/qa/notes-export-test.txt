@@ -1,0 +1,266 @@
+CADERNO LEAPWORK — MINHAS ANOTAÇÕES
+Exportado em 14/11/2026, 00:09:38
+
+Módulo 1 · 01. Seu primeiro fluxo web
+Status: revisada
+Nota de verificação: conector azul leva dados.
+
+Módulo 1 · 02. Sub-flows e reutilização
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 03. Formulários e controles web
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 04. Leitura de textos e números
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 05. Listas de elementos
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 06. Páginas web móveis
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 07. Seu primeiro fluxo desktop
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 08. Criar contatos a partir de uma planilha
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 09. Automatizar entre desktop e web
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 10. Começar a automação virtual
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 11. Reconhecer imagens na tela
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 12. Ler textos e números por OCR
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 13. Clicar por imagem e por texto
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 14. Digitar e controlar teclas
+Status: a revisar
+Sem anotações.
+
+Módulo 1 · 15. Usar posições e áreas relativas
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 01. Autenticação básica HTTP
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 02. Detectar imagens quebradas
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 03. Escolher estratégias no DOM
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 04. Marcar e desmarcar checkboxes
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 05. Arrastar e soltar elementos web
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 06. Tratar elementos que aparecem ou somem
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 07. Selecionar opções por valor, texto ou índice
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 08. Localizar conteúdo que muda a cada carga
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 09. Esperar a remoção de um controle
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 10. Esperar um elemento ficar visível
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 11. Esperar um elemento ser adicionado
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 12. Percorrer links de download
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 13. Enviar um arquivo e verificar a confirmação
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 14. Verificar um menu durante a rolagem
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 15. Autenticar por formulário e teclado
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 16. Revelar e validar conteúdo ao passar o mouse
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 17. Editar conteúdo dentro de um iframe
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 18. Explorar rolagem infinita com limite
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 19. Aceitar e cancelar alertas JavaScript
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 20. Enviar uma tecla e validar a resposta
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 21. Escolher localizadores em um DOM grande
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 22. Capturar conteúdo em frames aninhados
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 23. Ler e registrar notificações variáveis
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 24. Selecionar uma nova janela ou aba
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 25. Conferir a página após um redirecionamento
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 26. Encontrar uma imagem após mudanças de posição
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 27. Encontrar um item que muda de posição na lista
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 28. Manter a identidade da linha após ordenar a tabela
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 29. Localizar elementos apesar de variações no texto
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 30. Listas e soma no desktop
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 31. Campos dinâmicos no localizador
+Status: a revisar
+Sem anotações.
+
+Módulo 2 · 32. Dados entre janelas desktop
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 01. Um fluxo, vários conjuntos de dados
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 02. Ler uma planilha com intervalo e iteração
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 03. Escrever resultados no Excel
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 04. Usar dados de um banco por ODBC
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 05. Consultar uma API e validar sua resposta
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 06. Fornecer, compactar e guardar arquivos
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 07. Consumir a saída de um comando
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 08. Preparar uma notificação por e-mail
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 09. Comparar valores e escolher caminhos
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 10. Controlar repetições e interrupções
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 11. Calcular sem confundir texto e número
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 12. Normalizar texto e extrair padrões
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 13. Gerar datas e aplicar deslocamentos
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 14. Guardar valores com o escopo correto
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 15. Gerar números e senhas de teste
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 16. Transferir texto pela área de transferência
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 17. Usar esperas e preparar o estado das janelas
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 18. Reconhecer quando usar lógica C#
+Status: a revisar
+Sem anotações.
+
+Módulo 3 · 19. Laboratório: validar, calcular e registrar
+Status: a revisar
+Sem anotações.

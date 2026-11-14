@@ -1,0 +1,599 @@
+00:00:00.000 --> 00:00:03.110 align:start position:0%
+[Music]
+00:00:03.110 --> 00:00:03.120 align:start position:0%
+00:00:03.120 --> 00:00:05.190 align:start position:0%
+Welcome to the sixth lesson in web
+00:00:05.190 --> 00:00:05.200 align:start position:0%
+00:00:05.200 --> 00:00:08.629 align:start position:0%
+automation with Leapwork.
+00:00:08.629 --> 00:00:08.639 align:start position:0%
+00:00:08.639 --> 00:00:10.390 align:start position:0%
+In the previous lesson, we learned how
+00:00:10.390 --> 00:00:10.400 align:start position:0%
+00:00:10.400 --> 00:00:12.310 align:start position:0%
+to read text and numbers from a web
+00:00:12.310 --> 00:00:12.320 align:start position:0%
+00:00:12.320 --> 00:00:14.709 align:start position:0%
+page.
+00:00:14.709 --> 00:00:14.719 align:start position:0%
+00:00:14.719 --> 00:00:16.310 align:start position:0%
+In this lesson, we will focus on
+00:00:16.310 --> 00:00:16.320 align:start position:0%
+00:00:16.320 --> 00:00:17.910 align:start position:0%
+learning how to iterate lists of
+00:00:17.910 --> 00:00:17.920 align:start position:0%
+00:00:17.920 --> 00:00:20.310 align:start position:0%
+elements such as rows in a table,
+00:00:20.310 --> 00:00:20.320 align:start position:0%
+00:00:20.320 --> 00:00:24.630 align:start position:0%
+drop-down, multis select, etc.
+00:00:24.630 --> 00:00:24.640 align:start position:0%
+00:00:24.640 --> 00:00:26.470 align:start position:0%
+To demonstrate how to iterate, we are
+00:00:26.470 --> 00:00:26.480 align:start position:0%
+00:00:26.480 --> 00:00:28.630 align:start position:0%
+taking a table as an example and we will
+00:00:28.630 --> 00:00:28.640 align:start position:0%
+00:00:28.640 --> 00:00:30.790 align:start position:0%
+show you how to iterate using it. The
+00:00:30.790 --> 00:00:30.800 align:start position:0%
+00:00:30.800 --> 00:00:32.630 align:start position:0%
+table we'll be working with is hosted on
+00:00:32.630 --> 00:00:32.640 align:start position:0%
+00:00:32.640 --> 00:00:34.630 align:start position:0%
+the website the internet and can be
+00:00:34.630 --> 00:00:34.640 align:start position:0%
+00:00:34.640 --> 00:00:42.229 align:start position:0%
+found at httpsv-.hokkuapp.com.
+00:00:42.229 --> 00:00:42.239 align:start position:0%
+00:00:42.239 --> 00:00:44.150 align:start position:0%
+You can locate the URL in the video
+00:00:44.150 --> 00:00:44.160 align:start position:0%
+00:00:44.160 --> 00:00:46.950 align:start position:0%
+description for easy access.
+00:00:46.950 --> 00:00:46.960 align:start position:0%
+00:00:46.960 --> 00:00:49.270 align:start position:0%
+Before we start, let's learn about how a
+00:00:49.270 --> 00:00:49.280 align:start position:0%
+00:00:49.280 --> 00:00:51.670 align:start position:0%
+table is structured and organized. A
+00:00:51.670 --> 00:00:51.680 align:start position:0%
+00:00:51.680 --> 00:00:53.830 align:start position:0%
+table is made up of different elements.
+00:00:53.830 --> 00:00:53.840 align:start position:0%
+00:00:53.840 --> 00:00:55.590 align:start position:0%
+The main element is called the table
+00:00:55.590 --> 00:00:55.600 align:start position:0%
+00:00:55.600 --> 00:00:58.470 align:start position:0%
+element which is represented by table.
+00:00:58.470 --> 00:00:58.480 align:start position:0%
+00:00:58.480 --> 00:01:00.549 align:start position:0%
+It acts as a container for all the other
+00:01:00.549 --> 00:01:00.559 align:start position:0%
+00:01:00.559 --> 00:01:03.510 align:start position:0%
+elements in the table. The table header
+00:01:03.510 --> 00:01:03.520 align:start position:0%
+00:01:03.520 --> 00:01:07.510 align:start position:0%
+is identified by the TH tag in HTML. It
+00:01:07.510 --> 00:01:07.520 align:start position:0%
+00:01:07.520 --> 00:01:09.190 align:start position:0%
+is used to label the different columns
+00:01:09.190 --> 00:01:09.200 align:start position:0%
+00:01:09.200 --> 00:01:11.830 align:start position:0%
+or sections of the table. Each row in
+00:01:11.830 --> 00:01:11.840 align:start position:0%
+00:01:11.840 --> 00:01:14.630 align:start position:0%
+the table is represented by the TR tag.
+00:01:14.630 --> 00:01:14.640 align:start position:0%
+00:01:14.640 --> 00:01:16.789 align:start position:0%
+It helps organize the data horizontally
+00:01:16.789 --> 00:01:16.799 align:start position:0%
+00:01:16.799 --> 00:01:18.469 align:start position:0%
+in the table.
+00:01:18.469 --> 00:01:18.479 align:start position:0%
+00:01:18.479 --> 00:01:21.030 align:start position:0%
+The table column is denoted by the TD
+00:01:21.030 --> 00:01:21.040 align:start position:0%
+00:01:21.040 --> 00:01:24.310 align:start position:0%
+tag in HTML. It represents a single cell
+00:01:24.310 --> 00:01:24.320 align:start position:0%
+00:01:24.320 --> 00:01:26.230 align:start position:0%
+in the table and contains the actual
+00:01:26.230 --> 00:01:26.240 align:start position:0%
+00:01:26.240 --> 00:01:29.270 align:start position:0%
+data. To extract data from specific
+00:01:29.270 --> 00:01:29.280 align:start position:0%
+00:01:29.280 --> 00:01:31.429 align:start position:0%
+columns, you need to locate the rows
+00:01:31.429 --> 00:01:31.439 align:start position:0%
+00:01:31.439 --> 00:01:33.590 align:start position:0%
+first and then target the correct column
+00:01:33.590 --> 00:01:33.600 align:start position:0%
+00:01:33.600 --> 00:01:35.830 align:start position:0%
+to get the desired information. In
+00:01:35.830 --> 00:01:35.840 align:start position:0%
+00:01:35.840 --> 00:01:37.830 align:start position:0%
+leapwork, this can be achieved by using
+00:01:37.830 --> 00:01:37.840 align:start position:0%
+00:01:37.840 --> 00:01:40.230 align:start position:0%
+the find web element method and locating
+00:01:40.230 --> 00:01:40.240 align:start position:0%
+00:01:40.240 --> 00:01:42.710 align:start position:0%
+the TR tags that represent the table
+00:01:42.710 --> 00:01:42.720 align:start position:0%
+00:01:42.720 --> 00:01:44.950 align:start position:0%
+rows.
+00:01:44.950 --> 00:01:44.960 align:start position:0%
+00:01:44.960 --> 00:01:46.950 align:start position:0%
+Once you've identified the rows, the
+00:01:46.950 --> 00:01:46.960 align:start position:0%
+00:01:46.960 --> 00:01:48.630 align:start position:0%
+next step is to find the columns that
+00:01:48.630 --> 00:01:48.640 align:start position:0%
+00:01:48.640 --> 00:01:50.950 align:start position:0%
+contain the data you want. This can be
+00:01:50.950 --> 00:01:50.960 align:start position:0%
+00:01:50.960 --> 00:01:53.109 align:start position:0%
+done by targeting the appropriate TD
+00:01:53.109 --> 00:01:53.119 align:start position:0%
+00:01:53.119 --> 00:01:55.350 align:start position:0%
+tags that correspond to the desired
+00:01:55.350 --> 00:01:55.360 align:start position:0%
+00:01:55.360 --> 00:01:58.389 align:start position:0%
+cells in the table.
+00:01:58.389 --> 00:01:58.399 align:start position:0%
+00:01:58.399 --> 00:02:00.709 align:start position:0%
+Once you have a specific row and column,
+00:02:00.709 --> 00:02:00.719 align:start position:0%
+00:02:00.719 --> 00:02:02.870 align:start position:0%
+you can iterate over each row and select
+00:02:02.870 --> 00:02:02.880 align:start position:0%
+00:02:02.880 --> 00:02:05.270 align:start position:0%
+the desired column in the table. This
+00:02:05.270 --> 00:02:05.280 align:start position:0%
+00:02:05.280 --> 00:02:07.350 align:start position:0%
+allows you to access and retrieve the
+00:02:07.350 --> 00:02:07.360 align:start position:0%
+00:02:07.360 --> 00:02:10.389 align:start position:0%
+data from each row individually.
+00:02:10.389 --> 00:02:10.399 align:start position:0%
+00:02:10.399 --> 00:02:12.550 align:start position:0%
+Now let's return to Leapwork and try
+00:02:12.550 --> 00:02:12.560 align:start position:0%
+00:02:12.560 --> 00:02:14.790 align:start position:0%
+extracting data from a table using the
+00:02:14.790 --> 00:02:14.800 align:start position:0%
+00:02:14.800 --> 00:02:17.830 align:start position:0%
+Leapwork flow.
+00:02:17.830 --> 00:02:17.840 align:start position:0%
+00:02:17.840 --> 00:02:19.910 align:start position:0%
+We'll begin by adding a start web
+00:02:19.910 --> 00:02:19.920 align:start position:0%
+00:02:19.920 --> 00:02:22.070 align:start position:0%
+browser building block and entering the
+00:02:22.070 --> 00:02:22.080 align:start position:0%
+00:02:22.080 --> 00:02:24.790 align:start position:0%
+URL.
+00:02:24.790 --> 00:02:24.800 align:start position:0%
+00:02:24.800 --> 00:02:27.110 align:start position:0%
+Next, we'll add a find web element block
+00:02:27.110 --> 00:02:27.120 align:start position:0%
+00:02:27.120 --> 00:02:31.110 align:start position:0%
+to capture one of the rows in the table.
+00:02:31.110 --> 00:02:31.120 align:start position:0%
+00:02:31.120 --> 00:02:33.350 align:start position:0%
+When working with web automation, a find
+00:02:33.350 --> 00:02:33.360 align:start position:0%
+00:02:33.360 --> 00:02:35.350 align:start position:0%
+web element building block is used to
+00:02:35.350 --> 00:02:35.360 align:start position:0%
+00:02:35.360 --> 00:02:38.309 align:start position:0%
+find a web element such as a div, tags,
+00:02:38.309 --> 00:02:38.319 align:start position:0%
+00:02:38.319 --> 00:02:40.790 align:start position:0%
+or class in the browser. Find web
+00:02:40.790 --> 00:02:40.800 align:start position:0%
+00:02:40.800 --> 00:02:42.790 align:start position:0%
+element building block is usually used
+00:02:42.790 --> 00:02:42.800 align:start position:0%
+00:02:42.800 --> 00:02:46.470 align:start position:0%
+while iterating through elements.
+00:02:46.470 --> 00:02:46.480 align:start position:0%
+00:02:46.480 --> 00:02:48.229 align:start position:0%
+Let's start with capturing one element
+00:02:48.229 --> 00:02:48.239 align:start position:0%
+00:02:48.239 --> 00:02:49.990 align:start position:0%
+on the table and then modify the
+00:02:49.990 --> 00:02:50.000 align:start position:0%
+00:02:50.000 --> 00:02:52.309 align:start position:0%
+selection to include all elements of the
+00:02:52.309 --> 00:02:52.319 align:start position:0%
+00:02:52.319 --> 00:02:54.790 align:start position:0%
+same type.
+00:02:54.790 --> 00:02:54.800 align:start position:0%
+00:02:54.800 --> 00:02:58.229 align:start position:0%
+When I click select web element to find,
+00:02:58.229 --> 00:02:58.239 align:start position:0%
+00:02:58.239 --> 00:03:00.229 align:start position:0%
+we can see that I'm not able to select
+00:03:00.229 --> 00:03:00.239 align:start position:0%
+00:03:00.239 --> 00:03:03.509 align:start position:0%
+the entire row. I'm only able to select
+00:03:03.509 --> 00:03:03.519 align:start position:0%
+00:03:03.519 --> 00:03:06.390 align:start position:0%
+individual cells in the table.
+00:03:06.390 --> 00:03:06.400 align:start position:0%
+00:03:06.400 --> 00:03:07.990 align:start position:0%
+This is because the cells from a
+00:03:07.990 --> 00:03:08.000 align:start position:0%
+00:03:08.000 --> 00:03:09.990 align:start position:0%
+capturing perspective lie above the
+00:03:09.990 --> 00:03:10.000 align:start position:0%
+00:03:10.000 --> 00:03:13.350 align:start position:0%
+rows. To select the entire row, we can
+00:03:13.350 --> 00:03:13.360 align:start position:0%
+00:03:13.360 --> 00:03:16.309 align:start position:0%
+apply a trick. We capture one of the
+00:03:16.309 --> 00:03:16.319 align:start position:0%
+00:03:16.319 --> 00:03:18.470 align:start position:0%
+cells and then edit the web element and
+00:03:18.470 --> 00:03:18.480 align:start position:0%
+00:03:18.480 --> 00:03:21.030 align:start position:0%
+then press the validate button.
+00:03:21.030 --> 00:03:21.040 align:start position:0%
+00:03:21.040 --> 00:03:23.190 align:start position:0%
+Clicking on validate accomplishes two
+00:03:23.190 --> 00:03:23.200 align:start position:0%
+00:03:23.200 --> 00:03:24.790 align:start position:0%
+things.
+00:03:24.790 --> 00:03:24.800 align:start position:0%
+00:03:24.800 --> 00:03:27.430 align:start position:0%
+First, the locator strategy is executed,
+00:03:27.430 --> 00:03:27.440 align:start position:0%
+00:03:27.440 --> 00:03:29.350 align:start position:0%
+allowing us to verify that the strategy
+00:03:29.350 --> 00:03:29.360 align:start position:0%
+00:03:29.360 --> 00:03:31.350 align:start position:0%
+finds the right element. This is
+00:03:31.350 --> 00:03:31.360 align:start position:0%
+00:03:31.360 --> 00:03:34.949 align:start position:0%
+indicated by the red border.
+00:03:34.949 --> 00:03:34.959 align:start position:0%
+00:03:34.959 --> 00:03:37.190 align:start position:0%
+Secondly, it loads the entire DOM into
+00:03:37.190 --> 00:03:37.200 align:start position:0%
+00:03:37.200 --> 00:03:39.270 align:start position:0%
+the strategy editor, allowing us to
+00:03:39.270 --> 00:03:39.280 align:start position:0%
+00:03:39.280 --> 00:03:41.270 align:start position:0%
+navigate and select elements directly
+00:03:41.270 --> 00:03:41.280 align:start position:0%
+00:03:41.280 --> 00:03:43.270 align:start position:0%
+from the DOM. In the DOM tree, we can
+00:03:43.270 --> 00:03:43.280 align:start position:0%
+00:03:43.280 --> 00:03:45.430 align:start position:0%
+now right-click the TR and select
+00:03:45.430 --> 00:03:45.440 align:start position:0%
+00:03:45.440 --> 00:03:48.070 align:start position:0%
+capture. Now we need to expand the
+00:03:48.070 --> 00:03:48.080 align:start position:0%
+00:03:48.080 --> 00:03:50.470 align:start position:0%
+locator strategy to include all rows in
+00:03:50.470 --> 00:03:50.480 align:start position:0%
+00:03:50.480 --> 00:03:52.229 align:start position:0%
+the table. When we look through the
+00:03:52.229 --> 00:03:52.239 align:start position:0%
+00:03:52.239 --> 00:03:54.070 align:start position:0%
+available strategies, we are looking for
+00:03:54.070 --> 00:03:54.080 align:start position:0%
+00:03:54.080 --> 00:03:56.309 align:start position:0%
+a strategy that is bound to a specific
+00:03:56.309 --> 00:03:56.319 align:start position:0%
+00:03:56.319 --> 00:03:59.110 align:start position:0%
+row. We can see that both strategy
+00:03:59.110 --> 00:03:59.120 align:start position:0%
+00:03:59.120 --> 00:04:01.589 align:start position:0%
+numbers three and four are pointing to
+00:04:01.589 --> 00:04:01.599 align:start position:0%
+00:04:01.599 --> 00:04:04.390 align:start position:0%
+row number five.
+00:04:04.390 --> 00:04:04.400 align:start position:0%
+00:04:04.400 --> 00:04:06.710 align:start position:0%
+We can use either strategy to expand the
+00:04:06.710 --> 00:04:06.720 align:start position:0%
+00:04:06.720 --> 00:04:09.429 align:start position:0%
+selection and include all rows. Before
+00:04:09.429 --> 00:04:09.439 align:start position:0%
+00:04:09.439 --> 00:04:11.429 align:start position:0%
+changing the selection, the strategy
+00:04:11.429 --> 00:04:11.439 align:start position:0%
+00:04:11.439 --> 00:04:13.429 align:start position:0%
+editor shows that the strategy currently
+00:04:13.429 --> 00:04:13.439 align:start position:0%
+00:04:13.439 --> 00:04:16.550 align:start position:0%
+matches one element.
+00:04:16.550 --> 00:04:16.560 align:start position:0%
+00:04:16.560 --> 00:04:17.909 align:start position:0%
+By removing the condition that
+00:04:17.909 --> 00:04:17.919 align:start position:0%
+00:04:17.919 --> 00:04:19.749 align:start position:0%
+constrains the strategy to row number
+00:04:19.749 --> 00:04:19.759 align:start position:0%
+00:04:19.759 --> 00:04:22.310 align:start position:0%
+five and click validate, we can see that
+00:04:22.310 --> 00:04:22.320 align:start position:0%
+00:04:22.320 --> 00:04:26.390 align:start position:0%
+it now matches one of 10.
+00:04:26.390 --> 00:04:26.400 align:start position:0%
+00:04:26.400 --> 00:04:28.150 align:start position:0%
+This indicates that the strategy now
+00:04:28.150 --> 00:04:28.160 align:start position:0%
+00:04:28.160 --> 00:04:31.990 align:start position:0%
+matches 10 rows in the table.
+00:04:31.990 --> 00:04:32.000 align:start position:0%
+00:04:32.000 --> 00:04:33.830 align:start position:0%
+Looking at the browser, we can see that
+00:04:33.830 --> 00:04:33.840 align:start position:0%
+00:04:33.840 --> 00:04:37.270 align:start position:0%
+the first row is highlighted.
+00:04:37.270 --> 00:04:37.280 align:start position:0%
+00:04:37.280 --> 00:04:39.030 align:start position:0%
+By clicking on the arrows next to the
+00:04:39.030 --> 00:04:39.040 align:start position:0%
+00:04:39.040 --> 00:04:40.710 align:start position:0%
+captured element, we can navigate
+00:04:40.710 --> 00:04:40.720 align:start position:0%
+00:04:40.720 --> 00:04:42.310 align:start position:0%
+through the different matching elements
+00:04:42.310 --> 00:04:42.320 align:start position:0%
+00:04:42.320 --> 00:04:46.150 align:start position:0%
+one by one.
+00:04:46.150 --> 00:04:46.160 align:start position:0%
+00:04:46.160 --> 00:04:48.230 align:start position:0%
+This selection appears to include all
+00:04:48.230 --> 00:04:48.240 align:start position:0%
+00:04:48.240 --> 00:04:51.590 align:start position:0%
+rows. So we can save it.
+00:04:51.590 --> 00:04:51.600 align:start position:0%
+00:04:51.600 --> 00:04:53.430 align:start position:0%
+This means the strategy will return a
+00:04:53.430 --> 00:04:53.440 align:start position:0%
+00:04:53.440 --> 00:04:55.830 align:start position:0%
+list of all 10 rows. And we can now use
+00:04:55.830 --> 00:04:55.840 align:start position:0%
+00:04:55.840 --> 00:04:58.469 align:start position:0%
+the use occur option to determine how to
+00:04:58.469 --> 00:04:58.479 align:start position:0%
+00:04:58.479 --> 00:05:01.510 align:start position:0%
+access the rows. We have two choices
+00:05:01.510 --> 00:05:01.520 align:start position:0%
+00:05:01.520 --> 00:05:03.670 align:start position:0%
+when it comes to accessing the rows. We
+00:05:03.670 --> 00:05:03.680 align:start position:0%
+00:05:03.680 --> 00:05:07.430 align:start position:0%
+can either pick a specific row
+00:05:07.430 --> 00:05:07.440 align:start position:0%
+00:05:07.440 --> 00:05:10.150 align:start position:0%
+or select all to iterate through all the
+00:05:10.150 --> 00:05:10.160 align:start position:0%
+00:05:10.160 --> 00:05:12.629 align:start position:0%
+rows one by one. In most cases,
+00:05:12.629 --> 00:05:12.639 align:start position:0%
+00:05:12.639 --> 00:05:16.790 align:start position:0%
+selecting all is the appropriate choice.
+00:05:16.790 --> 00:05:16.800 align:start position:0%
+00:05:16.800 --> 00:05:18.790 align:start position:0%
+With this selection, the top connector
+00:05:18.790 --> 00:05:18.800 align:start position:0%
+00:05:18.800 --> 00:05:21.590 align:start position:0%
+is triggered for each row. The found
+00:05:21.590 --> 00:05:21.600 align:start position:0%
+00:05:21.600 --> 00:05:23.830 align:start position:0%
+element property contains the individual
+00:05:23.830 --> 00:05:23.840 align:start position:0%
+00:05:23.840 --> 00:05:25.510 align:start position:0%
+rows as they are iterated. And we can
+00:05:25.510 --> 00:05:25.520 align:start position:0%
+00:05:25.520 --> 00:05:27.430 align:start position:0%
+use this to dive into each row and
+00:05:27.430 --> 00:05:27.440 align:start position:0%
+00:05:27.440 --> 00:05:30.150 align:start position:0%
+extract details from the cells. One way
+00:05:30.150 --> 00:05:30.160 align:start position:0%
+00:05:30.160 --> 00:05:32.230 align:start position:0%
+to retrieve the text from a column is to
+00:05:32.230 --> 00:05:32.240 align:start position:0%
+00:05:32.240 --> 00:05:34.390 align:start position:0%
+connect the found element property to a
+00:05:34.390 --> 00:05:34.400 align:start position:0%
+00:05:34.400 --> 00:05:37.749 align:start position:0%
+get web text action.
+00:05:37.749 --> 00:05:37.759 align:start position:0%
+00:05:37.759 --> 00:05:39.749 align:start position:0%
+If we run this, it will pull the text
+00:05:39.749 --> 00:05:39.759 align:start position:0%
+00:05:39.759 --> 00:05:42.310 align:start position:0%
+from all the cells as one combining text
+00:05:42.310 --> 00:05:42.320 align:start position:0%
+00:05:42.320 --> 00:05:49.350 align:start position:0%
+string. Let's try to run this.
+00:05:49.350 --> 00:05:49.360 align:start position:0%
+00:05:49.360 --> 00:05:51.590 align:start position:0%
+As we can see in the activity log, the
+00:05:51.590 --> 00:05:51.600 align:start position:0%
+00:05:51.600 --> 00:05:53.990 align:start position:0%
+entire rows are now outputed as one
+00:05:53.990 --> 00:05:54.000 align:start position:0%
+00:05:54.000 --> 00:05:57.590 align:start position:0%
+string for each of the rows.
+00:05:57.590 --> 00:05:57.600 align:start position:0%
+00:05:57.600 --> 00:05:59.909 align:start position:0%
+We can use the select web element in the
+00:05:59.909 --> 00:05:59.919 align:start position:0%
+00:05:59.919 --> 00:06:01.909 align:start position:0%
+get web text block if we want to work
+00:06:01.909 --> 00:06:01.919 align:start position:0%
+00:06:01.919 --> 00:06:05.110 align:start position:0%
+with a specific cell.
+00:06:05.110 --> 00:06:05.120 align:start position:0%
+00:06:05.120 --> 00:06:06.950 align:start position:0%
+In this case, we're going to capture the
+00:06:06.950 --> 00:06:06.960 align:start position:0%
+00:06:06.960 --> 00:06:10.550 align:start position:0%
+fourth cell in the fifth row.
+00:06:10.550 --> 00:06:10.560 align:start position:0%
+00:06:10.560 --> 00:06:12.629 align:start position:0%
+If we want to work with a specific cell,
+00:06:12.629 --> 00:06:12.639 align:start position:0%
+00:06:12.639 --> 00:06:14.710 align:start position:0%
+we can use the select web element option
+00:06:14.710 --> 00:06:14.720 align:start position:0%
+00:06:14.720 --> 00:06:17.189 align:start position:0%
+in the get web text action. In this
+00:06:17.189 --> 00:06:17.199 align:start position:0%
+00:06:17.199 --> 00:06:20.870 align:start position:0%
+case, we capture the fourth cell.
+00:06:20.870 --> 00:06:20.880 align:start position:0%
+00:06:20.880 --> 00:06:22.790 align:start position:0%
+Before running this, we need to make a
+00:06:22.790 --> 00:06:22.800 align:start position:0%
+00:06:22.800 --> 00:06:25.270 align:start position:0%
+small change to the strategy.
+00:06:25.270 --> 00:06:25.280 align:start position:0%
+00:06:25.280 --> 00:06:27.350 align:start position:0%
+When we capture an element on the page,
+00:06:27.350 --> 00:06:27.360 align:start position:0%
+00:06:27.360 --> 00:06:29.110 align:start position:0%
+it is captured in the scope of the
+00:06:29.110 --> 00:06:29.120 align:start position:0%
+00:06:29.120 --> 00:06:31.029 align:start position:0%
+entire page.
+00:06:31.029 --> 00:06:31.039 align:start position:0%
+00:06:31.039 --> 00:06:33.350 align:start position:0%
+However, in our case, we only need to
+00:06:33.350 --> 00:06:33.360 align:start position:0%
+00:06:33.360 --> 00:06:35.590 align:start position:0%
+investigate an individual row, making
+00:06:35.590 --> 00:06:35.600 align:start position:0%
+00:06:35.600 --> 00:06:37.909 align:start position:0%
+the strategy simpler.
+00:06:37.909 --> 00:06:37.919 align:start position:0%
+00:06:37.919 --> 00:06:39.909 align:start position:0%
+Additionally, the strategy needs to work
+00:06:39.909 --> 00:06:39.919 align:start position:0%
+00:06:39.919 --> 00:06:41.990 align:start position:0%
+for all the rows and not depend on
+00:06:41.990 --> 00:06:42.000 align:start position:0%
+00:06:42.000 --> 00:06:45.110 align:start position:0%
+instance values from a specific row.
+00:06:45.110 --> 00:06:45.120 align:start position:0%
+00:06:45.120 --> 00:06:46.870 align:start position:0%
+Looking at the strategies, we see that
+00:06:46.870 --> 00:06:46.880 align:start position:0%
+00:06:46.880 --> 00:06:49.189 align:start position:0%
+the fourth strategy selects the cell by
+00:06:49.189 --> 00:06:49.199 align:start position:0%
+00:06:49.199 --> 00:06:51.110 align:start position:0%
+choosing the fourth cell in the fifth
+00:06:51.110 --> 00:06:51.120 align:start position:0%
+00:06:51.120 --> 00:06:53.909 align:start position:0%
+row of the table.
+00:06:53.909 --> 00:06:53.919 align:start position:0%
+00:06:53.919 --> 00:06:55.749 align:start position:0%
+Since we are already within the scope of
+00:06:55.749 --> 00:06:55.759 align:start position:0%
+00:06:55.759 --> 00:06:57.749 align:start position:0%
+a row provided by the found element
+00:06:57.749 --> 00:06:57.759 align:start position:0%
+00:06:57.759 --> 00:06:59.670 align:start position:0%
+property, we can simply delete the part
+00:06:59.670 --> 00:06:59.680 align:start position:0%
+00:06:59.680 --> 00:07:01.990 align:start position:0%
+of the strategy that identifies the row,
+00:07:01.990 --> 00:07:02.000 align:start position:0%
+00:07:02.000 --> 00:07:06.629 align:start position:0%
+including the Tbody and TR selectors.
+00:07:06.629 --> 00:07:06.639 align:start position:0%
+00:07:06.639 --> 00:07:08.950 align:start position:0%
+To summarize, we iterate through all the
+00:07:08.950 --> 00:07:08.960 align:start position:0%
+00:07:08.960 --> 00:07:10.950 align:start position:0%
+rows and provide the individual rows to
+00:07:10.950 --> 00:07:10.960 align:start position:0%
+00:07:10.960 --> 00:07:13.510 align:start position:0%
+the get web text action. In the selector
+00:07:13.510 --> 00:07:13.520 align:start position:0%
+00:07:13.520 --> 00:07:15.589 align:start position:0%
+for this action, we have simplified the
+00:07:15.589 --> 00:07:15.599 align:start position:0%
+00:07:15.599 --> 00:07:17.510 align:start position:0%
+strategy to select the correct cell
+00:07:17.510 --> 00:07:17.520 align:start position:0%
+00:07:17.520 --> 00:07:20.309 align:start position:0%
+within the row.
+00:07:20.309 --> 00:07:20.319 align:start position:0%
+00:07:20.319 --> 00:07:22.469 align:start position:0%
+The final step is to write the retrieved
+00:07:22.469 --> 00:07:22.479 align:start position:0%
+00:07:22.479 --> 00:07:26.390 align:start position:0%
+text to a log message action.
+00:07:26.390 --> 00:07:26.400 align:start position:0%
+00:07:26.400 --> 00:07:35.430 align:start position:0%
+Let's run the flow.
+00:07:35.430 --> 00:07:35.440 align:start position:0%
+00:07:35.440 --> 00:07:37.430 align:start position:0%
+By running the flow, we can observe that
+00:07:37.430 --> 00:07:37.440 align:start position:0%
+00:07:37.440 --> 00:07:41.189 align:start position:0%
+it iterates through all the rows,
+00:07:41.189 --> 00:07:41.199 align:start position:0%
+00:07:41.199 --> 00:07:44.469 align:start position:0%
+selects the fourth column,
+00:07:44.469 --> 00:07:44.479 align:start position:0%
+00:07:44.479 --> 00:07:49.589 align:start position:0%
+and prints the text inside the cell.
+00:07:49.589 --> 00:07:49.599 align:start position:0%
+00:07:49.599 --> 00:07:51.589 align:start position:0%
+In this lesson, we learned how to select
+00:07:51.589 --> 00:07:51.599 align:start position:0%
+00:07:51.599 --> 00:07:55.830 align:start position:0%
+and work with lists of web elements.
+00:07:55.830 --> 00:07:55.840 align:start position:0%
+00:07:55.840 --> 00:07:57.909 align:start position:0%
+We saw how to capture a single element
+00:07:57.909 --> 00:07:57.919 align:start position:0%
+00:07:57.919 --> 00:08:00.150 align:start position:0%
+and use the strategy editor to expand
+00:08:00.150 --> 00:08:00.160 align:start position:0%
+00:08:00.160 --> 00:08:02.469 align:start position:0%
+the selection to include all elements of
+00:08:02.469 --> 00:08:02.479 align:start position:0%
+00:08:02.479 --> 00:08:05.189 align:start position:0%
+the same type.
+00:08:05.189 --> 00:08:05.199 align:start position:0%
+00:08:05.199 --> 00:08:07.110 align:start position:0%
+We hope this tutorial provided you with
+00:08:07.110 --> 00:08:07.120 align:start position:0%
+00:08:07.120 --> 00:08:09.270 align:start position:0%
+valuable insights into iterating through
+00:08:09.270 --> 00:08:09.280 align:start position:0%
+00:08:09.280 --> 00:08:11.589 align:start position:0%
+the list elements. We explored how to
+00:08:11.589 --> 00:08:11.599 align:start position:0%
+00:08:11.599 --> 00:08:14.150 align:start position:0%
+query inside individual list elements to
+00:08:14.150 --> 00:08:14.160 align:start position:0%
+00:08:14.160 --> 00:08:16.309 align:start position:0%
+retrieve specific details such as the
+00:08:16.309 --> 00:08:16.319 align:start position:0%
+00:08:16.319 --> 00:08:20.070 align:start position:0%
+text inside a particular column.
+00:08:20.070 --> 00:08:20.080 align:start position:0%
+00:08:20.080 --> 00:08:22.309 align:start position:0%
+We suggest you try replicating this flow
+00:08:22.309 --> 00:08:22.319 align:start position:0%
+00:08:22.319 --> 00:08:25.110 align:start position:0%
+on your own by following the video.
+00:08:25.110 --> 00:08:25.120 align:start position:0%
+00:08:25.120 --> 00:08:28.520 align:start position:0%
+Happy automation.

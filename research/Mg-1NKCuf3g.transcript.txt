@@ -1,0 +1,95 @@
+00:00:03.590 [Music]
+00:00:03.600 Welcome back to testing the internet
+00:00:05.279 series. You're watching part 24, opening
+00:00:08.000 a new window. In the previous video, we
+00:00:11.200 automated a test for notification
+00:00:12.880 messages by clicking a link multiple
+00:00:14.719 times and capturing the dynamic messages
+00:00:17.119 shown in the top bar. In this video,
+00:00:19.359 you'll learn how to handle new windows
+00:00:21.039 and tabs that open during a test flow.
+00:00:23.600 You may have run into issues like test
+00:00:25.439 breaking when a new tab appears,
+00:00:27.359 struggling to switch back to the
+00:00:28.720 original window, or losing track of
+00:00:30.960 which window your test is actually
+00:00:32.640 interacting with. This often happens
+00:00:35.200 because the test doesn't automatically
+00:00:36.960 follow the new window or tab, causing it
+00:00:39.520 to lose connection with the flow. That's
+00:00:42.000 where Leapwork can help. With the use
+00:00:44.879 browser window block, you can easily
+00:00:47.120 switch between tabs or windows using the
+00:00:49.440 page title, URL, or even specific
+00:00:52.320 content. To demonstrate, we'll take a
+00:00:54.640 simple scenario. The goal is to click
+00:00:56.719 the click here link. As soon as you do
+00:00:59.359 that, a new tab opens. The next step is
+00:01:01.760 to identify this new window by locating
+00:01:04.000 the element inside it. In this case, the
+00:01:06.880 text new window. Let's automate this
+00:01:10.080 scenario. We'll start by launching the
+00:01:12.159 test case using the start recorder.
+00:01:22.950 On the page, there's a link that says
+00:01:22.960 click here. Let's capture and select
+00:01:25.200 click web element to click it.
+00:01:28.159 Once clicked, it opens a new browser
+00:01:30.400 tab. At this point, instead of directly
+00:01:33.439 capturing elements from the new tab,
+00:01:35.520 we'll use Leapworks use browser window
+00:01:37.600 block to handle the switch. Let's save
+00:01:40.159 and close the recorder here. Now we'll
+00:01:42.400 connect use browser window block to
+00:01:44.159 switch to a new window.
+00:01:50.230 This block is designed specifically for
+00:01:50.240 managing multiple tabs or windows during
+00:01:52.479 automation. Use browser window gives you
+00:01:55.680 three ways to identify the target
+00:01:57.360 window. By page title, by URL, or by
+00:02:01.360 page content. In this case, we'll select
+00:02:04.399 by page title.
+00:02:06.880 In the condition, we'll select equals to
+00:02:09.200 match the window exactly by its title.
+00:02:12.160 We'll type in the exact title, which is
+00:02:14.640 new window. And remember, this is case
+00:02:17.200 sensitive, so it must match exactly. Now
+00:02:20.239 that we've switched to the new window,
+00:02:22.000 the next step is to find and validate an
+00:02:24.080 element inside it. Let's turn on the
+00:02:26.000 recorder again and capture it.
+00:02:34.790 Selecting find web element block, we'll
+00:02:34.800 save and close.
+00:02:37.920 Let's connect the pass block. And that's
+00:02:39.519 it.
+00:02:55.750 And yes, our flow passed. The link was
+00:02:55.760 clicked. The new tab opens. Leapwork
+00:02:58.480 identifies the right window, finds the
+00:03:00.480 expected element, and the test passes.
+00:03:03.360 This is how easy it is to handle new
+00:03:05.120 tabs in Windows using Leapworks use
+00:03:07.440 browser window block. Now let's quickly
+00:03:10.159 recap the flow. We launched the test
+00:03:12.800 case then clicked the link that opened a
+00:03:14.959 new tab. Instead of capturing elements
+00:03:17.760 right away, we used the use browser
+00:03:20.080 window block to switch to the new tab.
+00:03:22.720 We then validated the new window by
+00:03:24.720 locating a specific text using find web
+00:03:27.120 element, ensuring the page loaded as
+00:03:29.360 expected.
+00:03:32.080 What you learned? Handling multiple tabs
+00:03:34.879 doesn't have to be errorprone. With
+00:03:37.120 Leapwork, you can take control of which
+00:03:39.360 window your test interacts with. No more
+00:03:41.760 broken flows or guessing which tab
+00:03:43.519 you're on. If switching tabs has ever
+00:03:46.000 broken your test midway, this is the fix
+00:03:48.400 you've been looking for. Give this
+00:03:50.159 exercise a try yourself and see how much
+00:03:52.319 faster your automation can be. Moreover,
+00:03:54.799 to keep learning or if you ever feel
+00:03:56.560 stuck, explore our documentation
+00:03:59.120 knowledge base and reach out to support
+00:04:01.120 if needed. The answers are just a click
+00:04:03.040 away. Thank you for staying with us and
+00:04:05.280 see you in the next automation journey.

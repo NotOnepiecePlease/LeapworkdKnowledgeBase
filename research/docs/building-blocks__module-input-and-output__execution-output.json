@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/execution-output",
+  "title": "Execution Output",
+  "retrievedAt": "2026-11-13T20:21:26.990299+00:00",
+  "text": "Breadcrumbs\nThe\nExecution Input\nblock is used inside sub-flows to define where the execution should begin when the sub-flow is called. It acts as the starting point and connects to the first functional block within the sub-flow.\nWhen a sub-flow is invoked, the flow begins at the\nExecution Input\nblock and continues through the connected logic path.\nThe Execution Output block shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nExecution Input\nonto the sub-flow canvas.\nConnect the output of the\nExecution Input\nblock to the block that should receive the execution input within the sub-flow.\nRun the main flow that references this sub-flow.\nBuilding block parameters\nParameters\nExecution Input\nDefines the execution entry point for a sub-flow. Should be connected to the block that will receive the execution input. Enables control to pass into the sub-flow when triggered from a parent flow.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251113-141836.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5ec4e220b3706a7173b46268fd098330e9286df183091d71ac2313614afb7858/image-20251113-141836.png?cb=4716f1be21cd1af839171bd18e06b647"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+00:00:03.429 [Music]
+00:00:03.439 Welcome back to testing the internet
+00:00:05.120 series. You're watching part 9, dynamic
+00:00:07.600 controls. In the last video, you learned
+00:00:10.880 how to automate the process of handling
+00:00:12.719 dynamic content with the strategy editor
+00:00:15.120 in Leapwork.
+00:00:20.230 In this video, you'll learn how to
+00:00:20.240 handle controls being added or removed
+00:00:22.240 from the DOM. Something that may seem
+00:00:24.640 simple, like a disappearing button or a
+00:00:26.640 delayed checkbox.
+00:00:28.720 Have you faced issues like buttons that
+00:00:30.640 only appear after a delay, checkboxes
+00:00:33.120 that vanish after clicking, or UI
+00:00:35.440 elements randomly being added or
+00:00:37.360 removed? These challenges often happen
+00:00:40.160 because the DOM changes dynamically.
+00:00:42.559 Elements load or unload at different
+00:00:44.640 times. What if Leapwork could simplify
+00:00:47.200 all of this? We'll walk you through a
+00:00:49.680 simple scenario that shows how Leapwork
+00:00:51.680 makes handling dynamic controls easy,
+00:00:54.399 visual, and completely code-f free. In
+00:00:57.199 this particular test case, you click the
+00:00:59.280 remove button and then the page will
+00:01:01.199 after a while remove the checkbox
+00:01:02.960 control. So the scenario here is to
+00:01:05.840 first click the button and then after a
+00:01:07.760 while make sure that the checkbox is
+00:01:09.760 gone. Let's begin by creating an
+00:01:11.439 automation flow in Leapwork Studio.
+00:01:14.240 Let's open the test case page using the
+00:01:16.159 start recorder.
+00:01:29.190 We'll capture the remove button and
+00:01:29.200 choose click web element. This action
+00:01:32.000 tells Leapwork to click the button just
+00:01:34.320 like a real user would. You'll see four
+00:01:37.360 click options, left, right, double left,
+00:01:40.960 double right. Let's go with left for
+00:01:43.439 this step. You can choose the click type
+00:01:45.280 based on what's needed. Then simply
+00:01:47.200 click the apply button to confirm. Since
+00:01:50.079 the checkbox disappears after clicking
+00:01:51.920 the remove button, we'll refresh the
+00:01:53.680 page to capture it as we need to verify
+00:01:55.920 its presence. We'll capture the checkbox
+00:01:58.320 again and use find web element to locate
+00:02:00.640 it even if it's no longer visible right
+00:02:02.719 away. That's it. Go ahead and save and
+00:02:05.759 close the recorder. Now, we will expand
+00:02:07.840 the block and select the await not found
+00:02:10.000 option. This tells Leapwork to first
+00:02:12.640 locate the element, then keep checking
+00:02:14.800 the DOM until the element is no longer
+00:02:17.280 present. The connector won't proceed
+00:02:19.599 until the element is actually removed.
+00:02:23.360 Now, if the checkbox is completely
+00:02:25.120 removed and not found, we will pass the
+00:02:27.200 test case.
+00:02:50.150 And yes, our test case ran as expected.
+00:02:50.160 First, the button was successfully
+00:02:51.760 clicked using the click web element
+00:02:53.440 block. Then, Leapwork attempted to
+00:02:56.160 locate the target web element using the
+00:02:58.000 find web element block, but it wasn't
+00:03:00.319 found within the 10-second timeout
+00:03:02.000 window. The flow continued and marked
+00:03:04.239 the test as passed. This shows how
+00:03:06.720 Leapwork can gracefully handle
+00:03:08.319 conditions where certain elements may or
+00:03:10.239 may not appear. Let's quickly recap the
+00:03:12.879 dynamic controls automation scenario. We
+00:03:15.920 started by launching the page and
+00:03:17.440 clicking the remove button to remove the
+00:03:19.120 checkbox. Since these changes don't
+00:03:21.680 happen instantly, we used the find web
+00:03:24.159 element block to wait for the checkbox
+00:03:26.159 to disappear. Once the element was
+00:03:28.640 detected missing, we marked the test
+00:03:30.640 case as passed based on the expected
+00:03:32.560 outcome.
+00:03:38.149 What you learned? You learned how to
+00:03:38.159 handle UI elements that appear or
+00:03:40.319 disappear dynamically by building robust
+00:03:42.959 flows that can wait intelligently and
+00:03:44.959 validate outcomes accurately. With
+00:03:47.599 Leapwork, even the most unpredictable UI
+00:03:50.400 changes become testable with confidence.
+00:03:52.720 Give this exercise a try yourself and
+00:03:54.879 see how much faster your automation can
+00:03:56.799 be. Moreover, to keep learning or if you
+00:03:59.280 ever feel stuck, explore our
+00:04:01.120 documentation knowledge base and reach
+00:04:03.680 out to support if needed. The answers
+00:04:05.360 are just a click away. Thank you for
+00:04:07.519 staying with us and see you in the next
+00:04:09.280 automation journey.

@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/wait",
+  "title": "Wait",
+  "retrievedAt": "2026-11-13T20:40:17.200032+00:00",
+  "text": "Breadcrumbs\nThe\nWait\nbuilding block pauses an automation flow for a specific number of seconds. It is typically used when an exact amount of time must pass before the flow continues to the next step.\nSee the\nAutomation using image recognition video\nfor best practices surrounding the Wait block and waiting in general.\nThe\nWait\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nWait\nonto the canvas.\nConnect the block in the flow and set\nDelay (sec)\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when the wait period is over. You can rename the block by double-clicking the header text and typing a new title.\nDelay (sec)\n: Sets the number of seconds the flow should wait before continuing.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Automation using image recognition video",
+      "url": "https://www.leapwork.com/learn/virtual-desktop-automation/image-recognition"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260203-115743.png",
+      "url": "https://docs.leapwork.com/__attachments/a_ba2026a142c1054764b88a0ce10e20d8a063a99d8f7a7c9a6728af2a67eb9ced/image-20260203-115743.png?cb=9de63d228bfd342000a4158e22359fbb"
+    }
+  ]
+}

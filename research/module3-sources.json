@@ -1,0 +1,254 @@
+{
+  "consultedAt": "2026-11-13",
+  "course": "https://leapwork.com/learning-center/self-paced-training/",
+  "video": {
+    "id": "V5r-Fovn_vs",
+    "title": "Data Driven Automation Demo",
+    "durationSeconds": 80
+  },
+  "categorySources": [
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/variables",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators"
+  ],
+  "coverage": [
+    {
+      "category": "data-driven",
+      "blocks": [
+        "building-blocks/data-driven/read-excel",
+        "building-blocks/data-driven/write-excel",
+        "building-blocks/data-driven/database",
+        "building-blocks/data-driven/http-request",
+        "building-blocks/data-driven/compress-file",
+        "building-blocks/data-driven/save-file",
+        "building-blocks/data-driven/set-file",
+        "building-blocks/data-driven/command-line",
+        "building-blocks/data-driven/send-e-mail"
+      ]
+    },
+    {
+      "category": "logic",
+      "blocks": [
+        "building-blocks/logic/compare",
+        "building-blocks/logic/switch",
+        "building-blocks/logic/loop",
+        "building-blocks/logic/break-iteration",
+        "building-blocks/logic/calculate",
+        "building-blocks/logic/change-text",
+        "building-blocks/logic/regular-expression",
+        "building-blocks/logic/offset-date-time",
+        "building-blocks/logic/offset-area",
+        "building-blocks/logic/offset-position",
+        "building-blocks/logic/get-clipboard",
+        "building-blocks/logic/set-clipboard",
+        "building-blocks/logic/close-windows",
+        "building-blocks/logic/wait",
+        "building-blocks/logic/c-sharp-code"
+      ]
+    },
+    {
+      "category": "variables",
+      "blocks": [
+        "building-blocks/variables/set-variable",
+        "building-blocks/variables/get-variable"
+      ]
+    },
+    {
+      "category": "generators",
+      "blocks": [
+        "building-blocks/generators/generate-number",
+        "building-blocks/generators/generate-password",
+        "building-blocks/generators/generate-date-time"
+      ]
+    }
+  ],
+  "studies": [
+    {
+      "slug": "dados-fundamentos",
+      "title": "Um fluxo, vários conjuntos de dados",
+      "sourceKind": "video",
+      "docs": [
+        "building-blocks/data-driven/read-excel",
+        "building-blocks/module-input-and-output/value-input"
+      ]
+    },
+    {
+      "slug": "dados-ler-excel",
+      "title": "Ler uma planilha com intervalo e iteração",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/data-driven/read-excel"
+      ]
+    },
+    {
+      "slug": "dados-escrever-excel",
+      "title": "Escrever resultados no Excel",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/data-driven/write-excel",
+        "building-blocks/data-driven/read-excel"
+      ]
+    },
+    {
+      "slug": "dados-banco",
+      "title": "Usar dados de um banco por ODBC",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/data-driven/database"
+      ]
+    },
+    {
+      "slug": "dados-http",
+      "title": "Consultar uma API e validar sua resposta",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/data-driven/http-request",
+        "building-blocks/logic/compare"
+      ]
+    },
+    {
+      "slug": "dados-arquivos",
+      "title": "Fornecer, compactar e guardar arquivos",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/data-driven/set-file",
+        "building-blocks/data-driven/compress-file",
+        "building-blocks/data-driven/save-file"
+      ]
+    },
+    {
+      "slug": "dados-command-line",
+      "title": "Consumir a saída de um comando",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/data-driven/command-line"
+      ]
+    },
+    {
+      "slug": "dados-email",
+      "title": "Preparar uma notificação por e-mail",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/data-driven/send-e-mail",
+        "building-blocks/data-driven/set-file"
+      ]
+    },
+    {
+      "slug": "dados-decisoes",
+      "title": "Comparar valores e escolher caminhos",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/logic/compare",
+        "building-blocks/logic/switch"
+      ]
+    },
+    {
+      "slug": "dados-loops",
+      "title": "Controlar repetições e interrupções",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/logic/loop",
+        "building-blocks/logic/break-iteration"
+      ]
+    },
+    {
+      "slug": "dados-calculos",
+      "title": "Calcular sem confundir texto e número",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/logic/calculate",
+        "building-blocks/logic/compare"
+      ]
+    },
+    {
+      "slug": "dados-textos",
+      "title": "Normalizar texto e extrair padrões",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/logic/change-text",
+        "building-blocks/logic/regular-expression"
+      ]
+    },
+    {
+      "slug": "dados-datas",
+      "title": "Gerar datas e aplicar deslocamentos",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/generators/generate-date-time",
+        "building-blocks/logic/offset-date-time"
+      ]
+    },
+    {
+      "slug": "dados-variaveis",
+      "title": "Guardar valores com o escopo correto",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/variables/set-variable",
+        "building-blocks/variables/get-variable"
+      ]
+    },
+    {
+      "slug": "dados-geradores",
+      "title": "Gerar números e senhas de teste",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/generators/generate-number",
+        "building-blocks/generators/generate-password"
+      ]
+    },
+    {
+      "slug": "dados-clipboard",
+      "title": "Transferir texto pela área de transferência",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/logic/set-clipboard",
+        "building-blocks/logic/get-clipboard"
+      ]
+    },
+    {
+      "slug": "dados-espera-janelas",
+      "title": "Usar esperas e preparar o estado das janelas",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/logic/wait",
+        "building-blocks/logic/close-windows",
+        "building-blocks/logic/offset-position",
+        "building-blocks/logic/offset-area"
+      ]
+    },
+    {
+      "slug": "dados-csharp",
+      "title": "Reconhecer quando usar lógica C#",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/logic/c-sharp-code"
+      ]
+    },
+    {
+      "slug": "dados-laboratorio",
+      "title": "Laboratório: validar, calcular e registrar",
+      "sourceKind": "documentation",
+      "docs": [
+        "building-blocks/data-driven/read-excel",
+        "building-blocks/logic/change-text",
+        "building-blocks/logic/calculate",
+        "building-blocks/logic/compare",
+        "building-blocks/data-driven/write-excel"
+      ]
+    }
+  ],
+  "sourceFindings": [
+    "Switch: parte dos parâmetros textuais repete Compare; resumo e imagem identificam Input, Add case e No match.",
+    "Compress File: a referência específica descreve compactação em ZIP; a aula não presume descompactação.",
+    "Save File: armazenamento gerenciado na referência consultada, sem caminho manual arbitrário.",
+    "Calculate: arredondamento de ponto médio para o par.",
+    "C# Code: referência consultada registra mudanças de versão 2026.1 e .NET 8."
+  ],
+  "officialExercises": {
+    "url": "https://support.leapwork.com/s/article/Introduction-to-Data-Handling-and-Manipulation-Level-up-Your-Skills-with-These-Key-Exercises",
+    "status": "Loading / CSS Error; enunciados não reproduzidos."
+  },
+  "localExamples": "Arquivos, simulador, exercícios e respostas são autorais.",
+  "practicalExecution": "Fluxos não executados no Leapwork; programa não instalado."
+}

@@ -1,0 +1,81 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui",
+  "title": "Desktop UI",
+  "retrievedAt": "2026-11-13T19:24:41.171940+00:00",
+  "text": "Breadcrumbs\nYou can use\nLeapwork Flow’s desktop UI automation building blocks\nto create, run, and troubleshoot automation cases for business-critical applications, such as\nERP\nand\nCRM systems\n.\nLeapwork Flow desktop UI automation\nworks with nearly all desktop application platforms, including\nWinForms, WPF, Windows Universal Applications, Win32, Qt, Java, SAP GUI\n, and more.\nThis section gives an overview of the building blocks used in desktop UI automation.\nClick UI Element\nClose UI Window\nCollapse UI Element\nDrag UI Element\nExpand UI Element\nFind UI Element\nGet UI Attribute\nGet UI Number\nGet UI Selection\nGet UI Text\nGet Window Details\nInvoke UI Element\nSelect UI Element\nSet UI Element Value\nStart Application\nToggle UI Element\nUpdate UI Window\nUse UI Window",
+  "links": [
+    {
+      "title": "Click UI Element",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/click-ui-element"
+    },
+    {
+      "title": "Close UI Window",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/close-ui-window"
+    },
+    {
+      "title": "Collapse UI Element",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/collapse-ui-element"
+    },
+    {
+      "title": "Drag UI Element",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/drag-ui-element"
+    },
+    {
+      "title": "Expand UI Element",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/expand-ui-element"
+    },
+    {
+      "title": "Find UI Element",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/find-ui-element"
+    },
+    {
+      "title": "Get UI Attribute",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/get-ui-attribute"
+    },
+    {
+      "title": "Get UI Number",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/get-ui-number"
+    },
+    {
+      "title": "Get UI Selection",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/get-ui-selection"
+    },
+    {
+      "title": "Get UI Text",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/get-ui-text"
+    },
+    {
+      "title": "Get Window Details",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/get-window-details"
+    },
+    {
+      "title": "Invoke UI Element",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/invoke-ui-element"
+    },
+    {
+      "title": "Select UI Element",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/select-ui-element"
+    },
+    {
+      "title": "Set UI Element Value",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/set-ui-element-value"
+    },
+    {
+      "title": "Start Application",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/start-application"
+    },
+    {
+      "title": "Toggle UI Element",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/toggle-ui-element"
+    },
+    {
+      "title": "Update UI Window",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/update-ui-window"
+    },
+    {
+      "title": "Use UI Window",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/use-ui-window"
+    }
+  ],
+  "images": []
+}

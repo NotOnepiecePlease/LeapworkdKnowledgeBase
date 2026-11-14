@@ -1,0 +1,34 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-position",
+  "title": "Click Position",
+  "retrievedAt": "2026-11-13T20:18:28.221531+00:00",
+  "text": "Breadcrumbs\nThe\nClick position\nbuilding block clicks an exact position on the screen using\nX, Y\ncoordinates. It is commonly used together with blocks that\nfind\nsomething on screen and output a position (for example\nFind image\n,\nGet text\n, or\nGet number\n), so you can click exactly where the target was detected.\nFully expanded, the\nClick position\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nClick position\nonto the canvas.\nConnect the block in the flow and specify\nPosition\n,\nButton\n, and (if needed)\nSpeed\nand\nAwait no movement\nsettings.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when the click has been performed. You can rename the block title by double-clicking the header text.\nPosition\n: Specifies the screen position to click using\nX, Y\ncoordinates. The top-left corner of the screen is\n0, 0\n. Use the expander to work with X and Y separately.\nButton\n: Selects which mouse button to use and whether to perform a single or double click.\nLeft\n: Click with the left mouse button.\nRight\n: Click with the right mouse button.\nMiddle\n: Click with the middle mouse button.\nDouble Left\n: Double-click with the left mouse button.\nDouble Right\n: Double-click with the right mouse button.\nDouble Middle\n: Double-click with the middle mouse button.\nHold Duration (sec)\n: Holds the left mouse button down at the selected position for the specified duration (in seconds), then releases it automatically. The default value is\n0 seconds\n, and the supported range is\n0 to 10 seconds\n. This field is only shown when\nButton\nis set to\nLeft\n.\nSpeed\n: Controls the mouse movement speed.\nMedium\nis the default and is generally recommended because it replays well on video.\nInstantaneous\nrepositions the mouse without visible movement.\nAwait no movement\n: When selected, the block waits until there has been no movement on the screen for a specified period before clicking. This is useful when waiting for screen updates (for example a page load). Regardless of this setting, the click will occur after waiting a maximum of\n30 seconds\n.\nTimeout (sec)\n: The number of seconds the screen must have had no movement before the click proceeds (used with\nAwait no movement\n).\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Find image",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/find-image"
+    },
+    {
+      "title": "Get text",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/get-text"
+    },
+    {
+      "title": "Get number",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/get-number"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260205-110342.png",
+      "url": "https://docs.leapwork.com/__attachments/a_50f80d6dc67ce09eb7cabf450d6e09f623d857058542a2387922e403950f6a99/image-20260205-110342.png?cb=fa820537f89e7df1cad870c9ea14d4ad"
+    }
+  ]
+}

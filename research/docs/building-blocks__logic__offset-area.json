@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/offset-area",
+  "title": "Offset Area",
+  "retrievedAt": "2026-11-13T20:18:30.256003+00:00",
+  "text": "Breadcrumbs\nThe\nOffset area\nblock offsets, or translates, an area into a new area. This can be used to move an area from one position to another, or to change its size by adjusting its X, Y, Width, and Height values.\nThis block has no green input or output connectors in the header because it is not explicitly executed. It is used to perform a calculation on area values and deliver the result to other building blocks.\nThe\nOffset area\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nOffset area\nonto the canvas.\nConnect the block in the flow and specify\nArea to offset\n,\nOffset value\n, and\nOffset method\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nOffset area\nblock. You can rename it by double-clicking the header and typing a new title.\nArea to offset:\nSpecifies the original area in X, Y, Width, Height coordinates, starting with the upper-leftmost pixel. The top-left corner of the screen is position 0, 0. You can expand the field to work with the area’s position and size separately.\nOffset value:\nSpecifies the offset to apply to the original area, also in X, Y, Width, Height coordinates, starting with the upper-leftmost pixel. The top-left corner of the screen is position 0, 0. You can expand the field to work with the area’s position and size separately.\nOffset method:\nSelects the method used during the offset operation. The available methods are\nAdd\nand\nMultiply\n. For example, adding 10,20,30,40 to an area 100,100,500,500 results in 110,120,530,540.\nResult area:\nProvides the resulting area from the offset operation in X, Y, Width, Height coordinates, starting with the upper-leftmost pixel. The top-left corner of the screen is position 0, 0.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251222-153834.png",
+      "url": "https://docs.leapwork.com/__attachments/a_efe3812aa79bc9f34697e5911754d5b0fcca3542b86ae2f5d6749ac7bfe76284/image-20251222-153834.png?cb=cdf1ed3b8a4e3765832ae747e62d476a"
+    }
+  ]
+}

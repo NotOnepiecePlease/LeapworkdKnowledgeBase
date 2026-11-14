@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/execution-input",
+  "title": "Execution Input",
+  "retrievedAt": "2026-11-13T20:21:26.581549+00:00",
+  "text": "Breadcrumbs\nThe\nExecution Input\nblock is used to provide\ninput into a Sub-flow\n. It defines the execution input that will be available wherever the sub-flow is used in your test.\nThe Execution Input block shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nExecution Input\nonto the canvas.\nConnect the block’s header output connector to the first block in the sub-flow that should receive the execution input.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green output connector in the header is used to define the input execution. Connect it to the first block of the sub-flow that can receive input. When the sub-flow is used elsewhere in a test, the execution input defined here is available through this block. You can rename the block by double-clicking the header text and typing a new title.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260202-124118.png",
+      "url": "https://docs.leapwork.com/__attachments/a_9f6a2127962bbbd48e0961e13443228cdcaed19b1a3bbf1d8434ed125313e4a5/image-20260202-124118.png?cb=ff69a38ba3738e70827b2ec1c7d1ea9f"
+    }
+  ]
+}

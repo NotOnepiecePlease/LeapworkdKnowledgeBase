@@ -1,0 +1,78 @@
+00:00:02.149 [Music]
+00:00:02.159 Welcome back to testing the internet
+00:00:03.919 series. You're watching part 25,
+00:00:06.319 redirect link. In the previous video,
+00:00:09.519 you learned how to handle new windows
+00:00:11.200 and tabs opened from within a web
+00:00:13.360 application. In this video, you'll learn
+00:00:15.599 how to test browser redirect links
+00:00:17.440 easily. Links can behave differently
+00:00:20.000 across browsers. You might have faced
+00:00:22.480 the challenges like links failing to
+00:00:24.480 redirect, unexpected delays or
+00:00:27.359 inconsistent behavior across browsers.
+00:00:30.320 It happens because different browsers
+00:00:32.079 handle redirects in slightly different
+00:00:33.760 ways which can break the user flow.
+00:00:36.399 That's where leapwork can help. To
+00:00:38.879 demonstrate, we will take a simple
+00:00:40.800 scenario. In this case, we will use
+00:00:43.040 Chrome browser, but the principle is the
+00:00:45.440 same for all browsers. When we click the
+00:00:48.000 link here, we should then be redirected
+00:00:50.320 to a new page. We personally haven't
+00:00:52.559 come across browsers that can't handle
+00:00:54.320 this, but apparently such cases do
+00:00:56.960 exist.
+00:00:58.800 As you can see here, when we click the
+00:01:00.800 link, it redirects to a new page showing
+00:01:03.039 status codes.
+00:01:09.030 So the test case here is to click this
+00:01:09.040 link and verify that we can see the
+00:01:10.880 result over here. For instance, capture
+00:01:13.360 that we get a 200 link here. Let's
+00:01:15.840 automate the redirect test in Leapwork.
+00:01:18.400 We'll launch the test case.
+00:01:42.950 and capture the 200 text on the
+00:01:42.960 redirected page to confirm the redirect
+00:01:45.040 worked. Let's save and close the
+00:01:46.880 recorder here.
+00:01:52.789 We'll search for the status code element
+00:01:52.799 200.
+00:01:55.439 If it's found, the test passes.
+00:02:03.350 Let's run the flow to see the process
+00:02:03.360 automating.
+00:02:13.910 As you can see in the log, the link was
+00:02:13.920 clicked, the target element was found,
+00:02:16.239 and the flow passed successfully. So,
+00:02:18.959 this is one example of how you can make
+00:02:20.720 sure that your redirection link works as
+00:02:22.560 they should in your web app. This was
+00:02:24.879 all about the today's tutorial. Let's
+00:02:27.440 look at the summary. We opened a web
+00:02:29.920 browser and navigated to a web page that
+00:02:31.920 contains a redirect link. Then we used
+00:02:34.480 click web element to click on the
+00:02:36.080 redirection link. After clicking the
+00:02:38.879 page redirected to a new one on the new
+00:02:41.680 page, we looked for a specific piece of
+00:02:43.519 text status code to confirm that the
+00:02:46.239 redirection was successful. If the tool
+00:02:49.040 found this text, we marked the test as
+00:02:50.879 passed. We ran the test and since the
+00:02:53.760 text was found, the automation confirmed
+00:02:56.000 the redirect worked correctly.
+00:03:02.949 What you learned? You learned how easy
+00:03:02.959 it is to automate and validate browser
+00:03:04.959 redirects in Leapwork by clicking a
+00:03:07.040 link, checking content on the redirected
+00:03:09.440 page, and ensuring it works consistently
+00:03:11.920 across browsers. Give this exercise a
+00:03:14.560 try yourself and see how much faster
+00:03:16.400 your automation can be. Moreover, to
+00:03:18.800 keep learning or if you ever feel stuck,
+00:03:20.959 explore our documentation knowledge base
+00:03:23.760 and reach out to support if needed. The
+00:03:25.680 answers are just a click away. Thank you
+00:03:27.840 for staying with us and see you in the
+00:03:29.599 next automation journey.

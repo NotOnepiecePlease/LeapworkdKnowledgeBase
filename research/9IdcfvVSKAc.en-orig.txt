@@ -1,0 +1,679 @@
+00:00:00.000 --> 00:00:01.590 align:start position:0%
+[Music]
+00:00:01.590 --> 00:00:01.600 align:start position:0%
+00:00:01.600 --> 00:00:03.590 align:start position:0%
+Welcome to the second lesson on web
+00:00:03.590 --> 00:00:03.600 align:start position:0%
+00:00:03.600 --> 00:00:06.950 align:start position:0%
+automation using leapwork.
+00:00:06.950 --> 00:00:06.960 align:start position:0%
+00:00:06.960 --> 00:00:08.790 align:start position:0%
+In our previous lesson, we learned about
+00:00:08.790 --> 00:00:08.800 align:start position:0%
+00:00:08.800 --> 00:00:11.350 align:start position:0%
+the creation of basic flows for sign-in
+00:00:11.350 --> 00:00:11.360 align:start position:0%
+00:00:11.360 --> 00:00:13.669 align:start position:0%
+functionality. I hope you were able to
+00:00:13.669 --> 00:00:13.679 align:start position:0%
+00:00:13.679 --> 00:00:17.189 align:start position:0%
+successfully create the flow.
+00:00:17.189 --> 00:00:17.199 align:start position:0%
+00:00:17.199 --> 00:00:19.029 align:start position:0%
+In this lesson, we will explain why
+00:00:19.029 --> 00:00:19.039 align:start position:0%
+00:00:19.039 --> 00:00:22.630 align:start position:0%
+reusability is so important
+00:00:22.630 --> 00:00:22.640 align:start position:0%
+00:00:22.640 --> 00:00:24.070 align:start position:0%
+and how you can achieve it with
+00:00:24.070 --> 00:00:24.080 align:start position:0%
+00:00:24.080 --> 00:00:27.189 align:start position:0%
+Leapwork. Reusability in automation
+00:00:27.189 --> 00:00:27.199 align:start position:0%
+00:00:27.199 --> 00:00:29.429 align:start position:0%
+refers to the ability to reuse building
+00:00:29.429 --> 00:00:29.439 align:start position:0%
+00:00:29.439 --> 00:00:31.990 align:start position:0%
+blocks, files, and assets in other
+00:00:31.990 --> 00:00:32.000 align:start position:0%
+00:00:32.000 --> 00:00:34.709 align:start position:0%
+flows. Reusability is important in
+00:00:34.709 --> 00:00:34.719 align:start position:0%
+00:00:34.719 --> 00:00:36.630 align:start position:0%
+automation because it can improve the
+00:00:36.630 --> 00:00:36.640 align:start position:0%
+00:00:36.640 --> 00:00:38.549 align:start position:0%
+efficiency, consistency, and
+00:00:38.549 --> 00:00:38.559 align:start position:0%
+00:00:38.559 --> 00:00:40.310 align:start position:0%
+maintainability of your automation
+00:00:40.310 --> 00:00:40.320 align:start position:0%
+00:00:40.320 --> 00:00:43.430 align:start position:0%
+efforts. Let's take an example. An
+00:00:43.430 --> 00:00:43.440 align:start position:0%
+00:00:43.440 --> 00:00:44.950 align:start position:0%
+application that has the entire
+00:00:44.950 --> 00:00:44.960 align:start position:0%
+00:00:44.960 --> 00:00:47.430 align:start position:0%
+functionality implemented behind login
+00:00:47.430 --> 00:00:47.440 align:start position:0%
+00:00:47.440 --> 00:00:49.670 align:start position:0%
+requires signin to be executed in every
+00:00:49.670 --> 00:00:49.680 align:start position:0%
+00:00:49.680 --> 00:00:52.310 align:start position:0%
+flow. If we repeat the same blocks for
+00:00:52.310 --> 00:00:52.320 align:start position:0%
+00:00:52.320 --> 00:00:55.189 align:start position:0%
+login again and again in multiple flows,
+00:00:55.189 --> 00:00:55.199 align:start position:0%
+00:00:55.199 --> 00:00:57.110 align:start position:0%
+then we end up in duplication of the
+00:00:57.110 --> 00:00:57.120 align:start position:0%
+00:00:57.120 --> 00:00:59.270 align:start position:0%
+same blocks in multiple flows. And if
+00:00:59.270 --> 00:00:59.280 align:start position:0%
+00:00:59.280 --> 00:01:00.950 align:start position:0%
+the developer makes a small change in
+00:01:00.950 --> 00:01:00.960 align:start position:0%
+00:01:00.960 --> 00:01:03.189 align:start position:0%
+the login feature, then we must manually
+00:01:03.189 --> 00:01:03.199 align:start position:0%
+00:01:03.199 --> 00:01:05.429 align:start position:0%
+change all those blocks we duplicated,
+00:01:05.429 --> 00:01:05.439 align:start position:0%
+00:01:05.439 --> 00:01:07.670 align:start position:0%
+thereby consuming our majority time in
+00:01:07.670 --> 00:01:07.680 align:start position:0%
+00:01:07.680 --> 00:01:10.310 align:start position:0%
+maintenance. In leapwork, we can achieve
+00:01:10.310 --> 00:01:10.320 align:start position:0%
+00:01:10.320 --> 00:01:12.070 align:start position:0%
+the same functionality without having
+00:01:12.070 --> 00:01:12.080 align:start position:0%
+00:01:12.080 --> 00:01:14.230 align:start position:0%
+such maintainability by creating
+00:01:14.230 --> 00:01:14.240 align:start position:0%
+00:01:14.240 --> 00:01:15.990 align:start position:0%
+reusable building blocks called
+00:01:15.990 --> 00:01:16.000 align:start position:0%
+00:01:16.000 --> 00:01:17.510 align:start position:0%
+subflows.
+00:01:17.510 --> 00:01:17.520 align:start position:0%
+00:01:17.520 --> 00:01:19.429 align:start position:0%
+This lesson will learn how to create and
+00:01:19.429 --> 00:01:19.439 align:start position:0%
+00:01:19.439 --> 00:01:22.550 align:start position:0%
+use reusable subflows. We'll continue to
+00:01:22.550 --> 00:01:22.560 align:start position:0%
+00:01:22.560 --> 00:01:25.190 align:start position:0%
+use the flow we created in lesson one.
+00:01:25.190 --> 00:01:25.200 align:start position:0%
+00:01:25.200 --> 00:01:28.149 align:start position:0%
+Let's get started. Here is the flow we
+00:01:28.149 --> 00:01:28.159 align:start position:0%
+00:01:28.159 --> 00:01:31.030 align:start position:0%
+created in lesson one. Performing a
+00:01:31.030 --> 00:01:31.040 align:start position:0%
+00:01:31.040 --> 00:01:32.789 align:start position:0%
+login could be part of many web
+00:01:32.789 --> 00:01:32.799 align:start position:0%
+00:01:32.799 --> 00:01:35.590 align:start position:0%
+automation flows. In some cases, many
+00:01:35.590 --> 00:01:35.600 align:start position:0%
+00:01:35.600 --> 00:01:37.590 align:start position:0%
+flows will include a login at the very
+00:01:37.590 --> 00:01:37.600 align:start position:0%
+00:01:37.600 --> 00:01:40.149 align:start position:0%
+start of the flow. So, the login process
+00:01:40.149 --> 00:01:40.159 align:start position:0%
+00:01:40.159 --> 00:01:41.990 align:start position:0%
+is typically a good candidate for a
+00:01:41.990 --> 00:01:42.000 align:start position:0%
+00:01:42.000 --> 00:01:44.149 align:start position:0%
+reusable subflow.
+00:01:44.149 --> 00:01:44.159 align:start position:0%
+00:01:44.159 --> 00:01:46.310 align:start position:0%
+To create a subflow, select the building
+00:01:46.310 --> 00:01:46.320 align:start position:0%
+00:01:46.320 --> 00:01:47.990 align:start position:0%
+blocks that you want to use to make a
+00:01:47.990 --> 00:01:48.000 align:start position:0%
+00:01:48.000 --> 00:01:50.230 align:start position:0%
+reusable component.
+00:01:50.230 --> 00:01:50.240 align:start position:0%
+00:01:50.240 --> 00:01:52.310 align:start position:0%
+For example, in our flow, we'll select
+00:01:52.310 --> 00:01:52.320 align:start position:0%
+00:01:52.320 --> 00:01:54.069 align:start position:0%
+the blocks that perform the sign-in
+00:01:54.069 --> 00:01:54.079 align:start position:0%
+00:01:54.079 --> 00:01:56.230 align:start position:0%
+function from entering the username to
+00:01:56.230 --> 00:01:56.240 align:start position:0%
+00:01:56.240 --> 00:02:00.230 align:start position:0%
+clicking the no button.
+00:02:00.230 --> 00:02:00.240 align:start position:0%
+00:02:00.240 --> 00:02:02.149 align:start position:0%
+Once the blocks are selected, right
+00:02:02.149 --> 00:02:02.159 align:start position:0%
+00:02:02.159 --> 00:02:04.149 align:start position:0%
+click on the canvas and select create
+00:02:04.149 --> 00:02:04.159 align:start position:0%
+00:02:04.159 --> 00:02:05.830 align:start position:0%
+subflow.
+00:02:05.830 --> 00:02:05.840 align:start position:0%
+00:02:05.840 --> 00:02:07.990 align:start position:0%
+By default, the name of the subflow is
+00:02:07.990 --> 00:02:08.000 align:start position:0%
+00:02:08.000 --> 00:02:10.869 align:start position:0%
+suggested as new subflow. Please ensure
+00:02:10.869 --> 00:02:10.879 align:start position:0%
+00:02:10.879 --> 00:02:12.550 align:start position:0%
+to give it a meaningful name so that
+00:02:12.550 --> 00:02:12.560 align:start position:0%
+00:02:12.560 --> 00:02:15.190 align:start position:0%
+it's easy to find later. Let's name it
+00:02:15.190 --> 00:02:15.200 align:start position:0%
+00:02:15.200 --> 00:02:18.710 align:start position:0%
+signin and click save.
+00:02:18.710 --> 00:02:18.720 align:start position:0%
+00:02:18.720 --> 00:02:20.309 align:start position:0%
+Now we see that all the selected
+00:02:20.309 --> 00:02:20.319 align:start position:0%
+00:02:20.319 --> 00:02:22.229 align:start position:0%
+building blocks are wrapped up into one
+00:02:22.229 --> 00:02:22.239 align:start position:0%
+00:02:22.239 --> 00:02:26.150 align:start position:0%
+new building block named signin.
+00:02:26.150 --> 00:02:26.160 align:start position:0%
+00:02:26.160 --> 00:02:28.550 align:start position:0%
+The subflow is created. Let's see where
+00:02:28.550 --> 00:02:28.560 align:start position:0%
+00:02:28.560 --> 00:02:30.869 align:start position:0%
+and how we can reuse the created subflow
+00:02:30.869 --> 00:02:30.879 align:start position:0%
+00:02:30.879 --> 00:02:33.030 align:start position:0%
+in our other flows.
+00:02:33.030 --> 00:02:33.040 align:start position:0%
+00:02:33.040 --> 00:02:35.030 align:start position:0%
+Suppose we want to create a flow to add
+00:02:35.030 --> 00:02:35.040 align:start position:0%
+00:02:35.040 --> 00:02:37.830 align:start position:0%
+the lease. For that we need to sign in
+00:02:37.830 --> 00:02:37.840 align:start position:0%
+00:02:37.840 --> 00:02:40.150 align:start position:0%
+first. There we can call the above
+00:02:40.150 --> 00:02:40.160 align:start position:0%
+00:02:40.160 --> 00:02:42.470 align:start position:0%
+created subflow first and continue with
+00:02:42.470 --> 00:02:42.480 align:start position:0%
+00:02:42.480 --> 00:02:45.509 align:start position:0%
+our creation. Let's create the new flow
+00:02:45.509 --> 00:02:45.519 align:start position:0%
+00:02:45.519 --> 00:02:52.550 align:start position:0%
+first.
+00:02:52.550 --> 00:02:52.560 align:start position:0%
+00:02:52.560 --> 00:02:55.030 align:start position:0%
+Here we are. Move to the canvas and do
+00:02:55.030 --> 00:02:55.040 align:start position:0%
+00:02:55.040 --> 00:02:57.030 align:start position:0%
+the steps to add the new block after the
+00:02:57.030 --> 00:02:57.040 align:start position:0%
+00:02:57.040 --> 00:02:59.509 align:start position:0%
+start block.
+00:02:59.509 --> 00:02:59.519 align:start position:0%
+00:02:59.519 --> 00:03:01.589 align:start position:0%
+In the add new building block menu, go
+00:03:01.589 --> 00:03:01.599 align:start position:0%
+00:03:01.599 --> 00:03:03.670 align:start position:0%
+to the end and click on the subflows
+00:03:03.670 --> 00:03:03.680 align:start position:0%
+00:03:03.680 --> 00:03:06.710 align:start position:0%
+category and you get the subflow signin
+00:03:06.710 --> 00:03:06.720 align:start position:0%
+00:03:06.720 --> 00:03:09.350 align:start position:0%
+which we have created above.
+00:03:09.350 --> 00:03:09.360 align:start position:0%
+00:03:09.360 --> 00:03:12.470 align:start position:0%
+Select the sign-in subflow.
+00:03:12.470 --> 00:03:12.480 align:start position:0%
+00:03:12.480 --> 00:03:15.750 align:start position:0%
+The subflow is added to the new flow. We
+00:03:15.750 --> 00:03:15.760 align:start position:0%
+00:03:15.760 --> 00:03:17.830 align:start position:0%
+can continue the flow creation as we do
+00:03:17.830 --> 00:03:17.840 align:start position:0%
+00:03:17.840 --> 00:03:20.949 align:start position:0%
+in the previous lesson.
+00:03:20.949 --> 00:03:20.959 align:start position:0%
+00:03:20.959 --> 00:03:23.110 align:start position:0%
+Now the next question comes to mind how
+00:03:23.110 --> 00:03:23.120 align:start position:0%
+00:03:23.120 --> 00:03:25.990 align:start position:0%
+we would edit the subflow. To edit the
+00:03:25.990 --> 00:03:26.000 align:start position:0%
+00:03:26.000 --> 00:03:28.149 align:start position:0%
+subflow, you right click on the subflow
+00:03:28.149 --> 00:03:28.159 align:start position:0%
+00:03:28.159 --> 00:03:29.990 align:start position:0%
+on the canvas and select the edit
+00:03:29.990 --> 00:03:30.000 align:start position:0%
+00:03:30.000 --> 00:03:32.550 align:start position:0%
+subflow option
+00:03:32.550 --> 00:03:32.560 align:start position:0%
+00:03:32.560 --> 00:03:34.390 align:start position:0%
+and you can see the subflow is opened in
+00:03:34.390 --> 00:03:34.400 align:start position:0%
+00:03:34.400 --> 00:03:37.910 align:start position:0%
+the editable mode.
+00:03:37.910 --> 00:03:37.920 align:start position:0%
+00:03:37.920 --> 00:03:39.990 align:start position:0%
+The other way to open the subflow is by
+00:03:39.990 --> 00:03:40.000 align:start position:0%
+00:03:40.000 --> 00:03:41.589 align:start position:0%
+doubleclicking the subflow from the
+00:03:41.589 --> 00:03:41.599 align:start position:0%
+00:03:41.599 --> 00:03:46.710 align:start position:0%
+explorer pane.
+00:03:46.710 --> 00:03:46.720 align:start position:0%
+00:03:46.720 --> 00:03:48.309 align:start position:0%
+We have seen how we can reuse the
+00:03:48.309 --> 00:03:48.319 align:start position:0%
+00:03:48.319 --> 00:03:51.190 align:start position:0%
+subflow and are open to editing.
+00:03:51.190 --> 00:03:51.200 align:start position:0%
+00:03:51.200 --> 00:03:53.110 align:start position:0%
+Now we are going to look at another very
+00:03:53.110 --> 00:03:53.120 align:start position:0%
+00:03:53.120 --> 00:03:55.030 align:start position:0%
+useful feature with subflows called
+00:03:55.030 --> 00:03:55.040 align:start position:0%
+00:03:55.040 --> 00:03:57.270 align:start position:0%
+parameterization.
+00:03:57.270 --> 00:03:57.280 align:start position:0%
+00:03:57.280 --> 00:03:58.869 align:start position:0%
+Instead of hard- coding the values
+00:03:58.869 --> 00:03:58.879 align:start position:0%
+00:03:58.879 --> 00:04:01.350 align:start position:0%
+inside the subflow, we can define input
+00:04:01.350 --> 00:04:01.360 align:start position:0%
+00:04:01.360 --> 00:04:03.270 align:start position:0%
+parameters to the subflow that helps us
+00:04:03.270 --> 00:04:03.280 align:start position:0%
+00:04:03.280 --> 00:04:05.030 align:start position:0%
+in passing a different set of data to
+00:04:05.030 --> 00:04:05.040 align:start position:0%
+00:04:05.040 --> 00:04:07.589 align:start position:0%
+the same subflow. In this case, if we
+00:04:07.589 --> 00:04:07.599 align:start position:0%
+00:04:07.599 --> 00:04:09.509 align:start position:0%
+use parameters, we can also pass
+00:04:09.509 --> 00:04:09.519 align:start position:0%
+00:04:09.519 --> 00:04:12.470 align:start position:0%
+different credentials to log in to D365
+00:04:12.470 --> 00:04:12.480 align:start position:0%
+00:04:12.480 --> 00:04:15.350 align:start position:0%
+to test userbased scenarios.
+00:04:15.350 --> 00:04:15.360 align:start position:0%
+00:04:15.360 --> 00:04:17.749 align:start position:0%
+Adding a parameter is very easy. Simply
+00:04:17.749 --> 00:04:17.759 align:start position:0%
+00:04:17.759 --> 00:04:19.909 align:start position:0%
+add a value input building block by
+00:04:19.909 --> 00:04:19.919 align:start position:0%
+00:04:19.919 --> 00:04:21.509 align:start position:0%
+right-clicking on the canvas and
+00:04:21.509 --> 00:04:21.519 align:start position:0%
+00:04:21.519 --> 00:04:24.469 align:start position:0%
+clicking add building block.
+00:04:24.469 --> 00:04:24.479 align:start position:0%
+00:04:24.479 --> 00:04:26.469 align:start position:0%
+Select the value input block that lies
+00:04:26.469 --> 00:04:26.479 align:start position:0%
+00:04:26.479 --> 00:04:28.710 align:start position:0%
+under the category module input and
+00:04:28.710 --> 00:04:28.720 align:start position:0%
+00:04:28.720 --> 00:04:31.350 align:start position:0%
+output.
+00:04:31.350 --> 00:04:31.360 align:start position:0%
+00:04:31.360 --> 00:04:33.430 align:start position:0%
+Once the block is visible on the canvas,
+00:04:33.430 --> 00:04:33.440 align:start position:0%
+00:04:33.440 --> 00:04:34.790 align:start position:0%
+we can rename the block by
+00:04:34.790 --> 00:04:34.800 align:start position:0%
+00:04:34.800 --> 00:04:36.310 align:start position:0%
+doubleclicking on the header of the
+00:04:36.310 --> 00:04:36.320 align:start position:0%
+00:04:36.320 --> 00:04:38.870 align:start position:0%
+block and renaming it to email. As we
+00:04:38.870 --> 00:04:38.880 align:start position:0%
+00:04:38.880 --> 00:04:41.110 align:start position:0%
+are using this for an email address, as
+00:04:41.110 --> 00:04:41.120 align:start position:0%
+00:04:41.120 --> 00:04:42.870 align:start position:0%
+a best practice, it is always good to
+00:04:42.870 --> 00:04:42.880 align:start position:0%
+00:04:42.880 --> 00:04:45.510 align:start position:0%
+provide a logical name.
+00:04:45.510 --> 00:04:45.520 align:start position:0%
+00:04:45.520 --> 00:04:47.350 align:start position:0%
+There are blue connectors available on
+00:04:47.350 --> 00:04:47.360 align:start position:0%
+00:04:47.360 --> 00:04:49.030 align:start position:0%
+the blocks. They are used for
+00:04:49.030 --> 00:04:49.040 align:start position:0%
+00:04:49.040 --> 00:04:50.710 align:start position:0%
+transferring values and properties
+00:04:50.710 --> 00:04:50.720 align:start position:0%
+00:04:50.720 --> 00:04:53.030 align:start position:0%
+between building blocks.
+00:04:53.030 --> 00:04:53.040 align:start position:0%
+00:04:53.040 --> 00:04:54.870 align:start position:0%
+Drag the blue connector of the email
+00:04:54.870 --> 00:04:54.880 align:start position:0%
+00:04:54.880 --> 00:04:57.110 align:start position:0%
+value input block to the text field of
+00:04:57.110 --> 00:04:57.120 align:start position:0%
+00:04:57.120 --> 00:04:59.270 align:start position:0%
+the type web text block where we entered
+00:04:59.270 --> 00:04:59.280 align:start position:0%
+00:04:59.280 --> 00:05:02.070 align:start position:0%
+the email of the user. Connecting the
+00:05:02.070 --> 00:05:02.080 align:start position:0%
+00:05:02.080 --> 00:05:04.150 align:start position:0%
+parameter block to the type web text
+00:05:04.150 --> 00:05:04.160 align:start position:0%
+00:05:04.160 --> 00:05:05.749 align:start position:0%
+means that any values passed as
+00:05:05.749 --> 00:05:05.759 align:start position:0%
+00:05:05.759 --> 00:05:07.670 align:start position:0%
+parameters to the email parameter will
+00:05:07.670 --> 00:05:07.680 align:start position:0%
+00:05:07.680 --> 00:05:10.070 align:start position:0%
+be further passed to type web text as a
+00:05:10.070 --> 00:05:10.080 align:start position:0%
+00:05:10.080 --> 00:05:11.590 align:start position:0%
+text.
+00:05:11.590 --> 00:05:11.600 align:start position:0%
+00:05:11.600 --> 00:05:13.430 align:start position:0%
+Let's repeat the same actions with the
+00:05:13.430 --> 00:05:13.440 align:start position:0%
+00:05:13.440 --> 00:05:16.550 align:start position:0%
+password field. Adding a value input
+00:05:16.550 --> 00:05:16.560 align:start position:0%
+00:05:16.560 --> 00:05:20.629 align:start position:0%
+block and renaming it to password.
+00:05:20.629 --> 00:05:20.639 align:start position:0%
+00:05:20.639 --> 00:05:22.790 align:start position:0%
+Then connecting the value input block
+00:05:22.790 --> 00:05:22.800 align:start position:0%
+00:05:22.800 --> 00:05:24.550 align:start position:0%
+data connector to the text value
+00:05:24.550 --> 00:05:24.560 align:start position:0%
+00:05:24.560 --> 00:05:26.629 align:start position:0%
+property of the type web text block
+00:05:26.629 --> 00:05:26.639 align:start position:0%
+00:05:26.639 --> 00:05:29.990 align:start position:0%
+contains the password.
+00:05:29.990 --> 00:05:30.000 align:start position:0%
+00:05:30.000 --> 00:05:31.909 align:start position:0%
+Now we created the two value input
+00:05:31.909 --> 00:05:31.919 align:start position:0%
+00:05:31.919 --> 00:05:34.310 align:start position:0%
+connectors for the subflow.
+00:05:34.310 --> 00:05:34.320 align:start position:0%
+00:05:34.320 --> 00:05:36.230 align:start position:0%
+Let's save the subflow and move back to
+00:05:36.230 --> 00:05:36.240 align:start position:0%
+00:05:36.240 --> 00:05:39.110 align:start position:0%
+the main flow.
+00:05:39.110 --> 00:05:39.120 align:start position:0%
+00:05:39.120 --> 00:05:41.270 align:start position:0%
+Aha, we can see that the custom block
+00:05:41.270 --> 00:05:41.280 align:start position:0%
+00:05:41.280 --> 00:05:43.110 align:start position:0%
+now has two new input parameters
+00:05:43.110 --> 00:05:43.120 align:start position:0%
+00:05:43.120 --> 00:05:47.670 align:start position:0%
+defined, email and password.
+00:05:47.670 --> 00:05:47.680 align:start position:0%
+00:05:47.680 --> 00:05:49.350 align:start position:0%
+Let's learn how to pass data to the
+00:05:49.350 --> 00:05:49.360 align:start position:0%
+00:05:49.360 --> 00:05:51.909 align:start position:0%
+subflow. There are two ways to pass the
+00:05:51.909 --> 00:05:51.919 align:start position:0%
+00:05:51.919 --> 00:05:54.550 align:start position:0%
+data to the subflow. By directly writing
+00:05:54.550 --> 00:05:54.560 align:start position:0%
+00:05:54.560 --> 00:05:56.469 align:start position:0%
+the values into the test box in the
+00:05:56.469 --> 00:05:56.479 align:start position:0%
+00:05:56.479 --> 00:05:59.990 align:start position:0%
+subflow or by using set text or using a
+00:05:59.990 --> 00:06:00.000 align:start position:0%
+00:06:00.000 --> 00:06:02.150 align:start position:0%
+data provider like Excel to pass the
+00:06:02.150 --> 00:06:02.160 align:start position:0%
+00:06:02.160 --> 00:06:05.189 align:start position:0%
+value. Let's see how we can pass data to
+00:06:05.189 --> 00:06:05.199 align:start position:0%
+00:06:05.199 --> 00:06:07.189 align:start position:0%
+the subflow using a set text building
+00:06:07.189 --> 00:06:07.199 align:start position:0%
+00:06:07.199 --> 00:06:10.309 align:start position:0%
+block. To specify the email address, we
+00:06:10.309 --> 00:06:10.319 align:start position:0%
+00:06:10.319 --> 00:06:12.070 align:start position:0%
+use a set text building block and
+00:06:12.070 --> 00:06:12.080 align:start position:0%
+00:06:12.080 --> 00:06:13.830 align:start position:0%
+connect to the email property in the
+00:06:13.830 --> 00:06:13.840 align:start position:0%
+00:06:13.840 --> 00:06:17.189 align:start position:0%
+main flow. We get the set text block
+00:06:17.189 --> 00:06:17.199 align:start position:0%
+00:06:17.199 --> 00:06:20.230 align:start position:0%
+under the set value category.
+00:06:20.230 --> 00:06:20.240 align:start position:0%
+00:06:20.240 --> 00:06:22.390 align:start position:0%
+After adding the block, enter the email
+00:06:22.390 --> 00:06:22.400 align:start position:0%
+00:06:22.400 --> 00:06:26.870 align:start position:0%
+ID in the text field.
+00:06:26.870 --> 00:06:26.880 align:start position:0%
+00:06:26.880 --> 00:06:28.790 align:start position:0%
+After entering the value, connect the
+00:06:28.790 --> 00:06:28.800 align:start position:0%
+00:06:28.800 --> 00:06:30.790 align:start position:0%
+text value data connector of the set
+00:06:30.790 --> 00:06:30.800 align:start position:0%
+00:06:30.800 --> 00:06:32.870 align:start position:0%
+text block to the data connector of the
+00:06:32.870 --> 00:06:32.880 align:start position:0%
+00:06:32.880 --> 00:06:36.790 align:start position:0%
+email of the sign-in block.
+00:06:36.790 --> 00:06:36.800 align:start position:0%
+00:06:36.800 --> 00:06:39.189 align:start position:0%
+Similarly, we use the set text block for
+00:06:39.189 --> 00:06:39.199 align:start position:0%
+00:06:39.199 --> 00:06:42.629 align:start position:0%
+the password field as well.
+00:06:42.629 --> 00:06:42.639 align:start position:0%
+00:06:42.639 --> 00:06:44.790 align:start position:0%
+To secure the password from others, the
+00:06:44.790 --> 00:06:44.800 align:start position:0%
+00:06:44.800 --> 00:06:46.870 align:start position:0%
+only change we do in the set text block
+00:06:46.870 --> 00:06:46.880 align:start position:0%
+00:06:46.880 --> 00:06:49.110 align:start position:0%
+before providing the password is to set
+00:06:49.110 --> 00:06:49.120 align:start position:0%
+00:06:49.120 --> 00:06:51.909 align:start position:0%
+the type of text as a password.
+00:06:51.909 --> 00:06:51.919 align:start position:0%
+00:06:51.919 --> 00:06:54.230 align:start position:0%
+To achieve that, we expand the set text
+00:06:54.230 --> 00:06:54.240 align:start position:0%
+00:06:54.240 --> 00:06:58.629 align:start position:0%
+block and change the type to password.
+00:06:58.629 --> 00:06:58.639 align:start position:0%
+00:06:58.639 --> 00:07:00.790 align:start position:0%
+After changing the type to password, we
+00:07:00.790 --> 00:07:00.800 align:start position:0%
+00:07:00.800 --> 00:07:04.950 align:start position:0%
+enter the value in the text field.
+00:07:04.950 --> 00:07:04.960 align:start position:0%
+00:07:04.960 --> 00:07:09.510 align:start position:0%
+And you can see the value is masked.
+00:07:09.510 --> 00:07:09.520 align:start position:0%
+00:07:09.520 --> 00:07:11.909 align:start position:0%
+We are ready to run the login flow. This
+00:07:11.909 --> 00:07:11.919 align:start position:0%
+00:07:11.919 --> 00:07:14.309 align:start position:0%
+time using a reusable parameterized
+00:07:14.309 --> 00:07:14.319 align:start position:0%
+00:07:14.319 --> 00:07:17.589 align:start position:0%
+custom block. Let's click on run to see
+00:07:17.589 --> 00:07:17.599 align:start position:0%
+00:07:17.599 --> 00:07:43.350 align:start position:0%
+the execution.
+00:07:43.350 --> 00:07:43.360 align:start position:0%
+00:07:43.360 --> 00:07:46.070 align:start position:0%
+the flow passed as expected.
+00:07:46.070 --> 00:07:46.080 align:start position:0%
+00:07:46.080 --> 00:07:48.070 align:start position:0%
+Let's see how to debug the flow with the
+00:07:48.070 --> 00:07:48.080 align:start position:0%
+00:07:48.080 --> 00:07:49.589 align:start position:0%
+00:07:49.589 --> 00:07:49.599 align:start position:0%
+00:07:49.599 --> 00:07:51.430 align:start position:0%
+Click on the log message for a block
+00:07:51.430 --> 00:07:51.440 align:start position:0%
+00:07:51.440 --> 00:07:53.589 align:start position:0%
+that is placed inside the subflow and
+00:07:53.589 --> 00:07:53.599 align:start position:0%
+00:07:53.599 --> 00:07:57.589 align:start position:0%
+leapwork will highlight the subflow.
+00:07:57.589 --> 00:07:57.599 align:start position:0%
+00:07:57.599 --> 00:07:59.430 align:start position:0%
+Double clicking on the same log message
+00:07:59.430 --> 00:07:59.440 align:start position:0%
+00:07:59.440 --> 00:08:01.110 align:start position:0%
+will open the preview screen of the
+00:08:01.110 --> 00:08:01.120 align:start position:0%
+00:08:01.120 --> 00:08:03.029 align:start position:0%
+subflow with the highlighted relevant
+00:08:03.029 --> 00:08:03.039 align:start position:0%
+00:08:03.039 --> 00:08:05.589 align:start position:0%
+block.
+00:08:05.589 --> 00:08:05.599 align:start position:0%
+00:08:05.599 --> 00:08:07.430 align:start position:0%
+Using this technique, you can easily
+00:08:07.430 --> 00:08:07.440 align:start position:0%
+00:08:07.440 --> 00:08:10.629 align:start position:0%
+debug the subflows.
+00:08:10.629 --> 00:08:10.639 align:start position:0%
+00:08:10.639 --> 00:08:12.629 align:start position:0%
+Here are some benefits which subflows
+00:08:12.629 --> 00:08:12.639 align:start position:0%
+00:08:12.639 --> 00:08:14.710 align:start position:0%
+can bring to automation.
+00:08:14.710 --> 00:08:14.720 align:start position:0%
+00:08:14.720 --> 00:08:17.350 align:start position:0%
+Efficiency. By reusing existing flow
+00:08:17.350 --> 00:08:17.360 align:start position:0%
+00:08:17.360 --> 00:08:19.430 align:start position:0%
+assets, you can save time and effort
+00:08:19.430 --> 00:08:19.440 align:start position:0%
+00:08:19.440 --> 00:08:21.029 align:start position:0%
+compared to creating new flows from
+00:08:21.029 --> 00:08:21.039 align:start position:0%
+00:08:21.039 --> 00:08:23.189 align:start position:0%
+scratch every time. This can be
+00:08:23.189 --> 00:08:23.199 align:start position:0%
+00:08:23.199 --> 00:08:25.189 align:start position:0%
+especially useful for regression testing
+00:08:25.189 --> 00:08:25.199 align:start position:0%
+00:08:25.199 --> 00:08:26.869 align:start position:0%
+where the same tests need to be run
+00:08:26.869 --> 00:08:26.879 align:start position:0%
+00:08:26.879 --> 00:08:28.710 align:start position:0%
+repeatedly.
+00:08:28.710 --> 00:08:28.720 align:start position:0%
+00:08:28.720 --> 00:08:31.350 align:start position:0%
+Consistency. Reusing flow assets can
+00:08:31.350 --> 00:08:31.360 align:start position:0%
+00:08:31.360 --> 00:08:33.670 align:start position:0%
+help ensure consistency across tests and
+00:08:33.670 --> 00:08:33.680 align:start position:0%
+00:08:33.680 --> 00:08:36.149 align:start position:0%
+test suites. This can help identify
+00:08:36.149 --> 00:08:36.159 align:start position:0%
+00:08:36.159 --> 00:08:38.469 align:start position:0%
+patterns and trends in test results more
+00:08:38.469 --> 00:08:38.479 align:start position:0%
+00:08:38.479 --> 00:08:39.990 align:start position:0%
+easily.
+00:08:39.990 --> 00:08:40.000 align:start position:0%
+00:08:40.000 --> 00:08:42.630 align:start position:0%
+Maintenance. When you have many flows,
+00:08:42.630 --> 00:08:42.640 align:start position:0%
+00:08:42.640 --> 00:08:45.030 align:start position:0%
+maintaining them can become a challenge.
+00:08:45.030 --> 00:08:45.040 align:start position:0%
+00:08:45.040 --> 00:08:47.190 align:start position:0%
+Reusing flow assets can make maintenance
+00:08:47.190 --> 00:08:47.200 align:start position:0%
+00:08:47.200 --> 00:08:49.110 align:start position:0%
+easier by reducing the number of tests
+00:08:49.110 --> 00:08:49.120 align:start position:0%
+00:08:49.120 --> 00:08:52.949 align:start position:0%
+you need to update. Scalability. Reusing
+00:08:52.949 --> 00:08:52.959 align:start position:0%
+00:08:52.959 --> 00:08:54.949 align:start position:0%
+Flow's assets can help you scale your
+00:08:54.949 --> 00:08:54.959 align:start position:0%
+00:08:54.959 --> 00:08:56.630 align:start position:0%
+testing efforts by enabling you to
+00:08:56.630 --> 00:08:56.640 align:start position:0%
+00:08:56.640 --> 00:08:58.949 align:start position:0%
+quickly create new tests or test suites
+00:08:58.949 --> 00:08:58.959 align:start position:0%
+00:08:58.959 --> 00:09:02.949 align:start position:0%
+by leveraging existing assets.
+00:09:02.949 --> 00:09:02.959 align:start position:0%
+00:09:02.959 --> 00:09:05.750 align:start position:0%
+Overall, in this lesson, we learned how
+00:09:05.750 --> 00:09:05.760 align:start position:0%
+00:09:05.760 --> 00:09:08.070 align:start position:0%
+to design flow in a modular way with
+00:09:08.070 --> 00:09:08.080 align:start position:0%
+00:09:08.080 --> 00:09:10.230 align:start position:0%
+subflow so that changes can be made in
+00:09:10.230 --> 00:09:10.240 align:start position:0%
+00:09:10.240 --> 00:09:12.150 align:start position:0%
+one place and applied across multiple
+00:09:12.150 --> 00:09:12.160 align:start position:0%
+00:09:12.160 --> 00:09:15.430 align:start position:0%
+tests. How to parameterize a subflow by
+00:09:15.430 --> 00:09:15.440 align:start position:0%
+00:09:15.440 --> 00:09:17.670 align:start position:0%
+passing input values from outside to a
+00:09:17.670 --> 00:09:17.680 align:start position:0%
+00:09:17.680 --> 00:09:20.230 align:start position:0%
+subflow. How to create an efficient,
+00:09:20.230 --> 00:09:20.240 align:start position:0%
+00:09:20.240 --> 00:09:22.550 align:start position:0%
+maintainable, reliable, and scalable
+00:09:22.550 --> 00:09:22.560 align:start position:0%
+00:09:22.560 --> 00:09:25.430 align:start position:0%
+flow. We suggest you try replicating
+00:09:25.430 --> 00:09:25.440 align:start position:0%
+00:09:25.440 --> 00:09:27.509 align:start position:0%
+this flow on your own by following the
+00:09:27.509 --> 00:09:27.519 align:start position:0%
+00:09:27.519 --> 00:09:31.800 align:start position:0%
+video. Happy automation.

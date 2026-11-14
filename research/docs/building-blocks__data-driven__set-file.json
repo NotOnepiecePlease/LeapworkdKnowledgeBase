@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/set-file",
+  "title": "Set File",
+  "retrievedAt": "2026-11-13T21:12:55.443999+00:00",
+  "text": "Breadcrumbs\nThe\nSet File\nblock uploads or defines a file as an input so it can be used by downstream blocks in an automation flow (for example, attaching a PDF to an email or passing a file to another block for processing). Available from\n2025.1\nonward.\nWhen fully expanded, the following is an example of the\nSet File\nblock with sample data:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nSet File\nonto the canvas.\nConnect the block in the flow and specify\nSource type\nand the corresponding file input (for example select a file when using\nData file\nor\nLocal path\n).\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when the file has been successfully set and is ready for downstream use. You can rename the block by double-clicking the header text and typing a new title.\nFile Input\n: Defines the file that will be made available to the flow. The block supports common formats such as\n.txt, .csv, .json, .pdf, .xlsx, and .xml\n, and the file content is stored in the Leapwork database for use during execution.\nSource type\n: Selects how the file is provided to the block.\nData file\n: Selects a file that already exists in Leapwork’s\nData Files\nlibrary.\nLocal path\n: Lets you select and upload a file from the local machine.\nText fields\n: Stores key–value pairs that can contain dynamic content and be inserted into supported fields via\nInsert token\n.\nFile\n: Outputs the file produced by the block so it can be used as input in other building blocks in the flow.\nFailed\n: Triggers if the block fails to upload or retrieve the file, such as when file input is missing, the file format is unsupported, or an internal system error occurs.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260203-161328.png",
+      "url": "https://docs.leapwork.com/__attachments/a_66d580d1ffbbcdb5bc40e374f4e7aefc5f05dd6d5affa83b50ec0d0a3d6586bf/image-20260203-161328.png?cb=1f7c113cedac05ce189366e68aa0e934"
+    }
+  ]
+}

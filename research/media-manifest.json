@@ -1,0 +1,1202 @@
+[
+  {
+    "lesson": "primeiro-fluxo",
+    "video": "d9m4N9sxFT0",
+    "duration": 517,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "517.274000",
+        "size": "36512961"
+      }
+    }
+  },
+  {
+    "lesson": "sub-flows",
+    "video": "9IdcfvVSKAc",
+    "duration": 572,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1032
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "572.214000",
+        "size": "28989109"
+      }
+    }
+  },
+  {
+    "lesson": "formularios",
+    "video": "qHp1RY9AQds",
+    "duration": 521,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1910,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "521.294000",
+        "size": "37571315"
+      }
+    }
+  },
+  {
+    "lesson": "leitura",
+    "video": "M-y1MxK3_Dw",
+    "duration": 500,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "500.294000",
+        "size": "37929868"
+      }
+    }
+  },
+  {
+    "lesson": "listas",
+    "video": "pZAVmupXWhE",
+    "duration": 509,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "508.534000",
+        "size": "29146594"
+      }
+    }
+  },
+  {
+    "lesson": "mobile",
+    "video": "aGduKxCIZAk",
+    "duration": 416,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1200,
+          "height": 720
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "416.174000",
+        "size": "17521135"
+      }
+    }
+  },
+  {
+    "lesson": "desktop-introducao",
+    "video": "-51LTRplY48",
+    "duration": 646,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "646.194000",
+        "size": "28939426"
+      }
+    }
+  },
+  {
+    "lesson": "desktop-contatos",
+    "video": "TXWo3qK9Oy8",
+    "duration": 1009,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "1009.034000",
+        "size": "47359772"
+      }
+    }
+  },
+  {
+    "lesson": "desktop-web",
+    "video": "23YBj_t1EjA",
+    "duration": 1150,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "1149.894000",
+        "size": "49543598"
+      }
+    }
+  },
+  {
+    "lesson": "virtual-introducao",
+    "video": "ynF7HY2ux_c",
+    "duration": 913,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "912.534000",
+        "size": "29475836"
+      }
+    }
+  },
+  {
+    "lesson": "virtual-imagens",
+    "video": "sJ3Fa3kSiJg",
+    "duration": 960,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "960.294000",
+        "size": "37166267"
+      }
+    }
+  },
+  {
+    "lesson": "virtual-textos",
+    "video": "qGGNbk0UY-0",
+    "duration": 805,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "804.794000",
+        "size": "30487488"
+      }
+    }
+  },
+  {
+    "lesson": "virtual-cliques",
+    "video": "fO6aVmNKUCc",
+    "duration": 696,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "696.114000",
+        "size": "26393603"
+      }
+    }
+  },
+  {
+    "lesson": "virtual-teclado",
+    "video": "akmkQk8sc40",
+    "duration": 850,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "850.254000",
+        "size": "30604289"
+      }
+    }
+  },
+  {
+    "lesson": "virtual-areas",
+    "video": "rK8qIFccfbk",
+    "duration": 1129,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "1129.214000",
+        "size": "38740092"
+      }
+    }
+  },
+  {
+    "lesson": "autenticacao-basica",
+    "video": "AL_LQQ4yMLc",
+    "duration": 423,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "422.794000",
+        "size": "16998877"
+      }
+    }
+  },
+  {
+    "lesson": "imagens-quebradas",
+    "video": "xAl2LfFKxj0",
+    "duration": 273,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "272.794000",
+        "size": "11195213"
+      }
+    }
+  },
+  {
+    "lesson": "dom-avancado",
+    "video": "lsGjkso3Rbg",
+    "duration": 245,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "245.034000",
+        "size": "11910056"
+      }
+    }
+  },
+  {
+    "lesson": "checkboxes",
+    "video": "lb78WgJ0-wo",
+    "duration": 240,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "240.354000",
+        "size": "11004135"
+      }
+    }
+  },
+  {
+    "lesson": "arrastar-soltar",
+    "video": "suIDRArjQEk",
+    "duration": 242,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "241.674000",
+        "size": "11668804"
+      }
+    }
+  },
+  {
+    "lesson": "elementos-desaparecem",
+    "video": "3M0KO_fi8WY",
+    "duration": 274,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "274.154000",
+        "size": "11665911"
+      }
+    }
+  },
+  {
+    "lesson": "dropdowns-avancados",
+    "video": "r8IH1LYegOo",
+    "duration": 298,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "298.014000",
+        "size": "12655552"
+      }
+    }
+  },
+  {
+    "lesson": "conteudo-dinamico",
+    "video": "gERnZ6rN1VQ",
+    "duration": 332,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "331.734000",
+        "size": "16539342"
+      }
+    }
+  },
+  {
+    "lesson": "controles-dinamicos",
+    "video": "TCcN6YORYC0",
+    "duration": 251,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "251.394000",
+        "size": "12077040"
+      }
+    }
+  },
+  {
+    "lesson": "carregamento-visibilidade",
+    "video": "YP3TJrud2BY",
+    "duration": 285,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "284.914000",
+        "size": "13377651"
+      }
+    }
+  },
+  {
+    "lesson": "carregamento-novo-elemento",
+    "video": "c56VBmlFSC0",
+    "duration": 230,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "230.094000",
+        "size": "11398075"
+      }
+    }
+  },
+  {
+    "lesson": "download-arquivos",
+    "video": "Cd4rHHq2OZY",
+    "duration": 278,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "277.874000",
+        "size": "10536785"
+      }
+    }
+  },
+  {
+    "lesson": "upload-arquivo",
+    "video": "bM5smmLOsBs",
+    "duration": 299,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "298.534000",
+        "size": "11513740"
+      }
+    }
+  },
+  {
+    "lesson": "menu-flutuante",
+    "video": "Xw2nXTOe9NE",
+    "duration": 317,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "317.314000",
+        "size": "16765084"
+      }
+    }
+  },
+  {
+    "lesson": "login-formulario",
+    "video": "_t-g5jxOdno",
+    "duration": 281,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "280.554000",
+        "size": "15473887"
+      }
+    }
+  },
+  {
+    "lesson": "hover-elementos",
+    "video": "5SALJ43raC4",
+    "duration": 342,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "342.294000",
+        "size": "17117756"
+      }
+    }
+  },
+  {
+    "lesson": "editor-iframe",
+    "video": "I4rIpx-xlic",
+    "duration": 341,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "340.694000",
+        "size": "17175906"
+      }
+    }
+  },
+  {
+    "lesson": "rolagem-infinita",
+    "video": "vbz5ckcdb-Y",
+    "duration": 347,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "347.154000",
+        "size": "28841242"
+      }
+    }
+  },
+  {
+    "lesson": "alertas-javascript",
+    "video": "oke1UlnrP0c",
+    "duration": 270,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "269.854000",
+        "size": "17488972"
+      }
+    }
+  },
+  {
+    "lesson": "teclas-web",
+    "video": "47VeVtNuyFk",
+    "duration": 348,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "348.374000",
+        "size": "18268384"
+      }
+    }
+  },
+  {
+    "lesson": "dom-profundo",
+    "video": "SiZZut-jgiY",
+    "duration": 326,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "326.154000",
+        "size": "18630539"
+      }
+    }
+  },
+  {
+    "lesson": "frames-aninhados",
+    "video": "c3aFyb7pRIE",
+    "duration": 174,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "173.954000",
+        "size": "9210641"
+      }
+    }
+  },
+  {
+    "lesson": "notificacoes",
+    "video": "36KXvQRsMq4",
+    "duration": 282,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "282.454000",
+        "size": "16188682"
+      }
+    }
+  },
+  {
+    "lesson": "nova-janela",
+    "video": "Mg-1NKCuf3g",
+    "duration": 248,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "248.254000",
+        "size": "12972000"
+      }
+    }
+  },
+  {
+    "lesson": "redirecionamento",
+    "video": "I_BUzm8rJ0I",
+    "duration": 212,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "211.954000",
+        "size": "10715888"
+      }
+    }
+  },
+  {
+    "lesson": "imagem-deslocada",
+    "video": "N8utEzbs2SM",
+    "duration": 260,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "260.394000",
+        "size": "14156192"
+      }
+    }
+  },
+  {
+    "lesson": "lista-deslocada",
+    "video": "X9Em1PtM9XU",
+    "duration": 243,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "243.494000",
+        "size": "12997041"
+      }
+    }
+  },
+  {
+    "lesson": "tabela-ordenavel",
+    "video": "B98UeOK1CTU",
+    "duration": 459,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "458.714000",
+        "size": "23288281"
+      }
+    }
+  },
+  {
+    "lesson": "variacoes-texto",
+    "video": "lBcRNry3bo8",
+    "duration": 363,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "362.674000",
+        "size": "14055297"
+      }
+    }
+  },
+  {
+    "lesson": "strategy-desktop",
+    "video": "HWUVg1tTclg",
+    "duration": 1011,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "1011.154000",
+        "size": "52845808"
+      }
+    }
+  },
+  {
+    "lesson": "campos-dinamicos",
+    "video": "3ALOfIs_OTY",
+    "duration": 662,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "661.654000",
+        "size": "31053229"
+      }
+    }
+  },
+  {
+    "lesson": "transferencia-desktop",
+    "video": "J-ui6FyDkXg",
+    "duration": 857,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "857.194000",
+        "size": "39705418"
+      }
+    }
+  },
+  {
+    "lesson": "dados-fundamentos",
+    "video": "V5r-Fovn_vs",
+    "duration": 80,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "codec_name": "opus",
+          "codec_type": "audio"
+        }
+      ],
+      "format": {
+        "duration": "80.094000",
+        "size": "3984989"
+      }
+    }
+  }
+]

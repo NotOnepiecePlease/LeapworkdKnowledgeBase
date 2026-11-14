@@ -1,0 +1,260 @@
+00:00:08.230 Hey there. Welcome to the first video in
+00:00:08.240 our desktop UI automation series. Today
+00:00:12.240 I'll show you how easy it is to automate
+00:00:14.080 everyday desktop apps with Leapwork.
+00:00:16.960 Imagine automating tasks in Excel,
+00:00:19.199 sending emails through Outlook, logging
+00:00:21.359 into your favorite apps, or copying text
+00:00:23.840 from Notepad, all without writing any
+00:00:26.160 code. Leapworks start recorder makes it
+00:00:28.880 happen. It captures and records your
+00:00:31.119 actions and creates an automation flow.
+00:00:33.680 It's that easy. Experience highquality
+00:00:36.239 desktop UI automation with Leapwork,
+00:00:38.800 ensuring your applications are efficient
+00:00:40.640 and perfectly working. There can be so
+00:00:42.800 many scenarios of desktop UI automation.
+00:00:46.160 In this tutorial, we'll walk you through
+00:00:48.160 one example, logging into a demo
+00:00:50.559 application. Let's get started to create
+00:00:53.039 our first test flow for desktop UI
+00:00:55.520 automation. At first we will record
+00:00:58.239 login steps with the help of start
+00:00:59.840 recorder feature. It will capture the
+00:01:01.760 login steps in the demo application.
+00:01:04.559 Then we will run the flow to check the
+00:01:07.040 execution of automation flow. The last
+00:01:09.920 step would be to verify the login. To do
+00:01:12.960 this we will check for the username on
+00:01:15.200 the application screen to confirm a
+00:01:16.880 successful login. Let's begin to
+00:01:18.880 automate the demo desktop application by
+00:01:21.200 creating its automation flow in
+00:01:22.799 leapwork. This is start block. The start
+00:01:26.080 block is where your automation begins.
+00:01:28.720 It's like triggering your flow to get
+00:01:30.400 everything running. You can call it an
+00:01:32.720 entry point of your automation flow.
+00:01:34.799 Without start block, your automation
+00:01:36.720 flow will not work. Now with the help of
+00:01:39.439 start recorder feature, open the
+00:01:41.200 recording tool.
+00:01:50.950 It captures your clicks, typing, and
+00:01:50.960 other interactions with elements so that
+00:01:53.040 you can easily build an automation flow
+00:01:55.119 without manually adding each step.
+00:01:57.600 Therefore, it makes it quite easy to
+00:01:59.680 build an automation flow by tracking
+00:02:01.360 what you do on the screen. There's one
+00:02:03.600 important point to take care that before
+00:02:05.759 using the start recorder block in
+00:02:07.360 Leapwork, make sure the application you
+00:02:09.679 are going to automate is installed,
+00:02:11.599 close any unnecessary apps or pop-ups
+00:02:14.400 and plan your steps to avoid mistakes
+00:02:16.400 during recording. Let's say for login
+00:02:18.800 steps, your sequence of the steps must
+00:02:21.040 be planned to avoid any challenges in
+00:02:22.959 between. Now click on it and you can see
+00:02:26.720 that when you click start recorder
+00:02:28.879 feature Leapwork opened this recording
+00:02:30.879 tool on the left bottom corner of the
+00:02:32.640 screen. This recording tool helps you
+00:02:34.800 interact with your desktop application.
+00:02:37.040 When I say interact with application
+00:02:39.200 that means for example if you click
+00:02:41.280 buttons, type into text fields or moving
+00:02:43.920 through different options and screens
+00:02:45.840 the recorder captures each of those
+00:02:47.519 actions. This way, Leapwork
+00:02:50.319 automatically creates the steps for your
+00:02:52.080 automation based on what you're doing in
+00:02:54.080 the app, saving you time from manually
+00:02:56.400 setting up every single action. Sounds
+00:02:59.440 interesting. Let's record our desktop
+00:03:02.000 application. To start recording, just
+00:03:04.959 move your mouse over the red dot icon in
+00:03:06.959 the recording tool. A plus icon will
+00:03:09.840 appear. Click on it.
+00:03:13.519 You are getting three options here.
+00:03:15.360 Start application, start electron
+00:03:17.519 application and start web browser. Since
+00:03:20.480 we have to automate desktop application,
+00:03:22.879 we will go ahead with select
+00:03:24.720 application.
+00:03:26.239 Click this button with the three dots to
+00:03:28.400 browse and choose application from your
+00:03:30.640 device.
+00:03:39.509 After you pick the application, Leapwork
+00:03:39.519 will start recording what you do in it.
+00:03:41.920 The second field is arguments. The
+00:03:44.159 arguments block in Leapwork allows you
+00:03:46.000 give extra instructions to an app when
+00:03:47.840 it starts like opening a specific file
+00:03:50.319 or using certain settings. Usually you
+00:03:53.120 can leave this empty unless you need to
+00:03:54.959 add something specific here.
+00:03:57.840 Now let's click on start button.
+00:04:01.519 You can see that the demo desktop
+00:04:03.280 application is successfully launched and
+00:04:05.760 this is the login page. Now each action
+00:04:08.640 which we will do will be recorded by the
+00:04:10.640 recording tool. To create automation
+00:04:13.200 flow for login. The first step we have
+00:04:15.439 to do is enter username and password. So
+00:04:19.040 capture username field.
+00:04:22.639 Select set UI element block. Enter the
+00:04:25.680 text in text value field. You can see
+00:04:27.759 that by default the type is set to text.
+00:04:30.400 If we click on this dropdown see there
+00:04:32.560 are two options text and password. That
+00:04:34.880 means if the text value is password, we
+00:04:37.199 need to set the type as password. For
+00:04:39.759 now, the username was text based. So the
+00:04:42.320 type will remain as text. Click on apply
+00:04:45.360 button. Now capture the password field.
+00:04:48.880 Select set UI element value block. And
+00:04:51.440 since password is confidential
+00:04:53.280 information, that's why you need to
+00:04:55.280 firstly set the type as password and
+00:04:57.280 then write the password in text value
+00:04:59.120 field.
+00:05:06.230 Yes, we have entered the password. Then
+00:05:06.240 click on apply button. The password here
+00:05:08.800 is unencrypted due to the demo
+00:05:10.639 application's functionality which varies
+00:05:12.880 by application in your app. The password
+00:05:15.360 display may differ. After the login
+00:05:18.000 details are entered, the next step to do
+00:05:20.320 is click on login button. To proceed,
+00:05:23.039 capture login button and select click UI
+00:05:26.639 element block. The click UI element
+00:05:29.280 block in Leapwork interacts with
+00:05:31.120 elements on your screen like buttons or
+00:05:33.440 links. When you use this block, a
+00:05:36.000 drop-own menu appears. It asks you to
+00:05:38.400 choose the type of click you want to
+00:05:39.919 perform. For now, we will go with
+00:05:42.639 leftclick and click on apply button.
+00:05:45.759 We can see that the application is
+00:05:47.520 opened. It's a demo application that we
+00:05:49.840 have taken to demonstrate you. Likewise,
+00:05:52.080 when you perform desktop automation at
+00:05:54.240 your end, it will be replaced by your
+00:05:56.240 desktop application. It's time to now
+00:05:59.280 verify the successful login of the
+00:06:01.199 application. At any point, if you, let's
+00:06:04.000 say, want to pause the recording, you
+00:06:05.919 can do it at any time as needed by
+00:06:07.600 clicking this pause icon in the
+00:06:09.039 recording tool. This allows you to take
+00:06:11.520 a break or adjust your actions without
+00:06:13.440 interrupting the automation flow. To
+00:06:15.520 continue the recording, click on this
+00:06:17.280 button again and proceed with next
+00:06:18.880 steps. The next step is to verify the
+00:06:20.960 login process. Now think scenarios when
+00:06:23.919 you will consider that the application
+00:06:25.600 is logged in. You will want to see your
+00:06:27.840 username in the application once you
+00:06:29.520 open it. Right? Yes. So for verification
+00:06:33.360 we will take username. You can also call
+00:06:35.600 it verification indicator because it
+00:06:37.919 will indicate whether you have
+00:06:39.199 successfully logged into the
+00:06:40.639 application. But how will it indicate?
+00:06:43.759 Let me pause the recording and show you
+00:06:45.440 that in demo desktop application for
+00:06:47.520 which we are creating the flow. Where
+00:06:49.680 can we find the username? It's here. Now
+00:06:52.720 we will use this username to verify
+00:06:54.720 login. To do this, continue recording by
+00:06:57.919 clicking on this pause button and simply
+00:07:00.240 capture this text logged in as test
+00:07:08.550 and select find UI element block. The
+00:07:08.560 find UI element block helps you search
+00:07:10.720 for things on your screen. You tell it
+00:07:13.199 what you're looking for and it will find
+00:07:14.960 it for you. Once it finds what you need,
+00:07:18.080 you can use it to do more actions.
+00:07:21.039 Here we have to find the username test
+00:07:23.199 to verify login. That's why we have
+00:07:25.440 capture username in find UI element
+00:07:27.840 block.
+00:07:29.360 Now we have recorded the login steps and
+00:07:31.520 steps for verification. Simply stop the
+00:07:33.919 recording. To stop recording, hover on
+00:07:36.639 red dot icon and click on save and close
+00:07:39.440 recorder icon.
+00:07:45.749 Now that we've stopped the recording,
+00:07:45.759 you'll see that yes, the flow has been
+00:07:47.440 created for demo desktop application.
+00:07:59.990 To complete this setup, you need to
+00:08:00.000 connect the pass block to finalize the
+00:08:01.840 flow.
+00:08:08.150 Once everything is connected, we will
+00:08:08.160 now run this flow to see our desktop
+00:08:10.000 automation in action. Are you ready?
+00:08:13.759 Let's click run button.
+00:08:20.710 This will execute the steps you recorded
+00:08:20.720 and show how it is working with your
+00:08:22.400 desktop application. Let's wait till the
+00:08:25.120 execution is going on.
+00:08:34.149 And finally, our automation flow is
+00:08:34.159 succeeded. When I say the flow is
+00:08:36.399 succeeded in leapwork, it means the
+00:08:38.399 automation has successfully logged into
+00:08:40.320 the application and it's been verified
+00:08:42.479 with the username which we had set as
+00:08:44.480 the verification indicator. In the
+00:08:46.959 activity log, we can see the information
+00:08:49.120 that the UI element is found. That means
+00:08:52.080 the username is found. That verifies the
+00:08:54.320 login has been successful. This is how
+00:08:56.800 it's super easy to creating a desktop
+00:08:58.720 automation flow with the start recorder
+00:09:01.120 feature. Just record your actions,
+00:09:03.200 connect the blocks, and you're ready to
+00:09:05.040 go. With just a few clicks, you've built
+00:09:07.839 a working automation. Before we
+00:09:09.920 conclude, let's look at a quick recap of
+00:09:12.160 our desktop UI automation tutorial. We
+00:09:15.519 explored how to use Leapworks start
+00:09:17.519 recorder to automate desktop
+00:09:19.120 applications by capturing all actions.
+00:09:22.560 We used set UI element block. It is used
+00:09:25.920 to set or change the value of a UI
+00:09:28.240 element such as it entered username in
+00:09:30.560 username field. Then we used click UI
+00:09:33.760 element block. It automates clicking on
+00:09:36.080 a specific UI element like a button.
+00:09:39.200 Then we used find UI element block. It
+00:09:42.160 searches for and identifies a UI element
+00:09:44.720 on the screen such as it located the
+00:09:46.800 username which we used for login
+00:09:48.560 verification. We created the flow and
+00:09:51.279 run it. Then in the activity log, we
+00:09:54.320 reviewed the recorded actions and
+00:09:55.920 confirmed the success message when our
+00:09:57.680 flow passed. And we demonstrated how
+00:10:00.320 these blocks work together to create a
+00:10:02.560 streamlined automation process. With
+00:10:05.279 this, it was all about today's video on
+00:10:07.760 introduction to desktop UI automation.
+00:10:10.800 We hope today's tutorial helped you
+00:10:12.800 understand the basics of desktop UI
+00:10:14.800 automation and the example demonstrated.
+00:10:17.920 It would be great if you try this
+00:10:19.360 exercise at your end, too. following
+00:10:21.680 along the tutorial.
+00:10:23.760 Stay tuned for more interesting videos
+00:10:25.440 in this series where we'll bring more
+00:10:27.519 concepts and empower you to master
+00:10:29.200 desktop automation with ease. For any
+00:10:32.240 questions, feel free to reach out to our
+00:10:34.160 Leapwork support team or connect with us
+00:10:36.399 via live chat. Thank you for watching
+00:10:38.240 and remember, with desktop UI
+00:10:40.240 automation, every click brings you
+00:10:42.240 closer to innovation, turning complexity
+00:10:44.560 into simplicity.

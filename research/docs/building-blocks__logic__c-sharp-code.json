@@ -1,0 +1,42 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/c-sharp-code",
+  "title": "C# Code",
+  "retrievedAt": "2026-11-13T21:13:10.312074+00:00",
+  "text": "Breadcrumbs\nThe\nC# Code\nblock lets you run custom C# logic that is not directly available through standard LEAPWORK building blocks, for example parsing a JSON object or reading values from XML. This block is useful when a scenario is easier to solve through code than by combining standard blocks.\nFully expanded, the\nC# Code\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\n2026.1\nversion. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nC# Code\nonto the canvas.\nConnect the block in the flow and optionally specify the basic parameters required for this block to operate, listed by their exact UI labels in one line:\nClick to edit\n,\nText fields\n,\nDefault timeout\n,\nTimeout (sec)\n. For details on how to work with the editor modal, see\nRun the flow when it’s ready.\nBuilding block parameters\nParameter\nBlock header:\nShows the current name of the\nC# Code\nblock. You can rename it by double-clicking the header and typing a new title.\nClick to edit:\nOpens a popup editor for C# code. A sample code snippet is available to show the entry point for code to be written. Write your code in the editor and select\nRun\nto compile and execute it. If you want to debug the code, you can call\nLogMessage()\nmultiple times and then run the code to inspect intermediate results.\nText fields:\nStores key value pairs that can contain dynamic content and be used as tokens. These fields are maintained as\nDictionary<string, object>\n. You can collect and type cast values in your C# code as required. The fields you add here are also shown in the editor under the\nFields\ntab.\nError occurred:\nTriggers if a runtime error occurs while executing the C# code during case execution.\nDefault timeout:\nControls how the block timeout is determined. If\nDefault Timeout\nis unchecked, the timeout value is\n60 seconds\n. If\nDefault Timeout\nis checked, the flow setting for\nDefault timeout\nis applied.\nTimeout (sec):\nSets the maximum time allowed for executing the code, including processing input and producing output. If execution is unsuccessful within the specified time, the block triggers\nError occurred\n.\nNote:\nAll cases have a global timeout that can be configured in the\nSettings\npanel. This is unrelated to the timeout of a single building block. A running case is automatically cancelled if it runs longer than the global timeout.\nUsing the editor tabs\nSource code\nUse this tab to write the C# logic. Select\nRun\nto compile and execute the code. If you need to debug, you can add multiple\nLogMessage()\ncalls and run the code to inspect intermediate values.\nFields\nFields are used to provide input and output data from code. You create them in the block’s\nText fields\nparameter and they appear in this tab for review and editing. In code, they are available through a dictionary structure and can be collected and type cast as needed.\nReferences\nBefore writing code against an external component or connected service, the block must include a reference to it. Use this tab to add external references or dependencies. For example, parsing JSON may require adding\nNewtonsoft.Json.dll\n.\nYou can add references in the following ways:\nFrom file\n– Browse and add a specific DLL file manually.\nGAC\n(up to 2025.2 only)\n– Add files from the Global Assembly Cache when available. GAC is not supported in .NET 8 and is no longer available starting\n2026.1\n.\nSystem Assemblies\n(2026.1+)\n– Select from a list of .NET 8–compatible system libraries bundled with the LEAPWORK installation. This option replaces GAC.\nSystem Assemblies\n(2026.1+)\nWith the migration to\n.NET 8\n, Global Assembly Cache (GAC) is no longer supported. The\nSystem Assemblies\noption under the References tab lets you add common system libraries directly, without manually locating DLL files.\nOpen the\nC# Code\nblock editor and go to the\nReferences\ntab.\nClick\nSystem Assemblies\nand use the filter to find the required DLL.\nSelect one or more libraries and click\nOK\n, then\nSave\n.\nTo remove a system assembly, deselect it in the\nSystem Assemblies\ndialog (or delete the reference from the list) and click\nSave\n.\nExamples\nUse\nJSON_XML_Parser.zip\nas a reference package. The zip contains two sample flows that demonstrate how to parse JSON and XML using the\nC# Code\nblock.\nImport the package and reuse or adapt the flows for your own scenarios.\nJSON_XML_Parser.zip\nNote:\nThis package can be imported into the same LEAPWORK version it was created in, or any newer version. Importing into older versions may fail due to compatibility differences between releases.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "JSON_XML_Parser.zip",
+      "url": "https://docs.leapwork.com/__attachments/a_e07f5860e7e6d63c99c3ae3caa25e2dfc037716fbb7e1a61d062dc0157d6d9d0/JSON_XML_Parser.zip?cb=787b3297a0e2b414d163ccdcb1889fe2"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260428-070509.png",
+      "url": "https://docs.leapwork.com/__attachments/a_7ce35192f956b8f7a2141438143233f3d744255843a5cea60612d6fa62c265a5/image-20260428-070509.png?cb=05bf600eb6671762dfd675eb08cd4bc2"
+    },
+    {
+      "alt": "image-20260428-070339.png",
+      "url": "https://docs.leapwork.com/__attachments/a_50f6b57009e149f63da4f02650dcf7f6768940250f133b689792990d10741fd0/image-20260428-070339.png?cb=95a85d3828b2115b32ce2753baa35844"
+    },
+    {
+      "alt": "image-20251222-130942.png",
+      "url": "https://docs.leapwork.com/__attachments/a_086ce5a7e8291e1c6ed2ea37307a1bc0e781ab767d2029bf766980d432d50af0/image-20251222-130942.png?cb=295bd82d74d54614c5bd51f864764db7"
+    },
+    {
+      "alt": "image-20251222-131023.png",
+      "url": "https://docs.leapwork.com/__attachments/a_9049689aac1d27819e0ae55fe95a7452a895cbbca7ddcbcfaf4656adafdefd1d/image-20251222-131023.png?cb=d7e18a704db6449e34f43470eaa093b6"
+    },
+    {
+      "alt": "image-20260428-065748.png",
+      "url": "https://docs.leapwork.com/__attachments/a_6daf1052aa6065810b0612e1c247559f40202c8bda220aa19cf5c8fc24a46db5/image-20260428-065748.png?cb=274d55f41f762725a394d6bb0ab8af8a"
+    }
+  ]
+}

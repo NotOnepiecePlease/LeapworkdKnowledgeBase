@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/set-clipboard",
+  "title": "Set Clipboard",
+  "retrievedAt": "2026-11-13T21:12:57.030111+00:00",
+  "text": "Breadcrumbs\nThe\nSet Clipboard\nblock sets the machine clipboard to a specific value during execution. This is similar to copying content (for example via a context menu or a keyboard shortcut) so it can be reused later in the flow, such as when pasting into an input field.\nSee the\nUsing the clipboard to insert text\nlesson for an example of how to use the Set clipboard block.\nFully expanded, the\nSet Clipboard\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nSet Clipboard\nonto the canvas.\nConnect the block in the flow and, if needed, specify basic parameters such as\nText value\nand\nText fields\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nShows the current title of the\nSet Clipboard\nblock. You can rename it by double-clicking the header and typing a new title. The green input connector triggers the block when the flow reaches it, and the green output connector triggers when the clipboard has been set to the specified value.\nText value:\nDefines the text that will be placed on the clipboard. This field can include dynamic values by inserting tokens from\nText fields\n(right-click in\nText value\nand select\nInsert token\n).\nCapture:\nCaptures keystrokes into\nText value\n, which is useful for adding special keys and key combinations (for example, CTRL+C or ENTER). Special keys and key combinations can also be entered manually by wrapping them in double percentage signs, such as\n%%CTRL+P%%\nor\n%%ENTER%%\n.\nText fields:\nStores custom fields whose values can be inserted as dynamic tokens into\nText value\nusing\nInsert token\n. This is useful when the clipboard value must be built from values created earlier in the flow.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Using the clipboard to insert text",
+      "url": "https://docs.leapwork.com/com/leapwork/www/services/learning-center/using-clipboard-to-insert-text.html"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260127-143145.png",
+      "url": "https://docs.leapwork.com/__attachments/a_8adda98c14e93f7fa6900149617a3b8d05e36788792fc13bb8c5c5daa45c0fcc/image-20260127-143145.png?cb=0efa98a67fb0427dc677fac0ed905a27"
+    }
+  ]
+}

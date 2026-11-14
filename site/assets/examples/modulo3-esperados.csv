@@ -1,0 +1,5 @@
+﻿ID;NomeNormalizado;Status;SubtotalCentavos;DescontoPercentual;TotalCentavos;Motivo
+001;Ana Lima;ACEITO;3980;5;3781;Contrato de entrada atendido.
+002;Bruno Reis;ACEITO;3750;10;3375;Contrato de entrada atendido.
+003;Carla Melo;REJEITADO;;;;Quantidade deve ser um inteiro positivo.
+004;Davi Luz;ACEITO;10;5;10;Contrato de entrada atendido.

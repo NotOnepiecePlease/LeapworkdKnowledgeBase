@@ -1,0 +1,269 @@
+{
+  "consultedAt": "2026-11-13",
+  "course": "https://leapwork.com/learning-center/self-paced-training/",
+  "playlist": "https://www.youtube.com/playlist?list=PL4qgJwtW1RjY3Y2YyJOv2RfTXb-ZXoDjF",
+  "reusedLesson": {
+    "slug": "listas",
+    "module": 1
+  },
+  "lessons": [
+    {
+      "slug": "autenticacao-basica",
+      "video": "AL_LQQ4yMLc",
+      "originalLesson": "1",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "imagens-quebradas",
+      "video": "xAl2LfFKxj0",
+      "originalLesson": "2",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "dom-avancado",
+      "video": "lsGjkso3Rbg",
+      "originalLesson": "3",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "checkboxes",
+      "video": "lb78WgJ0-wo",
+      "originalLesson": "4",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "arrastar-soltar",
+      "video": "suIDRArjQEk",
+      "originalLesson": "5",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "elementos-desaparecem",
+      "video": "3M0KO_fi8WY",
+      "originalLesson": "6",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "dropdowns-avancados",
+      "video": "r8IH1LYegOo",
+      "originalLesson": "7",
+      "series": "Testing the Internet",
+      "sourceNote": "Conferência visual: o trecho de índice termina com Failed no log, embora a narração descreva sucesso. A imagem permite conferir essa diferença. O vídeo não estabelece a causa; revise a verificação e o encerramento do seu próprio fluxo.",
+      "localCaptions": true
+    },
+    {
+      "slug": "conteudo-dinamico",
+      "video": "gERnZ6rN1VQ",
+      "originalLesson": "8",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "controles-dinamicos",
+      "video": "TCcN6YORYC0",
+      "originalLesson": "9",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "carregamento-visibilidade",
+      "video": "YP3TJrud2BY",
+      "originalLesson": "10",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "carregamento-novo-elemento",
+      "video": "c56VBmlFSC0",
+      "originalLesson": "11",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "download-arquivos",
+      "video": "Cd4rHHq2OZY",
+      "originalLesson": "12",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "upload-arquivo",
+      "video": "bM5smmLOsBs",
+      "originalLesson": "13",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "menu-flutuante",
+      "video": "Xw2nXTOe9NE",
+      "originalLesson": "14",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "login-formulario",
+      "video": "_t-g5jxOdno",
+      "originalLesson": "15",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "hover-elementos",
+      "video": "5SALJ43raC4",
+      "originalLesson": "16",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "editor-iframe",
+      "video": "I4rIpx-xlic",
+      "originalLesson": "17",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "rolagem-infinita",
+      "video": "vbz5ckcdb-Y",
+      "originalLesson": "18",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "alertas-javascript",
+      "video": "oke1UlnrP0c",
+      "originalLesson": "19",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "teclas-web",
+      "video": "47VeVtNuyFk",
+      "originalLesson": "20",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "dom-profundo",
+      "video": "SiZZut-jgiY",
+      "originalLesson": "21",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "frames-aninhados",
+      "video": "c3aFyb7pRIE",
+      "originalLesson": "22",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "notificacoes",
+      "video": "36KXvQRsMq4",
+      "originalLesson": "23",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "nova-janela",
+      "video": "Mg-1NKCuf3g",
+      "originalLesson": "24",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "redirecionamento",
+      "video": "I_BUzm8rJ0I",
+      "originalLesson": "25",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "imagem-deslocada",
+      "video": "N8utEzbs2SM",
+      "originalLesson": "26",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "lista-deslocada",
+      "video": "X9Em1PtM9XU",
+      "originalLesson": "27",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "tabela-ordenavel",
+      "video": "B98UeOK1CTU",
+      "originalLesson": "28",
+      "series": "Testing the Internet",
+      "sourceNote": "Conferência visual: o log mostra o mesmo e-mail antes e depois da ordenação, mas também exibe Failed no encerramento. Isso demonstra a leitura observada, sem comprovar uma execução inteira aprovada. O caderno propõe comparação e encerramento explícitos.",
+      "localCaptions": true
+    },
+    {
+      "slug": "variacoes-texto",
+      "video": "lBcRNry3bo8",
+      "originalLesson": "29",
+      "series": "Testing the Internet",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "strategy-desktop",
+      "video": "HWUVg1tTclg",
+      "originalLesson": "4",
+      "series": "Desktop UI Automation",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "campos-dinamicos",
+      "video": "3ALOfIs_OTY",
+      "originalLesson": "5",
+      "series": "Desktop UI Automation",
+      "sourceNote": null,
+      "localCaptions": true
+    },
+    {
+      "slug": "transferencia-desktop",
+      "video": "J-ui6FyDkXg",
+      "originalLesson": "7",
+      "series": "Desktop UI Automation",
+      "sourceNote": null,
+      "localCaptions": true
+    }
+  ],
+  "officialExercises": "Portal retornou Loading / CSS Error. Enunciados não reproduzidos; exercícios do caderno são autorais.",
+  "practicalExecution": "Fluxos não executados no Leapwork; programa não instalado."
+}

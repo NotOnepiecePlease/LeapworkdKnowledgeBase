@@ -1,0 +1,113 @@
+00:00:03.190 [Music]
+00:00:03.200 Welcome back to testing the internet
+00:00:04.880 series. You're watching part seven
+00:00:06.400 dropdowns. In the last lesson, you
+00:00:09.120 learned how to automate the process of
+00:00:10.719 handling disappearing elements on the
+00:00:12.480 web page.
+00:00:14.880 In this video, you'll learn how to
+00:00:16.560 automate drop-downs in web scenarios
+00:00:18.560 using Leapworks set web drop-down block.
+00:00:21.439 Drop-downs might look simple, but in
+00:00:23.600 automation, they can be a real headache.
+00:00:26.240 Have you ever faced issues where your
+00:00:27.840 test fails to select the right option,
+00:00:29.920 the drop- down loads too late, or the
+00:00:32.320 options shift based on user roles or
+00:00:34.320 dynamic data? These are common pain
+00:00:36.480 points often caused by dynamically
+00:00:38.559 loaded content, mismatches between
+00:00:40.800 visible text and backend values, or
+00:00:42.960 changing indexes. That's where Leapwork
+00:00:45.680 steps in to make drop- down automation
+00:00:47.680 smooth and reliable.
+00:00:50.000 To demonstrate how, we'll take a simple
+00:00:52.239 scenario, a drop down with two options,
+00:00:55.440 option one and option two. We'll be
+00:00:58.239 using the set web drop-own block to
+00:01:00.160 select an option and explore the
+00:01:01.920 different approaches it offers to set
+00:01:03.520 drop- down options effortlessly. Let's
+00:01:06.240 get started and create a drop-own
+00:01:07.840 automation flow so you can see how
+00:01:09.840 Leapwork removes the complexity from
+00:01:11.600 drop- down testing. Let's start by
+00:01:13.680 launching the recorder and opening the
+00:01:15.600 drop- down test case page.
+00:01:27.429 Once the page loads, we capture the drop
+00:01:27.439 down that says, "Please select an
+00:01:29.280 option." Then we choose the set web
+00:01:32.000 drop- down block. This block is made to
+00:01:34.560 help you automate drop- down selections
+00:01:36.400 easily without any coding. It lets you
+00:01:39.520 control dropowns just like a real user
+00:01:41.680 would, but in a smarter, automated way.
+00:01:44.960 Now, here comes the interesting part.
+00:01:47.520 This is what we were talking about the
+00:01:50.000 action approaches. You get to choose how
+00:01:52.799 you want to select an option value which
+00:01:56.000 refers to the hidden value written in
+00:01:57.600 the website's code.
+00:02:00.000 Text which is the visible label the user
+00:02:02.560 sees and index which is the item's
+00:02:05.439 position in the list starting from one.
+00:02:08.399 First we select value in action. The
+00:02:11.039 filter setting lets Leapwork find the
+00:02:12.879 right option using one of four match
+00:02:14.640 types. equal, contains, starts with, or
+00:02:18.400 ends with. And for this demo, we'll set
+00:02:21.360 it to equal to make sure it picks the
+00:02:23.440 exact option without any partial matches
+00:02:25.920 and value as one. Click apply, save, and
+00:02:29.280 close the recorder.
+00:02:32.080 If we expand the block, you'll see the
+00:02:34.400 selected action type and value set. This
+00:02:36.879 is where we'll make changes for each
+00:02:38.400 approach. Let's go ahead and run the
+00:02:40.720 flow for the first method.
+00:02:51.670 If we look at the activity log, Chrome
+00:02:51.680 launched, the test case page loaded and
+00:02:54.080 the drop down was successfully set to
+00:02:55.920 option one. Then we go back and edit the
+00:02:59.360 flow and switch the action to text.
+00:03:01.519 Filter will be set to equals and in
+00:03:03.519 value let's enter option two. It's case
+00:03:06.480 sensitive and run the flow again.
+00:03:21.750 This time it sets to option two. You can
+00:03:21.760 also see the results in recording panel.
+00:03:24.480 Finally, we edit the block again. Change
+00:03:26.959 the action to index. Set it to two. And
+00:03:30.400 we will run the flow.
+00:03:39.750 Again, option two is selected based on
+00:03:39.760 its position. And just like that, drop-
+00:03:42.640 down automation becomes easy, fast, and
+00:03:45.519 completely visual with Leapwork. Let's
+00:03:47.760 quickly recap the steps we followed to
+00:03:49.680 understand the different approaches for
+00:03:51.200 setting drop-down options using the set
+00:03:53.599 web drop-down block. First, we launched
+00:03:56.799 the recorder and opened the drop-own
+00:03:58.560 test case page. Then, we captured the
+00:04:01.680 drop-own element and added the set web
+00:04:03.840 drop-down block. We started with the
+00:04:06.319 value approach, set it to one, and ran
+00:04:09.040 the flow. Next, we changed the action to
+00:04:11.840 text, entered option two, and ran it
+00:04:14.640 again. Finally, we switched to index,
+00:04:18.000 set it to two, and ran the flow one last
+00:04:20.880 time. That's how effortlessly you can
+00:04:23.680 control drop downs in web tests. Quick,
+00:04:26.560 visual, and completely code-f free with
+00:04:28.639 Leapwork.
+00:04:34.390 What you learned? You now know how to
+00:04:34.400 automate drop-downs using three smart
+00:04:36.320 methods, value, text, and index. Give
+00:04:39.680 this exercise a try yourself and see how
+00:04:41.919 much faster your automation can be.
+00:04:43.919 Moreover, to keep learning or if you
+00:04:45.919 ever feel stuck, explore our
+00:04:47.759 documentation knowledge base and reach
+00:04:50.320 out to support if needed. The answers
+00:04:52.000 are just a click away. Thank you for
+00:04:54.160 staying with us and see you in the next
+00:04:55.919 automation journey.

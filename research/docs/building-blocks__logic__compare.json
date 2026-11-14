@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/compare",
+  "title": "Compare",
+  "retrievedAt": "2026-11-13T18:59:36.146035+00:00",
+  "text": "Breadcrumbs\nThe Compare building block compares two values A and B, using a comparison method such as “equals” or “less than or equal to”. See the\nUse Numbers and Variables\nlesson for an example of how to use the Compare block.\nFully expanded, the\nCompare\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nCompare\nonto the canvas.\nConnect the block in the flow and specify\nValue A\n,\nValue B\n, and\nComparison method\n. Optionally select\nComparison type\nwhen you need to control how values are interpreted.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nCompare\nblock. You can rename it by double-clicking the header and typing a new title.\nValue A:\nSpecifies the first value used in the comparison. This can be typed directly in the field or provided from another block through an input connection.\nValue B:\nSpecifies the second value used in the comparison. This can be typed directly in the field or provided from another block through an input connection.\nIncorrect:\nTriggers when the comparison evaluates to false. For example, if Value A is\n100\n, Value B is\n200\n, and Comparison method is Greater than, then Incorrect triggers.\nComparison method:\nDefines how Value A and Value B are compared. Available options are:\nEqual\nNot equal\nGreater than\nGreater than or equal\nLess than\nLess than or equal\nComparison type:\nControls which data type is used for the comparison. Values are automatically converted to appropriate data types, but in some cases it makes sense to select the type explicitly.\nChoosing the wrong comparison type can have unforeseen consequences. For example, comparing the text\n200,200\nwith the position\n200,50\nresults in false, but comparing the position\n200,200\nwith the position\n200,50\nresults in true.\nThe dropdown includes the following options:\nAs Value A: Uses the type of Value A.\nAs Value B: Uses the type of Value B.\nArea\nBoolean\nCodeCSharp\nDate\nDateTime\nNumber\nPosition\nSapElement\nSignal\nText\nTextBuilder\nTime\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Use Numbers and Variables",
+      "url": "https://www.youtube.com/watch?v=M-y1MxK3_Dw&t=67s"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251222-132625.png",
+      "url": "https://docs.leapwork.com/__attachments/a_34902acd646de3befdc13744ec49b989204ad024a4321e21015278278e8ab497/image-20251222-132625.png?cb=bdf158eb3b7ad764d73e260776d5d880"
+    }
+  ]
+}

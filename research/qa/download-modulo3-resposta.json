@@ -1,0 +1,33 @@
+{
+  "origem": "Amostra autoral fictícia; não é resposta de uma chamada HTTP real.",
+  "registros": [
+    {
+      "id": "001",
+      "nome": " Ana Lima ",
+      "quantidade": "2",
+      "preco": "19,90",
+      "grupo": " basico "
+    },
+    {
+      "id": "002",
+      "nome": "Bruno Reis",
+      "quantidade": "3",
+      "preco": "12,50",
+      "grupo": "PREMIUM"
+    },
+    {
+      "id": "003",
+      "nome": "Carla Melo",
+      "quantidade": "0",
+      "preco": "10,00",
+      "grupo": "BASICO"
+    },
+    {
+      "id": "004",
+      "nome": "Davi Luz",
+      "quantidade": "1",
+      "preco": "0,10",
+      "grupo": "BASICO"
+    }
+  ]
+}

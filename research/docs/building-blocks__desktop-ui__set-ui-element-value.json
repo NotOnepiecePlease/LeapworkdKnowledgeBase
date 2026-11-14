@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/set-ui-element-value",
+  "title": "Set UI Element Value",
+  "retrievedAt": "2026-11-13T19:33:07.790134+00:00",
+  "text": "Breadcrumbs\n﻿\nThe\nSet UI Element Value\nblock is used to set a value in a UI element, such as a textbox, in an already open application window. It’s typically used when automating interactions with desktop UI controls in Leapwork.\nFully expanded, the\nSet UI Element Value\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nSet UI Element Value\nonto the canvas.\nSpecify the basic parameters required for this block to operate:\nSelect UI Element\n,\nMethod\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nThe Block Header:\nThe green input connector in the header is used to trigger the block to start executing.\nThe green output connector in the header triggers when the UI element has been successfully found.\nThe title of the block (“Set UI Element Value”) can be changed by double-clicking on it and typing in a new title.\nSelect UI Element:\nContains the locator for the UI element where the value is to be set. Can be captured, edited, or cleared using context menu options.\nMethod:\nDetermines how the value is set in the UI element.\nValues:\nSet Value\n: Inserts text (or password) into a standard input field such as a textbox or form field.\nSet Range Value\n: Sets a numeric value on controls like sliders, progress bars, or volume controls that operate over a defined range.\nText value:\nSpecifies the text to input into the target UI element. Accepts plain text or dynamic content via tokens, making it suitable for both static and data-driven inputs. Tokens can be inserted by right-clicking and selecting from defined\nText fields\n. Input connector.\nText fields:\nDefines custom key-value pairs that can be referenced as tokens throughout the block and across connected blocks.\nFields can be inserted into\nText value\n, or used as input in other blocks that support tokens (e.g., search fields, logs, selectors).\nRight-click in any compatible input field and choose\nInsert token\nto reference a field.\nType:\nSelects the kind of input to be entered into the UI element—either visible or masked.\nValues:\nText:\nStandard visible input, suitable for general use such as names, comments, or search fields.\nPassword:\nSecure input that masks the typed characters and prevents them from being read during or after execution. Use this when entering credentials or sensitive data.\nElement found:\nReturns the found UI element. Can be reused as input in other blocks.\nNot found:\nTriggers if the element is not found within the specified timeout. If left unconnected and not found, the case will fail.\nPosition found:\nProvides the (X, Y) position of the found element. Coordinates are relative to screen top-left. May be negative or large in multi-screen setups.\nArea found:\nReturns the (X, Y, Width, Height) of the element. Includes expandable sub-properties.\nSource element:\nNarrows the search to within a previously found element. Useful for nested UI structures.\nUse occurred:\nSelects which occurrence to interact with if multiple elements are found.\nValues: specific index (\n1\n,\n2\n, etc.) or\nAll\n. Enables iteration.\nCurrent index:\nShows the index of the current occurrence during iteration. Starts from 1.\nCompleted:\nTriggers when all occurrences have been processed.\nCount:\nTotal number of matching elements found.\nDefault timeout:\nDefines whether to use the default timeout from flow settings. If not selected, the timeout is 10 seconds.\nScroll to find:\nEnables scroll-based search, useful for scrollable UIs. Default:\nNone\n.\nAwait no changes:\nWaits for screen stability before setting value/range. Prevents conflict with dynamically updating elements.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.\nStrategy Editor\nGuidelines for understanding and using the Strategy Editor in Leapwork to define, refine, and validate robust locator strategies for UI elements using DOM structure, tokens, and wildcards.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    },
+    {
+      "title": "Strategy Editor",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/strategy-editor"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20251111-123309.png",
+      "url": "https://docs.leapwork.com/__attachments/a_001bdadb53f1cffde42cf8cac5c2de345e073a27b4749bc4f5a1e97fbdcbfd94/image-20251111-123309.png?cb=320c8c3f263269a84bc38c81929ad178"
+    }
+  ]
+}

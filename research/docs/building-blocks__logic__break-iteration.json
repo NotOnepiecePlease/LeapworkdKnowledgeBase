@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/break-iteration",
+  "title": "Break Iteration",
+  "retrievedAt": "2026-11-13T21:12:56.278375+00:00",
+  "text": "Breadcrumbs\nThe\nBreak iteration\nbuilding block is used to break out of loops or iterations and trigger the\nCompleted\noutput of the building block that is performing the iteration.\nFully expanded, the\nBreak Iteration\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nBreak iteration\nonto the canvas.\nConnect the block in the flow and optionally specify basic parameters such as\nScope\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header:\nShows the current title of the\nBreak iteration\nblock. You can rename it by double-clicking the header and typing a new title. The green input connector triggers the block when the flow reaches it. Instead of providing a separate “success” output, this block breaks the active iteration so the iterating building block can continue via its\nCompleted\noutput.\nScope:\nDefines how broadly the break should be applied.\nCurrent:\nBreaks out of the current iteration only.\nAll:\nBreaks out of all nested iterations, which can be useful when you are working with nested loops to compare combinations of values.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260127-142604.png",
+      "url": "https://docs.leapwork.com/__attachments/a_49bdf18ce17dc3a414e7d4b5f75ad484baf5e97ecb9fb68c00972e1a62b85a7d/image-20260127-142604.png?cb=388e512150ec894b6346b83648a7160e"
+    }
+  ]
+}

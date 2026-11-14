@@ -1,0 +1,101 @@
+00:00:01.990 [Music]
+00:00:02.000 Welcome back to testing the internet
+00:00:03.679 series. You're watching part 23,
+00:00:06.000 notification messages. In the previous
+00:00:08.800 video, you learned how to capture an
+00:00:10.639 element in frame set. In this video, you
+00:00:13.280 will learn how to test notification
+00:00:14.880 messages triggered by user actions. You
+00:00:17.680 might have faced challenges like
+00:00:19.119 inconsistent success or error messages,
+00:00:22.000 alerts that disappear too quickly, or
+00:00:24.480 messages that don't show up at all.
+00:00:26.960 These issues often happen because of
+00:00:28.800 timing delays, flaky UI elements, or
+00:00:31.920 browser specific behavior. That's where
+00:00:34.640 Leapwork can help you build stable
+00:00:36.640 visual automation that verifies your app
+00:00:39.120 responds correctly every time. To
+00:00:42.000 demonstrate, we'll take a simple
+00:00:43.680 scenario. This test case ensures your
+00:00:46.000 web app responds correctly to user
+00:00:47.840 actions. In this example, when we click
+00:00:50.719 the click here link, a notification
+00:00:52.960 message appears in the top blue bar. If
+00:00:55.840 we click it multiple times, the message
+00:00:58.000 text changes randomly. The goal of the
+00:01:00.640 test is to click the link several times,
+00:01:03.039 capture the notification each time, and
+00:01:05.439 log the message. If the message appears
+00:01:08.159 every time, the test case will pass. If
+00:01:11.360 not, it will fail. Let's create an
+00:01:13.920 automation flow for this scenario. We'll
+00:01:16.640 begin with launching our notification
+00:01:18.320 test case page.
+00:01:27.429 Then we'll click the link that will
+00:01:27.439 trigger a notification to appear.
+00:01:31.280 After that, we'll capture the
+00:01:32.960 notification message using the find web
+00:01:35.040 element block. Let's close and save the
+00:01:37.200 recorder. Next, we add a loop block
+00:01:39.759 between the find web element and click
+00:01:41.840 web element blocks.
+00:01:55.350 setting it to run from 1 to 5. This
+00:01:55.360 allows us to repeat the click action
+00:01:57.040 five times. Now we'll edit the strategy
+00:01:59.840 to make sure that the selection criteras
+00:02:01.759 doesn't include any of the text because
+00:02:03.360 the text changes. Let's click on
+00:02:05.520 validate.
+00:02:11.270 And we can see it found only one element
+00:02:11.280 matching these criterias. We'll save it.
+00:02:18.949 The next steps is to extract the text
+00:02:18.959 using get web text.
+00:02:26.630 Let's connect the found property to
+00:02:26.640 source property so that the get web text
+00:02:28.879 block knows exactly which element to
+00:02:30.879 extract the text from and connect text
+00:02:33.360 found property to log message block so
+00:02:35.440 as to log each message. Finally, after
+00:02:38.560 the loop is completed, we'll use a pass
+00:02:40.720 block to confirm the test has succeeded,
+00:02:42.879 meaning all messages were correctly
+00:02:44.560 captured across each iteration.
+00:03:16.309 After clicking the link, Leapwork
+00:03:16.319 successfully found the notification
+00:03:17.920 message element. Each time it first
+00:03:20.560 retrieved the message action successful,
+00:03:22.800 in the final iteration of the loop with
+00:03:24.879 the current value at five, Leapwork
+00:03:27.200 clicked the link once more. This
+00:03:29.519 triggered a notification on the page
+00:03:31.519 which was successfully located as a div
+00:03:33.599 element. It then extracted the text
+00:03:36.640 action unsuccessful. Please try again.
+00:03:40.159 Despite the message content changing,
+00:03:42.400 Leapwork reliably found and read the
+00:03:44.480 notification. Once all five iterations
+00:03:47.440 were completed, the loop ended and the
+00:03:49.680 flow was marked as passed, confirming
+00:03:51.840 that the web app responded correctly
+00:03:53.760 across different outcomes. Here's a
+00:03:56.239 quick recap of the steps we followed to
+00:03:58.080 build this automation scenario. We first
+00:04:00.959 launched the test case. Then we captured
+00:04:03.040 the link and notification message. After
+00:04:05.439 this, we added a loop to repeat clicks.
+00:04:07.760 Then extracted and logged the messages.
+00:04:10.720 The test cased passed with the expected
+00:04:12.959 outcomes.
+00:04:18.550 What you learned? You learned how to
+00:04:18.560 handle dynamic notifications in
+00:04:20.239 automation, making your test more
+00:04:22.160 reliable and flexible. Give this
+00:04:24.320 exercise a try yourself and see how much
+00:04:26.479 faster your automation can be. Moreover,
+00:04:29.040 to keep learning or if you ever feel
+00:04:30.800 stuck, explore our documentation
+00:04:33.360 knowledge base and reach out to support
+00:04:35.360 if needed. The answers are just a click
+00:04:37.199 away. Thank you for staying with us and
+00:04:39.440 see you in the next automation journey.

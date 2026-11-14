@@ -1,0 +1,17 @@
+# Distribuição e metadados de publicação locais
+/dist/
+/.publication/
+/videos/
+/tools/
+/frames/
+__pycache__/
+*.py[cod]
+*.log
+*.part
+*.tmp
+.env
+.env.*
+*.pem
+*.key
+/research/contact-sheets/
+/research/qa/*.png

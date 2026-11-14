@@ -1,0 +1,131 @@
+00:00:05.829 Welcome back to testing the internet
+00:00:05.839 series. You're watching part 8 dynamic
+00:00:08.480 content.
+00:00:10.240 In the previous video, you learned how
+00:00:12.480 to automate the process of handling
+00:00:14.160 dropdowns with the help of set web
+00:00:16.320 drop-down block and the ways to perform
+00:00:18.480 drop-own action and setting values. In
+00:00:20.800 this video, you will learn how to
+00:00:22.320 automate dynamic content on web pages
+00:00:24.960 where elements change based on time,
+00:00:27.359 data, or user behavior. Have you faced
+00:00:30.480 challenges like images not loading with
+00:00:32.559 each refresh, lists of articles changing
+00:00:35.280 order, or elements that only appear
+00:00:37.680 under certain conditions? It is often
+00:00:39.840 because of dynamic DOM structures that
+00:00:41.840 shift every time the page loads. What if
+00:00:44.480 you could handle all these challenges in
+00:00:46.239 just a few steps visually, reliably, and
+00:00:49.440 without writing a single line of code?
+00:00:51.520 To demonstrate, we'll take a simple
+00:00:53.360 scenario. Testing if the first news
+00:00:56.079 article in a list has a valid image.
+00:00:59.520 We'll tweak the strategy to find the
+00:01:01.120 right row, pick the correct image, and
+00:01:03.039 ensure it's valid every time.
+00:01:06.560 So each time I refresh this page, it
+00:01:08.960 will have a new text and a new image in
+00:01:10.960 the first row, second row, and third
+00:01:13.200 row. So the test case for us is to make
+00:01:15.760 sure that we at least load one row and
+00:01:17.840 that inside that row, we have an image
+00:01:19.920 that is loading correctly. Let's build
+00:01:21.759 an automation flow in Leapwork to handle
+00:01:24.240 this scenario. We'll start the recorder
+00:01:26.400 and launch the dynamic content test case
+00:01:28.479 page.
+00:01:40.069 First, we'll capture the first row and
+00:01:40.079 use the find web element block to locate
+00:01:42.240 it. Then, we'll capture the image inside
+00:01:45.280 that row. This makes our query search
+00:01:47.600 within the specific row element. That's
+00:01:50.000 all we need for now. So, we'll save and
+00:01:52.159 close the recorder. Now it's time to
+00:01:54.399 edit the strategy to make sure Leapwork
+00:01:56.320 accurately finds both the row and the
+00:01:58.320 image inside it with ease. So as you can
+00:02:01.439 see here in the proposed strategy, the
+00:02:03.759 divs are selected in parent section and
+00:02:05.600 the below section. But if we see here,
+00:02:08.720 it's a text and this we don't want
+00:02:11.200 because we want the strategy to be
+00:02:12.800 dynamic that could select any text in
+00:02:15.040 that occurrence.
+00:02:17.840 Let's select another strategy. But here
+00:02:19.680 too it's the text selected. Let's select
+00:02:21.840 another one.
+00:02:27.110 Yeah, in this one it's the div selected
+00:02:27.120 and the use occurrence is one. And if we
+00:02:29.599 see here, this text is not part of the
+00:02:31.760 selection criteria, which is exactly
+00:02:33.840 what we want. This means the strategy
+00:02:36.400 will select any text that appears
+00:02:38.080 dynamically based on the refresh action
+00:02:40.080 at that moment. We'll save this
+00:02:42.160 strategy.
+00:02:47.110 And to make sure that we are looking for
+00:02:47.120 the image inside the row, let's connect
+00:02:49.360 found element property to the source
+00:02:51.360 element. This means that our query is
+00:02:54.000 now querying inside the found element,
+00:02:56.239 in this case the row. Next, we'll edit
+00:02:59.519 the image selection criteria to ensure
+00:03:01.440 accuracy. We don't want the actual image
+00:03:04.239 source to be part of this because this
+00:03:06.159 could change on a page refresh. So, we
+00:03:08.400 will select the route to send child. In
+00:03:11.120 this case, it doesn't include the source
+00:03:13.120 of the image. It just uses the position
+00:03:15.280 in the markup tree. Because we already
+00:03:17.519 have the row selected, we don't need the
+00:03:19.440 top views.
+00:03:25.110 Just select the one inside the row that
+00:03:25.120 contains the image. Saving this
+00:03:26.959 strategy. Let's proceed ahead.
+00:03:36.070 And then we also have required valid
+00:03:36.080 images selected. This means leapwork
+00:03:38.400 will only pass the test if the selected
+00:03:40.159 image loads correctly, filtering out
+00:03:42.480 broken or missing images automatically.
+00:03:44.799 Let's connect pass and we're ready to
+00:03:46.799 run our flow.
+00:04:00.630 And yes, we can see Chrome launched and
+00:04:00.640 the dynamic content page loaded. The row
+00:04:03.519 was found visible in the recording panel
+00:04:06.159 and the image inside it was successfully
+00:04:08.319 detected. The flow passed smoothly. So
+00:04:12.080 this is how you can handle dynamic
+00:04:13.680 content in leapwork using the different
+00:04:15.519 strategies. Let's look at the summary.
+00:04:18.079 We kicked things off by launching the
+00:04:19.919 dynamic content test case page using the
+00:04:22.320 start recorder. Then we captured the
+00:04:24.880 first content row and used the find web
+00:04:27.040 element block to locate it. Inside that
+00:04:29.919 row, we captured the image element to
+00:04:32.000 narrow down the scope. After that, we
+00:04:34.960 edited the location strategy to ensure
+00:04:36.960 leapwork reliably finds the correct row
+00:04:39.440 and image every time. Finally, we ran
+00:04:42.240 the flow and confirmed that both
+00:04:43.759 elements were found successfully,
+00:04:45.759 resulting in a smooth and passing test.
+00:04:53.430 What you learned? You now know how to
+00:04:53.440 take control of dynamic content. What
+00:04:56.080 once felt impossible, automating content
+00:04:58.639 that moves, disappears, or reloads, is
+00:05:01.759 now within reach. You've learned the
+00:05:04.160 strategy. You've seen the result. And
+00:05:07.039 with Leapwork, you're not just testing
+00:05:09.039 smarter, you're testing with confidence.
+00:05:13.120 Give this exercise a try yourself and
+00:05:15.199 see how much faster your automation can
+00:05:17.199 be. Moreover, to keep learning or if you
+00:05:19.680 ever feel stuck, explore our
+00:05:21.440 documentation knowledge base and reach
+00:05:24.080 out to support if needed. The answers
+00:05:25.759 are just a click away. Thank you for
+00:05:27.919 staying with us and see you in the next
+00:05:29.680 automation journey.

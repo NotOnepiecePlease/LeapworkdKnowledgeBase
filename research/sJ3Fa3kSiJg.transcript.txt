@@ -1,0 +1,360 @@
+00:00:04.630 [Music]
+00:00:04.640 Welcome back, automation enthusiasts.
+00:00:06.960 You're tuning into video two of our
+00:00:08.800 virtual automation series. In our last
+00:00:11.679 video, we covered the basics of virtual
+00:00:14.160 desktop automation and learned how its
+00:00:16.320 building blocks function in Leapwork. We
+00:00:19.039 created an automation flow that clicked
+00:00:20.960 on the browser icon to open it, typed in
+00:00:23.600 the LinkedIn URL, and checked to make
+00:00:25.920 sure the LinkedIn page loaded correctly.
+00:00:28.880 Today we're diving into image
+00:00:30.800 recognition, a powerful feature that
+00:00:33.200 allows us to interact with graphical
+00:00:34.880 elements on the screen, including in
+00:00:36.960 Citrix applications.
+00:00:39.200 Image recognition stands out as a
+00:00:40.960 gamecher across various industries.
+00:00:44.000 Imagine a customer support agent needing
+00:00:45.920 quick access to a specific application.
+00:00:48.800 Instead of searching for it each time,
+00:00:51.200 image recognition can automatically
+00:00:53.199 identify and click the application icon
+00:00:55.360 on their desktop. This not only saves
+00:00:58.160 time but also reduces the chances of
+00:01:00.320 errors, allowing the agent to focus on
+00:01:02.480 resolving customer issues more
+00:01:04.159 effectively. Another great example comes
+00:01:06.799 from software testing. Developers often
+00:01:09.760 need to verify if certain buttons or
+00:01:11.760 icons appear correctly after updates. By
+00:01:14.720 using image recognition, the automation
+00:01:17.040 can check for these visual elements. If
+00:01:19.840 the save button is missing or changed,
+00:01:22.320 the automation will flag it immediately,
+00:01:24.479 ensuring that the application functions
+00:01:26.240 as intended before it goes live.
+00:01:28.880 Likewise, in virtual environments, image
+00:01:31.520 recognition is key to overcoming
+00:01:33.280 automation challenges. With features
+00:01:35.840 like capture area and area property that
+00:01:38.560 we learned in the last video, Leapwork
+00:01:40.880 ensures precise interaction. It adapts
+00:01:43.119 to changes in screen resolution, greatly
+00:01:45.360 enhancing efficiency and accuracy.
+00:01:47.680 Before we start, make sure that screen
+00:01:49.680 resolution on your virtual machine is
+00:01:51.600 same as the one on which you will be
+00:01:53.200 creating your automation flow. Let's
+00:01:55.119 understand the scenario overview. At
+00:01:57.280 first, we will see how find image
+00:01:59.040 building block works and how does its
+00:02:01.040 properties function. We will then learn
+00:02:02.880 how to hover the position of the image
+00:02:04.640 found. Then we'll learn how to use
+00:02:06.799 scroll wheel block to find target image
+00:02:08.640 by scrolling on web page. At the end, we
+00:02:11.520 will learn about the precision property
+00:02:13.440 of find image building block. Remember
+00:02:16.319 all the steps will work the same way
+00:02:18.000 across different virtual environments
+00:02:20.160 whether it's a virtual desktop web
+00:02:22.400 application or remote session. Let's
+00:02:24.959 proceed to create our automation flow.
+00:02:27.599 Simply connect find image building
+00:02:29.760 block.
+00:02:32.160 The find image building block in
+00:02:33.920 Leapwork is key for helping your
+00:02:35.599 automation recognize and interact with
+00:02:38.080 specific images on the screen like
+00:02:40.239 buttons or icons. This means your
+00:02:42.879 automation can work even if layouts
+00:02:44.800 change making it more flexible. It also
+00:02:48.080 reduces errors by relying on images
+00:02:50.000 instead of text. Now to proceed with
+00:02:52.319 finding image, the next step is to open
+00:02:54.400 the website from where we will find
+00:02:55.920 image. Let's do it
+00:03:03.030 now. Let's open the website. Let's say
+00:03:03.040 ebawy.com.
+00:03:18.550 Now this is the page where we will find
+00:03:18.560 the image. You can take any other
+00:03:20.480 website in your practice. Let's move to
+00:03:22.400 our automation flow.
+00:03:25.920 Now click on select image to find and
+00:03:28.319 capture the image. You may choose to
+00:03:30.720 select any image on the web page you
+00:03:32.560 wish to find. Yes, let's capture this
+00:03:34.879 image.
+00:03:46.309 Yes, we can see the captured image here.
+00:03:46.319 Now let's run the flow till here and see
+00:03:48.640 how this block finds the image. Simply
+00:03:51.599 right click and select run flow to here.
+00:04:00.710 And yes, we can see that the image is
+00:04:00.720 found at the position mentioned in the
+00:04:02.400 activity message. This is how find image
+00:04:05.439 block functions. Now the next step is to
+00:04:08.239 hover on the image found. When we talk
+00:04:10.879 about the hovering the image, we have to
+00:04:12.959 also define the position of hover over
+00:04:14.879 the image. Let's proceed with the next
+00:04:17.280 steps. Let's get back to our automation
+00:04:19.840 flow.
+00:04:27.590 Now since we have to hover or we can say
+00:04:27.600 keep mouse over the image found, let's
+00:04:29.840 connect hover position block next to the
+00:04:31.680 find image block.
+00:04:44.790 Yes, it's added. Hover position block
+00:04:44.800 can leapwork lets your automation move
+00:04:46.800 the mouse over a specific image on the
+00:04:48.880 screen without clicking it. This can
+00:04:51.199 trigger things like tool tips or drop-
+00:04:53.120 down menus that appear when you hover
+00:04:55.120 over an element. It's useful for
+00:04:57.520 creating actions that need the cursor to
+00:04:59.360 be over a button or icon.
+00:05:07.350 Now in this block you can see the
+00:05:07.360 position feature. See how it works is it
+00:05:10.240 basically uses X and Y coordinates to
+00:05:12.400 define the exact location on the screen
+00:05:14.560 where the hover action will occur. That
+00:05:16.560 means you have to set or choose the
+00:05:18.320 exact spot like the center top left
+00:05:20.720 corner etc. Now from where the input
+00:05:23.280 will come to this property. Now if we
+00:05:25.840 expand the find image block. Yes over
+00:05:28.160 here you can see the position found
+00:05:29.759 property. This is what will be the input
+00:05:32.160 to position property in find image
+00:05:34.240 block. Simply connect it to position
+00:05:36.400 property with the blue connector. Now
+00:05:38.800 the position that was found through find
+00:05:40.560 image block will act as the input and
+00:05:42.960 tell hover position block to point at
+00:05:44.720 that position without clicking. Let's
+00:05:46.960 run the flow and see how it works.
+00:06:01.189 And yes, we can see that the mouse moved
+00:06:01.199 and hovered on the image.
+00:06:04.960 We can see the hovered position in the
+00:06:06.720 activity logs. This is how hover
+00:06:09.120 position block works. Moreover, you can
+00:06:11.680 also decide or set the position of
+00:06:13.680 hover. Let me show how.
+00:06:16.960 Click on edit button
+00:06:24.230 and in the automation flow over here
+00:06:24.240 simply click on the captured image and
+00:06:25.919 find image block and set the red
+00:06:27.520 intersecting lines at the point where
+00:06:28.960 you want the mouse to hover.
+00:06:37.029 Yeah, I'm setting it to this lower right
+00:06:37.039 corner.
+00:06:39.840 You can set the position as per your
+00:06:41.680 choices.
+00:07:00.870 We can see that the mouse moved and
+00:07:00.880 hovered at the lower right corner of the
+00:07:05.280 We can see the hovered position details
+00:07:07.199 in the activity log.
+00:07:13.670 Now let's get back to our automation
+00:07:13.680 flow and learn some more interesting
+00:07:15.680 properties of find image building block.
+00:07:18.479 If I little zoom in the block,
+00:07:27.350 you can see here await no movement
+00:07:27.360 property here. The await no movement
+00:07:29.919 property in the find image block in
+00:07:31.759 leapwork makes the automation wait until
+00:07:34.000 there's no movement on the screen before
+00:07:35.759 moving on. For example, if you're
+00:07:38.479 looking for a loading icon to disappear
+00:07:40.319 before clicking a button, this property
+00:07:42.400 ensures that image has been fully
+00:07:44.080 loaded. Now, for how long the automation
+00:07:46.639 will wait, the timeout feature defines
+00:07:49.199 it. It allows you to set a limit on how
+00:07:51.759 long the automation will wait for the
+00:07:53.280 screen to stop moving. Now, if the
+00:07:56.080 timeout period is reached and movement
+00:07:57.919 is still detected, the automation can
+00:08:00.080 proceed with an error message. The await
+00:08:02.879 no movement property ensures that your
+00:08:05.120 automation only acts when the screen is
+00:08:07.039 stable reducing errors and making the
+00:08:09.280 process smoother. Now moving to the web
+00:08:11.759 page we had opened. Let's consider the
+00:08:14.000 scenario where you have to find the
+00:08:15.520 image somewhere in the below sections of
+00:08:17.280 the web page. Now to do it we'll use
+00:08:19.919 scroll wheel block.
+00:08:34.149 Capture new element.
+00:08:34.159 Yes, let's say this image for which the
+00:08:36.159 scrolling action will be required to
+00:08:37.760 find image.
+00:08:44.470 And yes, the new image is captured.
+00:08:44.480 The next step is to configure settings
+00:08:46.240 through which we can set up scrolling to
+00:08:48.000 find image captured. But we'll do these
+00:08:50.480 settings in scroll wheel block. Let's do
+00:08:52.640 it
+00:08:54.240 now. Let's remove hover position block
+00:08:56.080 and connect scroll wheel block before
+00:09:19.990 Now, what is scroll wheel block and why
+00:09:20.000 you're going to use it with find image
+00:09:21.760 block? The scroll wheel block in
+00:09:24.080 leapwork lets you simulate scrolling up
+00:09:26.399 or down on a page just like using a
+00:09:28.640 mouse wheel. The reason we are
+00:09:30.800 connecting it with the find image block
+00:09:32.480 is to help the automation find an image
+00:09:34.880 that might be offscreen by scrolling
+00:09:37.200 until the image appears. Now block is
+00:09:40.399 added in direction. You can set the way
+00:09:42.560 to scroll either down or up. Since we
+00:09:45.519 have to scroll down, let's set it to
+00:09:47.200 down.
+00:09:53.670 Now to define the position, right click
+00:09:53.680 and capture the position to set
+00:09:55.200 scrolling from.
+00:09:57.600 See the position you will set will be
+00:09:59.760 the exact point from which mouse will
+00:10:01.600 start scrolling. So while setting this
+00:10:03.680 position, you have to take care. Capture
+00:10:05.920 the area. Simply click on the position
+00:10:09.360 and yes the position is defined using X
+00:10:11.519 and Y coordinates specifying the exact
+00:10:14.079 location on the screen from where the
+00:10:16.000 scrolling will start to occur. Now let's
+00:10:18.480 expand the block. Set the amount to
+00:10:20.480 three and let's keep delay second as 0.5
+00:10:23.519 seconds. You can set the speed from
+00:10:25.839 here. Let's keep the speed as medium.
+00:10:28.560 Now in the find image block you can
+00:10:30.560 remove the area captured. You can keep
+00:10:32.800 it but it's not necessary since we have
+00:10:34.880 already set the position in scroll wheel
+00:10:36.720 block. So the automation flow will
+00:10:38.560 easily recognize the position and find
+00:10:40.640 the image through find image block. Now
+00:10:43.680 let's run the flow.
+00:10:50.790 You will notice that the mouse will
+00:10:50.800 point to the position we had set to
+00:10:52.480 start scrolling from
+00:11:01.030 and we can see the page scrolling is
+00:11:01.040 happening.
+00:11:17.750 You must be getting that the scrolling
+00:11:17.760 is happening as per the values we had
+00:11:19.680 set in scroll wheel block. The scroll is
+00:11:22.399 happening three times and there's delay
+00:11:24.399 of 0.5 seconds in each scroll. Once the
+00:11:27.600 image is found, the scroll will stop.
+00:11:30.720 This was our target image to be found.
+00:11:39.829 And yes, we successfully found our
+00:11:39.839 image. In the activity log, we can see
+00:11:42.720 that the image position details.
+00:11:53.829 You can anytime check the flow recording
+00:11:53.839 while you are trying the exercise. And
+00:11:56.560 yes, now you have learned how to work
+00:11:58.160 with find image and scroll wheel blocks
+00:12:00.160 in image recognition. This is how you
+00:12:02.800 can easily automate the process of
+00:12:04.480 scrolling your page either up or down
+00:12:06.880 and find the desired image elements. Now
+00:12:09.360 let's move to another property of find
+00:12:11.120 image block.
+00:12:18.470 Precision. The precision property in the
+00:12:18.480 find image block tells the automation
+00:12:20.720 how closely the found image must match
+00:12:22.720 the one you've set.
+00:12:29.269 If you choose high precision, the images
+00:12:29.279 need to be very similar. With lower
+00:12:31.440 precision, the automation can accept
+00:12:33.519 some differences. The two next features,
+00:12:36.480 pixels and colors, help with this. The
+00:12:39.440 pixels setting lets you decide how many
+00:12:41.360 pixels can be different between the
+00:12:42.800 reference image and what's on the
+00:12:44.399 screen.
+00:12:46.320 You can set the pixels out of these
+00:12:47.920 options as per your requirements. Let's
+00:12:50.399 say if you select high precision in
+00:12:52.480 pixels, it means the automation will
+00:12:54.639 only find the image if it looks almost
+00:12:56.480 exactly the same as the one you've
+00:12:58.000 captured.
+00:12:59.680 The color setting allows for some
+00:13:01.279 flexibility in color differences,
+00:13:03.360 meaning the automation can still match
+00:13:05.120 images even if the colors vary slightly,
+00:13:07.519 like due to changes in lighting.
+00:13:09.760 Together, these features help the
+00:13:11.600 automation find images more easily, even
+00:13:14.160 with small changes, making it more
+00:13:16.399 reliable. So this was all about the
+00:13:19.040 precision property of find image block.
+00:13:21.920 Now think of the scenario where let's
+00:13:24.000 say any change or update happened in the
+00:13:26.079 website you were searching for the image
+00:13:27.680 elements. Then how will you find the
+00:13:29.519 image? Will you rebuild your flow again?
+00:13:32.560 Not at all. That's where capture new
+00:13:34.959 collection feature comes in roll in
+00:13:37.360 leapwork. The capture new collection
+00:13:39.360 feature in the find image block allows
+00:13:41.600 you to easily capture and store images
+00:13:43.519 of UI elements like buttons, icons, or
+00:13:46.480 text fields that the automation needs to
+00:13:48.800 recognize. Therefore, if there are
+00:13:51.519 changes in the application or website
+00:13:53.360 you're automating, like a new button or
+00:13:55.440 updated element, instead of rebuilding
+00:13:57.680 your entire flow, you can simply use
+00:14:00.000 this feature to capture the updated
+00:14:01.760 images. This makes it easy to keep your
+00:14:04.320 automation up to date without starting
+00:14:06.240 from scratch.
+00:14:07.839 Let me show you how it works. Let's
+00:14:09.839 capture new collection.
+00:14:22.790 And yes, you can see that this time the
+00:14:22.800 image is captured in the form of
+00:14:24.320 collection. This means that it has
+00:14:26.240 captured and stored all elements the
+00:14:28.240 automation can recognize. With all these
+00:14:31.120 features, we learned that how the find
+00:14:33.360 image block in leapwork is quite
+00:14:35.519 powerful for virtual automation,
+00:14:37.600 allowing you to precisely locate and
+00:14:39.519 interact with on-screen elements in
+00:14:41.360 virtual environments. And stay tuned
+00:14:44.399 because we'll be exploring even more of
+00:14:46.240 its interesting features in the next
+00:14:47.920 tutorial. This was all about the today's
+00:14:50.399 tutorial. In summary, we firstly found
+00:14:53.680 the image with the help of find image
+00:14:55.600 block. Then to hover the position found,
+00:14:58.639 we used hover position block and learned
+00:15:00.800 how can we adjust the hover position.
+00:15:03.360 After that we learned if we have to
+00:15:05.600 search the image on the web page by
+00:15:07.279 scrolling down, how can scroll wheel
+00:15:09.199 block help us achieve that. Then we
+00:15:11.760 learned about the precision property of
+00:15:13.279 the find image block and saw how can we
+00:15:15.839 use the feature of capture new
+00:15:17.279 collection to make sure any change in
+00:15:19.279 the web page or image elements doesn't
+00:15:21.279 impact the automation flow.
+00:15:24.399 We will be coming up with next
+00:15:25.839 interesting topics of this series and
+00:15:27.760 help you automate your virtual desktop
+00:15:29.680 tasks like a pro and achieve highquality
+00:15:32.320 outcomes as a result. For any doubts and
+00:15:35.279 queries, feel free to contact us through
+00:15:37.519 Leapwork support or connect via live
+00:15:40.560 chat. And remember, with virtual
+00:15:43.440 automation, you can transform the way
+00:15:45.440 your team works, cutting down on
+00:15:47.360 repetitive tasks and freeing up time to
+00:15:49.360 focus on innovation and growth. It's all
+00:15:52.079 about working smarter and driving your
+00:15:53.759 business to new heights. Keep
+00:15:55.759 automating. Keep succeeding. Thank you
+00:15:58.320 for watching.

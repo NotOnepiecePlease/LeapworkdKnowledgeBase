@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/drag-web-element",
+  "title": "Drag Web Element‎",
+  "retrievedAt": "2026-11-13T20:40:16.355334+00:00",
+  "text": "Breadcrumbs\nThe\nDrag Web Element\nblock is used to drag a web element with the mouse from one place to another in an open browser window. It simulates a drag-and-drop interaction by starting the drag on a source element and dropping it on a destination element.\nThis block only works with browser windows that were opened using the\nStart Web Browser\nblock or their child windows.\nFully expanded, the\nDrag Web Element\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nDrag Web Element\nonto the canvas.\nCapture the\nStart element\nand\nEnd element\n(both required), then optionally configure\nBrowser window\nand\nRequire valid imgs\n.\nRun the flow when it’s ready.\nFor a minimal setup, set\nStart element\nto the element you want to drag from and\nEnd element\nto the element you want to drop onto, then run the flow with default settings.\nBuilding block parameters\nParameters\nBlock header:\nShows the current name of the\nDrag Web Element\nblock. You can rename it at any time by double-clicking the header and typing a new title to keep flows readable and organized.\nStart element:\nContains the locator for the web element where the drag action starts. This parameter\nmust be set\n.\nRight-click and select\nCapture new web element\nto define the locator.\nRight-click and select\nEdit web element\nto adjust an existing locator.\nRight-click and select\nClear web element\nto remove it.\nEnd element:\nContains the locator for the web element that will receive the dropped element. The block drags from\nStart element\nand releases over\nEnd element\n. This parameter\nmust be set\n.\nNot found:\nTriggers if either the start or end web element cannot be found before the timeout. This output is typically used to branch the execution flow or to explicitly fail a case by connecting it to a\nFail\nblock.\nBrowser window:\nSpecifies which browser window the block should operate on. When left empty, the block uses the default browser window for the flow.\nMultiple browser windows are not supported by Selenium Grid or external cloud providers such as Sauce Labs and BrowserStack, so this value usually refers to the single window opened by\nStart Web Browser\n.\nRequire valid imgs:\nWhen selected, any web element locator that targets an image (\nimg\ntag) will also validate that the image has loaded correctly. Leapwork checks this by sending an HTTP request to the image source and verifying that it returns a\n200\nresponse.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.\nStrategy Editor\nGuidelines for understanding and using the Strategy Editor in Leapwork to define, refine, and validate robust locator strategies for UI elements using DOM structure, tokens, and wildcards.",
+  "links": [
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    },
+    {
+      "title": "Strategy Editor",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/strategy-editor"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260112-102641.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f52bed2f203a17bf7f091cf7e34548e83cabf74bbb9f21a7839f44910795f68e/image-20260112-102641.png?cb=632bbd588b628e3762eb27c248e4c5ff"
+    }
+  ]
+}

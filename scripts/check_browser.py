@@ -1,0 +1,102 @@
+"""Exercise the local site without external services or a development server."""
+import json
+from pathlib import Path
+from playwright.sync_api import sync_playwright
+
+ROOT = Path(__file__).resolve().parents[1]
+QA = ROOT / 'research' / 'qa'
+QA.mkdir(parents=True, exist_ok=True)
+URL = (ROOT / 'site' / 'index.html').as_uri()
+results = []
+errors = []
+
+def check(name, condition):
+    assert condition, name
+    results.append(name)
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    context = browser.new_context(viewport={'width': 1440, 'height': 1050}, device_scale_factor=1)
+    page = context.new_page()
+    page.on('pageerror', lambda error: errors.append(str(error)))
+    page.goto(URL)
+    page.wait_for_selector('.lesson-card')
+    check('Fifteen module 1 lessons on home', page.locator('.lesson-card').count() == 15)
+    check('Desktop has no horizontal overflow', page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+    page.screenshot(path=str(QA / 'inicio-desktop.png'), full_page=True)
+    page.locator('#search').fill('conexão azul')
+    page.wait_for_selector('.search-result')
+    check('Accent-aware search returns results', page.locator('.search-result').count() > 0)
+    page.locator('#search').fill('<script>nao-existe</script>')
+    page.wait_for_selector('.empty-state')
+    check('Search safely displays input', page.locator('h1').inner_text().find('<script>') >= 0)
+    page.locator('#search').fill('')
+    page.wait_for_function("location.hash === '#buscar/'")
+    page.goto(URL + '#aula/primeiro-fluxo')
+    page.wait_for_selector('.step')
+    check('First lesson has seven steps', page.locator('.step').count() == 7)
+    page.locator('[data-image]').first.click()
+    check('Capture opens in a dialog', page.locator('#image-dialog').evaluate('(d) => d.open'))
+    page.wait_for_function("document.getElementById('large-image').naturalWidth > 0")
+    page.keyboard.press('Escape')
+    check('Escape closes capture', not page.locator('#image-dialog').evaluate('(d) => d.open'))
+    page.locator('#lesson-notes').fill('Nota de verificação: conector azul leva dados.')
+    page.reload()
+    check('Notes persist after reload', page.locator('#lesson-notes').input_value() == 'Nota de verificação: conector azul leva dados.')
+    page.locator('[data-complete]').click()
+    page.reload()
+    check('Completed status persists', page.locator('[data-complete]').get_attribute('aria-pressed') == 'true')
+    page.locator('input[name=q0][value="0"]').check()
+    page.locator('input[name=q1][value="1"]').check()
+    page.locator('.quiz-form button[type=submit]').click()
+    check('Quiz scores correct answers', '2 de 2' in page.locator('.quiz-feedback').inner_text())
+    page.locator('input[name=q0][value="1"]').check()
+    page.locator('.quiz-form button[type=submit]').click()
+    check('Quiz explains incorrect answers', '1 de 2' in page.locator('.quiz-feedback').inner_text() and page.locator('.quiz-result.incorrect').count() == 1)
+    with page.expect_download() as download_info:
+        page.locator('[data-export]').click()
+    download = download_info.value
+    download.save_as(str(QA / 'notes-export-test.txt'))
+    check('Notes export contains typed text', 'Nota de verificação' in (QA / 'notes-export-test.txt').read_text(encoding='utf-8'))
+    page.locator('[data-video="primeiro-fluxo"][data-time="290"]').click()
+    page.wait_for_function("document.getElementById('local-video').readyState >= 2", timeout=25000)
+    page.wait_for_function("document.getElementById('local-video').currentTime >= 289", timeout=10000)
+    check('Local video seeks to requested moment', page.locator('#local-video').evaluate('(v) => v.currentTime') >= 289)
+    check('Local video has dimensions', page.locator('#local-video').evaluate('(v) => v.videoWidth') == 1920)
+    page.locator('#close-video').click()
+    page.locator('#lesson-notes').fill('')
+    page.locator('[data-complete]').click()
+    slugs = page.evaluate('window.LEAP.lessons.map(l => l.slug)')
+    for slug in slugs:
+        page.goto(URL + '#aula/' + slug)
+        page.wait_for_selector('.quiz-form[data-lesson="' + slug + '"]')
+        for image in page.locator('.step img').all():
+            image.scroll_into_view_if_needed()
+            image.evaluate('(img) => img.decode()')
+        check('Lesson renders with valid images: ' + slug, page.locator('.step img').evaluate_all('(imgs) => imgs.every(i => i.naturalWidth > 0)'))
+        check('Lesson has no horizontal overflow: ' + slug, page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+    page.goto(URL + '#aula/primeiro-fluxo')
+    page.wait_for_selector('.step')
+    page.screenshot(path=str(QA / 'aula-desktop.png'), full_page=True)
+    for route in ['introducao','glossario','fontes','trilha','sobre']:
+        page.goto(URL + '#' + route)
+        page.wait_for_function("(title) => document.title.startsWith(title)", arg={'introducao':'Introdução','glossario':'Glossário','fontes':'Fontes','trilha':'Trilha','sobre':'Sobre'}[route])
+        check('Page renders: '+route, bool(page.locator('main h1').inner_text()))
+    page.set_viewport_size({'width':390,'height':844})
+    page.goto(URL + '#inicio')
+    page.wait_for_selector('.lesson-card')
+    page.wait_for_timeout(400)
+    check('Mobile has no horizontal overflow', page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+    check('Closed mobile navigation is not keyboard focusable', page.locator('#sidebar').evaluate('(s) => s.inert'))
+    page.screenshot(path=str(QA / 'inicio-mobile.png'), full_page=True)
+    page.locator('#menu-toggle').click()
+    check('Mobile navigation opens', page.locator('#menu-toggle').get_attribute('aria-expanded') == 'true')
+    page.locator('#navigation a[href="#aula/listas"]').click()
+    check('Mobile navigation closes after selection', page.locator('#menu-toggle').get_attribute('aria-expanded') == 'false')
+    page.wait_for_selector('.step')
+    check('Mobile lesson has no horizontal overflow', page.evaluate('document.documentElement.scrollWidth <= innerWidth'))
+    check('No JavaScript runtime errors', not errors)
+    (QA / 'browser-report.json').write_text(json.dumps({'passed':results,'errors':errors},ensure_ascii=False,indent=2),encoding='utf-8')
+    print(json.dumps({'passed':len(results),'errors':errors,'screenshots':str(QA)},ensure_ascii=False))
+    context.close()
+    browser.close()

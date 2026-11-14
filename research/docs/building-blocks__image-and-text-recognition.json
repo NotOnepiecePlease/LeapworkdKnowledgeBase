@@ -1,0 +1,29 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition",
+  "title": "Image and text recognition",
+  "retrievedAt": "2026-11-13T20:17:44.943330+00:00",
+  "text": "Breadcrumbs\nImage and Text Recognition building blocks are used to find images and text as well as get text and numbers from the screen.\nFinding images and text\nThe\nFind Image\nand\nFind Text\nblocks are used to find an image or text on screen that is known in advance.\nGetting text and numbers\nThe\nGet Text\nblock is used to get text from the screen that isn’t known in advance. Formatting and filtering rules can be applied so that for instance only text which is formatted as “\nStatus: [TEXT] today\n” and which starts with “\nGreen\n”. See the\nCapture text on screen\nlesson for an example of how this works.\nThe\nGet number\nblock is used to get numbers from the screen that isn’t known in advance. Formatting and filtering rules can be applied so that for instance only numbers which are formatted as “Price: [NUMBER] USD” and which are less than or equal to 1,500 are retrieved. See the\nUse Numbers and Variables\nvideo for examples of how this works.\nSelecting text\nThe\nSelect text\nblock is used to find and select text on screen using the mouse pointer. See the\nCapture text on screen\nlesson for an example of how this works",
+  "links": [
+    {
+      "title": "Find Image",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/find-image"
+    },
+    {
+      "title": "Find Text",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/find-text"
+    },
+    {
+      "title": "Capture text on screen",
+      "url": "https://www.youtube.com/watch?v=qGGNbk0UY-0"
+    },
+    {
+      "title": "Use Numbers and Variables",
+      "url": "https://www.leapwork.com/services/learning-center/use-numbers-and-variables"
+    },
+    {
+      "title": "Capture text on screen",
+      "url": "https://www.leapwork.com/learn/text-numbers-virtual-desktop-automation"
+    }
+  ],
+  "images": []
+}

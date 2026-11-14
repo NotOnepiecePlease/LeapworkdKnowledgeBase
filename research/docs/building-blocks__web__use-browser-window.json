@@ -1,0 +1,30 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/use-browser-window",
+  "title": "Use Browser Window",
+  "retrievedAt": "2026-11-13T20:21:26.169037+00:00",
+  "text": "Breadcrumbs\nThe\nUse Browser Window\nbuilding block switches focus to a specific\nweb browser window\nduring web automation. This block only works with browser windows opened using\nStart Web Browser\n. Multiple browser windows are not supported by\nSelenium Grid\nor external cloud providers such as\nSauce Labs\nand\nBrowserStack\n.\nFully expanded, the\nUse Browser Window\nblock shows the following properties:\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nUse Browser Window\nonto the canvas.\nConnect the block in the flow and specify\nGet window method\n,\nCondition\n, and\nText to find\n. Optionally add\nText fields\nfor dynamic values, and set\nUse occurred\nif more than one matching window may exist.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\n: The green input connector triggers the block to start executing. The green output connector triggers when the desired browser window has been found and focus has been set on it. You can rename the block by double-clicking the header text and typing a new title.\nGet window method\n: Selects how the block finds the desired browser window. After selecting a method, you must also set\nCondition\nand\nText to find\n.\nBy page title\n: Finds a window based on the loaded page’s title.\nBy page URL\n: Finds a window based on the loaded page’s URL.\nBy page content\n: Finds a window based on the loaded page’s content.\nCondition\n: Defines how the selected\nGet window method\nis matched against\nText to find\n.\nEquals\n: Requires an exact match.\nContains\n: Matches when the field contains the entered text.\nStarts with\n: Matches when the field starts with the entered text.\nText to find\n: The text used to find the desired window. This field can contain tokens from\nText fields\n. To insert tokens, right-click and select\nInsert token\n.\nText fields\n: Stores key–value pairs that can be inserted into\nText to find\nvia\nInsert token\n. Fields can be renamed by double-clicking them, and the corresponding tokens update automatically.\nAdd field\n: Adds a new field that can be used as a token in\nText to find\n.\nBrowser window\n: Outputs a handle to the browser window once it is found and focus is set. Use this handle to direct other web building blocks to operate on a specific window.\nNot found\n: Triggers if the browser window is not found before the timeout behavior completes. This is typically used to branch the flow or explicitly fail a case by linking it to a\nFail\nblock.\nUse occurred\n: Selects which occurrence to use if more than one browser window matches the criteria. Select\nAll\nto iterate through all occurrences; when\nAll\nis selected,\nCurrent index\nand\nCompleted\nare shown.\nCurrent index\n: Outputs the current index while iterating through all matching browser windows.\nCompleted\n: Triggers when iteration through all matching browser windows has completed.\nDefault timeout\n: Controls whether the block uses the default timeout from the flow settings or a custom timeout value.\nTimeout (sec)\n: Sets the maximum time spent finding and setting focus on the browser window before the block gives up and triggers\nNot found\n. This field is used when\nDefault timeout\nis not selected.\nNote:\nAll cases have a\nglobal timeout\nconfigured in the\nSettings\npanel. This is unrelated to the timeout of a single building block. However, a running case will automatically be cancelled if it runs for longer than the global timeout.\nResources\nTopic\nDescription\nFlows FAQ\nCommon questions about creating, running, and managing flows in Leapwork.\nFlows Troubleshooting\nGuidelines and solutions for identifying and fixing issues that occur when building or running flows in Leapwork.",
+  "links": [
+    {
+      "title": "Sauce Labs",
+      "url": "https://saucelabs.com/"
+    },
+    {
+      "title": "BrowserStack",
+      "url": "https://browserstack.com/"
+    },
+    {
+      "title": "Flows FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/flows-faq"
+    },
+    {
+      "title": "Flows Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/flows-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260203-142404.png",
+      "url": "https://docs.leapwork.com/__attachments/a_48a567cc971b58b5d78a40863214620c828f5621365d66d17a62e3388de9a77e/image-20260203-142404.png?cb=1f276fda8252f0bb702221fbb9473ec6"
+    }
+  ]
+}

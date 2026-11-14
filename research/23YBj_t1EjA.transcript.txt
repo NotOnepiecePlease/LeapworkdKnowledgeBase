@@ -1,0 +1,352 @@
+00:00:04.390 [Music]
+00:00:04.400 With each video, you're building a
+00:00:06.160 deeper understanding of desktop UI
+00:00:08.240 automation. This sixth step brings you
+00:00:10.800 closer to transforming how you automate
+00:00:12.800 every day. Hope you're understanding and
+00:00:15.759 following the journey through these
+00:00:17.039 videos on desktop UI automation.
+00:00:20.400 We welcome you to video 6 of our desktop
+00:00:22.960 UI automation series. In the previous
+00:00:25.760 video, we learned and explored how to
+00:00:28.000 work with dynamic fields in strategy
+00:00:29.840 editor to search and verify data within
+00:00:32.640 the demo desktop application.
+00:00:47.510 We learned how to add tokens and pass
+00:00:47.520 the values to dynamic fields in just
+00:00:49.600 quick and few steps. If you'd like to
+00:00:52.320 check the video again, please check the
+00:00:54.160 link in the description. In this
+00:00:56.399 tutorial, we'll cover creating an
+00:00:58.160 automation flow across three different
+00:01:00.480 applications on various technologies.
+00:01:03.199 Yes, we will learn how to automate the
+00:01:05.360 process of interaction between the three
+00:01:07.439 different platforms. How this is useful?
+00:01:10.880 See, automation across the multiple
+00:01:12.960 platforms is key to streamlining
+00:01:15.200 business operations and improving
+00:01:17.119 efficiency. Now whether you're working
+00:01:19.200 on CRM management, email processing, or
+00:01:22.240 web interaction, learning crossplatforms
+00:01:24.640 automation will enable you to create
+00:01:26.479 end-to-end workflows relevant across
+00:01:28.720 industries like customer support, sales,
+00:01:31.040 marketing, and IT services. Now that
+00:01:33.119 we've understood the scope, let's jump
+00:01:35.119 into the steps to make our automation
+00:01:36.880 flow for crossplatforms automation. The
+00:01:40.079 three applications that we'll use will
+00:01:41.840 be demo desktop application, web
+00:01:44.240 browser, and outlook for verifying
+00:01:46.079 received mail. Before we proceed, let's
+00:01:49.040 understand the scenario overview that we
+00:01:50.799 will be following in today's tutorial.
+00:01:52.960 At first, we will create a new lead and
+00:01:54.880 search by first name. Then we will click
+00:01:57.520 on the email ID and send a mail with the
+00:01:59.840 subject. Let's say demo mail one. After
+00:02:03.360 this, we will open a browser, log in
+00:02:06.000 with the mail credentials, and confirm
+00:02:08.399 if the email was received by matching
+00:02:10.160 the subject. At the end, we will run the
+00:02:13.360 flow to check if the automation flow is
+00:02:15.440 executing as per expected scenario. This
+00:02:18.560 flow will help you learn how to automate
+00:02:20.400 processes seamlessly across different
+00:02:22.319 platforms combining desktop
+00:02:24.239 applications, email clients, and web
+00:02:26.560 browsers. Let's proceed to create our
+00:02:29.200 flow.
+00:02:30.800 You can see the flow here. With this
+00:02:33.680 flow, we are creating a lead within the
+00:02:35.599 demo desktop application and searching
+00:02:38.239 its details with the help of first name
+00:02:40.160 in search box. Let me run this flow.
+00:02:51.509 In the previous videos, you might
+00:02:51.519 remember that we filled only the
+00:02:52.959 mandatory fields in the form like last
+00:02:55.120 name, first name, and email ID while
+00:02:57.840 creating a new lead. On searching with
+00:02:59.840 firstn name Leapwork, we got the
+00:03:01.680 matching results.
+00:03:04.720 Yes, you can see we have got the details
+00:03:06.560 here. The next step is to click on the
+00:03:08.879 mail.
+00:03:10.800 Let me adjust the flow a little bit so
+00:03:12.560 that it's clearly visible to you.
+00:03:19.110 With the help of start recorder feature,
+00:03:19.120 start the recording tool.
+00:03:29.509 Now capture email.
+00:03:29.519 Select click UI element.
+00:03:32.080 Click type is left. Click on apply
+00:03:34.080 button.
+00:03:35.760 Close and save the recording.
+00:03:44.949 Now let's run the flow only from this
+00:03:44.959 block.
+00:03:47.840 This is to check which window is opening
+00:03:49.840 after click on mail.
+00:04:07.429 We can see the new mail is opened with
+00:04:07.439 the desired mail over here. We now have
+00:04:10.159 this email window opened. Now, as per
+00:04:12.480 the scenario, the next step is to write
+00:04:14.640 subject and send the mail. To do it,
+00:04:17.519 let's add set UI element block in our
+00:04:33.749 Capture subject area to write text.
+00:04:33.759 You could also capture subject area
+00:04:35.520 through start recorder feature as we
+00:04:37.199 learned in previous lessons.
+00:04:44.710 In text value, let's write the subject
+00:04:44.720 as let's say demo mail one.
+00:04:52.390 Now let's run the automation flow from
+00:04:52.400 this block to set or write subject in
+00:04:54.560 subject area.
+00:05:00.950 And yes in the automation execution we
+00:05:00.960 can see the mail is clicked and the
+00:05:02.639 subject is typed.
+00:05:05.840 After this to send the mail the next
+00:05:08.000 step is to capture send button with the
+00:05:10.240 help of recording tool. Let's do it.
+00:05:14.479 Capture send button.
+00:05:25.749 Select click UI element block. The click
+00:05:25.759 type is left. Click on apply button.
+00:05:29.280 Now close and save the recording.
+00:05:36.550 to send the mail. Let's run the flow
+00:05:36.560 from here
+00:05:52.070 and yes we can see mail is sent. The
+00:05:52.080 next step is to verify that the mail is
+00:05:54.160 received or not. You must be observing
+00:05:57.199 that windows are changing. At first we
+00:05:59.840 created lead on desktop application.
+00:06:02.320 That was our first window. Then we
+00:06:04.800 opened the mailing window. It was
+00:06:06.400 second. Now to verify mail received, the
+00:06:09.680 next platform that we have to open is
+00:06:11.520 web browser. That's gmail.com.
+00:06:14.960 This means now we will be using web
+00:06:17.120 automation building blocks to create the
+00:06:18.880 further flow. This is how super easy it
+00:06:21.919 is to automate processes between
+00:06:23.680 different applications with leapwork and
+00:06:25.919 enhance the way you test your
+00:06:27.280 application's functionalities. Let's
+00:06:29.360 edit the flow.
+00:06:36.070 Let me adjust the position of the flow.
+00:06:36.080 Hope it is clear to you.
+00:06:43.350 Now to open Gmail connect start web
+00:06:43.360 browser block.
+00:07:08.550 with this URL. Our web browser will be
+00:07:08.560 launched.
+00:07:13.670 Let's run this block to open web
+00:07:13.680 browser.
+00:07:22.150 Yes, it's opened.
+00:07:22.160 If we check the activity log,
+00:07:30.230 we can see the success message that the
+00:07:30.240 Chrome browser is successfully started.
+00:07:37.510 The next step is to enter login details.
+00:07:37.520 Let's move to our flow. Start the
+00:07:39.759 recording tool. Since now we are
+00:07:41.599 switching to web window, see smart
+00:07:43.280 recorder will function same way in both
+00:07:45.120 web and desktop elements. It will
+00:07:47.280 automatically identify the element being
+00:07:49.120 captured. Capture email field.
+00:07:57.670 Select type web text. In text value,
+00:07:57.680 enter email id.
+00:08:08.150 Yes, correct. The click type is left.
+00:08:08.160 Click on apply button.
+00:08:11.680 You can see the email is typed.
+00:08:14.639 After this capture next button,
+00:08:23.670 select click web element.
+00:08:23.680 Click type will be left. Click on apply
+00:08:44.870 Select type web text.
+00:08:44.880 Since we are typing password, change the
+00:08:47.519 type to password.
+00:08:50.320 Enter the password.
+00:09:02.880 You can see the password is typed
+00:09:04.560 successfully.
+00:09:06.640 Now capture next button.
+00:09:15.269 Select click web element.
+00:09:15.279 The click type is left. Click on apply
+00:09:26.550 We can see the mail is opening.
+00:09:26.560 And yeah, we have received the mail with
+00:09:28.800 the subject demo mail one.
+00:09:32.399 The next step is to verify the subject.
+00:09:35.200 To do it, let's capture the subject
+00:09:36.800 here.
+00:09:49.030 Now save and close the recording.
+00:09:49.040 Moreover, to retrieve the text found
+00:09:50.880 from find UI element block, you can also
+00:09:53.519 add get web text block after find UI
+00:09:56.080 element block. Let me adjust the flow to
+00:09:58.880 ensure a clear view to you. Yes. Now
+00:10:02.240 see, we want the subject to be found
+00:10:04.399 based on what we had written while
+00:10:05.680 sending the mail. Let's make it dynamic.
+00:10:07.920 To do that, click on captured element.
+00:10:10.399 Click on edit element. Here's the
+00:10:12.800 strategy editor. If we select this
+00:10:15.200 strategy, yes, this one, we can see it's
+00:10:17.839 searching the exact subject demo mail
+00:10:19.760 one
+00:10:21.440 to make it dynamic. Let's update the
+00:10:23.600 condition from here.
+00:10:26.079 Remove the subject and add token over
+00:10:28.000 here. By adding the token, we're
+00:10:30.480 actually creating a dynamic field that
+00:10:32.160 can accept any input for the subject.
+00:10:34.399 Click on save button.
+00:10:37.839 Our strategy editor to find the subject
+00:10:39.760 is ready.
+00:10:42.000 Now connect text value from set UI
+00:10:44.399 element block to this dynamic field with
+00:10:46.560 the help of blue connector
+00:10:54.230 text value property is connected to
+00:10:54.240 field one. Now this will make sure that
+00:10:56.640 find UI element will search for the
+00:10:58.560 subject based on the input. You can
+00:11:00.720 anytime adjust your block so that you
+00:11:02.560 can see each connection carefully. To
+00:11:04.560 complete the flow, connect pass block.
+00:11:07.839 Yes, here it is.
+00:11:10.399 Now let's run the flow.
+00:11:20.310 Let's observe the execution of
+00:11:20.320 automation flow.
+00:12:04.310 And yes, We can see the mail has been
+00:12:04.320 received with the subject demo mail one
+00:12:06.800 and our flow is successfully passed.
+00:12:10.959 This is how easy it is to automate the
+00:12:12.959 processes between different applications
+00:12:15.279 and save your time in manual processes.
+00:12:19.120 If you want to check the recording of
+00:12:20.560 the flow, you can check it from here any
+00:12:22.639 time. I would suggest to you try
+00:12:24.639 creating the flow at your end and check
+00:12:26.399 the recording. In today's tutorial, we
+00:12:29.440 simply created a lead in demo desktop
+00:12:31.360 application, sent the mail with the
+00:12:33.279 subject, then we checked the mail
+00:12:34.959 received and verified it by finding the
+00:12:36.800 subject content. We modified the
+00:12:39.360 strategy to search subject name based on
+00:12:41.440 the input subject. Now, since we worked
+00:12:44.000 with the different platforms in this
+00:12:45.519 tutorial, let's learn some of the best
+00:12:47.600 practices which we can do to make our
+00:12:49.279 automation flow more stable. Yes, we are
+00:12:52.720 going to talk about use UI window block
+00:12:54.880 and use browser window blocks in
+00:12:56.560 leapwork. The use UI window and use
+00:12:59.839 browser window blocks solve common
+00:13:01.920 problems that occur when automating
+00:13:03.519 tasks across multiple applications or
+00:13:05.760 platforms. Without these blocks,
+00:13:08.399 leapwork might interact with the wrong
+00:13:10.160 window. Use UI window ensures that your
+00:13:13.839 automation targets the correct desktop
+00:13:15.920 app like Outlook or demo desktop app,
+00:13:19.120 preventing actions from happening in the
+00:13:21.040 wrong application. Use browser window
+00:13:24.000 focuses on a specific browser tab,
+00:13:26.399 making sure your flow interacts only
+00:13:28.240 with the web page you want instead of
+00:13:30.399 other open tabs or windows. Now, how
+00:13:33.360 will you know when to use these blocks?
+00:13:36.000 you'll know when to use these blocks
+00:13:37.760 whenever you're switching between
+00:13:39.120 desktop and web-based applications or
+00:13:41.600 when your automation involves multiple
+00:13:43.279 open windows. So, these blocks prevent
+00:13:46.240 errors and make your automation flow
+00:13:48.240 more stable. Let's get back to our
+00:13:49.920 automation flow and let me demonstrate
+00:13:52.160 how can you use these blocks and how
+00:13:53.839 will they function. Let me adjust the
+00:13:56.160 blocks to give you a better view.
+00:14:04.069 Now if you look at click UI element
+00:14:04.079 block which clicked on the email and the
+00:14:06.079 mail window was opened to make sure
+00:14:08.800 leapwork is focused only within the
+00:14:10.560 mailing window to proceed next actions
+00:14:12.399 in same space. Let's add use UI window
+00:14:17.680 Delete this connector and add use UI
+00:14:20.160 window block in between.
+00:14:42.949 Now with the help of capture button,
+00:14:42.959 let's capture the area which you want.
+00:14:44.720 Use UI window to select and interact
+00:14:47.120 during the automation.
+00:14:50.480 Yes, capture this mailing window.
+00:14:54.560 This will make sure that leapwork focus
+00:14:56.240 on mailing window and not any other
+00:14:58.399 apps. Yes. So this is how you can add
+00:15:00.800 use UI window at the stage where you
+00:15:03.120 want to set up leapwork focus during
+00:15:05.040 automation.
+00:15:07.199 Now let me show how can you add use
+00:15:09.279 browser window block. Now let me adjust
+00:15:12.079 the blocks little again.
+00:15:19.670 You can see the click web element block
+00:15:19.680 which clicked the next button after all
+00:15:21.519 login details were entered at the time
+00:15:23.519 when we were opening Gmail to check the
+00:15:25.440 received mail.
+00:15:28.639 Now to make sure that leapwork focuses
+00:15:31.040 only on the web browser window to
+00:15:33.199 proceed next actions. Let's add use
+00:15:35.680 browser window block.
+00:15:38.240 Delete this connector and add use
+00:15:40.000 browser window block here.
+00:15:52.069 Now use browser window block is placed
+00:15:52.079 in between click web element and find
+00:15:54.160 web element blocks. If you open this
+00:15:56.560 drop-down of get window method, we can
+00:15:58.800 see the three options by page title, by
+00:16:01.600 page URL and by page content. This means
+00:16:05.040 you can select the method to interact
+00:16:06.800 with. Let's select by page title and in
+00:16:10.880 text to find field enter page title of
+00:16:13.839 web browser that's Gmail. This block
+00:16:16.639 will find the web window with the help
+00:16:18.399 of page title Gmail. You must have
+00:16:21.199 observed that in the previous flow the
+00:16:23.360 automation flow executed. Although we
+00:16:26.000 hadn't used these blocks that's why it's
+00:16:28.240 called the best practice because using
+00:16:29.920 this your automation flow will be more
+00:16:32.160 stable and more efficient. It will be
+00:16:34.160 ensured that leapwork is interacting
+00:16:35.839 with the right window at the right time
+00:16:37.920 avoiding all errors. Now let me run the
+00:16:40.959 flow again and show you how these blocks
+00:16:43.120 are functioning during automation.
+00:16:49.430 The automation is started. Let's observe
+00:16:49.440 it.
+00:17:45.830 And yes, we can see our flow is
+00:17:45.840 successfully passed.
+00:17:51.590 In the recording panel, we can see the
+00:17:51.600 demo mail one subject is successfully
+00:17:53.679 found that we had set as the
+00:17:55.280 verification indicator for received
+00:17:56.960 mail. Now if we check the activity log
+00:18:05.590 we can see the use UI window is
+00:18:05.600 successfully executed.
+00:18:08.720 Similarly
+00:18:20.390 we can see the successful execution of
+00:18:20.400 use browser window here.
+00:18:33.029 This is how you can work with use UI
+00:18:33.039 window and use browser window to build
+00:18:35.520 leapwork focus on exact windows during
+00:18:37.600 the automation flow which you want your
+00:18:39.520 automation flow to interact with or we
+00:18:41.840 can say perform actions and achieve
+00:18:44.400 efficient results. This was all about
+00:18:46.480 the today's tutorial. Stay tuned for
+00:18:48.720 more interesting videos in this series
+00:18:50.880 where we will bring more concepts and
+00:18:52.960 help you master desktop UI automation
+00:18:55.280 with ease. For any doubts and queries,
+00:18:57.679 feel free to contact us through Leapwork
+00:18:59.840 support or connect via live chat. Thank
+00:19:03.600 you for watching and remember with every
+00:19:05.840 click brings you close to innovation
+00:19:08.000 turning complexity into simplicity.
