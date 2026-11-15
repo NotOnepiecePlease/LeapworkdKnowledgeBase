@@ -1,0 +1,1466 @@
+{
+  "version": "v1.3.1",
+  "reviewedAgainst": "f98ac41 (v1.3.0 preparada)",
+  "criteria": [
+    "A imagem deve mostrar o objeto, campo, ação ou evidência pedido no próprio passo.",
+    "Estar no mesmo artigo ou assunto não basta.",
+    "Uma legenda não torna pertinente uma imagem de outra operação.",
+    "Configuração visível, valores e versão devem corresponder ao texto; divergências exigem correção ou remoção.",
+    "Exercício autoral não é execução comprovada."
+  ],
+  "figures": [
+    {
+      "lesson": "dados-ler-excel",
+      "step": 1,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/read-excel",
+      "caption": "Read Excel em Local path: Path to file aponta para o arquivo acessível ao Agent. A figura principal mostra a alternativa Data File.",
+      "sourceImageIndex": 2,
+      "reviewReason": "Substitui Cloud file por Local path, opção que o passo efetivamente ensina."
+    },
+    {
+      "lesson": "dados-escrever-excel",
+      "step": 1,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/write-excel",
+      "caption": "Select Range do Write Excel: seleção da planilha, colunas e linhas. Row index e Append são configurados no bloco, fora desta janela.",
+      "sourceImageIndex": 3,
+      "reviewReason": "A imagem demonstra definir intervalo; foi movida do método de escrita para o passo que define o intervalo."
+    },
+    {
+      "lesson": "dados-decisoes",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/switch",
+      "caption": "Exemplo oficial de casos do Switch. O caminho sem correspondência precisa ser previsto pelo caso.",
+      "sourceImageIndex": 1,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "dados-csharp",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/c-sharp-code",
+      "caption": "System Assemblies na referência de C# 2026.1. Escolha bibliotecas compatíveis com o runtime da instalação; consulte as notas de versão antes de reutilizar dependências.",
+      "sourceImageIndex": 4,
+      "reviewReason": "Substitui a lista de referências com avisos pela janela System Assemblies que o texto descreve."
+    },
+    {
+      "lesson": "controle-acessos",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/privileges-settings",
+      "caption": "Privileges Settings reúne opções que alteram o acesso efetivo dos papéis; confira a configuração atual.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-acessos",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/team-management",
+      "caption": "Formulário de criação de equipe e seleção dos integrantes. A disponibilidade depende da edição.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-acessos",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/user-management",
+      "caption": "Opções de identidade na entrada do Flow: conta Leapwork, diretório ou SSO conforme a configuração. Esta figura vem de User Management.",
+      "sourceImageIndex": 10,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-acessos",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/user-management",
+      "caption": "Acesso a Add AD/SSO User na documentação de User Management. A identidade externa depende da configuração de diretório ou SSO.",
+      "sourceImageIndex": 1,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-acessos",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/emergency-admin-user",
+      "caption": "Validação da senha de Emergency Admin User na documentação. A mensagem mostra requisitos de complexidade; é uma parte do procedimento de recuperação descrito na fonte.",
+      "sourceImageIndex": 3,
+      "reviewReason": "Delimita o conteúdo visível: política de senha, sem apresentar a tela como o procedimento inteiro de recuperação."
+    },
+    {
+      "lesson": "controle-conexoes",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/api-access-keys",
+      "caption": "Criação de uma chave de API com finalidade e escopo. A imagem é um exemplo oficial; não registre segredos reais nas notas.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-conexoes",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/e-mail-settings",
+      "caption": "Seleção do protocolo de e-mail na fonte. SMTP e OAuth têm requisitos e comportamentos de teste próprios.",
+      "sourceImageIndex": 1,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-conexoes",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/proxy-settings",
+      "caption": "Proxy Settings: configuração separada para Controller e Flow quando necessário. Confira o contexto de rede que enviará a notificação.",
+      "sourceImageIndex": 0,
+      "reviewReason": "Move a configuração de proxy para o passo que prepara e-mail e proxy; não representa um teste de entrega."
+    },
+    {
+      "lesson": "controle-retencao",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/retention-policies",
+      "caption": "Scheduled runs: quantidade de execuções a preservar e opção de remover vídeos de sucesso após uma hora. Consulte Preview Runs e as políticas globais separadamente.",
+      "sourceImageIndex": 1,
+      "reviewReason": "A legenda agora descreve apenas a seção Scheduled runs visível na imagem."
+    },
+    {
+      "lesson": "controle-retencao",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/database-decryption-keys",
+      "caption": "Acesso à opção de chave do banco pelo Controller. O procedimento da fonte trata a recuperação dos dados SQLite.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-retencao",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/database-management",
+      "caption": "Database Management oferece correções específicas de sub-flows. Esses controles não representam um backup integral.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-padroes",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-capture-settings",
+      "caption": "Capture Settings apresenta limites e comportamento da inspeção. Esses limites são diferentes do tempo de execução de um fluxo.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-padroes",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-web-settings",
+      "caption": "Web Settings com configuração de estratégias Salesforce. A tela é específica do recurso documentado.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-agentes",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/agents-overview",
+      "caption": "Propriedades de Remote Agent, incluindo autenticação e sessão. Confira os valores do ambiente de homologação.",
+      "sourceImageIndex": 3,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-runlists",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+      "caption": "Add flows: escolha dos fluxos que entrarão no passo da Run List e botão Add.",
+      "sourceImageIndex": 13,
+      "reviewReason": "Substitui a imagem do botão por sua janela de seleção, correspondente à conferência dos fluxos."
+    },
+    {
+      "lesson": "controle-runlists",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+      "caption": "Passo da Run List na interface oficial. As condições controlam se o trabalho seguinte deve executar.",
+      "sourceImageIndex": 11,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-runlists",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+      "caption": "A árvore mostra uma Run List original e sua cópia D365 - Copy. A preservação das referências e a desativação dos agendamentos copiados são comportamentos descritos no texto da fonte.",
+      "sourceImageIndex": 4,
+      "reviewReason": "A imagem mostra a cópia da lista; não exibe os agendamentos nem demonstra isolamento dos fluxos."
+    },
+    {
+      "lesson": "controle-repeticoes",
+      "step": 1,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+      "caption": "Opções de Retry Policy. Desativar, herdar e personalizar são escolhas distintas.",
+      "sourceImageIndex": 16,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-repeticoes",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+      "caption": "Detalhes de um run em Reporting, com vídeo, canvas e Activity log. Para comparar tentativas, abra as execuções correspondentes e preserve seus identificadores.",
+      "sourceImageIndex": 6,
+      "reviewReason": "Evita sugerir que a captura única já contém o histórico de todas as tentativas."
+    },
+    {
+      "lesson": "controle-agendamentos",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists/schedules",
+      "caption": "Ações do Schedule e condições de disparo de notificações. Configuração e recebimento precisam de verificação própria.",
+      "sourceImageIndex": 5,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-relatorios",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+      "caption": "Filtros do relatório restringem a população a investigar; confira lista e Schedule correspondentes.",
+      "sourceImageIndex": 4,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-relatorios",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+      "caption": "Vídeo, canvas e Activity log nos detalhes de um run. A imagem pertence ao exemplo da documentação.",
+      "sourceImageIndex": 6,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-dashboards",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/dashboards",
+      "caption": "Criação de widget com tipo, período e parâmetros. Defina a pergunta antes de escolher o gráfico.",
+      "sourceImageIndex": 1,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-dashboards",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/dashboards",
+      "caption": "Filtro por Agents do widget. O indicador representa apenas os ambientes selecionados.",
+      "sourceImageIndex": 4,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-dashboards",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/dashboards",
+      "caption": "Filtro por Run Lists e Schedules do widget. Registre esse recorte ao comparar períodos.",
+      "sourceImageIndex": 5,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-auditoria",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/diagnostics",
+      "caption": "Diagnostics reúne seleção de componentes, pacote e resultados da coleta. A evidência precisa corresponder ao ambiente investigado.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-historico",
+      "step": 1,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/workflow-stettings",
+      "caption": "Workflow Settings mostra as opções de exigência de comentário. Na captura, Never está selecionado; confira a política real antes de salvar mudanças.",
+      "sourceImageIndex": 3,
+      "reviewReason": "Distingue as opções disponíveis da política escolhida no exemplo oficial."
+    },
+    {
+      "lesson": "controle-historico",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows",
+      "caption": "Version History lista versões, data, usuário, estado e comentário. Use essa lista para localizar a versão a inspecionar.",
+      "sourceImageIndex": 14,
+      "reviewReason": "Move a tabela para a abertura do histórico e substitui o canvas que não mostrava Version History."
+    },
+    {
+      "lesson": "controle-restauracao",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+      "caption": "Reporting permite consultar vídeo, canvas e Activity log da execução. Após a restauração, abra o novo run de homologação e confira essas evidências.",
+      "sourceImageIndex": 6,
+      "reviewReason": "Explicita que é a tela de evidência posterior, não a tela de restauração."
+    },
+    {
+      "lesson": "controle-compartilhamento",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/organizing-your-work",
+      "caption": "Exemplo de fluxo com seus ativos na árvore. Inventarie arquivos e componentes antes da transferência.",
+      "sourceImageIndex": 5,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "controle-compartilhamento",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+      "caption": "Importação de Run List e tratamento de conflitos. Confira o que será criado ou atualizado no destino.",
+      "sourceImageIndex": 8,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-organizacao",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/organizing-your-work",
+      "caption": "Organização de ativos sob o fluxo na referência oficial. A estrutura deve tornar as dependências visíveis.",
+      "sourceImageIndex": 5,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-estabilidade",
+      "step": 1,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/find-web-element",
+      "caption": "Find Web Element e suas propriedades. Identifique o alvo correto, em vez de aceitar qualquer elemento parecido.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-estabilidade",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/wait",
+      "caption": "Wait configura uma pausa de tempo. Esse bloco sozinho não comprova que uma confirmação apareceu.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-estabilidade",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/get-web-text",
+      "caption": "Get Web Text fornece o texto do elemento identificado. Relacione o retorno ao registro atual.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-estabilidade",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/compare",
+      "caption": "Compare dirige os caminhos pelo resultado da comparação. Confira valores e método conforme a regra do caso.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-dados",
+      "step": 1,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/read-excel",
+      "caption": "Read Excel em Local path, com Path to file. O arquivo e as permissões precisam corresponder ao Agent que executará o caso.",
+      "sourceImageIndex": 2,
+      "reviewReason": "Troca o exemplo de nuvem pela origem local citada no passo."
+    },
+    {
+      "lesson": "ciclo-revisao",
+      "step": 1,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows",
+      "caption": "Comentário de uma versão na interface documentada. Descreva intenção e evidência, não apenas que algo foi ajustado.",
+      "sourceImageIndex": 13,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-integracoes",
+      "step": 1,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview",
+      "caption": "Arquitetura oficial com Flow, Controller e Agent. O disparo externo deve preservar o contexto da execução coordenada pelo Controller.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-integracoes",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists/schedules",
+      "caption": "Formulário de Schedule com Run List, Trigger, Agents, Variables e Actions. Confira se essa configuração é a que a integração acionará.",
+      "sourceImageIndex": 2,
+      "reviewReason": "Substitui Flow sequence pelo formulário que mostra os itens pedidos no texto."
+    },
+    {
+      "lesson": "ciclo-api-acesso",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/api-access-keys",
+      "caption": "Configuração administrativa de AccessKey e escopos. O laboratório do caderno usa somente um marcador de segredo.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-api-resultados",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+      "caption": "Detalhes do resultado no relatório. Relacione o item da API à execução e à evidência corretas.",
+      "sourceImageIndex": 6,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-ado",
+      "step": 1,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/azure-devops-ado-server-connections",
+      "caption": "Configuração da conexão ADO na fonte. O PAT externo e AccessKey do Controller atendem a serviços diferentes.",
+      "sourceImageIndex": 2,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-ado",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/microsoft-ado-test-plan-integration",
+      "caption": "Seleção do projeto na sincronização ADO. A entrada de novos casos e a atualização dos existentes têm procedimentos distintos.",
+      "sourceImageIndex": 5,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-ado",
+      "step": 4,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/microsoft-ado-test-plan-integration",
+      "caption": "Resumo de um test run no ADO apresentado na fonte. Confira caso, configuração e resultado no destino.",
+      "sourceImageIndex": 14,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-primeira-execucao",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+      "caption": "Fluxos adicionados a um passo da Run List no exemplo oficial. Confira a correspondência com a matriz planejada.",
+      "sourceImageIndex": 14,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-primeira-execucao",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists/schedules",
+      "caption": "Formulário de Schedule. O exemplo oficial ilustra a configuração; não é uma execução dos dez casos fictícios.",
+      "sourceImageIndex": 2,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-triagem",
+      "step": 1,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+      "caption": "A investigação parte dos detalhes da execução e cruza log, canvas e gravação disponível.",
+      "sourceImageIndex": 6,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-triagem",
+      "step": 2,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/audit-log",
+      "caption": "Registro de eventos administrativos. Mudanças próximas ao horário da falha são pistas, não prova automática de causa.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-triagem",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/microsoft-ado-test-plan-integration",
+      "caption": "Formulário de bug ADO na documentação. Um relato útil registra contexto, reprodução, esperado, observado e evidência.",
+      "sourceImageIndex": 17,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "ciclo-encerramento",
+      "step": 3,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/administration/retention-policies",
+      "caption": "Políticas de retenção definem a disponibilidade de resultados, versões e gravações para a revisão posterior.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "@introducao",
+      "step": 0,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview",
+      "caption": "Comunicação entre Flow, Controller e Agent no diagrama oficial. O Flow também se comunica com Agents durante desenho e prévia.",
+      "sourceImageIndex": 0,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "@introducao",
+      "step": 0,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview",
+      "caption": "Diagrama de implantação apresentado na fonte. Compare a localização dos componentes com o modelo contratado.",
+      "sourceImageIndex": 1,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "@introducao",
+      "step": 0,
+      "kind": "documentation",
+      "source": "https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview",
+      "caption": "Implantação híbrida no exemplo oficial. As capacidades de execução dependem do tipo de Agent selecionado.",
+      "sourceImageIndex": 3,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "mobile",
+      "step": 6,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=aGduKxCIZAk&t=306s",
+      "caption": "Fluxo de pesquisa Web com perfil móvel e comparação do total no vídeo. A configuração de Device type é feita em Start Web Browser.",
+      "time": 306,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "desktop-introducao",
+      "step": 5,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=-51LTRplY48&t=522s",
+      "caption": "Execução do login Desktop e Activity Log, incluindo a localização da confirmação Logged in as Test.",
+      "time": 522,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "desktop-contatos",
+      "step": 2,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=TXWo3qK9Oy8&t=260s",
+      "caption": "Diálogo para nomear o sub-flow extraído dos blocos de cadastro do contato.",
+      "time": 260,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "virtual-textos",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=qGGNbk0UY-0&t=205s",
+      "caption": "Bloco Get Text e seu comando de captura de Area para recortar a região de OCR.",
+      "time": 205,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "virtual-teclado",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=akmkQk8sc40&t=145s",
+      "caption": "Bloco Type Text com Happy Automation configurado no exemplo de teclado.",
+      "time": 145,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "dom-avancado",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=lsGjkso3Rbg&t=94s",
+      "caption": "Página Challenging DOM e a célula de referência antes da edição das estratégias de localização.",
+      "time": 94,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "checkboxes",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=lb78WgJ0-wo&t=63s",
+      "caption": "Página Checkboxes com os dois controles que serão configurados com Set Web Checkbox.",
+      "time": 63,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "arrastar-soltar",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=suIDRArjQEk&t=105s",
+      "caption": "Start Web Browser configurado para a página drag_and_drop que inicia a demonstração.",
+      "time": 105,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "dropdowns-avancados",
+      "step": 3,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=r8IH1LYegOo&t=189s",
+      "caption": "Set Web Dropdown em 3:09: Action = Set by text, Filter = Equals e Value = Option 2, antes de executar.",
+      "time": 189,
+      "reviewReason": "O quadro de 3:03 ainda mostrava Value = 1. O de 3:09 contém Option 2 e corresponde ao passo."
+    },
+    {
+      "lesson": "conteudo-dinamico",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=gERnZ6rN1VQ&t=66s",
+      "caption": "Primeira linha da página Dynamic Content e sua imagem, antes do ajuste da estratégia.",
+      "time": 66,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "upload-arquivo",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=bM5smmLOsBs&t=92s",
+      "caption": "Controle Choose File na página File Uploader. O quadro é da página, antes da etapa de digitar o caminho no diálogo nativo.",
+      "time": 92,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "redirecionamento",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=I_BUzm8rJ0I&t=61s",
+      "caption": "Página Redirector e link here que leva ao exemplo de códigos de status.",
+      "time": 61,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "lista-deslocada",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=X9Em1PtM9XU&t=62s",
+      "caption": "Região de conteúdo da página Shifting Content: List a ser capturada.",
+      "time": 62,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "variacoes-texto",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=lBcRNry3bo8&t=65s",
+      "caption": "Parágrafo da página Typos usado como referência de região, antes de retirar o texto variável da estratégia.",
+      "time": 65,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    },
+    {
+      "lesson": "dados-fundamentos",
+      "step": 1,
+      "kind": "frame",
+      "source": "https://www.youtube.com/watch?v=V5r-Fovn_vs&t=5s",
+      "caption": "Fluxo de cadastro existente, antes de ligar os valores dos campos às colunas de uma planilha.",
+      "time": 5,
+      "reviewReason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo."
+    }
+  ],
+  "decisions": [
+    {
+      "originalIndex": 0,
+      "lesson": "dados-ler-excel",
+      "step": 1,
+      "previousPath": "assets/supplements/a86cb8efde1897f5.png",
+      "action": "replace",
+      "reason": "Substitui Cloud file por Local path, opção que o passo efetivamente ensina.",
+      "targetStep": 1,
+      "caption": "Read Excel em Local path: Path to file aponta para o arquivo acessível ao Agent. A figura principal mostra a alternativa Data File."
+    },
+    {
+      "originalIndex": 1,
+      "lesson": "dados-escrever-excel",
+      "step": 2,
+      "previousPath": "assets/supplements/163c6d3bf54eca50.png",
+      "action": "move",
+      "reason": "A imagem demonstra definir intervalo; foi movida do método de escrita para o passo que define o intervalo.",
+      "targetStep": 1,
+      "caption": "Select Range do Write Excel: seleção da planilha, colunas e linhas. Row index e Append são configurados no bloco, fora desta janela."
+    },
+    {
+      "originalIndex": 2,
+      "lesson": "dados-decisoes",
+      "step": 3,
+      "previousPath": "assets/supplements/e86dcfbca719eee4.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Exemplo oficial de casos do Switch. O caminho sem correspondência precisa ser previsto pelo caso."
+    },
+    {
+      "originalIndex": 3,
+      "lesson": "dados-csharp",
+      "step": 2,
+      "previousPath": "assets/supplements/e5423fdbf243d55f.png",
+      "action": "remove",
+      "reason": "O editor mostra erros de compilação e código de exemplo; não demonstra um template pronto e compatível."
+    },
+    {
+      "originalIndex": 4,
+      "lesson": "dados-csharp",
+      "step": 3,
+      "previousPath": "assets/supplements/cd688c90082dc9f1.png",
+      "action": "replace",
+      "reason": "Substitui a lista de referências com avisos pela janela System Assemblies que o texto descreve.",
+      "targetStep": 3,
+      "caption": "System Assemblies na referência de C# 2026.1. Escolha bibliotecas compatíveis com o runtime da instalação; consulte as notas de versão antes de reutilizar dependências."
+    },
+    {
+      "originalIndex": 5,
+      "lesson": "controle-ambiente",
+      "step": 2,
+      "previousPath": "assets/supplements/03f2924f851daa8a.png",
+      "action": "remove",
+      "reason": "O exemplo de licença está vencido desde 2018 e não comprova os recursos efetivamente disponíveis no ambiente de estudo."
+    },
+    {
+      "originalIndex": 6,
+      "lesson": "controle-ambiente",
+      "step": 4,
+      "previousPath": "assets/supplements/85e9ffb5f56f139d.png",
+      "action": "remove",
+      "reason": "Refresh License altera a licença; o passo planeja conta, Controller e teste de acesso."
+    },
+    {
+      "originalIndex": 7,
+      "lesson": "controle-acessos",
+      "step": 2,
+      "previousPath": "assets/supplements/45b2eda3c31b3eac.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Privileges Settings reúne opções que alteram o acesso efetivo dos papéis; confira a configuração atual."
+    },
+    {
+      "originalIndex": 8,
+      "lesson": "controle-acessos",
+      "step": 3,
+      "previousPath": "assets/supplements/ffc96c7e6403adc4.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Formulário de criação de equipe e seleção dos integrantes. A disponibilidade depende da edição."
+    },
+    {
+      "originalIndex": 9,
+      "lesson": "controle-acessos",
+      "step": 4,
+      "previousPath": "assets/supplements/4dd5b1153de7d55d.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 4,
+      "caption": "Opções de identidade na entrada do Flow: conta Leapwork, diretório ou SSO conforme a configuração. Esta figura vem de User Management."
+    },
+    {
+      "originalIndex": 10,
+      "lesson": "controle-acessos",
+      "step": 4,
+      "previousPath": "assets/supplements/ae869bb60d4b444d.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 4,
+      "caption": "Acesso a Add AD/SSO User na documentação de User Management. A identidade externa depende da configuração de diretório ou SSO."
+    },
+    {
+      "originalIndex": 11,
+      "lesson": "controle-acessos",
+      "step": 4,
+      "previousPath": "assets/supplements/39e656c64ea2341d.png",
+      "action": "caption",
+      "reason": "Delimita o conteúdo visível: política de senha, sem apresentar a tela como o procedimento inteiro de recuperação.",
+      "targetStep": 4,
+      "caption": "Validação da senha de Emergency Admin User na documentação. A mensagem mostra requisitos de complexidade; é uma parte do procedimento de recuperação descrito na fonte."
+    },
+    {
+      "originalIndex": 12,
+      "lesson": "controle-conexoes",
+      "step": 1,
+      "previousPath": "assets/supplements/182e5a9a89390e22.png",
+      "action": "remove",
+      "reason": "A tela específica de Appium não corresponde à escolha genérica de uma conexão para o cenário."
+    },
+    {
+      "originalIndex": 13,
+      "lesson": "controle-conexoes",
+      "step": 2,
+      "previousPath": "assets/supplements/c587f60522d2050a.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Criação de uma chave de API com finalidade e escopo. A imagem é um exemplo oficial; não registre segredos reais nas notas."
+    },
+    {
+      "originalIndex": 14,
+      "lesson": "controle-conexoes",
+      "step": 3,
+      "previousPath": "assets/supplements/faa32c9372971b3a.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Seleção do protocolo de e-mail na fonte. SMTP e OAuth têm requisitos e comportamentos de teste próprios."
+    },
+    {
+      "originalIndex": 15,
+      "lesson": "controle-conexoes",
+      "step": 4,
+      "previousPath": "assets/supplements/faf5c56826228fd7.png",
+      "action": "move",
+      "reason": "Move a configuração de proxy para o passo que prepara e-mail e proxy; não representa um teste de entrega.",
+      "targetStep": 3,
+      "caption": "Proxy Settings: configuração separada para Controller e Flow quando necessário. Confira o contexto de rede que enviará a notificação."
+    },
+    {
+      "originalIndex": 16,
+      "lesson": "controle-retencao",
+      "step": 2,
+      "previousPath": "assets/supplements/7a91a58cb82ff454.png",
+      "action": "caption",
+      "reason": "A legenda agora descreve apenas a seção Scheduled runs visível na imagem.",
+      "targetStep": 2,
+      "caption": "Scheduled runs: quantidade de execuções a preservar e opção de remover vídeos de sucesso após uma hora. Consulte Preview Runs e as políticas globais separadamente."
+    },
+    {
+      "originalIndex": 17,
+      "lesson": "controle-retencao",
+      "step": 3,
+      "previousPath": "assets/supplements/3ad5607e1821951b.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Acesso à opção de chave do banco pelo Controller. O procedimento da fonte trata a recuperação dos dados SQLite."
+    },
+    {
+      "originalIndex": 18,
+      "lesson": "controle-retencao",
+      "step": 4,
+      "previousPath": "assets/supplements/2f7639870b391a9c.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 4,
+      "caption": "Database Management oferece correções específicas de sub-flows. Esses controles não representam um backup integral."
+    },
+    {
+      "originalIndex": 19,
+      "lesson": "controle-padroes",
+      "step": 2,
+      "previousPath": "assets/supplements/9836b190bd1f710e.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Capture Settings apresenta limites e comportamento da inspeção. Esses limites são diferentes do tempo de execução de um fluxo."
+    },
+    {
+      "originalIndex": 20,
+      "lesson": "controle-padroes",
+      "step": 3,
+      "previousPath": "assets/supplements/ebb57b1ab2233607.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Web Settings com configuração de estratégias Salesforce. A tela é específica do recurso documentado."
+    },
+    {
+      "originalIndex": 21,
+      "lesson": "controle-agentes",
+      "step": 2,
+      "previousPath": "assets/supplements/2d2d81bc8fb72233.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Propriedades de Remote Agent, incluindo autenticação e sessão. Confira os valores do ambiente de homologação."
+    },
+    {
+      "originalIndex": 22,
+      "lesson": "controle-runlists",
+      "step": 2,
+      "previousPath": "assets/supplements/84298bd5a097844f.png",
+      "action": "replace",
+      "reason": "Substitui a imagem do botão por sua janela de seleção, correspondente à conferência dos fluxos.",
+      "targetStep": 2,
+      "caption": "Add flows: escolha dos fluxos que entrarão no passo da Run List e botão Add."
+    },
+    {
+      "originalIndex": 23,
+      "lesson": "controle-runlists",
+      "step": 3,
+      "previousPath": "assets/supplements/784a43d626eac9c4.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Passo da Run List na interface oficial. As condições controlam se o trabalho seguinte deve executar."
+    },
+    {
+      "originalIndex": 24,
+      "lesson": "controle-runlists",
+      "step": 4,
+      "previousPath": "assets/supplements/8f8faf18d8e9ddc6.png",
+      "action": "caption",
+      "reason": "A imagem mostra a cópia da lista; não exibe os agendamentos nem demonstra isolamento dos fluxos.",
+      "targetStep": 4,
+      "caption": "A árvore mostra uma Run List original e sua cópia D365 - Copy. A preservação das referências e a desativação dos agendamentos copiados são comportamentos descritos no texto da fonte."
+    },
+    {
+      "originalIndex": 25,
+      "lesson": "controle-repeticoes",
+      "step": 1,
+      "previousPath": "assets/supplements/1947d694485cce42.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Opções de Retry Policy. Desativar, herdar e personalizar são escolhas distintas."
+    },
+    {
+      "originalIndex": 26,
+      "lesson": "controle-repeticoes",
+      "step": 2,
+      "previousPath": "assets/supplements/c8b4210b794750b1.png",
+      "action": "remove",
+      "reason": "A barra da Run List não mostra a configuração de sobrescrita de retry no Schedule."
+    },
+    {
+      "originalIndex": 27,
+      "lesson": "controle-repeticoes",
+      "step": 4,
+      "previousPath": "assets/supplements/a8bf7b6e1909ac46.png",
+      "action": "caption",
+      "reason": "Evita sugerir que a captura única já contém o histórico de todas as tentativas.",
+      "targetStep": 4,
+      "caption": "Detalhes de um run em Reporting, com vídeo, canvas e Activity log. Para comparar tentativas, abra as execuções correspondentes e preserve seus identificadores."
+    },
+    {
+      "originalIndex": 28,
+      "lesson": "controle-agendamentos",
+      "step": 2,
+      "previousPath": "assets/supplements/075d60a660091484.png",
+      "action": "remove",
+      "reason": "Flow sequence mostra ordem de execução, não as três modalidades de distribuição entre Agents."
+    },
+    {
+      "originalIndex": 29,
+      "lesson": "controle-agendamentos",
+      "step": 4,
+      "previousPath": "assets/supplements/fa7a5d27c5b67627.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 4,
+      "caption": "Ações do Schedule e condições de disparo de notificações. Configuração e recebimento precisam de verificação própria."
+    },
+    {
+      "originalIndex": 30,
+      "lesson": "controle-relatorios",
+      "step": 2,
+      "previousPath": "assets/supplements/5fc2e958e146f42c.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Filtros do relatório restringem a população a investigar; confira lista e Schedule correspondentes."
+    },
+    {
+      "originalIndex": 31,
+      "lesson": "controle-relatorios",
+      "step": 3,
+      "previousPath": "assets/supplements/a8bf7b6e1909ac46.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Vídeo, canvas e Activity log nos detalhes de um run. A imagem pertence ao exemplo da documentação."
+    },
+    {
+      "originalIndex": 32,
+      "lesson": "controle-dashboards",
+      "step": 2,
+      "previousPath": "assets/supplements/03428106a49fc8b6.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Criação de widget com tipo, período e parâmetros. Defina a pergunta antes de escolher o gráfico."
+    },
+    {
+      "originalIndex": 33,
+      "lesson": "controle-dashboards",
+      "step": 3,
+      "previousPath": "assets/supplements/9ef3058b17f96750.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Filtro por Agents do widget. O indicador representa apenas os ambientes selecionados."
+    },
+    {
+      "originalIndex": 34,
+      "lesson": "controle-dashboards",
+      "step": 3,
+      "previousPath": "assets/supplements/c36fd0e64392630d.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Filtro por Run Lists e Schedules do widget. Registre esse recorte ao comparar períodos."
+    },
+    {
+      "originalIndex": 35,
+      "lesson": "controle-auditoria",
+      "step": 2,
+      "previousPath": "assets/supplements/b8d914e012403a61.png",
+      "action": "remove",
+      "reason": "FILTER VALUES exibe datas, não o filtro de ativo ou usuário ensinado neste passo."
+    },
+    {
+      "originalIndex": 36,
+      "lesson": "controle-auditoria",
+      "step": 4,
+      "previousPath": "assets/supplements/81b087ce61f20a3a.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 4,
+      "caption": "Diagnostics reúne seleção de componentes, pacote e resultados da coleta. A evidência precisa corresponder ao ambiente investigado."
+    },
+    {
+      "originalIndex": 37,
+      "lesson": "controle-historico",
+      "step": 1,
+      "previousPath": "assets/supplements/4a31737f6caba534.png",
+      "action": "caption",
+      "reason": "Distingue as opções disponíveis da política escolhida no exemplo oficial.",
+      "targetStep": 1,
+      "caption": "Workflow Settings mostra as opções de exigência de comentário. Na captura, Never está selecionado; confira a política real antes de salvar mudanças."
+    },
+    {
+      "originalIndex": 38,
+      "lesson": "controle-historico",
+      "step": 3,
+      "previousPath": "assets/supplements/2d4ebd0e566b5440.png",
+      "action": "move",
+      "reason": "Move a tabela para a abertura do histórico e substitui o canvas que não mostrava Version History.",
+      "targetStep": 2,
+      "caption": "Version History lista versões, data, usuário, estado e comentário. Use essa lista para localizar a versão a inspecionar."
+    },
+    {
+      "originalIndex": 39,
+      "lesson": "controle-restauracao",
+      "step": 4,
+      "previousPath": "assets/supplements/a8bf7b6e1909ac46.png",
+      "action": "caption",
+      "reason": "Explicita que é a tela de evidência posterior, não a tela de restauração.",
+      "targetStep": 4,
+      "caption": "Reporting permite consultar vídeo, canvas e Activity log da execução. Após a restauração, abra o novo run de homologação e confira essas evidências."
+    },
+    {
+      "originalIndex": 40,
+      "lesson": "controle-compartilhamento",
+      "step": 2,
+      "previousPath": "assets/supplements/7fd194023a1dbf65.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Exemplo de fluxo com seus ativos na árvore. Inventarie arquivos e componentes antes da transferência."
+    },
+    {
+      "originalIndex": 41,
+      "lesson": "controle-compartilhamento",
+      "step": 3,
+      "previousPath": "assets/supplements/233f637aa1ca9813.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Importação de Run List e tratamento de conflitos. Confira o que será criado ou atualizado no destino."
+    },
+    {
+      "originalIndex": 42,
+      "lesson": "ciclo-organizacao",
+      "step": 2,
+      "previousPath": "assets/supplements/7fd194023a1dbf65.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Organização de ativos sob o fluxo na referência oficial. A estrutura deve tornar as dependências visíveis."
+    },
+    {
+      "originalIndex": 43,
+      "lesson": "ciclo-estabilidade",
+      "step": 1,
+      "previousPath": "assets/supplements/35c71078453f2a49.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Find Web Element e suas propriedades. Identifique o alvo correto, em vez de aceitar qualquer elemento parecido."
+    },
+    {
+      "originalIndex": 44,
+      "lesson": "ciclo-estabilidade",
+      "step": 2,
+      "previousPath": "assets/supplements/467a0b3e31229e0c.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Wait configura uma pausa de tempo. Esse bloco sozinho não comprova que uma confirmação apareceu."
+    },
+    {
+      "originalIndex": 45,
+      "lesson": "ciclo-estabilidade",
+      "step": 3,
+      "previousPath": "assets/supplements/a90f173c86c16435.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Get Web Text fornece o texto do elemento identificado. Relacione o retorno ao registro atual."
+    },
+    {
+      "originalIndex": 46,
+      "lesson": "ciclo-estabilidade",
+      "step": 4,
+      "previousPath": "assets/supplements/553648ff51aa2400.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 4,
+      "caption": "Compare dirige os caminhos pelo resultado da comparação. Confira valores e método conforme a regra do caso."
+    },
+    {
+      "originalIndex": 47,
+      "lesson": "ciclo-dados",
+      "step": 1,
+      "previousPath": "assets/supplements/a86cb8efde1897f5.png",
+      "action": "replace",
+      "reason": "Troca o exemplo de nuvem pela origem local citada no passo.",
+      "targetStep": 1,
+      "caption": "Read Excel em Local path, com Path to file. O arquivo e as permissões precisam corresponder ao Agent que executará o caso."
+    },
+    {
+      "originalIndex": 48,
+      "lesson": "ciclo-revisao",
+      "step": 1,
+      "previousPath": "assets/supplements/4c737cc12d0e07af.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Comentário de uma versão na interface documentada. Descreva intenção e evidência, não apenas que algo foi ajustado."
+    },
+    {
+      "originalIndex": 49,
+      "lesson": "ciclo-integracoes",
+      "step": 1,
+      "previousPath": "assets/supplements/c7962e6eb650897d.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Arquitetura oficial com Flow, Controller e Agent. O disparo externo deve preservar o contexto da execução coordenada pelo Controller."
+    },
+    {
+      "originalIndex": 50,
+      "lesson": "ciclo-integracoes",
+      "step": 2,
+      "previousPath": "assets/supplements/075d60a660091484.png",
+      "action": "replace",
+      "reason": "Substitui Flow sequence pelo formulário que mostra os itens pedidos no texto.",
+      "targetStep": 2,
+      "caption": "Formulário de Schedule com Run List, Trigger, Agents, Variables e Actions. Confira se essa configuração é a que a integração acionará."
+    },
+    {
+      "originalIndex": 51,
+      "lesson": "ciclo-api-acesso",
+      "step": 2,
+      "previousPath": "assets/supplements/c587f60522d2050a.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Configuração administrativa de AccessKey e escopos. O laboratório do caderno usa somente um marcador de segredo."
+    },
+    {
+      "originalIndex": 52,
+      "lesson": "ciclo-api-resultados",
+      "step": 4,
+      "previousPath": "assets/supplements/a8bf7b6e1909ac46.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 4,
+      "caption": "Detalhes do resultado no relatório. Relacione o item da API à execução e à evidência corretas."
+    },
+    {
+      "originalIndex": 53,
+      "lesson": "ciclo-ado",
+      "step": 1,
+      "previousPath": "assets/supplements/d02bc42550e4f29d.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Configuração da conexão ADO na fonte. O PAT externo e AccessKey do Controller atendem a serviços diferentes."
+    },
+    {
+      "originalIndex": 54,
+      "lesson": "ciclo-ado",
+      "step": 3,
+      "previousPath": "assets/supplements/4d70f755cb693218.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Seleção do projeto na sincronização ADO. A entrada de novos casos e a atualização dos existentes têm procedimentos distintos."
+    },
+    {
+      "originalIndex": 55,
+      "lesson": "ciclo-ado",
+      "step": 4,
+      "previousPath": "assets/supplements/5c447a98577baf0f.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 4,
+      "caption": "Resumo de um test run no ADO apresentado na fonte. Confira caso, configuração e resultado no destino."
+    },
+    {
+      "originalIndex": 56,
+      "lesson": "ciclo-primeira-execucao",
+      "step": 2,
+      "previousPath": "assets/supplements/5c34dd54c0bebc17.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Fluxos adicionados a um passo da Run List no exemplo oficial. Confira a correspondência com a matriz planejada."
+    },
+    {
+      "originalIndex": 57,
+      "lesson": "ciclo-primeira-execucao",
+      "step": 3,
+      "previousPath": "assets/supplements/e5df03497c6227d2.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Formulário de Schedule. O exemplo oficial ilustra a configuração; não é uma execução dos dez casos fictícios."
+    },
+    {
+      "originalIndex": 58,
+      "lesson": "ciclo-triagem",
+      "step": 1,
+      "previousPath": "assets/supplements/a8bf7b6e1909ac46.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "A investigação parte dos detalhes da execução e cruza log, canvas e gravação disponível."
+    },
+    {
+      "originalIndex": 59,
+      "lesson": "ciclo-triagem",
+      "step": 2,
+      "previousPath": "assets/supplements/e70f8d5779748a50.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Registro de eventos administrativos. Mudanças próximas ao horário da falha são pistas, não prova automática de causa."
+    },
+    {
+      "originalIndex": 60,
+      "lesson": "ciclo-triagem",
+      "step": 3,
+      "previousPath": "assets/supplements/03b92c1ebe66858e.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Formulário de bug ADO na documentação. Um relato útil registra contexto, reprodução, esperado, observado e evidência."
+    },
+    {
+      "originalIndex": 61,
+      "lesson": "ciclo-encerramento",
+      "step": 3,
+      "previousPath": "assets/supplements/62f26d82e7672479.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 3,
+      "caption": "Políticas de retenção definem a disponibilidade de resultados, versões e gravações para a revisão posterior."
+    },
+    {
+      "originalIndex": 62,
+      "lesson": "@introducao",
+      "step": 0,
+      "previousPath": "assets/supplements/c7962e6eb650897d.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 0,
+      "caption": "Comunicação entre Flow, Controller e Agent no diagrama oficial. O Flow também se comunica com Agents durante desenho e prévia."
+    },
+    {
+      "originalIndex": 63,
+      "lesson": "@introducao",
+      "step": 0,
+      "previousPath": "assets/supplements/90fe987a2d6b8e19.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 0,
+      "caption": "Diagrama de implantação apresentado na fonte. Compare a localização dos componentes com o modelo contratado."
+    },
+    {
+      "originalIndex": 64,
+      "lesson": "@introducao",
+      "step": 0,
+      "previousPath": "assets/supplements/b69a73840c6097e2.png",
+      "action": "keep",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 0,
+      "caption": "Implantação híbrida no exemplo oficial. As capacidades de execução dependem do tipo de Agent selecionado."
+    },
+    {
+      "originalIndex": 65,
+      "lesson": "mobile",
+      "step": 6,
+      "previousPath": "assets/supplements/aGduKxCIZAk-306-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 6,
+      "caption": "Fluxo de pesquisa Web com perfil móvel e comparação do total no vídeo. A configuração de Device type é feita em Start Web Browser."
+    },
+    {
+      "originalIndex": 66,
+      "lesson": "desktop-introducao",
+      "step": 5,
+      "previousPath": "assets/supplements/-51LTRplY48-522-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 5,
+      "caption": "Execução do login Desktop e Activity Log, incluindo a localização da confirmação Logged in as Test."
+    },
+    {
+      "originalIndex": 67,
+      "lesson": "desktop-contatos",
+      "step": 2,
+      "previousPath": "assets/supplements/TXWo3qK9Oy8-260-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 2,
+      "caption": "Diálogo para nomear o sub-flow extraído dos blocos de cadastro do contato."
+    },
+    {
+      "originalIndex": 68,
+      "lesson": "virtual-textos",
+      "step": 1,
+      "previousPath": "assets/supplements/qGGNbk0UY-0-205-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Bloco Get Text e seu comando de captura de Area para recortar a região de OCR."
+    },
+    {
+      "originalIndex": 69,
+      "lesson": "virtual-teclado",
+      "step": 1,
+      "previousPath": "assets/supplements/akmkQk8sc40-145-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Bloco Type Text com Happy Automation configurado no exemplo de teclado."
+    },
+    {
+      "originalIndex": 70,
+      "lesson": "dom-avancado",
+      "step": 1,
+      "previousPath": "assets/supplements/lsGjkso3Rbg-94-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Página Challenging DOM e a célula de referência antes da edição das estratégias de localização."
+    },
+    {
+      "originalIndex": 71,
+      "lesson": "checkboxes",
+      "step": 1,
+      "previousPath": "assets/supplements/lb78WgJ0-wo-63-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Página Checkboxes com os dois controles que serão configurados com Set Web Checkbox."
+    },
+    {
+      "originalIndex": 72,
+      "lesson": "arrastar-soltar",
+      "step": 1,
+      "previousPath": "assets/supplements/suIDRArjQEk-105-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Start Web Browser configurado para a página drag_and_drop que inicia a demonstração."
+    },
+    {
+      "originalIndex": 73,
+      "lesson": "dropdowns-avancados",
+      "step": 3,
+      "previousPath": "assets/supplements/r8IH1LYegOo-183-audit.jpg",
+      "action": "replace",
+      "reason": "O quadro de 3:03 ainda mostrava Value = 1. O de 3:09 contém Option 2 e corresponde ao passo.",
+      "targetStep": 3,
+      "caption": "Set Web Dropdown em 3:09: Action = Set by text, Filter = Equals e Value = Option 2, antes de executar."
+    },
+    {
+      "originalIndex": 74,
+      "lesson": "conteudo-dinamico",
+      "step": 1,
+      "previousPath": "assets/supplements/gERnZ6rN1VQ-66-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Primeira linha da página Dynamic Content e sua imagem, antes do ajuste da estratégia."
+    },
+    {
+      "originalIndex": 75,
+      "lesson": "upload-arquivo",
+      "step": 1,
+      "previousPath": "assets/supplements/bM5smmLOsBs-92-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Controle Choose File na página File Uploader. O quadro é da página, antes da etapa de digitar o caminho no diálogo nativo."
+    },
+    {
+      "originalIndex": 76,
+      "lesson": "nova-janela",
+      "step": 1,
+      "previousPath": "assets/supplements/Mg-1NKCuf3g-62-audit.jpg",
+      "action": "remove",
+      "reason": "O quadro mostra a aba já aberta e não o link Click here que o passo manda capturar."
+    },
+    {
+      "originalIndex": 77,
+      "lesson": "redirecionamento",
+      "step": 1,
+      "previousPath": "assets/supplements/I_BUzm8rJ0I-61-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Página Redirector e link here que leva ao exemplo de códigos de status."
+    },
+    {
+      "originalIndex": 78,
+      "lesson": "lista-deslocada",
+      "step": 1,
+      "previousPath": "assets/supplements/X9Em1PtM9XU-62-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Região de conteúdo da página Shifting Content: List a ser capturada."
+    },
+    {
+      "originalIndex": 79,
+      "lesson": "variacoes-texto",
+      "step": 1,
+      "previousPath": "assets/supplements/lBcRNry3bo8-65-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Parágrafo da página Typos usado como referência de região, antes de retirar o texto variável da estratégia."
+    },
+    {
+      "originalIndex": 80,
+      "lesson": "dados-fundamentos",
+      "step": 1,
+      "previousPath": "assets/supplements/V5r-Fovn_vs-5-audit.jpg",
+      "action": "caption",
+      "reason": "A figura mostra o recurso, o campo ou a evidência solicitada no próprio passo; a legenda delimita o alcance do exemplo.",
+      "targetStep": 1,
+      "caption": "Fluxo de cadastro existente, antes de ligar os valores dos campos às colunas de uma planilha."
+    }
+  ]
+}

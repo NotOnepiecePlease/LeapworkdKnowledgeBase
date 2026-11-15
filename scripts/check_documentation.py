@@ -28,8 +28,8 @@ check('All card source URLs are inventoried',all(p['source'] in {x['url'] for x 
 check('Source origin stays in requested product and version',all(p['source'].startswith('https://docs.leapwork.com/leapwork-flow/latest/') for p in library['pages']))
 check('Every child route resolves',all(child in {x['path'] for x in library['pages']} for p in library['pages'] for child in p['children']))
 check('All 83 contract operations covered',len(library['operations'])==83 and {(o['method'].lower(),o['path']) for o in library['operations']}=={(m,path) for path,methods in spec['paths'].items() for m in methods if m in ['get','put','post','delete','patch']})
-check('81 figure inclusions, 72 unique assets',report['addedFigureUses']==81 and report['uniqueSupplementAssets']==72)
-check('75 steps receive figures; 74 were previously without',report['stepsReceivingFigures']==75 and report['newlyIllustratedSteps']==74 and report['illustratedStepsAfter']==329)
+check('73 reviewed figure inclusions, 64 unique assets',report['addedFigureUses']==73 and report['uniqueSupplementAssets']==64)
+check('66 steps receive figures; 63 were initially without',report['stepsReceivingFigures']==66 and report['newlyIllustratedSteps']==63 and report['illustratedStepsAfter']==315)
 check('All 427 steps have a recorded audit decision',len(report['steps'])==427 and all(r['decision'] for r in report['steps']))
 for row in report['additions']:
     check('Asset and source: '+row['lesson']+' #'+str(row['step'])+' / '+row['path'],(ROOT/'site'/row['path']).is_file() and row['width']>0 and row['height']>0 and row['source'].startswith(('https://docs.leapwork.com/','https://www.youtube.com/')))
@@ -81,7 +81,7 @@ with sync_playwright() as p:
     check('Architecture includes protocols and deployment tables',page.locator('#arquitetura-complementar table').count()==2 and page.locator('#arquitetura-complementar .supplement-figure').count()==3)
     for img in page.locator('#arquitetura-complementar img').all():img.evaluate('(img)=>{img.loading="eager";return img.decode()}')
     page.goto(URL+'#novidades')
-    check('Report lists all enriched lessons and intro',page.locator('main .source-list li').count()==47)
+    check('Report lists all enriched lessons and intro',page.locator('main .source-list li').count()==45)
     for theme in ['light','dark']:
         page.goto(URL+'#documentacao')
         if page.evaluate('document.documentElement.dataset.theme')!=theme:page.locator('#theme-toggle').click()

@@ -2119,7 +2119,7 @@
       "section": "Building Blocks",
       "sectionTitle": "Catálogo de blocos",
       "category": "data-driven",
-      "summary": "Grava um arquivo de saída no destino configurado. A presença do artefato e seu conteúdo precisam ser conferidos no contexto da execução.",
+      "summary": "Salva o conteúdo recebido em File Input no armazenamento gerenciado pelo Leapwork, com nome gerado automaticamente. A referência não exige um caminho manual de destino; confira o artefato desta execução e trate Not saved.",
       "notes": [],
       "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/save-file",
       "retrievedAt": "2026-11-15T03:34:39.024487+00:00",
@@ -2846,7 +2846,7 @@
       "section": "Building Blocks",
       "sectionTitle": "Catálogo de blocos",
       "category": "desktop-ui",
-      "summary": "Seleciona o contexto de a janela no contexto de aplicações desktop. Confira as propriedades do alvo, as saídas disponíveis e o efeito observado antes de continuar o caso.",
+      "summary": "Seleciona a janela no contexto de aplicações desktop. Confira as propriedades do alvo, as saídas disponíveis e o efeito observado antes de continuar o caso.",
       "notes": [],
       "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/use-ui-window",
       "retrievedAt": "2026-11-15T03:34:42.577762+00:00",
@@ -3878,7 +3878,7 @@
       "section": "Building Blocks",
       "sectionTitle": "Catálogo de blocos",
       "category": "electron-blocks",
-      "summary": "Seleciona o contexto de a janela no contexto de aplicações electron. Confira as propriedades do alvo, as saídas disponíveis e o efeito observado antes de continuar o caso.",
+      "summary": "Seleciona a janela no contexto de aplicações electron. Confira as propriedades do alvo, as saídas disponíveis e o efeito observado antes de continuar o caso.",
       "notes": [],
       "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/electron-blocks/use-electron-window",
       "retrievedAt": "2026-11-15T03:34:47.099843+00:00",
@@ -3964,7 +3964,7 @@
       "section": "Building Blocks",
       "sectionTitle": "Catálogo de blocos",
       "category": "generators",
-      "summary": "Produz uma data/hora conforme a configuração do gerador. Registre referência e formato quando o teste depender de um instante reproduzível.",
+      "summary": "Fornece a data e a hora atuais do sistema da execução, além dos seus componentes. Para um teste com instante fixo, use uma data-base controlada em vez de tratar o relógio atual como uma entrada fixa.",
       "notes": [],
       "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-date-time",
       "retrievedAt": "2026-11-15T03:34:47.680151+00:00",
@@ -4683,7 +4683,9 @@
       "sectionTitle": "Catálogo de blocos",
       "category": "logic",
       "summary": "Executa uma extensão C# no fluxo com campos e referências configurados. Use o template compatível com a versão e teste entrada válida e erro.",
-      "notes": [],
+      "notes": [
+        "Esta página usa o contexto 2026.1 e descreve .NET 8. As notas 2026.3 anunciam .NET 10; confirme o runtime e as dependências da instalação. Consulte também Release Notes → 2026.3."
+      ],
       "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/c-sharp-code",
       "retrievedAt": "2026-11-15T03:34:50.800093+00:00",
       "headings": [
@@ -7268,8 +7270,7 @@
         "Resources"
       ],
       "fieldHints": [
-        "Named cookie",
-        "(when available)"
+        "Named cookie"
       ],
       "children": [],
       "related": [],
@@ -7816,7 +7817,7 @@
       "section": "Building Blocks",
       "sectionTitle": "Catálogo de blocos",
       "category": "web",
-      "summary": "Navega o navegador para o endereço configurado. Confira a janela e a página de destino antes de executar as próximas ações.",
+      "summary": "Controla a navegação por URL, histórico, atualização ou nova aba conforme Navigation mode. Confira o modo, a janela e o destino; Refresh page atualiza a página atual.",
       "notes": [],
       "source": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/navigate-web",
       "retrievedAt": "2026-11-15T03:35:04.868229+00:00",
@@ -8222,6 +8223,7 @@
       "fieldHints": [],
       "children": [],
       "related": [
+        "controle-ambiente",
         "controle-acessos"
       ],
       "previouslyConsulted": true,
@@ -9252,7 +9254,9 @@
       ],
       "fieldHints": [],
       "children": [],
-      "related": [],
+      "related": [
+        "dados-csharp"
+      ],
       "previouslyConsulted": false,
       "kind": "referencia",
       "imagesAvailable": 2

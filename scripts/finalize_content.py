@@ -7,6 +7,8 @@ ROOT = Path(__file__).resolve().parents[1]
 site = ROOT / 'site'
 script = "global.window={};require('./site/content.js');require('./site/module2.js');require('./site/module1-extra.js');require('./site/catalog.js');require('./site/module2-extra.js');require('./site/module3.js');require('./site/module4.js');require('./site/module5.js');require('./site/illustrations.js');console.log(JSON.stringify(window.LEAP));"
 data = json.loads(subprocess.check_output(['node', '-e', script], cwd=ROOT, encoding='utf-8'))
+inventory = json.loads((ROOT/'research/documentation-inventory.json').read_text(encoding='utf-8'))
+consulted = {p['url'].split('/latest/')[-1] for p in inventory['pages'] if p['status']=='read'}
 media = []
 for lesson in data['lessons']:
     seconds = None
@@ -38,7 +40,7 @@ for lesson in data['lessons']:
         if 'imagePath' in step:
             assert (site / step['imagePath']).is_file(), step['imagePath']
     for _, doc_path in lesson['docs']:
-        assert (ROOT / 'research' / 'docs' / (doc_path.replace('/', '__') + '.json')).exists(), doc_path
+        assert doc_path in consulted or (ROOT / 'research' / 'docs' / (doc_path.replace('/', '__') + '.json')).exists(), doc_path
 for _, file in data.get('module3Downloads',[]):
     assert (site / file).is_file(), file
 (ROOT / 'research' / 'media-manifest.json').write_text(json.dumps(media, ensure_ascii=False, indent=2), encoding='utf-8')

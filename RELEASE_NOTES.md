@@ -1,26 +1,23 @@
-# v1.3.0 · Biblioteca da documentação e revisão visual
+# v1.3.1 · Correção de pertinência entre texto, imagem e fonte
 
-O caderno reúne os cinco módulos, com **98 aulas e 427 passos**, e agora oferece uma biblioteca offline baseada em **338 páginas públicas dos oito menus de Leapwork Flow/latest**. Foram encontradas **213 fontes adicionais** em relação ao recorte anterior.
+A revisão percorreu as 98 aulas e 427 passos, conferindo os 336 usos de imagem da versão preparada v1.3.0. Foram retirados 12 usos inadequados, substituídas sete capturas e reposicionadas três. A versão corrigida tem 324 usos de imagem, incluindo a introdução, com 315 passos ilustrados.
 
-- **338 fichas resumidas em português**, incluindo índices, com busca, fonte e links para conteúdos relacionados.
-- **83 operações da API REST** para consulta de método, rota, parâmetros e respostas do contrato OpenAPI.
-- **81 inclusões visuais**, com 72 arquivos distintos: 78 figuras em 75 passos e três diagramas na introdução. Desses passos, 74 não tinham imagem.
-- Inclusões por módulo: **01: 8; 02: 10; 03: 6; 04: 37; 05: 20**. O módulo 01 inclui a introdução.
-- No módulo 4, o passo sobre identidade e recuperação recebeu imagens de autenticação, AD/SSO e administração de emergência.
-- A introdução ganhou protocolos, modelos de implantação e armazenamento.
-- Novo menu **O que foi adicionado** e relatório **ENRIQUECIMENTO.md**, com cada aula, passo e fonte.
+- Removida a tela Refresh License do passo que planeja um teste de acesso. O link agora leva a User Management.
+- Retiradas imagens de licença vencida, ordem de fluxos usada como distribuição, POST usado para exercício GET, Substring usado para Trim e outros exemplos sem correspondência direta.
+- Substituídos os quadros de Option 2 e Start date por instantes que mostram os valores ensinados.
+- Corrigidas as capturas de origem Local path, System Assemblies e seleção de fluxos da Run List.
+- Corrigido o resumo de Save File para armazenamento gerenciado e delimitado o contexto .NET 8 da referência C# 2026.1, com fonte sobre .NET 10 na versão 2026.3.
+- Relatório REVISAO.md, registro editorial por aula/passo/ficha/imagem e seleção explícita de figuras para manutenção futura.
 
-As fichas são resumos editoriais para consulta, não traduções integrais ou novos tutoriais completos. A varredura abrange as páginas públicas dessa navegação; não inclui outras versões, produtos ou áreas autenticadas. As aulas e os laboratórios não executam Leapwork nem chamadas de API. Capturas originais de versões anteriores são identificadas nas legendas.
+A biblioteca mantém 338 fichas resumidas dos oito menus públicos de Leapwork Flow/latest, 213 fontes adicionais em relação ao recorte inicial e o catálogo de 83 operações da API REST. Permanecem 73 inclusões visuais da varredura após a revisão, usando 64 arquivos distintos. As fichas não são traduções integrais, e as imagens não comprovam execução local.
 
 ## Baixar e abrir
 
-1. Baixe **LeapworkKnowledgeBase-v1.3.0-completo.zip** para incluir os 48 vídeos offline, ou **essencial.zip** para o caderno com imagens, GIFs e laboratórios.
-2. Extraia todo o ZIP para uma pasta.
-3. No Windows, abra **Abrir caderno.cmd**. Nos outros sistemas, abra **site/index.html** no navegador.
-4. Use **Biblioteca da documentação** para consultar os oito menus ou siga os módulos na ordem.
+1. Baixe LeapworkKnowledgeBase-v1.3.1-completo.zip para incluir os 48 vídeos offline, ou essencial.zip para o caderno com imagens, GIFs e laboratórios.
+2. Extraia todo o ZIP.
+3. No Windows, abra Abrir caderno.cmd. Nos outros sistemas, abra site/index.html.
+4. Consulte os módulos, Biblioteca da documentação e O que foi adicionado. Os relatórios ENRIQUECIMENTO.md e REVISAO.md acompanham ambos os pacotes.
 
-Não é necessário instalar pacotes ou iniciar servidor. Os tamanhos exatos constam nos arquivos da release; **SHA256SUMS.txt** permite conferir os ZIPs. Os arquivos automáticos **Source code** não incluem os vídeos.
+Não é necessário instalar pacotes ou iniciar servidor. SHA256SUMS.txt permite conferir os ZIPs. Source code não inclui os vídeos. Antes de atualizar ou mover a pasta, exporte suas anotações na versão anterior; navegador e endereço local influenciam o acesso ao histórico.
 
-Antes de atualizar ou mover a pasta, exporte suas anotações na versão anterior. As chaves de armazenamento foram preservadas, mas o endereço local e o navegador influenciam o acesso às notas. A exportação serve para consulta e não oferece importação automática.
-
-O caderno é independente e não concede certificação oficial. Vídeos e imagens pertencem aos respectivos titulares e têm suas fontes indicadas no material.
+Os testes verificam funcionamento, integridade e regressões conhecidas; a avaliação de pertinência é editorial. Não houve execução de fluxos no Leapwork. O caderno é independente e não concede certificação oficial. Vídeos e imagens pertencem aos respectivos titulares e têm suas fontes indicadas.

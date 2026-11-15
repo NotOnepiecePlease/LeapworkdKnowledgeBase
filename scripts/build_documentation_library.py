@@ -164,7 +164,7 @@ SPECIAL={
  'HTTP Request':'Envia uma requisição HTTP e fornece dados da resposta. Separe ausência de resposta, estado HTTP e validação do conteúdo retornado.',
  'Read Excel':'Lê linhas e colunas de uma planilha definida por origem e intervalo. Diferencie a saída por linha, a conclusão da leitura e o tratamento de falha.',
  'Write Excel':'Grava valores em colunas de um intervalo Excel. Confira método por índice ou acréscimo para evitar atualização da linha errada ou duplicação de resultados.',
- 'Save File':'Grava um arquivo de saída no destino configurado. A presença do artefato e seu conteúdo precisam ser conferidos no contexto da execução.',
+ 'Save File':'Salva o conteúdo recebido em File Input no armazenamento gerenciado pelo Leapwork, com nome gerado automaticamente. A referência não exige um caminho manual de destino; confira o artefato desta execução e trate Not saved.',
  'Send E-Mail':'Prepara e envia uma mensagem conforme as propriedades e a configuração de comunicação. Confirme destinatário e evidência de entrega no cenário de teste.',
  'Set File':'Fornece uma referência de arquivo para outras operações do fluxo. O caminho ou origem precisa estar disponível ao componente que o utilizará.',
  'Comment':'Documenta a intenção ou organização do fluxo sem substituir uma ação ou verificação funcional.',
@@ -172,7 +172,7 @@ SPECIAL={
  'Log Screenshot':'Registra uma captura visual para diagnóstico. A imagem precisa ser relacionada ao caso e ao instante pertinente.',
  'Stopwatch':'Mede tempo no fluxo para apoiar observação e comparação. Defina exatamente qual intervalo está sendo medido.',
  'Any Error':'Define o caminho global de erro do fluxo ou sub-flow. A referência limita a um handler por contexto e descreve propagação ao pai quando o sub-flow não possui tratamento próprio.',
- 'Generate date/time':'Produz uma data/hora conforme a configuração do gerador. Registre referência e formato quando o teste depender de um instante reproduzível.',
+ 'Generate date/time':'Fornece a data e a hora atuais do sistema da execução, além dos seus componentes. Para um teste com instante fixo, use uma data-base controlada em vez de tratar o relógio atual como uma entrada fixa.',
  'Generate Number':'Produz valores numéricos conforme as opções configuradas. Uma geração aleatória não garante identidade exclusiva entre execuções.',
  'Generate Password':'Gera uma senha conforme os critérios disponíveis. Confira requisitos do teste sem registrar um segredo real em evidências compartilhadas.',
  'Break Iteration':'Interrompe uma iteração conforme a lógica conectada. Diferencie saída antecipada de término normal do conjunto.',
@@ -223,7 +223,7 @@ SPECIAL={
  'Run Web Javascript':'Executa JavaScript no contexto do navegador. Confira janela, elementos e valores retornados; usar script não elimina a necessidade de verificação.'
 }
 
-VERBS={'Click':'Clica','Close':'Fecha','Collapse':'Recolhe','Drag':'Arrasta','Expand':'Expande','Find':'Localiza','Get':'Lê','Invoke':'Aciona','Select':'Seleciona','Set':'Define','Start':'Inicia','Toggle':'Alterna','Update':'Atualiza','Use':'Seleciona o contexto de','Log':'Registra','Handle':'Trata','Hover':'Move o ponteiro sobre','Type':'Digita','Install':'Instala','Uninstall':'Desinstala','Connect':'Conecta','Disconnect':'Desconecta','Read':'Lê','Write':'Grava'}
+VERBS={'Click':'Clica','Close':'Fecha','Collapse':'Recolhe','Drag':'Arrasta','Expand':'Expande','Find':'Localiza','Get':'Lê','Invoke':'Aciona','Select':'Seleciona','Set':'Define','Start':'Inicia','Toggle':'Alterna','Update':'Atualiza','Use':'Seleciona','Log':'Registra','Handle':'Trata','Hover':'Move o ponteiro sobre','Type':'Digita','Install':'Instala','Uninstall':'Desinstala','Connect':'Conecta','Disconnect':'Desconecta','Read':'Lê','Write':'Grava'}
 TARGETS={'Element':'o elemento','Position':'a posição','Text':'o texto','Number':'o número','Attribute':'o atributo','Selection':'a seleção','Window Details':'os detalhes da janela','Window':'a janela','Element Value':'o valor do elemento','Application':'a aplicação','Application Details':'os detalhes da aplicação','File Upload':'o envio de arquivo','Checkbox':'o checkbox','Dropdown':'a opção da lista','Radio Button':'a opção do grupo','Alert':'o alerta','Screenshot':'uma captura da tela','Image':'a imagem','Cursor Location':'a posição do cursor','Device':'o dispositivo','Orientation':'a orientação','Area':'a área','Date/Time':'a data/hora','Cookie':'o cookie','Cookies':'os cookies','Browser':'o navegador','Browser Details':'os detalhes do navegador','Row':'a linha','Element Text':'o texto do elemento','Element Dropdown':'a opção da lista','Toggle Button':'o controle de alternância','Element Checkbox':'o checkbox','Element Combo Box':'o combo box','Element Panel State':'o estado do painel','Panel State':'o estado do painel','Session':'a sessão','Table':'a tabela','SAP Table':'a tabela SAP'}
 
 
@@ -260,7 +260,7 @@ def block_summary(title,path):
         return ('Autentica na aplicação' if short=='Login' else 'Fecha o navegador da aplicação')+' no contexto '+('D365 F&O' if category=='dynamics-365' else 'Salesforce')+'. Confira a sessão e a configuração do bloco antes de continuar.'
     if short in ['Validate and Get','Get and Validate Element']:
         return 'Valida e obtém informações do elemento no contexto da aplicação. Configure o alvo e a condição esperada e trate uma divergência explicitamente.'
-    if title=='Navigate Web':return 'Navega o navegador para o endereço configurado. Confira a janela e a página de destino antes de executar as próximas ações.'
+    if title=='Navigate Web':return 'Controla a navegação por URL, histórico, atualização ou nova aba conforme Navigation mode. Confira o modo, a janela e o destino; Refresh page atualiza a página atual.'
     if title=='Clear Web Cookies':return 'Remove cookies do contexto Web conforme a configuração. Considere o efeito sobre autenticação e estado do teste.'
     words=short.split(' ',1)
     if len(words)!=2 or words[0] not in VERBS:raise ValueError('Resumo de bloco não mapeado: '+title+' '+path)
@@ -276,6 +276,7 @@ def main():
     inventory=json.loads((ROOT/'research/documentation-inventory.json').read_text(encoding='utf-8'))
     tree=json.loads((ROOT/'research/documentation-navigation.json').read_text(encoding='utf-8'))
     baseline=json.loads((ROOT/'research/enrichment-baseline.json').read_text(encoding='utf-8'))
+    course=json.loads((ROOT/'research/course-content.json').read_text(encoding='utf-8'))
     existing={url.rstrip('/'):True for url in baseline['sourceUrls']}
     children={}
     def visit(node,parent=None):
@@ -292,17 +293,18 @@ def main():
         elif category in CATEGORIES and len(bits)==2:summary=CATEGORIES[category][1]
         elif category in CATEGORIES:summary=block_summary(p['title'],path)
         else:raise ValueError('Página sem revisão editorial: '+path)
-        related=[l['slug'] for l in baseline['lessons'] if path in [ref[1] for ref in l['docs']]]
+        related=[l['slug'] for l in course['lessons'] if path in [ref[1] for ref in l['docs']]]
         notes=[]
         if 'experimental feature' in doc['text'].lower():notes.append('A fonte identifica o recurso como experimental; confira mudanças e disponibilidade antes de adotá-lo.')
         if category=='multi-factor-authenticator':notes.append('A página contém uma restrição específica sobre a configuração de segredo no Okta; confira o texto vigente e a política de identidade.')
+        if path=='building-blocks/logic/c-sharp-code':notes.append('Esta página usa o contexto 2026.1 e descreve .NET 8. As notas 2026.3 anunciam .NET 10; confirme o runtime e as dependências da instalação. Consulte também Release Notes → 2026.3.')
         if path=='administration/database-decryption-keys':notes.append('O procedimento descrito trata SQLite; não generalize o mesmo mecanismo para toda implantação SQL Server.')
         fields=[]
         if category and len(bits)>2:
             body=doc['text'].split('Building block parameters')[-1]
             lines=[clean(x) for x in body.splitlines() if clean(x)]
             for i,line in enumerate(lines):
-                if i and line.startswith(':') and 1<len(lines[i-1])<65 and lines[i-1] not in ['Block header','Note','Notes','Example','Parameters'] and lines[i-1] not in fields:fields.append(lines[i-1])
+                if i and line.startswith(':') and 1<len(lines[i-1])<65 and lines[i-1] not in ['Block header','Note','Notes','Example','Parameters','(when available)'] and lines[i-1] not in fields:fields.append(lines[i-1])
         pages.append({'path':path,'title':clean(p['title']),'section':p['section'],'sectionTitle':SECTIONS[p['section']],'category':category,'summary':summary,'notes':notes,'source':p['url'],'retrievedAt':p['retrievedAt'],'headings':[clean(x) for x in doc['headings']][:10],'fieldHints':fields[:10],'children':children.get(path,[]),'related':related,'previouslyConsulted':p['url'].rstrip('/') in existing,'kind':'indice' if children.get(path) else 'referencia','imagesAvailable':len(doc['images'])})
     spec=json.loads((ROOT/'research/module5-api-spec.json').read_text(encoding='utf-8'))
     operations=[]

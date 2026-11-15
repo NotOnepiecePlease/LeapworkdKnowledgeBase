@@ -1,0 +1,14 @@
+{
+  "archive": "LeapworkKnowledgeBase-v1.3.1-essencial.zip",
+  "javascriptSyntax": "passed",
+  "cards": 338,
+  "apiOperations": 83,
+  "identityFigures": 3,
+  "enrichedLocations": 45,
+  "accessFigureRemoved": true,
+  "correctedFrameRoutes": true,
+  "reviewReportIncluded": true,
+  "notesPersisted": true,
+  "offline": true,
+  "errors": []
+}

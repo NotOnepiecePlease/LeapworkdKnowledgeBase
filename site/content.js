@@ -502,11 +502,11 @@ window.LEAP = {
         },
         {
           "time": 111,
-          "image": 205,
+          "image": 234,
           "title": "Escolha uma opção em uma lista suspensa",
           "text": "Adicione Set Web Dropdown e capture o controle Filter by. Expanda Action e observe Set by value, Set by text e Set by index. Abra Edit web element e valide o alvo. O exemplo escolhe Set by text e informa Start date, conforme o texto exibido na aplicação.",
           "observe": "O Strategy Editor permite examinar atributos e validar o elemento. O índice depende da posição; o texto depende do rótulo; o valor depende do atributo correspondente.",
-          "caption": "Inspeção do controle e de seus atributos no Strategy Editor."
+          "caption": "Set Web Dropdown no vídeo em 3:54: Action = Set by text, Filter = Equals e Value = Start date."
         },
         {
           "time": 234,

@@ -1,4 +1,4 @@
-param([string]$Version = 'v1.3.0')
+param([string]$Version = 'v1.3.1')
 $ErrorActionPreference = 'Stop'
 $leapworkRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $leapworkRoot
@@ -17,6 +17,10 @@ function Invoke-LeapworkGit {
     & git --git-dir=.publication/git --work-tree=. @args
     if ($LASTEXITCODE -ne 0) { throw 'O comando Git falhou; a publicação foi interrompida.' }
 }
+$leapworkReleaseHeader = Get-Content -LiteralPath 'RELEASE_NOTES.md' -First 1
+if ($leapworkReleaseHeader -notmatch ('^# ' + [regex]::Escape($Version) + '(?:\s|$)')) {
+    throw 'A versão solicitada difere das notas preparadas. Use a versão indicada em RELEASE_NOTES.md.'
+}
 Invoke-LeapworkGh auth status
 # Confere arquivos e hashes antes de publicar qualquer alteração.
 $leapworkChecksums = Join-Path $leapworkRoot 'dist\SHA256SUMS.txt'
@@ -34,7 +38,7 @@ if (-not (Test-Path -LiteralPath '.publication\git\HEAD')) {
 Invoke-LeapworkGit config http.sslBackend openssl
 $leapworkHelper = '!"' + ($leapworkGh -replace '\\', '/') + '" auth git-credential'
 Invoke-LeapworkGit config credential.helper $leapworkHelper
-Invoke-LeapworkGit add .gitignore .gitattributes README.md ENRIQUECIMENTO.md RELEASE_NOTES.md 'Abrir caderno.cmd' site scripts research
+Invoke-LeapworkGit add .gitignore .gitattributes README.md ENRIQUECIMENTO.md REVISAO.md RELEASE_NOTES.md 'Abrir caderno.cmd' site scripts research
 & git --git-dir=.publication/git --work-tree=. diff --cached --quiet
 if ($LASTEXITCODE -eq 1) {
     Invoke-LeapworkGit commit -m "Publica caderno de estudo Leapwork $Version"
