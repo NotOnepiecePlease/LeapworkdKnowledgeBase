@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--version', default='v1.1.0')
+    parser.add_argument('--version', default='v1.2.0')
     args = parser.parse_args()
     if not re.fullmatch(r'v\d+\.\d+\.\d+', args.version):
         parser.error('Use uma versão como v1.0.0')

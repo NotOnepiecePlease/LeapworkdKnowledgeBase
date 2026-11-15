@@ -1,0 +1,46 @@
+{
+  "url": "https://docs.leapwork.com/best-practices/latest/leapwork-flow-best-practices/working-with-run-lists",
+  "title": "Working with Run Lists",
+  "retrievedAt": "2026-11-15T02:39:46.022098+00:00",
+  "text": "Breadcrumbs\nA run-list is a collection of one or more automation flows that are executed on one or more schedules. The execution of a run-list is controlled by the Leapwork Controller. Run lists are used in many scenarios, but the most common are:\nExecuting larger collections of test flows against development and/or test environments\nGrouping the flows in steps and controlling the test execution order (\"setup\" and \"teardown\")\nRunning one or more automation flows to trigger a business process on a timely basis\nExecuting the automation flows through the Continuous Integration and Delivery (CI-CD) Pipeline\nExecuting the same automation flows in different configurations, environments, machines, etc.\nUsing the run list and scheduler features in Leapwork is straightforward, but in large projects it can be challenging if the run lists are not organized properly.\nNaming conventions used in run lists\nIn order to achieve good readability and collaboration, naming conventions are one of the important rules that should be kept in mind while creating run lists. Always give a logical name to each run list and be sure to define steps with correct names. This will ensure everyone in the team can understand what the run list is going to do, so it can easily be used when needed. Additionally, it also helps to identify and filter test results quickly.\nOrganizing run lists\nOrganizing run lists is equally important to organizing flows in Leapwork, as a run list provides an overview of what needs to be tested, the order of test execution, and helps to generate execution reports. Here are a few best practices when organizing run lists:\nAgile sprint run lists\nThe agile methodology is one of the most commonly followed methodologies in modern software development. Agile teams usually have bi-weekly sprint closures or releases, so one way to arrange run lists in agile is to create a run-list that is dedicated to a sprint. The run list can then include tests that have been selected based on the feature or change request that is covered in the release or sprint. This type of execution is used when we don't want to run all tests, but rather when we want to run only the tests relevant to a particular release.\nThe image below shows an example of a sprint-focused execution/run list:\nRun lists based on features under test\nEnterprise projects are implemented at multiple locations, which means it could be possible that features are developed and tested by independent teams. These teams might therefore need to produce a feature-based test status. With Leapwork, users can create a feature-based run list to achieve feature-based testing and reporting. The image below shows an example of a feature-focused execution/run list:\nRun lists based on test type\nDuring application development, we can perform various types of functional testing e.g. smoke, regression, and end-to-end testing. It is good to have these types of tests converted into run lists for easy understanding, and to ensure all teams can have access. This also helps to produce good test reports based on the test run type. The figure below shows an example of a test type execution/ run list:\nHybrid run lists\nEnterprise projects need applications to be tested at multiple levels. For example, new features need to be tested at the feature level, then there must be multi-level testing such as smoke, build verification, and regression testing. It might be possible that testing at sprint/release level is also taking place, hence enterprises require run list organization that supports all of these scenarios. The figure below shows an example of a hybrid run list:\n3. Ordering flows in run lists\nThe scheduler executes automated test cases in the order they have been arranged in the run list, from top-down. However, we can rearrange the flow order in a run list by dragging and dropping the flows as required. See below:\n4. Using setup and teardown\nSome scenarios require test data to be set up before executing test cases. For example, if we are using virtual machines, these need to be up and running with the data baseline done before our test cases are executed. This would become the first step in our run list (see \"Setup everything\" in the below screenshot).\nThen, after the test is completed, the data created needs to be cleared. This clean-up activity ensures there is no data redundancy, or simply we may need to close down virtual machines after all tests are completed. This can be achieved by having a \"Teardown\" step implemented in our run list.\nSee here for an example of a setup and teardown step in a run list:\nWe can get more information about run lists by clicking\nhere\n. Meanwhile, following this\nlink\nexplains how to schedule a run list in Leapwork.\nIf you have any questions, please contact our\nPriority Support\n.",
+  "links": [
+    {
+      "title": "here",
+      "url": "https://www.leapwork.com/product/documentation/run-lists"
+    },
+    {
+      "title": "link",
+      "url": "https://www.leapwork.com/product/documentation/schedules"
+    },
+    {
+      "title": "Priority Support",
+      "url": "mailto:prioritysupport@leapwork.com"
+    }
+  ],
+  "images": [
+    {
+      "alt": "mceclip0.png",
+      "url": "https://leapworkaps.file.force.com/sfc/dist/version/download/?oid=00D7Q000003Qjj6&ids=0687Q000004sAAq&d=%2Fa%2F7Q000000cA90%2FbCdGOdfHcl5jotoVBP9gZKpOaQWJ.ZAPw4KUyuGG_2c&asPdf=false"
+    },
+    {
+      "alt": "mceclip1.png",
+      "url": "https://leapworkaps.file.force.com/sfc/dist/version/download/?oid=00D7Q000003Qjj6&ids=0687Q000004sAAv&d=%2Fa%2F7Q000000cAA2%2Frvve7qWW1JJXOf.JZAucDvS3kXlNyigCuAsBqFqaf3U&asPdf=false"
+    },
+    {
+      "alt": "mceclip2.png",
+      "url": "https://leapworkaps.file.force.com/sfc/dist/version/download/?oid=00D7Q000003Qjj6&ids=0687Q000004sAB0&d=%2Fa%2F7Q000000cAA7%2FIfNZeX5tKOfKAwx5m_W2cr8aQsM4JJmv42ufMq4MF3U&asPdf=false"
+    },
+    {
+      "alt": "mceclip3.png",
+      "url": "https://leapworkaps.file.force.com/sfc/dist/version/download/?oid=00D7Q000003Qjj6&ids=0687Q000004sAB5&d=%2Fa%2F7Q000000cAAC%2FlSyAt_yDa6u3mfckvf1qZz9Db9am6zeGKtfsgfLHcLA&asPdf=false"
+    },
+    {
+      "alt": "mceclip4.png",
+      "url": "https://leapworkaps.file.force.com/sfc/dist/version/download/?oid=00D7Q000003Qjj6&ids=0687Q000004sABA&d=%2Fa%2F7Q000000cAAH%2FtUpJJyG76RXjsomvtIik7Sc08W5FHI0uD0HL.HM_OBo&asPdf=false"
+    },
+    {
+      "alt": "mceclip6.png",
+      "url": "https://leapworkaps.file.force.com/sfc/dist/version/download/?oid=00D7Q000003Qjj6&ids=0687Q000004sABF&d=%2Fa%2F7Q000000cAAM%2FyUI3WMRJuFo71ob9pbTbnWXzqjXmptbsiB8TQ6ejnaI&asPdf=false"
+    }
+  ]
+}

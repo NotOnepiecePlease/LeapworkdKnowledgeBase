@@ -1,0 +1,98 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/microsoft-ado-test-plan-integration",
+  "title": "Microsoft ADO Test Plan Integration",
+  "retrievedAt": "2026-11-15T02:38:03.072862+00:00",
+  "text": "Breadcrumbs\n﻿\nIn Azure DevOps, manually running test cases for every release can quickly become repetitive and time-consuming. You might manage tests using test plans or create individual work items and execute them manually.\nWith this integration, you can automate those test cases in Leapwork, run them as often as needed, and easily analyze execution reports and results directly in ADO.\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nImport ADO test cases in Leapwork\nOnce\nADO connection\nis created, we can import flows as part of test cases in Leapwork.\nRight click in the left window.\nSelect\nImport from ADO\n.\nIn the import window, select the\nADO project\nyou want to import test cases from.\nSelect an\nArea Path\nto filter the test cases within the selected project.\nClick\nImport\n.\nNote:\nOnly test cases marked as\nPlanned\nin ADO,\nunder the\nAutomation Status field,\nwill be imported.\nThe test cases are imported successfully.\nClick\nOK\n.\nOn left, the test cases are created in project folder\nLeapwork-ado-sbx\n. Within the project folder, the structure is defined by the area in ADO.\nClick to expand a project folder. The ADO imported test cases list appears. The test case filename includes testcase id and test case name.\nAfter importing all test cases, you can start recording flows and executing test cases using a run list. The linked test case and its summary are automatically displayed in the Flow settings.\nSync ADO test cases in Leapwork flow\nImportant:\nThe option to sync ADO test cases is available starting from release\n2024.1.486\n. If you are using an earlier release, this feature will not be available. Please ensure your Leapwork version is up to date to access this functionality.\nWhen your project is ready to sync, you’ll see a banner at the top of the flows list.\nClick\nReview button.\nSelect a project. All projects associated with the\nADO sync\nappear.\nClick\nSync\n.\nNote:\nOnly test cases marked as\nPlanned\nor\nAutomated\nin ADO,\nunder the\nAutomation Status field,\nwill be synced.\nOnce the sync finishes, a confirmation pop-up window appears. Click\nOk\n.\nImportant notes when syncing\nWhat happens during synchronization with Azure DevOps\nDeleted test cases in Azure DevOps:\nIf a test case or project is accidentally deleted in Azure DevOps and you click\nSync\nin Leapwork, the corresponding test cases are\nnot\ndeleted in Leapwork. This helps protect your existing automation flows.\nTest case status changes:\nIf a test case is permanently deleted or marked as\nNot Automated\nin Azure DevOps, the related flow in Leapwork is updated to\nRetire\nduring synchronization.\nIf the test case is later moved back to\nPlanned\n, the flow in Leapwork is updated from\nRetire\nto\nDraft\nduring the next sync.\nNew test cases added in Azure DevOps:\nTest cases added after the initial import are not automatically pulled in during synchronization. The\nSync\nfunction only updates existing flows and test cases.\nTo bring in new test cases, use the\nRe-import\noption in Leapwork.\nImport ADO test plan in Leapwork\nIn Run lists, right click.\nSelect\nImport from ADO\n.\nSelect a project. All the test plans related to that project appears. Each test plan is created based on the test suite and configuration.\nSelect a test plan and click\nImport\n.\nNote:\nOnly test points marked as\nPlanned\nor\nAutomated\nin ADO,\nunder the\nAutomation Status field,\nwill be imported.\nClick\nView Details\n. If there is no test case in a test plan, a message appears -\nAutomated test cases are not available in ADO\n.\nThe information displayed in the\nADO Import\npop-up window is dynamic based on the result of the importing process:\nTC Successfully Imported:\nImported all\nsuitable\ntest points successfully.\nAutomated TC Not Available:\nIt displays the test cases not imported due to unavailability in ADO or Leapwork.\nCollision:\nIt displays scenarios where Leapwork already has manually created run lists or folders with the same names in the run list section.\nClick\nOK\n. On the left, run list and configurations appears. Each run list has test cases that you imported in previous steps. Runlist is created on the basis of configuration (\nWindows 10/11\n).\nRight click on a\nrun list\nand select\nNew schedule\n.\nEnter title of the schedule and click\nSave\n. The new schedule is created on the left.\nRight click on the new schedule.\nSelect\nRun Now\n.\nPublish execution results on ADO\nIn ADO, you can verify that while execution, test run is in progress or completed as shown below.\nIn ADO, click refresh.\nClick on a test run.\nClick\nRun summary\n. On right in pie chart, you can see that the result shows that one test case passed and one failed.\nClick\nTest Results\n. You can see that the result shows that one test case passed and one failed.\nNote:\nOnce a test case is run, the status of that test case will be automatically change from\nPlanned\nto\nAutomate\nin ADO\n, under the Automation Status field.\nClick\nProgress Report\n. You can analyze results based on test suits and available filters.\nCreate bugs from Leapwork to ADO\nYou can create bugs directly in Leapwork, these bugs will then be reflected in ADO.\nIn Leapwork, click\nReporting\n.\nRight click on a specific flow with\nFailure Status\n.\nSelect\nCreate a bug in ADO\n.\nOn the\nCreate a bug in ADO\npop-up window:\nPerform the following steps:\nEnter the title of the bug in the\nTitle\nfield.\nClick on the\nPriority\ndrop-down and select a priority from 1 to 4.\nNote:\nThe default option from ADO is\n2\n.\nClick on the\nSeverity\ndrop-down and select a severity from 1 (\nCritical\n) to 4 (\nLow\n).\nNote:\nThe default option from ADO is\n3\n.\nEnter the build number or version of the bug in the\nFound in build\nfield.\nFill in any additional\ncustom fields\nconfigured in the\nAzure DevOps Connections\nsection.\nGive the reproduction steps in the\nRepro Steps\nfield.\nClick\nCreate\n.\nThe bug has been created successfully in Leapwork and is now reflected in Azure DevOps.",
+  "links": [
+    {
+      "title": "ADO connection",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/azure-devops-ado-server-connections"
+    },
+    {
+      "title": "run list",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists"
+    },
+    {
+      "title": "Azure DevOps Connections",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/azure-devops-ado-server-connections"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260316-123825.png",
+      "url": "https://docs.leapwork.com/__attachments/a_3b3ddd7477e0396277f0dfb45e41eaeb7c7dc7f5c27f7ab7299e4f952e8cea42/image-20260316-123825.png?cb=3b5a18ef5e6a89a9f5c348f53d5a46b8"
+    },
+    {
+      "alt": "image-20260115-093344.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d507290505fc13e17483e7a28cec1aa2a8c5734357137bc33727807aff7d4d3b/image-20260115-093344.png?cb=6f6d1580e84e03a391461367afb8b3ff"
+    },
+    {
+      "alt": "image-20260313-151303.png",
+      "url": "https://docs.leapwork.com/__attachments/a_4be1e971f541d64feec74b8cc86e6a5a417a877ea834ec2dbeeb4c0f53b4b25e/image-20260313-151303.png?cb=4239118d398b7a52ccc00d5c0baa9eb3"
+    },
+    {
+      "alt": "image-20260115-093515.png",
+      "url": "https://docs.leapwork.com/__attachments/a_e181768b8ca72bf802f4eb8d36c8dc78cbe8130c30b9605d8d05340a689bb831/image-20260115-093515.png?cb=295cc05bbdd05458439bbc4aca1d8455"
+    },
+    {
+      "alt": "image-20260316-123908.png",
+      "url": "https://docs.leapwork.com/__attachments/a_bb261335c9b763c9412f26c74a66a8fe70a29582f9b2a9fc1abaa43d696b761c/image-20260316-123908.png?cb=ccc68777dc2beb7bcc7926e00d3b3669"
+    },
+    {
+      "alt": "image-20260115-093718.png",
+      "url": "https://docs.leapwork.com/__attachments/a_b92526be6f243722639075ca5b352690a9adadac2a568fdd6450537255eba29b/image-20260115-093718.png?cb=cca57b2b785cd6a2e7ca0f05c7e09d89"
+    },
+    {
+      "alt": "image-20260115-093845.png",
+      "url": "https://docs.leapwork.com/__attachments/a_baead23cc7c3d2ee9d4b5cc81bc00de9e91042801c7e5b32136ceaa889cb211c/image-20260115-093845.png?cb=e86054fc71c4ccefeedcb5f2ba287e4e"
+    },
+    {
+      "alt": "image-20260316-123941.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d2439def3d53893fa84b3127093e23f0cffe6d72a5189828706bb1dd2b417676/image-20260316-123941.png?cb=bd416c62d5a74609cb5c214eaf39be2d"
+    },
+    {
+      "alt": "image-20260313-151350.png",
+      "url": "https://docs.leapwork.com/__attachments/a_25b30c086e7f81914ef34c2c6162748477d5c56f47c02ffdec5f7098f9f28d55/image-20260313-151350.png?cb=0608af812755e006dc2c26b83def8ba3"
+    },
+    {
+      "alt": "image-20260115-094057.png",
+      "url": "https://docs.leapwork.com/__attachments/a_984683cb1df8783225be98f332b1f444089d613a73faa7c6390681fc7478da0e/image-20260115-094057.png?cb=e6fef60692cdd9b7930bff82a6a267f7"
+    },
+    {
+      "alt": "image-20260316-124015.png",
+      "url": "https://docs.leapwork.com/__attachments/a_1fdc2090f3c8d6807382979cee34e09ffe878334ff846d3082f447e4ba3097ab/image-20260316-124015.png?cb=665260e983f829122e7a8245094c6eec"
+    },
+    {
+      "alt": "image-20260316-124042.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f8d2071fc93a08a14624e2b3f0c56a6578932d78a064d55d7642f0139bed216d/image-20260316-124042.png?cb=1b7691f72bd408a301d830813b305888"
+    },
+    {
+      "alt": "image-20260316-124119.png",
+      "url": "https://docs.leapwork.com/__attachments/a_31b04bf3adad225f1855540535a913a53ecf28fbabdaf863edc5e3eda3a54e38/image-20260316-124119.png?cb=80d52d7c3f9949fb6c2af493885d905d"
+    },
+    {
+      "alt": "image-20260115-094253.png",
+      "url": "https://docs.leapwork.com/__attachments/a_462ed318abfc40690848b95e517a79eaa209cf88225e71fa20f3687281351bcf/image-20260115-094253.png?cb=79d68481bd85bfd2056e16365203a612"
+    },
+    {
+      "alt": "image-20260115-094316.png",
+      "url": "https://docs.leapwork.com/__attachments/a_234b9e2abc405f8a36676f73336d9d6352542e964e465ca87e9c7f6046e83cb1/image-20260115-094316.png?cb=80bbe54072c61dcbe50f86617dbcd74c"
+    },
+    {
+      "alt": "image-20260115-094350.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d17875670b29bdc9598269cfaffceb63b924a636f3e71a028eef2b6f6f06a3b2/image-20260115-094350.png?cb=9fa71fe0a11d7ba9ffcb9175fe633ba7"
+    },
+    {
+      "alt": "image-20260115-094421.png",
+      "url": "https://docs.leapwork.com/__attachments/a_3e1bdf51c6eaad2d29b6c1cc6ada396f3e774f1df0d5c7ea06394b2ef02925b7/image-20260115-094421.png?cb=5dcf74d9b42367188f432e3ca0948c43"
+    },
+    {
+      "alt": "image-20260115-094516.png",
+      "url": "https://docs.leapwork.com/__attachments/a_eb13d5e9bbc6edd616241c11929acda5af16b3f910783c80031129fb2ca5cc03/image-20260115-094516.png?cb=65b7a146a902a27aa0c9f26b65647abb"
+    },
+    {
+      "alt": "image-20260115-094539.png",
+      "url": "https://docs.leapwork.com/__attachments/a_43824fc87fdf7fccdbe757aefa76f79b189af649fb39017ac7568f955c466c30/image-20260115-094539.png?cb=5da4c86c2cd81c5bf703dcd1d1b6bf71"
+    }
+  ]
+}

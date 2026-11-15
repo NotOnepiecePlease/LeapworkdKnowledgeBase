@@ -1,0 +1,25 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/azure-devops-ado-server-connections",
+  "title": "Azure DevOps (ADO) Server - Connections",
+  "retrievedAt": "2026-11-15T02:39:46.163144+00:00",
+  "text": "Breadcrumbs\nThe\nAzure DevOps (ADO)\nconnection allows you to integrate Leapwork with ADO for automated testing. With this integration, you can automate your Leapwork test cases and execute them as often as needed. Test execution reports and results are automatically available in Azure DevOps (ADO), giving you full visibility and control.\nNote:\nThis feature can be accessed by Leapwork Admin only.\nAdd Connection\nFor importing a test case, create connection using\nADO URL\nand personal access token.\nTo add a connection:\nClick the\nAdd\nbutton and the following pop-up appears:\nOn the\nAdd Connection\npop-up window:\nEnter the title in the\nTitle\nfield. It should be unique.\nEnter the description in the\nDescription\nfield.\nFrom the\nType\ndrop-down, select the\nAzure DevOps\noption:\nSelect\nAzure DevOps\nand the following new fields appear:\nNavigate to\nADO User Settings\n>\nPersonal Access Tokens\n.\nNote:\nCurrently, it supports only a single ADO connection. The ADO connection type will not appear if you have already configured an ADO connection in the settings.\nClick\nCreate Token\nand configure the following access permissions:\nWork item\n: Read and write\nTest management\n: Read and write.\nClick the\nTest connection\nbutton to test the connection.\nClick the\nSave\nbutton to save the details.\nOnce your connection is saved, a success message confirms it.\nTo modify or remove the connection, you can use the\nEdit\nor\nDelete\nbuttons located next to the\nAdd\nbutton.",
+  "links": [],
+  "images": [
+    {
+      "alt": "image-png-Nov-15-2022-07-56-10-4735-AM.png-20260629-114218.webp",
+      "url": "https://docs.leapwork.com/__attachments/a_6953a85eb49cf48ff0b79b26be1f53da8c3d99adfbdeb7f58e4e4debe3fd88ba/image-png-Nov-15-2022-07-56-10-4735-AM.png-20260629-114218.webp?cb=efcd055b0f2cc29dc6483456b69a9427"
+    },
+    {
+      "alt": "image-20260122-110131.png",
+      "url": "https://docs.leapwork.com/__attachments/a_e53f283d0a879c81133dbed87f29cd17852143ea98de792b65cb705d663e90ab/image-20260122-110131.png?cb=a5145fd29ca3ddb9c278ade3c7301c83"
+    },
+    {
+      "alt": "image-20260122-110211.png",
+      "url": "https://docs.leapwork.com/__attachments/a_0a4e333592f55d9e76e3fe65c740cf323029145c1b47b3ee6437f26ba64f3a75/image-20260122-110211.png?cb=e36e93f5d74da91deaa21c014e5ecb2e"
+    },
+    {
+      "alt": "image-png-Nov-15-2022-07-56-10-4735-AM.png-20260629-114326.webp",
+      "url": "https://docs.leapwork.com/__attachments/a_41aa6b951cb1d86b696621581afbded045d54dbeeb0cb9fb0be7ec7dee5719a4/image-png-Nov-15-2022-07-56-10-4735-AM.png-20260629-114326.webp?cb=efcd055b0f2cc29dc6483456b69a9427"
+    }
+  ]
+}

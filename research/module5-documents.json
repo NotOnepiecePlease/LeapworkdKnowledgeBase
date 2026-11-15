@@ -1,0 +1,200 @@
+[
+  {
+    "path": "best-practices/organizing-daily-work",
+    "url": "https://docs.leapwork.com/best-practices/latest/leapwork-flow-best-practices/organizing-daily-work-in-leapwork",
+    "title": "Organizing daily work in Leapwork",
+    "retrievedAt": "2026-11-15T02:39:46.004945+00:00",
+    "size": [
+      587,
+      832
+    ],
+    "image": "assets/docs/m5-organization.png",
+    "imageSource": "https://leapworkaps.file.force.com/sfc/dist/version/download/?oid=00D7Q000003Qjj6&ids=0687Q000004sAxs&d=%2Fa%2F7Q000000cAmH%2FsKdMBszKd.UupHeRSAwBzp29Eugq6VaMEY5YCEG9.XQ&asPdf=false"
+  },
+  {
+    "path": "best-practices/working-with-run-lists",
+    "url": "https://docs.leapwork.com/best-practices/latest/leapwork-flow-best-practices/working-with-run-lists",
+    "title": "Working with Run Lists",
+    "retrievedAt": "2026-11-15T02:39:46.022098+00:00"
+  },
+  {
+    "path": "best-practices/ai-blocks",
+    "url": "https://docs.leapwork.com/best-practices/latest/leapwork-flow-best-practices/guidelines-for-using-the-ai-blocks",
+    "title": "Guidelines for using the AI Blocks",
+    "retrievedAt": "2026-11-15T02:39:45.737338+00:00"
+  },
+  {
+    "path": "public-rest-apis",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/public-rest-apis",
+    "title": "Leapwork Public REST APIs",
+    "retrievedAt": "2026-11-15T02:38:02.176250+00:00"
+  },
+  {
+    "path": "public-rest-apis/api-endpoints",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/public-rest-apis/api-endpoints",
+    "title": "API Endpoints",
+    "retrievedAt": "2026-11-15T02:38:02.627141+00:00"
+  },
+  {
+    "path": "working-with-leapwork/organizing-your-work",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/organizing-your-work",
+    "title": "Organizing your work",
+    "retrievedAt": "2026-11-15T02:14:18.741385+00:00"
+  },
+  {
+    "path": "working-with-leapwork/designing-automation-flows",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows",
+    "title": "",
+    "retrievedAt": "2026-11-13T18:44:20.610880+00:00"
+  },
+  {
+    "path": "working-with-leapwork/designing-automation-flows/sub-flows",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/sub-flows",
+    "title": "",
+    "retrievedAt": "2026-11-13T18:44:21.022993+00:00"
+  },
+  {
+    "path": "building-blocks/module-input-and-output/value-input",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/value-input",
+    "title": "Value Input",
+    "retrievedAt": "2026-11-13T18:59:35.742841+00:00",
+    "size": [
+      252,
+      119
+    ],
+    "image": "assets/docs/m5-input.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_87d67a3bec63173c2d35736dd337c138f666ec6e31080620544cc91766ed9d11/image-20251203-095349.png?cb=c893a802d65283f7432e9c1c5946d606"
+  },
+  {
+    "path": "building-blocks/module-input-and-output/value-output",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/value-output",
+    "title": "Value Output",
+    "retrievedAt": "2026-11-15T02:39:46.794295+00:00",
+    "size": [
+      252,
+      126
+    ],
+    "image": "assets/docs/m5-output.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_a65f65e853a3c7e4f4467b04a753c28eda1033b4a45155c22496fef67901f8f3/image-20251203-104304.png?cb=3b71e87cbb925b8105cb8cf08cec27ef"
+  },
+  {
+    "path": "building-blocks/web/find-web-element",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/find-web-element",
+    "title": "",
+    "retrievedAt": "2026-11-13T18:44:24.287455+00:00"
+  },
+  {
+    "path": "building-blocks/web/get-web-text",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/get-web-text",
+    "title": "",
+    "retrievedAt": "2026-11-13T18:44:26.477144+00:00"
+  },
+  {
+    "path": "building-blocks/logic/compare",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/compare",
+    "title": "Compare",
+    "retrievedAt": "2026-11-13T18:59:36.146035+00:00"
+  },
+  {
+    "path": "building-blocks/logic/wait",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/wait",
+    "title": "Wait",
+    "retrievedAt": "2026-11-13T20:40:17.200032+00:00"
+  },
+  {
+    "path": "building-blocks/data-driven/read-excel",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/read-excel",
+    "title": "Read Excel",
+    "retrievedAt": "2026-11-13T19:24:46.207862+00:00"
+  },
+  {
+    "path": "building-blocks/data-driven/http-request",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/http-request",
+    "title": "HTTP Request",
+    "retrievedAt": "2026-11-13T21:12:54.998144+00:00"
+  },
+  {
+    "path": "administration/api-access-keys",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/api-access-keys",
+    "title": "API Access Keys",
+    "retrievedAt": "2026-11-15T02:15:17.788882+00:00"
+  },
+  {
+    "path": "administration/wip-azure-devops-connections",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-azure-devops-connections",
+    "title": "Azure DevOps Connections",
+    "retrievedAt": "2026-11-15T02:15:19.282549+00:00"
+  },
+  {
+    "path": "administration/connections/azure-devops-ado-server-connections",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/azure-devops-ado-server-connections",
+    "title": "Azure DevOps (ADO) Server - Connections",
+    "retrievedAt": "2026-11-15T02:39:46.163144+00:00"
+  },
+  {
+    "path": "working-with-leapwork/microsoft-ado-test-plan-integration",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/microsoft-ado-test-plan-integration",
+    "title": "Microsoft ADO Test Plan Integration",
+    "retrievedAt": "2026-11-15T02:38:03.072862+00:00",
+    "size": [
+      742,
+      841
+    ],
+    "image": "assets/docs/m5-ado.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_3b3ddd7477e0396277f0dfb45e41eaeb7c7dc7f5c27f7ab7299e4f952e8cea42/image-20260316-123825.png?cb=3b5a18ef5e6a89a9f5c348f53d5a46b8"
+  },
+  {
+    "path": "working-with-leapwork/git-version-control/use-git-versioning-for-flows-and-subflows",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control/use-git-versioning-for-flows-and-subflows",
+    "title": "Use Git versioning for flows and subflows",
+    "retrievedAt": "2026-11-15T02:39:46.584101+00:00",
+    "size": [
+      697,
+      552
+    ],
+    "image": "assets/docs/m5-git.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_90ce3213a03d9111e2f57a70a62b6c4d698b7f073293f086ea3cf52641030ea4/image-20261021-083528.png?cb=b09c3439495a8481c70a250a06fd7deb"
+  },
+  {
+    "path": "working-with-leapwork/git-version-control/check-git-sync-status-and-resolve-upload-failures",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control/check-git-sync-status-and-resolve-upload-failures",
+    "title": "Check Git Sync status and resolve upload failures",
+    "retrievedAt": "2026-11-15T02:39:46.864706+00:00"
+  },
+  {
+    "path": "working-with-leapwork/run-lists",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+    "title": "Run Lists",
+    "retrievedAt": "2026-11-15T02:15:20.298001+00:00"
+  },
+  {
+    "path": "working-with-leapwork/run-lists/schedules",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists/schedules",
+    "title": "Schedules",
+    "retrievedAt": "2026-11-15T02:14:19.801331+00:00"
+  },
+  {
+    "path": "working-with-leapwork/reporting",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+    "title": "Reporting",
+    "retrievedAt": "2026-11-15T02:15:19.984574+00:00"
+  },
+  {
+    "path": "working-with-leapwork/dashboards",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/dashboards",
+    "title": "Dashboards",
+    "retrievedAt": "2026-11-15T02:15:20.325068+00:00"
+  },
+  {
+    "path": "administration/retention-policies",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/retention-policies",
+    "title": "Retention Policies",
+    "retrievedAt": "2026-11-15T02:14:46.688837+00:00"
+  },
+  {
+    "path": "administration/audit-log",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/audit-log",
+    "title": "Audit Log",
+    "retrievedAt": "2026-11-15T02:14:48.746088+00:00"
+  }
+]

@@ -69,8 +69,8 @@ PAGES = [
     'building-blocks/generators/generate-password',
 ]
 
-def collect(path):
-    url = BASE + path
+def collect(path, source_url=None):
+    url = source_url or BASE + path
     dest = OUT / (path.replace('/', '__') + '.json')
     if dest.exists():
         return json.loads(dest.read_text(encoding='utf-8'))

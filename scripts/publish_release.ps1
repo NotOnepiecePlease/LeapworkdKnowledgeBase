@@ -1,4 +1,4 @@
-param([string]$Version = 'v1.1.0')
+param([string]$Version = 'v1.2.0')
 $ErrorActionPreference = 'Stop'
 $leapworkRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $leapworkRoot

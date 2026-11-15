@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 site = ROOT / 'site'
-script = "global.window={};require('./site/content.js');require('./site/module2.js');require('./site/module1-extra.js');require('./site/catalog.js');require('./site/module2-extra.js');require('./site/module3.js');require('./site/module4.js');console.log(JSON.stringify(window.LEAP));"
+script = "global.window={};require('./site/content.js');require('./site/module2.js');require('./site/module1-extra.js');require('./site/catalog.js');require('./site/module2-extra.js');require('./site/module3.js');require('./site/module4.js');require('./site/module5.js');console.log(JSON.stringify(window.LEAP));"
 data = json.loads(subprocess.check_output(['node', '-e', script], cwd=ROOT, encoding='utf-8'))
 media = []
 for lesson in data['lessons']:

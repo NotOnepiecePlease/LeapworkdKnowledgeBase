@@ -1,11 +1,11 @@
 # Caderno de estudo Leapwork
 
-Base de conhecimento local em português para estudar automação com Leapwork. Edição v1.1.0, com os módulos 1, 2, 3 e 4 preparados para estudo.
+Base de conhecimento local em português para estudar automação com Leapwork. Edição v1.2.0, com os cinco módulos preparados para estudo. O caderno não substitui a execução prática no programa nem concede certificação oficial.
 
 ## Baixar e começar a estudar
 
 1. Acesse a [última release](https://github.com/NotOnepiecePlease/LeapworkdKnowledgeBase/releases/latest).
-2. Em **Assets**, baixe **LeapworkKnowledgeBase-v1.1.0-completo.zip** para ter o caderno e os 48 vídeos offline (aproximadamente 1,1 GB). O arquivo **essencial.zip** contém as aulas, imagens, GIFs e laboratório, sem os vídeos locais.
+2. Em **Assets**, baixe **LeapworkKnowledgeBase-v1.2.0-completo.zip** para ter o caderno e os 48 vídeos offline (aproximadamente 1,1 GB). O arquivo **essencial.zip** contém as aulas, imagens, GIFs e laboratório, sem os vídeos locais.
 3. Extraia **todo o ZIP** para uma pasta no computador. No Windows, clique com o botão direito e escolha **Extrair tudo**. Não abra o caderno de dentro do ZIP.
 4. Abra a pasta extraída e dê dois cliques em **Abrir caderno.cmd** no Windows. No macOS e Linux, abra **site/index.html** no navegador.
 5. Comece pelo módulo **01**, siga as aulas, responda às revisões e marque seu progresso. O módulo **03** também oferece um laboratório interativo com arquivos de exemplo.
@@ -23,7 +23,7 @@ Não é necessário instalar Node, Python, servidor ou Leapwork para consultar o
 - **Atalho não abre no seu sistema:** abra `site/index.html` diretamente pelo navegador.
 - **Notas não aparecem:** use o mesmo navegador e a mesma pasta em que estudou; confira a cópia exportada das anotações.
 
-## Sumário do conteúdo e próximos módulos
+## Sumário dos cinco módulos
 
 | Módulo | Estado nesta versão | Conteúdo |
 | --- | --- | --- |
@@ -32,9 +32,9 @@ Não é necessário instalar Node, Python, servidor ou Leapwork para consultar o
 | 02 · Automação avançada | Disponível: 32 aulas | 29 exemplos Web: autenticação, DOM, controles, esperas, arquivos, hover, frames, rolagem, alertas, abas, notificações e tabelas. Mais 3 aulas Desktop: listas, localizadores dinâmicos e dados entre janelas |
 | 03 · Dados e manipulação | Disponível: 19 aulas | Excel, ODBC, HTTP/API, arquivos, comandos, e-mail, condições, repetições, cálculos, texto, datas, variáveis, geradores, clipboard, esperas e C#. Inclui laboratório local |
 | 04 · Administração, monitoramento e controle | Disponível: 16 aulas | Controller, usuários, permissões, conexões, retenção, Agents, Run Lists, retry, agendamentos, relatórios, dashboards, auditoria, histórico, restauração e transferência de ativos. Inclui dois laboratórios locais |
-| 05 · Boas práticas, integração e ciclo de testes | Planejado; ainda sem aulas | Expansão posterior do material de estudo |
+| 05 · Boas práticas, integração e ciclo de testes | Disponível: 16 aulas | Organização, reuso, estabilidade, dados, revisão, Git, CI/CD, API v4, Azure DevOps, primeiro conjunto de dez casos, triagem, reteste e parecer do ciclo. Inclui dois laboratórios offline |
 
-O módulo 5 ainda não tem data de entrega. As tabelas abaixo detalham todas as aulas disponíveis. Ao todo são **82 aulas, 363 etapas, 14 GIFs, 48 vídeos e 48 termos de glossário**, além de revisões, busca, notas e marcação de progresso. No módulo 3, uma aula acompanha um vídeo oficial e as outras 18 são estudos de documentação com exemplos autorais. As 16 aulas do módulo 4 são baseadas em documentação; não são vídeos novos.
+Os cinco módulos estão disponíveis para estudo. As tabelas abaixo detalham todas as aulas. Ao todo são **98 aulas, 427 etapas, 14 GIFs, 48 vídeos e 56 termos de glossário**, além de revisões, busca, notas e marcação de progresso. No módulo 3, uma aula acompanha um vídeo oficial e as outras 18 são estudos de documentação com exemplos autorais. As 16 aulas do módulo 4 e as 16 do módulo 5 são baseadas em documentação; não são vídeos novos. A execução real dos fluxos e do primeiro ciclo de testes continua sendo uma prática posterior, com Leapwork e uma aplicação de homologação.
 
 ## Obter o código-fonte
 
@@ -45,7 +45,7 @@ cd LeapworkdKnowledgeBase
 
 Depois, abra `site/index.html`. O repositório mantém o site, os materiais de referência e os scripts de manutenção. Os MP4 são distribuídos separadamente no pacote completo da release para manter o histórico do Git menor. Não há etapa de build para estudar.
 
-Para preparar novos pacotes a partir de uma cópia com os vídeos locais, execute `python scripts/package_release.py --version v1.1.0`. Os ZIPs e o arquivo de verificação SHA-256 serão gerados em `dist/`. A publicação usa `scripts/publish_release.ps1`, com Git e GitHub CLI autenticado; os arquivos são verificados antes do envio.
+Para preparar novos pacotes a partir de uma cópia com os vídeos locais, execute `python scripts/package_release.py --version v1.2.0`. Os ZIPs e o arquivo de verificação SHA-256 serão gerados em `dist/`. A publicação usa `scripts/publish_release.ps1`, com Git e GitHub CLI autenticado; os arquivos são verificados antes do envio.
 
 ## Créditos e origem
 
@@ -70,12 +70,12 @@ Os passos têm cartões individuais, 32 px de separação no computador, cabeça
 
 - Introdução à arquitetura: Flow, Controller e Agent.
 - Módulo 1: seis aulas Web, três Desktop e seis Virtual, além da introdução à arquitetura. Módulo 2: 29 assuntos Web e três aulas Desktop disponíveis, além da referência à aula de listas do módulo 1.
-- 82 aulas nos quatro módulos, com 363 etapas, 250 usos de imagens de referência e 14 GIFs controláveis.
+- 98 aulas nos cinco módulos, com 427 etapas, 255 usos de imagens de referência e 14 GIFs controláveis.
 - 48 vídeos locais com áudio e acesso aos trechos indicados nas etapas.
 - Esquemas didáticos, conceitos, objetivos e pontos de atenção.
 - Exercícios autorais sem instalação e propostas de prática posterior com Leapwork.
 - Duas questões de revisão por aula, com correção e explicação.
-- Glossário de 48 termos.
+- Glossário de 56 termos, todos com ligação para uma aula de referência.
 - Busca nas aulas, etapas, pontos de atenção e glossário, com suporte a acentos.
 - Marcação de aulas revisadas, anotações por aula e exportação das notas.
 - Referências por aula, horários originais e diferenças de interface sinalizadas.
@@ -160,9 +160,7 @@ A imagem escurecida do passo 3 do primeiro fluxo foi substituída por um quadro 
 
 As animações são extraídas dos vídeos locais com FFmpeg, carregadas apenas quando você escolhe **Reproduzir animação** e podem ser paradas para voltar ao quadro de referência. Os horários do GIF, do quadro e do trecho original permanecem identificados. Nenhum GIF começa automaticamente. As notas e o progresso usam a mesma chave de armazenamento da versão anterior.
 
-Conteúdo futuro, identificado como planejado:
-
-- Módulo 5: boas práticas, integração e revisão do ciclo de testes.
+Os módulos 3, 4 e 5 também estão preparados para estudo, conforme os sumários abaixo. Não há módulo pendente de conteúdo nesta edição. A prática e as evidências de uma execução real dependem do ambiente de cada estudante.
 
 ## Módulo 3: dados e manipulação
 
@@ -236,13 +234,59 @@ A ficha JSON exportável guarda as escolhas atuais e o texto do exercício. Não
 
 Os artigos de suporte sobre histórico, restauração, transferência e exercícios retornaram tela de carregamento/erro CSS na consulta. Os links originais foram preservados, e as funções são estudadas pelas páginas atuais da documentação oficial. Os enunciados oficiais não foram reproduzidos. Recursos especializados de administração têm referências complementares para consulta conforme a implantação. A prática real no Leapwork continua pendente de acesso ao programa.
 
+## Módulo 5: boas práticas, integração e revisão do ciclo
+
+Entre por **05 · Boas práticas e integração**. São **16 aulas, 64 etapas e 32 questões**, com exercícios autorais, cinco imagens de documentação, anotações e progresso próprio. O módulo reúne os três eixos de referência do treinamento oficial: Best Practices, Integration e Public REST API, aplicados à preparação e à revisão de um primeiro conjunto de testes.
+
+| Aula | Assunto |
+| --- | --- |
+| 01 | Definir o escopo e os critérios de um ciclo |
+| 02 | Organizar o projeto para conseguir mantê-lo |
+| 03 | Definir contratos para sub-flows reutilizáveis |
+| 04 | Projetar esperas, localizadores e verificações |
+| 05 | Isolar dados, preparar e encerrar os casos |
+| 06 | Revisar mudanças e acompanhar a sincronização Git |
+| 07 | Desenhar a integração antes de escolher a ferramenta |
+| 08 | Conferir versão, endereço e autenticação da API |
+| 09 | Disparar um Schedule e preservar o RunId |
+| 10 | Aguardar o run e recolher os itens corretos |
+| 11 | Definir decisões e erros na integração |
+| 12 | Relacionar casos e resultados no Azure DevOps |
+| 13 | Preparar o primeiro conjunto de dez casos |
+| 14 | Investigar, registrar e repetir o teste certo |
+| 15 | Revisar cobertura, evidências e pendências |
+| 16 | Projeto final: da integração ao parecer do ciclo |
+
+### Projeto final offline
+
+- **Integração:** compara respostas HTTP, estados `Queued`, `Executing` e `Finished`, resultados dos itens, correlação do RunId e quantidade esperada. A política didática exige resposta válida, run terminado, população correta e todos os itens `Passed`. `Done` e `Finished` não são tratados como aprovação funcional automática. Entradas desconhecidas, quantidades vazias e resultados incompletos são tratados explicitamente.
+- **Revisão de ciclo:** dez casos retomam o contrato fictício de orçamento do módulo 3, com resultados esperados para normalização, descontos, quantidades inválidas, preço inválido, grupo desconhecido, centavos e o conjunto de quatro registros. O cenário inicial inclui cinco aprovados, um falho, um bloqueado e três não executados. O critério do exercício exige os dez aprovados, evidências marcadas e três pré-requisitos declarados.
+
+Os laboratórios não fazem chamadas de rede, não recebem chaves reais, não executam fluxos e não aprovam uma implantação. Alterar uma seleção para `Passed` só muda uma entrada da simulação. O CSV guarda a matriz com as escolhas atuais; a ficha JSON reúne cenário de integração, parecer, prontidão e notas do projeto. Os rascunhos não são salvos automaticamente: use os downloads ou as anotações persistidas da aula.
+
+### Contrato da API conferido
+
+As rotas abaixo foram verificadas na especificação oficial OpenAPI v4, preservada em `research/module5-api-spec.json`. São referências para uma integração real futura; o site não as chama.
+
+| Método e rota | Finalidade |
+| --- | --- |
+| `GET /api/v4/schedules` | Localizar a configuração de Schedule |
+| `PUT /api/v4/schedules/{scheduleId}/runNow` | Disparar e obter RunId |
+| `GET /api/v4/run/{runId}/status` | Acompanhar a execução específica |
+| `GET /api/v4/run/{runId}/runItemIds` | Obter os IDs dos itens daquela execução |
+| `GET /api/v4/runItems/{runItemId}` | Consultar o resultado individual e seu contexto |
+
+A documentação usa o cabeçalho `AccessKey`. O exemplo do laboratório tem apenas um marcador de segredo e um host `.invalid`. Uma resposta HTTP de disparo não substitui a leitura e a validação dos resultados. Exemplos antigos de API precisam ser conferidos contra a versão da implantação.
+
+Os tópicos de Best Practices e Integration do portal de suporte retornaram Loading / CSS Error. Seus artigos não foram apresentados como lidos. Foram usadas as páginas atuais acessíveis de boas práticas, documentação Flow, integração ADO e API, com fontes por aula. Não há vídeos próprios adicionais indicados para o módulo. A organização didática e os critérios dos laboratórios são autorais.
+
 ## Fontes e preparação
 
 - Estrutura do curso: https://leapwork.com/learning-center/self-paced-training/#h-module-1-introduction-to-leapwork-and-web-desktop-virtual-testing
 - Entrada da documentação: https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview
 - Playlist: https://www.youtube.com/playlist?list=PL4qgJwtW1RjaCW32VlVtL4PBMVx67FjCY
 
-Foram armazenadas 118 páginas da documentação, abrangendo arquitetura, automação, dados e administração. Algumas páginas são índices de categorias. As referências utilizadas estão nas aulas e na página Fontes. Snapshots de consulta ficam em `research/docs`, com suas datas de coleta originais. A cobertura e as ressalvas do módulo 4 estão em `research/module4-sources.json`.
+Foram armazenadas 128 páginas da documentação, abrangendo arquitetura, automação, dados, administração, boas práticas e integração. Algumas páginas são índices de categorias. As referências utilizadas estão nas aulas e na página Fontes. Snapshots de consulta ficam em `research/docs`, com suas datas de coleta originais. Cobertura e ressalvas estão nos manifestos `research/module4-sources.json` e `research/module5-sources.json`. O módulo 5 reúne 28 referências, incluindo páginas já usadas, e uma cópia da especificação OpenAPI com hash registrado.
 
 O texto editorial foi preparado a partir das legendas originais em inglês, das capturas conferidas e da documentação. O YouTube limitou as requisições de traduções automáticas; elas não foram usadas como base do material. O download dos vídeos e a extração de capturas nesta etapa não consumiram créditos do vidIQ.
 
@@ -269,6 +313,9 @@ O usuário ainda não tem o Leapwork instalado. Os fluxos não foram executados 
 | `site/module4.js` | 16 aulas, 32 questões e termos do glossário de administração e controle |
 | `site/module4-view.js` | Visão geral, cobertura, laboratórios e exportação da ficha JSON |
 | `site/module4.css` | Estilos dos laboratórios, com temas e layout responsivo |
+| `site/module5.js` | 16 aulas finais, revisões, fontes e termos de integração |
+| `site/module5-view.js` | Projeto final, política didática, matriz de dez casos e downloads CSV/JSON |
+| `site/module5.css` | Estilos responsivos dos laboratórios finais |
 | `site/catalog.js` | Catálogo dos 29 exemplos web e estado de preparação |
 | `site/media.js` | Durações verificadas dos vídeos locais |
 | `site/assets/frames` | Quadros de referência por vídeo e segundo |
@@ -286,6 +333,9 @@ O usuário ainda não tem o Leapwork instalado. Os fluxos não foram executados 
 | `research/module3-documents.json` | Fontes das imagens e dimensões originais |
 | `research/module4-sources.json` | Cobertura do treinamento, referências e limitações do módulo 4 |
 | `research/module4-documents.json` | 34 referências e origem das 12 imagens do módulo 4 |
+| `research/module5-sources.json` | Cobertura do módulo 5, rotas verificadas, origem e limitações |
+| `research/module5-documents.json` | 28 referências e origem das cinco imagens do módulo 5 |
+| `research/module5-api-spec.json` | Snapshot da especificação OpenAPI v4 utilizada |
 | `research/media-manifest.json` | Durações, codecs, dimensões e tamanhos dos vídeos |
 | `research/contact-sheets` | Folhas de contato usadas na conferência visual |
 | `research/qa` | Relatório dos testes e capturas do site |
@@ -296,15 +346,17 @@ Os vídeos ocupam aproximadamente 1060 MB e os GIFs, 28.9 MB. O site só carrega
 
 ## Verificações executadas
 
+- Módulo 5: 218 verificações aprovadas em `scripts/check_module5.py`, incluindo as 16 aulas, revisões, rotas contra o OpenAPI, estados da integração, completude, correlação, entradas inválidas, matriz e critérios do ciclo, reset, downloads CSV/JSON, links do glossário, fontes de boas práticas, preservação de notas, progresso independente e temas em 1440, 768 e 390 px. Sem erros JavaScript ou requisições externas. Relatório em `research/qa/module5-report.json`.
+
 - Módulo 4: 185 verificações de navegador aprovadas em `scripts/check_module4.py`, incluindo as 16 aulas e revisões, referências, imagens, busca, progresso independente, preservação e exportação das notas anteriores, os dois laboratórios, validação de entradas, download da ficha JSON, temas e larguras de 1440, 768 e 390 px. Nenhuma requisição externa ou erro de JavaScript nos fluxos testados. Relatório em `research/qa/module4-report.json`.
 
 - Sintaxe JavaScript conferida com `node --check`.
 - Referências de imagens, vídeos, documentos e limites dos horários conferidos por `scripts/finalize_content.py`.
-- 810 verificações de navegador aprovadas com Playwright/Chromium: 189 gerais, 50 do módulo 1, 50 do módulo 2, 33 de aparência, 128 da coleção Web, 175 do módulo 3 e 185 do módulo 4. O site foi aberto diretamente como arquivo local.
+- 1060 verificações de navegador aprovadas com Playwright/Chromium: 221 gerais, 50 do módulo 1, 50 do módulo 2, 33 de aparência, 128 da coleção Web, 175 do módulo 3, 185 do módulo 4 e 218 do módulo 5. O site foi aberto diretamente como arquivo local.
 - Conferidos ambos os temas, persistência da preferência, fontes offline, preservação das notas e larguras de 1905, 1280, 768 e 390 px. Contraste das combinações de texto principal, secundário e acento sobre suas superfícies conferido acima de 4,5:1 nos dois temas.
-- Conferidos busca, entrada segura de texto, rotas, imagens das 82 aulas, ampliação, notas persistidas, exportação, marcação de progresso, respostas de revisão e reprodução de trecho local.
+- Conferidos busca, entrada segura de texto, rotas, imagens das 98 aulas, ampliação, notas persistidas, exportação, marcação de progresso, respostas de revisão e reprodução de trecho local.
 - Layout conferido em computador (1440 px) e tela pequena (390 px), sem transbordamento horizontal nas páginas testadas.
-- Nenhum erro de JavaScript nos fluxos testados. Relatórios em `research/qa`: `browser-report.json`, `module1-report.json`, `module2-report.json`, `appearance-report.json`, `module2-completion-report.json` e `module3-report.json`.
+- Nenhum erro de JavaScript nos fluxos testados. Relatórios em `research/qa`: `browser-report.json`, `module1-report.json`, `module2-report.json`, `appearance-report.json`, `module2-completion-report.json`, `module3-report.json`, `module4-report.json` e `module5-report.json`.
 
 Os utilitários de manutenção usam Python, FFmpeg, Node e bibliotecas disponíveis neste ambiente. O site pronto não depende dessas ferramentas para funcionar. O teste de navegador usa um contexto isolado e efêmero; não modifica o perfil pessoal.
 

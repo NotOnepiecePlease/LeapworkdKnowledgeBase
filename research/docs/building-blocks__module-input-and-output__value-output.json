@@ -1,0 +1,13 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/value-output",
+  "title": "Value Output",
+  "retrievedAt": "2026-11-15T02:39:46.794295+00:00",
+  "text": "Breadcrumbs\n﻿\nThe\nValue Output\nblock is used to provide an output value from a sub-flow to the calling flow. It represents a value that is collected inside the sub-flow and then exposed so that other blocks outside the sub-flow can use it.\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nQuick-start\nDrag\nValue Output\nonto the canvas.\nSpecify the basic parameters required for this block to operate:\nOutput\n.\nRun the flow when it’s ready.\nBuilding block parameters\nParameters\nBlock header\nThe block header shows the current name of the\nValue Output\nblock. You can rename it at any time by double-clicking the header and typing a new title, which helps keep sub-flows readable and easier to understand.\nOutput\nThe\nOutput\nparameter defines the value that the sub-flow will return to the calling flow. Inside the sub-flow, you connect this\nOutput\nparameter to the property of the block that produces the value you want to expose. When the sub-flow is used, that connected value is then available outside the sub-flow and can be mapped to the desired property of the blocks that consume it.",
+  "links": [],
+  "images": [
+    {
+      "alt": "image-20251203-104304.png",
+      "url": "https://docs.leapwork.com/__attachments/a_a65f65e853a3c7e4f4467b04a753c28eda1033b4a45155c22496fef67901f8f3/image-20251203-104304.png?cb=3b71e87cbb925b8105cb8cf08cec27ef"
+    }
+  ]
+}

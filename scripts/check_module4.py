@@ -27,7 +27,7 @@ with sync_playwright() as p:
     page.wait_for_selector('.lesson-card')
     lessons=page.evaluate('window.LEAP.lessons.filter(l=>l.module===4)')
     check('16 documentation lessons, no fabricated video',len(lessons)==16 and all(not l.get('video') and l['sourceKind']=='documentation' for l in lessons))
-    check('82 total lessons',page.evaluate('window.LEAP.lessons.length')==82)
+    check('98 total lessons',page.evaluate('window.LEAP.lessons.length')==98)
     check('16 overview cards',page.locator('.lesson-card').count()==16)
     check('All nine core references mapped',page.locator('#cobertura .catalog-entry').count()==9)
     check('Existing module 1 notes preserved',page.evaluate("JSON.parse(localStorage.getItem('leapwork-caderno-v1')).notes['primeiro-fluxo']")=='Nota anterior Web')
@@ -96,7 +96,7 @@ with sync_playwright() as p:
     page.goto(URL+'#glossario')
     check('New glossary terms available','Full Restore' in page.locator('main').inner_text())
     page.goto(URL+'#trilha')
-    check('Module 4 prepared; only 5 planned','16 aulas' in page.locator('#modulo-04').inner_text() and 'Planejado' not in page.locator('#modulo-04').inner_text() and 'Planejado' in page.locator('#modulo-05').inner_text())
+    check('Modules 4 and 5 prepared','16 aulas' in page.locator('#modulo-04').inner_text() and 'Planejado' not in page.locator('#modulo-04').inner_text() and 'Planejado' not in page.locator('#modulo-05').inner_text())
     for module in [1,2,3]:
         page.goto(URL+('#inicio' if module==1 else '#modulo/'+str(module)))
         check('Module 4 reachable from module '+str(module),page.locator('main .module-switch a[href="#modulo/4"]').count()>0)

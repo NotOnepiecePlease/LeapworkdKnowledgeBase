@@ -26,7 +26,7 @@
     [
       "05",
       "Boas práticas e integração",
-      "APIs e ciclo de testes"
+      "16 aulas · API, integração e revisão do ciclo"
     ]
   ],
   "glossary": [
@@ -183,77 +183,92 @@
     [
       "OCR",
       "Reconhecimento óptico de caracteres",
-      "Interpreta texto presente nos pixels da tela. A leitura depende da região, do idioma e da legibilidade."
+      "Interpreta texto presente nos pixels da tela. A leitura depende da região, do idioma e da legibilidade.",
+      "virtual-textos"
     ],
     [
       "Position / Area",
       "Ponto / região",
-      "Position representa X e Y; Area representa um retângulo com posição, largura e altura."
+      "Position representa X e Y; Area representa um retângulo com posição, largura e altura.",
+      "virtual-areas"
     ],
     [
       "Offset Position",
       "Deslocamento de posição",
-      "Calcula um novo ponto relativo a outro. Não move o objeto da aplicação."
+      "Calcula um novo ponto relativo a outro. Não move o objeto da aplicação.",
+      "virtual-areas"
     ],
     [
       "Press Key / Release Key",
       "Pressionar / liberar tecla",
-      "Mantém e depois libera uma tecla, por exemplo Ctrl durante uma ação combinada."
+      "Mantém e depois libera uma tecla, por exemplo Ctrl durante uma ação combinada.",
+      "virtual-teclado"
     ],
     [
       "Execution Input / Output",
       "Entrada / saída de execução",
-      "Permitem entrar em um sub-flow e devolver a execução ao chamador. Pass encerra o caso."
+      "Permitem entrar em um sub-flow e devolver a execução ao chamador. Pass encerra o caso.",
+      "sub-flows"
     ],
     [
       "Await not found",
       "Esperar ausência",
-      "Inverte a condição de procura para aguardar que o alvo não seja mais encontrado."
+      "Inverte a condição de procura para aguardar que o alvo não seja mais encontrado.",
+      "controles-dinamicos"
     ],
     [
       "Visible",
       "Visível",
-      "Indica visibilidade do elemento encontrado; sua existência no DOM, sozinha, não prova exibição."
+      "Indica visibilidade do elemento encontrado; sua existência no DOM, sozinha, não prova exibição.",
+      "carregamento-visibilidade"
     ],
     [
       "Completed",
       "Iteração concluída",
-      "Sinaliza que todos os itens previstos pelo bloco foram processados. Diferencia término da coleção e execução por item."
+      "Sinaliza que todos os itens previstos pelo bloco foram processados. Diferencia término da coleção e execução por item.",
+      "dados-ler-excel"
     ],
     [
       "Use Browser Window",
       "Selecionar janela do navegador",
-      "Retoma uma janela ou aba por critérios como título, URL ou conteúdo."
+      "Retoma uma janela ou aba por critérios como título, URL ou conteúdo.",
+      "nova-janela"
     ],
     [
       "Data-driven",
       "Orientado a dados",
-      "Um roteiro recebe diferentes conjuntos de entradas, com uma expectativa verificável para cada um."
+      "Um roteiro recebe diferentes conjuntos de entradas, com uma expectativa verificável para cada um.",
+      "dados-fundamentos"
     ],
     [
       "ODBC",
       "Conexão com banco",
-      "Interface usada pelo bloco Database, configurada no ambiente em que o caso é executado."
+      "Interface usada pelo bloco Database, configurada no ambiente em que o caso é executado.",
+      "dados-banco"
     ],
     [
       "Scope",
       "Escopo",
-      "Define onde e por quanto tempo um valor de variável é compartilhado."
+      "Define onde e por quanto tempo um valor de variável é compartilhado.",
+      "dados-variaveis"
     ],
     [
       "Default value",
       "Valor padrão",
-      "Fallback para a leitura de uma variável ausente; não prova que ela tenha sido inicializada."
+      "Fallback para a leitura de uma variável ausente; não prova que ela tenha sido inicializada.",
+      "dados-variaveis"
     ],
     [
       "No match",
       "Sem correspondência",
-      "Saída de Switch para um Input que não corresponde a nenhum caso."
+      "Saída de Switch para um Input que não corresponde a nenhum caso.",
+      "dados-decisoes"
     ],
     [
       "Arredondamento para o par",
       "Política de ponto médio",
-      "Em empates de arredondamento, escolhe a representação cujo último dígito retido é par."
+      "Em empates de arredondamento, escolhe a representação cujo último dígito retido é par.",
+      "dados-calculos"
     ],
     [
       "Run List",
@@ -302,6 +317,54 @@
       "Restauração completa da versão",
       "Recupera estrutura e Locators da versão selecionada; exige validação contra a aplicação atual.",
       "controle-restauracao"
+    ],
+    [
+      "CI/CD",
+      "Integração e entrega contínuas",
+      "Processo externo que pode acionar automação, acompanhar resultados e aplicar uma política explícita.",
+      "ciclo-integracoes"
+    ],
+    [
+      "AccessKey",
+      "Chave da API",
+      "Cabeçalho de autenticação da API do Leapwork; seu valor deve ficar fora do código compartilhado.",
+      "ciclo-api-acesso"
+    ],
+    [
+      "ScheduleId",
+      "Identificador do agendamento",
+      "Identifica uma configuração de Schedule; é distinto do RunId de uma execução.",
+      "ciclo-api-disparo"
+    ],
+    [
+      "RunId",
+      "Identificador da execução",
+      "Correlaciona o disparo de uma execução às consultas posteriores e ao ciclo externo.",
+      "ciclo-api-disparo"
+    ],
+    [
+      "RunItemId",
+      "Identificador do item executado",
+      "Identifica um resultado de fluxo dentro de uma execução; permite consultar o item e seu contexto.",
+      "ciclo-api-resultados"
+    ],
+    [
+      "Polling",
+      "Consulta periódica",
+      "Acompanhamento de estado com intervalo e prazo definidos pela integração.",
+      "ciclo-api-resultados"
+    ],
+    [
+      "Setup / teardown",
+      "Preparação e encerramento",
+      "Organização de ações para estabelecer estado e encerrar recursos preservando as evidências.",
+      "ciclo-dados"
+    ],
+    [
+      "Reteste",
+      "Verificação após a mudança",
+      "Nova execução ligada ao caso e à correção, preservando a evidência do resultado anterior.",
+      "ciclo-triagem"
     ]
   ],
   "lessons": [
@@ -10997,6 +11060,1900 @@
       "number": "16",
       "group": "Laboratório operacional",
       "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-escopo",
+      "title": "Definir o escopo e os critérios de um ciclo",
+      "topic": "praticas",
+      "read": "9 min",
+      "description": "Transforme uma funcionalidade em casos verificáveis, com prioridade, dados, resultado esperado e evidência.",
+      "objectives": [
+        "Separar requisito, caso e fluxo.",
+        "Priorizar riscos e caminhos negativos.",
+        "Declarar critérios antes de executar."
+      ],
+      "concepts": [
+        [
+          "Intenção do ciclo",
+          "Um ciclo responde a uma pergunta delimitada, como verificar a regra de orçamento em homologação. Uma lista de cliques não explica por que o resultado está correto."
+        ],
+        [
+          "Caso verificável",
+          "Registre identificação, pré-condição, dados, ação, resultado esperado e evidência. Um fluxo implementa esse caso; seu tamanho não mede a cobertura do requisito."
+        ],
+        [
+          "Priorização autoral",
+          "Neste caderno, os dez casos finais retomam o contrato fictício do módulo 3. Cobrem entradas válidas, rejeições, arredondamento e processamento do conjunto. Não são os exercícios do portal oficial."
+        ]
+      ],
+      "flow": [
+        "Delimitar regra",
+        "Selecionar riscos",
+        "Definir dez casos",
+        "Acordar critérios"
+      ],
+      "flowNote": "Modelo de planejamento autoral. O treinamento propõe reunir o aprendizado em um test run; o recorte específico é deste caderno.",
+      "steps": [
+        {
+          "doc": "best-practices/working-with-run-lists",
+          "title": "Dê um propósito ao conjunto",
+          "text": "Escolha a funcionalidade e a versão da aplicação que serão verificadas. Registre o que ficou fora do ciclo e por quê.",
+          "observe": "Uma Run List de regressão não demonstra cobertura de toda a aplicação."
+        },
+        {
+          "doc": "working-with-leapwork/designing-automation-flows",
+          "title": "Escreva resultados observáveis",
+          "text": "Para quantidade zero, espere rejeição identificável. Para entrada válida, espere cálculo e registro coerentes. Diferencie a resposta esperada do mero fim das ações.",
+          "observe": "Se o resultado esperado não é claro, ainda falta definir o caso."
+        },
+        {
+          "doc": "building-blocks/data-driven/read-excel",
+          "title": "Escolha dados e variações",
+          "text": "Planeje poucos registros que representem riscos diferentes. Use entradas fictícias e uma referência independente dos valores esperados.",
+          "observe": "Mais linhas iguais não ampliam necessariamente a cobertura."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Declare a regra de revisão",
+          "text": "No laboratório, todos os dez casos precisam passar, ter evidência e estar ligados ao mesmo ciclo preparado. Essa regra é didática, explícita e verificável.",
+          "observe": "Cumprir a regra do exercício não autoriza uma implantação real."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Cobertura pelo número de blocos",
+          "Um fluxo longo pode verificar apenas um caso."
+        ],
+        [
+          "Critério definido depois",
+          "Mudar a regra após ver falhas dificulta interpretar o resultado."
+        ]
+      ],
+      "exercise": {
+        "title": "Defina uma fronteira de escopo",
+        "tasks": [
+          "Escolha uma regra do orçamento fictício.",
+          "Escreva um caso positivo e um negativo.",
+          "Diga o que fica fora do ciclo."
+        ],
+        "answer": "Exemplo: calcular desconto BASICO em quantidade positiva e rejeitar quantidade zero. Integração com cobrança real fica fora. A evidência precisa identificar registro, entrada e resultado esperado."
+      },
+      "practice": "Antes de automatizar, revise os casos com o responsável pela funcionalidade e confirme o ambiente de homologação.",
+      "quiz": [
+        {
+          "q": "O que define o sucesso de um caso?",
+          "options": [
+            "O resultado observado corresponde à expectativa definida.",
+            "O último clique ocorreu sem erro."
+          ],
+          "correct": 0,
+          "why": "A sequência de ações precisa terminar com uma verificação."
+        },
+        {
+          "q": "Os dez casos finais são exercícios oficiais reproduzidos?",
+          "options": [
+            "Sim; vieram integralmente do portal de suporte.",
+            "Não; são exemplos autorais fictícios."
+          ],
+          "correct": 1,
+          "why": "A origem dos exercícios é identificada no caderno."
+        }
+      ],
+      "docs": [
+        [
+          "Boas práticas · Run Lists",
+          "best-practices/working-with-run-lists"
+        ],
+        [
+          "designing-automation-flows",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "read-excel",
+          "building-blocks/data-driven/read-excel"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "module": 5,
+      "number": "01",
+      "group": "Boas práticas e manutenção",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-organizacao",
+      "title": "Organizar o projeto para conseguir mantê-lo",
+      "topic": "praticas",
+      "read": "8 min",
+      "description": "Escolha uma estrutura de pastas que torne casos, ativos e componentes compartilhados fáceis de localizar.",
+      "objectives": [
+        "Comparar organização por funcionalidade e repositório de objetos.",
+        "Nomear ativos pela intenção.",
+        "Registrar uma convenção compreensível pela equipe."
+      ],
+      "concepts": [
+        [
+          "Estrutura",
+          "A documentação apresenta organização por projeto/funcionalidade, Page Object Model e modelos híbridos. Escolha conforme a manutenção necessária; uma hierarquia extensa não é um objetivo por si."
+        ],
+        [
+          "Nomes",
+          "Um nome como Validar total BASICO informa a intenção. Uma coleção de Flow1, Flow2 e Element3 exige abrir cada ativo para descobrir sua finalidade."
+        ],
+        [
+          "Reuso visível",
+          "Componentes comuns precisam ser encontráveis. Ao mover ou compartilhar ativos, verifique referências e responsáveis para que o ganho de organização não introduza dependências inesperadas."
+        ]
+      ],
+      "flow": [
+        "Escolher modelo",
+        "Nomear casos",
+        "Localizar componentes",
+        "Revisar referências"
+      ],
+      "flowNote": "Estrutura sugerida para a Loja Aurora fictícia; adapte às necessidades da equipe.",
+      "steps": [
+        {
+          "doc": "best-practices/organizing-daily-work",
+          "title": "Escolha o modelo de estudo",
+          "text": "Separe Loja Aurora em Orçamento, Cadastro e Componentes comuns. Use nomes que permitam associar cada fluxo ao caso da matriz.",
+          "observe": "A imagem é um exemplo oficial de estrutura, não a pasta da loja fictícia.",
+          "imagePath": "assets/docs/m5-organization.png",
+          "caption": "Referência de interface · Escolha o modelo de estudo. Imagem da documentação oficial; não representa execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/organizing-your-work",
+          "title": "Agrupe os ativos com propósito",
+          "text": "Confira onde ficam sub-flows, elementos, imagens e arquivos. Defina uma regra para componentes locais e para os compartilhados.",
+          "observe": "Mudar a pasta não transforma uma dependência compartilhada em cópia independente."
+        },
+        {
+          "doc": "best-practices/organizing-daily-work",
+          "title": "Escreva uma convenção curta",
+          "text": "Registre exemplos: ORC-02 · desconto BASICO; SF · ler confirmação; IMG · botão salvar. A sigla deve ter significado para quem estuda.",
+          "observe": "A convenção é autoral; o produto não exige essas siglas."
+        },
+        {
+          "doc": "working-with-leapwork/designing-automation-flows/flows",
+          "title": "Revise a utilização dos ativos",
+          "text": "Antes de limpar ativos ou reestruturar, confira os usos e compare uma execução pequena. Documente a mudança.",
+          "observe": "Uma limpeza de objetos é uma alteração e precisa preservar o funcionamento dos casos."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Pasta como garantia de qualidade",
+          "Organização ajuda a manutenção, mas não valida regras."
+        ],
+        [
+          "Ativo sem dono",
+          "Um componente compartilhado pode afetar casos de vários responsáveis."
+        ]
+      ],
+      "exercise": {
+        "title": "Reorganize três nomes genéricos",
+        "tasks": [
+          "Troque Flow1 por uma intenção.",
+          "Nomeie um componente reutilizável.",
+          "Indique onde ficará o arquivo de dados."
+        ],
+        "answer": "Exemplo: ORC-02 · validar desconto BASICO; SF · preencher orçamento; entradas-ficticias.xlsx como ativo de estudo identificado. Registre os casos que usam o componente."
+      },
+      "practice": "Aplique a convenção numa pasta de estudo e confirme que outra pessoa encontra um caso sem abrir todos os fluxos.",
+      "quiz": [
+        {
+          "q": "Qual nome comunica melhor a intenção?",
+          "options": [
+            "Flow7 definitivo novo.",
+            "Validar desconto PREMIUM."
+          ],
+          "correct": 1,
+          "why": "A intenção facilita pesquisa e manutenção."
+        },
+        {
+          "q": "Uma estrutura organizada prova que o caso passa?",
+          "options": [
+            "Não; é preciso executar e verificar.",
+            "Sim; nomes claros substituem a validação."
+          ],
+          "correct": 0,
+          "why": "Organização e evidência atendem a necessidades diferentes."
+        }
+      ],
+      "docs": [
+        [
+          "Boas práticas · organização do trabalho",
+          "best-practices/organizing-daily-work"
+        ],
+        [
+          "organizing-your-work",
+          "working-with-leapwork/organizing-your-work"
+        ],
+        [
+          "flows",
+          "working-with-leapwork/designing-automation-flows/flows"
+        ]
+      ],
+      "module": 5,
+      "number": "02",
+      "group": "Boas práticas e manutenção",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-subflows",
+      "title": "Definir contratos para sub-flows reutilizáveis",
+      "topic": "praticas",
+      "read": "10 min",
+      "description": "Separe entradas, saídas e caminhos de execução para reutilizar ações sem esconder o resultado que o caso precisa verificar.",
+      "objectives": [
+        "Distinguir entrada de valor e de execução.",
+        "Definir resultados de um componente.",
+        "Avaliar o impacto de uma mudança compartilhada."
+      ],
+      "concepts": [
+        [
+          "Contrato",
+          "Um sub-flow deve ter responsabilidade clara, como preencher três campos. Declare entradas, pré-condições, saídas e o que significa terminar cada caminho."
+        ],
+        [
+          "Valores e execução",
+          "Value Input e Value Output transportam dados. Execution Input e Execution Output definem o caminho executado. Disponibilizar um valor não comprova que a ação correspondente já ocorreu."
+        ],
+        [
+          "Verificação do caso",
+          "Reutilizar login ou preenchimento reduz duplicação. O fluxo do caso ainda precisa verificar sua regra específica, como o total calculado ou a rejeição esperada."
+        ]
+      ],
+      "flow": [
+        "Entradas explícitas",
+        "Ação do sub-flow",
+        "Saídas e caminhos",
+        "Verificação pelo caso"
+      ],
+      "flowNote": "Contrato autoral para preenchimento de orçamento; o componente real deve ser testado em contexto.",
+      "steps": [
+        {
+          "doc": "building-blocks/module-input-and-output/value-input",
+          "title": "Declare as entradas",
+          "text": "Defina nome, quantidade, preço e grupo como valores de entrada do componente, com formato esperado e exemplos fictícios.",
+          "observe": "O nome do campo não substitui a definição de tipo e formato.",
+          "imagePath": "assets/docs/m5-input.png",
+          "caption": "Referência de interface · Declare as entradas. Imagem da documentação oficial; não representa execução neste computador."
+        },
+        {
+          "doc": "building-blocks/module-input-and-output/value-output",
+          "title": "Declare o retorno",
+          "text": "Retorne o texto da confirmação ou outro valor observável quando o componente tiver essa responsabilidade. Explique quando esse valor pode ser usado.",
+          "observe": "Uma saída vazia deve ser tratada; não deve virar sucesso por omissão.",
+          "imagePath": "assets/docs/m5-output.png",
+          "caption": "Referência de interface · Declare o retorno. Imagem da documentação oficial; não representa execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/designing-automation-flows/sub-flows",
+          "title": "Separe a ação da decisão do caso",
+          "text": "Um componente pode preencher o formulário; a validação do desconto pertence ao caso que conhece a regra esperada.",
+          "observe": "Evite embutir um único resultado esperado em um componente usado para vários cenários."
+        },
+        {
+          "doc": "working-with-leapwork/designing-automation-flows/sub-flows",
+          "title": "Confira os consumidores",
+          "text": "Antes de alterar o contrato, identifique os fluxos que dependem dele. Teste entradas válidas e inválidas e confira os caminhos de execução.",
+          "observe": "Uma mudança central pode afetar muitos casos ao mesmo tempo."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Reuso com valores fixos",
+          "Um componente genérico pode ficar preso a um único cliente."
+        ],
+        [
+          "Saída como aprovação",
+          "Um valor retornado ainda precisa ser comparado com a expectativa."
+        ]
+      ],
+      "exercise": {
+        "title": "Descreva um contrato de preenchimento",
+        "tasks": [
+          "Liste duas entradas e seus formatos.",
+          "Defina uma saída útil.",
+          "Diga qual validação fica no caso."
+        ],
+        "answer": "Entradas: quantidade inteira positiva e preço no formato combinado. Saída: confirmação identificada após preencher. O caso compara desconto e total com sua referência independente."
+      },
+      "practice": "Crie um sub-flow pequeno e valide pelo menos dois consumidores de estudo após alterar seu contrato.",
+      "quiz": [
+        {
+          "q": "O conector de valor substitui a ordem de execução?",
+          "options": [
+            "Não.",
+            "Sim; o valor sempre executa o bloco."
+          ],
+          "correct": 0,
+          "why": "Dados e controle de execução têm papéis diferentes."
+        },
+        {
+          "q": "O que revisar ao alterar um sub-flow compartilhado?",
+          "options": [
+            "Somente a cor do componente.",
+            "Os fluxos consumidores e o contrato de entradas e saídas."
+          ],
+          "correct": 1,
+          "why": "O impacto do reuso ultrapassa o fluxo aberto."
+        }
+      ],
+      "docs": [
+        [
+          "value-input",
+          "building-blocks/module-input-and-output/value-input"
+        ],
+        [
+          "value-output",
+          "building-blocks/module-input-and-output/value-output"
+        ],
+        [
+          "sub-flows",
+          "working-with-leapwork/designing-automation-flows/sub-flows"
+        ]
+      ],
+      "module": 5,
+      "number": "03",
+      "group": "Boas práticas e manutenção",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-estabilidade",
+      "title": "Projetar esperas, localizadores e verificações",
+      "topic": "praticas",
+      "read": "9 min",
+      "description": "Espere pelo estado necessário e confira a regra de negócio, distinguindo lentidão de um elemento errado.",
+      "objectives": [
+        "Reconhecer a condição de prontidão.",
+        "Separar localização e validação.",
+        "Investigar falhas sem aumentar todos os limites."
+      ],
+      "concepts": [
+        [
+          "Prontidão",
+          "Uma pausa fixa só espera tempo; não comprova que a página chegou ao estado necessário. Procure uma condição observável e trate o tempo limite correspondente."
+        ],
+        [
+          "Identidade",
+          "Um localizador deve continuar identificando o elemento pretendido quando a tela muda. Um clique bem-sucedido em outro item pode produzir uma execução aparentemente normal e um resultado incorreto."
+        ],
+        [
+          "Resultado",
+          "Depois da ação, leia o valor e compare com a expectativa. Validar apenas que existe um texto não basta se o texto é de outro registro."
+        ]
+      ],
+      "flow": [
+        "Esperar estado",
+        "Localizar identidade",
+        "Executar ação",
+        "Comparar resultado"
+      ],
+      "flowNote": "Retoma os módulos Web e dados, sem atribuir uma espera genérica a toda aplicação.",
+      "steps": [
+        {
+          "doc": "building-blocks/web/find-web-element",
+          "title": "Escolha uma condição observável",
+          "text": "No orçamento fictício, defina que a confirmação precisa identificar o registro processado. Ajuste a estratégia ao elemento correto.",
+          "observe": "Índice ou posição podem mudar após ordenar uma tabela."
+        },
+        {
+          "doc": "building-blocks/logic/wait",
+          "title": "Compare espera fixa e condição",
+          "text": "Consulte a função de Wait e diferencie pausa de verificação. Use as condições e limites dos blocos pertinentes ao caso.",
+          "observe": "Mais segundos não consertam a identidade errada de um elemento."
+        },
+        {
+          "doc": "building-blocks/web/get-web-text",
+          "title": "Leia a resposta correta",
+          "text": "Capture o texto ou valor do registro correspondente. Registre o que acontece quando a resposta ainda não aparece.",
+          "observe": "Uma confirmação antiga pode continuar visível na tela."
+        },
+        {
+          "doc": "building-blocks/logic/compare",
+          "title": "Compare com a referência",
+          "text": "Compare o valor observado com o esperado e trate explicitamente os caminhos de aprovação e divergência.",
+          "observe": "Ausência de exceção não é uma comparação de regra de negócio."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Esperar sem observar",
+          "Uma pausa longa pode apenas tornar uma falha mais lenta."
+        ],
+        [
+          "Texto de outro caso",
+          "Uma confirmação anterior pode produzir um falso positivo."
+        ]
+      ],
+      "exercise": {
+        "title": "A tela mostra um total, mas de outro cliente",
+        "tasks": [
+          "Explique por que encontrar texto não basta.",
+          "Defina uma identificação do registro.",
+          "Escolha a comparação necessária."
+        ],
+        "answer": "A evidência precisa vincular total e cliente da entrada atual. Localize a linha pelo identificador e compare o valor dessa linha com o total esperado para o mesmo caso."
+      },
+      "practice": "Provoque atraso e alteração de ordem em um cenário controlado e confira se a validação continua correta.",
+      "quiz": [
+        {
+          "q": "Wait comprova que a confirmação pertence ao caso atual?",
+          "options": [
+            "Sim, depois da pausa toda confirmação é atual.",
+            "Não."
+          ],
+          "correct": 1,
+          "why": "Tempo decorrido não estabelece identidade."
+        },
+        {
+          "q": "Qual evidência é mais adequada?",
+          "options": [
+            "Valor e identificador do mesmo registro comparados à expectativa.",
+            "Qualquer texto visível depois do clique."
+          ],
+          "correct": 0,
+          "why": "A verificação precisa corresponder ao caso executado."
+        }
+      ],
+      "docs": [
+        [
+          "find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "wait",
+          "building-blocks/logic/wait"
+        ],
+        [
+          "get-web-text",
+          "building-blocks/web/get-web-text"
+        ],
+        [
+          "compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "module": 5,
+      "number": "04",
+      "group": "Boas práticas e manutenção",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-dados",
+      "title": "Isolar dados, preparar e encerrar os casos",
+      "topic": "praticas",
+      "read": "9 min",
+      "description": "Faça a execução começar de um estado conhecido e terminar sem comprometer os casos seguintes.",
+      "objectives": [
+        "Definir a preparação necessária.",
+        "Evitar colisões de registros.",
+        "Planejar encerramento inclusive após falha."
+      ],
+      "concepts": [
+        [
+          "Preparação",
+          "Um caso depende de aplicação, identidade, dados e estado inicial. Registre quais itens serão preparados e quais já precisam existir para o teste fazer sentido."
+        ],
+        [
+          "Isolamento",
+          "Registros fictícios identificáveis permitem saber o que foi criado por cada execução. Reusar o mesmo nome sem critério pode misturar resultados de dias ou tentativas diferentes."
+        ],
+        [
+          "Encerramento",
+          "Setup e teardown ajudam a controlar estado e recursos. O encerramento precisa tolerar preparação incompleta e preservar a evidência necessária antes de limpar o que aconteceu."
+        ]
+      ],
+      "flow": [
+        "Preparar dados",
+        "Executar caso",
+        "Guardar evidência",
+        "Encerrar estado de estudo"
+      ],
+      "flowNote": "Modelo de trabalho autoral; as ações de limpeza reais dependem da aplicação.",
+      "steps": [
+        {
+          "doc": "building-blocks/data-driven/read-excel",
+          "title": "Declare o conjunto de entradas",
+          "text": "Use dados fictícios com identificadores estáveis e formatos combinados. Confira acesso ao arquivo no Agent.",
+          "observe": "Uma cópia antiga do arquivo pode produzir um resultado diferente do esperado."
+        },
+        {
+          "doc": "best-practices/working-with-run-lists",
+          "title": "Separe preparação e operação",
+          "text": "Crie um passo de preparação e explicite quais casos dependem dele. Defina o que fazer se a preparação não completar.",
+          "observe": "Um caso impedido pela preparação não deve ser contado automaticamente como Passed."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Preserve a evidência",
+          "text": "Antes de limpar dados ou fechar a aplicação, identifique a execução e registre a divergência observada.",
+          "observe": "Limpar cedo demais pode eliminar a informação necessária para reproduzir a falha."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists",
+          "title": "Planeje o encerramento",
+          "text": "Defina um passo apropriado de encerramento e confira sua condição. Trate recursos que talvez não tenham sido criados.",
+          "observe": "O encerramento não precisa repetir uma operação de negócio nem presumir que todas as ações anteriores ocorreram."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Estado compartilhado",
+          "Um caso pode passar porque outro preparou os dados sem intenção."
+        ],
+        [
+          "Limpeza destrói evidência",
+          "Encerrar o ambiente sem preservar contexto dificulta a investigação."
+        ]
+      ],
+      "exercise": {
+        "title": "A preparação falhou na metade",
+        "tasks": [
+          "Identifique quais casos ficam bloqueados.",
+          "Escolha a evidência que deve permanecer.",
+          "Defina um encerramento tolerante."
+        ],
+        "answer": "Bloqueie os casos que dependem do recurso ausente, preservando o motivo. Guarde identificação do run e log da preparação. O encerramento deve conferir existência dos recursos antes de tentar fechá-los ou removê-los."
+      },
+      "practice": "Execute um caso de estudo isoladamente e depois dentro do conjunto, comparando suas dependências.",
+      "quiz": [
+        {
+          "q": "Um caso impedido por dados ausentes está aprovado?",
+          "options": [
+            "Não, ele precisa de classificação explícita.",
+            "Sim, porque não produziu falha funcional."
+          ],
+          "correct": 0,
+          "why": "Ausência de execução não demonstra o resultado esperado."
+        },
+        {
+          "q": "Quando preservar a evidência?",
+          "options": [
+            "Somente depois de eliminar todos os registros.",
+            "Antes de uma limpeza que possa removê-la."
+          ],
+          "correct": 1,
+          "why": "A investigação depende do contexto observado."
+        }
+      ],
+      "docs": [
+        [
+          "read-excel",
+          "building-blocks/data-driven/read-excel"
+        ],
+        [
+          "Boas práticas · Run Lists",
+          "best-practices/working-with-run-lists"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "run-lists",
+          "working-with-leapwork/run-lists"
+        ]
+      ],
+      "module": 5,
+      "number": "05",
+      "group": "Boas práticas e manutenção",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-revisao",
+      "title": "Revisar mudanças e acompanhar a sincronização Git",
+      "topic": "praticas",
+      "read": "10 min",
+      "description": "Separe o salvamento do fluxo, sua revisão e o envio da versão ao repositório configurado para a equipe.",
+      "objectives": [
+        "Registrar intenção e verificação de mudanças.",
+        "Distinguir histórico interno e Git configurado.",
+        "Reconhecer o estado de sincronização."
+      ],
+      "concepts": [
+        [
+          "Revisão",
+          "Uma mudança pode melhorar um caso e quebrar outro que usa o mesmo componente. Compare lógica, contratos e resultados esperados antes de considerar o conjunto pronto."
+        ],
+        [
+          "Git configurado",
+          "O versionamento Git de Flow e Subflow depende de conexão, equipe e repositório mapeados, acesso e migração quando pertinente. Ele não é ativado ao baixar este caderno do GitHub."
+        ],
+        [
+          "Sincronização",
+          "Salvar uma versão e enviá-la são eventos diferentes. Git Sync informa se a versão está sincronizada, em processamento ou com falha. Não confunda um aviso com confirmação de upload."
+        ]
+      ],
+      "flow": [
+        "Descrever mudança",
+        "Revisar consumidores",
+        "Salvar versão",
+        "Conferir Git Sync"
+      ],
+      "flowNote": "Recursos Git dependem da implantação. O exercício não conecta repositórios nem migra histórico.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/designing-automation-flows",
+          "title": "Descreva intenção e resultado",
+          "text": "Use um comentário que registre o que mudou, a razão e a verificação feita. Compare a versão pertinente ao ciclo.",
+          "observe": "Um status Published não substitui o teste da alteração."
+        },
+        {
+          "doc": "working-with-leapwork/git-version-control/use-git-versioning-for-flows-and-subflows",
+          "title": "Confira o mecanismo configurado",
+          "text": "Com o administrador, identifique equipe, provedor, mapeamento e acesso de leitura/escrita necessários para a versão.",
+          "observe": "A documentação descreve consequências específicas de migração; revise-as antes de habilitar em um ambiente real.",
+          "imagePath": "assets/docs/m5-git.png",
+          "caption": "Referência de interface · Confira o mecanismo configurado. Imagem da documentação oficial; não representa execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/git-version-control/check-git-sync-status-and-resolve-upload-failures",
+          "title": "Leia o estado do envio",
+          "text": "Confira a coluna Git Sync. Success confirma upload; Error exige investigar; Warning pode indicar fila ou processamento.",
+          "observe": "Não conclua que a versão foi perdida só porque o envio falhou."
+        },
+        {
+          "doc": "working-with-leapwork/git-version-control/check-git-sync-status-and-resolve-upload-failures",
+          "title": "Verifique a recuperação do envio",
+          "text": "Revise conectividade, permissões e mapeamento com o responsável. Use a repetição documentada quando disponível e confira o estado final.",
+          "observe": "Evite uma migração como tentativa improvisada de consertar um caso funcional."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Salvar como sincronizar",
+          "O arquivo pode estar salvo sem que o envio tenha concluído."
+        ],
+        [
+          "Git do caderno como Git dos fluxos",
+          "São repositórios e configurações independentes."
+        ]
+      ],
+      "exercise": {
+        "title": "Git Sync ficou em Warning",
+        "tasks": [
+          "Liste duas possibilidades.",
+          "Explique o que ainda não está confirmado.",
+          "Defina a verificação final."
+        ],
+        "answer": "Pode estar em fila/processamento ou aguardando uma falha anterior. Upload ainda não está confirmado. Revise o contexto e confira Success para a versão correta após resolver o motivo."
+      },
+      "practice": "Faça uma mudança pequena num fluxo de estudo e confira histórico e sincronização se o recurso estiver configurado.",
+      "quiz": [
+        {
+          "q": "Salvar uma versão comprova que ela chegou ao Git?",
+          "options": [
+            "Sim, o upload nunca é separado.",
+            "Não."
+          ],
+          "correct": 1,
+          "why": "A sincronização tem estado próprio."
+        },
+        {
+          "q": "O GitHub do caderno ativa versionamento dos seus fluxos?",
+          "options": [
+            "Não.",
+            "Sim, automaticamente em qualquer Controller."
+          ],
+          "correct": 0,
+          "why": "O recurso precisa ser configurado no Leapwork."
+        }
+      ],
+      "docs": [
+        [
+          "designing-automation-flows",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "use-git-versioning-for-flows-and-subflows",
+          "working-with-leapwork/git-version-control/use-git-versioning-for-flows-and-subflows"
+        ],
+        [
+          "check-git-sync-status-and-resolve-upload-failures",
+          "working-with-leapwork/git-version-control/check-git-sync-status-and-resolve-upload-failures"
+        ]
+      ],
+      "module": 5,
+      "number": "06",
+      "group": "Boas práticas e manutenção",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-integracoes",
+      "title": "Desenhar a integração antes de escolher a ferramenta",
+      "topic": "integracoes",
+      "read": "8 min",
+      "description": "Defina quem dispara, quem executa, como a execução é identificada e quem decide o que fazer com o resultado.",
+      "objectives": [
+        "Separar pipeline, Controller e Agent.",
+        "Distinguir gatilho de aprovação.",
+        "Definir a correlação do run com o ciclo."
+      ],
+      "concepts": [
+        [
+          "Responsabilidades",
+          "A ferramenta externa pode solicitar a execução. O Controller coordena o trabalho e o Agent executa as ações. O processo de integração precisa recolher e interpretar o resultado."
+        ],
+        [
+          "Contrato",
+          "Documente como localizar o Schedule, obter o RunId, aguardar a conclusão e consultar os itens. Não basta ter uma URL que inicia alguma coisa."
+        ],
+        [
+          "Limites",
+          "Uma chamada aceita não demonstra sucesso funcional. A integração também precisa tratar erro de acesso, tempo de espera excedido e resultado incompleto."
+        ]
+      ],
+      "flow": [
+        "Pipeline solicita",
+        "Controller coordena",
+        "Agent executa",
+        "Pipeline interpreta evidências"
+      ],
+      "flowNote": "Arquitetura didática aplicável a ferramentas de CI/CD compatíveis; não é um plugin de pipeline instalado.",
+      "steps": [
+        {
+          "doc": "public-rest-apis",
+          "title": "Mapeie os componentes",
+          "text": "Desenhe a origem do gatilho, o Controller e os Agents de homologação. Defina quem consegue alcançar cada serviço.",
+          "observe": "A documentação hospeda a API no Controller, não no arquivo HTML."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists/schedules",
+          "title": "Escolha o Schedule de estudo",
+          "text": "Identifique a lista, as variáveis, os Agents e o gatilho. Confira se a configuração atende ao objetivo do ciclo.",
+          "observe": "O mesmo conjunto pode executar com configurações diferentes."
+        },
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Defina a correlação",
+          "text": "Planeje guardar o RunId devolvido pelo disparo e usá-lo nas consultas posteriores. Associe-o ao build/ciclo externo.",
+          "observe": "Pegar a última execução do fluxo pode misturar execuções simultâneas."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Combine a decisão final",
+          "text": "Defina quais estados e evidências serão necessários para considerar o exercício concluído e quem revisa uma divergência.",
+          "observe": "Uma regra de pipeline é uma política explícita, não uma consequência automática do código HTTP."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Integração só de disparo",
+          "Iniciar sem recolher resultado deixa o ciclo sem conclusão."
+        ],
+        [
+          "Última execução como identidade",
+          "Concorrência pode fazer a consulta retornar outro run."
+        ]
+      ],
+      "exercise": {
+        "title": "Dois builds dispararam o mesmo Schedule",
+        "tasks": [
+          "Escolha o identificador de correlação.",
+          "Explique por que o nome do Schedule é insuficiente.",
+          "Defina onde guardar a associação."
+        ],
+        "answer": "Cada disparo precisa preservar seu RunId, associado ao build externo. O nome identifica a configuração, mas não uma execução específica. Registre a associação no resultado do pipeline e nas evidências."
+      },
+      "practice": "Prepare um desenho de integração e um roteiro On Demand em homologação antes de automatizar o gatilho externo.",
+      "quiz": [
+        {
+          "q": "Uma integração completa termina ao disparar?",
+          "options": [
+            "Não; precisa acompanhar e interpretar o resultado.",
+            "Sim; iniciar comprova o sucesso."
+          ],
+          "correct": 0,
+          "why": "Gatilho e validação são etapas diferentes."
+        },
+        {
+          "q": "Qual identificador relaciona consultas à execução disparada?",
+          "options": [
+            "Somente o título do fluxo.",
+            "O RunId daquele disparo."
+          ],
+          "correct": 1,
+          "why": "A correlação evita misturar execuções."
+        }
+      ],
+      "docs": [
+        [
+          "API pública · acesso e autenticação",
+          "public-rest-apis"
+        ],
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ],
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "module": 5,
+      "number": "07",
+      "group": "Integrações, API e CI/CD",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-api-acesso",
+      "title": "Conferir versão, endereço e autenticação da API",
+      "topic": "integracoes",
+      "read": "9 min",
+      "description": "Reconheça a base da API v4 e o cabeçalho AccessKey, mantendo os exemplos do caderno sem credenciais reais.",
+      "objectives": [
+        "Localizar a referência da API v4.",
+        "Distinguir base, rota e identificador.",
+        "Administrar acesso sem expor uma chave."
+      ],
+      "concepts": [
+        [
+          "Versão",
+          "A documentação consultada apresenta a API v4 como a versão suportada. Confira a referência compatível com a implantação antes de reutilizar um script antigo."
+        ],
+        [
+          "Endereço",
+          "A referência situa a API no Controller, com porta padrão 9001, configurável. O endereço real e o transporte dependem do ambiente; o exemplo do laboratório usa um host .invalid e não envia pedidos."
+        ],
+        [
+          "Autenticação",
+          "AccessKey é um cabeçalho das requisições. A chave precisa de administração e deve ser tratada como segredo. O laboratório mostra apenas um marcador, sem campo para inserir credenciais."
+        ]
+      ],
+      "flow": [
+        "Confirmar implantação",
+        "Conferir API v4",
+        "Preparar AccessKey",
+        "Testar acesso em homologação"
+      ],
+      "flowNote": "A base e as rotas são referências de estudo; nenhuma chave é incluída nos pacotes.",
+      "steps": [
+        {
+          "doc": "public-rest-apis",
+          "title": "Encontre a base compatível",
+          "text": "Consulte a página da API e o explorer da implantação com o administrador. Separe a base do Controller da rota de operação.",
+          "observe": "Não use uma rota de versão antiga presumindo compatibilidade."
+        },
+        {
+          "doc": "administration/api-access-keys",
+          "title": "Defina a identidade da integração",
+          "text": "Peça ao administrador uma chave destinada à integração conforme o processo do ambiente. Registre finalidade e responsável, sem copiar o valor.",
+          "observe": "O segredo deve ficar no mecanismo de credenciais da ferramenta que fará a chamada."
+        },
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Confira os parâmetros do contrato",
+          "text": "Na especificação, veja método, parâmetros e resposta da operação escolhida. O cabeçalho aparece como accessKey; nomes de cabeçalho HTTP não dependem de maiúsculas.",
+          "observe": "Uma chave de Git ou de Azure DevOps não substitui automaticamente AccessKey do Leapwork."
+        },
+        {
+          "doc": "public-rest-apis",
+          "title": "Distinga falha de acesso de falha funcional",
+          "text": "A referência documenta 401 quando a chave está ausente ou inválida. Investigue acesso antes de classificar os casos como falhas da aplicação.",
+          "observe": "O laboratório não valida chaves nem realiza conexão real."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Segredo no script compartilhado",
+          "O código e os logs não devem carregar valores reais de chave."
+        ],
+        [
+          "401 como defeito funcional",
+          "Um pedido não autorizado não executou a validação planejada."
+        ]
+      ],
+      "exercise": {
+        "title": "O pedido retornou 401",
+        "tasks": [
+          "Classifique o primeiro problema a investigar.",
+          "Diga o que não está comprovado.",
+          "Indique onde a chave deve ficar."
+        ],
+        "answer": "Investigue autenticação e configuração de acesso. O resultado funcional dos casos não foi comprovado. A chave deve ficar no armazenamento de segredos da integração, não no caderno ou no repositório."
+      },
+      "practice": "Confirme acesso em homologação usando uma ferramenta autorizada e preservando o segredo fora dos registros compartilhados.",
+      "quiz": [
+        {
+          "q": "Qual cabeçalho a referência exige?",
+          "options": [
+            "GitHubPassword.",
+            "AccessKey."
+          ],
+          "correct": 1,
+          "why": "O contrato usa uma chave da API do Leapwork."
+        },
+        {
+          "q": "O laboratório precisa que você cole uma chave real?",
+          "options": [
+            "Não.",
+            "Sim, para calcular a decisão local."
+          ],
+          "correct": 0,
+          "why": "O laboratório é offline e não autentica serviços."
+        }
+      ],
+      "docs": [
+        [
+          "API pública · acesso e autenticação",
+          "public-rest-apis"
+        ],
+        [
+          "api-access-keys",
+          "administration/api-access-keys"
+        ],
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ]
+      ],
+      "module": 5,
+      "number": "08",
+      "group": "Integrações, API e CI/CD",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-api-disparo",
+      "title": "Disparar um Schedule e preservar o RunId",
+      "topic": "integracoes",
+      "read": "10 min",
+      "description": "Leia o contrato de runNow, identificando o método correto e a diferença entre ScheduleId e RunId.",
+      "objectives": [
+        "Reconhecer o PUT de disparo.",
+        "Guardar o RunId retornado.",
+        "Evitar repetir uma chamada cujo efeito é desconhecido."
+      ],
+      "concepts": [
+        [
+          "Configuração e instância",
+          "ScheduleId identifica a configuração a acionar. RunId identifica a execução criada. Eles cumprem funções diferentes e não devem ser trocados nos caminhos da API."
+        ],
+        [
+          "Método e resposta",
+          "A especificação consultada define PUT /api/v4/schedules/{scheduleId}/runNow e resposta com RunId. Um HTTP 200 dessa operação confirma o atendimento da chamada, não a aprovação dos fluxos."
+        ],
+        [
+          "Efeito incerto",
+          "Se a conexão cai depois de enviar, a execução pode ter sido criada. Uma repetição automática do disparo pode provocar outra execução; primeiro determine o que aconteceu."
+        ]
+      ],
+      "flow": [
+        "GET schedules",
+        "Escolher ScheduleId",
+        "PUT runNow",
+        "Guardar RunId"
+      ],
+      "flowNote": "Rotas conferidas no OpenAPI v4 armazenado com as fontes do módulo.",
+      "steps": [
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Localize o Schedule",
+          "text": "Consulte GET /api/v4/schedules e identifique o Schedule certo no contexto de homologação. Confira o identificador, não só um nome parecido.",
+          "observe": "Evite misturar IDs de Controllers diferentes."
+        },
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Confira o disparo",
+          "text": "Leia PUT /api/v4/schedules/{scheduleId}/runNow e seus parâmetros. Use apenas variáveis documentadas e necessárias ao caso.",
+          "observe": "A operação de disparo não é um GET de consulta."
+        },
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Preserve o retorno",
+          "text": "O esquema RunScheduleApiResponse contém RunId. Guarde esse valor com o identificador externo do ciclo para as consultas seguintes.",
+          "observe": "Não substitua o valor por uma busca genérica da execução mais recente."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists/schedules",
+          "title": "Trate uma resposta incerta",
+          "text": "Se houve timeout de rede após o envio, investigue o estado antes de tentar outro disparo. Considere o comportamento de fila e conflito configurado.",
+          "observe": "A referência não promete deduplicação automática do disparo por um identificador de requisição."
+        }
+      ],
+      "pitfalls": [
+        [
+          "200 como todos passaram",
+          "A resposta de disparo não contém a conclusão funcional de todos os casos."
+        ],
+        [
+          "Repetir sem correlação",
+          "Um timeout do cliente pode esconder uma execução já criada."
+        ]
+      ],
+      "exercise": {
+        "title": "O cliente perdeu a resposta de runNow",
+        "tasks": [
+          "Explique por que não assumir que nada ocorreu.",
+          "Liste o contexto a preservar.",
+          "Defina uma investigação antes de repetir."
+        ],
+        "answer": "O Controller pode ter recebido o pedido antes da perda da conexão. Preserve ScheduleId, horário e contexto do ciclo; verifique execuções e evidências no ambiente antes de decidir um novo disparo."
+      },
+      "practice": "Em homologação, execute uma integração pequena que registre o RunId e confira o run correspondente no relatório.",
+      "quiz": [
+        {
+          "q": "Qual método o contrato usa em runNow?",
+          "options": [
+            "PUT.",
+            "GET."
+          ],
+          "correct": 0,
+          "why": "A operação dispara trabalho e está definida como PUT."
+        },
+        {
+          "q": "HTTP 200 de runNow significa que os testes passaram?",
+          "options": [
+            "Sim, o código já é a aprovação funcional.",
+            "Não; é necessário acompanhar o run e os itens."
+          ],
+          "correct": 1,
+          "why": "Atendimento da chamada e resultado dos testes são fatos diferentes."
+        }
+      ],
+      "docs": [
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ],
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ]
+      ],
+      "module": 5,
+      "number": "09",
+      "group": "Integrações, API e CI/CD",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-api-resultados",
+      "title": "Aguardar o run e recolher os itens corretos",
+      "topic": "integracoes",
+      "read": "11 min",
+      "description": "Acompanhe a execução pelo RunId e interprete resultados de cada item, sem confundir Finished, Done e Passed.",
+      "objectives": [
+        "Distinguir estado do run e resultado do item.",
+        "Usar consultas correlacionadas.",
+        "Verificar completude antes de concluir."
+      ],
+      "concepts": [
+        [
+          "Estado do run",
+          "O esquema RunStatus da especificação enumera Queued, Executing e Finished. Finished indica término, sem garantir que todos os itens tenham resultado Passed."
+        ],
+        [
+          "Resultado por item",
+          "ApiRunItemStatus inclui Passed, Failed, Done, Cancelled, Error, NoStatus e IsProcessing. A política didática só aceita Passed como aprovação; os demais estados exigem interpretação ou acompanhamento."
+        ],
+        [
+          "Correlação e completude",
+          "Consulte os itens ligados ao RunId. Confira se a população esperada está representada e se cada resultado corresponde ao run. Uma lista vazia não deve aprovar um conjunto que esperava dez casos."
+        ]
+      ],
+      "flow": [
+        "GET run/status",
+        "Aguardar com limite",
+        "GET runItemIds",
+        "Ler e conferir cada item"
+      ],
+      "flowNote": "Polling e critérios de decisão são desenho da integração; o laboratório não faz consultas periódicas de rede.",
+      "steps": [
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Consulte o estado da execução",
+          "text": "Use GET /api/v4/run/{runId}/status com o RunId preservado. Defina intervalo e prazo de acompanhamento na ferramenta externa.",
+          "observe": "Evite laço sem limite ou consultas tão rápidas que só produzam carga."
+        },
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Obtenha os IDs dos itens",
+          "text": "Após o término, use GET /api/v4/run/{runId}/runItemIds. O esquema contém RunItemIds. Compare a coleção com o plano esperado.",
+          "observe": "Um conjunto vazio ou incompleto precisa ser investigado."
+        },
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Leia o resultado individual",
+          "text": "Use GET /api/v4/runItems/{runItemId}. Confira RunId, FlowInfo, AgentInfo, Status e os campos pertinentes disponíveis.",
+          "observe": "Done é um valor distinto de Passed no contrato."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Conecte o resultado às evidências",
+          "text": "Quando necessário, relacione o item ao relatório e à gravação disponível. Registre a versão do fluxo e a aplicação investigada.",
+          "observe": "A ausência de evidência ou um estado desconhecido não vira sucesso por padrão."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Finished como aprovação",
+          "A execução pode terminar com itens falhos ou cancelados."
+        ],
+        [
+          "Lista vazia como sucesso",
+          "A ausência de itens pode indicar um ciclo que não foi comprovado."
+        ]
+      ],
+      "exercise": {
+        "title": "Run Finished, item Done",
+        "tasks": [
+          "Diga o que foi comprovado.",
+          "Explique o que ainda falta.",
+          "Aplique a política do laboratório."
+        ],
+        "answer": "O run terminou e o item tem estado Done. Isso não comprova Passed. A política didática exige revisão e verificação das evidências, em vez de aprovar automaticamente."
+      },
+      "practice": "Use poucos casos em homologação e compare os itens retornados com o plano e o relatório da mesma execução.",
+      "quiz": [
+        {
+          "q": "Finished garante que todos os itens estão Passed?",
+          "options": [
+            "Sim, os termos são equivalentes.",
+            "Não."
+          ],
+          "correct": 1,
+          "why": "Estado da execução e resultado individual são contratos distintos."
+        },
+        {
+          "q": "Dez casos esperados e zero itens devem aprovar?",
+          "options": [
+            "Não; falta comprovar a execução planejada.",
+            "Sim, não houve falha registrada."
+          ],
+          "correct": 0,
+          "why": "Completude faz parte da verificação."
+        }
+      ],
+      "docs": [
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "module": 5,
+      "number": "10",
+      "group": "Integrações, API e CI/CD",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-pipeline",
+      "title": "Definir decisões e erros na integração",
+      "topic": "integracoes",
+      "read": "10 min",
+      "description": "Escreva uma política que trate transporte, espera, resultados e evidências, mantendo a regra de decisão visível.",
+      "objectives": [
+        "Separar erro de integração e falha de teste.",
+        "Definir uma espera limitada.",
+        "Evitar aprovações por omissão."
+      ],
+      "concepts": [
+        [
+          "Camadas",
+          "HTTP descreve o atendimento do pedido; o estado do run descreve a execução; o resultado do item descreve o fluxo. Uma decisão confiável considera essas camadas na ordem correta."
+        ],
+        [
+          "Política didática",
+          "O laboratório exige HTTP 200, execução Finished, correlação correta, itens esperados e todos Passed. Não é uma regra universal de CI/CD; é um contrato de estudo que você pode inspecionar."
+        ],
+        [
+          "Repetição e efeitos",
+          "Repetir uma consulta e repetir um disparo têm consequências diferentes. Um problema transitório de leitura não autoriza criar outra execução sem verificar o contexto."
+        ]
+      ],
+      "flow": [
+        "Validar resposta",
+        "Confirmar correlação",
+        "Aguardar término",
+        "Avaliar itens e evidências"
+      ],
+      "flowNote": "O laboratório retorna decisões de estudo e nunca inicia ou bloqueia um pipeline real.",
+      "steps": [
+        {
+          "doc": "public-rest-apis",
+          "title": "Classifique o problema de acesso",
+          "text": "Se o pedido não foi atendido, registre o problema de integração. A referência documenta 401 para chave inválida ou ausente.",
+          "observe": "Não classifique os casos como Passed quando a consulta falha."
+        },
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Defina o prazo de acompanhamento",
+          "text": "Enquanto Queued ou Executing, a integração pode aguardar dentro do prazo combinado. Ao excedê-lo, precisa de um resultado explícito de investigação.",
+          "observe": "Timeout do acompanhamento não equivale ao estado Finished do Controller."
+        },
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Avalie a população correta",
+          "text": "Verifique o run correlacionado e a quantidade esperada. Trate estados diferentes de Passed conforme uma política documentada.",
+          "observe": "Uma resposta incompleta não deve autorizar a próxima etapa por omissão."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Deixe a decisão auditável",
+          "text": "Registre motivo, IDs e evidências sem incluir segredos. Preserve a primeira falha mesmo quando outra tentativa passa.",
+          "observe": "Uma regra de integração precisa ser revisada pelo responsável do processo antes de uso real."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Falha de consulta como aprovação",
+          "O pipeline pode ficar verde sem ter lido resultados válidos."
+        ],
+        [
+          "Retry do gatilho como leitura",
+          "Reenviar runNow pode criar efeitos adicionais."
+        ]
+      ],
+      "exercise": {
+        "title": "A integração não recebeu todos os resultados",
+        "tasks": [
+          "Escolha se deve aprovar.",
+          "Escreva um motivo explícito.",
+          "Indique o próximo diagnóstico."
+        ],
+        "answer": "Não aprovar pelo contrato do exercício. Motivo: população recebida não comprova o conjunto esperado do mesmo run. Conferir RunId, itens, estado e relatório antes de decidir se a consulta ou a execução precisa de intervenção."
+      },
+      "practice": "Teste a política com respostas fictícias de sucesso, acesso negado, espera e resultado incompleto antes de usar dados reais.",
+      "quiz": [
+        {
+          "q": "Uma consulta que falhou deve virar sucesso por ausência de Failed?",
+          "options": [
+            "Não.",
+            "Sim, basta não encontrar a palavra Failed."
+          ],
+          "correct": 0,
+          "why": "A decisão exige informação válida e completa."
+        },
+        {
+          "q": "Repetir um GET e reenviar runNow têm o mesmo efeito?",
+          "options": [
+            "Sim, ambos apenas leem dados.",
+            "Não."
+          ],
+          "correct": 1,
+          "why": "O disparo pode criar outra execução."
+        }
+      ],
+      "docs": [
+        [
+          "API pública · acesso e autenticação",
+          "public-rest-apis"
+        ],
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "module": 5,
+      "number": "11",
+      "group": "Integrações, API e CI/CD",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-ado",
+      "title": "Relacionar casos e resultados no Azure DevOps",
+      "topic": "integracoes",
+      "read": "10 min",
+      "description": "Conheça o caminho documentado para conectar ADO, importar casos e conferir os resultados, distinguindo importação e sincronização.",
+      "objectives": [
+        "Reconhecer os requisitos da conexão.",
+        "Relacionar o caso externo ao fluxo.",
+        "Conferir o resultado no destino."
+      ],
+      "concepts": [
+        [
+          "Conexão",
+          "A integração ADO precisa de configuração administrativa, URL e PAT apropriado. A identidade externa é distinta da AccessKey da API do Leapwork."
+        ],
+        [
+          "Importação e sincronização",
+          "A documentação diferencia importar casos, sincronizar os existentes e trazer novos casos por reimportação. Não suponha que toda mudança externa aparece automaticamente."
+        ],
+        [
+          "Resultado vinculado",
+          "O valor da integração está na associação entre caso, execução e evidência. Confira no destino o ciclo e a configuração corretos, em vez de considerar a conexão como validação completa."
+        ]
+      ],
+      "flow": [
+        "Conectar ADO",
+        "Importar casos",
+        "Automatizar e executar",
+        "Conferir resultado vinculado"
+      ],
+      "flowNote": "Referência de uma integração oficial específica; o caderno não cria conexão nem envia resultados.",
+      "steps": [
+        {
+          "doc": "administration/connections/azure-devops-ado-server-connections",
+          "title": "Confira os requisitos com o administrador",
+          "text": "Revise URL, identidade e os acessos Work item e Test management indicados pela referência. Teste a conexão no ambiente apropriado.",
+          "observe": "O PAT real fica no mecanismo autorizado, fora das notas e exemplos."
+        },
+        {
+          "doc": "working-with-leapwork/microsoft-ado-test-plan-integration",
+          "title": "Importe o recorte certo",
+          "text": "Na interface documentada, selecione projeto e Area Path e confira os casos elegíveis. Identifique o caso externo associado ao fluxo.",
+          "observe": "A importação inicial descrita considera Automation Status Planned.",
+          "imagePath": "assets/docs/m5-ado.png",
+          "caption": "Referência de interface · Importe o recorte certo. Imagem da documentação oficial; não representa execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/microsoft-ado-test-plan-integration",
+          "title": "Entenda a sincronização",
+          "text": "Confira o comportamento da versão instalada para casos existentes e reimportação de novos casos. Revise mudanças de status antes de aplicar.",
+          "observe": "O conteúdo atual traz notas que exigem cuidado com remoção e aposentadoria; confirme o resultado na sua versão."
+        },
+        {
+          "doc": "working-with-leapwork/microsoft-ado-test-plan-integration",
+          "title": "Verifique os resultados no ADO",
+          "text": "Após uma execução de homologação, confira o test run, a configuração e os resultados ligados aos casos. Para uma falha, registre reprodução e evidências.",
+          "observe": "Test connection não comprova que todos os resultados foram publicados corretamente."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Conexão como integração concluída",
+          "O vínculo e a publicação dos resultados ainda precisam ser conferidos."
+        ],
+        [
+          "Sync como importar tudo",
+          "A documentação distingue atualização e entrada de novos casos."
+        ]
+      ],
+      "exercise": {
+        "title": "Um novo caso não apareceu após Sync",
+        "tasks": [
+          "Explique uma hipótese documentada.",
+          "Defina o que conferir.",
+          "Indique a operação a avaliar."
+        ],
+        "answer": "Sync atualiza os casos existentes conforme a referência; novos casos podem exigir Re-import. Confira elegibilidade, projeto, versão e contexto antes de aplicar a operação de importação pertinente."
+      },
+      "practice": "Valide um único caso fictício de ponta a ponta em um projeto ADO de teste antes de ampliar o conjunto.",
+      "quiz": [
+        {
+          "q": "PAT do ADO é automaticamente a AccessKey do Leapwork?",
+          "options": [
+            "Sim, são a mesma credencial.",
+            "Não."
+          ],
+          "correct": 1,
+          "why": "As integrações autenticam serviços diferentes."
+        },
+        {
+          "q": "Uma conexão bem-sucedida garante publicação de todos os resultados?",
+          "options": [
+            "Não; é preciso conferir o destino.",
+            "Sim, não há mais nada a validar."
+          ],
+          "correct": 0,
+          "why": "O resultado vinculado faz parte do teste da integração."
+        }
+      ],
+      "docs": [
+        [
+          "azure-devops-ado-server-connections",
+          "administration/connections/azure-devops-ado-server-connections"
+        ],
+        [
+          "microsoft-ado-test-plan-integration",
+          "working-with-leapwork/microsoft-ado-test-plan-integration"
+        ]
+      ],
+      "module": 5,
+      "number": "12",
+      "group": "Integrações, API e CI/CD",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-primeira-execucao",
+      "title": "Preparar o primeiro conjunto de dez casos",
+      "topic": "fechamento",
+      "read": "11 min",
+      "description": "Reúna os módulos anteriores numa matriz fictícia de orçamento, com dados conhecidos e critérios para cada caso.",
+      "objectives": [
+        "Rastrear requisito, caso e resultado esperado.",
+        "Preparar Run List e ambiente.",
+        "Distinguir a matriz de estudo de uma execução real."
+      ],
+      "concepts": [
+        [
+          "Contrato retomado",
+          "O exemplo usa quantidade inteira positiva, preço com vírgula decimal, BASICO 5%, PREMIUM 10% e arredondamento de ponto médio para o par. A referência de valores vem do laboratório do módulo 3."
+        ],
+        [
+          "Dez variações",
+          "Os casos cobrem normalização, descontos, quantidade inválida, preço inválido, grupo desconhecido, centavos e o conjunto de quatro registros. Cada variação tem uma expectativa própria."
+        ],
+        [
+          "Prontidão",
+          "Antes do run, confira aplicação, versão, Agent, dados e fluxo correspondente a cada caso. Sem o ambiente real, o caderno oferece planejamento e revisão de resultados fictícios, sem declarar um test run concluído."
+        ]
+      ],
+      "flow": [
+        "Matriz de dez casos",
+        "Preparação e Agents",
+        "Run List de homologação",
+        "Resultados correlacionados"
+      ],
+      "flowNote": "O exemplo fecha o material de estudo; a execução real ainda depende do Leapwork e de uma aplicação compatível.",
+      "steps": [
+        {
+          "doc": "building-blocks/data-driven/read-excel",
+          "title": "Leia a matriz disponível",
+          "text": "Na visão geral do módulo 5, consulte os dez casos e seus resultados esperados. Identifique a regra representada por cada um.",
+          "observe": "Os dados são fictícios e a regra é do exercício autoral."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists",
+          "title": "Relacione casos e fluxos",
+          "text": "Planeje o fluxo que comprova cada expectativa e a organização da Run List. Use identificadores que sobrevivam a uma mudança de título.",
+          "observe": "Contar dez fluxos não garante que são os dez casos pretendidos."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists/schedules",
+          "title": "Confira a configuração de homologação",
+          "text": "Defina Agents, variáveis, distribuição e um primeiro disparo On Demand. Revise dependências de preparação e encerramento.",
+          "observe": "O mesmo caso em dois Agents gera resultados que precisam distinguir o ambiente."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Registre a execução correta",
+          "text": "Depois da execução real, preserve RunId, casos, itens, estados e evidências. No laboratório, use as classificações fictícias para treinar a revisão.",
+          "observe": "Marcar Passed no laboratório não significa que a regra foi executada no programa."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Matriz como prova de execução",
+          "Planejar um caso não comprova seu resultado."
+        ],
+        [
+          "Quantidade sem rastreabilidade",
+          "Um total agregado pode esconder casos ausentes ou duplicados."
+        ]
+      ],
+      "exercise": {
+        "title": "Defenda a presença dos dez casos",
+        "tasks": [
+          "Escolha uma rejeição e uma fronteira numérica.",
+          "Explique seus resultados esperados.",
+          "Liste os identificadores para a execução real."
+        ],
+        "answer": "Quantidade zero deve ser rejeitada. O caso de 0,10 com BASICO retorna 0,10 pelo arredondamento para o par do contrato. Preserve caso, fluxo, RunId, item, Agent, versão e evidência."
+      },
+      "practice": "Implemente primeiro poucos casos em homologação, confirme as expectativas e amplie até cobrir a matriz acordada.",
+      "quiz": [
+        {
+          "q": "A matriz preenchida equivale a uma execução real no Leapwork?",
+          "options": [
+            "Não.",
+            "Sim, o planejamento executa os fluxos."
+          ],
+          "correct": 0,
+          "why": "Planejamento e evidência de execução são etapas diferentes."
+        },
+        {
+          "q": "Dez resultados bastam sem identificar os casos?",
+          "options": [
+            "Sim, o total é toda a cobertura.",
+            "Não."
+          ],
+          "correct": 1,
+          "why": "É necessário comprovar a população esperada."
+        }
+      ],
+      "docs": [
+        [
+          "read-excel",
+          "building-blocks/data-driven/read-excel"
+        ],
+        [
+          "run-lists",
+          "working-with-leapwork/run-lists"
+        ],
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "module": 5,
+      "number": "13",
+      "group": "Primeiro ciclo e revisão",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-triagem",
+      "title": "Investigar, registrar e repetir o teste certo",
+      "topic": "fechamento",
+      "read": "9 min",
+      "description": "Classifique divergências e registre defeitos reproduzíveis, preservando a evidência original durante o reteste.",
+      "objectives": [
+        "Separar problema funcional, ambiental e de automação.",
+        "Escrever reprodução observável.",
+        "Relacionar reteste ao caso e à mudança."
+      ],
+      "concepts": [
+        [
+          "Triagem",
+          "Uma divergência pode vir da aplicação, do dado, do localizador ou do ambiente. Registre o fato observado antes de atribuir uma causa ou um responsável."
+        ],
+        [
+          "Defeito reproduzível",
+          "Um relato útil inclui contexto, passos, resultado esperado, observado e evidência vinculada à execução. Informações genéricas como não funcionou não delimitam o problema."
+        ],
+        [
+          "Reteste",
+          "Após uma mudança, repita o caso pertinente e os consumidores afetados. Um Passed posterior não apaga a falha anterior; registre a relação com a correção e a nova execução."
+        ]
+      ],
+      "flow": [
+        "Observar divergência",
+        "Classificar hipótese",
+        "Registrar evidência",
+        "Retestar mudança"
+      ],
+      "flowNote": "Roteiro de análise autoral; o caderno não abre tickets ou envia mensagens.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Localize o primeiro desvio demonstrável",
+          "text": "Abra a execução correta e cruze log, canvas e vídeo quando disponível. Identifique o ponto em que o comportamento difere da expectativa.",
+          "observe": "A cor no dashboard não descreve a causa."
+        },
+        {
+          "doc": "administration/audit-log",
+          "title": "Confira o contexto de mudança",
+          "text": "Compare versões e alterações relevantes sem tratar proximidade de horário como prova de causalidade.",
+          "observe": "Uma mudança no ambiente pode ser hipótese e ainda precisar de reprodução."
+        },
+        {
+          "doc": "working-with-leapwork/microsoft-ado-test-plan-integration",
+          "title": "Prepare um relato independente da ferramenta",
+          "text": "Escreva título preciso, versão, passos, esperado, observado e evidências. Se usar ADO, confira o caso e os campos exigidos no destino.",
+          "observe": "Não envie credenciais, dados reais desnecessários ou gravações sem revisão."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Registre o reteste",
+          "text": "Relacione a nova execução à correção e ao caso original. Confira se o resultado esperado foi observado e se os casos afetados continuam válidos.",
+          "observe": "Reexecutar sem mudança pode ajudar a investigar intermitência, mas não demonstra uma correção."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Falha como culpa",
+          "A evidência deve preceder a conclusão sobre causa."
+        ],
+        [
+          "Reteste apaga histórico",
+          "A investigação precisa preservar o caminho percorrido."
+        ]
+      ],
+      "exercise": {
+        "title": "O preço incorreto aparece só em um Agent",
+        "tasks": [
+          "Liste uma hipótese ambiental e uma funcional.",
+          "Defina as evidências.",
+          "Indique um reteste controlado."
+        ],
+        "answer": "Hipótese ambiental: configuração regional diferente; funcional: regra aplicada incorretamente. Preserve entrada, valor observado, Agent e versão. Compare o mesmo caso com contexto controlado após verificar a configuração, sem alterar vários fatores ao mesmo tempo."
+      },
+      "practice": "Faça uma triagem de falha controlada e peça a outra pessoa para reproduzir o caso pelo relato.",
+      "quiz": [
+        {
+          "q": "Uma falha prova imediatamente um defeito da aplicação?",
+          "options": [
+            "Sim, automação e ambiente nunca falham.",
+            "Não, a causa precisa ser investigada."
+          ],
+          "correct": 1,
+          "why": "O diagnóstico exige contexto."
+        },
+        {
+          "q": "Um reteste Passed apaga o Failed anterior?",
+          "options": [
+            "Não; preserve e relacione as execuções.",
+            "Sim, só o último estado importa."
+          ],
+          "correct": 0,
+          "why": "Histórico sustenta a interpretação da mudança."
+        }
+      ],
+      "docs": [
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "audit-log",
+          "administration/audit-log"
+        ],
+        [
+          "microsoft-ado-test-plan-integration",
+          "working-with-leapwork/microsoft-ado-test-plan-integration"
+        ]
+      ],
+      "module": 5,
+      "number": "14",
+      "group": "Primeiro ciclo e revisão",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-encerramento",
+      "title": "Revisar cobertura, evidências e pendências",
+      "topic": "fechamento",
+      "read": "9 min",
+      "description": "Feche o ciclo com um parecer que explique o que foi comprovado e o que continua pendente.",
+      "objectives": [
+        "Separar planejado, executado e aprovado.",
+        "Contar bloqueios e casos não executados.",
+        "Declarar limites do parecer."
+      ],
+      "concepts": [
+        [
+          "Contagens",
+          "Casos planejados, executados e aprovados são medidas diferentes. Um caso bloqueado ou não executado não se torna aprovado por estar fora da contagem de falhas."
+        ],
+        [
+          "Evidência",
+          "Um status sem vínculo à execução e ao resultado esperado oferece pouca rastreabilidade. Confira se a evidência pertence ao caso e à versão que estão sendo revisados."
+        ],
+        [
+          "Parecer",
+          "O encerramento resume escopo, ambiente, resultados, defeitos e próximos passos. O critério do exercício é rigoroso para ser inspecionável; a decisão real pertence ao processo e aos responsáveis definidos."
+        ]
+      ],
+      "flow": [
+        "Conferir população",
+        "Validar evidências",
+        "Declarar pendências",
+        "Registrar parecer"
+      ],
+      "flowNote": "O parecer do laboratório é didático e não aprova uma entrega ou certificação real.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Reconcilie a população",
+          "text": "Compare os dez casos planejados com os resultados vinculados. Procure ausência, duplicidade ou mistura de ambientes.",
+          "observe": "Uma taxa alta não explica quais casos relevantes ficaram fora."
+        },
+        {
+          "doc": "working-with-leapwork/dashboards",
+          "title": "Use o resumo com contexto",
+          "text": "Apresente aprovados, falhos, bloqueados e não executados, com o denominador explícito. Revise o período e os filtros do painel.",
+          "observe": "Contagens de execuções e de casos podem divergir quando há repetições ou múltiplos Agents."
+        },
+        {
+          "doc": "administration/retention-policies",
+          "title": "Preserve o material da revisão",
+          "text": "Confira a janela de acesso às evidências e guarde a ficha de estudo. Defina quem precisa consultar os resultados depois.",
+          "observe": "Uma referência a vídeo pode parar de funcionar após a retenção remover o arquivo."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Escreva o parecer e a próxima ação",
+          "text": "Declare o que foi verificado e as pendências. No laboratório, só todos Passed com evidência e prontidão atendem aos critérios didáticos.",
+          "observe": "Mesmo um parecer favorável do exercício não é uma autorização automática de implantação."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Excluir bloqueados do raciocínio",
+          "Um impedimento pode esconder risco sem produzir Failed."
+        ],
+        [
+          "Percentual sem denominador",
+          "A taxa pode parecer melhor ao omitir casos não executados."
+        ]
+      ],
+      "exercise": {
+        "title": "Oito Passed e dois não executados",
+        "tasks": [
+          "Calcule a aprovação sobre dez planejados.",
+          "Explique por que não declarar cobertura completa.",
+          "Escreva uma próxima ação."
+        ],
+        "answer": "São 80% dos casos planejados aprovados. Dois ainda não têm execução comprovada, portanto o ciclo não está completo pelo critério do exercício. Investigue o impedimento e execute os casos pendentes com evidência."
+      },
+      "practice": "Produza um parecer de homologação que outra pessoa consiga verificar pelos IDs e pelas evidências citadas.",
+      "quiz": [
+        {
+          "q": "Oito Passed e dois não executados significam 100% dos planejados aprovados?",
+          "options": [
+            "Não, são 80%.",
+            "Sim, porque nenhum dos dois falhou."
+          ],
+          "correct": 0,
+          "why": "O denominador é o conjunto planejado."
+        },
+        {
+          "q": "O parecer precisa declarar pendências?",
+          "options": [
+            "Não, basta mostrar o melhor percentual.",
+            "Sim."
+          ],
+          "correct": 1,
+          "why": "Limites são parte da interpretação do ciclo."
+        }
+      ],
+      "docs": [
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "dashboards",
+          "working-with-leapwork/dashboards"
+        ],
+        [
+          "retention-policies",
+          "administration/retention-policies"
+        ]
+      ],
+      "module": 5,
+      "number": "15",
+      "group": "Primeiro ciclo e revisão",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "ciclo-laboratorio",
+      "title": "Projeto final: da integração ao parecer do ciclo",
+      "topic": "pratica",
+      "read": "18 min",
+      "description": "Pratique decisões sobre respostas de API e uma revisão de dez casos fictícios, exportando o registro do seu raciocínio.",
+      "objectives": [
+        "Interpretar estados sem confundir transporte e aprovação.",
+        "Revisar dez casos com evidência e prontidão.",
+        "Distinguir conclusão do estudo e execução no programa."
+      ],
+      "concepts": [
+        [
+          "Laboratório de integração",
+          "As escolhas reproduzem somente uma política didática sobre estados previstos no contrato: resposta HTTP, estado do run, estado dos itens, quantidade e correlação. Não há chamada de rede nem parser de resposta real."
+        ],
+        [
+          "Laboratório do ciclo",
+          "Os dez casos retomam a regra de dados do módulo 3. Os estados iniciais são fictícios. Alterar uma seleção permite explorar a decisão, sem executar a ação de negócio."
+        ],
+        [
+          "Conclusão da trilha",
+          "Os cinco módulos ficam preparados para estudo. A execução real de fluxos e do primeiro ciclo depende de acesso ao Leapwork e de validação numa aplicação de homologação. Concluir este caderno não concede certificação oficial."
+        ]
+      ],
+      "flow": [
+        "Comparar respostas",
+        "Revisar dez casos",
+        "Analisar pendências",
+        "Exportar parecer de estudo"
+      ],
+      "flowNote": "Projeto autoral de consolidação; não substitui o test run real proposto pelo treinamento.",
+      "steps": [
+        {
+          "doc": "public-rest-apis/api-endpoints",
+          "title": "Compare sucesso HTTP e resultado",
+          "text": "Na visão geral do módulo 5, use o laboratório de integração. Experimente 200 com Queued, Finished com Failed e Finished com todos Passed.",
+          "observe": "A decisão só aceita os critérios do exercício quando correlação e população também conferem."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Leia a matriz de dez casos",
+          "text": "Revise os resultados esperados e os estados fictícios do ciclo. Observe como bloqueios e não executados continuam pendentes.",
+          "observe": "A matriz é um exemplo de estudo; não é um relatório gerado pelo Leapwork."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists/schedules",
+          "title": "Confira os pré-requisitos",
+          "text": "Marque prontidão apenas como hipótese do exercício e compare o efeito de retirar ambiente, dados ou correlação.",
+          "observe": "Uma caixa marcada no caderno não testa a conexão nem prepara o ambiente real."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Guarde seu raciocínio",
+          "text": "Exporte o CSV da matriz e a ficha JSON do projeto. Descreva a decisão e o próximo passo real de homologação.",
+          "observe": "O rascunho dos laboratórios não é salvo automaticamente; use os downloads ou as notas persistidas da aula."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Seleção como execução",
+          "Escolher Passed não produz evidência real."
+        ],
+        [
+          "Trilha como certificação",
+          "Material concluído é diferente de validação de competência pelo provedor."
+        ]
+      ],
+      "exercise": {
+        "title": "Escreva um parecer com pendências",
+        "tasks": [
+          "Escolha um cenário de falha de integração.",
+          "Mantenha um caso bloqueado na matriz.",
+          "Registre a ação necessária antes de um ciclo real."
+        ],
+        "answer": "Exemplo: a consulta retornou 401 e não há resultado confiável; o caso de grupo desconhecido está bloqueado por dados ausentes. Corrigir o acesso, preparar o cenário de homologação e executar os casos com RunId e evidências antes de concluir o ciclo real."
+      },
+      "practice": "Use a ficha como roteiro para construir, executar e revisar um primeiro conjunto no Leapwork com o responsável pelo ambiente.",
+      "quiz": [
+        {
+          "q": "Alterar todos os estados para Passed executa os testes?",
+          "options": [
+            "Sim, o motor roda dentro do HTML.",
+            "Não; é uma simulação de revisão."
+          ],
+          "correct": 1,
+          "why": "O laboratório não faz automação real."
+        },
+        {
+          "q": "O que ainda falta para comprovar o primeiro ciclo real?",
+          "options": [
+            "Executar e validar os fluxos em ambiente apropriado, com evidências.",
+            "Somente abrir o README."
+          ],
+          "correct": 0,
+          "why": "O estudo prepara o raciocínio; a execução produz a evidência prática."
+        }
+      ],
+      "docs": [
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "Boas práticas · uso de AI Blocks",
+          "best-practices/ai-blocks"
+        ]
+      ],
+      "module": 5,
+      "number": "16",
+      "group": "Projeto final offline",
+      "sourceKind": "documentation"
     }
   ],
   "testingInternet": [
@@ -11270,6 +13227,29 @@
     [
       "pratica",
       "Laboratório operacional"
+    ]
+  ],
+  "docSources": {
+    "best-practices/organizing-daily-work": "https://docs.leapwork.com/best-practices/latest/leapwork-flow-best-practices/organizing-daily-work-in-leapwork",
+    "best-practices/working-with-run-lists": "https://docs.leapwork.com/best-practices/latest/leapwork-flow-best-practices/working-with-run-lists",
+    "best-practices/ai-blocks": "https://docs.leapwork.com/best-practices/latest/leapwork-flow-best-practices/guidelines-for-using-the-ai-blocks"
+  },
+  "module5Topics": [
+    [
+      "praticas",
+      "Boas práticas e manutenção"
+    ],
+    [
+      "integracoes",
+      "Integrações, API e CI/CD"
+    ],
+    [
+      "fechamento",
+      "Primeiro ciclo e revisão"
+    ],
+    [
+      "pratica",
+      "Projeto final offline"
     ]
   ]
 }

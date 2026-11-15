@@ -1,28 +1,27 @@
-# v1.1.0 · Módulo 4: administração e controle
+# v1.2.0 · Os cinco módulos preparados para estudo
 
-O módulo 4 está disponível para estudo em português, com 16 aulas, 64 passos, 32 questões de revisão e dois laboratórios que funcionam offline.
+O módulo 5 está disponível: 16 aulas, 64 etapas e 32 questões sobre boas práticas, integrações e revisão do ciclo de testes. A trilha agora reúne **98 aulas nos cinco módulos**, com 427 etapas e 56 termos no glossário.
 
-- Administração: Controller, licença, usuários, equipes, permissões, conexões, retenção e padrões de execução/captura.
-- Execução: Agent remoto, Run Lists, novas tentativas, distribuição e agendamentos.
-- Monitoramento: relatórios, dashboards, auditoria e diagnóstico.
-- Versões: histórico, Only Flow, Full Restore, Full Copy e compartilhamento de ativos.
-- Laboratórios: distribuição de fluxos, comparação de restauração e ficha JSON para download.
+## O que chega no módulo final
 
-As aulas se baseiam na documentação oficial, com referências por passo e 12 imagens de interface. Os exemplos, exercícios e laboratórios são autorais. Não há vídeos novos neste módulo e nenhum fluxo foi executado no Leapwork durante a preparação.
+- Organização, contratos de sub-flows, esperas, validação, dados e manutenção.
+- Revisão de mudanças e sincronização Git dos fluxos, quando configurada no Leapwork.
+- Integração com CI/CD, API v4 e Azure DevOps.
+- Rotas e estados conferidos na especificação oficial OpenAPI v4.
+- Planejamento, triagem, reteste e parecer de um conjunto de dez casos fictícios.
+- Dois laboratórios offline, com downloads da matriz CSV e da ficha JSON do projeto.
 
-O caderno passa a ter **82 aulas e 48 termos no glossário**. O módulo 5 continua planejado, sem data definida. As mesmas chaves de notas e progresso foram preservadas; a mudança de pasta ou navegador ainda pode afetar o acesso aos dados locais.
+As aulas são estudos autorais baseados em documentação oficial. O módulo final não adiciona vídeos. Os laboratórios não usam chaves, não enviam requisições e não executam ou emulam Leapwork. Os cinco módulos estão preparados para estudo; o primeiro test run real continua dependendo do programa, de uma aplicação de homologação e de evidências de execução.
 
-## Como estudar
+## Baixar e abrir
 
-1. Baixe **LeapworkKnowledgeBase-v1.1.0-completo.zip** para incluir os 48 vídeos locais, ou **essencial.zip** para baixar somente o caderno, imagens, GIFs e laboratórios.
-2. Extraia todo o ZIP.
-3. Abra **Abrir caderno.cmd** no Windows, ou **site/index.html** em outros sistemas.
-4. Entre em **04 · Administração e controle**.
+1. Baixe **LeapworkKnowledgeBase-v1.2.0-completo.zip** para estudar com os 48 vídeos locais, ou **essencial.zip** para baixar o caderno com imagens, GIFs e laboratórios.
+2. Extraia todo o ZIP para uma pasta.
+3. No Windows, abra **Abrir caderno.cmd**. Nos outros sistemas, abra **site/index.html** no navegador.
+4. Selecione **05 · Boas práticas e integração** para estudar o último módulo.
 
-O completo tem aproximadamente 1,12 GB; o essencial, 64 MB. Os valores exatos aparecem nos arquivos da release. **SHA256SUMS.txt** permite conferir os ZIPs. Os arquivos automáticos **Source code** não incluem os vídeos.
+Não é necessário instalar pacotes ou iniciar servidor. O completo tem cerca de 1,12 GB e o essencial, 64 MB; os tamanhos exatos estão nos arquivos da release. **SHA256SUMS.txt** permite conferir os ZIPs. Os arquivos automáticos **Source code** não incluem os vídeos.
 
-Antes de atualizar ou mover a pasta, use **Exportar minhas anotações** na versão anterior. A exportação serve para consulta e não oferece importação automática.
+Antes de atualizar ou mover a pasta, exporte suas anotações na versão anterior. As chaves de armazenamento foram preservadas, mas o endereço local e o navegador ainda influenciam o acesso às notas. A exportação serve para consulta e não oferece importação automática.
 
-Os laboratórios não conectam máquinas nem emulam o Leapwork. A distribuição considera recursos disponíveis e não estima tempos reais; a restauração compara combinações fictícias de lógica e Locators. A prática no programa exige instalação, acesso e recursos compatíveis com a sua edição.
-
-Os artigos do portal de suporte não carregaram na consulta; os links foram mantidos e os temas foram estudados pela documentação atual. Os exercícios oficiais não foram reproduzidos. Vídeos e imagens têm as fontes identificadas no material; este é um caderno independente, sem afiliação oficial com a Leapwork.
+Os tópicos Best Practices e Integration do portal de suporte não carregaram na consulta; as fontes atuais acessíveis foram indicadas nas aulas. Os exercícios e critérios dos laboratórios são autorais. O caderno é independente e não concede certificação oficial. Vídeos e imagens têm sua origem referenciada no material.
