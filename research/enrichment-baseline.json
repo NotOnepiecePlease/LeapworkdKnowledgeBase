@@ -1,0 +1,4213 @@
+{
+  "version": "v1.2.0",
+  "lessons": [
+    {
+      "slug": "primeiro-fluxo",
+      "module": 1,
+      "title": "Seu primeiro fluxo web",
+      "number": "01",
+      "docs": [
+        [
+          "Como os fluxos são desenhados",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "Type Web Text e opções de espera",
+          "building-blocks/web/type-web-text"
+        ],
+        [
+          "Find Web Element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Estados de término",
+          "building-blocks/start-stop"
+        ]
+      ],
+      "video": "d9m4N9sxFT0",
+      "steps": [
+        {
+          "title": "Crie um fluxo com um nome reconhecível",
+          "hadImage": true,
+          "time": 32
+        },
+        {
+          "title": "Abra o gravador e inicie o navegador",
+          "hadImage": true,
+          "time": 50
+        },
+        {
+          "title": "Capture os campos e os botões do login",
+          "hadImage": true,
+          "time": 114
+        },
+        {
+          "title": "Investigue a falha antes de mudar o fluxo",
+          "hadImage": true,
+          "time": 241
+        },
+        {
+          "title": "Configure a espera e teste novamente",
+          "hadImage": true,
+          "time": 290
+        },
+        {
+          "title": "Verifique o login e defina o resultado",
+          "hadImage": true,
+          "time": 322
+        },
+        {
+          "title": "Use o registro para entender a execução",
+          "hadImage": true,
+          "time": 423
+        }
+      ]
+    },
+    {
+      "slug": "sub-flows",
+      "module": 1,
+      "title": "Sub-flows e reutilização",
+      "number": "02",
+      "docs": [
+        [
+          "Criar e parametrizar subfluxos",
+          "working-with-leapwork/designing-automation-flows/sub-flows"
+        ],
+        [
+          "Value Input",
+          "building-blocks/module-input-and-output/value-input"
+        ],
+        [
+          "Conectores e desenho de fluxos",
+          "working-with-leapwork/designing-automation-flows"
+        ]
+      ],
+      "video": "9IdcfvVSKAc",
+      "steps": [
+        {
+          "title": "Selecione apenas a lógica que será compartilhada",
+          "hadImage": true,
+          "time": 104
+        },
+        {
+          "title": "Insira o subfluxo em outro fluxo",
+          "hadImage": true,
+          "time": 179
+        },
+        {
+          "title": "Adicione parâmetros com Value Input",
+          "hadImage": true,
+          "time": 235
+        },
+        {
+          "title": "Confira o contrato do componente",
+          "hadImage": true,
+          "time": 330
+        },
+        {
+          "title": "Forneça os dados pelo fluxo principal",
+          "hadImage": true,
+          "time": 347
+        },
+        {
+          "title": "Depure os blocos internos pelo registro",
+          "hadImage": true,
+          "time": 466
+        }
+      ]
+    },
+    {
+      "slug": "formularios",
+      "module": 1,
+      "title": "Formulários e controles web",
+      "number": "03",
+      "docs": [
+        [
+          "Set Web Dropdown",
+          "building-blocks/web/set-web-dropdown"
+        ],
+        [
+          "Type Web Text",
+          "building-blocks/web/type-web-text"
+        ],
+        [
+          "Set Web Radio Button",
+          "building-blocks/web/set-web-radio-button"
+        ],
+        [
+          "Click Web Element",
+          "building-blocks/web/click-web-element"
+        ]
+      ],
+      "video": "qHp1RY9AQds",
+      "steps": [
+        {
+          "title": "Prepare a página e acrescente blocos manualmente",
+          "hadImage": true,
+          "time": 38
+        },
+        {
+          "title": "Escolha uma opção em uma lista suspensa",
+          "hadImage": true,
+          "time": 111
+        },
+        {
+          "title": "Capture o alternador como elemento clicável",
+          "hadImage": true,
+          "time": 234
+        },
+        {
+          "title": "Digite a descrição e limpe o conteúdo anterior",
+          "hadImage": true,
+          "time": 272
+        },
+        {
+          "title": "Selecione o padrão de recorrência",
+          "hadImage": true,
+          "time": 353
+        },
+        {
+          "title": "Confirme os diálogos e observe a mensagem",
+          "hadImage": true,
+          "time": 407
+        }
+      ]
+    },
+    {
+      "slug": "leitura",
+      "module": 1,
+      "title": "Leitura de textos e números",
+      "number": "04",
+      "docs": [
+        [
+          "Get Web Text: formatos e filtros",
+          "building-blocks/web/get-web-text"
+        ],
+        [
+          "Get Web Number: formatos numéricos",
+          "building-blocks/web/get-web-number"
+        ],
+        [
+          "Find Web Element: Count",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "video": "M-y1MxK3_Dw",
+      "steps": [
+        {
+          "title": "Leia a mensagem e registre o texto encontrado",
+          "hadImage": true,
+          "time": 43
+        },
+        {
+          "title": "Extraia apenas o trecho variável",
+          "hadImage": true,
+          "time": 92
+        },
+        {
+          "title": "Valide o conteúdo com um filtro",
+          "hadImage": true,
+          "time": 168
+        },
+        {
+          "title": "Leia o total sem prender o localizador ao número",
+          "hadImage": true,
+          "time": 205
+        },
+        {
+          "title": "Conte as linhas que correspondem ao status",
+          "hadImage": true,
+          "time": 359
+        },
+        {
+          "title": "Compare as duas fontes e trate os resultados",
+          "hadImage": true,
+          "time": 414
+        }
+      ]
+    },
+    {
+      "slug": "listas",
+      "module": 1,
+      "title": "Listas de elementos",
+      "number": "05",
+      "docs": [
+        [
+          "Find Web Element: All e Completed",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Get Web Text: Source element",
+          "building-blocks/web/get-web-text"
+        ],
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ]
+      ],
+      "video": "pZAVmupXWhE",
+      "steps": [
+        {
+          "title": "Abra a tabela e capture uma célula de referência",
+          "hadImage": true,
+          "time": 137
+        },
+        {
+          "title": "Suba até a linha e amplie a estratégia",
+          "hadImage": true,
+          "time": 193
+        },
+        {
+          "title": "Configure All para percorrer as ocorrências",
+          "hadImage": true,
+          "time": 291
+        },
+        {
+          "title": "Forneça a linha como Source element",
+          "hadImage": true,
+          "time": 329
+        },
+        {
+          "title": "Restrinja a leitura à célula desejada",
+          "hadImage": true,
+          "time": 357
+        },
+        {
+          "title": "Registre os valores e finalize após a coleção",
+          "hadImage": true,
+          "time": 440
+        }
+      ]
+    },
+    {
+      "slug": "mobile",
+      "module": 1,
+      "title": "Páginas web móveis",
+      "number": "06",
+      "docs": [
+        [
+          "Start Web Browser: Device type",
+          "building-blocks/web/start-web-browser"
+        ],
+        [
+          "Get Web Number",
+          "building-blocks/web/get-web-number"
+        ],
+        [
+          "Compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "video": "aGduKxCIZAk",
+      "steps": [
+        {
+          "title": "Configure o navegador e o tipo de dispositivo",
+          "hadImage": true,
+          "time": 82
+        },
+        {
+          "title": "Observe o layout com o perfil móvel",
+          "hadImage": true,
+          "time": 141
+        },
+        {
+          "title": "Registre a busca no layout móvel",
+          "hadImage": true,
+          "time": 186
+        },
+        {
+          "title": "Capture o número de resultados",
+          "hadImage": true,
+          "time": 232
+        },
+        {
+          "title": "Expresse o critério na comparação",
+          "hadImage": true,
+          "time": 254
+        },
+        {
+          "title": "Repita com outro perfil e avalie a evidência",
+          "hadImage": false,
+          "time": 306
+        }
+      ]
+    },
+    {
+      "slug": "desktop-introducao",
+      "module": 1,
+      "title": "Seu primeiro fluxo desktop",
+      "number": "07",
+      "docs": [
+        [
+          "Start Application",
+          "building-blocks/desktop-ui/start-application"
+        ],
+        [
+          "Set UI Element Value",
+          "building-blocks/desktop-ui/set-ui-element-value"
+        ],
+        [
+          "Click UI Element",
+          "building-blocks/desktop-ui/click-ui-element"
+        ],
+        [
+          "Find UI Element",
+          "building-blocks/desktop-ui/find-ui-element"
+        ]
+      ],
+      "video": "-51LTRplY48",
+      "steps": [
+        {
+          "title": "Inicie a aplicação pelo gravador",
+          "hadImage": true,
+          "time": 176
+        },
+        {
+          "title": "Capture usuário e senha",
+          "hadImage": true,
+          "time": 245
+        },
+        {
+          "title": "Registre o clique em Login",
+          "hadImage": true,
+          "time": 315
+        },
+        {
+          "title": "Procure a confirmação de entrada",
+          "hadImage": true,
+          "time": 377
+        },
+        {
+          "title": "Execute e confira o Activity Log",
+          "hadImage": false,
+          "time": 500
+        }
+      ]
+    },
+    {
+      "slug": "desktop-contatos",
+      "module": 1,
+      "title": "Criar contatos a partir de uma planilha",
+      "number": "08",
+      "docs": [
+        [
+          "Read Excel",
+          "building-blocks/data-driven/read-excel"
+        ],
+        [
+          "Value Input",
+          "building-blocks/module-input-and-output/value-input"
+        ],
+        [
+          "Execution Input",
+          "building-blocks/module-input-and-output/execution-input"
+        ],
+        [
+          "Execution Output",
+          "building-blocks/module-input-and-output/execution-output"
+        ]
+      ],
+      "video": "TXWo3qK9Oy8",
+      "steps": [
+        {
+          "title": "Grave um cadastro com valores de exemplo",
+          "hadImage": true,
+          "time": 114
+        },
+        {
+          "title": "Extraia a operação para um sub-flow",
+          "hadImage": false,
+          "time": 244
+        },
+        {
+          "title": "Defina o arquivo e o intervalo do Excel",
+          "hadImage": true,
+          "time": 326
+        },
+        {
+          "title": "Exponha os três parâmetros e o retorno",
+          "hadImage": true,
+          "time": 477
+        },
+        {
+          "title": "Conecte colunas e repita por linha",
+          "hadImage": true,
+          "time": 711
+        },
+        {
+          "title": "Confira os registros criados",
+          "hadImage": true,
+          "time": 899
+        }
+      ]
+    },
+    {
+      "slug": "desktop-web",
+      "module": 1,
+      "title": "Automatizar entre desktop e web",
+      "number": "09",
+      "docs": [
+        [
+          "Use UI Window",
+          "building-blocks/desktop-ui/use-ui-window"
+        ],
+        [
+          "Use Browser Window",
+          "building-blocks/web/use-browser-window"
+        ],
+        [
+          "Type Web Text",
+          "building-blocks/web/type-web-text"
+        ],
+        [
+          "Find Web Element",
+          "building-blocks/web/find-web-element"
+        ]
+      ],
+      "video": "23YBj_t1EjA",
+      "steps": [
+        {
+          "title": "Entenda o ponto de partida",
+          "hadImage": true,
+          "time": 115
+        },
+        {
+          "title": "Preencha a composição na janela correta",
+          "hadImage": true,
+          "time": 250
+        },
+        {
+          "title": "Troque para os blocos Web",
+          "hadImage": true,
+          "time": 354
+        },
+        {
+          "title": "Parametrize a mensagem esperada",
+          "hadImage": true,
+          "time": 566
+        },
+        {
+          "title": "Retome o contexto desktop explicitamente",
+          "hadImage": true,
+          "time": 767
+        },
+        {
+          "title": "Retome o navegador e valide a sequência",
+          "hadImage": true,
+          "time": 919
+        }
+      ]
+    },
+    {
+      "slug": "virtual-introducao",
+      "module": 1,
+      "title": "Começar a automação virtual",
+      "number": "10",
+      "docs": [
+        [
+          "Click Image",
+          "building-blocks/mouse-and-keyboard/click-image"
+        ],
+        [
+          "Type Text",
+          "building-blocks/mouse-and-keyboard/type-text"
+        ],
+        [
+          "Find Text",
+          "building-blocks/image-and-text-recognition/find-text"
+        ]
+      ],
+      "video": "ynF7HY2ux_c",
+      "steps": [
+        {
+          "title": "Capture referências visuais reconhecíveis",
+          "hadImage": true,
+          "time": 187
+        },
+        {
+          "title": "Defina ponto e região de busca",
+          "hadImage": true,
+          "time": 323
+        },
+        {
+          "title": "Prepare a resolução do Agent",
+          "hadImage": true,
+          "time": 427
+        },
+        {
+          "title": "Digite a URL e capture Enter",
+          "hadImage": true,
+          "time": 471
+        },
+        {
+          "title": "Procure o texto esperado",
+          "hadImage": true,
+          "time": 603
+        },
+        {
+          "title": "Leia o resultado do fluxo",
+          "hadImage": true,
+          "time": 787
+        }
+      ]
+    },
+    {
+      "slug": "virtual-imagens",
+      "module": 1,
+      "title": "Reconhecer imagens na tela",
+      "number": "11",
+      "docs": [
+        [
+          "Find Image",
+          "building-blocks/image-and-text-recognition/find-image"
+        ],
+        [
+          "Hover Position",
+          "building-blocks/mouse-and-keyboard/hover-position"
+        ],
+        [
+          "Scroll Wheel",
+          "building-blocks/mouse-and-keyboard/scroll-wheel"
+        ]
+      ],
+      "video": "sJ3Fa3kSiJg",
+      "steps": [
+        {
+          "title": "Capture e localize uma imagem distinta",
+          "hadImage": true,
+          "time": 145
+        },
+        {
+          "title": "Passe a posição para Hover Position",
+          "hadImage": true,
+          "time": 253
+        },
+        {
+          "title": "Use estabilidade com uma verificação",
+          "hadImage": true,
+          "time": 447
+        },
+        {
+          "title": "Trate o alvo que está fora da tela",
+          "hadImage": true,
+          "time": 487
+        },
+        {
+          "title": "Valide a precisão com casos negativos",
+          "hadImage": true,
+          "time": 731
+        },
+        {
+          "title": "Agrupe variantes com intenção",
+          "hadImage": true,
+          "time": 812
+        }
+      ]
+    },
+    {
+      "slug": "virtual-textos",
+      "module": 1,
+      "title": "Ler textos e números por OCR",
+      "number": "12",
+      "docs": [
+        [
+          "Get Text",
+          "building-blocks/image-and-text-recognition/get-text"
+        ],
+        [
+          "Get Number",
+          "building-blocks/image-and-text-recognition/get-number"
+        ],
+        [
+          "Find Text",
+          "building-blocks/image-and-text-recognition/find-text"
+        ],
+        [
+          "Hover Text",
+          "building-blocks/mouse-and-keyboard/hover-text"
+        ]
+      ],
+      "video": "qGGNbk0UY-0",
+      "steps": [
+        {
+          "title": "Recorte a região de leitura",
+          "hadImage": false,
+          "time": 148
+        },
+        {
+          "title": "Use Find format para uma parte do conteúdo",
+          "hadImage": true,
+          "time": 275
+        },
+        {
+          "title": "Reutilize o reconhecimento em Hover Text",
+          "hadImage": true,
+          "time": 456
+        },
+        {
+          "title": "Leia o preço como número",
+          "hadImage": true,
+          "time": 564
+        },
+        {
+          "title": "Escolha a ocorrência e confirme o resultado",
+          "hadImage": true,
+          "time": 656
+        }
+      ]
+    },
+    {
+      "slug": "virtual-cliques",
+      "module": 1,
+      "title": "Clicar por imagem e por texto",
+      "number": "13",
+      "docs": [
+        [
+          "Click Image",
+          "building-blocks/mouse-and-keyboard/click-image"
+        ],
+        [
+          "Click Text",
+          "building-blocks/mouse-and-keyboard/click-text"
+        ],
+        [
+          "Click Position",
+          "building-blocks/mouse-and-keyboard/click-position"
+        ]
+      ],
+      "video": "fO6aVmNKUCc",
+      "steps": [
+        {
+          "title": "Revise a referência e o ponto de clique",
+          "hadImage": true,
+          "time": 87
+        },
+        {
+          "title": "Escolha botão e velocidade explicitamente",
+          "hadImage": true,
+          "time": 242
+        },
+        {
+          "title": "Evite capturar só o espaço vazio do campo",
+          "hadImage": true,
+          "time": 327
+        },
+        {
+          "title": "Restrinja a busca e confira o foco",
+          "hadImage": true,
+          "time": 394
+        },
+        {
+          "title": "Use Click Text quando a legenda for o melhor alvo",
+          "hadImage": true,
+          "time": 511
+        }
+      ]
+    },
+    {
+      "slug": "virtual-teclado",
+      "module": 1,
+      "title": "Digitar e controlar teclas",
+      "number": "14",
+      "docs": [
+        [
+          "Type Text",
+          "building-blocks/mouse-and-keyboard/type-text"
+        ],
+        [
+          "Press Key",
+          "building-blocks/mouse-and-keyboard/press-key"
+        ],
+        [
+          "Release Key",
+          "building-blocks/mouse-and-keyboard/release-key"
+        ]
+      ],
+      "video": "akmkQk8sc40",
+      "steps": [
+        {
+          "title": "Digite no aplicativo preparado",
+          "hadImage": false,
+          "time": 109
+        },
+        {
+          "title": "Insira um valor dinâmico",
+          "hadImage": true,
+          "time": 230
+        },
+        {
+          "title": "Capture um atalho e a tecla Enter",
+          "hadImage": true,
+          "time": 353
+        },
+        {
+          "title": "Ajuste o modo e a velocidade da digitação",
+          "hadImage": true,
+          "time": 490
+        },
+        {
+          "title": "Mantenha e libere modificadores",
+          "hadImage": true,
+          "time": 652
+        },
+        {
+          "title": "Confira o texto efetivamente produzido",
+          "hadImage": true,
+          "time": 610
+        }
+      ]
+    },
+    {
+      "slug": "virtual-areas",
+      "module": 1,
+      "title": "Usar posições e áreas relativas",
+      "number": "15",
+      "docs": [
+        [
+          "Offset Position",
+          "building-blocks/logic/offset-position"
+        ],
+        [
+          "Offset Area",
+          "building-blocks/logic/offset-area"
+        ],
+        [
+          "Set Area",
+          "building-blocks/setting-values/set-area"
+        ],
+        [
+          "Loop",
+          "building-blocks/logic/loop"
+        ],
+        [
+          "Get Text",
+          "building-blocks/image-and-text-recognition/get-text"
+        ]
+      ],
+      "video": "rK8qIFccfbk",
+      "steps": [
+        {
+          "title": "Leia corretamente os eixos",
+          "hadImage": true,
+          "time": 111
+        },
+        {
+          "title": "Calcule outro ponto a partir da imagem",
+          "hadImage": true,
+          "time": 247
+        },
+        {
+          "title": "Defina e desloque um retângulo",
+          "hadImage": true,
+          "time": 411
+        },
+        {
+          "title": "Use a linha atual como âncora textual",
+          "hadImage": true,
+          "time": 716
+        },
+        {
+          "title": "Monte a área da célula vizinha",
+          "hadImage": true,
+          "time": 812
+        },
+        {
+          "title": "Leia por linha e finalize ao concluir",
+          "hadImage": true,
+          "time": 967
+        }
+      ]
+    },
+    {
+      "slug": "autenticacao-basica",
+      "module": 2,
+      "title": "Autenticação básica HTTP",
+      "number": "01",
+      "docs": [
+        [
+          "Start Web Browser: URL e tokens",
+          "building-blocks/web/start-web-browser"
+        ],
+        [
+          "Find Web Element",
+          "building-blocks/web/find-web-element"
+        ]
+      ],
+      "video": "AL_LQQ4yMLc",
+      "steps": [
+        {
+          "title": "Abra a página de demonstração pelo fluxo",
+          "hadImage": true,
+          "time": 132
+        },
+        {
+          "title": "Reconheça a estrutura de URL usada no exemplo",
+          "hadImage": true,
+          "time": 181
+        },
+        {
+          "title": "Passe o par de teste por um campo dinâmico",
+          "hadImage": true,
+          "time": 198
+        },
+        {
+          "title": "Capture a confirmação de acesso",
+          "hadImage": true,
+          "time": 250
+        },
+        {
+          "title": "Execute e confira o caminho de sucesso",
+          "hadImage": true,
+          "time": 304
+        }
+      ]
+    },
+    {
+      "slug": "imagens-quebradas",
+      "module": 2,
+      "title": "Detectar imagens quebradas",
+      "number": "02",
+      "docs": [
+        [
+          "Find Web Element: Require valid imgs",
+          "building-blocks/web/find-web-element"
+        ]
+      ],
+      "video": "xAl2LfFKxj0",
+      "steps": [
+        {
+          "title": "Capture uma das imagens indisponíveis",
+          "hadImage": true,
+          "time": 87
+        },
+        {
+          "title": "Confira que o alvo é uma tag img",
+          "hadImage": true,
+          "time": 115
+        },
+        {
+          "title": "Habilite Require valid imgs e escolha o timeout",
+          "hadImage": true,
+          "time": 130
+        },
+        {
+          "title": "Leia a falha como evidência do recurso inválido",
+          "hadImage": true,
+          "time": 160
+        }
+      ]
+    },
+    {
+      "slug": "dom-avancado",
+      "module": 2,
+      "title": "Escolher estratégias no DOM",
+      "number": "03",
+      "docs": [
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ],
+        [
+          "Find Web Element",
+          "building-blocks/web/find-web-element"
+        ]
+      ],
+      "video": "lsGjkso3Rbg",
+      "steps": [
+        {
+          "title": "Parta da célula que o teste precisa localizar",
+          "hadImage": false,
+          "time": 94
+        },
+        {
+          "title": "Compare as estratégias sugeridas",
+          "hadImage": true,
+          "time": 119
+        },
+        {
+          "title": "Entenda a dependência de uma ocorrência",
+          "hadImage": true,
+          "time": 130
+        },
+        {
+          "title": "Compare o caminho por linha e coluna",
+          "hadImage": true,
+          "time": 147
+        }
+      ]
+    },
+    {
+      "slug": "checkboxes",
+      "module": 2,
+      "title": "Marcar e desmarcar checkboxes",
+      "number": "04",
+      "docs": [
+        [
+          "Documentação · set-web-checkbox",
+          "building-blocks/web/set-web-checkbox"
+        ],
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ]
+      ],
+      "video": "lb78WgJ0-wo",
+      "steps": [
+        {
+          "title": "Abra a página e capture o primeiro controle",
+          "hadImage": false,
+          "time": 63
+        },
+        {
+          "title": "Estabeleça o estado marcado",
+          "hadImage": true,
+          "time": 86
+        },
+        {
+          "title": "Desmarque o segundo checkbox",
+          "hadImage": true,
+          "time": 105
+        },
+        {
+          "title": "Execute e confira os estados",
+          "hadImage": true,
+          "time": 127
+        }
+      ]
+    },
+    {
+      "slug": "arrastar-soltar",
+      "module": 2,
+      "title": "Arrastar e soltar elementos web",
+      "number": "05",
+      "docs": [
+        [
+          "Documentação · drag-web-element",
+          "building-blocks/web/drag-web-element"
+        ],
+        [
+          "Wait",
+          "building-blocks/logic/wait"
+        ]
+      ],
+      "video": "suIDRArjQEk",
+      "steps": [
+        {
+          "title": "Abra o cenário de arraste",
+          "hadImage": false,
+          "time": 82
+        },
+        {
+          "title": "Observe a pausa do exemplo",
+          "hadImage": true,
+          "time": 100
+        },
+        {
+          "title": "Capture a origem A e o destino B",
+          "hadImage": true,
+          "time": 111
+        },
+        {
+          "title": "Execute e examine a troca",
+          "hadImage": true,
+          "time": 146
+        }
+      ]
+    },
+    {
+      "slug": "elementos-desaparecem",
+      "module": 2,
+      "title": "Tratar elementos que aparecem ou somem",
+      "number": "06",
+      "docs": [
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ]
+      ],
+      "video": "3M0KO_fi8WY",
+      "steps": [
+        {
+          "title": "Observe a variação de Gallery",
+          "hadImage": true,
+          "time": 82
+        },
+        {
+          "title": "Capture o alvo com Find Web Element",
+          "hadImage": true,
+          "time": 125
+        },
+        {
+          "title": "Modele os dois resultados da procura",
+          "hadImage": true,
+          "time": 153
+        },
+        {
+          "title": "Confira o caminho realmente percorrido",
+          "hadImage": true,
+          "time": 174
+        }
+      ]
+    },
+    {
+      "slug": "dropdowns-avancados",
+      "module": 2,
+      "title": "Selecionar opções por valor, texto ou índice",
+      "number": "07",
+      "docs": [
+        [
+          "Documentação · set-web-dropdown",
+          "building-blocks/web/set-web-dropdown"
+        ],
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ]
+      ],
+      "video": "r8IH1LYegOo",
+      "steps": [
+        {
+          "title": "Capture o dropdown",
+          "hadImage": true,
+          "time": 72
+        },
+        {
+          "title": "Selecione pelo valor associado",
+          "hadImage": true,
+          "time": 107
+        },
+        {
+          "title": "Compare com a seleção por texto",
+          "hadImage": false,
+          "time": 179
+        },
+        {
+          "title": "Teste a posição e documente a escolha",
+          "hadImage": true,
+          "time": 200
+        }
+      ]
+    },
+    {
+      "slug": "conteudo-dinamico",
+      "module": 2,
+      "title": "Localizar conteúdo que muda a cada carga",
+      "number": "08",
+      "docs": [
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ]
+      ],
+      "video": "gERnZ6rN1VQ",
+      "steps": [
+        {
+          "title": "Capture a linha e sua imagem",
+          "hadImage": false,
+          "time": 66
+        },
+        {
+          "title": "Retire o texto variável da estratégia",
+          "hadImage": true,
+          "time": 114
+        },
+        {
+          "title": "Restrinja a imagem à linha encontrada",
+          "hadImage": true,
+          "time": 156
+        },
+        {
+          "title": "Exija a imagem válida e confira a execução",
+          "hadImage": true,
+          "time": 201
+        }
+      ]
+    },
+    {
+      "slug": "controles-dinamicos",
+      "module": 2,
+      "title": "Esperar a remoção de um controle",
+      "number": "09",
+      "docs": [
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Documentação · click-web-element",
+          "building-blocks/web/click-web-element"
+        ]
+      ],
+      "video": "TCcN6YORYC0",
+      "steps": [
+        {
+          "title": "Registre o botão que remove o checkbox",
+          "hadImage": false,
+          "time": 63
+        },
+        {
+          "title": "Capture o checkbox em seu estado inicial",
+          "hadImage": true,
+          "time": 110
+        },
+        {
+          "title": "Ative Await not found",
+          "hadImage": true,
+          "time": 126
+        },
+        {
+          "title": "Confira a transição no log",
+          "hadImage": true,
+          "time": 151
+        }
+      ]
+    },
+    {
+      "slug": "carregamento-visibilidade",
+      "module": 2,
+      "title": "Esperar um elemento ficar visível",
+      "number": "10",
+      "docs": [
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "video": "YP3TJrud2BY",
+      "steps": [
+        {
+          "title": "Capture Start e a mensagem",
+          "hadImage": true,
+          "time": 66
+        },
+        {
+          "title": "Exponha Visible",
+          "hadImage": true,
+          "time": 95
+        },
+        {
+          "title": "Compare e modele uma nova tentativa",
+          "hadImage": true,
+          "time": 114
+        },
+        {
+          "title": "Confirme a passagem de oculto para visível",
+          "hadImage": true,
+          "time": 162
+        }
+      ]
+    },
+    {
+      "slug": "carregamento-novo-elemento",
+      "module": 2,
+      "title": "Esperar um elemento ser adicionado",
+      "number": "11",
+      "docs": [
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Documentação · click-web-element",
+          "building-blocks/web/click-web-element"
+        ]
+      ],
+      "video": "c56VBmlFSC0",
+      "steps": [
+        {
+          "title": "Grave o início do carregamento",
+          "hadImage": false,
+          "time": 82
+        },
+        {
+          "title": "Capture a mensagem após aparecer",
+          "hadImage": true,
+          "time": 98
+        },
+        {
+          "title": "Revise o limite da procura",
+          "hadImage": true,
+          "time": 113
+        },
+        {
+          "title": "Execute a partir do estado inicial",
+          "hadImage": true,
+          "time": 144
+        }
+      ]
+    },
+    {
+      "slug": "download-arquivos",
+      "module": 2,
+      "title": "Percorrer links de download",
+      "number": "12",
+      "docs": [
+        [
+          "Documentação · click-web-element",
+          "building-blocks/web/click-web-element"
+        ],
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ]
+      ],
+      "video": "Cd4rHHq2OZY",
+      "steps": [
+        {
+          "title": "Capture um dos links da lista",
+          "hadImage": true,
+          "time": 64
+        },
+        {
+          "title": "Generalize dentro do contêiner correto",
+          "hadImage": true,
+          "time": 98
+        },
+        {
+          "title": "Percorra todas as ocorrências",
+          "hadImage": true,
+          "time": 133
+        },
+        {
+          "title": "Observe e diferencie acionamento de conclusão",
+          "hadImage": true,
+          "time": 151
+        }
+      ]
+    },
+    {
+      "slug": "upload-arquivo",
+      "module": 2,
+      "title": "Enviar um arquivo e verificar a confirmação",
+      "number": "13",
+      "docs": [
+        [
+          "Documentação · get-web-text",
+          "building-blocks/web/get-web-text"
+        ],
+        [
+          "Documentação · get-web-attribute",
+          "building-blocks/web/get-web-attribute"
+        ],
+        [
+          "Type Text",
+          "building-blocks/mouse-and-keyboard/type-text"
+        ],
+        [
+          "Compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "video": "bM5smmLOsBs",
+      "steps": [
+        {
+          "title": "Registre a abertura do seletor",
+          "hadImage": false,
+          "time": 92
+        },
+        {
+          "title": "Digite o caminho no diálogo correto",
+          "hadImage": true,
+          "time": 109
+        },
+        {
+          "title": "Envie e leia a confirmação",
+          "hadImage": true,
+          "time": 132
+        },
+        {
+          "title": "Compare com o nome esperado",
+          "hadImage": true,
+          "time": 173
+        }
+      ]
+    },
+    {
+      "slug": "menu-flutuante",
+      "module": 2,
+      "title": "Verificar um menu durante a rolagem",
+      "number": "14",
+      "docs": [
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "video": "Xw2nXTOe9NE",
+      "steps": [
+        {
+          "title": "Capture um parágrafo e o menu Home",
+          "hadImage": true,
+          "time": 83
+        },
+        {
+          "title": "Escolha um parágrafo distante",
+          "hadImage": true,
+          "time": 112
+        },
+        {
+          "title": "Compare a coordenada Y do menu",
+          "hadImage": true,
+          "time": 166
+        },
+        {
+          "title": "Confira o menu após a rolagem",
+          "hadImage": true,
+          "time": 193
+        }
+      ]
+    },
+    {
+      "slug": "login-formulario",
+      "module": 2,
+      "title": "Autenticar por formulário e teclado",
+      "number": "15",
+      "docs": [
+        [
+          "Documentação · type-web-text",
+          "building-blocks/web/type-web-text"
+        ],
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ]
+      ],
+      "video": "_t-g5jxOdno",
+      "steps": [
+        {
+          "title": "Capture o campo de usuário",
+          "hadImage": true,
+          "time": 99
+        },
+        {
+          "title": "Capture Tab e Enter",
+          "hadImage": true,
+          "time": 124
+        },
+        {
+          "title": "Localize a confirmação de acesso",
+          "hadImage": true,
+          "time": 156
+        },
+        {
+          "title": "Execute e confira o caminho completo",
+          "hadImage": true,
+          "time": 180
+        }
+      ]
+    },
+    {
+      "slug": "hover-elementos",
+      "module": 2,
+      "title": "Revelar e validar conteúdo ao passar o mouse",
+      "number": "16",
+      "docs": [
+        [
+          "Documentação · hover-web-element",
+          "building-blocks/web/hover-web-element"
+        ],
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "video": "5SALJ43raC4",
+      "steps": [
+        {
+          "title": "Grave hover e captura da legenda",
+          "hadImage": true,
+          "time": 80
+        },
+        {
+          "title": "Selecione os contêineres equivalentes",
+          "hadImage": true,
+          "time": 120
+        },
+        {
+          "title": "Conecte o item atual ao escopo da legenda",
+          "hadImage": true,
+          "time": 179
+        },
+        {
+          "title": "Percorra todos os itens",
+          "hadImage": true,
+          "time": 221
+        }
+      ]
+    },
+    {
+      "slug": "editor-iframe",
+      "module": 2,
+      "title": "Editar conteúdo dentro de um iframe",
+      "number": "17",
+      "docs": [
+        [
+          "Documentação · type-web-text",
+          "building-blocks/web/type-web-text"
+        ],
+        [
+          "Documentação · click-web-element",
+          "building-blocks/web/click-web-element"
+        ],
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ]
+      ],
+      "video": "I4rIpx-xlic",
+      "steps": [
+        {
+          "title": "Abra o editor e prepare o estado inicial",
+          "hadImage": true,
+          "time": 66
+        },
+        {
+          "title": "Capture a área editável interna",
+          "hadImage": true,
+          "time": 111
+        },
+        {
+          "title": "Abra as opções e selecione lista",
+          "hadImage": true,
+          "time": 144
+        },
+        {
+          "title": "Confira texto e formatação",
+          "hadImage": true,
+          "time": 179
+        }
+      ]
+    },
+    {
+      "slug": "rolagem-infinita",
+      "module": 2,
+      "title": "Explorar rolagem infinita com limite",
+      "number": "18",
+      "docs": [
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "video": "vbz5ckcdb-Y",
+      "steps": [
+        {
+          "title": "Capture um parágrafo representativo",
+          "hadImage": true,
+          "time": 84
+        },
+        {
+          "title": "Generalize a estratégia e configure a rolagem",
+          "hadImage": true,
+          "time": 110
+        },
+        {
+          "title": "Defina estabilidade e o marco de cinco",
+          "hadImage": true,
+          "time": 155
+        },
+        {
+          "title": "Confira a progressão real",
+          "hadImage": true,
+          "time": 208
+        }
+      ]
+    },
+    {
+      "slug": "alertas-javascript",
+      "module": 2,
+      "title": "Aceitar e cancelar alertas JavaScript",
+      "number": "19",
+      "docs": [
+        [
+          "Documentação · handle-web-alert",
+          "building-blocks/web/handle-web-alert"
+        ],
+        [
+          "Documentação · click-web-element",
+          "building-blocks/web/click-web-element"
+        ]
+      ],
+      "video": "oke1UlnrP0c",
+      "steps": [
+        {
+          "title": "Registre o botão que abre o alert",
+          "hadImage": true,
+          "time": 81
+        },
+        {
+          "title": "Aceite o primeiro diálogo",
+          "hadImage": true,
+          "time": 105
+        },
+        {
+          "title": "Cancele o confirm",
+          "hadImage": true,
+          "time": 115
+        },
+        {
+          "title": "Confira a sequência e seu efeito",
+          "hadImage": true,
+          "time": 147
+        }
+      ]
+    },
+    {
+      "slug": "teclas-web",
+      "module": 2,
+      "title": "Enviar uma tecla e validar a resposta",
+      "number": "20",
+      "docs": [
+        [
+          "Documentação · type-web-text",
+          "building-blocks/web/type-web-text"
+        ],
+        [
+          "Documentação · get-web-text",
+          "building-blocks/web/get-web-text"
+        ],
+        [
+          "Compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "video": "47VeVtNuyFk",
+      "steps": [
+        {
+          "title": "Capture uma referência da página",
+          "hadImage": true,
+          "time": 88
+        },
+        {
+          "title": "Envie Tab usando Capture",
+          "hadImage": true,
+          "time": 119
+        },
+        {
+          "title": "Leia a área que mostra o resultado",
+          "hadImage": true,
+          "time": 159
+        },
+        {
+          "title": "Compare a resposta e encerre",
+          "hadImage": true,
+          "time": 237
+        }
+      ]
+    },
+    {
+      "slug": "dom-profundo",
+      "module": 2,
+      "title": "Escolher localizadores em um DOM grande",
+      "number": "21",
+      "docs": [
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ],
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ]
+      ],
+      "video": "SiZZut-jgiY",
+      "steps": [
+        {
+          "title": "Capture os dois alvos do cenário",
+          "hadImage": true,
+          "time": 126
+        },
+        {
+          "title": "Confira o id da divisão",
+          "hadImage": true,
+          "time": 163
+        },
+        {
+          "title": "Compare os critérios da célula",
+          "hadImage": true,
+          "time": 191
+        },
+        {
+          "title": "Execute e confirme a identidade",
+          "hadImage": true,
+          "time": 235
+        }
+      ]
+    },
+    {
+      "slug": "frames-aninhados",
+      "module": 2,
+      "title": "Capturar conteúdo em frames aninhados",
+      "number": "22",
+      "docs": [
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Documentação · get-web-text",
+          "building-blocks/web/get-web-text"
+        ],
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ]
+      ],
+      "video": "c3aFyb7pRIE",
+      "steps": [
+        {
+          "title": "Abra o frameset de demonstração",
+          "hadImage": true,
+          "time": 64
+        },
+        {
+          "title": "Capture o conteúdo do meio",
+          "hadImage": true,
+          "time": 86
+        },
+        {
+          "title": "Confira a referência interna",
+          "hadImage": true,
+          "time": 105
+        },
+        {
+          "title": "Planeje a verificação do conteúdo",
+          "hadImage": false,
+          "time": 134
+        }
+      ]
+    },
+    {
+      "slug": "notificacoes",
+      "module": 2,
+      "title": "Ler e registrar notificações variáveis",
+      "number": "23",
+      "docs": [
+        [
+          "Documentação · get-web-text",
+          "building-blocks/web/get-web-text"
+        ],
+        [
+          "Loop",
+          "building-blocks/logic/loop"
+        ],
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ]
+      ],
+      "video": "36KXvQRsMq4",
+      "steps": [
+        {
+          "title": "Capture o acionamento e a região",
+          "hadImage": true,
+          "time": 67
+        },
+        {
+          "title": "Repita e retire o texto fixo da estratégia",
+          "hadImage": true,
+          "time": 95
+        },
+        {
+          "title": "Leia e registre a mensagem atual",
+          "hadImage": true,
+          "time": 128
+        },
+        {
+          "title": "Conclua após as cinco leituras",
+          "hadImage": true,
+          "time": 146
+        }
+      ]
+    },
+    {
+      "slug": "nova-janela",
+      "module": 2,
+      "title": "Selecionar uma nova janela ou aba",
+      "number": "24",
+      "docs": [
+        [
+          "Documentação · use-browser-window",
+          "building-blocks/web/use-browser-window"
+        ],
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ]
+      ],
+      "video": "Mg-1NKCuf3g",
+      "steps": [
+        {
+          "title": "Abra a aba pelo link da página",
+          "hadImage": false,
+          "time": 62
+        },
+        {
+          "title": "Selecione a janela pelo título",
+          "hadImage": true,
+          "time": 91
+        },
+        {
+          "title": "Capture o conteúdo da nova aba",
+          "hadImage": true,
+          "time": 137
+        },
+        {
+          "title": "Confira o contexto durante a execução",
+          "hadImage": true,
+          "time": 175
+        }
+      ]
+    },
+    {
+      "slug": "redirecionamento",
+      "module": 2,
+      "title": "Conferir a página após um redirecionamento",
+      "number": "25",
+      "docs": [
+        [
+          "Documentação · click-web-element",
+          "building-blocks/web/click-web-element"
+        ],
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Documentação · use-browser-window",
+          "building-blocks/web/use-browser-window"
+        ]
+      ],
+      "video": "I_BUzm8rJ0I",
+      "steps": [
+        {
+          "title": "Observe a origem e a página de destino",
+          "hadImage": false,
+          "time": 61
+        },
+        {
+          "title": "Grave o clique de redirecionamento",
+          "hadImage": true,
+          "time": 74
+        },
+        {
+          "title": "Capture o texto 200 na página seguinte",
+          "hadImage": true,
+          "time": 101
+        },
+        {
+          "title": "Confira a navegação completa",
+          "hadImage": true,
+          "time": 126
+        }
+      ]
+    },
+    {
+      "slug": "imagem-deslocada",
+      "module": 2,
+      "title": "Encontrar uma imagem após mudanças de posição",
+      "number": "26",
+      "docs": [
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Documentação · navigate-web",
+          "building-blocks/web/navigate-web"
+        ],
+        [
+          "Loop",
+          "building-blocks/logic/loop"
+        ]
+      ],
+      "video": "N8utEzbs2SM",
+      "steps": [
+        {
+          "title": "Abra o cenário de deslocamento",
+          "hadImage": true,
+          "time": 66
+        },
+        {
+          "title": "Prepare a janela e as dez tentativas",
+          "hadImage": true,
+          "time": 96
+        },
+        {
+          "title": "Valide e recarregue a página",
+          "hadImage": true,
+          "time": 111
+        },
+        {
+          "title": "Confira a consistência ao longo do loop",
+          "hadImage": true,
+          "time": 174
+        }
+      ]
+    },
+    {
+      "slug": "lista-deslocada",
+      "module": 2,
+      "title": "Encontrar um item que muda de posição na lista",
+      "number": "27",
+      "docs": [
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ],
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Documentação · navigate-web",
+          "building-blocks/web/navigate-web"
+        ]
+      ],
+      "video": "X9Em1PtM9XU",
+      "steps": [
+        {
+          "title": "Capture a região da lista",
+          "hadImage": false,
+          "time": 62
+        },
+        {
+          "title": "Escolha a identidade textual",
+          "hadImage": true,
+          "time": 86
+        },
+        {
+          "title": "Acrescente atualização e limite",
+          "hadImage": true,
+          "time": 119
+        },
+        {
+          "title": "Confira o item em cada nova carga",
+          "hadImage": true,
+          "time": 145
+        }
+      ]
+    },
+    {
+      "slug": "tabela-ordenavel",
+      "module": 2,
+      "title": "Manter a identidade da linha após ordenar a tabela",
+      "number": "28",
+      "docs": [
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Documentação · get-web-text",
+          "building-blocks/web/get-web-text"
+        ],
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ],
+        [
+          "Compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "video": "B98UeOK1CTU",
+      "steps": [
+        {
+          "title": "Selecione a linha pela identidade",
+          "hadImage": true,
+          "time": 91
+        },
+        {
+          "title": "Restrinja a célula de e-mail à linha",
+          "hadImage": true,
+          "time": 143
+        },
+        {
+          "title": "Leia antes e acione a ordenação",
+          "hadImage": true,
+          "time": 182
+        },
+        {
+          "title": "Leia depois e compare a identidade",
+          "hadImage": true,
+          "time": 216
+        }
+      ]
+    },
+    {
+      "slug": "variacoes-texto",
+      "module": 2,
+      "title": "Localizar elementos apesar de variações no texto",
+      "number": "29",
+      "docs": [
+        [
+          "Strategy Editor",
+          "working-with-leapwork/strategy-editor"
+        ],
+        [
+          "Documentação · find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "Documentação · get-web-text",
+          "building-blocks/web/get-web-text"
+        ],
+        [
+          "Documentação · navigate-web",
+          "building-blocks/web/navigate-web"
+        ]
+      ],
+      "video": "lBcRNry3bo8",
+      "steps": [
+        {
+          "title": "Capture a região do texto variável",
+          "hadImage": false,
+          "time": 65
+        },
+        {
+          "title": "Adicione dez verificações",
+          "hadImage": true,
+          "time": 94
+        },
+        {
+          "title": "Use o contêiner e a estrutura",
+          "hadImage": true,
+          "time": 119
+        },
+        {
+          "title": "Confira as variações e a conclusão",
+          "hadImage": true,
+          "time": 235
+        }
+      ]
+    },
+    {
+      "slug": "strategy-desktop",
+      "module": 2,
+      "title": "Listas e soma no desktop",
+      "number": "30",
+      "docs": [
+        [
+          "Find UI Element",
+          "building-blocks/desktop-ui/find-ui-element"
+        ],
+        [
+          "Get UI Number",
+          "building-blocks/desktop-ui/get-ui-number"
+        ],
+        [
+          "Set Variable",
+          "building-blocks/variables/set-variable"
+        ],
+        [
+          "Get Variable",
+          "building-blocks/variables/get-variable"
+        ],
+        [
+          "Calculate",
+          "building-blocks/logic/calculate"
+        ]
+      ],
+      "video": "HWUVg1tTclg",
+      "steps": [
+        {
+          "title": "Prepare a busca e capture uma célula inicial",
+          "hadImage": true,
+          "time": 124
+        },
+        {
+          "title": "Transforme a célula em uma seleção de linhas",
+          "hadImage": true,
+          "time": 262
+        },
+        {
+          "title": "Leia o valor dentro de cada linha",
+          "hadImage": true,
+          "time": 484
+        },
+        {
+          "title": "Acumule o valor em uma variável",
+          "hadImage": true,
+          "time": 590
+        },
+        {
+          "title": "Compare o total após Completed",
+          "hadImage": true,
+          "time": 725
+        },
+        {
+          "title": "Confira os valores por linha no log",
+          "hadImage": true,
+          "time": 850
+        }
+      ]
+    },
+    {
+      "slug": "campos-dinamicos",
+      "module": 2,
+      "title": "Campos dinâmicos no localizador",
+      "number": "31",
+      "docs": [
+        [
+          "Strategy Editor: tokens",
+          "working-with-leapwork/strategy-editor"
+        ],
+        [
+          "Read Excel: Iterate e Completed",
+          "building-blocks/data-driven/read-excel"
+        ],
+        [
+          "Find UI Element",
+          "building-blocks/desktop-ui/find-ui-element"
+        ]
+      ],
+      "video": "3ALOfIs_OTY",
+      "steps": [
+        {
+          "title": "Defina os dados de entrada e o resultado esperado",
+          "hadImage": true,
+          "time": 154
+        },
+        {
+          "title": "Itere os casos e alimente a busca",
+          "hadImage": true,
+          "time": 331
+        },
+        {
+          "title": "Troque o nome fixo por um token",
+          "hadImage": true,
+          "time": 388
+        },
+        {
+          "title": "Alimente o campo com a empresa esperada",
+          "hadImage": true,
+          "time": 451
+        },
+        {
+          "title": "Encerre após todos os casos",
+          "hadImage": true,
+          "time": 487
+        },
+        {
+          "title": "Confira busca e empresa caso a caso",
+          "hadImage": true,
+          "time": 522
+        }
+      ]
+    },
+    {
+      "slug": "transferencia-desktop",
+      "module": 2,
+      "title": "Dados entre janelas desktop",
+      "number": "32",
+      "docs": [
+        [
+          "Use UI Window: Define e Element",
+          "building-blocks/desktop-ui/use-ui-window"
+        ],
+        [
+          "Find UI Element",
+          "building-blocks/desktop-ui/find-ui-element"
+        ],
+        [
+          "Get UI Text",
+          "building-blocks/desktop-ui/get-ui-text"
+        ]
+      ],
+      "video": "J-ui6FyDkXg",
+      "steps": [
+        {
+          "title": "Abra o destino e selecione a coleção de origem",
+          "hadImage": true,
+          "time": 152
+        },
+        {
+          "title": "Reestabeleça a janela de origem",
+          "hadImage": true,
+          "time": 283
+        },
+        {
+          "title": "Leia o texto de cada correspondência",
+          "hadImage": true,
+          "time": 363
+        },
+        {
+          "title": "Selecione o destino por seu identificador de janela",
+          "hadImage": true,
+          "time": 435
+        },
+        {
+          "title": "Escreva o valor e avance para uma nova linha",
+          "hadImage": true,
+          "time": 493
+        },
+        {
+          "title": "Confira a alternância e o término da coleção",
+          "hadImage": true,
+          "time": 580
+        }
+      ]
+    },
+    {
+      "slug": "dados-fundamentos",
+      "module": 3,
+      "title": "Um fluxo, vários conjuntos de dados",
+      "number": "01",
+      "docs": [
+        [
+          "read-excel",
+          "building-blocks/data-driven/read-excel"
+        ],
+        [
+          "value-input",
+          "building-blocks/module-input-and-output/value-input"
+        ]
+      ],
+      "video": "V5r-Fovn_vs",
+      "steps": [
+        {
+          "title": "Separe o roteiro dos valores",
+          "hadImage": false,
+          "time": 5
+        },
+        {
+          "title": "Escolha a planilha no Read Excel",
+          "hadImage": true,
+          "time": 26
+        },
+        {
+          "title": "Defina o intervalo e exponha as colunas",
+          "hadImage": true,
+          "time": 36
+        },
+        {
+          "title": "Conecte os campos e escolha Iterate",
+          "hadImage": true,
+          "time": 48
+        }
+      ]
+    },
+    {
+      "slug": "dados-ler-excel",
+      "module": 3,
+      "title": "Ler uma planilha com intervalo e iteração",
+      "number": "02",
+      "docs": [
+        [
+          "read-excel",
+          "building-blocks/data-driven/read-excel"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina a origem e o acesso",
+          "hadImage": true
+        },
+        {
+          "title": "Escolha o intervalo e os cabeçalhos",
+          "hadImage": false
+        },
+        {
+          "title": "Mapeie as colunas e teste uma linha",
+          "hadImage": false
+        },
+        {
+          "title": "Percorra e trate a conclusão",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-escrever-excel",
+      "module": 3,
+      "title": "Escrever resultados no Excel",
+      "number": "03",
+      "docs": [
+        [
+          "write-excel",
+          "building-blocks/data-driven/write-excel"
+        ],
+        [
+          "read-excel",
+          "building-blocks/data-driven/read-excel"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Prepare o arquivo de saída",
+          "hadImage": true
+        },
+        {
+          "title": "Escolha o método de escrita",
+          "hadImage": false
+        },
+        {
+          "title": "Confira os tipos e a formatação",
+          "hadImage": false
+        },
+        {
+          "title": "Releia uma amostra e trate a falha",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-banco",
+      "module": 3,
+      "title": "Usar dados de um banco por ODBC",
+      "number": "04",
+      "docs": [
+        [
+          "database",
+          "building-blocks/data-driven/database"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Prepare uma conexão de testes",
+          "hadImage": true
+        },
+        {
+          "title": "Defina consulta e colunas",
+          "hadImage": false
+        },
+        {
+          "title": "Escolha o retorno e trate os dados",
+          "hadImage": false
+        },
+        {
+          "title": "Valide a resposta antes de continuar",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-http",
+      "module": 3,
+      "title": "Consultar uma API e validar sua resposta",
+      "number": "05",
+      "docs": [
+        [
+          "http-request",
+          "building-blocks/data-driven/http-request"
+        ],
+        [
+          "compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina uma chamada de leitura controlada",
+          "hadImage": true
+        },
+        {
+          "title": "Separe ausência de resposta e erro HTTP",
+          "hadImage": false
+        },
+        {
+          "title": "Leia o corpo com um contrato",
+          "hadImage": false
+        },
+        {
+          "title": "Defina limites e evidências",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-arquivos",
+      "module": 3,
+      "title": "Fornecer, compactar e guardar arquivos",
+      "number": "06",
+      "docs": [
+        [
+          "set-file",
+          "building-blocks/data-driven/set-file"
+        ],
+        [
+          "compress-file",
+          "building-blocks/data-driven/compress-file"
+        ],
+        [
+          "save-file",
+          "building-blocks/data-driven/save-file"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Forneça os arquivos de teste",
+          "hadImage": true
+        },
+        {
+          "title": "Monte o pacote de arquivos",
+          "hadImage": true
+        },
+        {
+          "title": "Guarde o pacote como evidência",
+          "hadImage": true
+        },
+        {
+          "title": "Confira o artefato produzido",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-command-line",
+      "module": 3,
+      "title": "Consumir a saída de um comando",
+      "number": "07",
+      "docs": [
+        [
+          "command-line",
+          "building-blocks/data-driven/command-line"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina uma operação simples de testes",
+          "hadImage": true
+        },
+        {
+          "title": "Escolha o método de retorno",
+          "hadImage": false
+        },
+        {
+          "title": "Valide código e conteúdo",
+          "hadImage": false
+        },
+        {
+          "title": "Registre a evidência e conclua",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-email",
+      "module": 3,
+      "title": "Preparar uma notificação por e-mail",
+      "number": "08",
+      "docs": [
+        [
+          "send-e-mail",
+          "building-blocks/data-driven/send-e-mail"
+        ],
+        [
+          "set-file",
+          "building-blocks/data-driven/set-file"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Prepare conexão e destinatários de teste",
+          "hadImage": true
+        },
+        {
+          "title": "Mapeie assunto e corpo",
+          "hadImage": false
+        },
+        {
+          "title": "Adicione anexos quando previstos",
+          "hadImage": false
+        },
+        {
+          "title": "Defina a evidência de entrega",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-decisoes",
+      "module": 3,
+      "title": "Comparar valores e escolher caminhos",
+      "number": "09",
+      "docs": [
+        [
+          "compare",
+          "building-blocks/logic/compare"
+        ],
+        [
+          "switch",
+          "building-blocks/logic/switch"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina a relação e o tipo",
+          "hadImage": true
+        },
+        {
+          "title": "Configure uma decisão por status",
+          "hadImage": true
+        },
+        {
+          "title": "Trate o valor não reconhecido",
+          "hadImage": false
+        },
+        {
+          "title": "Confira os dois resultados",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-loops",
+      "module": 3,
+      "title": "Controlar repetições e interrupções",
+      "number": "10",
+      "docs": [
+        [
+          "loop",
+          "building-blocks/logic/loop"
+        ],
+        [
+          "break-iteration",
+          "building-blocks/logic/break-iteration"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Escreva a sequência antes de configurar",
+          "hadImage": true
+        },
+        {
+          "title": "Separe item e conclusão",
+          "hadImage": false
+        },
+        {
+          "title": "Configure uma condição de interrupção",
+          "hadImage": true
+        },
+        {
+          "title": "Teste término normal e antecipado",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-calculos",
+      "module": 3,
+      "title": "Calcular sem confundir texto e número",
+      "number": "11",
+      "docs": [
+        [
+          "calculate",
+          "building-blocks/logic/calculate"
+        ],
+        [
+          "compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina os números e suas unidades",
+          "hadImage": true
+        },
+        {
+          "title": "Monte as operações por dependência",
+          "hadImage": false
+        },
+        {
+          "title": "Confira a política de arredondamento",
+          "hadImage": false
+        },
+        {
+          "title": "Compare antes de aprovar",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-textos",
+      "module": 3,
+      "title": "Normalizar texto e extrair padrões",
+      "number": "12",
+      "docs": [
+        [
+          "change-text",
+          "building-blocks/logic/change-text"
+        ],
+        [
+          "regular-expression",
+          "building-blocks/logic/regular-expression"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina o que pode ser normalizado",
+          "hadImage": true
+        },
+        {
+          "title": "Descreva o padrão esperado",
+          "hadImage": true
+        },
+        {
+          "title": "Trate zero e várias correspondências",
+          "hadImage": false
+        },
+        {
+          "title": "Compare entradas válidas e inválidas",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-datas",
+      "module": 3,
+      "title": "Gerar datas e aplicar deslocamentos",
+      "number": "13",
+      "docs": [
+        [
+          "generate-date-time",
+          "building-blocks/generators/generate-date-time"
+        ],
+        [
+          "offset-date-time",
+          "building-blocks/logic/offset-date-time"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Escolha entre agora e uma base fixa",
+          "hadImage": true
+        },
+        {
+          "title": "Defina unidades e método",
+          "hadImage": true
+        },
+        {
+          "title": "Confira uma fronteira conhecida",
+          "hadImage": false
+        },
+        {
+          "title": "Registre base e resultado",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-variaveis",
+      "module": 3,
+      "title": "Guardar valores com o escopo correto",
+      "number": "14",
+      "docs": [
+        [
+          "set-variable",
+          "building-blocks/variables/set-variable"
+        ],
+        [
+          "get-variable",
+          "building-blocks/variables/get-variable"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Escolha o alcance necessário",
+          "hadImage": true
+        },
+        {
+          "title": "Leia a identidade exata",
+          "hadImage": true
+        },
+        {
+          "title": "Decida o comportamento de ausência",
+          "hadImage": false
+        },
+        {
+          "title": "Confira atualização e concorrência",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-geradores",
+      "module": 3,
+      "title": "Gerar números e senhas de teste",
+      "number": "15",
+      "docs": [
+        [
+          "generate-number",
+          "building-blocks/generators/generate-number"
+        ],
+        [
+          "generate-password",
+          "building-blocks/generators/generate-password"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina os limites numéricos",
+          "hadImage": true
+        },
+        {
+          "title": "Configure uma senha fictícia",
+          "hadImage": true
+        },
+        {
+          "title": "Separe identidade e aleatoriedade",
+          "hadImage": false
+        },
+        {
+          "title": "Guarde evidências com cuidado",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-clipboard",
+      "module": 3,
+      "title": "Transferir texto pela área de transferência",
+      "number": "16",
+      "docs": [
+        [
+          "set-clipboard",
+          "building-blocks/logic/set-clipboard"
+        ],
+        [
+          "get-clipboard",
+          "building-blocks/logic/get-clipboard"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina um texto fictício identificável",
+          "hadImage": true
+        },
+        {
+          "title": "Consuma o texto após a escrita",
+          "hadImage": true
+        },
+        {
+          "title": "Valide o destino correto",
+          "hadImage": false
+        },
+        {
+          "title": "Planeje o isolamento",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-espera-janelas",
+      "module": 3,
+      "title": "Usar esperas e preparar o estado das janelas",
+      "number": "17",
+      "docs": [
+        [
+          "wait",
+          "building-blocks/logic/wait"
+        ],
+        [
+          "close-windows",
+          "building-blocks/logic/close-windows"
+        ],
+        [
+          "offset-position",
+          "building-blocks/logic/offset-position"
+        ],
+        [
+          "offset-area",
+          "building-blocks/logic/offset-area"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Justifique a pausa",
+          "hadImage": true
+        },
+        {
+          "title": "Confira o alcance antes da preparação",
+          "hadImage": true
+        },
+        {
+          "title": "Interprete a estabilidade visual",
+          "hadImage": false
+        },
+        {
+          "title": "Retome posição e área como dados",
+          "hadImage": true
+        }
+      ]
+    },
+    {
+      "slug": "dados-csharp",
+      "module": 3,
+      "title": "Reconhecer quando usar lógica C#",
+      "number": "18",
+      "docs": [
+        [
+          "c-sharp-code",
+          "building-blocks/logic/c-sharp-code"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina uma transformação pequena",
+          "hadImage": true
+        },
+        {
+          "title": "Use o template da versão instalada",
+          "hadImage": false
+        },
+        {
+          "title": "Confira as dependências",
+          "hadImage": false
+        },
+        {
+          "title": "Teste sucesso e erro de formato",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "dados-laboratorio",
+      "module": 3,
+      "title": "Laboratório: validar, calcular e registrar",
+      "number": "19",
+      "docs": [
+        [
+          "read-excel",
+          "building-blocks/data-driven/read-excel"
+        ],
+        [
+          "change-text",
+          "building-blocks/logic/change-text"
+        ],
+        [
+          "calculate",
+          "building-blocks/logic/calculate"
+        ],
+        [
+          "compare",
+          "building-blocks/logic/compare"
+        ],
+        [
+          "write-excel",
+          "building-blocks/data-driven/write-excel"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Confira os arquivos de entrada",
+          "hadImage": true
+        },
+        {
+          "title": "Aplique apenas a normalização permitida",
+          "hadImage": false
+        },
+        {
+          "title": "Calcule e compare com a expectativa",
+          "hadImage": true
+        },
+        {
+          "title": "Planeje o registro no Leapwork",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-ambiente",
+      "module": 4,
+      "title": "Identificar o Controller e os recursos do ambiente",
+      "number": "01",
+      "docs": [
+        [
+          "controller-settings",
+          "administration/controller-settings"
+        ],
+        [
+          "license-management",
+          "administration/license-management"
+        ],
+        [
+          "architecture-overview",
+          "what-is-leapwork/architecture-overview"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Localize o Controller conectado",
+          "hadImage": true
+        },
+        {
+          "title": "Confira os recursos contratados",
+          "hadImage": false
+        },
+        {
+          "title": "Separe as responsabilidades",
+          "hadImage": false
+        },
+        {
+          "title": "Prepare um teste de acesso",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-acessos",
+      "module": 4,
+      "title": "Organizar usuários, equipes e permissões",
+      "number": "02",
+      "docs": [
+        [
+          "user-management",
+          "administration/user-management"
+        ],
+        [
+          "privileges-settings",
+          "administration/privileges-settings"
+        ],
+        [
+          "team-management",
+          "administration/team-management"
+        ],
+        [
+          "wip-security",
+          "administration/wip-security"
+        ],
+        [
+          "emergency-admin-user",
+          "administration/emergency-admin-user"
+        ],
+        [
+          "active-directory-settings",
+          "administration/active-directory-settings"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Liste quem faz o quê",
+          "hadImage": true
+        },
+        {
+          "title": "Confira o acesso efetivo",
+          "hadImage": false
+        },
+        {
+          "title": "Organize as equipes disponíveis",
+          "hadImage": false
+        },
+        {
+          "title": "Valide identidade e recuperação",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-conexoes",
+      "module": 4,
+      "title": "Preparar conexões, chaves e notificações",
+      "number": "03",
+      "docs": [
+        [
+          "connections",
+          "administration/connections"
+        ],
+        [
+          "api-access-keys",
+          "administration/api-access-keys"
+        ],
+        [
+          "e-mail-settings",
+          "administration/e-mail-settings"
+        ],
+        [
+          "proxy-settings",
+          "administration/proxy-settings"
+        ],
+        [
+          "wip-azure-devops-connections",
+          "administration/wip-azure-devops-connections"
+        ],
+        [
+          "mobile-configuration",
+          "administration/mobile-configuration"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina a finalidade da conexão",
+          "hadImage": false
+        },
+        {
+          "title": "Separe as chaves das entradas comuns",
+          "hadImage": false
+        },
+        {
+          "title": "Prepare a comunicação",
+          "hadImage": false
+        },
+        {
+          "title": "Teste no contexto certo",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-retencao",
+      "module": 4,
+      "title": "Preservar evidências e planejar a retenção",
+      "number": "04",
+      "docs": [
+        [
+          "retention-policies",
+          "administration/retention-policies"
+        ],
+        [
+          "database-decryption-keys",
+          "administration/database-decryption-keys"
+        ],
+        [
+          "database-management",
+          "administration/database-management"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Liste o que precisa continuar acessível",
+          "hadImage": true
+        },
+        {
+          "title": "Confira a política que alcança cada item",
+          "hadImage": false
+        },
+        {
+          "title": "Planeje a recuperação com o administrador",
+          "hadImage": false
+        },
+        {
+          "title": "Não confunda manutenção com backup",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-padroes",
+      "module": 4,
+      "title": "Conferir padrões de execução e captura",
+      "number": "05",
+      "docs": [
+        [
+          "default-flow-settings",
+          "administration/default-flow-settings"
+        ],
+        [
+          "wip-capture-settings",
+          "administration/wip-capture-settings"
+        ],
+        [
+          "wip-web-settings",
+          "administration/wip-web-settings"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Identifique o padrão em uso",
+          "hadImage": true
+        },
+        {
+          "title": "Separe falha de inspeção de falha na execução",
+          "hadImage": false
+        },
+        {
+          "title": "Confira ajustes específicos",
+          "hadImage": false
+        },
+        {
+          "title": "Compare antes e depois",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-agentes",
+      "module": 4,
+      "title": "Preparar e verificar um Agent remoto",
+      "number": "06",
+      "docs": [
+        [
+          "agents-overview",
+          "working-with-leapwork/agents-overview"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Escolha o tipo e o host",
+          "hadImage": true
+        },
+        {
+          "title": "Confira autenticação e sessão",
+          "hadImage": false
+        },
+        {
+          "title": "Valide os recursos do caso",
+          "hadImage": false
+        },
+        {
+          "title": "Execute um caso pequeno",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-runlists",
+      "module": 4,
+      "title": "Organizar fluxos em Run Lists e passos",
+      "number": "07",
+      "docs": [
+        [
+          "run-lists",
+          "working-with-leapwork/run-lists"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Crie uma lista com propósito",
+          "hadImage": true
+        },
+        {
+          "title": "Distribua os fluxos em passos",
+          "hadImage": false
+        },
+        {
+          "title": "Defina as condições",
+          "hadImage": false
+        },
+        {
+          "title": "Revise as referências ao copiar",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-repeticoes",
+      "module": 4,
+      "title": "Definir repetição sem esconder falhas",
+      "number": "08",
+      "docs": [
+        [
+          "run-lists",
+          "working-with-leapwork/run-lists"
+        ],
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Encontre a política da lista",
+          "hadImage": false
+        },
+        {
+          "title": "Confira possíveis sobrescritas",
+          "hadImage": false
+        },
+        {
+          "title": "Raciocine sobre efeitos parciais",
+          "hadImage": false
+        },
+        {
+          "title": "Preserve o diagnóstico",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-agendamentos",
+      "module": 4,
+      "title": "Planejar horários, distribuição e filas",
+      "number": "09",
+      "docs": [
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "agents-overview",
+          "working-with-leapwork/agents-overview"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Comece por On Demand",
+          "hadImage": true
+        },
+        {
+          "title": "Escolha a distribuição",
+          "hadImage": false
+        },
+        {
+          "title": "Planeje recorrência e ocupação",
+          "hadImage": false
+        },
+        {
+          "title": "Revise ações e acompanhe o primeiro disparo",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-relatorios",
+      "module": 4,
+      "title": "Investigar resultados com relatório, vídeo e log",
+      "number": "10",
+      "docs": [
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "retention-policies",
+          "administration/retention-policies"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Crie um recorte identificável",
+          "hadImage": true
+        },
+        {
+          "title": "Localize a execução afetada",
+          "hadImage": false
+        },
+        {
+          "title": "Cruze os detalhes",
+          "hadImage": false
+        },
+        {
+          "title": "Escreva uma conclusão verificável",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-dashboards",
+      "module": 4,
+      "title": "Montar dashboards com contexto e comparação",
+      "number": "11",
+      "docs": [
+        [
+          "dashboards",
+          "working-with-leapwork/dashboards"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina a pergunta do painel",
+          "hadImage": true
+        },
+        {
+          "title": "Escolha o widget",
+          "hadImage": false
+        },
+        {
+          "title": "Confira período e população",
+          "hadImage": false
+        },
+        {
+          "title": "Aprofunde o indicador",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-auditoria",
+      "module": 4,
+      "title": "Correlacionar auditoria, mudanças e diagnóstico",
+      "number": "12",
+      "docs": [
+        [
+          "audit-log",
+          "administration/audit-log"
+        ],
+        [
+          "diagnostics",
+          "administration/diagnostics"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina uma janela",
+          "hadImage": true
+        },
+        {
+          "title": "Filtre o ativo e a ação",
+          "hadImage": false
+        },
+        {
+          "title": "Cruze com o resultado",
+          "hadImage": false
+        },
+        {
+          "title": "Prepare o material de diagnóstico",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-historico",
+      "module": 4,
+      "title": "Registrar mudanças e consultar o histórico",
+      "number": "13",
+      "docs": [
+        [
+          "flows",
+          "working-with-leapwork/designing-automation-flows/flows"
+        ],
+        [
+          "designing-automation-flows",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "workflow-stettings",
+          "administration/workflow-stettings"
+        ],
+        [
+          "git-version-control",
+          "working-with-leapwork/git-version-control"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Defina o comentário esperado",
+          "hadImage": false
+        },
+        {
+          "title": "Abra o histórico do fluxo",
+          "hadImage": true
+        },
+        {
+          "title": "Inspecione antes de restaurar",
+          "hadImage": false
+        },
+        {
+          "title": "Separe os mecanismos",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-restauracao",
+      "module": 4,
+      "title": "Escolher Only Flow, Full Restore ou Full Copy",
+      "number": "14",
+      "docs": [
+        [
+          "designing-automation-flows",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "flows",
+          "working-with-leapwork/designing-automation-flows/flows"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Separe os dois tipos de mudança",
+          "hadImage": false
+        },
+        {
+          "title": "Compare as três opções",
+          "hadImage": true
+        },
+        {
+          "title": "Verifique dependências e uso",
+          "hadImage": false
+        },
+        {
+          "title": "Valide contra a aplicação atual",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-compartilhamento",
+      "module": 4,
+      "title": "Exportar, importar e conferir dependências",
+      "number": "15",
+      "docs": [
+        [
+          "flows",
+          "working-with-leapwork/designing-automation-flows/flows"
+        ],
+        [
+          "organizing-your-work",
+          "working-with-leapwork/organizing-your-work"
+        ],
+        [
+          "run-lists",
+          "working-with-leapwork/run-lists"
+        ],
+        [
+          "agents-overview",
+          "working-with-leapwork/agents-overview"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Escolha o tipo de transferência",
+          "hadImage": false
+        },
+        {
+          "title": "Inventarie as dependências",
+          "hadImage": false
+        },
+        {
+          "title": "Revise conflitos antes de importar",
+          "hadImage": false
+        },
+        {
+          "title": "Valide o destino",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "controle-laboratorio",
+      "module": 4,
+      "title": "Laboratório: planejar, observar e recuperar",
+      "number": "16",
+      "docs": [
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "designing-automation-flows",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "audit-log",
+          "administration/audit-log"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Compare os volumes",
+          "hadImage": false
+        },
+        {
+          "title": "Planeje a investigação",
+          "hadImage": false
+        },
+        {
+          "title": "Compare as restaurações",
+          "hadImage": false
+        },
+        {
+          "title": "Registre o plano final",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-escopo",
+      "module": 5,
+      "title": "Definir o escopo e os critérios de um ciclo",
+      "number": "01",
+      "docs": [
+        [
+          "Boas práticas · Run Lists",
+          "best-practices/working-with-run-lists"
+        ],
+        [
+          "designing-automation-flows",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "read-excel",
+          "building-blocks/data-driven/read-excel"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Dê um propósito ao conjunto",
+          "hadImage": false
+        },
+        {
+          "title": "Escreva resultados observáveis",
+          "hadImage": false
+        },
+        {
+          "title": "Escolha dados e variações",
+          "hadImage": false
+        },
+        {
+          "title": "Declare a regra de revisão",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-organizacao",
+      "module": 5,
+      "title": "Organizar o projeto para conseguir mantê-lo",
+      "number": "02",
+      "docs": [
+        [
+          "Boas práticas · organização do trabalho",
+          "best-practices/organizing-daily-work"
+        ],
+        [
+          "organizing-your-work",
+          "working-with-leapwork/organizing-your-work"
+        ],
+        [
+          "flows",
+          "working-with-leapwork/designing-automation-flows/flows"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Escolha o modelo de estudo",
+          "hadImage": true
+        },
+        {
+          "title": "Agrupe os ativos com propósito",
+          "hadImage": false
+        },
+        {
+          "title": "Escreva uma convenção curta",
+          "hadImage": false
+        },
+        {
+          "title": "Revise a utilização dos ativos",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-subflows",
+      "module": 5,
+      "title": "Definir contratos para sub-flows reutilizáveis",
+      "number": "03",
+      "docs": [
+        [
+          "value-input",
+          "building-blocks/module-input-and-output/value-input"
+        ],
+        [
+          "value-output",
+          "building-blocks/module-input-and-output/value-output"
+        ],
+        [
+          "sub-flows",
+          "working-with-leapwork/designing-automation-flows/sub-flows"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Declare as entradas",
+          "hadImage": true
+        },
+        {
+          "title": "Declare o retorno",
+          "hadImage": true
+        },
+        {
+          "title": "Separe a ação da decisão do caso",
+          "hadImage": false
+        },
+        {
+          "title": "Confira os consumidores",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-estabilidade",
+      "module": 5,
+      "title": "Projetar esperas, localizadores e verificações",
+      "number": "04",
+      "docs": [
+        [
+          "find-web-element",
+          "building-blocks/web/find-web-element"
+        ],
+        [
+          "wait",
+          "building-blocks/logic/wait"
+        ],
+        [
+          "get-web-text",
+          "building-blocks/web/get-web-text"
+        ],
+        [
+          "compare",
+          "building-blocks/logic/compare"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Escolha uma condição observável",
+          "hadImage": false
+        },
+        {
+          "title": "Compare espera fixa e condição",
+          "hadImage": false
+        },
+        {
+          "title": "Leia a resposta correta",
+          "hadImage": false
+        },
+        {
+          "title": "Compare com a referência",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-dados",
+      "module": 5,
+      "title": "Isolar dados, preparar e encerrar os casos",
+      "number": "05",
+      "docs": [
+        [
+          "read-excel",
+          "building-blocks/data-driven/read-excel"
+        ],
+        [
+          "Boas práticas · Run Lists",
+          "best-practices/working-with-run-lists"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "run-lists",
+          "working-with-leapwork/run-lists"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Declare o conjunto de entradas",
+          "hadImage": false
+        },
+        {
+          "title": "Separe preparação e operação",
+          "hadImage": false
+        },
+        {
+          "title": "Preserve a evidência",
+          "hadImage": false
+        },
+        {
+          "title": "Planeje o encerramento",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-revisao",
+      "module": 5,
+      "title": "Revisar mudanças e acompanhar a sincronização Git",
+      "number": "06",
+      "docs": [
+        [
+          "designing-automation-flows",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "use-git-versioning-for-flows-and-subflows",
+          "working-with-leapwork/git-version-control/use-git-versioning-for-flows-and-subflows"
+        ],
+        [
+          "check-git-sync-status-and-resolve-upload-failures",
+          "working-with-leapwork/git-version-control/check-git-sync-status-and-resolve-upload-failures"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Descreva intenção e resultado",
+          "hadImage": false
+        },
+        {
+          "title": "Confira o mecanismo configurado",
+          "hadImage": true
+        },
+        {
+          "title": "Leia o estado do envio",
+          "hadImage": false
+        },
+        {
+          "title": "Verifique a recuperação do envio",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-integracoes",
+      "module": 5,
+      "title": "Desenhar a integração antes de escolher a ferramenta",
+      "number": "07",
+      "docs": [
+        [
+          "API pública · acesso e autenticação",
+          "public-rest-apis"
+        ],
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ],
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Mapeie os componentes",
+          "hadImage": false
+        },
+        {
+          "title": "Escolha o Schedule de estudo",
+          "hadImage": false
+        },
+        {
+          "title": "Defina a correlação",
+          "hadImage": false
+        },
+        {
+          "title": "Combine a decisão final",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-api-acesso",
+      "module": 5,
+      "title": "Conferir versão, endereço e autenticação da API",
+      "number": "08",
+      "docs": [
+        [
+          "API pública · acesso e autenticação",
+          "public-rest-apis"
+        ],
+        [
+          "api-access-keys",
+          "administration/api-access-keys"
+        ],
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Encontre a base compatível",
+          "hadImage": false
+        },
+        {
+          "title": "Defina a identidade da integração",
+          "hadImage": false
+        },
+        {
+          "title": "Confira os parâmetros do contrato",
+          "hadImage": false
+        },
+        {
+          "title": "Distinga falha de acesso de falha funcional",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-api-disparo",
+      "module": 5,
+      "title": "Disparar um Schedule e preservar o RunId",
+      "number": "09",
+      "docs": [
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ],
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Localize o Schedule",
+          "hadImage": false
+        },
+        {
+          "title": "Confira o disparo",
+          "hadImage": false
+        },
+        {
+          "title": "Preserve o retorno",
+          "hadImage": false
+        },
+        {
+          "title": "Trate uma resposta incerta",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-api-resultados",
+      "module": 5,
+      "title": "Aguardar o run e recolher os itens corretos",
+      "number": "10",
+      "docs": [
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Consulte o estado da execução",
+          "hadImage": false
+        },
+        {
+          "title": "Obtenha os IDs dos itens",
+          "hadImage": false
+        },
+        {
+          "title": "Leia o resultado individual",
+          "hadImage": false
+        },
+        {
+          "title": "Conecte o resultado às evidências",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-pipeline",
+      "module": 5,
+      "title": "Definir decisões e erros na integração",
+      "number": "11",
+      "docs": [
+        [
+          "API pública · acesso e autenticação",
+          "public-rest-apis"
+        ],
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Classifique o problema de acesso",
+          "hadImage": false
+        },
+        {
+          "title": "Defina o prazo de acompanhamento",
+          "hadImage": false
+        },
+        {
+          "title": "Avalie a população correta",
+          "hadImage": false
+        },
+        {
+          "title": "Deixe a decisão auditável",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-ado",
+      "module": 5,
+      "title": "Relacionar casos e resultados no Azure DevOps",
+      "number": "12",
+      "docs": [
+        [
+          "azure-devops-ado-server-connections",
+          "administration/connections/azure-devops-ado-server-connections"
+        ],
+        [
+          "microsoft-ado-test-plan-integration",
+          "working-with-leapwork/microsoft-ado-test-plan-integration"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Confira os requisitos com o administrador",
+          "hadImage": false
+        },
+        {
+          "title": "Importe o recorte certo",
+          "hadImage": true
+        },
+        {
+          "title": "Entenda a sincronização",
+          "hadImage": false
+        },
+        {
+          "title": "Verifique os resultados no ADO",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-primeira-execucao",
+      "module": 5,
+      "title": "Preparar o primeiro conjunto de dez casos",
+      "number": "13",
+      "docs": [
+        [
+          "read-excel",
+          "building-blocks/data-driven/read-excel"
+        ],
+        [
+          "run-lists",
+          "working-with-leapwork/run-lists"
+        ],
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Leia a matriz disponível",
+          "hadImage": false
+        },
+        {
+          "title": "Relacione casos e fluxos",
+          "hadImage": false
+        },
+        {
+          "title": "Confira a configuração de homologação",
+          "hadImage": false
+        },
+        {
+          "title": "Registre a execução correta",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-triagem",
+      "module": 5,
+      "title": "Investigar, registrar e repetir o teste certo",
+      "number": "14",
+      "docs": [
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "audit-log",
+          "administration/audit-log"
+        ],
+        [
+          "microsoft-ado-test-plan-integration",
+          "working-with-leapwork/microsoft-ado-test-plan-integration"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Localize o primeiro desvio demonstrável",
+          "hadImage": false
+        },
+        {
+          "title": "Confira o contexto de mudança",
+          "hadImage": false
+        },
+        {
+          "title": "Prepare um relato independente da ferramenta",
+          "hadImage": false
+        },
+        {
+          "title": "Registre o reteste",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-encerramento",
+      "module": 5,
+      "title": "Revisar cobertura, evidências e pendências",
+      "number": "15",
+      "docs": [
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "dashboards",
+          "working-with-leapwork/dashboards"
+        ],
+        [
+          "retention-policies",
+          "administration/retention-policies"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Reconcilie a população",
+          "hadImage": false
+        },
+        {
+          "title": "Use o resumo com contexto",
+          "hadImage": false
+        },
+        {
+          "title": "Preserve o material da revisão",
+          "hadImage": false
+        },
+        {
+          "title": "Escreva o parecer e a próxima ação",
+          "hadImage": false
+        }
+      ]
+    },
+    {
+      "slug": "ciclo-laboratorio",
+      "module": 5,
+      "title": "Projeto final: da integração ao parecer do ciclo",
+      "number": "16",
+      "docs": [
+        [
+          "API Endpoints · especificação OpenAPI",
+          "public-rest-apis/api-endpoints"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "Boas práticas · uso de AI Blocks",
+          "best-practices/ai-blocks"
+        ]
+      ],
+      "steps": [
+        {
+          "title": "Compare sucesso HTTP e resultado",
+          "hadImage": false
+        },
+        {
+          "title": "Leia a matriz de dez casos",
+          "hadImage": false
+        },
+        {
+          "title": "Confira os pré-requisitos",
+          "hadImage": false
+        },
+        {
+          "title": "Guarde seu raciocínio",
+          "hadImage": false
+        }
+      ]
+    }
+  ],
+  "sourceUrls": [
+    "https://docs.leapwork.com/leapwork-flow/latest/administration",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/active-directory-settings",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/api-access-keys",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/audit-log",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/connections",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/azure-devops-ado-server-connections",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/controller-settings",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/database-decryption-keys",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/database-management",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/default-flow-settings",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/diagnostics",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/e-mail-settings",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/emergency-admin-user",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/license-management",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/mobile-configuration",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/other-settings",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/privileges-settings",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/proxy-settings",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/retention-policies",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/team-management",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/user-management",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-azure-devops-connections",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-capture-settings",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-security",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-web-settings",
+    "https://docs.leapwork.com/leapwork-flow/latest/administration/workflow-stettings",
+    "https://docs.leapwork.com/best-practices/latest/leapwork-flow-best-practices/guidelines-for-using-the-ai-blocks",
+    "https://docs.leapwork.com/best-practices/latest/leapwork-flow-best-practices/organizing-daily-work-in-leapwork",
+    "https://docs.leapwork.com/best-practices/latest/leapwork-flow-best-practices/working-with-run-lists",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/command-line",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/compress-file",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/database",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/http-request",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/read-excel",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/save-file",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/send-e-mail",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/set-file",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/write-excel",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/click-ui-element",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/find-ui-element",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/get-ui-number",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/get-ui-text",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/set-ui-element-value",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/start-application",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/desktop-ui/use-ui-window",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-date-time",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-number",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/generators/generate-password",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/find-image",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/find-text",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/get-number",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition/get-text",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/break-iteration",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/c-sharp-code",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/calculate",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/change-text",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/close-windows",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/compare",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/get-clipboard",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/loop",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/offset-area",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/offset-date-time",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/offset-position",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/regular-expression",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/set-clipboard",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/switch",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/logic/wait",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/execution-input",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/execution-output",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/value-input",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/module-input-and-output/value-output",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-image",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-position",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-text",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/hover-position",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/hover-text",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/press-key",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/release-key",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/scroll-wheel",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/mouse-and-keyboard/type-text",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/setting-values",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/setting-values/set-area",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/start-stop",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/variables",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/variables/get-variable",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/variables/set-variable",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/click-web-element",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/close-web-browser",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/drag-web-element",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/find-web-element",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/get-web-attribute",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/get-web-number",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/get-web-text",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/handle-web-alert",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/hover-web-element",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/navigate-web",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/set-web-checkbox",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/set-web-dropdown",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/set-web-radio-button",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/start-web-browser",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/type-web-text",
+    "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/use-browser-window",
+    "https://docs.leapwork.com/leapwork-flow/latest/public-rest-apis",
+    "https://docs.leapwork.com/leapwork-flow/latest/public-rest-apis/api-endpoints",
+    "https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/agents-overview",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/dashboards",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/flows",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/sub-flows",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control/check-git-sync-status-and-resolve-upload-failures",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control/use-git-versioning-for-flows-and-subflows",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/microsoft-ado-test-plan-integration",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/organizing-your-work",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists/schedules",
+    "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/strategy-editor"
+  ],
+  "totals": {
+    "lessons": 98,
+    "steps": 427,
+    "illustratedSteps": 255,
+    "figureUses": 255,
+    "sourcePages": 128
+  }
+}

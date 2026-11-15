@@ -1,4 +1,4 @@
-param([string]$Version = 'v1.2.0')
+param([string]$Version = 'v1.3.0')
 $ErrorActionPreference = 'Stop'
 $leapworkRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $leapworkRoot
@@ -34,7 +34,7 @@ if (-not (Test-Path -LiteralPath '.publication\git\HEAD')) {
 Invoke-LeapworkGit config http.sslBackend openssl
 $leapworkHelper = '!"' + ($leapworkGh -replace '\\', '/') + '" auth git-credential'
 Invoke-LeapworkGit config credential.helper $leapworkHelper
-Invoke-LeapworkGit add .gitignore README.md RELEASE_NOTES.md 'Abrir caderno.cmd' site scripts research
+Invoke-LeapworkGit add .gitignore .gitattributes README.md ENRIQUECIMENTO.md RELEASE_NOTES.md 'Abrir caderno.cmd' site scripts research
 & git --git-dir=.publication/git --work-tree=. diff --cached --quiet
 if ($LASTEXITCODE -eq 1) {
     Invoke-LeapworkGit commit -m "Publica caderno de estudo Leapwork $Version"

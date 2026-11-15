@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--version', default='v1.2.0')
+    parser.add_argument('--version', default='v1.3.0')
     args = parser.parse_args()
     if not re.fullmatch(r'v\d+\.\d+\.\d+', args.version):
         parser.error('Use uma versão como v1.0.0')
@@ -20,7 +20,7 @@ def main():
     missing = [name for name in videos if not (ROOT / 'videos' / f'{name}.mp4').is_file()]
     if missing:
         raise SystemExit('Vídeos ausentes: ' + ', '.join(missing))
-    files = [ROOT / 'README.md', ROOT / 'Abrir caderno.cmd']
+    files = [ROOT / 'README.md', ROOT / 'ENRIQUECIMENTO.md', ROOT / 'Abrir caderno.cmd']
     files += sorted(p for p in (ROOT / 'site').rglob('*') if p.is_file())
     output = ROOT / 'dist'
     output.mkdir(exist_ok=True)

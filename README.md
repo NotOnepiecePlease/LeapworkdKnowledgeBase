@@ -1,11 +1,11 @@
 # Caderno de estudo Leapwork
 
-Base de conhecimento local em português para estudar automação com Leapwork. Edição v1.2.0, com os cinco módulos preparados para estudo. O caderno não substitui a execução prática no programa nem concede certificação oficial.
+Base de conhecimento local em português para estudar automação com Leapwork. Edição v1.3.0, com os cinco módulos, biblioteca de 338 páginas da documentação e catálogo de 83 operações da API. O caderno não substitui a execução prática no programa nem concede certificação oficial.
 
 ## Baixar e começar a estudar
 
 1. Acesse a [última release](https://github.com/NotOnepiecePlease/LeapworkdKnowledgeBase/releases/latest).
-2. Em **Assets**, baixe **LeapworkKnowledgeBase-v1.2.0-completo.zip** para ter o caderno e os 48 vídeos offline (aproximadamente 1,1 GB). O arquivo **essencial.zip** contém as aulas, imagens, GIFs e laboratório, sem os vídeos locais.
+2. Em **Assets**, baixe **LeapworkKnowledgeBase-v1.3.0-completo.zip** para ter o caderno e os 48 vídeos offline (aproximadamente 1,1 GB). O arquivo **essencial.zip** contém as aulas, imagens, GIFs e laboratórios, sem os vídeos locais.
 3. Extraia **todo o ZIP** para uma pasta no computador. No Windows, clique com o botão direito e escolha **Extrair tudo**. Não abra o caderno de dentro do ZIP.
 4. Abra a pasta extraída e dê dois cliques em **Abrir caderno.cmd** no Windows. No macOS e Linux, abra **site/index.html** no navegador.
 5. Comece pelo módulo **01**, siga as aulas, responda às revisões e marque seu progresso. O módulo **03** também oferece um laboratório interativo com arquivos de exemplo.
@@ -36,6 +36,39 @@ Não é necessário instalar Node, Python, servidor ou Leapwork para consultar o
 
 Os cinco módulos estão disponíveis para estudo. As tabelas abaixo detalham todas as aulas. Ao todo são **98 aulas, 427 etapas, 14 GIFs, 48 vídeos e 56 termos de glossário**, além de revisões, busca, notas e marcação de progresso. No módulo 3, uma aula acompanha um vídeo oficial e as outras 18 são estudos de documentação com exemplos autorais. As 16 aulas do módulo 4 e as 16 do módulo 5 são baseadas em documentação; não são vídeos novos. A execução real dos fluxos e do primeiro ciclo de testes continua sendo uma prática posterior, com Leapwork e uma aplicação de homologação.
 
+## Biblioteca e revisão de imagens · v1.3.0
+
+Abra **Biblioteca da documentação** no menu lateral. Foram consultadas todas as **338 páginas públicas** dos oito menus de **Leapwork Flow/latest**, incluindo páginas de índice e **213 fontes antes ausentes** do caderno.
+
+| Menu | Páginas consultadas |
+| --- | ---: |
+| Visão geral e arquitetura | 3 |
+| Download e instalação | 15 |
+| Uso da ferramenta | 35 |
+| Catálogo de blocos | 235 |
+| Administração | 35 |
+| API REST | 2 |
+| Portal do cliente | 8 |
+| Notas de versão | 5 |
+
+Cada página tem uma ficha resumida em português, link para a fonte e conexões com outras fichas ou aulas. Os blocos incluem nomes de propriedades da documentação quando identificados. São **338 fichas de consulta**, incluindo índices, e não 338 tutoriais completos. A varredura cobre essa navegação pública: outros produtos, versões e áreas autenticadas do portal não fazem parte dela.
+
+Em **Biblioteca → API REST → API Endpoints**, consulte as **83 operações** do contrato OpenAPI, com método, rota, parâmetros e respostas. As cinco operações estudadas nas aulas continuam como exercícios focados; o catálogo amplia a consulta sem executar chamadas.
+
+A revisão percorreu **98 aulas e 427 passos** e adicionou **81 inclusões visuais**, usando **72 arquivos distintos**. São 78 figuras distribuídas em 75 passos, além de três diagramas na introdução. **74 passos antes sem imagem passaram a ter referência visual**: o total de passos ilustrados passou de 255 para 329. Os 98 restantes são conceituais ou não receberam uma captura adicional diretamente pertinente.
+
+| Módulo | Inclusões visuais |
+| --- | ---: |
+| 01 · Fundamentos, incluindo introdução | 8 |
+| 02 · Automação avançada | 10 |
+| 03 · Dados e manipulação | 6 |
+| 04 · Administração e controle | 37 |
+| 05 · Boas práticas e integração | 20 |
+
+No módulo 4, **Organizar usuários, equipes e permissões → passo 4** recebeu três imagens de autenticação, AD/SSO e recuperação administrativa. **Identificar o Controller e os recursos do ambiente → passo 2** recebeu a tela de licenciamento. A introdução ganhou protocolos, modelos de implantação, banco e diagramas oficiais.
+
+Abra **O que foi adicionado** para ver os links por aula e passo. O relatório [ENRIQUECIMENTO.md](ENRIQUECIMENTO.md) relaciona cada inclusão e sua fonte. As imagens preservam as telas originais, inclusive exemplos de versões anteriores sinalizados nas legendas.
+
 ## Obter o código-fonte
 
 ```sh
@@ -45,7 +78,7 @@ cd LeapworkdKnowledgeBase
 
 Depois, abra `site/index.html`. O repositório mantém o site, os materiais de referência e os scripts de manutenção. Os MP4 são distribuídos separadamente no pacote completo da release para manter o histórico do Git menor. Não há etapa de build para estudar.
 
-Para preparar novos pacotes a partir de uma cópia com os vídeos locais, execute `python scripts/package_release.py --version v1.2.0`. Os ZIPs e o arquivo de verificação SHA-256 serão gerados em `dist/`. A publicação usa `scripts/publish_release.ps1`, com Git e GitHub CLI autenticado; os arquivos são verificados antes do envio.
+Para preparar novos pacotes a partir de uma cópia com os vídeos locais, execute `python scripts/package_release.py --version v1.3.0`. Os ZIPs e o arquivo de verificação SHA-256 serão gerados em `dist/`. A publicação usa `scripts/publish_release.ps1`, com Git e GitHub CLI autenticado; os arquivos são verificados antes do envio.
 
 ## Créditos e origem
 
@@ -70,7 +103,7 @@ Os passos têm cartões individuais, 32 px de separação no computador, cabeça
 
 - Introdução à arquitetura: Flow, Controller e Agent.
 - Módulo 1: seis aulas Web, três Desktop e seis Virtual, além da introdução à arquitetura. Módulo 2: 29 assuntos Web e três aulas Desktop disponíveis, além da referência à aula de listas do módulo 1.
-- 98 aulas nos cinco módulos, com 427 etapas, 255 usos de imagens de referência e 14 GIFs controláveis.
+- 98 aulas nos cinco módulos, com 427 etapas, 336 usos de imagens de referência (incluindo a introdução) e 14 GIFs controláveis.
 - 48 vídeos locais com áudio e acesso aos trechos indicados nas etapas.
 - Esquemas didáticos, conceitos, objetivos e pontos de atenção.
 - Exercícios autorais sem instalação e propostas de prática posterior com Leapwork.
@@ -223,7 +256,7 @@ Entre por **04 · Administração e controle** no seletor de módulos ou no menu
 | 15 | Exportar, importar e conferir dependências |
 | 16 | Laboratório: planejar, observar e recuperar |
 
-O treinamento não indica uma coleção própria de vídeos para este módulo. As aulas são estudos autorais em português com base na documentação oficial, com 12 imagens de interface e 34 referências locais de consulta. Algumas dessas referências já eram usadas no caderno. As imagens preservam a interface de origem e podem ser ampliadas. As diferenças de versão e de edição são sinalizadas no conteúdo.
+O treinamento não indica uma coleção própria de vídeos para este módulo. As aulas são estudos autorais em português com base na documentação oficial, com 12 imagens iniciais e 37 inclusões visuais na revisão v1.3.0. As 34 referências iniciais foram complementadas pela biblioteca. As imagens preservam a interface de origem e podem ser ampliadas. As diferenças de versão e de edição são sinalizadas no conteúdo.
 
 ### Laboratórios sem instalação
 
@@ -236,7 +269,7 @@ Os artigos de suporte sobre histórico, restauração, transferência e exercíc
 
 ## Módulo 5: boas práticas, integração e revisão do ciclo
 
-Entre por **05 · Boas práticas e integração**. São **16 aulas, 64 etapas e 32 questões**, com exercícios autorais, cinco imagens de documentação, anotações e progresso próprio. O módulo reúne os três eixos de referência do treinamento oficial: Best Practices, Integration e Public REST API, aplicados à preparação e à revisão de um primeiro conjunto de testes.
+Entre por **05 · Boas práticas e integração**. São **16 aulas, 64 etapas e 32 questões**, com exercícios autorais, cinco imagens iniciais e 20 inclusões visuais na revisão v1.3.0, anotações e progresso próprio. O módulo reúne os três eixos de referência do treinamento oficial: Best Practices, Integration e Public REST API, aplicados à preparação e à revisão de um primeiro conjunto de testes.
 
 | Aula | Assunto |
 | --- | --- |
@@ -286,7 +319,7 @@ Os tópicos de Best Practices e Integration do portal de suporte retornaram Load
 - Entrada da documentação: https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview
 - Playlist: https://www.youtube.com/playlist?list=PL4qgJwtW1RjaCW32VlVtL4PBMVx67FjCY
 
-Foram armazenadas 128 páginas da documentação, abrangendo arquitetura, automação, dados, administração, boas práticas e integração. Algumas páginas são índices de categorias. As referências utilizadas estão nas aulas e na página Fontes. Snapshots de consulta ficam em `research/docs`, com suas datas de coleta originais. Cobertura e ressalvas estão nos manifestos `research/module4-sources.json` e `research/module5-sources.json`. O módulo 5 reúne 28 referências, incluindo páginas já usadas, e uma cópia da especificação OpenAPI com hash registrado.
+O acervo inicial tem 128 snapshots em `research/docs`, com suas datas de coleta originais. Na revisão v1.3.0 foram consultadas as 338 páginas da navegação pública Flow/latest: 125 já pertenciam ao recorte anterior e 213 são fontes adicionais. Três referências anteriores de boas práticas ficam fora dessa navegação. O inventário de consulta está em `research/documentation-inventory.json`; as fichas editoriais estão em `research/documentation-editorial.json`. Os manifestos dos módulos preservam a proveniência original, incluindo a especificação OpenAPI com hash registrado. Índices também contam como páginas consultadas.
 
 O texto editorial foi preparado a partir das legendas originais em inglês, das capturas conferidas e da documentação. O YouTube limitou as requisições de traduções automáticas; elas não foram usadas como base do material. O download dos vídeos e a extração de capturas nesta etapa não consumiram créditos do vidIQ.
 
@@ -303,6 +336,13 @@ O usuário ainda não tem o Leapwork instalado. Os fluxos não foram executados 
 | `site/appearance.css` | Paletas light/dark, tipografia e novo espaçamento |
 | `site/assets/fonts` | Manrope, Outfit, CSS incorporado e licenças OFL |
 | `site/app.js` | Navegação, busca, vídeos, revisão, notas e progresso |
+| `site/documentation-data.js` | 338 fichas e catálogo de 83 operações da API |
+| `site/documentation-view.js` e `site/documentation.css` | Biblioteca, filtros locais e página de novidades |
+| `site/illustrations.js` e `site/assets/supplements` | Registro das 81 inclusões e seus 72 arquivos |
+| `ENRIQUECIMENTO.md` | Relatório por menu, aula, passo e fonte |
+| `research/documentation-*.json` | Árvore, inventário de consulta e fichas editoriais |
+| `research/enrichment-baseline.json` | Base de comparação com a versão anterior |
+| `research/enrichment-report.json` e `research/illustration-additions.json` | Auditoria dos 427 passos e proveniência das inclusões |
 | `site/content.js` | Seis aulas Web do módulo 1 |
 | `site/module1-extra.js` | Três aulas Desktop e seis Virtual do módulo 1 |
 | `site/module2.js` | Primeiras seis aulas do módulo 2 e correção visual do login |
@@ -346,13 +386,14 @@ Os vídeos ocupam aproximadamente 1060 MB e os GIFs, 28.9 MB. O site só carrega
 
 ## Verificações executadas
 
-- Módulo 5: 218 verificações aprovadas em `scripts/check_module5.py`, incluindo as 16 aulas, revisões, rotas contra o OpenAPI, estados da integração, completude, correlação, entradas inválidas, matriz e critérios do ciclo, reset, downloads CSV/JSON, links do glossário, fontes de boas práticas, preservação de notas, progresso independente e temas em 1440, 768 e 390 px. Sem erros JavaScript ou requisições externas. Relatório em `research/qa/module5-report.json`.
+- Módulo 5: 238 verificações aprovadas em `scripts/check_module5.py`, incluindo as 16 aulas, revisões, rotas contra o OpenAPI, estados da integração, completude, correlação, entradas inválidas, matriz e critérios do ciclo, reset, downloads CSV/JSON, links do glossário, fontes de boas práticas, preservação de notas, progresso independente e temas em 1440, 768 e 390 px. Sem erros JavaScript ou requisições externas. Relatório em `research/qa/module5-report.json`.
 
-- Módulo 4: 185 verificações de navegador aprovadas em `scripts/check_module4.py`, incluindo as 16 aulas e revisões, referências, imagens, busca, progresso independente, preservação e exportação das notas anteriores, os dois laboratórios, validação de entradas, download da ficha JSON, temas e larguras de 1440, 768 e 390 px. Nenhuma requisição externa ou erro de JavaScript nos fluxos testados. Relatório em `research/qa/module4-report.json`.
+- Módulo 4: 222 verificações de navegador aprovadas em `scripts/check_module4.py`, incluindo as 16 aulas e revisões, referências, imagens, busca, progresso independente, preservação e exportação das notas anteriores, os dois laboratórios, validação de entradas, download da ficha JSON, temas e larguras de 1440, 768 e 390 px. Nenhuma requisição externa ou erro de JavaScript nos fluxos testados. Relatório em `research/qa/module4-report.json`.
 
 - Sintaxe JavaScript conferida com `node --check`.
 - Referências de imagens, vídeos, documentos e limites dos horários conferidos por `scripts/finalize_content.py`.
-- 1060 verificações de navegador aprovadas com Playwright/Chromium: 221 gerais, 50 do módulo 1, 50 do módulo 2, 33 de aparência, 128 da coleção Web, 175 do módulo 3, 185 do módulo 4 e 218 do módulo 5. O site foi aberto diretamente como arquivo local.
+- 2060 verificações aprovadas nas suítes de auditoria e navegador: 221 gerais, 50 do módulo 1, 50 do módulo 2, 33 de aparência, 128 da coleção Web, 175 do módulo 3, 222 do módulo 4, 238 do módulo 5 e 943 da biblioteca e revisão visual. O site foi aberto diretamente como arquivo local com Playwright/Chromium.
+- Biblioteca: `scripts/check_documentation.py` confere os 338 caminhos e suas fontes, cobertura do contrato com 83 operações, buscas, filtros, todas as novas imagens, ampliação, notas e layout nos dois temas em 1440, 768 e 390 px. Relatório em `research/qa/documentation-report.json`.
 - Conferidos ambos os temas, persistência da preferência, fontes offline, preservação das notas e larguras de 1905, 1280, 768 e 390 px. Contraste das combinações de texto principal, secundário e acento sobre suas superfícies conferido acima de 4,5:1 nos dois temas.
 - Conferidos busca, entrada segura de texto, rotas, imagens das 98 aulas, ampliação, notas persistidas, exportação, marcação de progresso, respostas de revisão e reprodução de trecho local.
 - Layout conferido em computador (1440 px) e tela pequena (390 px), sem transbordamento horizontal nas páginas testadas.

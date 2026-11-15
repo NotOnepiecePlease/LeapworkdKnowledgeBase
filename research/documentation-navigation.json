@@ -1,0 +1,2068 @@
+[
+  {
+    "id": "ci_93f1c1b68cd9ad8335117ff30cd013f0bbd31f6fd1df37bd0e43a23aa6dcc8c8",
+    "title": "What is Leapwork?",
+    "path": "/leapwork-flow/latest/what-is-leapwork",
+    "children": [
+      {
+        "id": "ci_917d83edadc1b53df629245006f44d472371a6960103c1e631b60359a65586c7",
+        "title": "Architecture‎ Overview",
+        "path": "/leapwork-flow/latest/what-is-leapwork/architecture-overview",
+        "children": []
+      },
+      {
+        "id": "ci_2daf4f4872ff64f4fb214f208efb1f0c4de66314a7984e624afe8c70258b95bf",
+        "title": "Licensing and deployment",
+        "path": "/leapwork-flow/latest/what-is-leapwork/licensing-and-deployment",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "ci_860ef5eef0da4d926314a658d5f3fc04b9896d1c5a7d11949e7e6eb0548c33d7",
+    "title": "Download and install",
+    "path": "/leapwork-flow/latest/download-and-install",
+    "children": [
+      {
+        "id": "ci_ef5520c07ab7001c25abe77ea018bbd2660ba7cf36df3af3d959522c090485ef",
+        "title": "Download",
+        "path": "/leapwork-flow/latest/download-and-install/download",
+        "children": [
+          {
+            "id": "ci_1e7bf053ee14b112b006db6e2f2d75d93fbaeedd2f4541d63ddfdcf8a31946bd",
+            "title": "Upgrade Matrix",
+            "path": "/leapwork-flow/latest/download-and-install/download/upgrade-matrix",
+            "children": []
+          },
+          {
+            "id": "ci_9a17f960cdfee8548cbebff831e8ea9075bc1ca8223efbb33d8f60748fd0d249",
+            "title": "System requirements",
+            "path": "/leapwork-flow/latest/download-and-install/download/system-requirements",
+            "children": []
+          },
+          {
+            "id": "ci_a271e7c0b3075593c5ee892b20f628a6ffa36e395b8bfc7f6d06e4282ac5c84f",
+            "title": "Download Leapwork",
+            "path": "/leapwork-flow/latest/download-and-install/download/download-leapwork",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_80e8d01d312c0dccfde384b2a6b405c29d2e256da99ec6b61ba079b6779204cf",
+        "title": "Installation",
+        "path": "/leapwork-flow/latest/download-and-install/installation",
+        "children": [
+          {
+            "id": "ci_2ec285309e17230d263ff332139c3402ccee9bffa8a12589ad6719f7b9b69a98",
+            "title": "Leapwork Cloud",
+            "path": "/leapwork-flow/latest/download-and-install/installation/leapwork-cloud",
+            "children": []
+          },
+          {
+            "id": "ci_6b2095004dcb86737b67390846d790046b8565d95ca675a1fc9560f54b526aba",
+            "title": "Leapwork Trial",
+            "path": "/leapwork-flow/latest/download-and-install/installation/leapwork-trial",
+            "children": []
+          },
+          {
+            "id": "ci_c5b55a9462ac94b63b2c1ccaa29b0b8d4add943118271c1116fae8bd7af6f272",
+            "title": "Leapwork Platform",
+            "path": "/leapwork-flow/latest/download-and-install/installation/leapwork-platform",
+            "children": []
+          },
+          {
+            "id": "ci_5750b2fab80343fd339e8dca834c28f6cd31dc7ba434ac61f9a239bdf1a51557",
+            "title": "Leapwork Enterprise",
+            "path": "/leapwork-flow/latest/download-and-install/installation/leapwork-enterprise",
+            "children": []
+          },
+          {
+            "id": "ci_3eaca9cabc8ac96d9077fc8dc26b0952f176a81d1a58276d251d8789c4469e19",
+            "title": "Offline Installation",
+            "path": "/leapwork-flow/latest/download-and-install/installation/offline-installation",
+            "children": []
+          },
+          {
+            "id": "ci_01130b5f67185d44f959b56672cd6df254e774e9a476a6b4d84bd2aaa232730c",
+            "title": "Silent Installation",
+            "path": "/leapwork-flow/latest/download-and-install/installation/silent-installation",
+            "children": []
+          },
+          {
+            "id": "ci_83eabdb93960f15d9937c43f60df99a7cd3691427a1e9b9850d2b8c3d5d78e92",
+            "title": "Mobile Installation Guide",
+            "path": "/leapwork-flow/latest/download-and-install/installation/mobile-installation-guide",
+            "children": []
+          },
+          {
+            "id": "ci_2ef1bf43b0ceccdd6d82353cf609ecfc796b85459fabe83505e879b99d672c2b",
+            "title": "Leapwork on Azure Marketplace Installation",
+            "path": "/leapwork-flow/latest/download-and-install/installation/leapwork-on-azure-marketplace-installation",
+            "children": []
+          },
+          {
+            "id": "ci_e33288853540d44977cd891ff741596e5dba557b25b8945d080db57337601a62",
+            "title": "Install Leapwork Flow from the command line",
+            "path": "/leapwork-flow/latest/download-and-install/installation/install-leapwork-flow-from-the-command-line",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ci_1de70fa522deac7a7d7600b1783b0d34b375734156d3f511a98db1b28e5f7f12",
+    "title": "Working with Leapwork",
+    "path": "/leapwork-flow/latest/working-with-leapwork",
+    "children": [
+      {
+        "id": "ci_f6e076b0760a464ef3769a949a553fdd82cec8ec0c3c3715f6d0fb67da69fb9b",
+        "title": "Introducing Leapwork Flow",
+        "path": "/leapwork-flow/latest/working-with-leapwork/introducing-leapwork-flow",
+        "children": []
+      },
+      {
+        "id": "ci_a5f8074fce0b5bffe8dc5a464a041aa351d143a2194a4e6b0363dea278bec610",
+        "title": "Organizing your work",
+        "path": "/leapwork-flow/latest/working-with-leapwork/organizing-your-work",
+        "children": []
+      },
+      {
+        "id": "ci_3183ac9155ddf155d75fd0e53215e9ee582b5d450d54a9d8bceed648ee958bc5",
+        "title": "Designing automation flows",
+        "path": "/leapwork-flow/latest/working-with-leapwork/designing-automation-flows",
+        "children": [
+          {
+            "id": "ci_3be012871fa59a06392276a3090a3daca5a67932eef7f188b9cc1fc523e0dd69",
+            "title": "Flows‎",
+            "path": "/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/flows",
+            "children": []
+          },
+          {
+            "id": "ci_cf4276ee09882548083cf386be49d3cfdb1647dd7b70db7287ef3daaaed500d2",
+            "title": "Sub-flows",
+            "path": "/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/sub-flows",
+            "children": []
+          },
+          {
+            "id": "ci_c7fd8221fbd8ee13d94741e9e8889ac1a7beff49b8964ef5304cf07a8524719e",
+            "title": "AI Flow builder",
+            "path": "/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/ai-flow-builder",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_b24d65ca19c45ca2722d1fe83aafb281a8fdae8203e32c29200a7eb1d2aae5ae",
+        "title": "Storage Overview",
+        "path": "/leapwork-flow/latest/working-with-leapwork/storage-overview",
+        "children": []
+      },
+      {
+        "id": "ci_975c7c158ac3e590d2b2c452320d4a36f7f7cb641914323836ead87e48e5b132",
+        "title": "Agents Overview",
+        "path": "/leapwork-flow/latest/working-with-leapwork/agents-overview",
+        "children": [
+          {
+            "id": "ci_2443457fbec68f9e77d837d400c5946c7d33d6bf9c0f32d89e5baf623bea7e20",
+            "title": "Scheduling assistant",
+            "path": "/leapwork-flow/latest/working-with-leapwork/agents-overview/scheduling-assistant",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_d8674dc302b83b874e2ad5a735d99f8f0e83a54b8f64c24dd67602363c08592f",
+        "title": "Run Lists",
+        "path": "/leapwork-flow/latest/working-with-leapwork/run-lists",
+        "children": [
+          {
+            "id": "ci_81124032af3e9ba5c0adac97389d8a5da578294e9c2d5f3f4807316d2d451b59",
+            "title": "Schedules",
+            "path": "/leapwork-flow/latest/working-with-leapwork/run-lists/schedules",
+            "children": []
+          },
+          {
+            "id": "ci_f127fcbca8f7bcabfcdd46f4555d0d98c3cf45ac2574c3f931a0540c563a9ded",
+            "title": "Flow Report PDF",
+            "path": "/leapwork-flow/latest/working-with-leapwork/run-lists/understanding-the-flow-report",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_6abe4d6ce29d243a759decf992346a71d81a742087e40c499effa0a2db40a32b",
+        "title": "Reporting",
+        "path": "/leapwork-flow/latest/working-with-leapwork/reporting",
+        "children": []
+      },
+      {
+        "id": "ci_8de3885db289e5a6880a3a4ef27714af7a4a397e6f46ac72cab174f2c819e938",
+        "title": "Dashboards",
+        "path": "/leapwork-flow/latest/working-with-leapwork/dashboards",
+        "children": []
+      },
+      {
+        "id": "ci_d36c5fe17d478cc5deab5acf42d8c3bab412097395c5826d6f74158268e4d439",
+        "title": "Smart Recorder‎",
+        "path": "/leapwork-flow/latest/working-with-leapwork/wip-smart-recorder",
+        "children": []
+      },
+      {
+        "id": "ci_4333af81864392319adb80237c8094905a6fd96a29ea3de85f06bb9e221daf88",
+        "title": "Smart Mobile Recorder",
+        "path": "/leapwork-flow/latest/working-with-leapwork/smart-mobile-recorder",
+        "children": []
+      },
+      {
+        "id": "ci_5d8a9fe58893b925ceb4b49065ff889e417b9dd75cba1b12c031107055d1eb5d",
+        "title": "D365 Finance and Operations Fusion Recorder",
+        "path": "/leapwork-flow/latest/working-with-leapwork/d365-fusion-recorder",
+        "children": []
+      },
+      {
+        "id": "ci_3a7a31f14160f0fe6c60d864d0006c71d94489e671a96cf2a4e3c23a423e5d63",
+        "title": "Salesforce Fusion Recorder",
+        "path": "/leapwork-flow/latest/working-with-leapwork/salesforce-fusion-recorder",
+        "children": []
+      },
+      {
+        "id": "ci_7aa46c987e5e87ec2bb4af3ad998709a72e337d949e4e240c35f194967fb0038",
+        "title": "Teams",
+        "path": "/leapwork-flow/latest/working-with-leapwork/teams",
+        "children": []
+      },
+      {
+        "id": "ci_a6a0536ee79c83509d11c26a48dca59beb477c744271c1c39c89f8194eecd55e",
+        "title": "Workflow Management",
+        "path": "/leapwork-flow/latest/working-with-leapwork/workflow-management",
+        "children": []
+      },
+      {
+        "id": "ci_4ecfc74221bbc871e26ded2474f42b9b0d089a31c366706e5a5b045ac2271d88",
+        "title": "Microsoft ADO Test Plan Integration",
+        "path": "/leapwork-flow/latest/working-with-leapwork/microsoft-ado-test-plan-integration",
+        "children": []
+      },
+      {
+        "id": "ci_b5d827283d59a8de6c868a26cffd3369dfbf84bc1a44a6d241db20ec50935238",
+        "title": "Strategy Editor",
+        "path": "/leapwork-flow/latest/working-with-leapwork/strategy-editor",
+        "children": []
+      },
+      {
+        "id": "ci_c08ee7175f0f3a71ea56ae52f17cf52738d5baba55dba2fb6b829669f60060b8",
+        "title": "Fix and Update Elements Directly in Fusion Recorder",
+        "path": "/leapwork-flow/latest/working-with-leapwork/fix-and-update-elements-directly-in-fusion-recorder",
+        "children": []
+      },
+      {
+        "id": "ci_e8e030b2be8488a6972a416d5735aa5a0cd82661ef9b7f182b0f518dd4563dc3",
+        "title": "OCR Engine Selection Guide",
+        "path": "/leapwork-flow/latest/working-with-leapwork/ocr-engine-selection-guide",
+        "children": []
+      },
+      {
+        "id": "ci_f6b65ef251d6a834c3da2bfdec56d63d478ddde39c718ca24d56ec6a6463f81c",
+        "title": "Nested dropdowns in Dynamics 365 Finance and Operations",
+        "path": "/leapwork-flow/latest/working-with-leapwork/nested-dropdowns-in-dynamics-365-finance-and-operations",
+        "children": []
+      },
+      {
+        "id": "ci_caccb9a35a2f2f6e2619ffb8ab3f31da60d563d3a7d478df5004aba7b9473d08",
+        "title": "Bulk actions in Flow",
+        "path": "/leapwork-flow/latest/working-with-leapwork/bulk-actions-in-flow",
+        "children": []
+      },
+      {
+        "id": "ci_0a3ba8abe2bea06a278d76fae7c16284ec021615bde0a01d21f188ff6d3c04d0",
+        "title": "Await DOM Change and Await Requests in Fusion Blocks",
+        "path": "/leapwork-flow/latest/working-with-leapwork/await-dom-change-and-await-requests-in-fusion-blocks",
+        "children": []
+      },
+      {
+        "id": "ci_668551e43b24ac488a2808468972296d0261307f9511f3aa10aea5562f81a94a",
+        "title": "Git Version Control",
+        "path": "/leapwork-flow/latest/working-with-leapwork/git-version-control",
+        "children": [
+          {
+            "id": "ci_d0a422904e363b9fa799da37ead9bbc3747bfd4cbb5aaa87e890253905318d1d",
+            "title": "Use Git versioning for flows and subflows",
+            "path": "/leapwork-flow/latest/working-with-leapwork/git-version-control/use-git-versioning-for-flows-and-subflows",
+            "children": []
+          },
+          {
+            "id": "ci_600f4556aa93d4ae8542255e51197c19a01afdd8c95fad284c946418e78a965f",
+            "title": "Set up GitHub for Git versioning",
+            "path": "/leapwork-flow/latest/working-with-leapwork/git-version-control/set-up-github-for-git-versioning",
+            "children": []
+          },
+          {
+            "id": "ci_8efbbb441d4cf89e817dcbb1a208c4f70d195cd9d29cf07b8863b7400eae0406",
+            "title": "Set up Azure DevOps for Git versioning",
+            "path": "/leapwork-flow/latest/working-with-leapwork/git-version-control/set-up-azure-devops-for-git-versioning",
+            "children": []
+          },
+          {
+            "id": "ci_0a48ae65e166df719d6ced700077e6bee3ec95a8ff4176cabb876653d8fbbbb4",
+            "title": "Set up Bitbucket Cloud for Git versioning",
+            "path": "/leapwork-flow/latest/working-with-leapwork/git-version-control/set-up-bitbucket-cloud-for-git-versioning",
+            "children": []
+          },
+          {
+            "id": "ci_f8701f0dd986ae6a284b71369b36a538c1f96adb4c89fcb34bba61c4c0d6578b",
+            "title": "Check Git Sync status and resolve upload failures",
+            "path": "/leapwork-flow/latest/working-with-leapwork/git-version-control/check-git-sync-status-and-resolve-upload-failures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_20716ce7f77699459d5c4a42b325ba27274ebd62dfed67baefdd16e4a11166d4",
+        "title": "Leapwork Update Center",
+        "path": "/leapwork-flow/latest/working-with-leapwork/leapwork-update-center",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "ci_d9392722e3248a851de5038d03154591f4dadd53c794acf2887cd615f356fb9e",
+    "title": "Building Blocks",
+    "path": "/leapwork-flow/latest/building-blocks",
+    "children": [
+      {
+        "id": "ci_eda092c234ecc6187ef5eeafc3f179ff546d862cdc63cc885dbc6358145a2d58",
+        "title": "Artificial Intelligence",
+        "path": "/leapwork-flow/latest/building-blocks/ai-blocks",
+        "children": [
+          {
+            "id": "ci_a7d95d2e11cd227bad2b2916bfc7abce37a0189e1c872b6a8a14a2d42c67f352",
+            "title": "AI Action",
+            "path": "/leapwork-flow/latest/building-blocks/ai-blocks/ai-action",
+            "children": []
+          },
+          {
+            "id": "ci_c8051868de84e3f85d5b482380c5c2d1328f5d92d88b1817b201257f1c5333bb",
+            "title": "AI Extract",
+            "path": "/leapwork-flow/latest/building-blocks/ai-blocks/ai-extract",
+            "children": []
+          },
+          {
+            "id": "ci_11e9aa218490538fbe280029ee34d174042ae40f36ae8b524c8bc1edb909999e",
+            "title": "AI Generate",
+            "path": "/leapwork-flow/latest/building-blocks/ai-blocks/ai-generate",
+            "children": []
+          },
+          {
+            "id": "ci_ae09fb68dd698a0953717b52322856f7d38cfd9bf00b47480c6efa0942fab584",
+            "title": "AI Transform",
+            "path": "/leapwork-flow/latest/building-blocks/ai-blocks/ai-transform",
+            "children": []
+          },
+          {
+            "id": "ci_e8df99279633b8fae8d5498605175c5f0c5837f5417bce808b98e2af675a1f0f",
+            "title": "AI Validate",
+            "path": "/leapwork-flow/latest/building-blocks/ai-blocks/ai-validate",
+            "children": []
+          },
+          {
+            "id": "ci_e0b7ca4d933376a5384579e0face668b1b0ea368e198845ab54e1f30d8286152",
+            "title": "AI Vision Extract",
+            "path": "/leapwork-flow/latest/building-blocks/ai-blocks/ai-vision-extract",
+            "children": []
+          },
+          {
+            "id": "ci_79c5b7f4e96710a7e2fe32bf41ffd3f173cc54aefa287d46f5ac04d8ca22ee38",
+            "title": "AI Vision Validate",
+            "path": "/leapwork-flow/latest/building-blocks/ai-blocks/ai-vision-validate",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_46d9bb748995079b1005e4a3d2ff7dccf7d142c195b55d84d8bc43e478968ea2",
+        "title": "Cloud",
+        "path": "/leapwork-flow/latest/building-blocks/cloud",
+        "children": [
+          {
+            "id": "ci_0358264fa1c50302f5a0b21ac08b1148cab7d9878ed335c71183b259cac9c8f1",
+            "title": "Convert to JSON",
+            "path": "/leapwork-flow/latest/building-blocks/cloud/convert-to-json",
+            "children": []
+          },
+          {
+            "id": "ci_16821e3881838714b8f1c92c813b3c958278e81754a778ccfbdc62e179667250",
+            "title": "Convert to PDF",
+            "path": "/leapwork-flow/latest/building-blocks/cloud/convert-to-pdf",
+            "children": []
+          },
+          {
+            "id": "ci_549f6a186b6a95db7e249f0bfb9a16297fa25f4a37dc0eb89e1539e628d28338",
+            "title": "Convert to Text",
+            "path": "/leapwork-flow/latest/building-blocks/cloud/convert-to-text",
+            "children": []
+          },
+          {
+            "id": "ci_e64494a1fdb9b3f3e2c5296599935c808f79f11d28c24d89ba6cadb0f693d030",
+            "title": "Document Information",
+            "path": "/leapwork-flow/latest/building-blocks/cloud/document-information",
+            "children": []
+          },
+          {
+            "id": "ci_e2f63a930fabe8ca7de8b3108dc7c22eb2e4a07a41ac1adde1e4522d6058fefb",
+            "title": "Extract Document Text",
+            "path": "/leapwork-flow/latest/building-blocks/cloud/extract-document-text",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_030a3a80f7bba3daed3cfac4d6e0971d5932f6c34b92098b70d84175f2c46af8",
+        "title": "Data-Driven",
+        "path": "/leapwork-flow/latest/building-blocks/data-driven",
+        "children": [
+          {
+            "id": "ci_237c4d8b2f365d9055da44675aa61e143fd3744db33b0aa264c1ad97da85dbd5",
+            "title": "Command-line",
+            "path": "/leapwork-flow/latest/building-blocks/data-driven/command-line",
+            "children": []
+          },
+          {
+            "id": "ci_57b5fa7a3b2845b0d6e13a3591eb0260396c1caee4a666f602a846df24f83f88",
+            "title": "Compress File",
+            "path": "/leapwork-flow/latest/building-blocks/data-driven/compress-file",
+            "children": []
+          },
+          {
+            "id": "ci_688009444806539245ec230362c8bdbaa84fff68793ae956f4b888cad174d4ae",
+            "title": "Database",
+            "path": "/leapwork-flow/latest/building-blocks/data-driven/database",
+            "children": []
+          },
+          {
+            "id": "ci_5dbf07d61c368631409734c6770ce67ff11e81899b7cac2ce470be60938a8363",
+            "title": "HTTP Request",
+            "path": "/leapwork-flow/latest/building-blocks/data-driven/http-request",
+            "children": []
+          },
+          {
+            "id": "ci_b64429ea29cc3598039de0ba68017d1cc5e16cf681150a210049ce42520981a0",
+            "title": "Read Excel",
+            "path": "/leapwork-flow/latest/building-blocks/data-driven/read-excel",
+            "children": []
+          },
+          {
+            "id": "ci_b6d266aba1e7e23e7c193def04351371cca07baf959d3963d91a2b9e8cc4606a",
+            "title": "Save File",
+            "path": "/leapwork-flow/latest/building-blocks/data-driven/save-file",
+            "children": []
+          },
+          {
+            "id": "ci_1629daa371dd780028efc44e85162be74df358fccd835de0e951e6f1a1472006",
+            "title": "Send E-Mail",
+            "path": "/leapwork-flow/latest/building-blocks/data-driven/send-e-mail",
+            "children": []
+          },
+          {
+            "id": "ci_906d335fda3172efc3c8dc37a2b9b41af055480dc496bfd6b7f93a2c4c7b4b49",
+            "title": "Set File",
+            "path": "/leapwork-flow/latest/building-blocks/data-driven/set-file",
+            "children": []
+          },
+          {
+            "id": "ci_351cdc1494e8a802aa50c6cb8f228e475cf9566dec761a6f4fd81556dd2c4157",
+            "title": "Write Excel",
+            "path": "/leapwork-flow/latest/building-blocks/data-driven/write-excel",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_55fda607ff2b0464f40e614556285f9bf598f889b0da7dac9f7231b679d077bb",
+        "title": "Debugging",
+        "path": "/leapwork-flow/latest/building-blocks/debugging",
+        "children": [
+          {
+            "id": "ci_5ffa6097a7fae5a8fcaefcfe02f4c3528752a9de80ab6434d620b071e5c94645",
+            "title": "Comment",
+            "path": "/leapwork-flow/latest/building-blocks/debugging/comment",
+            "children": []
+          },
+          {
+            "id": "ci_45eff7e4c20909b9804fc510ce0282e6c6091824b2d6819e53bbf9eeab124310",
+            "title": "Log Message",
+            "path": "/leapwork-flow/latest/building-blocks/debugging/log-message",
+            "children": []
+          },
+          {
+            "id": "ci_290f37a3966f6626e19311c99bb3a4fb2e70cf145ba5abdf753d3f8dcf774f60",
+            "title": "Log Screenshot",
+            "path": "/leapwork-flow/latest/building-blocks/debugging/log-screenshot",
+            "children": []
+          },
+          {
+            "id": "ci_9d460caacc03071759cf5ed0a80e226fc802b2c53b74e47ab491f7a94bbb9039",
+            "title": "Stopwatch",
+            "path": "/leapwork-flow/latest/building-blocks/debugging/stopwatch",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_1cc66295be76d8c548fab8b97aca4f2be6a559d01e546cb7882be0a23b7d3e23",
+        "title": "Desktop UI",
+        "path": "/leapwork-flow/latest/building-blocks/desktop-ui",
+        "children": [
+          {
+            "id": "ci_6e9ba455153354849d66334b4a6151779ff34e7858f8d5b68e6c71b71639a182",
+            "title": "Click UI Element",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/click-ui-element",
+            "children": []
+          },
+          {
+            "id": "ci_20f21fd544e19e9f24dbef7bc04ce7729379cd6eecc8c424724df669af3b6fcb",
+            "title": "Close UI Window",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/close-ui-window",
+            "children": []
+          },
+          {
+            "id": "ci_b518bd73f89700ad02574fd559cc368e858bfb9a4acdf47226676b6d76af845f",
+            "title": "Collapse UI Element",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/collapse-ui-element",
+            "children": []
+          },
+          {
+            "id": "ci_fc7f86f7656e50368eaf84f324cf8d7ef67214f078672967629da55f8a6d26c9",
+            "title": "Drag UI Element",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/drag-ui-element",
+            "children": []
+          },
+          {
+            "id": "ci_35926da9d74b572c739eafcb2fd6ddf8fcf45ae04ae540b498f010b20a47732d",
+            "title": "Expand UI Element",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/expand-ui-element",
+            "children": []
+          },
+          {
+            "id": "ci_b89b7b0bc9ae87c55091e31690743ec4009bfb47e60fef5aacd1ae8ec84eccc0",
+            "title": "Find UI Element",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/find-ui-element",
+            "children": []
+          },
+          {
+            "id": "ci_899acf38d6fe758b16cf3bd30dfa5a67ed2ba96ec9c40293317d9fda6ac295b3",
+            "title": "Get UI Attribute",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/get-ui-attribute",
+            "children": []
+          },
+          {
+            "id": "ci_d9ffa2171361ad3ea0a076d2dcaf331fdc008542ec35741a860241db6a69105e",
+            "title": "Get UI Number",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/get-ui-number",
+            "children": []
+          },
+          {
+            "id": "ci_8d2231c60dbd72520eee45d994e5c3e3a157619951fb85148d35445464804d6c",
+            "title": "Get UI Selection",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/get-ui-selection",
+            "children": []
+          },
+          {
+            "id": "ci_294898122f2189a310020d88964436a868815b2fbdff5f1f474bf1d025f83ead",
+            "title": "Get UI Text",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/get-ui-text",
+            "children": []
+          },
+          {
+            "id": "ci_8e6436bc8dda5e04c08f2862e86ec35c4b5806069f013c91f0533d2ad315365a",
+            "title": "Get Window Details",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/get-window-details",
+            "children": []
+          },
+          {
+            "id": "ci_a514d0f9c8656082744f45cec62cc316241ae26fbbe3ea4782db1b4d89ce772d",
+            "title": "Invoke UI Element",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/invoke-ui-element",
+            "children": []
+          },
+          {
+            "id": "ci_bb9156dd35f528a11f1519d01ae582666bf95008e4f9dd7557c6dff7b36a2d89",
+            "title": "Select UI Element",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/select-ui-element",
+            "children": []
+          },
+          {
+            "id": "ci_ea0272db1efdc829ba0e3d1080fe4459dbc5da3e216ead7b5aca994b098cfce5",
+            "title": "Set UI Element Value",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/set-ui-element-value",
+            "children": []
+          },
+          {
+            "id": "ci_a5d90a865fee96ec7b55d48a1c7071f8732d047a3fbe9ff0bd8dd6c389bbad0c",
+            "title": "Start Application",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/start-application",
+            "children": []
+          },
+          {
+            "id": "ci_2dd40e2e759eddf05b5c89e9059c202434e4db376ef2514f6918451e3c51fa7f",
+            "title": "Toggle UI Element",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/toggle-ui-element",
+            "children": []
+          },
+          {
+            "id": "ci_03b66af7d056326d543a2e8c7bbed180d47ee5e6cec516438f39ebe0909d9f91",
+            "title": "Update UI Window",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/update-ui-window",
+            "children": []
+          },
+          {
+            "id": "ci_46040f4f129766b4cc0bfb34023a345a094ce8c5db0e4188bf43583e77f79cc6",
+            "title": "Use UI Window",
+            "path": "/leapwork-flow/latest/building-blocks/desktop-ui/use-ui-window",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_9a94f7227bcd4ea3a3421d3a0a36383ebdbe9fc1df58c365aff7f311d5395133",
+        "title": "Dynamics 365",
+        "path": "/leapwork-flow/latest/building-blocks/dynamics-365",
+        "children": [
+          {
+            "id": "ci_f42599e8f05abb31ca862ad7adeca785f3723073b052b26a1b178110f630bf78",
+            "title": "D365 Login",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-login",
+            "children": []
+          },
+          {
+            "id": "ci_ef9ae920cb75c990729b7e5324aea158814a36c4eb3d56a39717f163ccc5a467",
+            "title": "D365 Select Row",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-select-row",
+            "children": []
+          },
+          {
+            "id": "ci_d3005d11770c3494da41823359d1c4bb06cd3eab7b3157ad8ff7b8b475d6a3ef",
+            "title": "D365 Validate and Get",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-get-validate-text",
+            "children": []
+          },
+          {
+            "id": "ci_88df4c3193753d1df43cf6ad51c04d859365703991e0438872d7071268808118",
+            "title": "D365 Click Element",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-click-element",
+            "children": []
+          },
+          {
+            "id": "ci_e13391f6f16aee8b0996dd5a58127514c76e75cdeaa2a2e4d8e3eaebd2ae0a43",
+            "title": "D365 Set Element Dropdown",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-set-dropdown",
+            "children": []
+          },
+          {
+            "id": "ci_e21945ab76078c393966b7de9ac0abfa6b6265f29e821b2ec675e12a2eb59b95",
+            "title": "D365 Set Element Text",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-set-text",
+            "children": []
+          },
+          {
+            "id": "ci_501e10da19c431fb3aef0ecbf2f4f923a464ed0bccbad74fe840bd8e5dad8217",
+            "title": "D365 Set Toggle Button",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-set-toggle-button",
+            "children": []
+          },
+          {
+            "id": "ci_f8e7327f0e71f4135b6fbfe5d931d5fb1c522f43b38e07e4fcc59457329862a9",
+            "title": "D365 Set Radio Button",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-set-radio-button",
+            "children": []
+          },
+          {
+            "id": "ci_b69f53485166c66251c2606de404c0fb3fb9f355862fac79a32db88ae6d7e8ea",
+            "title": "D365 Set Element Checkbox",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-set-checkbox",
+            "children": []
+          },
+          {
+            "id": "ci_25b92d5f10f7a25acf1bf382a1a64212ccd9d2598eaed867ff66a4cea8e8ecaa",
+            "title": "D365 Set Element Combo Box",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-set-combo-box",
+            "children": []
+          },
+          {
+            "id": "ci_6bef2b3b5cb8e5ad2243a612ba9d3491fa57837a5213afc17626642ae5aaba46",
+            "title": "D365 Set Element Panel State",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-set-panel-state",
+            "children": []
+          },
+          {
+            "id": "ci_4d831c709f1e8e6c0db30cb205d498ef1bdd078d06f54f17efe99b32540f7728",
+            "title": "D365 Close Browser",
+            "path": "/leapwork-flow/latest/building-blocks/dynamics-365/d365-close-browser",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_f6230a64f8010389a8e346cafc6b334e1a0747a1413810116084d7a60589af7b",
+        "title": "Electron",
+        "path": "/leapwork-flow/latest/building-blocks/electron-blocks",
+        "children": [
+          {
+            "id": "ci_eef25dd16f7e74e07d2dcf64adb26784e99cd85c3d83429b9e5dd9e4bdfaf245",
+            "title": "Click Electron Element",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/click-electron-element",
+            "children": []
+          },
+          {
+            "id": "ci_764d331788967fc97d3d0be3255a720a208008f3682333142868679b0fc12eb4",
+            "title": "Click Electron Position",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/click-electron-position",
+            "children": []
+          },
+          {
+            "id": "ci_5394b1e46dee8f42b980410146169c309a8a5ac3de8cc79ba61a8fc58a64ad98",
+            "title": "Close Electron Application",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/close-electron-application",
+            "children": []
+          },
+          {
+            "id": "ci_6b661b874824952e68e56b314271b3f252a61c720312ea377d5f6adc2b467255",
+            "title": "Drag Electron Element",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/drag-electron-element",
+            "children": []
+          },
+          {
+            "id": "ci_7a7c8547fe985aee70be84d06b4acb3e19c37d40acc92223f8f2c14da7444c42",
+            "title": "Electron File Upload",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/electron-file-upload",
+            "children": []
+          },
+          {
+            "id": "ci_06b328712c5ae6a607fb77f98dc90a802dcc7dc669696f48f33437a0bce6c813",
+            "title": "Find Electron Element",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/find-electron-element",
+            "children": []
+          },
+          {
+            "id": "ci_cde68cc76cbce3d4ca37fd6373d7a5e1f5eef29e98dc28c560911f9c5d05c4c4",
+            "title": "Get Electron Application Details",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/get-electron-application-details",
+            "children": []
+          },
+          {
+            "id": "ci_0f3b73402689354fdc9d108cd16dadad64aa2f87efea06ef5e440d1093a1f1ad",
+            "title": "Get Electron Attribute",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/get-electron-attribute",
+            "children": []
+          },
+          {
+            "id": "ci_833428e7a82c02737f296d7ab84e1edb4dc18e0fadff205c149c680142b911fb",
+            "title": "Get Electron Checkbox",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/get-electron-checkbox",
+            "children": []
+          },
+          {
+            "id": "ci_3658d657f0b2b699daafe951abf277a2eab9790376699ba65c3a7ff2c2039a83",
+            "title": "Get Electron Dropdown",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/get-electron-dropdown",
+            "children": []
+          },
+          {
+            "id": "ci_1498eca0fedd08c07039b04f3e503de88d46871a093e80b97afa225952d87e14",
+            "title": "Get Electron Number",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/get-electron-number",
+            "children": []
+          },
+          {
+            "id": "ci_91f01e8b7e2e8d9a602c83d262f0991ff1644a2493b3d5c25b65b2ce5f70afb4",
+            "title": "Get Electron Radio Button",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/get-electron-radio-button",
+            "children": []
+          },
+          {
+            "id": "ci_d1007494a84a0adc2b6c5d476c573cb55ca6fee889e6124c1b0d4681836ff651",
+            "title": "Get Electron Text",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/get-electron-text",
+            "children": []
+          },
+          {
+            "id": "ci_9641be70633a85c9f4a950119c50489776932b0cc5c4436cbe49dbb6ccf49c5c",
+            "title": "Handle Electron Alert",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/handle-electron-alert",
+            "children": []
+          },
+          {
+            "id": "ci_ed83299c60db3bd78d0bd0cfee6c57989a1d44b8b8fd42228e72e6e6af974589",
+            "title": "Hover Electron Element",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/hover-electron-element",
+            "children": []
+          },
+          {
+            "id": "ci_3f3e0979a736a687574c30297b5d1b6559e5684521c21e9b2a7803dd3636da9e",
+            "title": "Hover Electron Position",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/hover-electron-position",
+            "children": []
+          },
+          {
+            "id": "ci_d1d0012ddddc86e216af04d9e84ef108a660d4e47a3a1ea7289a6faad9bd6489",
+            "title": "Log Electron Screenshot",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/log-electron-screenshot",
+            "children": []
+          },
+          {
+            "id": "ci_35986ca1878a5ffdc33546f30db865d0a3b2c73ae79cee919609db6b6b1d5a45",
+            "title": "Set Electron Checkbox",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/set-electron-checkbox",
+            "children": []
+          },
+          {
+            "id": "ci_be4addbcdc2aee695493da01adc91ba103693f1d108eebc88c0891b5c51bc7be",
+            "title": "Set Electron Dropdown",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/set-electron-dropdown",
+            "children": []
+          },
+          {
+            "id": "ci_762fc01e8920c24d2502d0d993e7fa13fdcba8dc1d2b82950b5cdbeb2d87f0b0",
+            "title": "Set Electron Radio Button",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/set-electron-radio-button",
+            "children": []
+          },
+          {
+            "id": "ci_cdd4b3ffeb1dce5ed96cdb527f791dca96d556327f02e6d25beac11b0dcc52e4",
+            "title": "Start Electron Application",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/start-electron-application",
+            "children": []
+          },
+          {
+            "id": "ci_4baaf458c38ecb321600bbf790e871ee3ae521b54f538d1671ca6e3c4bfc4a1c",
+            "title": "Type Electron Text",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/type-electron-text",
+            "children": []
+          },
+          {
+            "id": "ci_a31d933e40ebce1414de978f33ac01837ff03ae450f18d67a485efe248874751",
+            "title": "Use Electron Window",
+            "path": "/leapwork-flow/latest/building-blocks/electron-blocks/use-electron-window",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_6b7465c8b513716cc2f4df9ff97d55a49045ae9de04ead69e7548c7c5c976851",
+        "title": "Error Handling",
+        "path": "/leapwork-flow/latest/building-blocks/error-handling",
+        "children": [
+          {
+            "id": "ci_4c1454c4627b968bccad7c14360687f816b035adbacf0295ae82c05e0c846f86",
+            "title": "Any Error",
+            "path": "/leapwork-flow/latest/building-blocks/error-handling/any-error",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_1289876a5e122ed942c3004b65a2d7f859d23544cc3e4d8245132ecd94935f67",
+        "title": "Generators",
+        "path": "/leapwork-flow/latest/building-blocks/generators",
+        "children": [
+          {
+            "id": "ci_f871e9bb1f955aee0f58ed1122861fd836cadae2bf42109caca52bd811af4b9d",
+            "title": "Generate date/time",
+            "path": "/leapwork-flow/latest/building-blocks/generators/generate-date-time",
+            "children": []
+          },
+          {
+            "id": "ci_d432c9ea4a3fdbeb5c5a7fbec1fd148b9de8e542a63ff1f14bfe9eb6403f1431",
+            "title": "Generate‎ Number",
+            "path": "/leapwork-flow/latest/building-blocks/generators/generate-number",
+            "children": []
+          },
+          {
+            "id": "ci_42d61fc400e1522c1455965dcc4a5db2e7c4ae5afccf18b87d54c188387a7c19",
+            "title": "‎Generate‎ Password",
+            "path": "/leapwork-flow/latest/building-blocks/generators/generate-password",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_8bbcfb8fde037a12891ad7caa72257aa08dfe5917ba9442bb7982429d0fb81b7",
+        "title": "Green Screen",
+        "path": "/leapwork-flow/latest/building-blocks/green-screen",
+        "children": [
+          {
+            "id": "ci_8bbdaeda43fbb7b69be38df20f9ebcc00f6b93c33102ade6f012ac5c54bb8548",
+            "title": "Connect to Session",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/connect-to-session",
+            "children": []
+          },
+          {
+            "id": "ci_4c12a1dc72e351c191449d34709010d1f7bec149949650745e2569e962c424d1",
+            "title": "Disconnect from Session",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/disconnect-from-session",
+            "children": []
+          },
+          {
+            "id": "ci_1c5c8e15af4065debeb7d889a7c7443ced7d4681c306448bc501c27a7677a135",
+            "title": "Get Cursor Location",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/get-cursor-location",
+            "children": []
+          },
+          {
+            "id": "ci_f97b898ba4042fa33b7bbafb765ffef2af8fc5f2724254c07f34da1f2d0aebca",
+            "title": "Get Field",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/get-field",
+            "children": []
+          },
+          {
+            "id": "ci_574fc2e7a349dd31ee380e38e92a5dfca57e1d8bd33230df8815f4e2b03f5e89",
+            "title": "Get Green Screen Text",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/get-text",
+            "children": []
+          },
+          {
+            "id": "ci_72750107b39bee9aad4a6d8f31ed9334ef6e83e0859f3a5981ea66b19685429d",
+            "title": "Get Value",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/get-value",
+            "children": []
+          },
+          {
+            "id": "ci_c4a08c6577a3eec2a3c96c174cac038770bdf5a6ad055e3d1079be8d0e29ecf3",
+            "title": "Hit Key",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/hit-key",
+            "children": []
+          },
+          {
+            "id": "ci_d5e9243dea7c36a17b52f1d7690a6cdae3bedbacea524037857fa8ce0fecfe84",
+            "title": "Read Table",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/read-table",
+            "children": []
+          },
+          {
+            "id": "ci_f91cfb6ba353f6b5d43b4ff80fed0b68463b8454d5f8d3b74b7222ea801df797",
+            "title": "Set Cursor Location",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/set-cursor-location",
+            "children": []
+          },
+          {
+            "id": "ci_72361e64482371a883f204eea7ed2dc733b00260f06651cd6c7a73e711d2b242",
+            "title": "Set Green Screen Value",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/set-value",
+            "children": []
+          },
+          {
+            "id": "ci_3bdc1009f6a22e31a134f5d718067cce945d8c9416bea2fb2acdf395bfd8b191",
+            "title": "Switch Session",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/switch-session",
+            "children": []
+          },
+          {
+            "id": "ci_e829384b5fe058b335b079a39e714ecbc74df1da9a0f9532ee5363834002c7c3",
+            "title": "Type Green Screen Text",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/type-text",
+            "children": []
+          },
+          {
+            "id": "ci_56a67ff898e203f60c8b9d8fdf9b677bb7f2a766d22f092e306a0a29a26f22d2",
+            "title": "Write Table",
+            "path": "/leapwork-flow/latest/building-blocks/green-screen/write-table",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_71096f3ec84be8e34d67f16498cf20a22d5f4e09fb29f02d4846a1839dfea3fe",
+        "title": "Image and text recognition",
+        "path": "/leapwork-flow/latest/building-blocks/image-and-text-recognition",
+        "children": [
+          {
+            "id": "ci_e5833ac5685c351e50343bb793ff9102c2a921191f8c8f72e67b0556d036ceb6",
+            "title": "Find Image",
+            "path": "/leapwork-flow/latest/building-blocks/image-and-text-recognition/find-image",
+            "children": []
+          },
+          {
+            "id": "ci_3d2956263a4ef614bae2f8403a82e02fc3b4eb1c6e5e4f89104f958fe8fd55c3",
+            "title": "Find Text",
+            "path": "/leapwork-flow/latest/building-blocks/image-and-text-recognition/find-text",
+            "children": []
+          },
+          {
+            "id": "ci_db09b3243763bc7804476c60594b137392c3a289605e8c71f5fd1603ba929527",
+            "title": "Get Number",
+            "path": "/leapwork-flow/latest/building-blocks/image-and-text-recognition/get-number",
+            "children": []
+          },
+          {
+            "id": "ci_eb3c4ec4d477c719fcd4dc4fefcf4cca30dd32b2e6397f8d142473708730a908",
+            "title": "Get text‎",
+            "path": "/leapwork-flow/latest/building-blocks/image-and-text-recognition/get-text",
+            "children": []
+          },
+          {
+            "id": "ci_d1bfce072faa1f65654bd95c62af246bf0ea7159347d5db79aa1caaf36af8e41",
+            "title": "Select Text",
+            "path": "/leapwork-flow/latest/building-blocks/image-and-text-recognition/select-text",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_9ad65e2fb2a7ddca42966e2b7e3759e442cfec6a7c6d26446fbe63098efa15ae",
+        "title": "Logic",
+        "path": "/leapwork-flow/latest/building-blocks/logic",
+        "children": [
+          {
+            "id": "ci_16418ad39b9ccbe1f45e117c43d036bf55f4131747c2dd3a6b5406c8c5b70592",
+            "title": "Break Iteration",
+            "path": "/leapwork-flow/latest/building-blocks/logic/break-iteration",
+            "children": []
+          },
+          {
+            "id": "ci_db0c11c146d3bf3748a7a37904f90bee6ac4d97f717363dbd7059935e7dfe60f",
+            "title": "C# Code",
+            "path": "/leapwork-flow/latest/building-blocks/logic/c-sharp-code",
+            "children": []
+          },
+          {
+            "id": "ci_d4b4fe12bd66f3a727dd77926ac7a19da2159f87d27f6089bb2b327feba716e4",
+            "title": "Calculate",
+            "path": "/leapwork-flow/latest/building-blocks/logic/calculate",
+            "children": []
+          },
+          {
+            "id": "ci_cd9a5c2a3ae68aec45155945b97211516f7f52c81c3af0225d2e4ac0031024d7",
+            "title": "Change Text",
+            "path": "/leapwork-flow/latest/building-blocks/logic/change-text",
+            "children": []
+          },
+          {
+            "id": "ci_45b3818dd6071d5fd2083589e20ed0f9d8cae6226c89ae677ba574f612cb1e47",
+            "title": "Close Windows",
+            "path": "/leapwork-flow/latest/building-blocks/logic/close-windows",
+            "children": []
+          },
+          {
+            "id": "ci_7f8e9b0a88a49de63e57d15c3b305b557d73b9f87e4b4d91f2b49b417134e271",
+            "title": "Compare",
+            "path": "/leapwork-flow/latest/building-blocks/logic/compare",
+            "children": []
+          },
+          {
+            "id": "ci_0b3a79abe304e4f14eff410f385835e9afa908bab465db18b81a8c4eacb060f9",
+            "title": "Get Clipboard",
+            "path": "/leapwork-flow/latest/building-blocks/logic/get-clipboard",
+            "children": []
+          },
+          {
+            "id": "ci_3083bc5db3590b25f1db6d5250566ea6a9af6e788280ed1f7fce19b865e5af05",
+            "title": "‎ Loop",
+            "path": "/leapwork-flow/latest/building-blocks/logic/loop",
+            "children": []
+          },
+          {
+            "id": "ci_b6604633a39afa264c419eed79f2935496f0bdd2e57b893dcbcd39387a9c0d63",
+            "title": "Offset Area",
+            "path": "/leapwork-flow/latest/building-blocks/logic/offset-area",
+            "children": []
+          },
+          {
+            "id": "ci_a74c2a0acb0fe4b883b8c96dd296ea1ffcbce7edac16ac67ff2bbc0614e3c62d",
+            "title": "Offset Date/Time",
+            "path": "/leapwork-flow/latest/building-blocks/logic/offset-date-time",
+            "children": []
+          },
+          {
+            "id": "ci_a1b9595b3b1695a8c7db97645a52c4eb07b1324d80ba6bf9a581f3f948351a0d",
+            "title": "Offset Position",
+            "path": "/leapwork-flow/latest/building-blocks/logic/offset-position",
+            "children": []
+          },
+          {
+            "id": "ci_c947011641ee0f33d850be42a5d240c29172774efb96b51a7bbd1fa0a3419263",
+            "title": "Regular Expression",
+            "path": "/leapwork-flow/latest/building-blocks/logic/regular-expression",
+            "children": []
+          },
+          {
+            "id": "ci_5381de0fcacd095d54cb67ebb7512d964883dbde964e8e54764f38835592f5dc",
+            "title": "Set Clipboard",
+            "path": "/leapwork-flow/latest/building-blocks/logic/set-clipboard",
+            "children": []
+          },
+          {
+            "id": "ci_6bbe5037b0af1425edd87c364de372954df4e1fad4f8478b65a4c83f4467bba7",
+            "title": "Switch",
+            "path": "/leapwork-flow/latest/building-blocks/logic/switch",
+            "children": []
+          },
+          {
+            "id": "ci_6de28c8232f6b42f481e6c9e9ed88340bda880da49eb100e17378e124d752249",
+            "title": "Wait",
+            "path": "/leapwork-flow/latest/building-blocks/logic/wait",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_c3d3ca8f538c6aaac0605694e062ca0c4cb81b111ebd25a295b8f4833c787ff6",
+        "title": "Mobile",
+        "path": "/leapwork-flow/latest/building-blocks/mobile",
+        "children": [
+          {
+            "id": "ci_c79afc4c96793e66a97dd8e394c842075b143d0c038fe25efa6873fc40c36b03",
+            "title": "Close Mobile Application",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/close-mobile-application",
+            "children": []
+          },
+          {
+            "id": "ci_b33e1e2ef0317548065b50781fd0d27a220866e5d23a538e452bcf05d1ddeb26",
+            "title": "Connect to Mobile Device",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/connect-to-mobile-device",
+            "children": []
+          },
+          {
+            "id": "ci_b8676626a68686e2cee8a207706da043de0cd29bca5b01bb16e2c666bbfb2482",
+            "title": "Find Mobile Element",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/find-mobile-element",
+            "children": []
+          },
+          {
+            "id": "ci_20fc0021beb61485632f18db92c45559a0ac3011ae0819ada34d661bec9f334f",
+            "title": "Find Mobile Image",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/find-mobile-image",
+            "children": []
+          },
+          {
+            "id": "ci_1fcd863739185d508282d5a35a499e5666b2436914c8bdf2a7987d1efc132ef7",
+            "title": "Get Mobile Number",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/get-mobile-number",
+            "children": []
+          },
+          {
+            "id": "ci_04b5badc9ca4104280e1c5864216fa598a8d897a6fd8a3db1864cd2bbb37786a",
+            "title": "Get Mobile Text",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/get-mobile-text",
+            "children": []
+          },
+          {
+            "id": "ci_0fc2ddc01e021b6599e0851cf3066c6256e1ade542c05ac5d40b10ea7f94eeae",
+            "title": "Install Mobile Application",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/install-mobile-application",
+            "children": []
+          },
+          {
+            "id": "ci_e4f57926ebbb996a25f431df72da4cffa866a711a46ed917fcda42f8efff5946",
+            "title": "Log Mobile Screenshot",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/log-mobile-screenshot",
+            "children": []
+          },
+          {
+            "id": "ci_70b40feb10451cecdfea1e92d391ddc5da6447448059fb9e9d09c00d395fdf6e",
+            "title": "Mobile Action",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/mobile-action",
+            "children": []
+          },
+          {
+            "id": "ci_61eeacb8b422071b137d19abca000bd310534675e4db294077c5f8caab625a4c",
+            "title": "Mobile Device Navigation",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/mobile-device-navigation",
+            "children": []
+          },
+          {
+            "id": "ci_895080c88160805a89c8b4a94bc8ca85c303ee5c7bd83d8353652f4a0be94841",
+            "title": "Mobile Drawing Action",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/mobile-drawing-action",
+            "children": []
+          },
+          {
+            "id": "ci_2452cbde22a61369be17fe4b0500aed0a598bcdf5c812fd105d518dedad90ad0",
+            "title": "Mobile Image Action",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/mobile-image-action",
+            "children": []
+          },
+          {
+            "id": "ci_7bd26b1a85adb04942909e8d5a140804fc865a13afac140936200467e0f6325e",
+            "title": "Mobile Screen Action",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/mobile-screen-action",
+            "children": []
+          },
+          {
+            "id": "ci_9af5aff0fe889c563447ac30a5731318aaffdf46d634b9ef8a3295e2a2e4fedc",
+            "title": "Set Mobile Orientation",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/set-mobile-orientation",
+            "children": []
+          },
+          {
+            "id": "ci_daf2bb2247cb16f2b680f1a92f2989bcab4eb0b742deb60a7027f453c471b55f",
+            "title": "Set Mobile Text",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/set-mobile-text",
+            "children": []
+          },
+          {
+            "id": "ci_b1ac85117d591b768198236ab180962f5cc33618a1e3c2a50c61c0732605e04e",
+            "title": "Start Mobile Application",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/start-mobile-application",
+            "children": []
+          },
+          {
+            "id": "ci_33131871a41f3dc459bb3fb9c46733943eb489a7c0105e426d27301ea371f3fd",
+            "title": "Uninstall Mobile Application",
+            "path": "/leapwork-flow/latest/building-blocks/mobile/uninstall-mobile-application",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_15af8e370760d47fa3e70c043a5774b695c670ed642ddd8335544c0287cbcf90",
+        "title": "Module input and output",
+        "path": "/leapwork-flow/latest/building-blocks/module-input-and-output",
+        "children": [
+          {
+            "id": "ci_af454463155330209f57deaefb68200c20a2a0195c7438d747e788ff4c00a9a8",
+            "title": "Execution Input",
+            "path": "/leapwork-flow/latest/building-blocks/module-input-and-output/execution-input",
+            "children": []
+          },
+          {
+            "id": "ci_f0e868034121fbef2d00d00cd3db41be369a028b134f85c1e0f9dd68fd39e7eb",
+            "title": "Execution Output",
+            "path": "/leapwork-flow/latest/building-blocks/module-input-and-output/execution-output",
+            "children": []
+          },
+          {
+            "id": "ci_3c27459643c1f3f1c71dfc97792d59a4bfbb8653048f36676c27e76360d6ad9b",
+            "title": "Value Input",
+            "path": "/leapwork-flow/latest/building-blocks/module-input-and-output/value-input",
+            "children": []
+          },
+          {
+            "id": "ci_b41880898b72403b801ae3941a290e4a5828644d846a5f4628253c197bdbc62d",
+            "title": "Value Output",
+            "path": "/leapwork-flow/latest/building-blocks/module-input-and-output/value-output",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_18c7310fbfefc394b48760f3be638e21a364967b4c5b73243dfb5249fea326ea",
+        "title": "Mouse and keyboard",
+        "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard",
+        "children": [
+          {
+            "id": "ci_eea5fcd48396c22a27314775138e75261ecd7525c729ed77df6224ef079fae86",
+            "title": "Click Image",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-image",
+            "children": []
+          },
+          {
+            "id": "ci_b6ada364e909931f7e1ad33e795a1d0d08aa3b90595ecb05671865392897dee1",
+            "title": "Click Position",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-position",
+            "children": []
+          },
+          {
+            "id": "ci_c3d9599dc1edd571035229f2c99e7201acc34ca6232349b3d7923e923d2ec094",
+            "title": "Click Text",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/click-text",
+            "children": []
+          },
+          {
+            "id": "ci_3333ddf3d6322335ff0111d016e7505834698f6b8f5c7893c204d4d21d2648d6",
+            "title": "Drag Mouse",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/drag-mouse",
+            "children": []
+          },
+          {
+            "id": "ci_0720be0d69aff686fa04b7e8687f217d5d626a4b22adf416239f5743fc6b463f",
+            "title": "Hover Image",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/hover-image",
+            "children": []
+          },
+          {
+            "id": "ci_c0f2e66f02a60f1e8c0226e42e1cd0f491b462ab2e27b8f678da7f3611699065",
+            "title": "Hover Position",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/hover-position",
+            "children": []
+          },
+          {
+            "id": "ci_6e85c3987be15e112607bb174428e0f68783bbc305bf56418f6f7bfd8ee3e298",
+            "title": "Hover Text",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/hover-text",
+            "children": []
+          },
+          {
+            "id": "ci_69b955cd63fe857eb1f26562b64869f3b1600b25d8668af60459db0ebaa996cc",
+            "title": "Press Key",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/press-key",
+            "children": []
+          },
+          {
+            "id": "ci_c73e72dc4cefca76642220e8540e4a04d06c2ba2c8a3678a3d04deef1c65ace9",
+            "title": "Release Key",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/release-key",
+            "children": []
+          },
+          {
+            "id": "ci_ed9184c3a4d3eb4c80697368f391c69f61259f1014c658962141feaecbdb9051",
+            "title": "Scroll Wheel",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/scroll-wheel",
+            "children": []
+          },
+          {
+            "id": "ci_ec2644347ac58fa9d1596185dac8662efc10b36c6ead59873dda3b01590e4003",
+            "title": "Type Text",
+            "path": "/leapwork-flow/latest/building-blocks/mouse-and-keyboard/type-text",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_976a96fa2a3ccda57d77abbb1e59c424886c0ff08430b81132064f0beeabc012",
+        "title": "Multi-Factor Authenticator (MFA) building blocks",
+        "path": "/leapwork-flow/latest/building-blocks/multi-factor-authenticator",
+        "children": [
+          {
+            "id": "ci_e5e73ff7369ddb4fe182efba2fb344ee0752f02061c97f05830debf0fc4432e9",
+            "title": "Time-based one-time password",
+            "path": "/leapwork-flow/latest/building-blocks/multi-factor-authenticator/time-based-one-time-password",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_9aad866753ab577baa75142be4608c21b569e32668767341d81a58a1a3051098",
+        "title": "Salesforce",
+        "path": "/leapwork-flow/latest/building-blocks/salesforce",
+        "children": [
+          {
+            "id": "ci_dd53ed0950688f09fd857b424af62eb7e59f54213a0be5b989d7dbad3b58d3ff",
+            "title": "Salesforce Login",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/login",
+            "children": []
+          },
+          {
+            "id": "ci_fe490d329160b9169cdf7aa9c826c7aa8edd592ecd4f417fb17b8f0ac2faf457",
+            "title": "Click Element",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/click-element",
+            "children": []
+          },
+          {
+            "id": "ci_20a87f11f86ca68aaba6dce79cb696ac5356138730bb5de7abd14ccc5fe51721",
+            "title": "Set Element Text",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/set-element-text",
+            "children": []
+          },
+          {
+            "id": "ci_a62a8662e95b0e0360ec5e03fd5fa5e7dd62f45c4493b26b05b5d36725327a0b",
+            "title": "Set Dropdown",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/set-dropdown",
+            "children": []
+          },
+          {
+            "id": "ci_a5379434d56a52d8d632da7839534f5057e5085c4f40d980d686bb8ef6bafbcd",
+            "title": "Set Element Checkbox",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/set-element-checkbox",
+            "children": []
+          },
+          {
+            "id": "ci_b80a2400ab3b70d8ecc6fa468ab131ccb1da44d735c9e756d2a584f6fffc485e",
+            "title": "Set Element Radio Button",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/set-element-radio-button",
+            "children": []
+          },
+          {
+            "id": "ci_506f05812cce27e09aa483257d8adb0a40c61764e4fa6e02f0463fc438671d57",
+            "title": "Set Toggle Button",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/set-toggle-button",
+            "children": []
+          },
+          {
+            "id": "ci_3515b37ebce38de5e50de7a06589ef57fc5f6c0d147919d9aa39c78e8667c199",
+            "title": "Set Element Combo Box",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/set-element-combo-box",
+            "children": []
+          },
+          {
+            "id": "ci_7218c44105daed97d4760b128820cbe317dd189fdd786cba482cb380a817536c",
+            "title": "Select Row",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/select-row",
+            "children": []
+          },
+          {
+            "id": "ci_08e67a493ed1bdaea2df491108863e0db31b6f7a1cf0ff332f67ac5b813ce9cb",
+            "title": "Set Panel State",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/set-panel-state",
+            "children": []
+          },
+          {
+            "id": "ci_5f79ac1124e06fe0f01b839b7800d8e2fc83b41d6ea09a383117de6546c52f48",
+            "title": "Get and Validate Element",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/get-and-validate",
+            "children": []
+          },
+          {
+            "id": "ci_1cb54574eb13cd399a1a6142a9540ec073d6e2bd110f0d855e3a26cc12082b1c",
+            "title": "Close Browser",
+            "path": "/leapwork-flow/latest/building-blocks/salesforce/close-browser",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_c83574f5ed485b5e31642464988a4534a9b6569c5b891f050ef8623e787c0de8",
+        "title": "SAP",
+        "path": "/leapwork-flow/latest/building-blocks/sap",
+        "children": [
+          {
+            "id": "ci_1cf0fdeb5102350fd86ac3721c12204299855b39c3bc0b976af662e2cc75992d",
+            "title": "Close SAP",
+            "path": "/leapwork-flow/latest/building-blocks/sap/close-sap",
+            "children": []
+          },
+          {
+            "id": "ci_43b9b5ede6e47a8d9f31c971fadd3a484629abeb2a7b25423eda4a34e2dc35d9",
+            "title": "Read SAP Table",
+            "path": "/leapwork-flow/latest/building-blocks/sap/read-sap-table",
+            "children": []
+          },
+          {
+            "id": "ci_79df3c907cc7088d6bbb02e1817cf917bf42a353cf6560e62dc839660ecd834f",
+            "title": "SAP Action",
+            "path": "/leapwork-flow/latest/building-blocks/sap/sap-action",
+            "children": []
+          },
+          {
+            "id": "ci_4b8aa4018bebd6c35902ed747967bf317c167fcc1716833e9c2e911c4d6f6ecb",
+            "title": "SAP Get Text",
+            "path": "/leapwork-flow/latest/building-blocks/sap/sap-get-text",
+            "children": []
+          },
+          {
+            "id": "ci_443d4589bf59244a4ba870e723d0c930b901a7bc42d1663190859b327329391b",
+            "title": "Start SAP",
+            "path": "/leapwork-flow/latest/building-blocks/sap/start-sap",
+            "children": []
+          },
+          {
+            "id": "ci_e9dbec95c937c34b27c7b98e86d047150440f59e05a5c3cc03d752b4fbb3d07d",
+            "title": "Start SAP Session‎",
+            "path": "/leapwork-flow/latest/building-blocks/sap/start-sap-session",
+            "children": []
+          },
+          {
+            "id": "ci_11c65351d7a52bd7064d976f3ba69148dd2822045e98dbe097858d0ae618aa09",
+            "title": "Validate SAP",
+            "path": "/leapwork-flow/latest/building-blocks/sap/validate-sap",
+            "children": []
+          },
+          {
+            "id": "ci_0196d05cf30aa86e6634e79631fb60e72d5bebc4b08b7040662c5e11ca30dbc9",
+            "title": "Write SAP Table",
+            "path": "/leapwork-flow/latest/building-blocks/sap/write-sap-table",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_2aed94b3e736c1ea80f54814bcdca1f7f08ef5d9535a1143f22c69bc22223d11",
+        "title": "Set Value",
+        "path": "/leapwork-flow/latest/building-blocks/setting-values",
+        "children": [
+          {
+            "id": "ci_e7dd8f9bb2ceb24e1fc50b1bb3cc97261b8496174563b78dbeac3869c28b1e3a",
+            "title": "Set Area",
+            "path": "/leapwork-flow/latest/building-blocks/setting-values/set-area",
+            "children": []
+          },
+          {
+            "id": "ci_1e9932b6661a4c10fa4d3b2b69a305626c6cb46c942a316118cc7dba6ea52c5c",
+            "title": "Set Date/Time",
+            "path": "/leapwork-flow/latest/building-blocks/setting-values/set-date-time",
+            "children": []
+          },
+          {
+            "id": "ci_ce7a1aba674b5ae365fbc1fa3b95ffaaf03b023c3727e34e120d78bf54e285b5",
+            "title": "Set Number",
+            "path": "/leapwork-flow/latest/building-blocks/setting-values/set-number",
+            "children": []
+          },
+          {
+            "id": "ci_fe1a012b582033879f9f6189f476c55bc9a5faf8e835f9664e6ac69e5f734b85",
+            "title": "Set Position",
+            "path": "/leapwork-flow/latest/building-blocks/setting-values/set-position",
+            "children": []
+          },
+          {
+            "id": "ci_3d5929e5069935b663a0d2875201dcca04a440f334d6d258dfd28eca0cc9f7e5",
+            "title": "Set Text",
+            "path": "/leapwork-flow/latest/building-blocks/setting-values/set-text",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_6b5401895325174eb78ba13c946725787dcb38d84eeb04488f247877f7274f7c",
+        "title": "Start and Stop",
+        "path": "/leapwork-flow/latest/building-blocks/start-stop",
+        "children": [
+          {
+            "id": "ci_199ae87570c804806f2337b9a5e016288ffbec9e6be23bd1a741282c5ca7eae5",
+            "title": "Start‎",
+            "path": "/leapwork-flow/latest/building-blocks/start-stop/start",
+            "children": []
+          },
+          {
+            "id": "ci_8f12d992b3447fbe6dc91630bb35140fb8520ba96e7f2b4ada684be403321d5b",
+            "title": "Done",
+            "path": "/leapwork-flow/latest/building-blocks/start-stop/done",
+            "children": []
+          },
+          {
+            "id": "ci_70680e09f192321ecf89cefe20cb9d5d9043eba1ce87707c917811db9c6f1a79",
+            "title": "Fail",
+            "path": "/leapwork-flow/latest/building-blocks/start-stop/fail",
+            "children": []
+          },
+          {
+            "id": "ci_7d2570a5e349b0d88192a08055d5b695cef1dc849641e0bb605869f007e78e94",
+            "title": "Pass",
+            "path": "/leapwork-flow/latest/building-blocks/start-stop/pass",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_f6f83fde7cad8b16d355ea4d159cdc779ab9a6341b9e7412226cecb89d4829cf",
+        "title": "System",
+        "path": "/leapwork-flow/latest/building-blocks/system",
+        "children": [
+          {
+            "id": "ci_e9fa8836eff96053c7d3481016bf881c3b006297ab62e3230570d281015700a9",
+            "title": "Get Agent Session",
+            "path": "/leapwork-flow/latest/building-blocks/system/get-agent-session",
+            "children": []
+          },
+          {
+            "id": "ci_4924b3143e3586b3399849d979b4ab49af5c864cd2fd38e2cb8ee702e5b27641",
+            "title": "Lock",
+            "path": "/leapwork-flow/latest/building-blocks/system/lock",
+            "children": []
+          },
+          {
+            "id": "ci_0a71c45e9947900f7bbe69ad49ec9cebe83b1ae36c444d811bd4eed666407b3f",
+            "title": "Login",
+            "path": "/leapwork-flow/latest/building-blocks/system/login",
+            "children": []
+          },
+          {
+            "id": "ci_c3b6e8c6fd9c2cbc93d1ed24ba5a24c79c050bb9d0af289693368302efe5be7c",
+            "title": "Logout",
+            "path": "/leapwork-flow/latest/building-blocks/system/logout",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_dcb47ca9cdd40a29781f98f6d0854ddbc6b90ea9aaf9b1e623660b667e1c8ccc",
+        "title": "Variables",
+        "path": "/leapwork-flow/latest/building-blocks/variables",
+        "children": [
+          {
+            "id": "ci_4651ecfa06e8e7e720d961bc85c591073577231b6fd03d0ea0e44308d2614e89",
+            "title": "Set Variable",
+            "path": "/leapwork-flow/latest/building-blocks/variables/set-variable",
+            "children": []
+          },
+          {
+            "id": "ci_f5588f130f2693abf6b505a84161b9a2953bd81c43ee212660407fade09640c5",
+            "title": "Get Variable",
+            "path": "/leapwork-flow/latest/building-blocks/variables/get-variable",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_e0d7e98fabf4d1fc1950bfa333f440213dbe42d6c0396c3e721f7b93a8e46fa2",
+        "title": "Web",
+        "path": "/leapwork-flow/latest/building-blocks/web",
+        "children": [
+          {
+            "id": "ci_815e33641df136ebac0f07072c94505326a2742b3368a66a06a139cf7146bcd4",
+            "title": "Clear Web Cookies",
+            "path": "/leapwork-flow/latest/building-blocks/web/clear-web-cookies",
+            "children": []
+          },
+          {
+            "id": "ci_5b68c2cae9928677b309092d0ebaba137ae085062fd450bcf16bc83616fd6aed",
+            "title": "Click Web Element",
+            "path": "/leapwork-flow/latest/building-blocks/web/click-web-element",
+            "children": []
+          },
+          {
+            "id": "ci_489a0c5ad63a04f215321c7b2255910c64eb7d499a5e65f1023df16b92dd76de",
+            "title": "Click Web‎ Position",
+            "path": "/leapwork-flow/latest/building-blocks/web/click-web-position",
+            "children": []
+          },
+          {
+            "id": "ci_0061cc3ea3a2999b368ce1b6fdeb15e78b7138679fd9b16bafdb20ba7ea3f204",
+            "title": "Close Web Browser",
+            "path": "/leapwork-flow/latest/building-blocks/web/close-web-browser",
+            "children": []
+          },
+          {
+            "id": "ci_68c87eeba8d3a7e8918d66686793184579a731554826578e705f949e491c6de6",
+            "title": "Drag Web Element‎",
+            "path": "/leapwork-flow/latest/building-blocks/web/drag-web-element",
+            "children": []
+          },
+          {
+            "id": "ci_a55ffca96850101a088cce2dc6dc29fa04af844571730fb3d32d52c6870f4e96",
+            "title": "Find Web Element",
+            "path": "/leapwork-flow/latest/building-blocks/web/find-web-element",
+            "children": []
+          },
+          {
+            "id": "ci_59568785ccfd62e6db6478c88532339b41974fd34d24dd8131f4c6852a205d6c",
+            "title": "Get Browser Details",
+            "path": "/leapwork-flow/latest/building-blocks/web/get-browser-details",
+            "children": []
+          },
+          {
+            "id": "ci_23532feca7cc1f6d413dc16f80506ab7572661c6e8c07529bd9d57fe94e094d0",
+            "title": "Get Web Attribute",
+            "path": "/leapwork-flow/latest/building-blocks/web/get-web-attribute",
+            "children": []
+          },
+          {
+            "id": "ci_ed475ce0d5608b04ff7ad399b1a094f15c3f443014d847c551393770529b819a",
+            "title": "Get Web Checkbox",
+            "path": "/leapwork-flow/latest/building-blocks/web/get-web-checkbox",
+            "children": []
+          },
+          {
+            "id": "ci_3e62ca9d5611c1fb25ef699c4a2db25677786ef91911e65cbe582353283dd7d2",
+            "title": "Get Web Cookie",
+            "path": "/leapwork-flow/latest/building-blocks/web/get-web-cookie",
+            "children": []
+          },
+          {
+            "id": "ci_29f6dd8f4bf573bcf88efc79652f32dca8f53ba2757d5832b89d02c83395ccbf",
+            "title": "Get Web Dropdown",
+            "path": "/leapwork-flow/latest/building-blocks/web/get-web-dropdown",
+            "children": []
+          },
+          {
+            "id": "ci_1d2681593a6f6ba5aa860058f2e5ec2b504cd6fd7aec8c456a9ff75b0aa29f6b",
+            "title": "Get Web Number",
+            "path": "/leapwork-flow/latest/building-blocks/web/get-web-number",
+            "children": []
+          },
+          {
+            "id": "ci_c801d24d4af0774c196de9dbeea4de612720bcdcd509bef4ac70497406fa8f1f",
+            "title": "Get Web Radio Button",
+            "path": "/leapwork-flow/latest/building-blocks/web/get-web-radio-button",
+            "children": []
+          },
+          {
+            "id": "ci_861674b79024aaccb5fa15136eb663a1513362c8d333a833cca84527719d3165",
+            "title": "Get Web Text",
+            "path": "/leapwork-flow/latest/building-blocks/web/get-web-text",
+            "children": []
+          },
+          {
+            "id": "ci_d569cfa169dea038670e40b0371f370731ac5e8fff98070632cdafbc8c73a328",
+            "title": "Handle Web Alert",
+            "path": "/leapwork-flow/latest/building-blocks/web/handle-web-alert",
+            "children": []
+          },
+          {
+            "id": "ci_3a0ee76cc660e35626728f7e369bb7ff3162a12e63304fa50a7143e35f4aaf64",
+            "title": "Hover Web Element",
+            "path": "/leapwork-flow/latest/building-blocks/web/hover-web-element",
+            "children": []
+          },
+          {
+            "id": "ci_4b09836b27b8e066e292d83dd218968e3e39f09c524e8b76bf2edad503991084",
+            "title": "Hover Web Position‎",
+            "path": "/leapwork-flow/latest/building-blocks/web/hover-web-position",
+            "children": []
+          },
+          {
+            "id": "ci_6920516673790bfc74b090396a4aba7be60ccd5b03bd7a56c18b334a37891396",
+            "title": "Log Web Screenshot",
+            "path": "/leapwork-flow/latest/building-blocks/web/log-web-screenshot",
+            "children": []
+          },
+          {
+            "id": "ci_2249e7c66dafe26947ca1c17d7e4031d989bef8d90eece2f8d2b1da0703b56d7",
+            "title": "Navigate Web",
+            "path": "/leapwork-flow/latest/building-blocks/web/navigate-web",
+            "children": []
+          },
+          {
+            "id": "ci_8f034dfa235c3e47d4a77923777f4759b257658ace0c4a6983a542310c3b00b3",
+            "title": "Run Web Javascript",
+            "path": "/leapwork-flow/latest/building-blocks/web/run-web-javascript",
+            "children": []
+          },
+          {
+            "id": "ci_2c2d0cc833b6ca843ce7c7dd484f1ad923910ec860de812dfa12f9e17d7bd282",
+            "title": "Set Web Checkbox",
+            "path": "/leapwork-flow/latest/building-blocks/web/set-web-checkbox",
+            "children": []
+          },
+          {
+            "id": "ci_2ae43729d0aaaceb1f7f3df0b6a6ad53e4ff5fe172ce3ee83e5087f66cf28439",
+            "title": "Set Web Cookie‎",
+            "path": "/leapwork-flow/latest/building-blocks/web/set-web-cookie",
+            "children": []
+          },
+          {
+            "id": "ci_25ab55e19ee664ebea624a8c42478ac76b5062a8b7383772d465d3c95343d518",
+            "title": "Set Web Dropdown",
+            "path": "/leapwork-flow/latest/building-blocks/web/set-web-dropdown",
+            "children": []
+          },
+          {
+            "id": "ci_5659b4da8b4fb3bb6bc6e42cc23ae95560df1713fdb216922566aa745c58789a",
+            "title": "Set Web Radio Button",
+            "path": "/leapwork-flow/latest/building-blocks/web/set-web-radio-button",
+            "children": []
+          },
+          {
+            "id": "ci_f558daa070fd7a6be80864f7fad72f2a6e4f5d28b8d417e2185d68956da18156",
+            "title": "Start Web Browser",
+            "path": "/leapwork-flow/latest/building-blocks/web/start-web-browser",
+            "children": []
+          },
+          {
+            "id": "ci_8032cc4d7adab65d10db7208ed6e0d481e9ca850d0ae124f2eb486aa66c9dd50",
+            "title": "Type Web Text",
+            "path": "/leapwork-flow/latest/building-blocks/web/type-web-text",
+            "children": []
+          },
+          {
+            "id": "ci_7844a5709cd87384e9cf04b2385422100a7488dab52343defe3b664a0757c353",
+            "title": "Use Browser Window",
+            "path": "/leapwork-flow/latest/building-blocks/web/use-browser-window",
+            "children": []
+          },
+          {
+            "id": "ci_e3f9d85ca6bd52810b7a86169f7e2bde6149789c275b398edb120f382798cc2a",
+            "title": "Web File Upload",
+            "path": "/leapwork-flow/latest/building-blocks/web/web-file-upload",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ci_a42218eb6ac57243d0fc815b258767bed836ce4d79f7e53be5ee75e87b7ee61a",
+    "title": "Administration",
+    "path": "/leapwork-flow/latest/administration",
+    "children": [
+      {
+        "id": "ci_1984311a51f9f8b6d70fdcda24ba464333accf248b982604cbe5d0ef0b17bacc",
+        "title": "Controller Settings",
+        "path": "/leapwork-flow/latest/administration/controller-settings",
+        "children": []
+      },
+      {
+        "id": "ci_f550e7929bd49efe5b2b247f9b2ecb06128b4a02aa441d8fd398e7235f939b89",
+        "title": "User Management",
+        "path": "/leapwork-flow/latest/administration/user-management",
+        "children": []
+      },
+      {
+        "id": "ci_338340767bee093b0ff3929487a4c32918d77d4f0da33c2ca85a47f551505b7c",
+        "title": "Emergency Admin User",
+        "path": "/leapwork-flow/latest/administration/emergency-admin-user",
+        "children": []
+      },
+      {
+        "id": "ci_e38c6e55493f124763082f4241005f89d42d6d755fec7cbcb09434de1f12e851",
+        "title": "Team Management",
+        "path": "/leapwork-flow/latest/administration/team-management",
+        "children": []
+      },
+      {
+        "id": "ci_7b52cab8a7ffed4fb06eaf908e5b9e90442d18e94c6a0f8dbd283d60654045ab",
+        "title": "Security",
+        "path": "/leapwork-flow/latest/administration/wip-security",
+        "children": []
+      },
+      {
+        "id": "ci_0d703eecad3c9ae6d1a8f7e5ea95f3ca716acd78c902b9b6d4bfdf8e1a8042b4",
+        "title": "Privileges Settings",
+        "path": "/leapwork-flow/latest/administration/privileges-settings",
+        "children": []
+      },
+      {
+        "id": "ci_c2f0f0a6d938e13bc3ce21cd1dbb596d19786feb85ecf643e6f3bc32ec3269ec",
+        "title": "Workflow Settings",
+        "path": "/leapwork-flow/latest/administration/workflow-stettings",
+        "children": []
+      },
+      {
+        "id": "ci_7f9f872880daa4eb8463713e5931bd0b61a00215031bae17440a2cad0ddce2eb",
+        "title": "API Access Keys",
+        "path": "/leapwork-flow/latest/administration/api-access-keys",
+        "children": []
+      },
+      {
+        "id": "ci_c9c959a035fd927a05e75e5aaf2077e50d95fde4ebf08309969a010f9268ded5",
+        "title": "E-mail Settings",
+        "path": "/leapwork-flow/latest/administration/e-mail-settings",
+        "children": []
+      },
+      {
+        "id": "ci_e12a257997a43fefb4c5e8c2d0abec087485e141aaba948a87bd54ab467531de",
+        "title": "Proxy Settings",
+        "path": "/leapwork-flow/latest/administration/proxy-settings",
+        "children": []
+      },
+      {
+        "id": "ci_866aa55b30897cd829e0ae115c9704a78b9ae0b0f978cfb0fabcb6a3d3fcfbca",
+        "title": "Database Decryption Keys",
+        "path": "/leapwork-flow/latest/administration/database-decryption-keys",
+        "children": []
+      },
+      {
+        "id": "ci_bc722492de4819f956c0b3772da489a0188313522c1d3f190121683583f374f8",
+        "title": "Database Management",
+        "path": "/leapwork-flow/latest/administration/database-management",
+        "children": []
+      },
+      {
+        "id": "ci_c502911ad10f6d1a4eb5fa2493c1732ce4f0ea5b77e06edb2daef8655ece6aed",
+        "title": "Default Flow Settings",
+        "path": "/leapwork-flow/latest/administration/default-flow-settings",
+        "children": []
+      },
+      {
+        "id": "ci_0a53a21aef1edee81c067ba20a7ed2cddcadc1d9eddfb3d700cebd2dcef188a4",
+        "title": "Web Settings",
+        "path": "/leapwork-flow/latest/administration/wip-web-settings",
+        "children": []
+      },
+      {
+        "id": "ci_07eb32602b7f34a3c74b7333339237a26effc79646fac385db5ad1f8bc322af7",
+        "title": "Capture Settings",
+        "path": "/leapwork-flow/latest/administration/wip-capture-settings",
+        "children": []
+      },
+      {
+        "id": "ci_5d47419b4389856f265e1101a8b4be57861abb6a64614fc31cc447807ca515e2",
+        "title": "Retention Policies",
+        "path": "/leapwork-flow/latest/administration/retention-policies",
+        "children": []
+      },
+      {
+        "id": "ci_d9d9bbdcd3f3745fb3916ea42e77c56714df0eae89c3bae3ae5da164725cf23b",
+        "title": "License Management",
+        "path": "/leapwork-flow/latest/administration/license-management",
+        "children": []
+      },
+      {
+        "id": "ci_0f760425b150ea087b0e6226579408ce7e7a9116bff45b62cd44c89535f46b4c",
+        "title": "Audit Log",
+        "path": "/leapwork-flow/latest/administration/audit-log",
+        "children": []
+      },
+      {
+        "id": "ci_652b41d038e0d0b07cfe1d09710029d04ab4b673098f6406d509830615c91957",
+        "title": "Other Settings",
+        "path": "/leapwork-flow/latest/administration/other-settings",
+        "children": []
+      },
+      {
+        "id": "ci_a5d5098ecdff84baca48e936cc90eca730109d2ae050677622b5741d3e78c307",
+        "title": "Connections",
+        "path": "/leapwork-flow/latest/administration/connections",
+        "children": [
+          {
+            "id": "ci_6f530e72c0fa098ab31cb3a6b7a53dad658ac6df79457c14d7c27f9851efbe6b",
+            "title": "HeadSpin Server Connection",
+            "path": "/leapwork-flow/latest/administration/connections/headspin-server-connection",
+            "children": []
+          },
+          {
+            "id": "ci_1dd4ac52be405f02e199222246d094390e6e7264099cdb5b1088a832f3e7bcd1",
+            "title": "Appium Server Connection",
+            "path": "/leapwork-flow/latest/administration/connections/appium-server-connection",
+            "children": []
+          },
+          {
+            "id": "ci_b477facf17eb4b73a93d0a9e4ba9e4b6c2d0fee2b025317ae85b40d3deaa7e83",
+            "title": "SauceLabs Server Connection",
+            "path": "/leapwork-flow/latest/administration/connections/saucelabs-server-connection",
+            "children": []
+          },
+          {
+            "id": "ci_efc49679ea74d407f075351ead700ac142818e114dfcf74de225e921601196e8",
+            "title": "BrowserStack Server Connection",
+            "path": "/leapwork-flow/latest/administration/connections/browserstack-server-connection",
+            "children": []
+          },
+          {
+            "id": "ci_3ed74314776201a5cb4b5dfe8caafff256b21eea3ddc6da6092d98fcdeacd74a",
+            "title": "TestMu AI (Formerly LambdaTest) Server Connection",
+            "path": "/leapwork-flow/latest/administration/connections/lambdatest-server-connection",
+            "children": []
+          },
+          {
+            "id": "ci_8f3b94c4d670629d2924794b7744c1a34305fadd59f271f30852f21677df6005",
+            "title": "Entra ID (Azure Active Directory) Server Connection",
+            "path": "/leapwork-flow/latest/administration/connections/azure-active-directory-server-connection",
+            "children": []
+          },
+          {
+            "id": "ci_fb53f5ebd8aa3fa1d3fa6ca820e4278f7cc1cc88879ed25e2b7d51fcddea8a66",
+            "title": "Lightweight Directory Access Protocol Server Connection",
+            "path": "/leapwork-flow/latest/administration/connections/lightweight-directory-server",
+            "children": []
+          },
+          {
+            "id": "ci_4e587e4f65a4563983fc2eb97e19cd6f9bf7f526096306fa433bbeb80e596244",
+            "title": "Microsoft Graph (Sharepoint) Connection",
+            "path": "/leapwork-flow/latest/administration/connections/wip-microsoft-graph-sharepoint-connection",
+            "children": []
+          },
+          {
+            "id": "ci_1e58b265bdc60bd921c126c34aea5f4cee52faf74d0f39a7b00aceec14f62d58",
+            "title": "Single Sign-On (SSO) Connection",
+            "path": "/leapwork-flow/latest/administration/connections/single-sign-on-sso-connection",
+            "children": []
+          },
+          {
+            "id": "ci_4d4d362f373ffec99f9e97affb9629e5196ac58e214702343d5c919f75de8f58",
+            "title": "Azure DevOps (ADO) Server - Connections",
+            "path": "/leapwork-flow/latest/administration/connections/azure-devops-ado-server-connections",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ci_27289aa4b73509f997369f5a2ba8ba678b217366bff11c5078e97df4462e237c",
+        "title": "Azure DevOps Connections",
+        "path": "/leapwork-flow/latest/administration/wip-azure-devops-connections",
+        "children": []
+      },
+      {
+        "id": "ci_e89593d99b4ac8195c868f44ff81e8320417f47d5111e4efecacfbd891107ca1",
+        "title": "Mobile Configuration",
+        "path": "/leapwork-flow/latest/administration/mobile-configuration",
+        "children": []
+      },
+      {
+        "id": "ci_c8ab2ef48b14e6398c9e097bed59444241ac2d52404c4c198bf26c5053106f1a",
+        "title": "Active Directory Settings",
+        "path": "/leapwork-flow/latest/administration/active-directory-settings",
+        "children": []
+      },
+      {
+        "id": "ci_71ca69ca9a79a84734cdc97ff8238ee6be16b2c7e914ec7de82a761fa343e587",
+        "title": "Diagnostics",
+        "path": "/leapwork-flow/latest/administration/diagnostics",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "ci_d59de4b5c6b3d007b8aa0abd257ee74d0864972bd7a85d642a428d2ef539e019",
+    "title": "Leapwork Public REST APIs",
+    "path": "/leapwork-flow/latest/public-rest-apis",
+    "children": [
+      {
+        "id": "ci_23c4185bf32f3b2c94883be62a127f65a30b3830eb7a795e5a35cf891c2f3703",
+        "title": "API Endpoints",
+        "path": "/leapwork-flow/latest/public-rest-apis/api-endpoints",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "ci_d8b8c6642bd4c1b7f2068d93164fab5453f60edd1d05fd9ce5c216df7ffc8af1",
+    "title": "Customer Portal",
+    "path": "/leapwork-flow/latest/customer-portal",
+    "children": [
+      {
+        "id": "ci_ad8c8216319d95e68a240753f435f3885d7d938030d30a044c99baf0c2662153",
+        "title": "What is Customer Portal?",
+        "path": "/leapwork-flow/latest/customer-portal/what-is-customer-portal",
+        "children": []
+      },
+      {
+        "id": "ci_194012a60a109fed4e7fde823bd09b30532fdc646d2ffbfbebbd4865b6833be7",
+        "title": "Add-ons",
+        "path": "/leapwork-flow/latest/customer-portal/add-ons",
+        "children": []
+      },
+      {
+        "id": "ci_adf2fed60a26ec4f7dec08d499217f8231dec0d436d01a63d0be14fce885a8b9",
+        "title": "Data Sharing",
+        "path": "/leapwork-flow/latest/customer-portal/data-sharing",
+        "children": []
+      },
+      {
+        "id": "ci_9c23bb530d720ae622422e3378cfbe64bec451e4298a6818d1be428dfc302e40",
+        "title": "Downloads",
+        "path": "/leapwork-flow/latest/customer-portal/downloads",
+        "children": []
+      },
+      {
+        "id": "ci_24a9695fa8122f83338a71b7bbb2e0c74c6ff80121cb4edc2018145cc19bd203",
+        "title": "My Cases",
+        "path": "/leapwork-flow/latest/customer-portal/my-cases",
+        "children": []
+      },
+      {
+        "id": "ci_12052ae145212163842313eaa6d6110cd6287a5dc326202b4ea627401a21dad6",
+        "title": "My Licenses",
+        "path": "/leapwork-flow/latest/customer-portal/my-licenses",
+        "children": []
+      },
+      {
+        "id": "ci_381cdedd40f9ed3241dd5f156010276fad595868a24bdd8902b8ab9a018ca811",
+        "title": "Reports Section",
+        "path": "/leapwork-flow/latest/customer-portal/reports-section",
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "ci_18443be1db54f00c8746274215b23fcd232e147cee0388af68f9a43375026c8b",
+    "title": "Release Notes",
+    "path": "/leapwork-flow/latest/release-notes",
+    "children": [
+      {
+        "id": "ci_1ce6928c65ba0cf3ef30e9726cf0e3214f34792ad0f33812b6c1836a3290ae8f",
+        "title": "Leapwork Flow Major Release 2026.3",
+        "path": "/leapwork-flow/latest/release-notes/leapwork-flow-major-release-2026-3",
+        "children": []
+      },
+      {
+        "id": "ci_a9d059feed69c9d7c7cbc462c67c505d4777f517e4a038dd9d6e95910cf0f38d",
+        "title": "Leapwork Flow Major Release 2026.2",
+        "path": "/leapwork-flow/latest/release-notes/leapwork-flow-major-release-2026-2",
+        "children": []
+      },
+      {
+        "id": "ci_cafef454632cc5fd5d5676d049a7dbd137601e39f00f02fcd6f73384927d277f",
+        "title": "Leapwork Flow Service Release 2026.1.130",
+        "path": "/leapwork-flow/latest/release-notes/leapwork-flow-service-release-2026-1-130",
+        "children": []
+      },
+      {
+        "id": "ci_da82e243f6dde2a866c599d8916b65b8d052c12cdddf8a87bd79dda023bb7726",
+        "title": "Leapwork Flow Major Release Version 2026.1",
+        "path": "/leapwork-flow/latest/release-notes/leapwork-flow-major-release-version-2026-1",
+        "children": []
+      }
+    ]
+  }
+]
