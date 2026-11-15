@@ -1,0 +1,82 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/user-management",
+  "title": "User Management",
+  "retrievedAt": "2026-11-15T02:15:16.804148+00:00",
+  "text": "Breadcrumbs\nIn\nUser Management\n, you can define, manage, and control your team members’ user roles and privileges directly from Leapwork’s settings.\nAfter installing the Controller, your first step is to create user accounts for everyone who needs access to Leapwork. This can be done by creating users directly in Leapwork or by configuring access through Active Directory (AD).\nBy default, an\nadmin user account\nis created during installation. The password is set at that time. For security reasons, the password cannot be recovered, so make sure it is stored securely.\nUser management settings are available only when you are logged in with administrator privileges.\nAdding users directly in Leapwork\nTo add a user:\nSimply click on the Add user button. The following pop-up then appears:\nEnter only basic information to create a user account on Leapwork:\nFull Name\n: This is the user’s display name and appears in logs, reports, and audit trails.\nUsername\n: Used by the user to log into Leapwork Flow.\nAccess Level\n: Selected from a drop-down menu, this determines the user's default privileges.\nThere are four access levels:\nAdministrator\n: Full access to all system functions, including user and asset management, system settings, and audit logs. Administrators can also view the database encryption key.\nContributor\n: Can create and edit all assets and execute flows, but cannot change system-level settings or access the audit log.\nReader\n: Has read-only access to all assets by default. However, administrators can allow Readers to\nrun flows\nby enabling the\n\"Allow Reader to run flows\"\noption in the\nPrivileges Settings\ntab. Readers cannot modify content unless explicitly granted further privileges.\nNo Access\n: Cannot view or edit any content. This level is useful for temporarily revoking access without deleting the user account.\nThese roles apply to all folders, flows, and sub-flows in Leapwork. For example, a user with the Reader role has consistent read-only access across the platform.\nAdditionally,\nPrivileges Settings\ndefined by the Administrator apply globally to all users of a given role, allowing fine-tuned control over what users can do regardless of their base role.\nOnce the user information and access level have been defined:\nSet a password\n: You can either create a password manually or let Leapwork generate one automatically.\nEnforce password change (optional):\nSelect the checkbox to require the user to change their password upon first login.\nAssign the user to a team:\nTeams help organize collaboration and manage permissions.\nShare credentials\n: After creating the user account, share the login credentials with the user manually.\nTeam collaboration and management features are only available in the\nLeapwork Enterprise Edition\n. These options will not appear in the\nPlatform Edition\n.\nUsing Active Directory (AD) to control access\nLeapwork supports a mixed user setup, where some users are created directly as users (with a username and password) in Leapwork, and some users get the access via AD.\nNote\n: To use AD to control access to Leapwork, both the computer with the user's Flow and the Controller must belong to the same AD. Otherwise, the options below will be unavailable.\nIn the User Management section, the option\nAdd AD/SSO\nUser\nis visible if Leapwork supports AD access control.\nTo add an access level for either a user or a group from AD:\nClick on\nAdd AD/SSO\nUser button:\nIn the\nSelect Users and Groups\ndialog, specify the AD name of a user and/or a group then click OK.\nWith the AD entity now selected, specify the access level for the selected entities. In the example below, the Select Users and Groups dialog shows the group name External/test\nOnce the access level is set, click\nSave\n.\nYou can see the new configuration in the access configurations list.\nAdd AD\n(Lightweight Directory Access Protocol (LDAP)\nUser\nLDAP integration with Leapwork is a newly added feature.\nConnection\ntab lets you set up a connection to the LDAP server.\nTo deepen your understanding of LDAP and the Connection tab\n,\nyou can explore our detailed guide\nhere\n.\nTo add an LDAP user or group,\nfrom\nSettings\n:\nGo to\nUser Management.\nClick on\nAdd AD/SSO User\nand a new window open:\nEnter the\nUser\nor\nGroup\nname to authorize the user or group in the LDAP directory.\nSelect\nAccess\nfrom the drop-down menu.\nCheck the\nTeam checkbox\nas needed.\nThe\nTeam checkbox\nis only for Leapwork Enterprise Edition users).\nClick\nSave\nto save the\nUser\nor\nGroup\n.\nTo the right of the\nAdd AD/SSO User\nbutton, use the\nEdit\n,\nDelete\nand\nExport\nbuttons to modify, remove, or export user profiles to Excel.\nAdd SSO User\nThe Azure Active Directory (AAD) integration with Leapwork is a newly added feature. To learn more about\nAAD SSO\nand the\nConnection\ntab, see the related\ndocumentation\n.\nConnection\ntab lets you set up a connection to the AAD SSO server.\nTo add AD/SSO user or group, from\nSettings\n:\nGo to\nUser Management.\nClick on\nAdd AD/SSO User\nand a new window opens:\nEnter the\nUser\nor\nGroup\nname existing in the Azure Active Directory of the added connection.\nSelect\nAccess\nfrom the drop-down menu.\nCheck the\nTeam\ncheckbox as needed.\nThe\nTeam\ncheckbox is available only for Leapwork Enterprise Edition users).\nClick\nSave\nto save the\nUser\nor\nGroup\n.\nTo the right of the\nAdd AD/SSO User\nbutton, use the\nEdit\n,\nDelete\nand\nExport\nbuttons to modify, remove, or export user profiles to Excel.\nLogin options\nWhen a user accesses the Flow the first time, they can choose how to log in - using a username and password or using the AD/SSO.\nIf Leapwork user is selected, the user will have to enter the username and password - typically provided by the administrator in an email or similar:\nIn case the user selects Active Directory user, the current Windows user is evaluated against the AD configurations in the user management section:\nIf a Windows user is member of more than one AD group, and the different AD groups allow different access levels in Leapwork, then the user will be given the highest privileges.\nIn case you select SSO user, the current Windows user is evaluated against the SSO configurations in the user management section.\nNote\n: Users with valid SSO credentials added as SSO users will be redirected to the authentication page, after which their credentials are remembered.\nFor all login types, you only need to sign in once.\nAfter the first successful login, Leapwork remembers your session.",
+  "links": [
+    {
+      "title": "Privileges Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/privileges-settings"
+    },
+    {
+      "title": "here",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/lightweight-directory-server"
+    },
+    {
+      "title": "documentation",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/single-sign-on-sso-connection"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260612-150150.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5f666cc84f1d84eca278ec009bf189b706927c4595d16cb2fba64e821d94d333/image-20260612-150150.png?cb=ee49e46134c4e6bb54b8919da900a20e"
+    },
+    {
+      "alt": "image-20260302-093603.png",
+      "url": "https://docs.leapwork.com/__attachments/a_7aa787ea91e9ec9be02172d7e43e095046fab3fdf53a46bd5e58526160bb6412/image-20260302-093603.png?cb=7fcbd5d005da26dbb4afda9f94e96b60"
+    },
+    {
+      "alt": "Picture9-1-20260612-150517.png",
+      "url": "https://docs.leapwork.com/__attachments/a_cd2067958744a115238ef352a9d869ad6c4969c8326ff13d7d1e4c88139a5cf1/Picture9-1-20260612-150517.png?cb=e2bd2d9626da0862e62f124a29bd6d41"
+    },
+    {
+      "alt": "Picture3-1-20260612-150829.png",
+      "url": "https://docs.leapwork.com/__attachments/a_7b48c8f3a7a2085a87be522381b4c7e4f74d2bf282ca96e655fdf86fa61cb573/Picture3-1-20260612-150829.png?cb=c25c4742ab52ebc348f26bb7fe7a6974"
+    },
+    {
+      "alt": "image-png-Sep-11-2023-10-05-07-3010-AM-20260612-151019.png",
+      "url": "https://docs.leapwork.com/__attachments/a_61d22dd25eccb57d218327892ee4a363de17e5d53bfaf5e173d9ad07bd85de98/image-png-Sep-11-2023-10-05-07-3010-AM-20260612-151019.png?cb=bd3ce7084624b52e792c868d856a9f76"
+    },
+    {
+      "alt": "image-20260119-140333.png",
+      "url": "https://docs.leapwork.com/__attachments/a_8ad3d9a22ac937dafa870c9020d6f79b4827f68b954ba7df314515cf0e2b084a/image-20260119-140333.png?cb=0c7b1e147471b60d8b06899ef92b6e86"
+    },
+    {
+      "alt": "image-png-Sep-11-2023-10-29-00-6932-AM-20260612-151144.png",
+      "url": "https://docs.leapwork.com/__attachments/a_b1ec4d92dc6893d1d0f4218086ca7a39b0909470f2926b56d056b90ceafc1aa5/image-png-Sep-11-2023-10-29-00-6932-AM-20260612-151144.png?cb=6a900ac1686ead9c22ff4ee5ab3e48c2"
+    },
+    {
+      "alt": "image-20260316-124657.png",
+      "url": "https://docs.leapwork.com/__attachments/a_55f1982015eebb99068cb6847131bd3c300fad28b126970bb0ef8556c99a3384/image-20260316-124657.png?cb=9cc667297257098ed7401bafcec908df"
+    },
+    {
+      "alt": "image-png-Sep-11-2023-10-05-07-3010-AM.png?width=486&height=290&name=image-png-Sep-11-2023-10-05-07-3010-AM.png",
+      "url": "https://docs.leapwork.com/__attachments/a_060bba2eb6e65a97aac37c71134d92ae24d8534d81301e0f8f5f1f589f459b03/image-png-Sep-11-2023-10-05-07-3010-AM.png%3Fwidth=486&height=290&name=image-png-Sep-11-2023-10-05-07-3010-AM.png?cb=70f4b543a9f08b8b97a03b72bbbd8e32"
+    },
+    {
+      "alt": "image-png-Sep-11-2023-10-29-00-6932-AM-20260612-151448.png",
+      "url": "https://docs.leapwork.com/__attachments/a_2164265434d95e5a5041cb4eabc6c872426aa109327629698364f57234b09318/image-png-Sep-11-2023-10-29-00-6932-AM-20260612-151448.png?cb=6a900ac1686ead9c22ff4ee5ab3e48c2"
+    },
+    {
+      "alt": "Picture5-1-20260612-151533.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d9669143e9b89f3665e592851eb9877931969ce41123e948aef3f8b5d25cbad5/Picture5-1-20260612-151533.png?cb=4af724d258961fb5dc09d486e7318549"
+    },
+    {
+      "alt": "Picture6-20260612-151548.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f5dbacc7c42e2d6bfd787b6e84ce30e061c7b9a8f0cdf6c4338c02abcd34be46/Picture6-20260612-151548.png?cb=2141f2db31e6504cf7dc288cb78d91f3"
+    },
+    {
+      "alt": "Picture7-1-20260612-151625.png",
+      "url": "https://docs.leapwork.com/__attachments/a_e01b594fae01ada2ed7b48d176b4724a7ad19913677f47d5ce9e3418f24b28a4/Picture7-1-20260612-151625.png?cb=3155a7b5a161c5e01a190f30fcdcbf72"
+    },
+    {
+      "alt": "image-png-Sep-11-2023-11-46-17-9227-AM-20260612-151729.png",
+      "url": "https://docs.leapwork.com/__attachments/a_2ce72f2c743eff3e6e5b61071f7f97e5880ad85adaff4039070b4d6dc415916d/image-png-Sep-11-2023-11-46-17-9227-AM-20260612-151729.png?cb=667fe0d6dba7cdab4b2c8558cc93332f"
+    },
+    {
+      "alt": "image-20260302-114735.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d7b0ab2d5e62dced7dda379dd6037e16d9127dc99615326f283adb1c3bc15f4b/image-20260302-114735.png?cb=d793376a789e2de11d8da185def12d95"
+    }
+  ]
+}

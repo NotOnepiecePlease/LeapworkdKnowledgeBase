@@ -1,5 +1,5 @@
 CADERNO LEAPWORK — MINHAS ANOTAÇÕES
-Exportado em 14/11/2026, 00:09:38
+Exportado em 14/11/2026, 23:28:25
 
 Módulo 1 · 01. Seu primeiro fluxo web
 Status: revisada
@@ -262,5 +262,69 @@ Status: a revisar
 Sem anotações.
 
 Módulo 3 · 19. Laboratório: validar, calcular e registrar
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 01. Identificar o Controller e os recursos do ambiente
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 02. Organizar usuários, equipes e permissões
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 03. Preparar conexões, chaves e notificações
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 04. Preservar evidências e planejar a retenção
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 05. Conferir padrões de execução e captura
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 06. Preparar e verificar um Agent remoto
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 07. Organizar fluxos em Run Lists e passos
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 08. Definir repetição sem esconder falhas
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 09. Planejar horários, distribuição e filas
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 10. Investigar resultados com relatório, vídeo e log
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 11. Montar dashboards com contexto e comparação
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 12. Correlacionar auditoria, mudanças e diagnóstico
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 13. Registrar mudanças e consultar o histórico
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 14. Escolher Only Flow, Full Restore ou Full Copy
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 15. Exportar, importar e conferir dependências
+Status: a revisar
+Sem anotações.
+
+Módulo 4 · 16. Laboratório: planejar, observar e recuperar
 Status: a revisar
 Sem anotações.

@@ -1,0 +1,70 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/organizing-your-work",
+  "title": "Organizing your work",
+  "retrievedAt": "2026-11-15T02:14:18.741385+00:00",
+  "text": "Breadcrumbs\nWhen you begin working with Leapwork, it is essential to understand how automation flows, resources, data, etc. are organized. Arranging and categorizing your assets is straightforward and doing it right from the start will save you time and effort later.\nIn Leapwork, all automation flow-related assets (flows, reusable Sub-flows, web and desktop elements, images, data files, etc.) are shown in an explorer-style tree view. You can access this tree view from the main menu in Leapwork Flow by clicking\nFlows\n, as shown in the image below.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nLet’s explore the different elements within the Flows menu.\nFolders\nThe folders in the tree-view structure are the key to organizing your automation flows and related assets.\nTo create a folder:\nClick\nNew.\nSelect\nFolder\n. You can also right-click anywhere in the tree-view.\nClick\nNew Folder\n.\nThe figure below shows an example of how to organize a project.\nAn example of project organization:\nCreate a top-level folder with the name of the project, then add multiple folders dividing the project into features, sprints, products or similar. Each sub-folder can hold one or more automation flows, and the flows can hold any number of sub-flows (reusable parts of a flow), captured web elements, data files, etc.\nFlows\nAll automation in Leapwork is built as flows. In test automation, a\nflow\nis a test case. In RPA, a\nflow\nis a business process.\nFlows can be created in two ways, either you can:\nClick on the\nNew\nbutton\nfrom top menu in the 'Flows' section, then click\nFlow\n.\nOr simply right-clicking on a folder and selecting\nFlow\nand then the\nManual\noption opens the create new flow screen.\nOnce a flow is created, you can give it a name. If it is not located in the correct folder, simply drag and drop it into the required folder.\nYou can organize all parts of your automation flows, like\nSub-flows\nand captured elements, into a hierarchy. This arrangement helps you see which assets are part of which flows and makes it easier to move an entire flow, along with its assets, to different folders.\nThe below image shows how the organization of a simple web automation flow looks like:\nFor example, the\nRB_Phase 2 flow\nincludes a Sub-flow named '\nLaunch_bookdepository'\n, a captured element of type text box from the web page named '\ntext<input>'\n, an Excel-sheet named '\nbookdepository.xlsx'\nused for data-driven purposes and a few more elements.\nSub-Flows\nA\nSub-flow\nis an automation flow that can be re-used as a component inside other automation flows. Using Sub-flows is considered best practice because it allows you to encapsulate functionality in global components, making maintenance much easier.\nRead more about Sub-flows\n.\nYou can create a Sub-flow in two ways:\nClick the\nNew button\nand select\nSub-flow\nto start with an empty Sub-flow.\nCreate the\nSub-flow\nfrom an existing automation flow. Do this by selecting the building blocks in the Flow that will make up the Sub-flow, then right-click and select\nCreate Sub-flow\n.\nAfter naming a Sub-flow, the Sub-flow is added as an asset under the parent Flow in the tree-view and can be reused in any other Leapwork automation Flow. A Sub-flow can be placed under any other folder structure (tree-view) as required.\nIn some cases, it makes sense to organize all existing Sub-flows in a structure separate from the regular automation flows. Keeping Sub-flows in a separate folder makes them easier to find and reuse.\nUpload file\nWith the Upload file option, you can add any data file as part of a flow (Excel-sheet, CSV-file, etc.).\nCaptured elements, or Locators\nDesigning automation flows includes capturing elements in the applications being automated. In Leapwork, this means fetching some information about an element in the application, e.g., the ID of a field, the name of a button, the area containing specific text, etc. The information or you can say the properties of elements are called\nLocators\n, and these are an essential part of every automation flow. They contain information used during flow execution to find and manipulate the given element.\nAlmost any application or website can be automated with Leapwork, including web applications, mobile websites, desktop applications of any kind, applications running in Citrix, etc. Automating different kinds of technologies creates different Locators. Hierarchically, all Locators are positioned in the tree-view below the parent Flow they belong to.\nLet’s understand the different Locators in Leapwork:\nWeb Elements\nA Web Element contains all information about a web control in a web environment, e.g., the HTML structure of a website element with a screenshot of the control.\nDesktop Elements\nA Desktop Element contains all information about a desktop control in a desktop application. For example, the hierarchy of a desktop Control with the screenshot of the control.\nImages\nTo automate\nvirtual\napplications, Leapwork uses Optical Character Recognition (OCR) - or 'image and text recognition' - to identify elements, read text, click buttons, etc. When creating automation flows for virtual applications, an image of a given control or element is captured, and the captured image is then used by the OCR engine to perform the required operation on-screen during flow execution.\nImage Collection\nThe Image Collection functionality allows you to collect captured images and organize in one place. For example, you can capture the same button in different states (no focus, in focus, hovered, pressed) and in different resolutions, then add all captured images to one image collection.",
+  "links": [
+    {
+      "title": "Flows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/flows"
+    },
+    {
+      "title": "Sub-flows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/sub-flows"
+    },
+    {
+      "title": "Read more about Sub-flows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/sub-flows"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260520-114824.png",
+      "url": "https://docs.leapwork.com/__attachments/a_eed5590b4ad025258b9990e97b7b25de8c9ca588437d1ae53c616eaf8c4437b6/image-20260520-114824.png?cb=bfdfc50cf30b23560aefcf0028264b39"
+    },
+    {
+      "alt": "organizing_your_work_2",
+      "url": "https://docs.leapwork.com/__attachments/a_457ae0213ccc1ecf2ef0a54100566d453fd55e1d7d42d3ebf0487de8d7438ce3/organizing_your_work_2.png%3Fwidth=419&height=589&name=organizing_your_work_2.png?cb=cf2fd8aec29b9a689dd58b8b9c49c487"
+    },
+    {
+      "alt": "organizing_your_work_3",
+      "url": "https://docs.leapwork.com/__attachments/a_4128a76bef58debe513394693c517b9ddee1600773935dbf2f8a5e9a0c343cd1/organizing_your_work_3.png%3Fwidth=111&height=38&name=organizing_your_work_3.png?cb=92f00c31d21e8c1cf2cad459d72bd6eb"
+    },
+    {
+      "alt": "image-20260520-120555.png",
+      "url": "https://docs.leapwork.com/__attachments/a_cf5048446707da73e3dd14b692e3277008a71ba1315848384882c3e2ec175f0c/image-20260520-120555.png?cb=6bf72a3386fccd9b7e867048a56ea498"
+    },
+    {
+      "alt": "image-20260520-120926.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d555ec24b90105644d9c48fcca22ed40ac0c7a7a4c41664298120300cb3abd2a/image-20260520-120926.png?cb=f6ed569e9d234eb50b67d0ad0e058ee1"
+    },
+    {
+      "alt": "organizing_your_work_8",
+      "url": "https://docs.leapwork.com/__attachments/a_4abd47d250137e3a79458d3b139d338d62b51d9dabe53b2fa845211cc9b363d1/organizing_your_work_8.png%3Fwidth=314&height=257&name=organizing_your_work_8.png?cb=5c4101235247c6146ba6994c6ef88f19"
+    },
+    {
+      "alt": "organizing_your_work_5",
+      "url": "https://docs.leapwork.com/__attachments/a_6701925df3985c2e5e983a72d19d566c679bb900366f7548a26266355af3ab58/organizing_your_work_5.png%3Fwidth=119&height=35&name=organizing_your_work_5.png?cb=ea24ef3da3a1db3dcabe83889765088e"
+    },
+    {
+      "alt": "organizing_your_work_6",
+      "url": "https://docs.leapwork.com/__attachments/a_2d126af3b81059d537b43986958b6716309d155bd664c3ed45d5eb4cbfeaf03f/organizing_your_work_6.png%3Fwidth=131&height=29&name=organizing_your_work_6.png?cb=a9df50ab1dfbf6e6c8cfc9aacb3619cd"
+    },
+    {
+      "alt": "Picture10",
+      "url": "https://docs.leapwork.com/__attachments/a_b130afb4a5a50e444cae7afa058bbef21f275ac76447aec94caf19bedb14923d/Picture10.png%3Fwidth=126&name=Picture10.png?cb=6e703b968d58d02792fc0d61f074b9b0"
+    },
+    {
+      "alt": "Picture11",
+      "url": "https://docs.leapwork.com/__attachments/a_fad064761c6102f74e6d30714a835caa0df4480cd465f3c5692ec4801a1f8c0e/Picture11.png%3Fwidth=286&name=Picture11.png?cb=b133e7cde82b7ec801aca93c59ca8e52"
+    },
+    {
+      "alt": "Picture4",
+      "url": "https://docs.leapwork.com/__attachments/a_f75d09277b04a74224f56145dc43015ce9a2e184e58665e9a2be5c75d3d453de/Picture4.png%3Fwidth=146&name=Picture4.png?cb=1dc138d7cd6d27699a7f6083bc78a5ea"
+    },
+    {
+      "alt": "Picture3",
+      "url": "https://docs.leapwork.com/__attachments/a_18a4ee853ef1c6bc6cebaafab39170915ed2254343003f4d0f04f4bb047e412d/Picture3.png%3Fwidth=237&name=Picture3.png?cb=bf5e5b0ae958c62218e50407fdf3aea1"
+    }
+  ]
+}

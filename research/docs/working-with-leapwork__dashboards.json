@@ -1,0 +1,37 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/dashboards",
+  "title": "Dashboards",
+  "retrievedAt": "2026-11-15T02:15:20.325068+00:00",
+  "text": "Breadcrumbs\n﻿\nDashboards give you a clear, visual view of your automation run results.\nThey make it easy to track performance, understand trends, and quickly share insights with colleagues and management.\nYou can create multiple dashboards, making it easy for each user, project, business unit, or product area to have their own customized visual overview.\nA dashboard consists of one or more widgets, each showing the configured results of the automation flow runs.\nThe following widgets are available in the dashboard:\nFlow Trending Area\nFlow Trending Bar\nMost Failed\nPie Chart\nLeapwork Flow can be configured to run in full-monitor-mode, allowing the dashboards to be shown on a monitor.\nCreate New Dashboard\nTo create a new dashboard:\nClick on\nDashboards\non the main menu to open the dashboard area.\nClick New.\nSelect\nDashboard\n. This will add a new dashboard to the list of dashboards and allow you to specify a title for the new dashboard.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nClick on\nAdd New Widget\nsection to add a new widget to the dashboard. This will open the\nCreate New Widget\ndialogue.\nUsing\nDescription\ntab, you can define the widget details by entering the title, selecting the widget type, choosing a time span, and setting the number of flows to include.\nEnter the information in the fields as described below.\nTitle\nChoose a relevant title for the widget.\nWidget Type\nChoose from the following widget types: Flow trending Area, Flow trending Bar, Most Failed, Pie Chart.\nTimespan\nDefine the timespan of the results to be displayed.\nNumber of Rows\nDefines how many flows are included or displayed in the widget\nDepending upon the Widget type chosen, additional properties to filter results can also be set.\nAggregate\nThe dashboard results can be aggregated if the widget type is “Flow Trending Area” or “Flow Trending Bar”. This aggregation can be done by day, week, or month based on the timespan selected.\nNumber of flows\nThis is applicable if the widget type is “Most Failed”. It allows you to set the number of flows for which the result should be shown on dashboard.\nTime taken\nA checkbox 'Time taken' is available for widget type “Flow Trending Bar”, which displays additional information for time taken as data points.\nUsing\nFlows\ntab\n,\nyou can choose which automation results to be shown in the widget by selecting the flows or folders you want to include.\nSelect the flows and click\nSave\n.\nUsing\nAgents\ntab\n,\nyou can filter the results shown in the widget by selecting one or more environments. Only automation runs executed in those environments will be displayed.\n6. Select the agents accordingly and click\nSave\n.\nUsing\nRun Lists\ntab\n,\nyou can see results only from automation runs triggered by specific run lists or schedules.\nSelect the Run Lists and click\nSave.\nThe new widget has been added to the dashboard.",
+  "links": [],
+  "images": [
+    {
+      "alt": "image-20260601-114139.png",
+      "url": "https://docs.leapwork.com/__attachments/a_e777862119a849915d59d3ffc791de3a5b17e33ac07dd57ae7b8bfb1333ecb31/image-20260601-114139.png?cb=61a7816c5be2cedb13cd64696693539e"
+    },
+    {
+      "alt": "image-20260602-095912.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d987163591b1ae07273f918fe7dc5cbba0b4d7bccf787134d8a0fe57997d6f2c/image-20260602-095912.png?cb=73e1c7e8da238c4f9c050ad78ab3789c"
+    },
+    {
+      "alt": "image-20260601-120835.png",
+      "url": "https://docs.leapwork.com/__attachments/a_0ee850de202772caca3652e0c59ba8a34378971d06e2ccace36e6421e950bb1d/image-20260601-120835.png?cb=9765bf7ff4670c24894028a63c72d229"
+    },
+    {
+      "alt": "image-png-Jun-09-2023-09-09-54-2114-PM.png?width=700&height=440&name=image-png-Jun-09-2023-09-09-54-2114-PM.png",
+      "url": "https://docs.leapwork.com/__attachments/a_74976c58d20d55df99a077e65526b047a41f42d2e69e43531bd251199983ccaa/image-png-Jun-09-2023-09-09-54-2114-PM.png%3Fwidth=700&height=440&name=image-png-Jun-09-2023-09-09-54-2114-PM.png?cb=01caa3202416c3e7edfbffc257e22dfa"
+    },
+    {
+      "alt": "image-20260601-120917.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d483ef44f081e1eb8f3143965c0288379aecc66e02181aff0cdeb907a6d85408/image-20260601-120917.png?cb=8b566a60b37eb05d14dee590bd96f90d"
+    },
+    {
+      "alt": "image-20260601-120949.png",
+      "url": "https://docs.leapwork.com/__attachments/a_946f92b2bf72a19d87610ac9175e17d1c0be4990cf449dc7be2e69554bb65ee0/image-20260601-120949.png?cb=e93e8921d8ff9e9d29efaa9993d5b794"
+    },
+    {
+      "alt": "image-20260602-095955.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f1ec9caf76425d0241c2916857fe4b91585eec6ae776ea7d712ca0417913d7b3/image-20260602-095955.png?cb=f4068152cc71fc88cb662a5956f89361"
+    }
+  ]
+}

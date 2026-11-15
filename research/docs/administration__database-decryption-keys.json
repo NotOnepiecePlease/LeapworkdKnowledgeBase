@@ -1,0 +1,17 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/database-decryption-keys",
+  "title": "Database Decryption Keys",
+  "retrievedAt": "2026-11-15T02:15:18.434436+00:00",
+  "text": "Breadcrumbs\nLeapwork stores all data, called Assets, encrypted in an embedded SQLite database. A Controller needs a\ndecryption key\nto access the database.\nRestoring a Leapwork system may involve creating a new Controller machine. To access the restored SQLite files, you need the decryption key.\nWhen Leapwork Flow first connects to a Controller without a license key for the SQLite files, it prompts you to enter a valid decryption key.\nTherefore, keeping the decryption key safe is crucial to your backup and restore strategy.\nGetting the Decryption Key\nUsers with Administrator privileges can access the decryption key on the Controller.\nGo to the Controller settings sections inside Settings\nRight click on the Controller instance you want to access:\nSelect\nShow database encryption key\nto find the key for accessing the database files.\nNotes\n:\nThe key is generated and stored in your Controller instance.\nIt is not visible or accessible to Leapwork staff, so they cannot help retrieving it.\nEach Controller instance has a unique key. To obtain the key for all Controllers in your environment, repeat the instructions for each instance.",
+  "links": [],
+  "images": [
+    {
+      "alt": "image-20260313-121458.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5221c038b8eef4f2c49e19f240d660a012e940cd6b51ae67d89a147ebdacbab1/image-20260313-121458.png?cb=76745ecec14dd734955c0b82ec02d8fc"
+    },
+    {
+      "alt": "image-20260313-121611.png",
+      "url": "https://docs.leapwork.com/__attachments/a_dec211250f5c7de5d4863693baff0b769db99783ceecea134d0f4eb997721064/image-20260313-121611.png?cb=0e7d5d465ce7f31326b98f982194c7c2"
+    }
+  ]
+}

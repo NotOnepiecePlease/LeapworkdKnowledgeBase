@@ -1,0 +1,70 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/mobile-configuration",
+  "title": "Mobile Configuration",
+  "retrievedAt": "2026-11-15T02:15:19.488860+00:00",
+  "text": "Breadcrumbs\nOnce a\nconnection\nis established, the\nMobile Configurations\ntab allows administrators to add and manage mobile devices (phones, tablets, etc.) for automation.\nNote:\nYou must define a\nconnection\nbefore adding any mobile devices. Only administrators can access Mobile Configuration settings.\nLeapwork supports two mobile configuration types:\niOS Device\nAndroid Device\nNote:\nIf you're using an Appium server connection, ensure all devices are also registered on the Appium server before adding them to Leapwork.\niOS Device Configuration:\nIn the\nMobile Configurations\ntab, click\nAdd\n.\nEnter a unique\nTitle\nand a brief\nDescription\n.\nClick\nAdd\nnext to\nMobile\nto open the configuration form.\nFill in the fields:\nCloud connection\n: Select the desired connection.\nOS type\n: Choose the operating system.\nThis information is available on either the physical device or the HeadSpin device information.\nDevice name\n: Enter a name for the device.\nPlatform version\n: Specify the OS version.\nThis information is available on either the physical device or the HeadSpin device information.\nUDID\n: Enter the\ndevice's UDID\n.\nXcodeOrgId\nand\nXcodeSigningId\n: Retrieve these from your Apple Developer account.\nCapturing type\n:\nScreenshot\n: Captures screenshots per block. Recommended for most use cases.\nStreaming\n: Captures full-frame video. Requires more bandwidth and storage.\nClick\nTest configuration\nto verify the setup.\nClick\nApply\nto register the changes.\nClick\nSave\n.\nA confirmation message appears and the new configuration is listed under\nMobile\n.\nAndroid Device Configuration\nOpen the\nMobile Configurations\ntab and click\nAdd\n.\nProvide a unique\nTitle\nand a short\nDescription\n.\nClick\nAdd\nnext to\nMobile\nto open the configuration form.\nFill in the fields:\nCloud connection\n: Select the desired connection.\nOS type\n: Choose the operating system.\nThis information is available on either the physical device or the HeadSpin device information.\nDevice name\n: Enter a name for the device.\nPlatform version\n: Specify the OS version.\nThis information is available on either the physical device or the HeadSpin device information.\nUDID\n:se the command\nadb devices\nin the terminal to retrieve it.\nCapturing type\n:\nScreenshot\n: Captures screenshots by block. Recommended for most cases.\nStreaming\n: Captures full-frame video. Requires more bandwidth and storage.\nClick\nTest configuration\nto verify the setup.\nClick\nApply\nto register the changes.\nClick\nSave\n.\nA confirmation message appears and the new configuration is listed under\nMobile\n.\nTo edit or delete a configuration, use the\nEdit\nor\nDelete\nbuttons beside the mobile device entry.",
+  "links": [
+    {
+      "title": "connection",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections"
+    },
+    {
+      "title": "connection",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections"
+    },
+    {
+      "title": "device's UDID",
+      "url": "https://support.leapwork.com/s/article/How-to-obtain-Udid-in-Appium"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260313-144006.png",
+      "url": "https://docs.leapwork.com/__attachments/a_3a30edd7511ab939092f03e4a180626e2a2f4d4a4ea14cf31a646b64ba4966fc/image-20260313-144006.png?cb=e0ccbe9796efbb443238595d32dfae60"
+    },
+    {
+      "alt": "image-20260123-113223.png",
+      "url": "https://docs.leapwork.com/__attachments/a_b9eb6c25371657a4d5b70cc5c50978f8b4efea9beff08280364bb8eb238e0e04/image-20260123-113223.png?cb=b7c3d2a173f59efe3b37e434903d5471"
+    },
+    {
+      "alt": "image-20260123-113248.png",
+      "url": "https://docs.leapwork.com/__attachments/a_0fbba457f2858df2362da2bfb5a3fb2344d7eee5f130a5e47b544aa8ec779b57/image-20260123-113248.png?cb=795a0a79cb2e5b509df31bda511079c5"
+    },
+    {
+      "alt": "image-20260123-113316.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f1d547b2413e5ec50bbcb9004f0b4b61cb60ab5516268299792ff0643695ec6f/image-20260123-113316.png?cb=1f1ebebaa224cd40f9ddad2d4b3cd1f5"
+    },
+    {
+      "alt": "image-20260123-113332.png",
+      "url": "https://docs.leapwork.com/__attachments/a_a1613539b8f0d077ed13072301f3043c8bdf4bed485ce066a8b24bed2b6d5d7b/image-20260123-113332.png?cb=fd774b074c4721b82c8b840e2433c07f"
+    },
+    {
+      "alt": "image-20260123-113409.png",
+      "url": "https://docs.leapwork.com/__attachments/a_564253cd585b10f634f3565499a8b7b7d8f23f04af47b1eeb9a44282c125b1a5/image-20260123-113409.png?cb=52347d9b726ce56e473ceb6905e92d07"
+    },
+    {
+      "alt": "image-20260123-113437.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f6110cf1688950171011d8adbc874b9eb161e5f54cf8758ea3bb5aeebb25a4da/image-20260123-113437.png?cb=3b46d773783346765159cd203893bcc2"
+    },
+    {
+      "alt": "image-20260123-113503.png",
+      "url": "https://docs.leapwork.com/__attachments/a_4c1205b090e7a4bee3b4699d9f71fd97837dbbe8d578b523517d5a43f7a0217c/image-20260123-113503.png?cb=982286dc89d777bd2ed075e9fe85f8cc"
+    },
+    {
+      "alt": "https://www.leapwork.com/hs-fs/hubfs/image-png-Mar-07-2023-06-19-19-8007-AM.png?width=492&height=102&name=image-png-Mar-07-2023-06-19-19-8007-AM.png",
+      "url": "https://www.leapwork.com/hs-fs/hubfs/image-png-Mar-07-2023-06-19-19-8007-AM.png?width=492&height=102&name=image-png-Mar-07-2023-06-19-19-8007-AM.png"
+    },
+    {
+      "alt": "image-20260123-113540.png",
+      "url": "https://docs.leapwork.com/__attachments/a_988ded2f108ef448481a84449022434585bdc861ec8e762af9b34c780c63648e/image-20260123-113540.png?cb=cbe47d36b590a49dd6562017ea151b8e"
+    },
+    {
+      "alt": "image-20260123-113617.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f8eb3e3ebbf9b7728dd8a5a7b733acbe25151f2e4688a117f8fb75c2d47e2ec5/image-20260123-113617.png?cb=bbbbd62cc4681609402ec4b420d28996"
+    },
+    {
+      "alt": "image-png-Mar-07-2023-06-21-24-2967-AM.png?width=1077&height=290&name=image-png-Mar-07-2023-06-21-24-2967-AM.png",
+      "url": "https://docs.leapwork.com/__attachments/a_3e88de711cc54b19f344926736c106af87e80402ee26531c7d462905c518d79d/image-png-Mar-07-2023-06-21-24-2967-AM.png%3Fwidth=1077&height=290&name=image-png-Mar-07-2023-06-21-24-2967-AM.png?cb=28176d6ed4de6b0e07cb981986f34748"
+    }
+  ]
+}

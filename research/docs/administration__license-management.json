@@ -1,0 +1,38 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/license-management",
+  "title": "License Management",
+  "retrievedAt": "2026-11-15T02:15:18.880798+00:00",
+  "text": "Breadcrumbs\nAs a Leapwork user, your license type (Trial, Platform, or Enterprise License) determines your access to the Leapwork Automation Platform.\nNote:\nLicense Management settings are available if you are logged in as an administrator. For more information, please refer to\nlicenses and deployment\n.\nAll licenses are installed on the\nController\nusing\nFlow\nas the interface. For installation and activation details, see the\nDownload and Installation Guides\n.\nLicense Types:\nTrial License\n: Short-term, limited feature access for evaluation.\nPlatform License\n: For teams needing to collaborate on designing, maintaining, and running automation flows.\nEnterprise License\n: For large-scale deployments requiring all the features.\nOne controller will be associated with one license.\nThe active license configuration can be found in\nLicense Management\nunder the\nSettings\nsection.\nAdd License\nThe\nAdd a License\nbutton is disabled when the customer's\nlicense is active\n. When the current license expires, the button will be enabled, allowing the purchase of a new license.\nThis ensures a seamless transition and continuous use of the product without interruptions.\nRefresh License\nRefreshing the license updates changes such as adjustments to the number of users, agents,\nAI Blocks\n, or\nCloud Blocks\n. This process grants access to important features, ensuring the correct configuration and optimal performance of your Leapwork platform.\nTo refresh:\nClick the\nRefresh License\nbutton.\nClick\nRefresh\n.\nNote:\nWhen Customer Support requests a license refresh, it is essential to follow their instructions.\nDeactivate License\nYou can deactivate a license to migrate the license to another\nController\nmachine.\nTo deactivate:\nClick the\nDeactivate License\nbutton.\nClick\nDeactivate\n.\nNote:\nIf the last active license is removed from a\nController\n, you must add a new license before it becomes accessible.",
+  "links": [
+    {
+      "title": "licenses and deployment",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/licensing-and-deployment"
+    },
+    {
+      "title": "Download and Installation Guides",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/download-and-install"
+    },
+    {
+      "title": "AI Blocks",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/ai-blocks"
+    },
+    {
+      "title": "Cloud Blocks",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/cloud"
+    }
+  ],
+  "images": [
+    {
+      "alt": "license info 1-20260612-144059.png",
+      "url": "https://docs.leapwork.com/__attachments/a_48d8428d8a48114eca77ecf60df5630dd2f445eee31467a8b0e260db356b1faf/license%20info%201-20260612-144059.png?cb=a06dd3a01491f588a302332fc8a7ed51"
+    },
+    {
+      "alt": "image-20260611-121858.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f56c6e72f5a0a0b68b014db240b80dcbf0863b26b505df896578e68b2c473fe3/image-20260611-121858.png?cb=7e88e694ee48fa8f884ea799561d42ed"
+    },
+    {
+      "alt": "image-21-20260612-143919.png",
+      "url": "https://docs.leapwork.com/__attachments/a_2822d3385002ccf31e4c0b5dcb6d47ccf5a43d31e4aa86195da9e3e43bf42dc8/image-21-20260612-143919.png?cb=33ed81629994fe76fbdf790be5b719ad"
+    }
+  ]
+}

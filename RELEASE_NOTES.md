@@ -1,29 +1,28 @@
-# v1.0.0 · Caderno de estudo Leapwork
+# v1.1.0 · Módulo 4: administração e controle
 
-Primeira versão para estudar localmente, em português: 66 aulas nos módulos 1, 2 e 3, com 299 etapas, imagens, 14 GIFs, revisões, glossário e laboratório de dados.
+O módulo 4 está disponível para estudo em português, com 16 aulas, 64 passos, 32 questões de revisão e dois laboratórios que funcionam offline.
 
-## Qual arquivo baixar
+- Administração: Controller, licença, usuários, equipes, permissões, conexões, retenção e padrões de execução/captura.
+- Execução: Agent remoto, Run Lists, novas tentativas, distribuição e agendamentos.
+- Monitoramento: relatórios, dashboards, auditoria e diagnóstico.
+- Versões: histórico, Only Flow, Full Restore, Full Copy e compartilhamento de ativos.
+- Laboratórios: distribuição de fluxos, comparação de restauração e ficha JSON para download.
 
-- **LeapworkKnowledgeBase-v1.0.0-completo.zip**: caderno com os 48 vídeos locais; aproximadamente 1,12 GB. Permite estudar offline.
-- **LeapworkKnowledgeBase-v1.0.0-essencial.zip**: caderno, imagens, GIFs e laboratório; aproximadamente 63 MB. Para assistir aos vídeos, use os links dos originais na internet.
-- **SHA256SUMS.txt**: hashes dos dois ZIPs para conferir a integridade dos downloads.
+As aulas se baseiam na documentação oficial, com referências por passo e 12 imagens de interface. Os exemplos, exercícios e laboratórios são autorais. Não há vídeos novos neste módulo e nenhum fluxo foi executado no Leapwork durante a preparação.
 
-Extraia todo o ZIP e abra **Abrir caderno.cmd** no Windows, ou **site/index.html** no navegador em outros sistemas. Não é necessário instalar pacotes ou iniciar servidor. O README dentro do pacote inclui o tutorial e o sumário de todas as aulas.
+O caderno passa a ter **82 aulas e 48 termos no glossário**. O módulo 5 continua planejado, sem data definida. As mesmas chaves de notas e progresso foram preservadas; a mudança de pasta ou navegador ainda pode afetar o acesso aos dados locais.
 
-Os arquivos **Source code** gerados pelo GitHub não incluem os vídeos locais.
+## Como estudar
 
-## Conteúdo desta versão
+1. Baixe **LeapworkKnowledgeBase-v1.1.0-completo.zip** para incluir os 48 vídeos locais, ou **essencial.zip** para baixar somente o caderno, imagens, GIFs e laboratórios.
+2. Extraia todo o ZIP.
+3. Abra **Abrir caderno.cmd** no Windows, ou **site/index.html** em outros sistemas.
+4. Entre em **04 · Administração e controle**.
 
-- Módulo 1: fundamentos de automação Web, Desktop e Virtual, com 15 aulas.
-- Módulo 2: automação avançada, com 29 exemplos Web e 3 aulas Desktop.
-- Módulo 3: dados e manipulação, com 19 aulas; uma baseada em vídeo oficial e 18 em documentação, além de um laboratório interativo no navegador.
-- Busca, temas claro/escuro, anotações por aula, exportação de notas e progresso salvo no navegador.
+O completo tem aproximadamente 1,12 GB; o essencial, 64 MB. Os valores exatos aparecem nos arquivos da release. **SHA256SUMS.txt** permite conferir os ZIPs. Os arquivos automáticos **Source code** não incluem os vídeos.
 
-## Planejado
+Antes de atualizar ou mover a pasta, use **Exportar minhas anotações** na versão anterior. A exportação serve para consulta e não oferece importação automática.
 
-- Módulo 4: administração, monitoramento e controle.
-- Módulo 5: boas práticas, integração e revisão do ciclo de testes.
+Os laboratórios não conectam máquinas nem emulam o Leapwork. A distribuição considera recursos disponíveis e não estima tempos reais; a restauração compara combinações fictícias de lógica e Locators. A prática no programa exige instalação, acesso e recursos compatíveis com a sua edição.
 
-Os próximos módulos ainda não têm data de entrega. O material atual foi preparado para estudo; os fluxos não foram executados no Leapwork. Para praticá-los no programa, é necessário ter acesso ao Leapwork. Exporte as notas antes de atualizar ou mover a pasta.
-
-Vídeos e imagens oficiais têm seus créditos e referências nas aulas. Este é um projeto de estudo independente, sem afiliação oficial com a Leapwork.
+Os artigos do portal de suporte não carregaram na consulta; os links foram mantidos e os temas foram estudados pela documentação atual. Os exercícios oficiais não foram reproduzidos. Vídeos e imagens têm as fontes identificadas no material; este é um caderno independente, sem afiliação oficial com a Leapwork.

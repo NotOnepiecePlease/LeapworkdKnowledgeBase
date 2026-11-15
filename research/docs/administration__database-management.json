@@ -1,0 +1,13 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/database-management",
+  "title": "Database Management",
+  "retrievedAt": "2026-11-15T02:14:35.576503+00:00",
+  "text": "Breadcrumbs\nThis section helps you repair sub-flow issues that can affect revision history and connectors.\nThe\nFix sub-flow’s revision\nand\nFix sub-flow’s connectors\nbuttons are available in Leapwork Flow, under Settings and then\nDatabase Management\n.\nUse\nFix sub-flow's revision\nhistory if you upgraded from an older Leapwork version and sub-flows fail because of revision history changes in the database.\nUse\nFix sub-flow's connectors\nif you upgraded from an older Leapwork version and sub-flows show multiple input or output connectors because of revision history changes in the database.\nNote:\nDatabase Management settings would be available if you are logged in as an administrator.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nFix sub-flow's revision history button\n: If you upgraded from an older Leapwork version and face flow failures in sub-flows due to revision history changes in the database, this is helpful.\nFix sub-flow's connectors button\n: If you upgraded from an older Leapwork version and face issues with sub-flows showing multiple input/output connectors due to revision history changes in the database, this is helpful.",
+  "links": [],
+  "images": [
+    {
+      "alt": "image-20260610-135814.png",
+      "url": "https://docs.leapwork.com/__attachments/a_c9e58e1d3f594bacc7309af252d7ee93c1c02b52169109bd4a6dcc5ecf4972ea/image-20260610-135814.png?cb=2bfb44245d6dab12bcc64b057e293403"
+    }
+  ]
+}

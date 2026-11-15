@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-capture-settings",
+  "title": "Capture Settings",
+  "retrievedAt": "2026-11-15T02:15:18.751846+00:00",
+  "text": "Breadcrumbs\nThe\nCapture\nprocess is an essential part of designing automation\nflows\n. Capturing an element in a building block means gathering information about the element, so that it can be found when the flow is executed. Examples include an ID of a field, text inside a link, a table row number, or an image on the screen.\nNote:\nCapture settings will be available if you are logged in as an administrator.\nThe\nCapture Settings\nsection sets default values for capturing elements in automation flows.\nDesktop and web inspection timeout\nDesktop and web inspection timeout defines the maximum duration of the individual capturing process in a building block. In other words, the time from selecting an element in the running application to capturing the information back into the building block.\nIf the building block cannot find the necessary information within the specified time, it cancels the capture operation.\nIf you experience frequent capture failures not caused by the automated application, performance issues on the Flow host machine may be the cause. Consider increasing these settings in that case.\nSearch browser timeout\nSearch browser timeout is the time Leapwork will allow a browser (or a tab in a browser) to be unresponsive before declaring a timeout.\nMouse mode while capturing\nThe\nMouse mode while capturing\nsetting is especially relevant when using Leapwork Flow via a VDI or similar virtual desktop context.\nThe default setting is\nOffset\n, which works perfectly for most users. Selecting\nPosition\nis relevant in the VDI/Virtual context. Here,Leapwork captures the pointer’s position to ensure accuracy.\nFor more information about Mouse mode, read this article on our Knowledge Base.\nCursor mode for Desktop UI\nLeapwork manages system mouse movement while inspecting Desktop applications, it does not affect Web automation at all. This option must be used in both single elements capturing mode and Smart Recorder.\nLock recording on selected screen in preview run\nCheck the\nLock recording on selected screen in preview run\ncheckbox to lock the recording on the desired screen during preview runs.\nClick\nSave\nbutton to store all details.",
+  "links": [
+    {
+      "title": "flows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/flows"
+    },
+    {
+      "title": "For more information about Mouse mode, read this article on our Knowledge Base.",
+      "url": "https://support.leapwork.com/s/article/IamgettingabruptmousemovementsmousejumpsacrossthescreenOffsetandPositionoptions63307e1c7d4d9"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260611-115416.png",
+      "url": "https://docs.leapwork.com/__attachments/a_afd6305358d79d960258c18ba16b2c4c0c48b4346099bb9dbc38977d16c0d93b/image-20260611-115416.png?cb=b93eef0772040447cc065f61e3b64a27"
+    }
+  ]
+}

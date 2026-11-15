@@ -1,0 +1,278 @@
+[
+  {
+    "path": "administration",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration",
+    "title": "Administration",
+    "retrievedAt": "2026-11-15T02:14:18.163790+00:00"
+  },
+  {
+    "path": "administration/controller-settings",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/controller-settings",
+    "title": "Controller Settings",
+    "retrievedAt": "2026-11-15T02:14:34.990573+00:00",
+    "size": [
+      741,
+      666
+    ],
+    "image": "assets/docs/m4-controller-settings.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_0f9b6776b4bd6284b0788f02aa69992a0b5f40b467461d967388200d543fddf9/image-20260227-120137.png?cb=72fde130caff0ef63f335cdad1a7c3a3"
+  },
+  {
+    "path": "administration/user-management",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/user-management",
+    "title": "User Management",
+    "retrievedAt": "2026-11-15T02:15:16.804148+00:00",
+    "size": [
+      1005,
+      1007
+    ],
+    "image": "assets/docs/m4-user-management.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_5f666cc84f1d84eca278ec009bf189b706927c4595d16cb2fba64e821d94d333/image-20260612-150150.png?cb=ee49e46134c4e6bb54b8919da900a20e"
+  },
+  {
+    "path": "administration/emergency-admin-user",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/emergency-admin-user",
+    "title": "Emergency Admin User",
+    "retrievedAt": "2026-11-15T02:15:16.798245+00:00"
+  },
+  {
+    "path": "administration/team-management",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/team-management",
+    "title": "Team Management",
+    "retrievedAt": "2026-11-15T02:15:16.800113+00:00"
+  },
+  {
+    "path": "administration/wip-security",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-security",
+    "title": "Security",
+    "retrievedAt": "2026-11-15T02:15:17.406808+00:00"
+  },
+  {
+    "path": "administration/privileges-settings",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/privileges-settings",
+    "title": "Privileges Settings",
+    "retrievedAt": "2026-11-15T02:15:17.888983+00:00"
+  },
+  {
+    "path": "administration/workflow-stettings",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/workflow-stettings",
+    "title": "Workflow Settings",
+    "retrievedAt": "2026-11-15T02:15:18.208242+00:00"
+  },
+  {
+    "path": "administration/api-access-keys",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/api-access-keys",
+    "title": "API Access Keys",
+    "retrievedAt": "2026-11-15T02:15:17.788882+00:00"
+  },
+  {
+    "path": "administration/e-mail-settings",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/e-mail-settings",
+    "title": "E-mail Settings",
+    "retrievedAt": "2026-11-15T02:15:18.073218+00:00"
+  },
+  {
+    "path": "administration/proxy-settings",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/proxy-settings",
+    "title": "Proxy Settings",
+    "retrievedAt": "2026-11-15T02:15:18.350741+00:00"
+  },
+  {
+    "path": "administration/database-decryption-keys",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/database-decryption-keys",
+    "title": "Database Decryption Keys",
+    "retrievedAt": "2026-11-15T02:15:18.434436+00:00"
+  },
+  {
+    "path": "administration/database-management",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/database-management",
+    "title": "Database Management",
+    "retrievedAt": "2026-11-15T02:14:35.576503+00:00"
+  },
+  {
+    "path": "administration/default-flow-settings",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/default-flow-settings",
+    "title": "Default Flow Settings",
+    "retrievedAt": "2026-11-15T02:14:48.350202+00:00",
+    "size": [
+      355,
+      775
+    ],
+    "image": "assets/docs/m4-default-flow-settings.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_0cb556375d9b64846dff2aa6cd34b570faa6d994fb469f2ac1d90db00ed21f77/image-20260313-130827.png?cb=927d264a8dd8b033c666efd4cc9ae666"
+  },
+  {
+    "path": "administration/wip-web-settings",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-web-settings",
+    "title": "Web Settings",
+    "retrievedAt": "2026-11-15T02:15:18.615404+00:00"
+  },
+  {
+    "path": "administration/wip-capture-settings",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-capture-settings",
+    "title": "Capture Settings",
+    "retrievedAt": "2026-11-15T02:15:18.751846+00:00"
+  },
+  {
+    "path": "administration/retention-policies",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/retention-policies",
+    "title": "Retention Policies",
+    "retrievedAt": "2026-11-15T02:14:46.688837+00:00",
+    "size": [
+      1417,
+      662
+    ],
+    "image": "assets/docs/m4-retention-policies.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_d9d6cb9f9335c046cda2b3a6b9192e530dcc90a0b127e0799579a5944238a1dc/image-20260318-171758.png?cb=030456e477bc14217a0217a128d11e79"
+  },
+  {
+    "path": "administration/license-management",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/license-management",
+    "title": "License Management",
+    "retrievedAt": "2026-11-15T02:15:18.880798+00:00"
+  },
+  {
+    "path": "administration/audit-log",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/audit-log",
+    "title": "Audit Log",
+    "retrievedAt": "2026-11-15T02:14:48.746088+00:00",
+    "size": [
+      1420,
+      230
+    ],
+    "image": "assets/docs/m4-audit-log.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_f7bcc0e1728116213965db49fb21a0c51c161883e7abdcc2122aead2630e841f/image-20260313-132936.png?cb=2c6d1f9966eb017c9f9af9a7fb20689e"
+  },
+  {
+    "path": "administration/other-settings",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/other-settings",
+    "title": "Other Settings",
+    "retrievedAt": "2026-11-15T02:14:47.237898+00:00"
+  },
+  {
+    "path": "administration/connections",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections",
+    "title": "Connections",
+    "retrievedAt": "2026-11-15T02:15:19.152996+00:00"
+  },
+  {
+    "path": "administration/wip-azure-devops-connections",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-azure-devops-connections",
+    "title": "Azure DevOps Connections",
+    "retrievedAt": "2026-11-15T02:15:19.282549+00:00"
+  },
+  {
+    "path": "administration/mobile-configuration",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/mobile-configuration",
+    "title": "Mobile Configuration",
+    "retrievedAt": "2026-11-15T02:15:19.488860+00:00"
+  },
+  {
+    "path": "administration/active-directory-settings",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/active-directory-settings",
+    "title": "Active Directory Settings",
+    "retrievedAt": "2026-11-15T02:15:19.424877+00:00"
+  },
+  {
+    "path": "administration/diagnostics",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/diagnostics",
+    "title": "Diagnostics",
+    "retrievedAt": "2026-11-15T02:15:19.584502+00:00"
+  },
+  {
+    "path": "working-with-leapwork/agents-overview",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/agents-overview",
+    "title": "Agents Overview",
+    "retrievedAt": "2026-11-15T02:14:19.212758+00:00",
+    "size": [
+      1920,
+      1008
+    ],
+    "image": "assets/docs/m4-agents-overview.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_6cf47bc03e7f2dc7f794e98ea9692ff7a2451c68b47044fa420e0c21133b6b97/image-20260526-112734.png?cb=322684aba43c474ad7d8e9ff82330731"
+  },
+  {
+    "path": "working-with-leapwork/run-lists",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+    "title": "Run Lists",
+    "retrievedAt": "2026-11-15T02:15:20.298001+00:00",
+    "size": [
+      1920,
+      1008
+    ],
+    "image": "assets/docs/m4-run-lists.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_d5487b898f11f20cb372cf96b6a6f9ac95b3fe11d75c4ada256c9787c25904ae/image-20260526-123418.png?cb=1ca3949c6d3ad9c79d7fdac44f51f009"
+  },
+  {
+    "path": "working-with-leapwork/run-lists/schedules",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists/schedules",
+    "title": "Schedules",
+    "retrievedAt": "2026-11-15T02:14:19.801331+00:00",
+    "size": [
+      803,
+      934
+    ],
+    "image": "assets/docs/m4-schedules.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_10917d648e705feaa86a4d4e5d7700326473efba82b78998fd8d58737f98f563/image-20260527-071017.png?cb=132745da216f9a7dc6a64c2e24bcd893"
+  },
+  {
+    "path": "working-with-leapwork/reporting",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+    "title": "Reporting",
+    "retrievedAt": "2026-11-15T02:15:19.984574+00:00",
+    "size": [
+      1910,
+      508
+    ],
+    "image": "assets/docs/m4-reporting.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_44bf9dc8a655ac906527802fd746bf2f2d1c2a6d630de01192048b091c18b07b/image-20260527-114746.png?cb=39577361f3fdaac3257146a2f1e73434"
+  },
+  {
+    "path": "working-with-leapwork/dashboards",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/dashboards",
+    "title": "Dashboards",
+    "retrievedAt": "2026-11-15T02:15:20.325068+00:00",
+    "size": [
+      1706,
+      1004
+    ],
+    "image": "assets/docs/m4-dashboards.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_e777862119a849915d59d3ffc791de3a5b17e33ac07dd57ae7b8bfb1333ecb31/image-20260601-114139.png?cb=61a7816c5be2cedb13cd64696693539e"
+  },
+  {
+    "path": "working-with-leapwork/designing-automation-flows",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows",
+    "title": "",
+    "retrievedAt": "2026-11-13T18:44:20.610880+00:00",
+    "size": [
+      1413,
+      1007
+    ],
+    "image": "assets/docs/m4-designing-automation-flows.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_d03437325e0f0a72965c7715b2ba6daca27cd2de9e485f869e2e815c7e2959c5/image-20260313-102729.png?cb=b772030e773cd4a1f38056314f85a9e8"
+  },
+  {
+    "path": "working-with-leapwork/designing-automation-flows/flows",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/flows",
+    "title": "Flows‎",
+    "retrievedAt": "2026-11-15T02:14:34.550491+00:00",
+    "size": [
+      1920,
+      1008
+    ],
+    "image": "assets/docs/m4-flows.png",
+    "imageSource": "https://docs.leapwork.com/__attachments/a_eb4299fec8f9e58c37c1a6482f82e9f3d2f7c15ede16d89cc2862d4fb9ee6cd3/image-20260525-105709.png?cb=e340ebd9a4cf3ce00e1ccb1503808c44"
+  },
+  {
+    "path": "working-with-leapwork/organizing-your-work",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/organizing-your-work",
+    "title": "Organizing your work",
+    "retrievedAt": "2026-11-15T02:14:18.741385+00:00"
+  },
+  {
+    "path": "working-with-leapwork/git-version-control",
+    "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control",
+    "title": "Git Version Control",
+    "retrievedAt": "2026-11-15T02:14:46.242485+00:00"
+  }
+]

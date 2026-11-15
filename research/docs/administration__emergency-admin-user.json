@@ -1,0 +1,37 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/emergency-admin-user",
+  "title": "Emergency Admin User",
+  "retrievedAt": "2026-11-15T02:15:16.798245+00:00",
+  "text": "Breadcrumbs\nThe\nEmergency Admin User\nensures secure initial setup and access, provides critical system recovery options, and enables flexible role management. This\nenhances security compliance\nby enforcing robust password policies and offering essential administrative controls, crucial for maintaining system integrity and continuity in operations.\nConfiguration\nTo activate this emergency admin, follow the setup procedure:\nOpen Notepad in Administrator mode.\nOpen\ncontroller.config file\n(Program files > Leapwork > Controller).\nSet\nEnableInstallAdminValidation\nflag to True.\nSave the file.\nOpen services from start menu, right click\nLEAPWORK CONTROLLER\n.\nChoose\nRestart\n. A pop up appears.\nClick\nOK\n.\nNavigate back to the already open\ncontroller.config\nfile.\nClick\nReload\n.\nClick\nSave\n.\nValidate\nEnableInstallAdminValidation\nflag is set to true.\nLeapwork emergency admin configuration is successfully applied.\nLogout and login. Leapwork password prompt will appear.\nWhen you open the system, it will\nautomatically log you in\n. Next, you'll be prompted to set a password for the session.\nNote:\nRemember to follow the established password policies when choosing your password.\nPassword Policy for Emergency Admin User\nTo ensure robust security and compliance, a new stringent password policy for the Emergency Admin User is established. This user must change their password at every login.\nThis policy requires the creation of strong, secure passwords, the default values are:\nPassword Length\n: Must be at least 15 characters.\nCharacter Diversity\n: Include both uppercase and lowercase letters.\nComplexity\n: Must contain numbers and special characters.\nHistory Restriction\n: Cannot be any of the user's previous 12 passwords.\nNote:\nTo adjust the password policy settings, please make changes directly in the configuration file.\nIf you enter an incorrect password after changing it, the system will lock your account for 30 minutes.\nEmergency Admin in user management\nOther users\ncannot edit or delete\nthe Emergency Admin user, nor can they modify the password for this account, to prevent unauthorized changes that could compromise system security.\nAdditionally, the Emergency Admin user's credentials and roles\ncannot be modified via any API\n, preventing external programs or scripts from altering the user's status or permissions.",
+  "links": [],
+  "images": [
+    {
+      "alt": "image-20260702-103517.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5d07f58b5c25de246ae90a1686b6ad167a2ade553ea8915c2648aef745ff3266/image-20260702-103517.png?cb=213e470a45848ff8987cce7210d97680"
+    },
+    {
+      "alt": "image-20260302-102144.png",
+      "url": "https://docs.leapwork.com/__attachments/a_23364e0cf4fd0b8f3482a206b622dd24dc273745cf54ca32b0e7fb1263d5abc6/image-20260302-102144.png?cb=50973f38c3f389cc36843f773b871102"
+    },
+    {
+      "alt": "image-20260702-105058.png",
+      "url": "https://docs.leapwork.com/__attachments/a_02f9347b36d49469db85db9ff632eb7867458f731cf927f9b65585cd59200e13/image-20260702-105058.png?cb=38ce84876df5a62330db7351d909a4b7"
+    },
+    {
+      "alt": "Modal filled.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5e1b5873ca224802685c3b5ff13aad4bf023328dd5be44b7f3c53f984ab205a5/Modal%20filled.png?cb=9b08c5a763c86c4fbc2168eb885cd53a"
+    },
+    {
+      "alt": "Modal - filled.png",
+      "url": "https://docs.leapwork.com/__attachments/a_db01ece4543522441230f91b995a5a1e616b7f8dee99182b29091c7a1e3a9e69/Modal%20-%20filled.png?cb=d6594c638dc75e7941ccb4dbe67377d9"
+    },
+    {
+      "alt": "Modal - first attempt v2.png",
+      "url": "https://docs.leapwork.com/__attachments/a_bba24d46353c8b9b853922a1f45192148f05783fdeb09f69189b62774f6db016/Modal%20-%20first%20attempt%20v2.png?cb=40b2de867f90b0f0cd8b39bddebac133"
+    },
+    {
+      "alt": "image-20260702-115147.png",
+      "url": "https://docs.leapwork.com/__attachments/a_84fedf838a9f15894419f3e1ef412ba422ff5272512a760e5d22c543d9ea5919/image-20260702-115147.png?cb=611a4246c3ede0b08cf03bc58af92774"
+    }
+  ]
+}

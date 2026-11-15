@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/flows",
+  "title": "Flows‎",
+  "retrievedAt": "2026-11-15T02:14:34.550491+00:00",
+  "text": "Breadcrumbs\nWhat is a flow?\nIn Leapwork, a flow represents a complete automation sequence. Depending on how you use Leapwork, a flow can be:\nA\ntest case\n(\nin QA/testing contexts\n)\nA\nbusiness process\n(\nin RPA/operations contexts\n)\nYou create flows visually using Leapwork’s no-code canvas. Each flow uses connected building blocks to define the logic, and can include verification steps, branching, loops, data-driven logic, and references to reusable components.\nFlows are the core unit of automation in Leapwork, they define what runs, where it runs, and how it runs.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nFlows are visible in\ntwo places\nwithin Leapwork Flow:\nOn the\nleft\n, in the\nFlows panel\n, where they are listed in a folder tree structure along with their associated assets.\nOn the\nright\n, in the\nDesign Canvas\n, where the selected flow is opened and displayed as a series of connected building blocks.\nFrom the Flows panel, you can manage flow structure, while from the Design Canvas, you work with the actual logic and steps that make up the flow.\nEach flow may include nested assets, such as:\nSubflows\nCaptured Elements\nUploaded Files\nImage Collections\nTogether, these two areas represent both the\norganizational\nand\ndesign\nlayers of working with flows in Leapwork.\nWhat you can do with a flow\nWhen you right-click a flow, a context menu opens with options to manage and run it. From here, you can edit, organize, share, or execute your automation directly from the panel.\nAvailable actions\n:\nOption\nDescription\nNew Folder\nCreates a new folder at the same level\nNew Flow\nCreates a new flow\nNew Sub-flow\nCreates a standalone subflow\nUpload File\nAttaches a data file (e.g. Excel or CSV) to the flow\nEdit\nOpens the flow on the Design Canvas\nSet status to\nAssigns a custom status label (e.g. Draft, Ready for review, Published, Retired)\nAssign to\nAssigns the flow to a user/team (if configured)\nDelete\nRemoves the flow\nRename\nRenames the flow\nCopy\nCopies the flow\nPaste\nAvailable after copying; opens the Copy modal to complete the action, where you can choose to copy or duplicate the flow\nShare\nOpens the Share Flow modal, allowing you to copy a link or send it via email\nImport\nImports a single flow from a zip file\nImport Folder\nImports a folder containing flows/assets\nExport\nExports the flow as a zip file\nExport As Folder\nExports the flow and its assets into a folder structure\nVersion History\nOpens the version control panel\nRun Now\nExecutes the flow using the selected agent\nMigrate To\nMigrates a standard flow to a D365 F&O or Salesforce Fusion flow using Web blocks only; non-Web blocks are skipped. Does not support folders, subflows, or bulk migration. Requires Local Agent.\nAdd to Run List\nAdds the flow to a run list and lets you choose the specific step where it will be placed.\nShow Usage\nDisplays the run lists where the flow is used\nRemove Unused Elements\nDeletes unused elements, images, and data from the flow or folder to improve clarity and reduce clutter\nExpand / Collapse\nExpands or collapses nested items under the flow\nGet ID\nCopies the internal ID of the flow for integrations\nOrganizing Flows\nFlows can be:\nRenamed\nMoved across folders (drag-and-drop)\nDuplicated or reused as subflows\nMigrated.\nClear folder structures and flow naming conventions make it easier to scale and maintain automation over time.\nFor a complete explanation of how to build, connect, run, and manage flows, see the section on\nhow to design a flow\n.",
+  "links": [
+    {
+      "title": "Subflows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/sub-flows"
+    },
+    {
+      "title": "how to design a flow",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260525-105709.png",
+      "url": "https://docs.leapwork.com/__attachments/a_eb4299fec8f9e58c37c1a6482f82e9f3d2f7c15ede16d89cc2862d4fb9ee6cd3/image-20260525-105709.png?cb=e340ebd9a4cf3ce00e1ccb1503808c44"
+    }
+  ]
+}

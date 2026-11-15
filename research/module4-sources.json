@@ -1,0 +1,270 @@
+{
+  "consultedAt": "2026-11-14",
+  "course": "https://leapwork.com/learning-center/self-paced-training/",
+  "module": "Module 4: Leapwork Administration, Monitoring & Control",
+  "sourceKind": "documentation",
+  "lessonCount": 16,
+  "stepCount": 64,
+  "questionCount": 32,
+  "newVideos": 0,
+  "coverage": [
+    {
+      "topic": "Administração",
+      "documentation": "administration",
+      "lesson": "controle-ambiente"
+    },
+    {
+      "topic": "Remote Agent",
+      "documentation": "working-with-leapwork/agents-overview",
+      "lesson": "controle-agentes"
+    },
+    {
+      "topic": "Run Lists",
+      "documentation": "working-with-leapwork/run-lists",
+      "lesson": "controle-runlists"
+    },
+    {
+      "topic": "Schedules",
+      "documentation": "working-with-leapwork/run-lists/schedules",
+      "lesson": "controle-agendamentos"
+    },
+    {
+      "topic": "Reporting",
+      "documentation": "working-with-leapwork/reporting",
+      "lesson": "controle-relatorios"
+    },
+    {
+      "topic": "Dashboards",
+      "documentation": "working-with-leapwork/dashboards",
+      "lesson": "controle-dashboards"
+    },
+    {
+      "topic": "Version history",
+      "documentation": "working-with-leapwork/designing-automation-flows/flows",
+      "lesson": "controle-historico"
+    },
+    {
+      "topic": "Restore",
+      "documentation": "working-with-leapwork/designing-automation-flows",
+      "lesson": "controle-restauracao"
+    },
+    {
+      "topic": "Export/import",
+      "documentation": "working-with-leapwork/designing-automation-flows/flows",
+      "lesson": "controle-compartilhamento"
+    }
+  ],
+  "documents": [
+    {
+      "path": "administration",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration",
+      "retrievedAt": "2026-11-15T02:14:18.163790+00:00"
+    },
+    {
+      "path": "administration/controller-settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/controller-settings",
+      "retrievedAt": "2026-11-15T02:14:34.990573+00:00"
+    },
+    {
+      "path": "administration/user-management",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/user-management",
+      "retrievedAt": "2026-11-15T02:15:16.804148+00:00"
+    },
+    {
+      "path": "administration/emergency-admin-user",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/emergency-admin-user",
+      "retrievedAt": "2026-11-15T02:15:16.798245+00:00"
+    },
+    {
+      "path": "administration/team-management",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/team-management",
+      "retrievedAt": "2026-11-15T02:15:16.800113+00:00"
+    },
+    {
+      "path": "administration/wip-security",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-security",
+      "retrievedAt": "2026-11-15T02:15:17.406808+00:00"
+    },
+    {
+      "path": "administration/privileges-settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/privileges-settings",
+      "retrievedAt": "2026-11-15T02:15:17.888983+00:00"
+    },
+    {
+      "path": "administration/workflow-stettings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/workflow-stettings",
+      "retrievedAt": "2026-11-15T02:15:18.208242+00:00"
+    },
+    {
+      "path": "administration/api-access-keys",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/api-access-keys",
+      "retrievedAt": "2026-11-15T02:15:17.788882+00:00"
+    },
+    {
+      "path": "administration/e-mail-settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/e-mail-settings",
+      "retrievedAt": "2026-11-15T02:15:18.073218+00:00"
+    },
+    {
+      "path": "administration/proxy-settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/proxy-settings",
+      "retrievedAt": "2026-11-15T02:15:18.350741+00:00"
+    },
+    {
+      "path": "administration/database-decryption-keys",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/database-decryption-keys",
+      "retrievedAt": "2026-11-15T02:15:18.434436+00:00"
+    },
+    {
+      "path": "administration/database-management",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/database-management",
+      "retrievedAt": "2026-11-15T02:14:35.576503+00:00"
+    },
+    {
+      "path": "administration/default-flow-settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/default-flow-settings",
+      "retrievedAt": "2026-11-15T02:14:48.350202+00:00"
+    },
+    {
+      "path": "administration/wip-web-settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-web-settings",
+      "retrievedAt": "2026-11-15T02:15:18.615404+00:00"
+    },
+    {
+      "path": "administration/wip-capture-settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-capture-settings",
+      "retrievedAt": "2026-11-15T02:15:18.751846+00:00"
+    },
+    {
+      "path": "administration/retention-policies",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/retention-policies",
+      "retrievedAt": "2026-11-15T02:14:46.688837+00:00"
+    },
+    {
+      "path": "administration/license-management",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/license-management",
+      "retrievedAt": "2026-11-15T02:15:18.880798+00:00"
+    },
+    {
+      "path": "administration/audit-log",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/audit-log",
+      "retrievedAt": "2026-11-15T02:14:48.746088+00:00"
+    },
+    {
+      "path": "administration/other-settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/other-settings",
+      "retrievedAt": "2026-11-15T02:14:47.237898+00:00"
+    },
+    {
+      "path": "administration/connections",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections",
+      "retrievedAt": "2026-11-15T02:15:19.152996+00:00"
+    },
+    {
+      "path": "administration/wip-azure-devops-connections",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-azure-devops-connections",
+      "retrievedAt": "2026-11-15T02:15:19.282549+00:00"
+    },
+    {
+      "path": "administration/mobile-configuration",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/mobile-configuration",
+      "retrievedAt": "2026-11-15T02:15:19.488860+00:00"
+    },
+    {
+      "path": "administration/active-directory-settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/active-directory-settings",
+      "retrievedAt": "2026-11-15T02:15:19.424877+00:00"
+    },
+    {
+      "path": "administration/diagnostics",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/diagnostics",
+      "retrievedAt": "2026-11-15T02:15:19.584502+00:00"
+    },
+    {
+      "path": "working-with-leapwork/agents-overview",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/agents-overview",
+      "retrievedAt": "2026-11-15T02:14:19.212758+00:00"
+    },
+    {
+      "path": "working-with-leapwork/run-lists",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+      "retrievedAt": "2026-11-15T02:15:20.298001+00:00"
+    },
+    {
+      "path": "working-with-leapwork/run-lists/schedules",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists/schedules",
+      "retrievedAt": "2026-11-15T02:14:19.801331+00:00"
+    },
+    {
+      "path": "working-with-leapwork/reporting",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+      "retrievedAt": "2026-11-15T02:15:19.984574+00:00"
+    },
+    {
+      "path": "working-with-leapwork/dashboards",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/dashboards",
+      "retrievedAt": "2026-11-15T02:15:20.325068+00:00"
+    },
+    {
+      "path": "working-with-leapwork/designing-automation-flows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows",
+      "retrievedAt": "2026-11-13T18:44:20.610880+00:00"
+    },
+    {
+      "path": "working-with-leapwork/designing-automation-flows/flows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/flows",
+      "retrievedAt": "2026-11-15T02:14:34.550491+00:00"
+    },
+    {
+      "path": "working-with-leapwork/organizing-your-work",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/organizing-your-work",
+      "retrievedAt": "2026-11-15T02:14:18.741385+00:00"
+    },
+    {
+      "path": "working-with-leapwork/git-version-control",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control",
+      "retrievedAt": "2026-11-15T02:14:46.242485+00:00"
+    }
+  ],
+  "supportPages": [
+    {
+      "url": "https://support.leapwork.com/s/article/Introduction-to-Leapwork-Monitoring-and-Control-Enhance-Your-Automation-Skills-with-3-Key-Exercises",
+      "status": "Loading / CSS Error; article body unavailable"
+    },
+    {
+      "url": "https://support.leapwork.com/s/article/Howtocheckversionhistory6330797663772",
+      "status": "Loading / CSS Error; article body unavailable"
+    },
+    {
+      "url": "https://support.leapwork.com/s/article/DifferencebetweenOnlyflowFullcopyFullrestorewhilerestoringapreviousversionofaTestflow63307a033d1e6",
+      "status": "Loading / CSS Error; article body unavailable"
+    },
+    {
+      "url": "https://support.leapwork.com/s/article/HowtoExportandImportautomationflows63307ce385193",
+      "status": "Loading / CSS Error; article body unavailable"
+    }
+  ],
+  "limits": [
+    "Aulas, exercícios e laboratórios autorais, baseados em documentação oficial; não reproduzem os exercícios do portal.",
+    "Nenhum fluxo foi executado no Leapwork.",
+    "Disponibilidade de recursos depende de edição, licença e versão.",
+    "O laboratório de distribuição considera Agents disponíveis e usa rodízio didático, sem calcular tempos, dependências, filas ou retries.",
+    "A restauração ilustra lógica e Locators sem modificar ativos nem validar a aplicação.",
+    "Configurações especializadas de administração têm referências complementares para consulta conforme a implantação."
+  ],
+  "labExpected": {
+    "flows": 4,
+    "agents": 2,
+    "each": 8,
+    "divide": 4,
+    "first": 4,
+    "baseline": {
+      "logic": "B",
+      "locator": "B"
+    },
+    "selectedVersion": {
+      "logic": "A",
+      "locator": "A"
+    }
+  }
+}

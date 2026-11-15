@@ -1,0 +1,17 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-web-settings",
+  "title": "Web Settings",
+  "retrievedAt": "2026-11-15T02:15:18.615404+00:00",
+  "text": "Breadcrumbs\nThe Web Settings centralizes customization of web application-specific settings to boost the product's performance and adaptability across web operations. It enables you to adjust settings directly, optimizing performance and the overall experience in diverse web environments.\nThe\nLimit Salesforce Strategy\noption within Web Settings\nallows\nyou to restrict the number of strategies created for elements in Salesforce applications, preventing performance issues caused by too many strategies.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nLimit Salesforce Strategy\nThe\nLimit Salesforce Strategies\ncheckbox aims to prevent potential performance issues that could occur from generating too many strategies for a captured element in Salesforce applications.\nNote:\nThe\nLimit Salesforce Strategies\noption is enabled by default.\nThe Strategy Count field is hidden when the Limit Salesforce Strategies option is disabled.\nStrategy Count\nThe Strategy Count field lets you set the maximum number of strategies generated for elements in Salesforce. You can enter an integer between 1 and 2,147,483. If you enter a value outside this range, an error message will be displayed.\nNote:\nThe default setting for the\nStrategy Count Field\nis 20.\nThe\nSave\nbutton saves all details.\nNote: Web Settings\nwill expand to cover more web application configurations, making it a flexible platform for enhancing web application performance and user experience.",
+  "links": [],
+  "images": [
+    {
+      "alt": "image-20260611-114356.png",
+      "url": "https://docs.leapwork.com/__attachments/a_78255ada4585ee9df1a01d18d07d75b6061a672fa61e6a3ebdc8a048d8a75a4d/image-20260611-114356.png?cb=3414defac92da72eba483d410a4a5247"
+    },
+    {
+      "alt": "image-20260611-114506.png",
+      "url": "https://docs.leapwork.com/__attachments/a_fa67116f6df1865216968b57691fe07b57ac77a5988cb334485d15b8dcec0eab/image-20260611-114506.png?cb=e7ad8a4662fe7b7eee68ba0f8a92d5ec"
+    }
+  ]
+}

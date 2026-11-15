@@ -1,0 +1,70 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/e-mail-settings",
+  "title": "E-mail Settings",
+  "retrievedAt": "2026-11-15T02:15:18.073218+00:00",
+  "text": "Breadcrumbs\nLeapwork can send e-mails in several ways. For example, when configuring a schedule, you can add an e-mail action to forward the schedule results to recipients. Another method is using the\nSend e-mail building block\nas part of a flow.\nLeapwork supports two ways to connect to an email server:\nSimple Mail Transfer Protocol (SMTP) Server\nOpen Authentication (OAuth)\nNotes:\nSMTP is default approach for sending an e-mail.\nE-mail settings would be available if you are logged in as an administrator.\nSMTP Server\nSMTP is a basic authentication protocol for sending emails through servers from one machine to another.\nTo send emails, Leapwork requires access to an SMTP server configured in the Email settings. Make sure to coordinate with your mail and network administrators to ensure the SMTP server is accessible and that you have the required credentials to send emails.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nOn the\nMail Settings\nwindow:\nSelect the\nProtocol\nfrom the drop down:\nSelect the SMTP.\nEnter\nSMTP Server\ndetails in the given field. (Hostname or IP address of the SMTP server)\nEnter\nSMTP Port\ndetails in the given field.\nEnter\nFrom Mailbox\ndetails in the given field.\nEnter\nSMTP Username\ndetails in the given field. (The username for logging into the SMTP server)\nEnter\nSMTP Password\ndetails in the given field. (The password for the SMTP Username account)\nCheck the\nAccept any certificate\ncheckbox.\nThis configuration instructs Leapwork to ignore any invalid SSL certificates in the communication with the SMTP server.\nClick\nTest connection\nbutton to test that the configuration is working correctly. This will do a login to the SMTP server to verify the SMTP Server, SMTP Username, and SMTP Password.\nSMTP Server\nand\nSMTP Port\nare the default fields. The values of these are auto filled and you can change these values based on your requirement.\nThe success message appears to let you know that the\nSMTP server\nis connected successfully.\nClick\nSend test email\nbutton to use the configuration to send a test e-mail to the e-mail address specified in the\nFrom Mailbox\nfield.\nThe success message appears to let you know that the email\nis sent successfully.\nClick\nSave button to save the details.\nClick\nCancel button to cancel the details.\nOAuth:\nOAuth is an open-standard authorization protocol or framework that provides applications the ability for secure designated access.\nTo send an e-mail, Leapwork requires access to an OAuth 2.0 configuration, a secure open-standard authorization protocol that protects your data by granting access without revealing identity or credentials.\nThis configuration is set in the E-mail settings section of Leapwork’s settings.\nNote:\nContact your mail and network administrators to ensure Leapwork can access the OAuth configuration and that you have permission to send e-mails.\nTo register the daemon application:\nGo to\nhttps://learn.microsoft.com/en-us/azure/healthcare-apis/register-application\nThen, go to\nhttps://portal.azure.com/\nto register your daemon application. If registered, find the Client ID, Tenant ID, and Object ID under Overview.\nYou can find\nclient secret\nunder\nCertificates & secrets\n:\nApplications can call APIs once Admin grants permission during consent:\nGo to Leapwork Flow and select\nSettings\n:\nOn the\nMail Settings\nwindow:\nSelect the\nProtocol\nfrom the drop-down:\nSelect the OAuth.\nEnter\nFrom Mailbox\ndetails in the given field.\nEnter\nInstance\ndetails in the given field.\nEnter\nAPI URL\ndetails in the given field.\nEnter\nTenant\ndetails in the given field.\nEnter\nClient ID\ndetails in the given field.\nEnter\nClient Secret\ndetails in the given field.\nNotes:\nInstance\nand\nAPI URL\nare the default fields. The values of these are auto filled and you can change these values based on your requirement.\nThe\nTest connection\nbutton is disabled in OAuth.\nClick\nSend test email\nto send a test email using the configuration to the address in the\nFrom Mailbox\nfield.\nThe success message appears to let you know that the email\nis sent successfully.\nClick\nSave button to save the details.\nClick\nCancel button to cancel the details.",
+  "links": [
+    {
+      "title": "Send e-mail building block",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/data-driven/send-e-mail"
+    },
+    {
+      "title": "https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application",
+      "url": "https://learn.microsoft.com/en-us/azure/healthcare-apis/register-application"
+    },
+    {
+      "title": "https://portal.azure.com/",
+      "url": "https://portal.azure.com/"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260610-134943.png",
+      "url": "https://docs.leapwork.com/__attachments/a_6e74e0ef5ea21adc435d12f0dbb2e8d1acb50fbe3eadf58291beb68ec9543d82/image-20260610-134943.png?cb=af2522a7cd944f1cb6e11f8be65fd2ac"
+    },
+    {
+      "alt": "image-20260610-135019.png",
+      "url": "https://docs.leapwork.com/__attachments/a_948cf9419cd94db1071325592a81c8c3d2bdaf8efd818a8966839a54afc16d6a/image-20260610-135019.png?cb=0f657cf93319293af1376f2bdcb8bdbf"
+    },
+    {
+      "alt": "image-png-Dec-19-2022-08-51-31-7678-AM-20260615-114158.png",
+      "url": "https://docs.leapwork.com/__attachments/a_855a0cf24d9f66a480e54c9df095549adbfe4b4d2746bd9df2cf75d11fb0770d/image-png-Dec-19-2022-08-51-31-7678-AM-20260615-114158.png?cb=5d34b274802b35f075cc02a15db5eef0"
+    },
+    {
+      "alt": "image-png-Dec-19-2022-08-52-13-1136-AM-20260615-114417.png",
+      "url": "https://docs.leapwork.com/__attachments/a_2dc37d37647887549602bdd7e926931b5bcef9992daa6361eac07549360a13ca/image-png-Dec-19-2022-08-52-13-1136-AM-20260615-114417.png?cb=b3e6643a150df2acd3d6511436ca84b9"
+    },
+    {
+      "alt": "image-png-Dec-19-2022-08-52-44-2730-AM-20260615-114443.png",
+      "url": "https://docs.leapwork.com/__attachments/a_b156b3b8bfd1c849c73bf756d8c7885f5c817f32baf17c71e355c3e8c34cae20/image-png-Dec-19-2022-08-52-44-2730-AM-20260615-114443.png?cb=a7bea83af1ac8c64f633321548bfbbe2"
+    },
+    {
+      "alt": "image-png-Dec-19-2022-08-53-11-6157-AM-20260615-114607.png",
+      "url": "https://docs.leapwork.com/__attachments/a_3701c50e9f9439c279f971d4df177b315aec0ce571b4853ce8ff2ffd54d89b53/image-png-Dec-19-2022-08-53-11-6157-AM-20260615-114607.png?cb=134c2e9183efc0750f0c838254c816a4"
+    },
+    {
+      "alt": "image-png-Dec-19-2022-08-53-25-3568-AM.png-20260615-114705.jpeg",
+      "url": "https://docs.leapwork.com/__attachments/a_16048b1385bba17808c820b4a9794741d166d52dbe887fc94491307c0628f701/image-png-Dec-19-2022-08-53-25-3568-AM.png-20260615-114705.jpeg?cb=8e6f335e2d792a930e5e0b680c79fd49"
+    },
+    {
+      "alt": "image-png-Dec-19-2022-08-53-38-3515-AM-20260615-114730.png",
+      "url": "https://docs.leapwork.com/__attachments/a_758f6539c6c7b92ab4f0c057ffa76e9d9ea278a04d90fe5a42fde19df4b0ca10/image-png-Dec-19-2022-08-53-38-3515-AM-20260615-114730.png?cb=d71148eae465753048d2380becc66f26"
+    },
+    {
+      "alt": "image-20260615-114830.png",
+      "url": "https://docs.leapwork.com/__attachments/a_4da5015bba954aac278315c850482f5268ff40d1b7784e39c4d9bb4b61f577d9/image-20260615-114830.png?cb=458517a03ab35cf620d02749c7b8fe82"
+    },
+    {
+      "alt": "image-png-Dec-19-2022-08-54-00-0093-AM-20260615-114912.png",
+      "url": "https://docs.leapwork.com/__attachments/a_fda7da7bcebdd40fe43160a254ba8953c8ce064f521d4e782d504d9833ae2f41/image-png-Dec-19-2022-08-54-00-0093-AM-20260615-114912.png?cb=cd0da989740d1354bee10b064903c453"
+    },
+    {
+      "alt": "image-png-Dec-19-2022-08-54-14-8160-AM-20260615-114939.png",
+      "url": "https://docs.leapwork.com/__attachments/a_aa35fdefc4e889252449ea0b1f5d562cd4ad04f67fd91fe627c4c37f3f73cfcd/image-png-Dec-19-2022-08-54-14-8160-AM-20260615-114939.png?cb=4eedb14d30bd52b735b3125105290077"
+    },
+    {
+      "alt": "image-png-Dec-19-2022-08-54-33-3748-AM-20260615-115003.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5bac53532ef281d6e70dada0fee4e2f253056789a613cf42537f593f6ba86d34/image-png-Dec-19-2022-08-54-33-3748-AM-20260615-115003.png?cb=9e7817c33ae65b301b33f64f4d991b3a"
+    }
+  ]
+}

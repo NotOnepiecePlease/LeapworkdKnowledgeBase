@@ -1,0 +1,38 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/retention-policies",
+  "title": "Retention Policies",
+  "retrievedAt": "2026-11-15T02:14:46.688837+00:00",
+  "text": "Breadcrumbs\nRetention policies in Leapwork manage the growing data from automation flows, ensuring optimal disk space use on the\nController\nmachine.\nNote:\nThese settings are only available when you’re logged in as an administrator.\nScheduled Runs Policy\nThis policy applies to flows executed via schedules. Administrators can define how long results and videos from scheduled flows should be retained. The available settings allow you to manage retention in the following ways:\nBy Days:\nSpecify how many days flow results should be retained.\nBy Number of Runs:\nLimit the total number of flow results stored in the system.\nWhen selected, the\nRemove success run videos after 1 hour\ncheckbox automatically deletes videos of successful scheduled runs one hour after completion, optimizing disk space usage.\nRecommendation:\nConfigure retention policies according to your automation run frequency to balance storage and data availability.\nConfiguration scope:\nTeam-level. Settings are configured per team, and each team can define its own retention policy.\nPreview Runs Policy\nThis option is specifically designed for flows executed manually, without an initial schedule.\nThis allows administrators to manage the retention of video recordings for these on-the-spot runs independently of scheduled runs.\nThe behavior of\nPreview Runs\ndepends on whether the\nUse Schedule Settings\ncheckbox is selected:\nChecked:\nThe retention settings for\nPreview Runs\nwill inherit the configurations defined for\nScheduled Runs\n.\nUnchecked:\nYou can configure separate retention settings for\nPreview Runs\n, but the options available (for example, the number of days or total results retained and the \"remove success run videos after 1 hour\" checkbox are the same as those for\nScheduled Runs\n.\nRecommendation:\nKeep videos of failed runs for debugging and analysis and delete successful run videos promptly.\nConfiguration scope:\nTeam-level. Settings are configured per team, and each team can define its own retention policy.\nTemp Folder Policy\nThis section allows users to define how long assets in the temporary folder should be retained. It helps maintain control over temporary files and optimizes storage. You can set the retention period between\n1 and 90 days\n.\nRecommendation:\nRegularly review and adjust this setting to prevent storing outdated temporary files and maintain optimal disk space.\nConfiguration scope:\nGlobal. Settings are configured globally and apply to all teams.\nAudit Log\nThe\nAudit Log\nretention policy controls how long Leapwork keeps records of system and user activities, such as configuration changes, flow updates, and administrative actions.\nEnforce retention policy:\nChecked:\nAudit log entries are automatically deleted based on the settings below.\nUnchecked:\nNo audit log entries are deleted by this global policy.\nLog entries retention period:\nDefines how long audit log entries are kept before they become eligible for deletion.\nYou can choose between\n30, 60, or 90 days\n(90 days is the default).\nRecommendation:\nChoose a shorter period (for example, 30 days) in environments with high audit activity to reduce database size, and a longer period (60–90 days) when you need extended traceability for compliance or investigations.\nDaily deletion cap:\nSets the\nmaximum number of audit log entries\nthat can be deleted per day (up to\n1,000,000\n).\nThis prevents large clean‑ups from impacting performance in a single day.\nBatch deletion size:\nSets how many audit log entries can be deleted in a\nsingle operation\n(up to\n10,000\n). Smaller batch sizes reduce the impact of each deletion step; larger batches complete clean‑up faster.\nConfiguration scope:\nGlobal. Settings are configured globally and apply to all teams.\nOnly items that exceed the configured retention period are eligible for deletion. The actual number of items removed per day will never exceed the\nDaily deletion cap\n, even if more items are available. If the configured limits are too low, old data may take several days to be fully cleaned up.\nFlow Version History\nThe\nFlow Version History\nretention policy manages how long flow versions are stored as changes are made to automation flows. It helps keep version history under control while preserving enough versions for review and rollback.\nEnforce retention policy:\nChecked:\nOld flow versions are automatically deleted according to the configured limits.\nUnchecked:\nNo flow versions are deleted by this global policy.\nFlow versions retention period:\nDefines how long flow versions are kept before they become eligible for deletion.\nYou can choose between\n30, 60, or 90 days\n(90 days is the default).\nRecommendation:\nChoose a shorter period (for example, 30 days) in environments with high audit activity to reduce database size, and a longer period (60–90 days) when you need extended traceability for compliance or investigations.\nDaily deletion cap:\nSets the\nmaximum number of flow versions\nthat can be deleted per day (up to\n5,000\n).\nThis ensures clean‑up happens gradually instead of removing too many versions at once.\nBatch deletion size:\nSets how many flow versions can be deleted in a\nsingle operation\n(up to\n1,000\n).\nSmaller batch sizes are safer for busy systems; larger batches speed up the clean‑up process.\nConfiguration scope:\nGlobal. Settings are configured globally and apply to all teams.\nOnly items that exceed the configured retention period are eligible for deletion. The actual number of items removed per day will never exceed the\nDaily deletion cap\n, even if more items are available. If the configured limits are too low, old data may take several days to be fully cleaned up.",
+  "links": [
+    {
+      "title": "Controller",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/controller-settings"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260318-171758.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d9d6cb9f9335c046cda2b3a6b9192e530dcc90a0b127e0799579a5944238a1dc/image-20260318-171758.png?cb=030456e477bc14217a0217a128d11e79"
+    },
+    {
+      "alt": "image-20260611-121248.png",
+      "url": "https://docs.leapwork.com/__attachments/a_520485fe85ef560cba534cfc8a0c588ef642621888c516c960d539ff55630819/image-20260611-121248.png?cb=1422931058afa1ba92419163abf420a7"
+    },
+    {
+      "alt": "image-20260611-121613.png",
+      "url": "https://docs.leapwork.com/__attachments/a_ad063481ab7ab30f638ce89fff825ef858b16f6575400e4918298637f1902dd1/image-20260611-121613.png?cb=07667b0b175c681c3eecfcd978cbef8a"
+    },
+    {
+      "alt": "image-png-Dec-18-2024-01-19-42-7869-PM.png?width=400&height=154&name=image-png-Dec-18-2024-01-19-42-7869-PM.png",
+      "url": "https://docs.leapwork.com/__attachments/a_0c819fbf8d9abcbda40ade43a552d4657561ee20a703a0262e661da8ed8deb78/image-png-Dec-18-2024-01-19-42-7869-PM.png%3Fwidth=400&height=154&name=image-png-Dec-18-2024-01-19-42-7869-PM.png?cb=2af631ef302a1a36b9ae6f9736f3f2f0"
+    },
+    {
+      "alt": "image-20260318-173102.png",
+      "url": "https://docs.leapwork.com/__attachments/a_b5e772e54e974d11aefcd54ee0620589c4e251ad214026d74a612ba928970b51/image-20260318-173102.png?cb=b80cf90a36991bd49de32cace38c3150"
+    },
+    {
+      "alt": "image-20260318-173206.png",
+      "url": "https://docs.leapwork.com/__attachments/a_60f98ccd53664e10f253533e0662a69812b80a488a4ea4c05ac796be64db2240/image-20260318-173206.png?cb=085ccc874bfc67868ef7773634802a45"
+    }
+  ]
+}

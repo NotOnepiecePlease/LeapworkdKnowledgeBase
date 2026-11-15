@@ -1,0 +1,46 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/diagnostics",
+  "title": "Diagnostics",
+  "retrievedAt": "2026-11-15T02:15:19.584502+00:00",
+  "text": "Breadcrumbs\nDiagnostics\nThe Diagnostics feature in Leapwork Flow helps administrators and support teams collect troubleshooting data from Leapwork components and generate a diagnostics package for analysis.\nThe Diagnostics / Readiness Report validates the Leapwork environment by checking connectivity, configuration, system readiness, and related dependencies. This helps with troubleshooting and baseline environment validation.\nThe generated package can be used to:\nTroubleshoot connectivity issues.\nInvestigate application errors.\nValidate environment readiness.\nCollect system information.\nShare diagnostic data with Leapwork Support.\nAccessing Diagnostics\nOpen\nLeapwork Flow\n. In the top menu, click\nDiagnostics\n. The\nDiagnostics\nwindow opens, where you select the components and diagnostic data to collect.\nThe Diagnostics page allows you to select diagnostic targets, choose data collection options, specify a time range, and generate a downloadable diagnostics package.\nSelect Targets\nThe\nSelect targets\nsection specifies which Leapwork components to include in the diagnostics package.\nNote:\nSelecting multiple targets increases collection time because Leapwork gathers information from each selected component.\nFlow\nCollects diagnostic information from the local Flow installation such as Flow logs, configuration data, and other Flow-specific troubleshooting information to help diagnose issues related to Flow operation and performance.\nCommon use cases:\nFlow startup failures, login issues, local execution problems, and unexpected Flow crashes.\nController\nCollects diagnostic information from the selected Controller such as Controller logs, event information, system diagnostics, and readiness validation data to help identify issues affecting the Controller and overall Leapwork environment.\nCommon use cases:\nController connectivity issues, scheduling failures, execution problems, and environment readiness validation.\nAgent\nCollects diagnostics from a selected Agent machine such as Agent logs, system information, and event logs to help diagnose issues affecting Agent availability and execution.\nWhen you enable Agent, a list of available Agents becomes available.\nCommon use cases:\nAgent offline issues, Agent execution failures, and troubleshooting problems in remote or distributed environments.\nDiagnostic Package\nThe\nDiagnostic package\nsection determines what information is collected. You can select elements from the options based on your log requirements.\nLogs\nIt collects the following to help investigate unexpected errors, failed executions, and performance issues:\nApplication logs\nRuntime logs\nError logs\nService logs\nOperational messages\nEvent Viewer:\nApplication\n- Collects Windows Application Event Log entries, including application crashes, warnings, and runtime exceptions, to help diagnose application failures, Flow crashes, and Controller service issues.\nSystem\n- Collects entries from the Windows System Event Log, including operating system events, hardware-related events, and service startup failures, to help with machine stability issues, service failures, and infrastructure troubleshooting.\nSecurity\n- Collects entries from the Windows Security Event Log, including authentication events, access-related events, and security audit entries.\nAdministrator privileges are required on the target machine.\nIt is recommended for permission issues, authentication failures, and security investigations.\nSystem Info\nCollects operating system and environment information, including operating system details, machine specifications, installed software information, and environment configuration, to help with environment validation, compatibility checks, and support investigations.\nRun Readiness Script\nExecutes the Leapwork Readiness Script during diagnostics collection to validate whether the target machine meets Leapwork requirements, including connectivity, required services, port accessibility, environment prerequisites, and configuration readiness; it is recommended for new installations, upgrade validation, connectivity investigations, and pre-deployment verification.\nNote\n: Use\nRun Readiness Script\nwhen validating installations or connectivity.\nTime Range\nThe\nTime Range\nsetting controls how much historical data is collected.\nPossible use cases\n:\nTime Range\nRecommended Usage\nLast Hour\nRecent incidents\nLast 24 Hours\nGeneral troubleshooting\nLast 7 Days\nIntermittent issues\nLast 30 Days\nLong-term investigations\nNote:\nThe larger the time range you select, the more data will be included in the diagnostics package. This may increase both the package size and the time required to collect and generate the diagnostics report. For faster collection and smaller package sizes, select only the time period relevant to your investigation.\nGenerate Logs\nAfter selecting targets and package options, you simply need to click\nGenerate Logs\nAnd the diagnostics process will begin immediately.\nExecution Results\nThe\nExecution Results\ntable displays collection progress and outcomes.\nThe parameters of Execution Results:\nColumns\nTarget\nIt shows the machine or component being processed.\nComponent\nIt shows the Leapwork component being analyzed.\nExamples:\nFlow\nController\nAgent\nStep\nIt shows the current diagnostic activity.\nExamples:\nreceived\nlogs\nevent-application\nsystem-info\npackage\ncollect\nStatus\nIndicates execution outcome.\nPossible values:\nPassed\nFailed\nWarning\nDuration (ms)\nShows how long the operation took in milliseconds.\nMessage\nProvides detailed execution information.\nExamples from the screenshot:\nMessage\nMeaning\nDiagnostics request received\nRequest accepted\nCopied 1 log file(s)\nLogs successfully collected\nApplication event log exported\nEvent logs exported\nSystem info collected\nSystem information gathered\nDiagnostics package created\nPackage successfully generated\nDownload Package\nAfter successful completion:\nClick\nDownload Package\n.\nThe generated archive contains:\nLogs\nEvent Viewer exports\nSystem information\nReadiness results\nDiagnostic metadata\nThe downloaded diagnostics is saved in your temp folder as:\n%TEMP%\\Leapwork_Readiness_Report_YYYYMMDD_HHMMSS.html\nExample:\nC:\\Users\\YourName\\AppData\\Local\\Temp\\Leapwork_Readiness_Report_20241201_143022.html\nThis package can be attached to support tickets for further analysis.\nDelete\nIt removes the generated diagnostics package and execution results from the Diagnostics screen.\nUse it when:\nA package is no longer required.\nA fresh collection needs to be generated.\nSuccessful Collection Example\nThe screenshot shows:\nThis indicates:\nDiagnostics were collected successfully.\nPackage creation completed.\nThe package is available for download.\nCollection completed successfully\nIf you have questions about using the Diagnostics feature, please refer to the Diagnostics FAQ for additional guidance and troubleshooting information:\nFAQs\n.",
+  "links": [
+    {
+      "title": "FAQs",
+      "url": "https://support.leapwork.com/s/article/Leapwork-Diagnosis-Report---Frequently-Asked-Questions"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260616-092306.png",
+      "url": "https://docs.leapwork.com/__attachments/a_e3f4a810c3a98790db5d9c46ae05e6057b57e3dbbf372023a18c0a9e663d5cd5/image-20260616-092306.png?cb=0e3a17c749f6443fe97d26f8c6b0e581"
+    },
+    {
+      "alt": "image-20260618-110536.png",
+      "url": "https://docs.leapwork.com/__attachments/a_b927dc321ce96b2f10efb63ed06043446599acb0375955bac1f6f69489cf896f/image-20260618-110536.png?cb=28eb4e91d19e419df594867ba3bddb8a"
+    },
+    {
+      "alt": "image-20260618-111006.png",
+      "url": "https://docs.leapwork.com/__attachments/a_4a7a49c3dae8c084a7ae2538f4e18af83849f8fa671c73a224f00f28c12d67b3/image-20260618-111006.png?cb=248777ddaaa2c6d363bd4143c0d02920"
+    },
+    {
+      "alt": "image-20260618-111351.png",
+      "url": "https://docs.leapwork.com/__attachments/a_ac33219db30b125444a7af413b88f8b27ab50f1b5e616f73c052a709f9c02d34/image-20260618-111351.png?cb=9886e50b9d882ec6d68ef06eda6c1935"
+    },
+    {
+      "alt": "image-20260618-111605.png",
+      "url": "https://docs.leapwork.com/__attachments/a_ba7d121c2f5c867c927572bb80cb92f2001f2dd50f755d85fdf8b49d64a19ceb/image-20260618-111605.png?cb=b0be39519c5d17c850601285f5548bc7"
+    },
+    {
+      "alt": "Screenshot Today.png",
+      "url": "https://docs.leapwork.com/__attachments/a_a1e784a8387f60067340e9f771fbbee107be091a8511dbfc1f061587a24a5c09/Screenshot%20Today.png?cb=7e21212ce6bd2dcb0b59649400f81c34"
+    },
+    {
+      "alt": "image-20260618-112229.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f972208fee503fc22f9de18690be17a499eabb8ee4ba74594b4eef84c8835806/image-20260618-112229.png?cb=77723146668728de0878f5031f57017a"
+    },
+    {
+      "alt": "image-20260618-112316.png",
+      "url": "https://docs.leapwork.com/__attachments/a_7c153bf2bddf8add0000d37e01ffce2dae2fbc8b631da009a580629dd85a2cc9/image-20260618-112316.png?cb=62eaf716d613aca31407d9ad31649d79"
+    }
+  ]
+}

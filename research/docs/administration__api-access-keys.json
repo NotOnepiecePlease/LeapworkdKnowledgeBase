@@ -1,0 +1,18 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/api-access-keys",
+  "title": "API Access Keys",
+  "retrievedAt": "2026-11-15T02:15:17.788882+00:00",
+  "text": "Breadcrumbs\nYou can easily integrate external components with Leapwork using the open REST API exposed on the Controller. In order for the specific component to gain access to Leapwork, an\nAPI key\nis required.\nNote:\nAPI Access Keys settings would be available if you are logged in as an administrator.\nAdding an API Access Key\nGo to\nSettings\nand select\nAPI Access Key\n.\nClick\nAdd Key\n.\nEnter the required comments and select the appropriate\nscope\n.\nClick\nGenerate Key\n.\nClick\nAdd\nto create the key.\nManaging API Access Key Scopes\nWhen adding a new API Access Key, you can manage permissions efficiently using a\nSelect/Deselect all\ncheckbox:\nSelecting this option grants all scopes.\nIf any scope is deselected after selecting all, the\nSelect/Deselect all\ncheckbox unchecks automatically.\nIf users select all individual scopes manually, the\nSelect/Deselect all\ncheckbox checks automatically. This enhancement simplifies API key management and improves control over access permissions.\nUse the comment field to identify which external component is using the generated key.\nPlease see\nREST API Documentation\nfor more detailed instructions on how to use the REST API and the API Access keys.",
+  "links": [
+    {
+      "title": "REST API Documentation",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/public-rest-apis"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260615-084909.png",
+      "url": "https://docs.leapwork.com/__attachments/a_bc4dd7e05f4fcbf1e22fa42b8c841bdcdd8c9bcb6da22136d646ea3b7d02deda/image-20260615-084909.png?cb=2b5be5e1d21fc1fb039d214d00342f3a"
+    }
+  ]
+}

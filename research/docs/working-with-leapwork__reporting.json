@@ -1,0 +1,42 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/reporting",
+  "title": "Reporting",
+  "retrievedAt": "2026-11-15T02:15:19.984574+00:00",
+  "text": "Breadcrumbs\nReporting allows you to easily monitor and evaluate the state of automation flows across projects, products, business units, etc. All execution results, both preview runs, manually triggered schedules and API-triggered schedules can be accessed in the reporting section.\nThe report in the image below displays the results of automation flow runs using\ntraffic-light indicators\n:\n🔴\nR\ned\n: Flow run failed\n🟡\nYellow\n: Flow run completed with warnings or has an unknown status\n🟢\nGreen\n: Flow run completed successfully\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nCreating a report\nWhen you open the reporting section for the first time, it will by default contain two reports:\nAll time results\nResults by flow this week\nTo create a new report:\nClick on the\nNew\nbutton.\nSelect\nReport\nto open the\nCreate New Report\ndialogue.\nGive the report a title and a description.\nOn the\nGroup By\ntab, select one or more fields to group the results by.\nIn the example below:\nSchedule\n: The name of the Schedule which executed the automation flows, is chosen as the first grouping field.\nRun\n: The individual run of the schedule is chosen as the second group category. It is possible to add multiple grouping fields, creating a drill-down view in the report.\nOn the\nFilter By\ntab, specify the conditions to filter the flow run results by. In the example below, the report will only show results from automation flows that was executed as part of the\nrun list\nnamed as\nNew Run list\nand schedule named as\nTestSchedule\n.\nClick\nSave\nto close the dialogue.\nThe new report is now visible in the report list on the left and in the traffic-light view in the middle panel.\nResult Overview\nTo open a report, click on the reports in the list in the left pane.\nUse the defined groups or categories to navigate to the details of the flow runs.\nFailed, done, and successful runs are automatically summarized at each grouping level for a quick overview.\nYou can export the data part of a report to PDF, Excel, or HTML by clicking\nExport\n.\nAutomation Run Details\nTo get more information, click a report entry to view the run details in the right pane.\nThe detailed view consists of three elements:\nA video recording of the entire run of the flow\n. Simply click on the play button in the video player to review the entire run.\nA debug version of the Design Canvas\n, where the active building block is highlighted with an orange border.\nThe Activity log\ncontaining valuable debug information from the individual building blocks.\nAll the three elements are connected and can be inspected simultaneously. When you move the video, the highlighted step changes on the canvas and in the activity log.\nIf you select an element in the activity log, the video jumps to the time when that activity log entry was added.\nThe combination of the debug view, the video, and the activity log is a very powerful and intuitive tool for finding failure reasons and for handling unexpected behavior in the flows.\nThe recorded videos are saved as AVI files and can be accessed directly on the Controller machine depending on the security settings for the Controller machine.\nTo get a direct link for a video:\nRight-click the video.\nSelect\nGet video\nfile link.\nThe direct link to the video is now copied to the clipboard and can be inserted into e-mails, etc.",
+  "links": [
+    {
+      "title": "run list",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260527-114746.png",
+      "url": "https://docs.leapwork.com/__attachments/a_44bf9dc8a655ac906527802fd746bf2f2d1c2a6d630de01192048b091c18b07b/image-20260527-114746.png?cb=39577361f3fdaac3257146a2f1e73434"
+    },
+    {
+      "alt": "image-20260527-114928.png",
+      "url": "https://docs.leapwork.com/__attachments/a_3dd4b1a143a97fccfd7402e9437727b24f412e0e4b62f0cd918f7f4f90cc3b2e/image-20260527-114928.png?cb=b72f56cecf8cc58755d02a57d77b6981"
+    },
+    {
+      "alt": "image-20260527-120253.png",
+      "url": "https://docs.leapwork.com/__attachments/a_93ef8c07164080605ea1a17894e74ca130d1bff3c3d2d79d8632eaa0d0dd8a87/image-20260527-120253.png?cb=03f891ec2e0c246e7a57d102d24f916f"
+    },
+    {
+      "alt": "image-20260527-120424.png",
+      "url": "https://docs.leapwork.com/__attachments/a_b615d7c1cdf7ecc70877652a156538aa6efbff8ca73f4dbc3fa2ad0bc1ab6ff1/image-20260527-120424.png?cb=59ea29854467db450dca76ecc2f2a0d1"
+    },
+    {
+      "alt": "image-20260527-120527.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d7e879fce12a236a25ee62aaba165506e176781267d0509bb3fd5195f3698097/image-20260527-120527.png?cb=39f27c6bd91021ba1c81562577fc6479"
+    },
+    {
+      "alt": "image-20260527-120750.png",
+      "url": "https://docs.leapwork.com/__attachments/a_0e776de91af7275b9f82f3c0fb0f3e53c679c7dbd3b4155fab585c83ac2560bb/image-20260527-120750.png?cb=51828728c15a652c008326f6234bed97"
+    },
+    {
+      "alt": "image-20260612-145416.png",
+      "url": "https://docs.leapwork.com/__attachments/a_4796ad0e5c9fe8e864438792513fc3055951faf1dc18566636b44a9ddddead0f/image-20260612-145416.png?cb=9643c9e72308b899b5566857d64bbf61"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-param([string]$Version = 'v1.0.0')
+param([string]$Version = 'v1.1.0')
 $ErrorActionPreference = 'Stop'
 $leapworkRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $leapworkRoot
@@ -55,4 +55,4 @@ if ($LASTEXITCODE -ne 0) {
 }
 Invoke-LeapworkGh release upload $Version @leapworkAssets --repo $leapworkRepo --clobber
 Invoke-LeapworkGh release edit $Version --repo $leapworkRepo --draft=false --latest
-Invoke-LeapworkGh release view $Version --repo $leapworkRepo --json url,isDraft,assets
+Invoke-LeapworkGh release view $Version --repo $leapworkRepo --json 'url,isDraft,assets'

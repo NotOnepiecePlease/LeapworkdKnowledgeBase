@@ -1,0 +1,22 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-security",
+  "title": "Security",
+  "retrievedAt": "2026-11-15T02:15:17.406808+00:00",
+  "text": "Breadcrumbs\nThe\nSecurity\nsection updates password complexity requirements for\nuser management\n.\nSecurity settings would be available if you are logged in as an administrator.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nConfigure\nPassword Complexity:\nThe\nRequire at least one lowercase letter\ncheck box is checked if you\nrequire at least one lowercase letter.\nThe\nRequire at least one uppercase letter\ncheck box is checked if you\nrequire at least one uppercase letter.\nThe\nRequire at least one digit\ncheck box is checked if you\nrequire at least one digit.\nThe\nRequire at least one special (non-alphanumeric) character\ncheck box is checked if you want to add special character to the list of requirements.\nThe\nMinimum password length\nfiled is used to add a minimum required password length (within Leapwork’s range of 6 to 20 characters).\nThe\nPassword Expiration\ndrop-down is used to select options from\nNever expires\nor\nDays before expires\nand enforce password renewal after a set number of days.\nClick\nSave\n. The new password requirements will be sent to your entire team.\nYou can log in with your current password until you save the new requirements. If you last updated your password 28 days ago and set a 30-day expiration, you must update it when accessing Leapwork Flow after two days.\nTo prompt all users to update their passwords quickly, set the\nDays before expires\nto a low number (e.g., two days). After everyone updates, reset the expiration to your organization's policy (e.g., every 90 days).\nOn a user level, you can always go to\nUser management\n, select the desired user, and click\nEdit\n, click on\nSet new password\n, and then either set a new password manually or choose the\nAutomatically create a password\ncheckbox select\nEnforce this user to change their password on next login\n.",
+  "links": [
+    {
+      "title": "user management",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/user-management"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260610-115244.png",
+      "url": "https://docs.leapwork.com/__attachments/a_e22a2ecaf37a1bd7e4440de042b9f3203429c8ddf46345ae6c7bb283f45b07f8/image-20260610-115244.png?cb=7a4fb9ba2cfdc5099acd2184fbcf7ac7"
+    },
+    {
+      "alt": "image-20260610-115327.png",
+      "url": "https://docs.leapwork.com/__attachments/a_ebc984b177ae6c1b927feb709c58ad7b5babfe72d74d281e2c635d59da0ab444/image-20260610-115327.png?cb=667177a45aa2c68b19f1f49056193c69"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/team-management",
+  "title": "Team Management",
+  "retrievedAt": "2026-11-15T02:15:16.800113+00:00",
+  "text": "Breadcrumbs\nThe Team Management section in Leapwork's settings, can be used to create and manage teams.\nTeam Management is available only in Leapwork's Enterprise Edition.\nDeleting the team will also permanently remove the associated flows, and you cannot retrieve them.\nNote:\nTeam management settings are available only to logged-in administrators.\nAdding a Team in Leapwork\nTo add a team:\n1. Click on the\nAdd team button\n. The following pop-up will appear:\nEnter the team's name.\nSelect the users from the list then press save. This will create the team with the required team members/users.\nThe teams section uses users added in the\nUser Management\nsection. All users on the controller will appear in the users list for selection.\nEditing a Team in Leapwork\nTo edit a team:\nSelect the team to edit.\nClick on the\nEdit team\nbutton or double click on the team. The following pop-up will then appear:\nHere you can add or remove users and update the team's name.\nDelete a Team in LEAPWORK\nTo delete a team:\nSelect the team you want to remove then click on the\nDelete\nbutton. The following pop-up will appear:\nClicking\nYes, I want to delete\nwill remove the team from Leapwork.",
+  "links": [
+    {
+      "title": "User Management",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/user-management"
+    }
+  ],
+  "images": [
+    {
+      "alt": "undefined-Sep-11-2023-09-03-06-0445-AM-20260612-153257.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d77ad0f9f8312e4a2e8485bff73479c3a9018d132ce73b28140513d510a428ed/undefined-Sep-11-2023-09-03-06-0445-AM-20260612-153257.png?cb=3369caf0940486649c19a791ceea548e"
+    },
+    {
+      "alt": "image-20260316-124800.png",
+      "url": "https://docs.leapwork.com/__attachments/a_48ba8e8ca16de9e710af1ed72d15ee3aaad8c007d6472977e252f26ffafc1f40/image-20260316-124800.png?cb=a05ca62ab0f930b3a3d06be7e03f6853"
+    },
+    {
+      "alt": "image-png-Sep-11-2023-09-06-10-8435-AM-20260612-153338.png",
+      "url": "https://docs.leapwork.com/__attachments/a_53f13bb3ea86ac259f23fdc2a239eb37e1ec2c4c418f6a00a326d2618ef12cde/image-png-Sep-11-2023-09-06-10-8435-AM-20260612-153338.png?cb=3ce22709f57dabff0561ed120eb267ee"
+    }
+  ]
+}

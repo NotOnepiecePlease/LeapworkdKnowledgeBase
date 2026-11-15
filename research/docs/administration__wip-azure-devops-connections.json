@@ -1,0 +1,34 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-azure-devops-connections",
+  "title": "Azure DevOps Connections",
+  "retrievedAt": "2026-11-15T02:15:19.282549+00:00",
+  "text": "Breadcrumbs\nThe\nAzure DevOps (ADO) Connections\nsection allows administrators to link ADO projects with specific Leapwork teams and define which custom fields should be completed when creating bugs in ADO from Leapwork.\nThis section lists all Azure DevOps (ADO) projects by each configured\nADO connection\n.\nNote:\nIf no ADO connections exist, this section will not show projects.\nNote:\nID is the default unique identifier for ADO test cases, but you can choose a different field under\nConfigure fields / test cases\nfor each project. If you change the identifier, existing test cases require an explicit sync in Leapwork to use the new field. Going forward, only test cases with a value in the selected identifier field will be imported, and test cases without a value will be skipped.\nThe Azure DevOps Connections table is grouped by connection and shows each ADO project available under that connection. Use the pencil icons in the editable columns to configure project-level access and field mapping.\nColumn\nDescription\nProject Name\nDisplays the Azure DevOps project name for the selected connection.\nTeam\nShows the Leapwork team assigned to the project. If no team is assigned, the column shows\nAssign Team\n. Click the pencil icon to choose which Leapwork teams can use that ADO project.\nConfigure fields / bugs\nDefines which Azure DevOps fields are available when creating bugs from Leapwork. Click the pencil icon to open the\nSelect custom fields\ndialog and select the fields to include.\nConfigure fields / test cases\nDefines which Azure DevOps field Leapwork uses as the unique identifier for imported ADO test cases. The default value is\nID\n. Click the pencil icon to open the\nConfigure field\ndialog and choose a different identifier field if required.\nOnly users with the\nAdministrator\nrole can configure Azure DevOps project access and custom field settings in the\nAzure DevOps Connections\nsection.\nHow to Assign Teams to an ADO Project\nIn the\nTeam\ncolumn, click the pencil icon for the project.\nA modal window opens with a list of all Leapwork teams.\nCheck the boxes for teams that should access the specific ADO project.\nClick\nApply\nto save your selection.\nNote:\nOnly members of the assigned teams will be able to publish results and create bugs in that project from Leapwork.\nHow to Configure Fields for Bugs\nIn the\nConfigure fields/bugs\ncolumn, click the pencil icon for the project.\nThe\nSelect custom fields\ndialog opens and displays the Azure DevOps fields available for bug creation. Some required fields, such as\nFound In\n,\nPriority\n,\nRepro Steps\n,\nSeverity\n, and\nTitle\n, may already be selected and disabled.\nSelect the fields that should be shown when users create ADO bugs from Leapwork.\nClick\nApply\nto save the selected bug fields for the project.\nThe selected fields will appear in the\nCreate a bug in ADO\ndialog when submitting a bug from Leapwork.\nHow to Configure the Test Case Identifier Field\nIn the\nConfigure fields/test cases\ncolumn, click the pencil icon for the project.\nThe\nConfigure field\ndialog opens and lists the available Azure DevOps fields that can be used as the test case identifier.\nSelect the field Leapwork should use to identify imported ADO test cases. By default,\nID\nis selected.\nClick\nApply\nto save the identifier field for the project.\nNote:\nIf you change the identifier field, existing test cases require an explicit sync in Leapwork to start using the new field. After the change, only test cases with a value in the selected identifier field will be imported; test cases without a value will be skipped.",
+  "links": [
+    {
+      "title": "ADO connection",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/microsoft-ado-test-plan-integration"
+    },
+    {
+      "title": "Create a bug in ADO",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/microsoft-ado-test-plan-integration"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260721-130907.png",
+      "url": "https://docs.leapwork.com/__attachments/a_7c7ca32e8438a5998a934c7bb3d71a30742a4e4700a71fb6e9269d4dd29616f0/image-20260721-130907.png?cb=25d4d7397225d04f89186d8d987ee711"
+    },
+    {
+      "alt": "image-20260122-110931.png",
+      "url": "https://docs.leapwork.com/__attachments/a_e176c46b3056bd812312159edb5900b1224c533b6368698d25694848c92f7114/image-20260122-110931.png?cb=6f2c68999dd3c32fbcd2a85ffc3191ca"
+    },
+    {
+      "alt": "image-20260122-111027.png",
+      "url": "https://docs.leapwork.com/__attachments/a_c8bf69b601c46e5548c37724df50c55abc91b10fb952b7025a5f091694596182/image-20260122-111027.png?cb=dda4e9af2e75920e8462b3c893c0f316"
+    },
+    {
+      "alt": "image-20260721-125930.png",
+      "url": "https://docs.leapwork.com/__attachments/a_25bac6f66e197d927aa3d1f35ee68d060ce684d97635572f3d620ef66bea0269/image-20260721-125930.png?cb=641dbb3612573ca46c743af8a4eaba7a"
+    }
+  ]
+}

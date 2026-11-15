@@ -1,0 +1,29 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/workflow-stettings",
+  "title": "Workflow Settings",
+  "retrievedAt": "2026-11-15T02:15:18.208242+00:00",
+  "text": "Breadcrumbs\nIn\nWorkflow settings\nyou'll find the possibility of configuring:\nWhen you choose to exclude the\nReady for review\noption, you will no longer be able to change the status of a flow or sub-flow from\nDraft\nto\nReady for review.\nYou can control how the status of published flows and sub-flows is handled.\nThe recommended setting is\nChange status to Draft, including all published flows and sub-flows using this.\nWith this setting enabled, Leapwork automatically changes the status to\nDraft\nwhenever you edit a published flow or sub-flow.\nYou can decide whether users must add a comment when saving changes to flows or sub-flows. The recommended setting is\nOn each save and status change.\nWith this setting enabled, Leapwork requires users to add a comment describing the committed change before any updates to flows or sub-flows can be saved.\nYou can choose whether to exclude the\nReady for review\nstatus for both flows and sub-flows.\nNote:\nWorkflow settings are available when logged in as an administrator.\nSelecting the\nNever\nradio button saves without requiring comments.\nYou can decide whether users must sign in with their Leapwork credentials when changing the status of flows to\nPublished\n. The recommended setting is\nNever\n.\nWith this setting enabled for\nWhen changing flow status to Published\n, any flow whose status is updated to\nPublished\nwill require the user to sign in to Leapwork Flow before the change can be applied.\nNote:\nOnly administrator users can change this setting",
+  "links": [],
+  "images": [
+    {
+      "alt": "image-20260310-123738.png",
+      "url": "https://docs.leapwork.com/__attachments/a_a9ff8db45b0d3faaf1da5be97d593e041a835f557f5477f43c236bda0f2e90b6/image-20260310-123738.png?cb=8f033d49b4287cba3f1fdbbe07ecd001"
+    },
+    {
+      "alt": "aa53bd7a-279d-42db-811f-8fa8ce843288-1",
+      "url": "https://docs.leapwork.com/__attachments/a_f37ec10da993b10e36efd53c1ed9d946d89f248b38a09f6fc50ebcf44d2c8711/aa53bd7a-279d-42db-811f-8fa8ce843288-1.png%3Fwidth=228&name=aa53bd7a-279d-42db-811f-8fa8ce843288-1.png?cb=3d7161e480b484cb36495c64d8a739e7"
+    },
+    {
+      "alt": "aa53bd7a-279d-42db-811f-8fa8ce843288-2",
+      "url": "https://docs.leapwork.com/__attachments/a_aa6f83390fb8fba087262c7e03ca7693988cb605bbd0bdf7c175884eee26b0d9/aa53bd7a-279d-42db-811f-8fa8ce843288-2.png%3Fwidth=610&name=aa53bd7a-279d-42db-811f-8fa8ce843288-2.png?cb=14614679551c3d9e7683e3ba5f928905"
+    },
+    {
+      "alt": "image-20260313-154032.png",
+      "url": "https://docs.leapwork.com/__attachments/a_6ec6c32e5f8d35ab6af2942693755ae60521a74a7cc6f139b319c385533e4014/image-20260313-154032.png?cb=218680de9868e71e6227fcb6fd956e78"
+    },
+    {
+      "alt": "image-20260313-154004.png",
+      "url": "https://docs.leapwork.com/__attachments/a_08d01ecff4d9baae437d9711ff432d0e0fd3bd5588fcc77ccea8bd17c355570c/image-20260313-154004.png?cb=874977f52435fed677b384cd2657f582"
+    }
+  ]
+}

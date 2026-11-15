@@ -1,0 +1,38 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/audit-log",
+  "title": "Audit Log",
+  "retrievedAt": "2026-11-15T02:14:48.746088+00:00",
+  "text": "Breadcrumbs\nThe Audit Log contains information about all events that have occurred on the Leapwork Automation Platform. This includes editorial events as well as the running of flows using scheduling, the\nREST API\nor by any other method.\nNote:\nAudit Log settings would be available if you are logged in as an administrator and are allowed to filter, search, and export log data.\nThe Audit Log can be used for internal as well as external audits and can serve as a tool to debug unusual events and scenarios.\nFiltering and sorting\nThe Audit Log allows advanced filtering and sorting options. The basic filter is a\nFrom\nand\nTo\ndate, which per default is set to\nToday\n.\nTo change the dates, open the date pickers, and click\nLoad\n. To go back to the default dates, click\nReset\n.\nThe log can be sorted by clicking on the column headers:\nDate of the event\nIP address of the machine performing the activity\nHostname of the machine performing the activity\nUser/system ID performing the activity\nTeam\nEvent, for example “Create flow” or “Delete image”\nAffected asset, for example the flow affected by the change or the image deleted.\nDetails\nUser comments\nAPI Access key.\nTo filter the log based on a value in a given column, it is possible to add a\nFilter\n. To add a\nFilter\n, hover a column and click on the filter icon:\nThere are two types of\nFilters\n:\n1. For\nrule-based filters\n:\nAdd a pattern that column values must match. For example, open the Filter dialog for the '\nUser\nor\nsystem\n' column.\nSelect '\nBegins with\n' in the first dropdown, then enter \"\nad\n\" in the second field. This filters the log to show entries where the user or system name starts with \"\nad\n\".\nFor\nvalue-based filters\n, select one or more existing values from the column.\nAll added filters appear in a list at the bottom of the log, providing an overview and quick access to edit them using the\nFilter Editor\n.\nTo reset all filters, click\nReset\nin the top menu, to just remove the column filters and keep the date selection.\nExporting the log\nThe audit log can be exported into Excel, HTML, or PDF format in case the data is needed outside Leapwork. Click\nExport\nto save the log data´, respecting any added filters, in one of the three formats.",
+  "links": [
+    {
+      "title": "REST API",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/public-rest-apis"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260313-132936.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f7bcc0e1728116213965db49fb21a0c51c161883e7abdcc2122aead2630e841f/image-20260313-132936.png?cb=2c6d1f9966eb017c9f9af9a7fb20689e"
+    },
+    {
+      "alt": "image-20260202-055535.png",
+      "url": "https://docs.leapwork.com/__attachments/a_30cea97007a93e0c8d163f33be9fa988cc062d80cee907cea64f2e805cb42715/image-20260202-055535.png?cb=71a592707d5c491828a581865e3f3d04"
+    },
+    {
+      "alt": "image-20260615-115438.png",
+      "url": "https://docs.leapwork.com/__attachments/a_65c7b7600511cb20fcae48ed72b8969b4c2508942c7b52d6846daa80772c50fa/image-20260615-115438.png?cb=f164e537b146e2cfb4bec72d0ce674a6"
+    },
+    {
+      "alt": "image-20260615-115611.png",
+      "url": "https://docs.leapwork.com/__attachments/a_556f19a61b054b836e81bcd19093bf4700587b97d993e3b0ec69ce44236b072b/image-20260615-115611.png?cb=75863e8223a4e56dd257815f5d3a127b"
+    },
+    {
+      "alt": "image-20260615-115820.png",
+      "url": "https://docs.leapwork.com/__attachments/a_a4fc80085fa69b8ad84a3cdbabd7716e1303feb90db511ca264ec99ec1905ea5/image-20260615-115820.png?cb=2eed688624ea6499c542b3045ac6181a"
+    },
+    {
+      "alt": "image-20260615-115911.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f4c26dea33b49b49c0adede0c9c3a62974ef395c3cb819c3687aecae99566192/image-20260615-115911.png?cb=802b46629e3ef312a061e3b2cf3555fd"
+    }
+  ]
+}

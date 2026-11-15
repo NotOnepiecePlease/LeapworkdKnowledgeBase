@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--version', default='v1.0.0')
+    parser.add_argument('--version', default='v1.1.0')
     args = parser.parse_args()
     if not re.fullmatch(r'v\d+\.\d+\.\d+', args.version):
         parser.error('Use uma versão como v1.0.0')
@@ -37,7 +37,8 @@ def main():
             assert zipped.testzip() is None, f'ZIP inválido: {archive}'
             assert len(zipped.namelist()) == len(included)
             assert f'{prefix}/site/index.html' in zipped.namelist()
-        digest = hashlib.file_digest(archive.open('rb'), 'sha256').hexdigest()
+        with archive.open('rb') as source:
+            digest = hashlib.file_digest(source, 'sha256').hexdigest()
         checksums.append(f'{digest}  {archive.name}')
         print(f'{archive.name}: {archive.stat().st_size:,} bytes; {len(included)} arquivos; CRC verificado', flush=True)
     (output / 'SHA256SUMS.txt').write_text('\n'.join(checksums) + '\n', encoding='utf-8')

@@ -1,0 +1,77 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists",
+  "title": "Run Lists",
+  "retrievedAt": "2026-11-15T02:15:20.298001+00:00",
+  "text": "Breadcrumbs\nWhat is a Run List?\nA Run List is a group of one or more automation flows that you run on one or more schedules. The Leapwork Controller manages when and how the Run List is executed. Common use cases include:\nGrouping flows into steps and controlling execution order\nTriggering business processes on a schedule\nExecuting flows via the public REST API\nRunning automation as part of CI/CD pipelines\nRunning the same flows in different configurations or environments\nAfter designing automation flows, you can create and schedule a Run List of flows to run automatically in different operating systems and browsers using the Scheduler configuration available under a Run List:\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nCreate a new Run List\nTo create a new Run List, follow these steps:\nIn the Run Lists module, click the\nNew\nbutton:\nChoose the\nRun List\noption.\nProvide a name for the new Run List, e.g. '\nTestRunList\n'.\nDuplicate a Run Lists\nIn order to manage the flows efficiently or to make multiple Run Lists with similar flows and settings, you can create a copy of a Run List. Copying a Run List generates an entirely new version of the Run List and its associated Schedules.\nHowever, reference to the flows is maintained. So, making changes in one Run List's steps or schedules will not impact the other one.\nNote\n: If a flow is modified or deleted, the changes will be reflected in both Run Lists. You can manually add or remove steps and flows in the copied Run List as needed.\nIn order to copy a Run List, do the following:\nNavigate to the\nRun Lists\nsection in Leapwork.\nRight-click on the Run List that needs to be copied.\nChoose the\nCopy\noption from the context menu.\nChoose a folder or simply right-click in the blank area of the Run List section.\nSelect the\nPaste\noption:\nA copy of the Run List is generated containing all steps or the flows in the original Run List. The associated schedules are also duplicated. However, the schedule is disabled so that it doesn't trigger with the same settings i.e. Start Time and Agent:\nFreezing Run Lists\n(Enterprise Edition Only)\nFreeze Run Lists\nare intended for DevOps and QA teams with strict documentation and compliance needs, such as GxP requirements.\nThis feature provides\nstrict version control\nby locking Run Lists and their associated automation flows. Once frozen:\nThe Run List becomes\nread-only\n.\nA\ntimestamp\nis added.\nA\nCreate copy\nbutton appears for versioning.\nWhy freeze a Run List?\nFreezing ensures that:\nApproved flows remain unchanged.\nTeams can confidently reference locked flows in audits or validations.\nThe configuration remains\ntamper-proof\n.\nValidation and compliance processes are\nsecure and verifiable\n.\nWhat you can still do\nEven when frozen, you can:\nView\nthe original version at any time.\nChange how the Run List is scheduled and executed\n.\nDuplicate\nthe Run List to create a new editable version.\nRename\nthe Run List or its schedules.\nModify the steps, flows, or settings\nas needed.\nNote: You cannot modify the original frozen Run List. Any changes must be made on a copy.\nImporting and Exporting Run Lists\nYou can import and export Run Lists (or folders of Run Lists) as ZIP files. This supports migration, backup, and sharing across environments.\nImport Run Lists\nImport Run Lists or folders from a previously exported ZIP file, preserving the original folder and flow hierarchy during the import process.\nTo import a Run List or a folder of Run Lists:\nRight-click within the Run List panel.\nSelect\nImport\nor\nImport as Folder\nfrom the context menu. In case of conflicts (e.g., duplicate IDs or names), you can choose:\nUpdate existing items\nSave as new\nCancel\nNotes:\nIf a frozen Run List is included, it will be skipped during import, and a message will appear\n\"Runlists that are currently in a frozen state will not be updated.\"\nImport actions such as\nCreate Runlist\n,\nUpdate Runlist\n, or\nCreate Schedule\nare also recorded in the audit log with the context marked as\nImported\n.\nExport Run Lists\nExport individual Run Lists or entire folders.\nIncludes folder structure, flows, schedules (if any), and an Excel file summarizing metadata.\nA pop-up window allows you to define the ZIP file name and destination.\nOnce the export is complete, a confirmation message will appear to indicate the operation was successful.\nTo export a Run List or folder, right-click on the target item and choose\nExport\nor\nExport As Folder\nfrom the context menu.\nNote\n: Export actions (e.g., \"Export Runlist\") are recorded in the audit log with the context marked as\nExported\n.\nManage Run Lists\nEdit a Run List\nTo edit a Run List:\nDouble-click on its name in the Run List module.\nUse the right-click context menu.\nSelect\nEdit\n. This will open the Run List in edit mode, allowing changes to its name, steps, flows, retry policy, or other configurations.\nRename a Run List\nTo rename a Run List:\nRight-click the Run List and select\nRename or\npress\nF2\nwhen selected.\nEnter a new name and press Enter.\nDelete a Run List\nTo delete a Run List:\nRight-click the Run List and select\nDelete,\nor press\nDel\n.\nConfirm the deletion in the prompt. Note: associated schedules will also be deleted unless removed manually beforehand.\nAdd steps to Run Lists\nA Run List always consists of one or more steps. Each step in a Run List can contain one or more flows to be executed. You can add multiple steps to define and control the execution of the flows.\nEach step in a Run List can contain one or more flows to be executed.\nYou can add multiple steps to define and control the execution of the flows.\nThe first step is always executed, and the rest of the steps can be made conditional, i.e. their execution can be controlled on the basis of the outcome of the previous step.\nThere are four available conditions to choose in the 'Step':\nIn order to add steps to the Run List, do the following:\nStep\nDescription\nAlways run\nThe\nAlways run\ncondition should be selected if the user needs to run all of the flows irrespective of whether the flows in any previous step have failed.\nOnly run if previous steps have succeeded\nThe\nOnly run after success\ncondition should be selected when the user wants to run the flows in a step\nonly if\nthe flows in the previous steps have succeeded.\nOnly run if all previous steps have succeeded\nThe\nOnly run after all previous steps have success\ncondition should be selected when the user wants to run the flows in a step\nonly if all\nthe tests in the previous steps have succeeded.\nOnly run if any previous steps have failed\nThe\nOnly run if previous steps have failed\ncondition should be selected when the user wants to run the flows in a step\nonly if\nany of the flows in the previous steps have failed.\nThere is an\nAdd step\nbutton available before and after each step. You can click on this button to insert a new step.\nOnce you click the button, a new step will be inserted as shown below:\nOnce the Run List is ready, you can bind it to a particular schedule for autonomous execution.\nAdd flows to steps\nIn order to add flows to the steps, do the following:\nClick the\nAdd flows\nbutton in the corresponding step where you want to add flows,A popup window will open that shows all of the available flows:\nSelect one or more flows by pressing the\nCtrl\nbutton and clicking on the corresponding folder or flows.\nThe\nAdd\nbutton will be enabled on the popup after the user selects one or more flows.\nClick on the button in order to add the selected flows to the step:\nAfter adding the flows, the step will list all of the selected flows:\nRetry policy for Run Lists\nEach Run List includes a Retry Policy setting accessible via the\nRetry Policy\nbutton in the top menu. This setting defines how Leapwork handles failed flows in this Run List.\nThe options are:\nDo not retry failed flows for this run list\nUse default retry settings:\nInherit from global configuration\nCustomize retry settings for this run list:\nDefine a specific retry count between 1 and 5 retries; this is the minimum and maximum allowed range.\nRetry settings apply only to flows within this Run List and can be overridden by Retry Policies defined at the Schedule level. Retry configuration is preserved during export or import actions.\nGet Run List ID\nRight-click the Run List.\nSelect\nGet ID\nto copy its unique identifier to the clipboard. The ID is automatically copied to your clipboard for use in APIs, debugging, or integrations.\nNote:\nNo confirmation message is shown, but the behavior is equivalent to copying text using Ctrl+C.",
+  "links": [],
+  "images": [
+    {
+      "alt": "image-20260526-123418.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d5487b898f11f20cb372cf96b6a6f9ac95b3fe11d75c4ada256c9787c25904ae/image-20260526-123418.png?cb=1ca3949c6d3ad9c79d7fdac44f51f009"
+    },
+    {
+      "alt": "image-20260526-124437.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d39a5c30f81eb3f430429e45b3932b4e650b5a7f2f304d40a34a6815e5fffa6b/image-20260526-124437.png?cb=559323267d211f03a46dd268d4eab3b1"
+    },
+    {
+      "alt": "image-20260526-123621.png",
+      "url": "https://docs.leapwork.com/__attachments/a_948d2e838159f3da24a77e067b04264fffcc4d7bb859ec48c61dca7a7de65959/image-20260526-123621.png?cb=5b7f20857763409a474bcdce5f74b33e"
+    },
+    {
+      "alt": "image-20260526-123955.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5a491a3880fafde5c61968ce9e54ff174660fb4acbf21990d189815944a88cbe/image-20260526-123955.png?cb=5ea5a4ffdaa548b5194f4c7c4b33e93d"
+    },
+    {
+      "alt": "image-20260112-062435.png",
+      "url": "https://docs.leapwork.com/__attachments/a_69cff781d285e208f6aa5e5370f00f3d545c16a4a0b1d8809d18d77e7f87d36b/image-20260112-062435.png?cb=b235b52984e8f76b47561557db57f43e"
+    },
+    {
+      "alt": "image-20260526-124228.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f5aa120d57cc4b2d3d4ba8da2844a672a4a72e62f0a178ebfef3e1024a63b543/image-20260526-124228.png?cb=618060098d3f088a9c02b233c4c5fc35"
+    },
+    {
+      "alt": "image-20260526-124309.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5036cc5b71b9dfaa59e77316f03ca2171eea3e9936abbdcb4042050299912ad8/image-20260526-124309.png?cb=0de7e6dacecdbfc1e1759caf31fc6b9c"
+    },
+    {
+      "alt": "image-20260112-062614.png",
+      "url": "https://docs.leapwork.com/__attachments/a_3bc3ee069975fb8111d5324ef84f98410264d0f7052e08da7ca24c8e496fb02e/image-20260112-062614.png?cb=f18541a5e8db9a0c071336934baa8ebf"
+    },
+    {
+      "alt": "image-20260112-062644.png",
+      "url": "https://docs.leapwork.com/__attachments/a_4650979a35f6972be38908a9862bffb53da2bdf4ea7c0c6a1f80ce7538f0c2fc/image-20260112-062644.png?cb=30a561c4e66a07afaa6d496980784829"
+    },
+    {
+      "alt": "image-20260526-134030.png",
+      "url": "https://docs.leapwork.com/__attachments/a_7bb620e49f90a0a61b7a4fff7ccaa18bf6ea1f243d3d7ef9771ac198ac370201/image-20260526-134030.png?cb=b5e50d770f21e0f5a43414516b4778d3"
+    },
+    {
+      "alt": "image-20260526-134318.png",
+      "url": "https://docs.leapwork.com/__attachments/a_b4611d6bf65dd95431ca12a3840ab22ce73819263a11a1ddc2898d1d3f0005ce/image-20260526-134318.png?cb=37d0f25e730038753b439ea8cae949e8"
+    },
+    {
+      "alt": "image-20260526-134357.png",
+      "url": "https://docs.leapwork.com/__attachments/a_6993504bbca4bb6b3479e40a56fb59fefb97458fb7de6ad4d9df9313f38944f2/image-20260526-134357.png?cb=49fee2a82b0f2951579e542f22f5c94b"
+    },
+    {
+      "alt": "image-20260112-062917.png",
+      "url": "https://docs.leapwork.com/__attachments/a_48400fabcda33e6a6a72686eed7aa08ddc15e8c41c6082ee0c1eebedf4aabd9e/image-20260112-062917.png?cb=7adc095ded1f3021b237f86ed746850d"
+    },
+    {
+      "alt": "image-20260112-062943.png",
+      "url": "https://docs.leapwork.com/__attachments/a_297684d398633d2aa62bdd7a945be69e84788957137078749332b8d02e7018ec/image-20260112-062943.png?cb=211c4266b34b398fbd32ccbbcf5f451d"
+    },
+    {
+      "alt": "image-20260112-063016.png",
+      "url": "https://docs.leapwork.com/__attachments/a_22acbf2b255f7b18843cb376dba0ee2e0d5f609f465569c260707c21d26c8f9e/image-20260112-063016.png?cb=3ca36ee32ace917b65d21b48c2c090ed"
+    },
+    {
+      "alt": "image-20260112-063033.png",
+      "url": "https://docs.leapwork.com/__attachments/a_025a9189162e8dfa1c70ccbd20c6597a645a0b92dd6a741bae087651da60e0f5/image-20260112-063033.png?cb=270a9550116864e46089510056a34719"
+    },
+    {
+      "alt": "image-20260112-063117.png",
+      "url": "https://docs.leapwork.com/__attachments/a_14be63aa8e26bbf2af8393d4eb47850e79a28da8610194a278c0c4a43de47a8c/image-20260112-063117.png?cb=3a758ecb4728328e9fef31d7dbb907c3"
+    }
+  ]
+}

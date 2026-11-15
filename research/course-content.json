@@ -1,5 +1,5 @@
 {
-  "updated": "13/11/2026",
+  "updated": "14/11/2026",
   "course": "https://leapwork.com/learning-center/self-paced-training/#h-module-1-introduction-to-leapwork-and-web-desktop-virtual-testing",
   "docsBase": "https://docs.leapwork.com/leapwork-flow/latest/",
   "modules": [
@@ -21,7 +21,7 @@
     [
       "04",
       "Administração e controle",
-      "Monitoramento, execução e versões"
+      "16 aulas · Agents, execução, monitoramento e versões"
     ],
     [
       "05",
@@ -254,6 +254,54 @@
       "Arredondamento para o par",
       "Política de ponto médio",
       "Em empates de arredondamento, escolhe a representação cujo último dígito retido é par."
+    ],
+    [
+      "Run List",
+      "Lista de execução",
+      "Agrupa fluxos em passos e condições; um Schedule define quando e em quais Agents executar.",
+      "controle-runlists"
+    ],
+    [
+      "Schedule",
+      "Agendamento",
+      "Configura disparo, recursos e comportamento da execução de uma Run List.",
+      "controle-agendamentos"
+    ],
+    [
+      "Retry",
+      "Nova tentativa",
+      "Repete um fluxo que falhou conforme a política; pode ter efeitos parciais e precisa de investigação.",
+      "controle-repeticoes"
+    ],
+    [
+      "Audit Log",
+      "Registro de auditoria",
+      "Eventos da plataforma e alterações; distinto do Activity log de uma execução.",
+      "controle-auditoria"
+    ],
+    [
+      "Retention",
+      "Retenção",
+      "Políticas que controlam por quanto tempo tipos de evidência permanecem armazenados.",
+      "controle-retencao"
+    ],
+    [
+      "Only Flow",
+      "Restaurar a lógica",
+      "Recupera a lógica da versão selecionada, preservando os Locators atuais.",
+      "controle-restauracao"
+    ],
+    [
+      "Full Copy",
+      "Recuperar em uma cópia",
+      "Cria um duplicado da versão selecionada, incluindo Locators, preservando o fluxo atual.",
+      "controle-restauracao"
+    ],
+    [
+      "Full Restore",
+      "Restauração completa da versão",
+      "Recupera estrutura e Locators da versão selecionada; exige validação contra a aplicação atual.",
+      "controle-restauracao"
     ]
   ],
   "lessons": [
@@ -9045,6 +9093,1910 @@
       "number": "19",
       "group": "Laboratório de integração",
       "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-ambiente",
+      "title": "Identificar o Controller e os recursos do ambiente",
+      "topic": "administracao",
+      "read": "8 min",
+      "description": "Monte um inventário para saber onde estão os fluxos, quem administra o ambiente e quais recursos estão licenciados.",
+      "objectives": [
+        "Distinguir interface, Controller e Agent.",
+        "Reconhecer o escopo de uma licença.",
+        "Preparar uma ficha do ambiente antes de alterar configurações."
+      ],
+      "concepts": [
+        [
+          "Responsabilidades",
+          "Flow é a interface de trabalho. O Controller centraliza o acesso aos ativos e coordena execuções. O Agent fornece o ambiente em que a automação acontece. Abrir o caderno não instala nenhum desses componentes."
+        ],
+        [
+          "Contexto antes da mudança",
+          "Dois Controllers são ambientes independentes, com usuários e licenças próprios. Uma configuração feita no ambiente de estudo não deve ser presumida no ambiente de produção."
+        ],
+        [
+          "Recursos disponíveis",
+          "A edição e a licença condicionam os recursos disponíveis. A ausência de Teams ou de uma função Enterprise pode decorrer da edição, e não de um erro no fluxo."
+        ]
+      ],
+      "flow": [
+        "Identificar Controller",
+        "Conferir acesso",
+        "Conferir licença",
+        "Registrar inventário"
+      ],
+      "flowNote": "Roteiro de levantamento; não altera o ambiente.",
+      "steps": [
+        {
+          "doc": "administration/controller-settings",
+          "title": "Localize o Controller conectado",
+          "text": "Em Settings, consulte Controller Settings como administrador e identifique a conexão em uso. Anote nome e finalidade do ambiente numa ficha de estudo.",
+          "observe": "Confira se está no Controller de homologação antes de qualquer prática.",
+          "imagePath": "assets/docs/m4-controller-settings.png",
+          "caption": "Interface na documentação oficial · Localize o Controller conectado. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "administration/license-management",
+          "title": "Confira os recursos contratados",
+          "text": "Consulte License Management e registre a edição e os recursos efetivamente liberados. Uma licença está associada a um Controller.",
+          "observe": "Não desative a licença como teste: a remoção da última licença pode impedir o acesso."
+        },
+        {
+          "doc": "administration/controller-settings",
+          "title": "Separe as responsabilidades",
+          "text": "Na ficha fictícia, associe Ana à administração do Controller e Bruno à manutenção dos fluxos. Liste os Agents de teste e suas aplicações.",
+          "observe": "Nome de máquina e versão são contexto; não copie senhas ou chaves para as anotações."
+        },
+        {
+          "doc": "administration/license-management",
+          "title": "Prepare um teste de acesso",
+          "text": "Defina qual conta e qual Controller serão usados na prática. Registre o resultado esperado: entrar no ambiente de homologação e consultar os ativos permitidos.",
+          "observe": "O Refresh License atende alterações de licença; não é uma correção universal de falhas de conexão."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Ambiente confundido",
+          "Um nome parecido não comprova que o Controller é o correto."
+        ],
+        [
+          "Recurso presumido",
+          "Planejar um recurso Enterprise exige conferir sua disponibilidade."
+        ]
+      ],
+      "exercise": {
+        "title": "Crie a ficha de uma homologação fictícia",
+        "tasks": [
+          "Identifique um Controller e dois Agents.",
+          "Defina um administrador e um responsável pelos fluxos.",
+          "Liste os recursos que precisam ser confirmados."
+        ],
+        "answer": "Exemplo: Controller QA, Agent Web e Agent Desktop; Ana administra e Bruno mantém os fluxos. Conferir edição, acesso, aplicações, disponibilidade dos Agents e funções de equipe antes de executar."
+      },
+      "practice": "Com acesso ao Leapwork, faça um inventário por consulta e compare-o com a ficha fictícia antes de alterar algo.",
+      "quiz": [
+        {
+          "q": "A licença de um Controller libera automaticamente outro?",
+          "options": [
+            "Não, cada Controller tem sua própria licença.",
+            "Sim, todo Controller compartilha a mesma licença."
+          ],
+          "correct": 0,
+          "why": "Controllers são independentes."
+        },
+        {
+          "q": "Onde o fluxo executa suas ações?",
+          "options": [
+            "Dentro deste caderno HTML.",
+            "No ambiente disponibilizado pelo Agent."
+          ],
+          "correct": 1,
+          "why": "O caderno serve para estudar; o Agent é o ambiente de execução."
+        }
+      ],
+      "docs": [
+        [
+          "controller-settings",
+          "administration/controller-settings"
+        ],
+        [
+          "license-management",
+          "administration/license-management"
+        ],
+        [
+          "architecture-overview",
+          "what-is-leapwork/architecture-overview"
+        ]
+      ],
+      "module": 4,
+      "number": "01",
+      "group": "Ambiente e administração",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-acessos",
+      "title": "Organizar usuários, equipes e permissões",
+      "topic": "administracao",
+      "read": "10 min",
+      "description": "Escolha o acesso de quem administra, mantém e consulta os fluxos, levando em conta os privilégios configuráveis.",
+      "objectives": [
+        "Relacionar papéis às tarefas.",
+        "Conferir privilégios de Reader e Contributor.",
+        "Distinguir contas locais, diretório e equipes."
+      ],
+      "concepts": [
+        [
+          "Papéis",
+          "Administrator administra o ambiente; Contributor trabalha nos ativos; Reader consulta; No Access suspende o acesso da conta. O comportamento efetivo também depende das opções em Privileges Settings."
+        ],
+        [
+          "Execução e leitura",
+          "Reader pode receber permissão para executar fluxos. Contributor pode ter restrições para excluir ativos. Leia a configuração atual antes de concluir o que alguém pode fazer pelo nome do papel."
+        ],
+        [
+          "Equipe e identidade",
+          "Teams organiza colaboração e depende da edição Enterprise. Contas de diretório/SSO exigem conexões e configuração compatíveis. Gerenciar identidade é diferente de criar uma pasta de fluxos."
+        ]
+      ],
+      "flow": [
+        "Listar tarefas",
+        "Escolher papéis",
+        "Conferir privilégios",
+        "Testar com cada conta"
+      ],
+      "flowNote": "Matriz de acesso autoral, para um ambiente fictício.",
+      "steps": [
+        {
+          "doc": "administration/user-management",
+          "title": "Liste quem faz o quê",
+          "text": "Em User Management, relacione as pessoas e as tarefas necessárias. No exemplo, Ana administra, Bruno edita e Carla consulta resultados.",
+          "observe": "Evite compartilhar uma conta para três pessoas: isso prejudica a identificação das ações.",
+          "imagePath": "assets/docs/m4-user-management.png",
+          "caption": "Interface na documentação oficial · Liste quem faz o quê. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "administration/privileges-settings",
+          "title": "Confira o acesso efetivo",
+          "text": "Consulte Allow Reader to run flows e as permissões de exclusão do Contributor. Anote se Carla poderá apenas consultar ou também executar.",
+          "observe": "A documentação consultada tem uma descrição contraditória sobre o botão Test connection do Contributor; confira o comportamento na sua versão."
+        },
+        {
+          "doc": "administration/team-management",
+          "title": "Organize as equipes disponíveis",
+          "text": "Se a edição oferecer Teams, associe os usuários à equipe de homologação. Confirme o vínculo antes de entregar o acesso.",
+          "observe": "Excluir uma equipe pode remover seus fluxos permanentemente; não use exclusão para apenas retirar um integrante."
+        },
+        {
+          "doc": "administration/active-directory-settings",
+          "title": "Valide identidade e recuperação",
+          "text": "Com o administrador, confira a origem da conta e os requisitos de AD/SSO. Conheça o procedimento de emergência documentado e teste a matriz numa conta de estudo.",
+          "observe": "Security, Emergency Admin User e diretório devem seguir o procedimento do ambiente; o exercício não exige alterar credenciais."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Papel como garantia absoluta",
+          "O privilégio configurado pode mudar a capacidade de executar ou excluir."
+        ],
+        [
+          "Equipe como pasta descartável",
+          "Remover uma equipe tem consequências sobre seus ativos."
+        ]
+      ],
+      "exercise": {
+        "title": "Monte uma matriz de três pessoas",
+        "tasks": [
+          "Atribua os papéis de Ana, Bruno e Carla.",
+          "Decida se Carla pode executar.",
+          "Indique como verificar essa decisão."
+        ],
+        "answer": "Ana: Administrator; Bruno: Contributor; Carla: Reader. Para impedir execução por Reader, o administrador confere e desabilita a opção correspondente no ambiente de teste e valida com a conta de Carla."
+      },
+      "practice": "Valide permissões em contas de estudo. Registre a matriz sem dados pessoais reais ou senhas.",
+      "quiz": [
+        {
+          "q": "Todo Reader está necessariamente impedido de executar?",
+          "options": [
+            "Sim, o nome Reader garante esse bloqueio.",
+            "Não, há um privilégio configurável."
+          ],
+          "correct": 1,
+          "why": "O acesso efetivo exige conferir Privileges Settings."
+        },
+        {
+          "q": "Excluir a equipe é adequado para retirar só um integrante?",
+          "options": [
+            "Não; edite a composição da equipe.",
+            "Sim, porque os fluxos sempre ficam preservados."
+          ],
+          "correct": 0,
+          "why": "A documentação alerta sobre remoção permanente dos fluxos associados."
+        }
+      ],
+      "docs": [
+        [
+          "user-management",
+          "administration/user-management"
+        ],
+        [
+          "privileges-settings",
+          "administration/privileges-settings"
+        ],
+        [
+          "team-management",
+          "administration/team-management"
+        ],
+        [
+          "wip-security",
+          "administration/wip-security"
+        ],
+        [
+          "emergency-admin-user",
+          "administration/emergency-admin-user"
+        ],
+        [
+          "active-directory-settings",
+          "administration/active-directory-settings"
+        ]
+      ],
+      "module": 4,
+      "number": "02",
+      "group": "Ambiente e administração",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-conexoes",
+      "title": "Preparar conexões, chaves e notificações",
+      "topic": "administracao",
+      "read": "9 min",
+      "description": "Separe o acesso ao Leapwork das credenciais de sistemas externos e prepare notificações verificáveis.",
+      "objectives": [
+        "Distinguir conexão, chave de API e conta do Agent.",
+        "Localizar configurações de e-mail e proxy.",
+        "Planejar testes sem expor segredos."
+      ],
+      "concepts": [
+        [
+          "Conexões externas",
+          "Connections reúne integrações com identidade, recursos externos e provedores compatíveis. Azure DevOps e configuração Mobile têm seções próprias. A necessidade depende do ambiente usado."
+        ],
+        [
+          "Credenciais distintas",
+          "Uma chave de API autoriza chamadas ao Leapwork; uma conta do Windows atende à sessão do Agent; uma conexão externa autoriza outro serviço. Uma credencial não substitui as demais."
+        ],
+        [
+          "Notificação verificável",
+          "Configurar uma ação de e-mail num agendamento exige que a infraestrutura de e-mail funcione. Uma execução concluída não comprova, sozinha, que o destinatário recebeu a mensagem."
+        ]
+      ],
+      "flow": [
+        "Identificar integração",
+        "Configurar acesso",
+        "Testar conexão",
+        "Verificar destino"
+      ],
+      "flowNote": "Nenhum e-mail ou pedido HTTP é enviado pelo caderno.",
+      "steps": [
+        {
+          "doc": "administration/connections",
+          "title": "Defina a finalidade da conexão",
+          "text": "Registre serviço, ambiente, responsável e tipo de acesso. Consulte Connections para escolher uma integração compatível.",
+          "observe": "Use exemplos fictícios na ficha; guarde segredos apenas no mecanismo previsto pelo ambiente."
+        },
+        {
+          "doc": "administration/api-access-keys",
+          "title": "Separe as chaves das entradas comuns",
+          "text": "Se a operação usar a API do Leapwork, confira API Access Keys com o administrador. Documente o responsável e o uso, sem copiar o valor da chave.",
+          "observe": "O tutorial de integrações completas pertence ao módulo 5; aqui o foco é administrar o acesso."
+        },
+        {
+          "doc": "administration/e-mail-settings",
+          "title": "Prepare a comunicação",
+          "text": "Confira E-mail Settings e as necessidades de proxy. Defina um destinatário de teste autorizado e o assunto esperado para uma futura ação do Schedule.",
+          "observe": "Os caminhos de rede do Controller e do Agent podem ser diferentes."
+        },
+        {
+          "doc": "administration/proxy-settings",
+          "title": "Teste no contexto certo",
+          "text": "Valide o acesso do componente que fará a chamada. Registre horário, destino e resposta observada, incluindo entrega da notificação quando aplicável.",
+          "observe": "Testar a URL no navegador pessoal não demonstra que o Controller ou o Agent consegue alcançá-la."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Uma senha para todos os contextos",
+          "Identidade no Leapwork, sessão Windows e sistema externo são responsabilidades distintas."
+        ],
+        [
+          "Notificação sem verificação",
+          "Uma ação configurada pode não chegar ao destino."
+        ]
+      ],
+      "exercise": {
+        "title": "Desenhe uma notificação de falha",
+        "tasks": [
+          "Defina quem recebe uma falha de homologação.",
+          "Identifique a configuração de e-mail.",
+          "Liste duas evidências de entrega."
+        ],
+        "answer": "O responsável de QA recebe uma mensagem de teste após a falha fictícia. E-mail Settings precisa estar configurado. Evidências: registro do envio no contexto da execução e recebimento no destino autorizado, com horário e identificação do teste."
+      },
+      "practice": "Prepare e valide uma notificação apenas em um ambiente de teste com destinatário combinado.",
+      "quiz": [
+        {
+          "q": "Abrir uma URL no seu navegador prova o acesso do Agent?",
+          "options": [
+            "Não; o contexto de execução precisa ser validado.",
+            "Sim, as redes e credenciais são sempre iguais."
+          ],
+          "correct": 0,
+          "why": "Conectividade e autenticação variam por máquina e componente."
+        },
+        {
+          "q": "Devo copiar a chave de API para minhas notas?",
+          "options": [
+            "Sim, o caderno é o cofre de credenciais.",
+            "Não; registre finalidade e responsável sem o segredo."
+          ],
+          "correct": 1,
+          "why": "As anotações ficam no armazenamento do navegador."
+        }
+      ],
+      "docs": [
+        [
+          "connections",
+          "administration/connections"
+        ],
+        [
+          "api-access-keys",
+          "administration/api-access-keys"
+        ],
+        [
+          "e-mail-settings",
+          "administration/e-mail-settings"
+        ],
+        [
+          "proxy-settings",
+          "administration/proxy-settings"
+        ],
+        [
+          "wip-azure-devops-connections",
+          "administration/wip-azure-devops-connections"
+        ],
+        [
+          "mobile-configuration",
+          "administration/mobile-configuration"
+        ]
+      ],
+      "module": 4,
+      "number": "03",
+      "group": "Ambiente e administração",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-retencao",
+      "title": "Preservar evidências e planejar a retenção",
+      "topic": "administracao",
+      "read": "10 min",
+      "description": "Escolha o que guardar antes da limpeza e diferencie exportação de fluxos, histórico e recuperação do ambiente.",
+      "objectives": [
+        "Distinguir resultados, vídeos e versões.",
+        "Reconhecer o escopo das políticas.",
+        "Planejar recuperação sem tratar exportação como backup integral."
+      ],
+      "concepts": [
+        [
+          "Tipos de evidência",
+          "Resultados, gravações, auditoria e versões respondem a perguntas diferentes. Apagar vídeos pode reduzir espaço, mas elimina um recurso de investigação. O prazo deve atender à janela de análise."
+        ],
+        [
+          "Escopo das políticas",
+          "A documentação diferencia políticas de execuções por equipe de políticas globais, como auditoria e versões. Confira herança de Preview Runs antes de supor que sua gravação ficará disponível."
+        ],
+        [
+          "Recuperação",
+          "Um ZIP de fluxo permite compartilhar ativos; não deve ser tratado como backup integral de bancos, mídia, usuários e configurações. Planeje a recuperação com o administrador conforme a implantação."
+        ]
+      ],
+      "flow": [
+        "Inventariar evidências",
+        "Definir janela de análise",
+        "Conferir escopo",
+        "Validar recuperação"
+      ],
+      "flowNote": "A decisão de prazo deste exercício é autoral; não é uma recomendação universal de retenção.",
+      "steps": [
+        {
+          "doc": "administration/retention-policies",
+          "title": "Liste o que precisa continuar acessível",
+          "text": "Consulte Retention Policies. Na ficha fictícia, liste resultados, vídeos de falha e versões necessárias para investigar um incidente.",
+          "observe": "Não acione limpeza durante o estudo.",
+          "imagePath": "assets/docs/m4-retention-policies.png",
+          "caption": "Interface na documentação oficial · Liste o que precisa continuar acessível. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "administration/retention-policies",
+          "title": "Confira a política que alcança cada item",
+          "text": "Separe Scheduled Runs, Preview Runs e as políticas globais. Confira se Preview herda a configuração de Schedule.",
+          "observe": "A opção de remover vídeos de sucesso após uma hora pode reduzir a evidência disponível."
+        },
+        {
+          "doc": "administration/database-decryption-keys",
+          "title": "Planeje a recuperação com o administrador",
+          "text": "Identifique o responsável pelo backup e pela restauração do ambiente e pela guarda da chave de descriptografia quando aplicável.",
+          "observe": "Este caderno não fornece nem armazena uma chave real; a recuperação precisa seguir o procedimento da implantação."
+        },
+        {
+          "doc": "administration/database-management",
+          "title": "Não confunda manutenção com backup",
+          "text": "Database Management apresenta correções específicas de revisões e conectores de sub-flows após atualizações. Considere-as apenas diante do problema correspondente.",
+          "observe": "Esses botões não substituem backup, retenção ou um teste de recuperação."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Exportação como cópia integral",
+          "Fluxos exportados não comprovam que todo o ambiente é recuperável."
+        ],
+        [
+          "Limpeza antes da análise",
+          "Uma política pode remover a evidência que explicaria o incidente."
+        ]
+      ],
+      "exercise": {
+        "title": "A falha será investigada em três dias",
+        "tasks": [
+          "Liste quais evidências precisam sobreviver até a análise.",
+          "Explique por que só guardar o ZIP do fluxo não basta.",
+          "Defina quem aprova a política."
+        ],
+        "answer": "Preservar resultado da execução, log, gravação disponível, versão do fluxo e contexto do Agent. O ZIP não representa todo o estado do Controller. O administrador e o responsável pela investigação devem conferir prazos e escopo antes da limpeza."
+      },
+      "practice": "Consulte as políticas sem modificá-las e escreva uma proposta para o administrador revisar.",
+      "quiz": [
+        {
+          "q": "O ZIP exportado comprova backup integral do Controller?",
+          "options": [
+            "Sim, inclui necessariamente todos os resultados e usuários.",
+            "Não, são escopos diferentes."
+          ],
+          "correct": 1,
+          "why": "Compartilhar ativos não demonstra recuperação integral."
+        },
+        {
+          "q": "O que conferir antes de reduzir a retenção?",
+          "options": [
+            "Quais evidências a investigação ainda precisa.",
+            "Somente o tamanho do arquivo do fluxo."
+          ],
+          "correct": 0,
+          "why": "A disponibilidade histórica depende das políticas e dos tipos de dados."
+        }
+      ],
+      "docs": [
+        [
+          "retention-policies",
+          "administration/retention-policies"
+        ],
+        [
+          "database-decryption-keys",
+          "administration/database-decryption-keys"
+        ],
+        [
+          "database-management",
+          "administration/database-management"
+        ]
+      ],
+      "module": 4,
+      "number": "04",
+      "group": "Ambiente e administração",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-padroes",
+      "title": "Conferir padrões de execução e captura",
+      "topic": "administracao",
+      "read": "8 min",
+      "description": "Diferencie timeout de execução e de captura, preservando o contexto de alterações que afetam vários fluxos.",
+      "objectives": [
+        "Distinguir limites de captura, bloco e fluxo.",
+        "Entender o alcance de Update all Flows.",
+        "Registrar uma mudança reproduzível."
+      ],
+      "concepts": [
+        [
+          "Timeout por contexto",
+          "O limite do fluxo controla o tempo total. O limite de um bloco controla uma operação. Capture Settings trata a inspeção durante a construção. Alterar um desses limites não resolve automaticamente os demais."
+        ],
+        [
+          "Padrão e atualização",
+          "Default Flow Settings orienta novos fluxos. Update all Flows pode aplicar uma mudança aos existentes. Antes de uma alteração em lote, identifique os fluxos e a necessidade de cada um."
+        ],
+        [
+          "Captura e execução",
+          "Web Settings e Capture Settings tratam aspectos específicos da tecnologia e da inspeção. Uma captura bem-sucedida não garante que o localizador continuará correto após a aplicação mudar."
+        ]
+      ],
+      "flow": [
+        "Reproduzir sintoma",
+        "Identificar limite",
+        "Mudar em teste",
+        "Comparar resultado"
+      ],
+      "flowNote": "Método de diagnóstico autoral; evite ajustar limites sem evidência.",
+      "steps": [
+        {
+          "doc": "administration/default-flow-settings",
+          "title": "Identifique o padrão em uso",
+          "text": "Consulte gravação, timeout total, OCR e integração de navegador no Default Flow Settings. Registre apenas os itens pertinentes ao teste.",
+          "observe": "Recursos de OCR e automação podem depender de versão e licença.",
+          "imagePath": "assets/docs/m4-default-flow-settings.png",
+          "caption": "Interface na documentação oficial · Identifique o padrão em uso. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "administration/wip-capture-settings",
+          "title": "Separe falha de inspeção de falha na execução",
+          "text": "Se a captura falha enquanto você escolhe um elemento, investigue a inspeção. Se a execução não encontra o elemento, confira localizador, aplicação e espera.",
+          "observe": "Aumentar o timeout de captura não modifica o resultado esperado do teste."
+        },
+        {
+          "doc": "administration/wip-web-settings",
+          "title": "Confira ajustes específicos",
+          "text": "Em aplicações Salesforce, consulte o limite de estratégias na seção Web Settings antes de atribuir lentidão ao fluxo inteiro.",
+          "observe": "A documentação atual não apresenta Web Settings como um painel genérico de todos os navegadores."
+        },
+        {
+          "doc": "administration/default-flow-settings",
+          "title": "Compare antes e depois",
+          "text": "Faça a proposta de mudança em um fluxo de teste, com versão, duração e resultado esperado. Avalie o alcance de Update all Flows separadamente.",
+          "observe": "Mudar todos os fluxos para corrigir um caso isolado dificulta comparar o efeito."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Timeout como solução universal",
+          "Tempo maior não corrige localizador errado."
+        ],
+        [
+          "Atualização em lote involuntária",
+          "Um padrão e a aplicação aos fluxos existentes têm alcances distintos."
+        ]
+      ],
+      "exercise": {
+        "title": "Uma captura demora e uma execução falha",
+        "tasks": [
+          "Identifique qual sintoma pertence à inspeção.",
+          "Liste o que investigar na execução.",
+          "Defina uma comparação controlada."
+        ],
+        "answer": "A demora ao capturar pertence à inspeção. A falha ao executar exige conferir localizador, estado da aplicação, esperas e limites. Compare o mesmo caso antes/depois em um fluxo de teste, mudando um fator por vez."
+      },
+      "practice": "Registre os padrões atuais e teste uma mudança pequena numa cópia de estudo.",
+      "quiz": [
+        {
+          "q": "Um timeout maior torna um localizador incorreto válido?",
+          "options": [
+            "Não.",
+            "Sim, desde que o tempo seja suficiente."
+          ],
+          "correct": 0,
+          "why": "Tempo e identidade do elemento são problemas diferentes."
+        },
+        {
+          "q": "Update all Flows deve ser tratado como simples consulta?",
+          "options": [
+            "Sim, só muda o título do padrão.",
+            "Não, pode modificar os fluxos existentes."
+          ],
+          "correct": 1,
+          "why": "É necessário avaliar o alcance da alteração."
+        }
+      ],
+      "docs": [
+        [
+          "default-flow-settings",
+          "administration/default-flow-settings"
+        ],
+        [
+          "wip-capture-settings",
+          "administration/wip-capture-settings"
+        ],
+        [
+          "wip-web-settings",
+          "administration/wip-web-settings"
+        ]
+      ],
+      "module": 4,
+      "number": "05",
+      "group": "Ambiente e administração",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-agentes",
+      "title": "Preparar e verificar um Agent remoto",
+      "topic": "execucao",
+      "read": "10 min",
+      "description": "Confirme a conexão e o contexto de uma máquina de execução antes de culpar os passos do fluxo.",
+      "objectives": [
+        "Identificar host, porta e autenticação.",
+        "Conferir sessão, resolução e aplicações.",
+        "Distinguir conexão de teste funcional."
+      ],
+      "concepts": [
+        [
+          "Ambiente de execução",
+          "O Remote Agent atende Web, Desktop UI e Virtual. Outros tipos de Agent têm capacidades e requisitos próprios. Um provedor para Web não deve ser escolhido supondo suporte a qualquer aplicativo Windows."
+        ],
+        [
+          "Conexão",
+          "O cadastro inclui host, porta e método de autenticação. A porta padrão documentada é 6777, mas a configuração real precisa ser conferida. Uma porta acessível não comprova que o usuário consegue usar a aplicação."
+        ],
+        [
+          "Reprodutibilidade",
+          "Sessão, permissões de arquivos, aplicações instaladas e resolução influenciam o fluxo. No exemplo, um login válido sem acesso à planilha ainda é um ambiente incompleto."
+        ]
+      ],
+      "flow": [
+        "Cadastrar Agent",
+        "Testar conexão",
+        "Conferir sessão",
+        "Executar caso mínimo"
+      ],
+      "flowNote": "A prática usa uma máquina de homologação; o laboratório do caderno não estabelece conexões reais.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/agents-overview",
+          "title": "Escolha o tipo e o host",
+          "text": "Em Agents, crie um Remote Agent para a máquina de teste. Informe nome, host e porta conforme a instalação. localhost só corresponde à máquina em que o componente está instalado.",
+          "observe": "Não copie uma configuração de Cloud ou de provedor Web para um aplicativo Desktop.",
+          "imagePath": "assets/docs/m4-agents-overview.png",
+          "caption": "Interface na documentação oficial · Escolha o tipo e o host. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/agents-overview",
+          "title": "Confira autenticação e sessão",
+          "text": "Escolha o método configurado para o ambiente e teste a conexão. Confira qual conta Windows e qual sessão serão usadas.",
+          "observe": "Uma credencial de login no Flow não é automaticamente a conta de execução do Agent."
+        },
+        {
+          "doc": "working-with-leapwork/agents-overview",
+          "title": "Valide os recursos do caso",
+          "text": "Confirme resolução, display, aplicativo, navegador, caminho da planilha e acesso de rede na máquina de teste.",
+          "observe": "O arquivo no seu computador não está necessariamente disponível no Agent remoto."
+        },
+        {
+          "doc": "working-with-leapwork/agents-overview",
+          "title": "Execute um caso pequeno",
+          "text": "Use um fluxo de homologação com uma ação simples e uma verificação explícita. Registre o Agent, o horário e a evidência do resultado.",
+          "observe": "Successfully connected comprova a conexão, não o sucesso de toda a automação."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Arquivos apenas locais",
+          "Um caminho precisa existir e ser acessível no contexto da execução."
+        ],
+        [
+          "Conexão como aprovação",
+          "Um Agent conectado ainda pode falhar ao abrir a aplicação."
+        ]
+      ],
+      "exercise": {
+        "title": "Conecta, mas não lê a planilha",
+        "tasks": [
+          "Liste duas hipóteses ambientais.",
+          "Defina como verificar o caminho.",
+          "Explique por que não aumentar o timeout primeiro."
+        ],
+        "answer": "O arquivo pode não existir na máquina remota ou a conta do Agent pode não ter acesso. Verifique o caminho com essa identidade e um arquivo fictício. Mais tempo não cria o arquivo nem concede permissão."
+      },
+      "practice": "Valide um caso mínimo numa máquina de homologação antes de distribuir uma Run List inteira.",
+      "quiz": [
+        {
+          "q": "Conexão bem-sucedida aprova todas as ações do fluxo?",
+          "options": [
+            "Sim, o fluxo já foi validado.",
+            "Não; é preciso testar o caso."
+          ],
+          "correct": 1,
+          "why": "Conectividade e comportamento funcional são verificações diferentes."
+        },
+        {
+          "q": "Um arquivo no seu Desktop está garantido no Agent remoto?",
+          "options": [
+            "Não.",
+            "Sim, os caminhos são sincronizados automaticamente."
+          ],
+          "correct": 0,
+          "why": "A disponibilidade depende da máquina e da identidade usadas."
+        }
+      ],
+      "docs": [
+        [
+          "agents-overview",
+          "working-with-leapwork/agents-overview"
+        ]
+      ],
+      "module": 4,
+      "number": "06",
+      "group": "Agents e execução",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-runlists",
+      "title": "Organizar fluxos em Run Lists e passos",
+      "topic": "execucao",
+      "read": "9 min",
+      "description": "Agrupe o trabalho, explicite dependências e decida quais passos podem continuar depois de uma falha.",
+      "objectives": [
+        "Distinguir fluxo, passo e Run List.",
+        "Escolher condições de execução.",
+        "Identificar referências compartilhadas ao copiar uma lista."
+      ],
+      "concepts": [
+        [
+          "Organização",
+          "Uma Run List reúne fluxos em passos. A lista define o trabalho e suas condições; o Schedule define quando e onde executá-lo. São configurações relacionadas, com responsabilidades distintas."
+        ],
+        [
+          "Condição por passo",
+          "O primeiro passo executa. Nos seguintes, escolha execução incondicional ou dependente de sucesso/falha dos passos anteriores. Confira o alcance da condição na interface da sua versão."
+        ],
+        [
+          "Referências",
+          "Copiar uma Run List cria outra lista e seus agendamentos, mas mantém referências aos fluxos. Modificar o fluxo pode afetar as duas listas. A cópia não isola automaticamente a lógica."
+        ]
+      ],
+      "flow": [
+        "Preparar dados",
+        "Validar operação",
+        "Investigar se falhar",
+        "Encerrar com evidências"
+      ],
+      "flowNote": "Exemplo de organização. O encerramento deve ser projetado para o cenário real.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/run-lists",
+          "title": "Crie uma lista com propósito",
+          "text": "Em Run Lists, use New e dê um nome como QA · cadastro. Adicione apenas os fluxos da rotina de estudo.",
+          "observe": "Uma lista compreensível tem objetivo e responsável claros.",
+          "imagePath": "assets/docs/m4-run-lists.png",
+          "caption": "Interface na documentação oficial · Crie uma lista com propósito. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists",
+          "title": "Distribua os fluxos em passos",
+          "text": "Separe preparação, operação e encerramento. Use Add flows no passo correspondente e confira os itens selecionados.",
+          "observe": "A ordem visual deve representar dependências reais."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists",
+          "title": "Defina as condições",
+          "text": "Deixe a operação depender da preparação quando isso for necessário. Reserve um passo Always run para uma ação de encerramento que faça sentido mesmo após falha.",
+          "observe": "O exemplo é uma decisão didática; o encerramento ainda precisa lidar com preparação incompleta."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists",
+          "title": "Revise as referências ao copiar",
+          "text": "Antes de adaptar uma cópia da lista, confira quais fluxos continuam compartilhados e quais agendamentos foram copiados.",
+          "observe": "A documentação informa que os agendamentos copiados ficam desabilitados para evitar disparos duplicados."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Cópia como isolamento total",
+          "Duas listas podem referenciar o mesmo fluxo."
+        ],
+        [
+          "Tudo incondicional",
+          "Uma operação pode começar sem a preparação necessária."
+        ]
+      ],
+      "exercise": {
+        "title": "Preparação falhou",
+        "tasks": [
+          "Escolha se a operação deve executar.",
+          "Defina um encerramento que ainda faça sentido.",
+          "Indique qual condição será revisada."
+        ],
+        "answer": "Se a operação depende dos dados preparados, ela deve ser condicionada ao sucesso. Um encerramento que registra o estado pode usar Always run e tolerar ausência de dados. Confira a condição por passo e o alcance das dependências."
+      },
+      "practice": "Monte uma lista com fluxos fictícios curtos e observe sucesso e falha da preparação.",
+      "quiz": [
+        {
+          "q": "Copiar a Run List duplica toda a lógica dos fluxos?",
+          "options": [
+            "Não, as referências aos fluxos são mantidas.",
+            "Sim, nenhum ativo continua compartilhado."
+          ],
+          "correct": 0,
+          "why": "Alterações no fluxo podem aparecer nas duas listas."
+        },
+        {
+          "q": "Qual configuração reúne os fluxos em passos?",
+          "options": [
+            "A retenção de vídeos.",
+            "A Run List."
+          ],
+          "correct": 1,
+          "why": "A lista organiza o trabalho a executar."
+        }
+      ],
+      "docs": [
+        [
+          "run-lists",
+          "working-with-leapwork/run-lists"
+        ]
+      ],
+      "module": 4,
+      "number": "07",
+      "group": "Agents e execução",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-repeticoes",
+      "title": "Definir repetição sem esconder falhas",
+      "topic": "execucao",
+      "read": "8 min",
+      "description": "Planeje a política de retry e considere os efeitos de repetir uma operação com consequências externas.",
+      "objectives": [
+        "Reconhecer herança e sobrescrita de políticas.",
+        "Distinguir tentativa de fluxo e nova execução.",
+        "Preservar o contexto da primeira falha."
+      ],
+      "concepts": [
+        [
+          "Nova tentativa",
+          "Retry repete um fluxo que falhou conforme a política configurada. Repetir uma criação de pedido pode gerar outro registro se o primeiro já tiver sido criado antes da falha."
+        ],
+        [
+          "Configuração efetiva",
+          "A lista pode desativar retry, herdar o padrão ou personalizar a contagem. O nível de Schedule pode sobrescrever a configuração da Run List. Confira o resultado efetivo, não só uma tela."
+        ],
+        [
+          "Confiabilidade",
+          "Passar depois de repetir não demonstra que a primeira falha desapareceu definitivamente. Preserve evidências e investigue intermitência e estado parcial."
+        ]
+      ],
+      "flow": [
+        "Primeira tentativa",
+        "Falha e evidência",
+        "Decidir retry",
+        "Validar estado final"
+      ],
+      "flowNote": "Retries precisam ser seguros para o processo; o caderno não reenvia operações reais.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/run-lists",
+          "title": "Encontre a política da lista",
+          "text": "Consulte Retry Policy e identifique se a lista herda o padrão, não repete ou usa uma contagem própria.",
+          "observe": "A referência consultada descreve personalização de 1 a 5 retries."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists/schedules",
+          "title": "Confira possíveis sobrescritas",
+          "text": "Antes da execução, revise a configuração do Schedule e confirme a política efetiva com o administrador.",
+          "observe": "O mesmo fluxo pode ser acionado por agendamentos com configurações diferentes."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists",
+          "title": "Raciocine sobre efeitos parciais",
+          "text": "No exemplo autoral, o pedido foi gravado, mas a leitura da confirmação falhou. Defina como reconhecer o pedido antes de tentar novamente.",
+          "observe": "Uma falha no final não significa que nenhuma ação anterior aconteceu."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Preserve o diagnóstico",
+          "text": "Na análise, registre a falha inicial, as tentativas e o resultado final conforme as evidências disponíveis. Compare antes de classificar o caso como estável.",
+          "observe": "Não descarte a primeira gravação só porque outra tentativa passou."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Retry como correção",
+          "Repetir pode mascarar uma condição instável."
+        ],
+        [
+          "Efeito duplicado",
+          "Uma segunda tentativa pode repetir uma ação já concluída."
+        ]
+      ],
+      "exercise": {
+        "title": "Pedido gravado, confirmação ausente",
+        "tasks": [
+          "Liste o risco de repetir imediatamente.",
+          "Defina uma verificação antes de recriar.",
+          "Escolha que evidência preservar."
+        ],
+        "answer": "Há risco de duplicar o pedido. Verifique sua existência por um identificador de teste antes de refazer a criação. Preserve horário, dados fictícios do caso e evidência da primeira falha."
+      },
+      "practice": "Teste retry somente com operações fictícias cujo estado possa ser reconhecido e restaurado.",
+      "quiz": [
+        {
+          "q": "Falhar na confirmação prova que o pedido não foi criado?",
+          "options": [
+            "Sim, toda a execução é revertida automaticamente.",
+            "Não."
+          ],
+          "correct": 1,
+          "why": "As ações anteriores podem ter efeitos parciais."
+        },
+        {
+          "q": "A política da Run List é sempre a configuração final?",
+          "options": [
+            "Não; o Schedule pode sobrescrevê-la.",
+            "Sim, a configuração do Schedule nunca interfere."
+          ],
+          "correct": 0,
+          "why": "Confira a política efetiva no contexto da execução."
+        }
+      ],
+      "docs": [
+        [
+          "run-lists",
+          "working-with-leapwork/run-lists"
+        ],
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "module": 4,
+      "number": "08",
+      "group": "Agents e execução",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-agendamentos",
+      "title": "Planejar horários, distribuição e filas",
+      "topic": "execucao",
+      "read": "12 min",
+      "description": "Escolha quando rodar, em quais Agents e o que fazer se os recursos ou a execução anterior ainda estiverem ocupados.",
+      "objectives": [
+        "Distinguir On Demand de Scheduled.",
+        "Comparar as três distribuições de Agents.",
+        "Conferir fuso, recorrência e conflitos."
+      ],
+      "concepts": [
+        [
+          "Horário explícito",
+          "O Schedule fica no Controller e associa uma Run List a disparo e recursos. Defina o fuso, o início e a recorrência. Não confunda o fim da janela de início com uma garantia de que toda execução termine naquele instante."
+        ],
+        [
+          "Distribuição",
+          "All flows on each Agent repete a coleção em cada Agent. Divide flows distribui o trabalho. First available usa um Agent para a coleção inteira. Mais Agents não significa automaticamente executar cada fluxo mais vezes."
+        ],
+        [
+          "Conflitos e ações",
+          "Revise as opções para Schedule em execução e Agent ocupado, além de reserva de recursos, limites e ações. Uma fila crescente pode indicar que a frequência excede a capacidade."
+        ]
+      ],
+      "flow": [
+        "Escolher disparo",
+        "Definir fuso",
+        "Selecionar distribuição",
+        "Conferir conflitos e evidências"
+      ],
+      "flowNote": "Use o laboratório do módulo para comparar quantidades; ele não estima o tempo real do Leapwork.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/run-lists/schedules",
+          "title": "Comece por On Demand",
+          "text": "Abra a Run List, entre em Schedules e prepare um agendamento de estudo. Valide o caso por Run Now antes de habilitar recorrência.",
+          "observe": "Um gatilho On Demand não dispara sozinho pelo relógio.",
+          "imagePath": "assets/docs/m4-schedules.png",
+          "caption": "Interface na documentação oficial · Comece por On Demand. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists/schedules",
+          "title": "Escolha a distribuição",
+          "text": "Para conferir o mesmo conjunto em dois ambientes, considere cada Agent receber todos os fluxos. Para repartir carga, compare Divide flows.",
+          "observe": "Agents precisam ser compatíveis com os fluxos; repartir não cria essa compatibilidade."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists/schedules",
+          "title": "Planeje recorrência e ocupação",
+          "text": "Registre fuso, horário, janela e comportamento quando o Schedule já está rodando ou o Agent está ocupado.",
+          "observe": "Parar a execução atual pode deixá-la com efeitos parciais; isso deve fazer parte do desenho do processo."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists/schedules",
+          "title": "Revise ações e acompanhe o primeiro disparo",
+          "text": "Defina notificações com destinatário de teste e confira o resultado da primeira execução, incluindo fila, Agent e duração.",
+          "observe": "Ações PowerShell documentadas rodam no Controller; não suponha que executem no Agent selecionado."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Dividir como repetir",
+          "Distribuir carga não equivale a testar toda a coleção em todos os Agents."
+        ],
+        [
+          "Recorrência sem capacidade",
+          "Intervalos curtos podem acumular execuções na fila."
+        ]
+      ],
+      "exercise": {
+        "title": "Quatro fluxos e dois Agents",
+        "tasks": [
+          "Calcule as execuções no modo cada Agent.",
+          "Compare com distribuição e primeiro disponível.",
+          "Defina a informação que falta para estimar duração."
+        ],
+        "answer": "Cada Agent: 8 execuções planejadas; distribuir: 4 no total; primeiro disponível: 4 num Agent. Para duração, faltam tempos dos fluxos, dependências, disponibilidade, capacidade e configuração de execução."
+      },
+      "practice": "Em homologação, acompanhe um disparo On Demand e apenas depois teste uma recorrência curta com encerramento controlado.",
+      "quiz": [
+        {
+          "q": "Quatro fluxos em dois Agents, todos em cada um, planejam quantas execuções?",
+          "options": [
+            "Oito.",
+            "Quatro."
+          ],
+          "correct": 0,
+          "why": "Cada Agent recebe a coleção inteira."
+        },
+        {
+          "q": "Uma ação PowerShell de Schedule roda onde, conforme a documentação?",
+          "options": [
+            "Obrigatoriamente no Agent do fluxo.",
+            "No Controller."
+          ],
+          "correct": 1,
+          "why": "O local da ação precisa ser considerado ao conferir acessos."
+        }
+      ],
+      "docs": [
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "agents-overview",
+          "working-with-leapwork/agents-overview"
+        ]
+      ],
+      "module": 4,
+      "number": "09",
+      "group": "Agents e execução",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-relatorios",
+      "title": "Investigar resultados com relatório, vídeo e log",
+      "topic": "monitoramento",
+      "read": "10 min",
+      "description": "Saia do indicador agregado e reúna evidências da execução certa antes de atribuir uma causa.",
+      "objectives": [
+        "Definir um recorte de relatório.",
+        "Relacionar vídeo, canvas e Activity log.",
+        "Separar observação de hipótese."
+      ],
+      "concepts": [
+        [
+          "Recorte",
+          "Um resultado só faz sentido com fluxo, execução, Agent, agendamento e período. Antes de comparar, confira se filtros e agrupamentos representam a mesma população."
+        ],
+        [
+          "Triagem",
+          "Vermelho indica falha; verde indica sucesso; amarelo pode representar aviso ou estado desconhecido. Um indicador amarelo não deve ser contado automaticamente como aprovação."
+        ],
+        [
+          "Investigação",
+          "Os detalhes associam gravação, canvas e Activity log. Uma tela isolada pode sugerir uma hipótese; confirme o ponto de falha e o que aconteceu imediatamente antes dele."
+        ]
+      ],
+      "flow": [
+        "Filtrar execução",
+        "Abrir detalhe",
+        "Cruzar evidências",
+        "Registrar hipótese e próximo teste"
+      ],
+      "flowNote": "A evidência mostrada na referência pertence à documentação, não aos seus fluxos.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Crie um recorte identificável",
+          "text": "Em Reporting, escolha um relatório ou crie um com título e descrição. Agrupe por Schedule e Run quando esse recorte atender à investigação.",
+          "observe": "Confirme período e população antes de interpretar totais.",
+          "imagePath": "assets/docs/m4-reporting.png",
+          "caption": "Interface na documentação oficial · Crie um recorte identificável. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Localize a execução afetada",
+          "text": "Aplique filtros para o fluxo e o agendamento. Abra a execução específica e confira a identificação disponível.",
+          "observe": "O fluxo pode ter várias execuções no mesmo dia."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Cruze os detalhes",
+          "text": "Observe o ponto do canvas, a atividade registrada e o trecho da gravação, quando disponível. Registre o primeiro desvio que você consegue demonstrar.",
+          "observe": "Uma gravação ausente pode decorrer da configuração ou retenção; não invente o que ela mostraria."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Escreva uma conclusão verificável",
+          "text": "Separe observado, hipótese e próximo teste. Exporte o relatório quando necessário, mantendo o recorte e o contexto.",
+          "observe": "Exemplo: observado = elemento não encontrado; hipótese = tela mudou; próximo teste = conferir localizador nessa versão da aplicação."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Cor como causa",
+          "O indicador resume o resultado, mas não explica o motivo."
+        ],
+        [
+          "Execução errada",
+          "Uma execução recente pode ter outro Agent ou outra versão do fluxo."
+        ]
+      ],
+      "exercise": {
+        "title": "O dashboard ficou vermelho",
+        "tasks": [
+          "Identifique que detalhe abrir.",
+          "Liste três evidências.",
+          "Escreva uma hipótese sem apresentá-la como fato."
+        ],
+        "answer": "Abra a execução do fluxo e horário afetados. Cruze Activity log, canvas e gravação disponível. Exemplo de hipótese: a aplicação pode ter mudado o identificador; a causa só é confirmada após conferir o localizador e reproduzir o caso."
+      },
+      "practice": "Analise uma falha controlada e registre um diagnóstico com evidência e próximo teste.",
+      "quiz": [
+        {
+          "q": "Amarelo significa sempre sucesso?",
+          "options": [
+            "Sim, só vermelho precisa de atenção.",
+            "Não; pode indicar aviso ou estado desconhecido."
+          ],
+          "correct": 1,
+          "why": "A referência diferencia sucesso, falha e estados intermediários."
+        },
+        {
+          "q": "O que transforma uma hipótese em diagnóstico fundamentado?",
+          "options": [
+            "Evidências da execução e uma verificação da causa proposta.",
+            "A cor isolada no relatório."
+          ],
+          "correct": 0,
+          "why": "O detalhe conecta o resultado ao comportamento observado."
+        }
+      ],
+      "docs": [
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "retention-policies",
+          "administration/retention-policies"
+        ]
+      ],
+      "module": 4,
+      "number": "10",
+      "group": "Monitoramento e diagnóstico",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-dashboards",
+      "title": "Montar dashboards com contexto e comparação",
+      "topic": "monitoramento",
+      "read": "8 min",
+      "description": "Escolha indicadores que respondem a uma pergunta, usando filtros e períodos que permitam comparação.",
+      "objectives": [
+        "Escolher widgets por finalidade.",
+        "Conferir filtros por fluxo, Agent e Run List.",
+        "Evitar conclusões a partir de populações diferentes."
+      ],
+      "concepts": [
+        [
+          "Pergunta antes do gráfico",
+          "Um dashboard é um conjunto de widgets. Defina a pergunta: quais fluxos mais falham, como o resultado evoluiu ou quanto tempo a rotina levou? Só depois escolha a visualização."
+        ],
+        [
+          "Configuração",
+          "A documentação apresenta tendências em área e barras, Most Failed e Pie Chart. Período, agregação e quantidade de itens variam conforme o tipo."
+        ],
+        [
+          "Comparação",
+          "Filtros de flows, Agents e Run Lists determinam o que aparece. Comparar uma semana com dez fluxos e outra com cem exige explicitar a mudança de população."
+        ]
+      ],
+      "flow": [
+        "Definir pergunta",
+        "Escolher widget",
+        "Conferir filtros",
+        "Abrir os casos relevantes"
+      ],
+      "flowNote": "O dashboard ajuda a encontrar o que investigar; o detalhe da execução fornece evidência.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/dashboards",
+          "title": "Defina a pergunta do painel",
+          "text": "Crie um dashboard de estudo com o objetivo de acompanhar a regressão de homologação. Escolha um título que indique o escopo.",
+          "observe": "Evite um título como qualidade total se o painel cobre apenas poucos fluxos.",
+          "imagePath": "assets/docs/m4-dashboards.png",
+          "caption": "Interface na documentação oficial · Defina a pergunta do painel. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/dashboards",
+          "title": "Escolha o widget",
+          "text": "Use tendência para evolução no período ou Most Failed para localizar os fluxos com mais falhas no recorte.",
+          "observe": "Contagem de falhas e taxa de falha respondem a perguntas diferentes."
+        },
+        {
+          "doc": "working-with-leapwork/dashboards",
+          "title": "Confira período e população",
+          "text": "Revise Timespan, Flows, Agents e Run Lists. Anote os filtros relevantes ao compartilhar a imagem do painel.",
+          "observe": "Um widget filtrado para outro Agent não descreve necessariamente a rotina investigada."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Aprofunde o indicador",
+          "text": "Use os itens que chamaram atenção para localizar as execuções correspondentes em Reporting.",
+          "observe": "Um gráfico agregado não demonstra sozinho a causa nem a cobertura funcional."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Recortes incompatíveis",
+          "Uma mudança de volume pode parecer uma mudança de estabilidade."
+        ],
+        [
+          "Gráfico sem investigação",
+          "O painel orienta a análise, mas não explica cada falha."
+        ]
+      ],
+      "exercise": {
+        "title": "Duas semanas com volumes diferentes",
+        "tasks": [
+          "Explique o problema de comparar só a contagem de falhas.",
+          "Liste os filtros a registrar.",
+          "Indique o próximo passo para um fluxo recorrente."
+        ],
+        "answer": "Uma semana pode ter mais falhas porque teve mais execuções. Registre período, fluxos, Agents e listas. Abra as execuções do fluxo recorrente para verificar causas e contexto."
+      },
+      "practice": "Crie dois widgets com o mesmo recorte e confira quais perguntas cada um responde.",
+      "quiz": [
+        {
+          "q": "Mais falhas absolutas sempre significa menor confiabilidade?",
+          "options": [
+            "Não, o volume e o recorte também importam.",
+            "Sim, nenhuma outra informação é necessária."
+          ],
+          "correct": 0,
+          "why": "Populações diferentes exigem comparação contextualizada."
+        },
+        {
+          "q": "Onde investigar a causa de uma execução?",
+          "options": [
+            "Apenas no título do widget.",
+            "Nos detalhes e evidências do relatório."
+          ],
+          "correct": 1,
+          "why": "A agregação não contém todo o contexto da falha."
+        }
+      ],
+      "docs": [
+        [
+          "dashboards",
+          "working-with-leapwork/dashboards"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "module": 4,
+      "number": "11",
+      "group": "Monitoramento e diagnóstico",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-auditoria",
+      "title": "Correlacionar auditoria, mudanças e diagnóstico",
+      "topic": "monitoramento",
+      "read": "9 min",
+      "description": "Reconstrua uma linha do tempo e prepare um diagnóstico sem confundir atividade administrativa com execução de blocos.",
+      "objectives": [
+        "Distinguir Audit Log de Activity log.",
+        "Filtrar eventos relevantes.",
+        "Reunir diagnóstico com identificação do ambiente."
+      ],
+      "concepts": [
+        [
+          "Auditoria",
+          "Audit Log registra eventos da plataforma, incluindo alterações e execuções. É diferente do Activity log dos blocos de uma execução específica."
+        ],
+        [
+          "Correlação",
+          "Uma alteração perto do horário da falha é uma pista. Compare ativo, usuário, equipe, horário e execução antes de concluir que essa mudança causou o problema."
+        ],
+        [
+          "Diagnóstico",
+          "Diagnostics reúne informações para avaliar o ambiente. O material coletado deve acompanhar uma descrição objetiva do problema, e não substituí-la."
+        ]
+      ],
+      "flow": [
+        "Delimitar horário",
+        "Filtrar eventos",
+        "Cruzar com execução",
+        "Preparar relato"
+      ],
+      "flowNote": "Linha do tempo autoral; proximidade de eventos não prova causalidade.",
+      "steps": [
+        {
+          "doc": "administration/audit-log",
+          "title": "Defina uma janela",
+          "text": "Como administrador, abra Audit Log e selecione From e To. Use Load para aplicar a janela de análise.",
+          "observe": "Registre o fuso considerado ao relacionar eventos e execuções.",
+          "imagePath": "assets/docs/m4-audit-log.png",
+          "caption": "Interface na documentação oficial · Defina uma janela. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "administration/audit-log",
+          "title": "Filtre o ativo e a ação",
+          "text": "Procure o fluxo, o usuário/sistema ou o tipo de evento relevante. Registre os filtros usados antes de exportar.",
+          "observe": "Uma exportação filtrada não representa todos os eventos do Controller."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Cruze com o resultado",
+          "text": "Compare o horário da alteração com a execução afetada e seu Activity log. Descreva o que é comprovado e o que ainda exige teste.",
+          "observe": "Uma edição registrada não demonstra que o usuário causou a falha."
+        },
+        {
+          "doc": "administration/diagnostics",
+          "title": "Prepare o material de diagnóstico",
+          "text": "Consulte Diagnostics e reúna as informações adequadas ao problema. Inclua versão, ambiente, passos de reprodução e identificação da execução no relato.",
+          "observe": "Revise o conteúdo antes de compartilhar um diagnóstico fora da equipe, pois pode conter informações do ambiente."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Logs tratados como iguais",
+          "Auditoria administrativa e atividades dos blocos têm finalidades diferentes."
+        ],
+        [
+          "Correlação como culpa",
+          "Horários próximos não demonstram a causa."
+        ]
+      ],
+      "exercise": {
+        "title": "Uma edição ocorreu antes da falha",
+        "tasks": [
+          "Liste os identificadores a correlacionar.",
+          "Escreva uma hipótese neutra.",
+          "Defina um teste de confirmação."
+        ],
+        "answer": "Correlacione fluxo, versão, execução, Agent e horário. Hipótese: a mudança pode ter alterado a condição de validação. Compare a lógica anterior e a atual num cenário controlado, sem atribuir a causa somente ao horário."
+      },
+      "practice": "Investigue uma alteração fictícia num fluxo de estudo e exporte um recorte do Audit Log.",
+      "quiz": [
+        {
+          "q": "O Audit Log equivale ao log de cada bloco?",
+          "options": [
+            "Sim, são o mesmo registro.",
+            "Não, têm escopos diferentes."
+          ],
+          "correct": 1,
+          "why": "O Activity log detalha a execução; a auditoria registra eventos da plataforma."
+        },
+        {
+          "q": "Edição antes da falha comprova a causa?",
+          "options": [
+            "Não; é preciso correlacionar e verificar.",
+            "Sim, o último editor é sempre a causa."
+          ],
+          "correct": 0,
+          "why": "A linha do tempo oferece pistas, não uma conclusão automática."
+        }
+      ],
+      "docs": [
+        [
+          "audit-log",
+          "administration/audit-log"
+        ],
+        [
+          "diagnostics",
+          "administration/diagnostics"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "module": 4,
+      "number": "12",
+      "group": "Monitoramento e diagnóstico",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-historico",
+      "title": "Registrar mudanças e consultar o histórico",
+      "topic": "versoes",
+      "read": "8 min",
+      "description": "Escreva comentários úteis e identifique a versão a comparar antes de escolher uma restauração.",
+      "objectives": [
+        "Localizar Version History.",
+        "Relacionar comentários, status e mudança.",
+        "Distinguir histórico interno de sincronização Git."
+      ],
+      "concepts": [
+        [
+          "Histórico interno",
+          "O menu do fluxo oferece Version History. Consulte a versão e a mudança pretendida antes de restaurar. Um comentário como ajustado dificulta saber o que foi alterado."
+        ],
+        [
+          "Status e revisão",
+          "Workflow Settings controla comentários e comportamento de status ao editar fluxos publicados. Published é um estado do fluxo; não substitui evidência de que o teste passou."
+        ],
+        [
+          "Git e histórico",
+          "A documentação atual também organiza Git Version Control separadamente. A consulta do histórico interno não pressupõe que o fluxo esteja sincronizado com este repositório GitHub do caderno."
+        ]
+      ],
+      "flow": [
+        "Descrever mudança",
+        "Salvar",
+        "Consultar histórico",
+        "Escolher comparação"
+      ],
+      "flowNote": "Exemplo editorial de rastreabilidade; os estados do caderno não alteram fluxos reais.",
+      "steps": [
+        {
+          "doc": "administration/workflow-stettings",
+          "title": "Defina o comentário esperado",
+          "text": "Consulte a política de comentários e status com o administrador. No exemplo, escreva ajusta espera da confirmação de cadastro para aguardar o elemento visível.",
+          "observe": "Inclua intenção e verificação, sem segredos ou dados pessoais."
+        },
+        {
+          "doc": "working-with-leapwork/designing-automation-flows/flows",
+          "title": "Abra o histórico do fluxo",
+          "text": "No painel Flows, use o menu de contexto e Version History. Localize a versão relacionada à mudança investigada.",
+          "observe": "A posição visual dos controles pode variar entre versões do Leapwork.",
+          "imagePath": "assets/docs/m4-flows.png",
+          "caption": "Interface na documentação oficial · Abra o histórico do fluxo. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/designing-automation-flows",
+          "title": "Inspecione antes de restaurar",
+          "text": "Use a visualização da versão para conferir a lógica e seus ativos. Compare o objetivo da mudança com o problema atual.",
+          "observe": "A versão anterior pode conter localizadores incompatíveis com a aplicação de hoje."
+        },
+        {
+          "doc": "working-with-leapwork/git-version-control",
+          "title": "Separe os mecanismos",
+          "text": "Registre se o ambiente usa histórico interno e se há uma configuração adicional de Git. Consulte a seção correspondente para esse recurso.",
+          "observe": "O Git do site distribui material de estudo; não sincroniza automaticamente os fluxos no Controller."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Comentário vazio de contexto",
+          "Mudança sem intenção registrada custa mais para investigar."
+        ],
+        [
+          "Published como teste aprovado",
+          "Status editorial e resultado de execução são fatos distintos."
+        ]
+      ],
+      "exercise": {
+        "title": "Melhore o comentário ajustado",
+        "tasks": [
+          "Diga o que mudou.",
+          "Explique a finalidade.",
+          "Indique a verificação feita."
+        ],
+        "answer": "Exemplo autoral: substitui espera fixa por verificação de visibilidade da confirmação; evita validar antes da atualização; conferido com dois cadastros fictícios em homologação."
+      },
+      "practice": "Salve duas mudanças pequenas e compare o histórico de um fluxo de teste sem restaurar o original.",
+      "quiz": [
+        {
+          "q": "O GitHub deste caderno sincroniza seus fluxos automaticamente?",
+          "options": [
+            "Não.",
+            "Sim, basta baixar o ZIP do site."
+          ],
+          "correct": 0,
+          "why": "Caderno e Controller têm dados e configurações independentes."
+        },
+        {
+          "q": "O que um comentário útil registra?",
+          "options": [
+            "Apenas a palavra ajustado.",
+            "O que mudou, por quê e como foi verificado."
+          ],
+          "correct": 1,
+          "why": "Contexto ajuda a decidir qual versão consultar."
+        }
+      ],
+      "docs": [
+        [
+          "flows",
+          "working-with-leapwork/designing-automation-flows/flows"
+        ],
+        [
+          "designing-automation-flows",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "workflow-stettings",
+          "administration/workflow-stettings"
+        ],
+        [
+          "git-version-control",
+          "working-with-leapwork/git-version-control"
+        ]
+      ],
+      "module": 4,
+      "number": "13",
+      "group": "Histórico e compartilhamento",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-restauracao",
+      "title": "Escolher Only Flow, Full Restore ou Full Copy",
+      "topic": "versoes",
+      "read": "10 min",
+      "description": "Compare o alcance das três opções de restauração e verifique a compatibilidade com a aplicação atual.",
+      "objectives": [
+        "Distinguir lógica e Locators na restauração.",
+        "Escolher cópia para uma comparação.",
+        "Planejar a validação após recuperar uma versão."
+      ],
+      "concepts": [
+        [
+          "Only Flow",
+          "Recupera a estrutura e a lógica da versão escolhida, preservando os Locators mais recentes. Serve para raciocinar sobre retorno da lógica quando os elementos atuais continuam pertinentes."
+        ],
+        [
+          "Full Restore",
+          "Recupera lógica e Locators da versão selecionada. Elementos antigos podem não corresponder à aplicação atual; recuperar uma versão não comprova sucesso funcional."
+        ],
+        [
+          "Full Copy",
+          "Cria um fluxo duplicado a partir da versão selecionada, incluindo os Locators, sem sobrescrever o atual. Isso permite comparar cenários antes de decidir o próximo passo."
+        ]
+      ],
+      "flow": [
+        "Identificar versão",
+        "Escolher alcance",
+        "Comparar em cópia",
+        "Validar resultado"
+      ],
+      "flowNote": "Os laboratórios ilustram o contrato documentado, sem reproduzir o motor de restauração do Leapwork.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/designing-automation-flows",
+          "title": "Separe os dois tipos de mudança",
+          "text": "No cenário autoral, a versão atual tem lógica B e Locator B; a anterior tinha lógica A e Locator A. Identifique qual parte precisa voltar.",
+          "observe": "Um localizador atualizado pode estar correto mesmo quando a nova lógica tem um erro."
+        },
+        {
+          "doc": "working-with-leapwork/designing-automation-flows",
+          "title": "Compare as três opções",
+          "text": "Only Flow combina lógica A com Locator B. Full Restore volta a lógica A e Locator A. Full Copy cria outra instância com A/A e preserva o atual B/B.",
+          "observe": "Essas letras são um exemplo didático, não identificadores de versões reais.",
+          "imagePath": "assets/docs/m4-designing-automation-flows.png",
+          "caption": "Interface na documentação oficial · Compare as três opções. A captura é da referência, não de uma execução neste computador."
+        },
+        {
+          "doc": "working-with-leapwork/designing-automation-flows/flows",
+          "title": "Verifique dependências e uso",
+          "text": "Antes de modificar um fluxo compartilhado, confira seus ativos e onde é usado. Considere uma cópia para comparação controlada.",
+          "observe": "Alterar um fluxo pode afetar Run Lists que o referenciam."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Valide contra a aplicação atual",
+          "text": "Execute o caso de homologação e confira o resultado esperado, os elementos encontrados e as evidências. Registre o motivo da escolha.",
+          "observe": "Restaurar com sucesso é diferente de executar e validar o processo com sucesso."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Rollback como aprovação",
+          "Uma versão antiga pode não funcionar com a aplicação atual."
+        ],
+        [
+          "Opção pelo nome",
+          "Escolher sem conferir Locators pode devolver elementos obsoletos."
+        ]
+      ],
+      "exercise": {
+        "title": "Lógica nova falha; Locator novo está correto",
+        "tasks": [
+          "Escolha a opção para recuperar somente a lógica.",
+          "Explique o resultado sobre os Locators.",
+          "Defina como comparar preservando o atual."
+        ],
+        "answer": "Only Flow recupera a lógica anterior e mantém os Locators atuais. Se quiser uma comparação preservando o fluxo atual, Full Copy cria a versão antiga em outro fluxo, com os Locators daquela versão. Depois valide o caso em homologação."
+      },
+      "practice": "Compare as opções no laboratório abaixo do módulo; no Leapwork, comece por uma cópia de estudo.",
+      "quiz": [
+        {
+          "q": "Only Flow usa quais Locators?",
+          "options": [
+            "Obrigatoriamente os da versão antiga.",
+            "Os mais recentes."
+          ],
+          "correct": 1,
+          "why": "A opção recupera a lógica e preserva os Locators atuais."
+        },
+        {
+          "q": "Qual opção preserva o atual e cria um duplicado da versão selecionada?",
+          "options": [
+            "Full Copy.",
+            "Full Restore."
+          ],
+          "correct": 0,
+          "why": "Full Copy permite comparar sem sobrescrever o fluxo atual."
+        }
+      ],
+      "docs": [
+        [
+          "designing-automation-flows",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "flows",
+          "working-with-leapwork/designing-automation-flows/flows"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ]
+      ],
+      "module": 4,
+      "number": "14",
+      "group": "Histórico e compartilhamento",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-compartilhamento",
+      "title": "Exportar, importar e conferir dependências",
+      "topic": "versoes",
+      "read": "9 min",
+      "description": "Planeje a transferência de ativos com verificação no destino, distinguindo fluxo compartilhado de ambiente pronto.",
+      "objectives": [
+        "Distinguir Share de Export.",
+        "Conferir ativos e conflitos no destino.",
+        "Verificar configuração após importar."
+      ],
+      "concepts": [
+        [
+          "Compartilhar e transferir",
+          "Share oferece acesso por link ou e-mail conforme o ambiente. Export produz um ZIP de ativos. Receber um link não equivale a instalar os ativos num Controller diferente."
+        ],
+        [
+          "Contexto externo",
+          "Planilhas em caminhos locais, aplicações, contas e recursos de execução precisam ser conferidos no destino. Importar o fluxo não garante acesso ao mesmo ambiente operacional."
+        ],
+        [
+          "Run Lists",
+          "A documentação também descreve importação/exportação de Run Lists, com fluxos, estrutura e agendamentos quando presentes. Conflitos e itens congelados têm tratamento próprio. Confira o que será atualizado."
+        ]
+      ],
+      "flow": [
+        "Inventariar ativos",
+        "Exportar",
+        "Conferir destino",
+        "Importar e validar"
+      ],
+      "flowNote": "O pacote de estudo deste site é HTML; não é um ZIP de fluxo importável no Leapwork.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/designing-automation-flows/flows",
+          "title": "Escolha o tipo de transferência",
+          "text": "No menu do fluxo, identifique Export, Export As Folder, Import e Import Folder. Se o objetivo é apenas apontar um fluxo existente, avalie Share.",
+          "observe": "Não envie um link supondo que o destinatário tem acesso ao mesmo Controller."
+        },
+        {
+          "doc": "working-with-leapwork/organizing-your-work",
+          "title": "Inventarie as dependências",
+          "text": "Liste sub-flows, elementos capturados, imagens e arquivos do fluxo, além dos caminhos externos. Defina quem os prepara no destino.",
+          "observe": "Um recurso externo não passa a existir no destino por estar citado no fluxo."
+        },
+        {
+          "doc": "working-with-leapwork/run-lists",
+          "title": "Revise conflitos antes de importar",
+          "text": "Em um ambiente de estudo, confira se a importação de Run List oferece atualização, salvamento como novo ou cancelamento.",
+          "observe": "Não sobrescreva ativos existentes sem conferir os identificadores e o impacto."
+        },
+        {
+          "doc": "working-with-leapwork/agents-overview",
+          "title": "Valide o destino",
+          "text": "Confira Agents, aplicações e credenciais do ambiente receptor. Faça um teste pequeno e verifique horários e configurações antes de habilitar uma rotina.",
+          "observe": "Transferência concluída não significa automação funcionalmente validada."
+        }
+      ],
+      "pitfalls": [
+        [
+          "ZIPs confundidos",
+          "O ZIP do caderno e o ZIP exportado pelo Leapwork têm finalidades diferentes."
+        ],
+        [
+          "Dependência invisível",
+          "Um arquivo local ausente pode impedir a execução após a importação."
+        ]
+      ],
+      "exercise": {
+        "title": "Importou, mas a planilha não existe",
+        "tasks": [
+          "Identifique a dependência faltante.",
+          "Diga em qual máquina conferir.",
+          "Defina uma validação antes da recorrência."
+        ],
+        "answer": "O fluxo depende de um arquivo em caminho externo. Confira a presença e o acesso na máquina/identidade de execução, normalmente o Agent pertinente. Execute um caso pequeno On Demand antes de habilitar recorrência."
+      },
+      "practice": "Exporte e importe somente ativos fictícios em um destino de homologação, registrando os conflitos e as dependências.",
+      "quiz": [
+        {
+          "q": "O ZIP deste caderno é um fluxo importável no Leapwork?",
+          "options": [
+            "Não, é um site local para estudo.",
+            "Sim, basta importar o HTML como fluxo."
+          ],
+          "correct": 0,
+          "why": "Os formatos e as finalidades são diferentes."
+        },
+        {
+          "q": "Importar garante que todos os caminhos externos funcionam?",
+          "options": [
+            "Sim, a máquina de execução é clonada automaticamente.",
+            "Não; é preciso conferir no destino."
+          ],
+          "correct": 1,
+          "why": "Aplicações, arquivos e acessos precisam de validação própria."
+        }
+      ],
+      "docs": [
+        [
+          "flows",
+          "working-with-leapwork/designing-automation-flows/flows"
+        ],
+        [
+          "organizing-your-work",
+          "working-with-leapwork/organizing-your-work"
+        ],
+        [
+          "run-lists",
+          "working-with-leapwork/run-lists"
+        ],
+        [
+          "agents-overview",
+          "working-with-leapwork/agents-overview"
+        ]
+      ],
+      "module": 4,
+      "number": "15",
+      "group": "Histórico e compartilhamento",
+      "sourceKind": "documentation"
+    },
+    {
+      "slug": "controle-laboratorio",
+      "title": "Laboratório: planejar, observar e recuperar",
+      "topic": "pratica",
+      "read": "15 min",
+      "description": "Consolide o módulo em um plano operacional fictício, comparando distribuição e restauração sem instalar Leapwork.",
+      "objectives": [
+        "Calcular o volume planejado de execuções.",
+        "Escolher a opção de recuperação adequada.",
+        "Produzir um plano verificável para uma rotina de estudo."
+      ],
+      "concepts": [
+        [
+          "Cenário fictício",
+          "Uma equipe precisa executar quatro fluxos em dois Agents de homologação. A prioridade pode ser comparar ambientes ou repartir trabalho. Declare essa intenção antes de escolher a distribuição."
+        ],
+        [
+          "Incidente fictício",
+          "Depois de uma mudança, a lógica B falhou, enquanto o Locator B continua adequado. Compare o retorno parcial e a cópia da versão anterior antes de propor uma intervenção."
+        ],
+        [
+          "Contrato do laboratório",
+          "O simulador calcula somente atribuições didáticas e combinações de lógica/Locator. Não simula duração, dependências, fila, retries, autenticação nem execução do Leapwork. Não faz chamadas externas."
+        ]
+      ],
+      "flow": [
+        "Planejar distribuição",
+        "Definir evidências",
+        "Comparar restauração",
+        "Escrever decisão"
+      ],
+      "flowNote": "Atividade autoral baseada nos conceitos documentados. Nenhuma máquina é acionada.",
+      "steps": [
+        {
+          "doc": "working-with-leapwork/run-lists/schedules",
+          "title": "Compare os volumes",
+          "text": "Na visão geral do módulo, use o laboratório de distribuição com quatro fluxos e dois Agents. Compare todos em cada Agent, divisão e primeiro disponível.",
+          "observe": "A divisão usa rodízio didático; o produto pode distribuir de outra forma."
+        },
+        {
+          "doc": "working-with-leapwork/reporting",
+          "title": "Planeje a investigação",
+          "text": "Escreva quais IDs, horários, logs e gravações precisariam ser guardados para investigar uma falha de confirmação.",
+          "observe": "Não conclua que a gravação estará disponível sem conferir configuração e retenção."
+        },
+        {
+          "doc": "working-with-leapwork/designing-automation-flows",
+          "title": "Compare as restaurações",
+          "text": "Use o laboratório A/B. Experimente Only Flow, Full Restore e Full Copy, observando o fluxo atual e a eventual cópia.",
+          "observe": "Cada escolha parte do mesmo cenário B/B, sem acumular alterações do clique anterior."
+        },
+        {
+          "doc": "administration/audit-log",
+          "title": "Registre o plano final",
+          "text": "Exporte a ficha autoral do laboratório e complete: objetivo, Controller de teste, responsáveis, evidências e próximo teste.",
+          "observe": "O download é uma ficha de estudo, não um arquivo de fluxo ou um diagnóstico real."
+        }
+      ],
+      "pitfalls": [
+        [
+          "Simulação confundida com validação",
+          "Um cálculo no navegador não demonstra que o fluxo passa no Leapwork."
+        ],
+        [
+          "Decisão sem objetivo",
+          "Comparar ambientes e reduzir duração são intenções distintas."
+        ]
+      ],
+      "exercise": {
+        "title": "Defenda sua decisão operacional",
+        "tasks": [
+          "Escolha uma distribuição para comparar dois ambientes.",
+          "Escolha uma recuperação para voltar só a lógica.",
+          "Liste a validação posterior."
+        ],
+        "answer": "Para comparar ambos os ambientes, todos os fluxos em cada Agent planeja oito execuções. Only Flow volta à lógica A e preserva Locator B. Depois, validar o caso de homologação, conferir evidências e registrar a decisão no histórico e na ficha."
+      },
+      "practice": "Quando tiver acesso ao programa, transforme o plano num teste controlado em homologação e compare o comportamento observado com as hipóteses.",
+      "quiz": [
+        {
+          "q": "O laboratório comprova que os quatro fluxos reais passam?",
+          "options": [
+            "Sim, ele executa o motor do Leapwork no navegador.",
+            "Não; ele ilustra decisões e quantidades."
+          ],
+          "correct": 1,
+          "why": "O contrato é didático e limitado."
+        },
+        {
+          "q": "Qual é a próxima etapa após escolher uma recuperação?",
+          "options": [
+            "Validar o caso contra a aplicação e guardar evidências.",
+            "Habilitar produção sem conferir o resultado."
+          ],
+          "correct": 0,
+          "why": "A recuperação precisa ser seguida de validação funcional."
+        }
+      ],
+      "docs": [
+        [
+          "schedules",
+          "working-with-leapwork/run-lists/schedules"
+        ],
+        [
+          "reporting",
+          "working-with-leapwork/reporting"
+        ],
+        [
+          "designing-automation-flows",
+          "working-with-leapwork/designing-automation-flows"
+        ],
+        [
+          "audit-log",
+          "administration/audit-log"
+        ]
+      ],
+      "module": 4,
+      "number": "16",
+      "group": "Laboratório operacional",
+      "sourceKind": "documentation"
     }
   ],
   "testingInternet": [
@@ -9296,6 +11248,28 @@
     [
       "Modelo de relatório · Excel",
       "assets/examples/modulo3-resultados.xlsx"
+    ]
+  ],
+  "module4Topics": [
+    [
+      "administracao",
+      "Ambiente e administração"
+    ],
+    [
+      "execucao",
+      "Agents e execução"
+    ],
+    [
+      "monitoramento",
+      "Monitoramento e diagnóstico"
+    ],
+    [
+      "versoes",
+      "Histórico e compartilhamento"
+    ],
+    [
+      "pratica",
+      "Laboratório operacional"
     ]
   ]
 }

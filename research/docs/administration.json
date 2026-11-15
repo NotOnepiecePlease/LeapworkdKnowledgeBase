@@ -1,0 +1,105 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration",
+  "title": "Administration",
+  "retrievedAt": "2026-11-15T02:14:18.163790+00:00",
+  "text": "Breadcrumbs\nController Settings\nUser Management\nEmergency Admin User\nTeam Management\nSecurity\nPrivileges Settings\nWorkflow Settings\nAPI Access Keys\nE-mail Settings\nProxy Settings\nDatabase Decryption Keys\nDatabase Management\nDefault Flow Settings\nWeb Settings\nCapture Settings\nRetention Policies\nLicense Management\nAudit Log\nOther Settings\nConnections\nAzure DevOps Connections\nMobile Configuration\nActive Directory Settings\nDiagnostics",
+  "links": [
+    {
+      "title": "Controller Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/controller-settings"
+    },
+    {
+      "title": "User Management",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/user-management"
+    },
+    {
+      "title": "Emergency Admin User",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/emergency-admin-user"
+    },
+    {
+      "title": "Team Management",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/team-management"
+    },
+    {
+      "title": "Security",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-security"
+    },
+    {
+      "title": "Privileges Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/privileges-settings"
+    },
+    {
+      "title": "Workflow Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/workflow-stettings"
+    },
+    {
+      "title": "API Access Keys",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/api-access-keys"
+    },
+    {
+      "title": "E-mail Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/e-mail-settings"
+    },
+    {
+      "title": "Proxy Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/proxy-settings"
+    },
+    {
+      "title": "Database Decryption Keys",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/database-decryption-keys"
+    },
+    {
+      "title": "Database Management",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/database-management"
+    },
+    {
+      "title": "Default Flow Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/default-flow-settings"
+    },
+    {
+      "title": "Web Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-web-settings"
+    },
+    {
+      "title": "Capture Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-capture-settings"
+    },
+    {
+      "title": "Retention Policies",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/retention-policies"
+    },
+    {
+      "title": "License Management",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/license-management"
+    },
+    {
+      "title": "Audit Log",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/audit-log"
+    },
+    {
+      "title": "Other Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/other-settings"
+    },
+    {
+      "title": "Connections",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections"
+    },
+    {
+      "title": "Azure DevOps Connections",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-azure-devops-connections"
+    },
+    {
+      "title": "Mobile Configuration",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/mobile-configuration"
+    },
+    {
+      "title": "Active Directory Settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/active-directory-settings"
+    },
+    {
+      "title": "Diagnostics",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/diagnostics"
+    }
+  ],
+  "images": []
+}

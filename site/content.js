@@ -1,6 +1,6 @@
 /* Conteúdo em português; durações verificadas nos vídeos locais. */
 window.LEAP = {
-  "updated": "13/11/2026",
+  "updated": "14/11/2026",
   "course": "https://leapwork.com/learning-center/self-paced-training/#h-module-1-introduction-to-leapwork-and-web-desktop-virtual-testing",
   "docsBase": "https://docs.leapwork.com/leapwork-flow/latest/",
   "modules": [

@@ -1,0 +1,49 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections",
+  "title": "Connections",
+  "retrievedAt": "2026-11-15T02:15:19.152996+00:00",
+  "text": "Breadcrumbs\nThe\nConnections\ntab lets you set up integrations with various external resources, expanding Leapwork's capabilities for automation, user management, and cloud-based testing.\nThese connections allow Leapwork to support powerful extensions, such as mobile automation (locally or in the cloud), integration with enterprise systems, and centralized user authentication.\nMultiple connections can be created and saved, which can then be applied to each Leapwork instance.\nLeapwork supports various ways to set up a connection:\nAppium Server\n: To support automation of native mobile devices (iOS and Android) hosted locally.\nHeadSpin Server\n: To support building and running automation using HeadSpin's cloud device farm.\nSauceLabs Server\n: To enable automation of iOS and Android devices in SauceLabs' cloud environment.\nBrowserStack Server\n: For automating testing on real devices, emulators, and simulators hosted in BrowserStack's cloud environment.\nLambdaTest Server\n: To enable automation of native mobile applications on real iOS and Android devices hosted in LambdaTest’s cloud environment.\nAzure Active Directory (AAD)\n:\nTo allow administrators to create, manage, and synchronize user accounts across multiple applications and services.\nLightweight Directory (LDAP)\n: To provide fast and secure access to centralized user information.\nMicrosoft Graph (SharePoint)\n: To connect with SharePoint for accessing hosted Excel files and documentation blocks.\nSingle Sign-On (SSO)\n: To streamline user authentication across integrated systems.\nAzure DevOps (ADO)\n: To integrate with ADO test plans, enabling the automation of test cases and synchronization of results.\nNote\n:\nConnections settings would be available if you are logged in as an administrator.",
+  "links": [
+    {
+      "title": "Appium Server",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/appium-server-connection"
+    },
+    {
+      "title": "HeadSpin Server",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/headspin-server-connection"
+    },
+    {
+      "title": "SauceLabs Server",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/saucelabs-server-connection"
+    },
+    {
+      "title": "BrowserStack Server",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/browserstack-server-connection"
+    },
+    {
+      "title": "LambdaTest Server",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/lambdatest-server-connection"
+    },
+    {
+      "title": "Azure Active Directory (AAD)",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/azure-active-directory-server-connection"
+    },
+    {
+      "title": "Lightweight Directory (LDAP)",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/lightweight-directory-server"
+    },
+    {
+      "title": "Microsoft Graph (SharePoint)",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/wip-microsoft-graph-sharepoint-connection"
+    },
+    {
+      "title": "Single Sign-On (SSO)",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/single-sign-on-sso-connection"
+    },
+    {
+      "title": "Azure DevOps (ADO)",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/connections/azure-devops-ado-server-connections"
+    }
+  ],
+  "images": []
+}

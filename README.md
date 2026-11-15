@@ -1,11 +1,11 @@
 # Caderno de estudo Leapwork
 
-Base de conhecimento local em português para estudar automação com Leapwork. Edição v1.0.0, preparada para distribuição em 14/11/2026, com os módulos 1, 2 e 3.
+Base de conhecimento local em português para estudar automação com Leapwork. Edição v1.1.0, com os módulos 1, 2, 3 e 4 preparados para estudo.
 
 ## Baixar e começar a estudar
 
 1. Acesse a [última release](https://github.com/NotOnepiecePlease/LeapworkdKnowledgeBase/releases/latest).
-2. Em **Assets**, baixe **LeapworkKnowledgeBase-v1.0.0-completo.zip** para ter o caderno e os 48 vídeos offline (aproximadamente 1,1 GB). O arquivo **essencial.zip** contém as aulas, imagens, GIFs e laboratório, sem os vídeos locais.
+2. Em **Assets**, baixe **LeapworkKnowledgeBase-v1.1.0-completo.zip** para ter o caderno e os 48 vídeos offline (aproximadamente 1,1 GB). O arquivo **essencial.zip** contém as aulas, imagens, GIFs e laboratório, sem os vídeos locais.
 3. Extraia **todo o ZIP** para uma pasta no computador. No Windows, clique com o botão direito e escolha **Extrair tudo**. Não abra o caderno de dentro do ZIP.
 4. Abra a pasta extraída e dê dois cliques em **Abrir caderno.cmd** no Windows. No macOS e Linux, abra **site/index.html** no navegador.
 5. Comece pelo módulo **01**, siga as aulas, responda às revisões e marque seu progresso. O módulo **03** também oferece um laboratório interativo com arquivos de exemplo.
@@ -31,10 +31,10 @@ Não é necessário instalar Node, Python, servidor ou Leapwork para consultar o
 | 01 · Fundamentos | Disponível: 15 aulas | Web (6): primeiro fluxo, sub-flows, formulários, leitura, listas e páginas móveis. Desktop (3): fluxo inicial, contatos com planilha e integração com Web. Virtual (6): imagens, OCR, cliques, teclado e áreas relativas |
 | 02 · Automação avançada | Disponível: 32 aulas | 29 exemplos Web: autenticação, DOM, controles, esperas, arquivos, hover, frames, rolagem, alertas, abas, notificações e tabelas. Mais 3 aulas Desktop: listas, localizadores dinâmicos e dados entre janelas |
 | 03 · Dados e manipulação | Disponível: 19 aulas | Excel, ODBC, HTTP/API, arquivos, comandos, e-mail, condições, repetições, cálculos, texto, datas, variáveis, geradores, clipboard, esperas e C#. Inclui laboratório local |
-| 04 · Administração, monitoramento e controle | Planejado; ainda sem aulas | Próxima expansão do material de estudo |
+| 04 · Administração, monitoramento e controle | Disponível: 16 aulas | Controller, usuários, permissões, conexões, retenção, Agents, Run Lists, retry, agendamentos, relatórios, dashboards, auditoria, histórico, restauração e transferência de ativos. Inclui dois laboratórios locais |
 | 05 · Boas práticas, integração e ciclo de testes | Planejado; ainda sem aulas | Expansão posterior do material de estudo |
 
-Os módulos planejados ainda não têm data de entrega. As tabelas abaixo detalham todas as aulas disponíveis. Ao todo são **66 aulas, 299 etapas, 14 GIFs, 48 vídeos e 40 termos de glossário**, além de revisões, busca, notas e marcação de progresso. No módulo 3, uma aula acompanha um vídeo oficial e as outras 18 são estudos de documentação com exemplos autorais.
+O módulo 5 ainda não tem data de entrega. As tabelas abaixo detalham todas as aulas disponíveis. Ao todo são **82 aulas, 363 etapas, 14 GIFs, 48 vídeos e 48 termos de glossário**, além de revisões, busca, notas e marcação de progresso. No módulo 3, uma aula acompanha um vídeo oficial e as outras 18 são estudos de documentação com exemplos autorais. As 16 aulas do módulo 4 são baseadas em documentação; não são vídeos novos.
 
 ## Obter o código-fonte
 
@@ -45,7 +45,7 @@ cd LeapworkdKnowledgeBase
 
 Depois, abra `site/index.html`. O repositório mantém o site, os materiais de referência e os scripts de manutenção. Os MP4 são distribuídos separadamente no pacote completo da release para manter o histórico do Git menor. Não há etapa de build para estudar.
 
-Para preparar novos pacotes a partir de uma cópia com os vídeos locais, execute `python scripts/package_release.py --version v1.0.0`. Os ZIPs e o arquivo de verificação SHA-256 serão gerados em `dist/`. A publicação usa `scripts/publish_release.ps1`, com Git e GitHub CLI autenticado; os arquivos são verificados antes do envio.
+Para preparar novos pacotes a partir de uma cópia com os vídeos locais, execute `python scripts/package_release.py --version v1.1.0`. Os ZIPs e o arquivo de verificação SHA-256 serão gerados em `dist/`. A publicação usa `scripts/publish_release.ps1`, com Git e GitHub CLI autenticado; os arquivos são verificados antes do envio.
 
 ## Créditos e origem
 
@@ -70,12 +70,12 @@ Os passos têm cartões individuais, 32 px de separação no computador, cabeça
 
 - Introdução à arquitetura: Flow, Controller e Agent.
 - Módulo 1: seis aulas Web, três Desktop e seis Virtual, além da introdução à arquitetura. Módulo 2: 29 assuntos Web e três aulas Desktop disponíveis, além da referência à aula de listas do módulo 1.
-- 66 aulas nos três módulos, com 299 etapas, 238 usos de imagens de referência e 14 GIFs controláveis.
+- 82 aulas nos quatro módulos, com 363 etapas, 250 usos de imagens de referência e 14 GIFs controláveis.
 - 48 vídeos locais com áudio e acesso aos trechos indicados nas etapas.
 - Esquemas didáticos, conceitos, objetivos e pontos de atenção.
 - Exercícios autorais sem instalação e propostas de prática posterior com Leapwork.
 - Duas questões de revisão por aula, com correção e explicação.
-- Glossário de 40 termos.
+- Glossário de 48 termos.
 - Busca nas aulas, etapas, pontos de atenção e glossário, com suporte a acentos.
 - Marcação de aulas revisadas, anotações por aula e exportação das notas.
 - Referências por aula, horários originais e diferenças de interface sinalizadas.
@@ -162,7 +162,6 @@ As animações são extraídas dos vídeos locais com FFmpeg, carregadas apenas 
 
 Conteúdo futuro, identificado como planejado:
 
-- Módulo 4: administração, monitoramento e controle.
 - Módulo 5: boas práticas, integração e revisão do ciclo de testes.
 
 ## Módulo 3: dados e manipulação
@@ -203,13 +202,47 @@ Contrato do laboratório: quantidade inteira positiva; preço com vírgula decim
 
 O simulador não executa nem emula o motor Leapwork. A conversão dos campos, a execução dos blocos e a validação dos fluxos no programa permanecem como prática posterior. Os exercícios oficiais 1 a 5 não foram reproduzidos porque o portal retornou Loading / CSS Error; o site mantém o link para verificação.
 
+## Módulo 4: administração, monitoramento e controle
+
+Entre por **04 · Administração e controle** no seletor de módulos ou no menu lateral. As **16 aulas** têm 64 passos de estudo, 32 questões com explicação, exercícios autorais, referências por etapa, notas e progresso independente. O material cobre os nove assuntos centrais indicados pelo treinamento: administração, Remote Agent, Run Lists, Schedules, Reporting, Dashboards, histórico, restauração e exportação/importação.
+
+| Aula | Assunto |
+| --- | --- |
+| 01 | Identificar o Controller e os recursos do ambiente |
+| 02 | Organizar usuários, equipes e permissões |
+| 03 | Preparar conexões, chaves e notificações |
+| 04 | Preservar evidências e planejar a retenção |
+| 05 | Conferir padrões de execução e captura |
+| 06 | Preparar e verificar um Agent remoto |
+| 07 | Organizar fluxos em Run Lists e passos |
+| 08 | Definir repetição sem esconder falhas |
+| 09 | Planejar horários, distribuição e filas |
+| 10 | Investigar resultados com relatório, vídeo e log |
+| 11 | Montar dashboards com contexto e comparação |
+| 12 | Correlacionar auditoria, mudanças e diagnóstico |
+| 13 | Registrar mudanças e consultar o histórico |
+| 14 | Escolher Only Flow, Full Restore ou Full Copy |
+| 15 | Exportar, importar e conferir dependências |
+| 16 | Laboratório: planejar, observar e recuperar |
+
+O treinamento não indica uma coleção própria de vídeos para este módulo. As aulas são estudos autorais em português com base na documentação oficial, com 12 imagens de interface e 34 referências locais de consulta. Algumas dessas referências já eram usadas no caderno. As imagens preservam a interface de origem e podem ser ampliadas. As diferenças de versão e de edição são sinalizadas no conteúdo.
+
+### Laboratórios sem instalação
+
+- **Distribuição:** compara todos os fluxos em cada Agent, divisão de carga e primeiro disponível. Para quatro fluxos e dois Agents, os volumes planejados são 8, 4 e 4. A divisão visual usa rodízio didático; não promete a atribuição exata nem a duração real do Leapwork. Considera recursos disponíveis e fluxos compatíveis.
+- **Restauração:** compara Only Flow (lógica antiga e Locators atuais), Full Restore (ambos antigos) e Full Copy (cópia da versão escolhida, preservando o atual). Cada comparação começa do mesmo exemplo fictício, sem acumular ações anteriores.
+
+A ficha JSON exportável guarda as escolhas atuais e o texto do exercício. Não é um fluxo importável no Leapwork. O rascunho do laboratório não é salvo automaticamente; use o download ou as anotações persistidas da aula. Nenhuma dessas atividades conecta máquinas, executa fluxos, envia notificações ou acessa sistemas externos.
+
+Os artigos de suporte sobre histórico, restauração, transferência e exercícios retornaram tela de carregamento/erro CSS na consulta. Os links originais foram preservados, e as funções são estudadas pelas páginas atuais da documentação oficial. Os enunciados oficiais não foram reproduzidos. Recursos especializados de administração têm referências complementares para consulta conforme a implantação. A prática real no Leapwork continua pendente de acesso ao programa.
+
 ## Fontes e preparação
 
 - Estrutura do curso: https://leapwork.com/learning-center/self-paced-training/#h-module-1-introduction-to-leapwork-and-web-desktop-virtual-testing
 - Entrada da documentação: https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview
 - Playlist: https://www.youtube.com/playlist?list=PL4qgJwtW1RjaCW32VlVtL4PBMVx67FjCY
 
-Foram armazenadas 85 páginas da documentação, abrangendo arquitetura, Web, Desktop UI, sub-flows, Excel, OCR, imagens, teclado, posições e áreas. Algumas páginas são índices de categorias. As referências utilizadas estão nas aulas e na página Fontes. Snapshots de consulta ficam em `research/docs`.
+Foram armazenadas 118 páginas da documentação, abrangendo arquitetura, automação, dados e administração. Algumas páginas são índices de categorias. As referências utilizadas estão nas aulas e na página Fontes. Snapshots de consulta ficam em `research/docs`, com suas datas de coleta originais. A cobertura e as ressalvas do módulo 4 estão em `research/module4-sources.json`.
 
 O texto editorial foi preparado a partir das legendas originais em inglês, das capturas conferidas e da documentação. O YouTube limitou as requisições de traduções automáticas; elas não foram usadas como base do material. O download dos vídeos e a extração de capturas nesta etapa não consumiram créditos do vidIQ.
 
@@ -233,6 +266,9 @@ O usuário ainda não tem o Leapwork instalado. Os fluxos não foram executados 
 | `site/module3.js` | 19 estudos, referências, entradas e metadados do módulo 3 |
 | `site/module3-view.js` | Página do módulo, laboratório e download offline |
 | `site/module3-files.js` | Cópias incorporadas dos cinco arquivos de exemplo |
+| `site/module4.js` | 16 aulas, 32 questões e termos do glossário de administração e controle |
+| `site/module4-view.js` | Visão geral, cobertura, laboratórios e exportação da ficha JSON |
+| `site/module4.css` | Estilos dos laboratórios, com temas e layout responsivo |
 | `site/catalog.js` | Catálogo dos 29 exemplos web e estado de preparação |
 | `site/media.js` | Durações verificadas dos vídeos locais |
 | `site/assets/frames` | Quadros de referência por vídeo e segundo |
@@ -248,6 +284,8 @@ O usuário ainda não tem o Leapwork instalado. Os fluxos não foram executados 
 | `research/module2-shots.json` | Horários das capturas adicionais do módulo 2 |
 | `research/module3-sources.json` | Cobertura e origem dos estudos do módulo 3 |
 | `research/module3-documents.json` | Fontes das imagens e dimensões originais |
+| `research/module4-sources.json` | Cobertura do treinamento, referências e limitações do módulo 4 |
+| `research/module4-documents.json` | 34 referências e origem das 12 imagens do módulo 4 |
 | `research/media-manifest.json` | Durações, codecs, dimensões e tamanhos dos vídeos |
 | `research/contact-sheets` | Folhas de contato usadas na conferência visual |
 | `research/qa` | Relatório dos testes e capturas do site |
@@ -258,11 +296,13 @@ Os vídeos ocupam aproximadamente 1060 MB e os GIFs, 28.9 MB. O site só carrega
 
 ## Verificações executadas
 
+- Módulo 4: 185 verificações de navegador aprovadas em `scripts/check_module4.py`, incluindo as 16 aulas e revisões, referências, imagens, busca, progresso independente, preservação e exportação das notas anteriores, os dois laboratórios, validação de entradas, download da ficha JSON, temas e larguras de 1440, 768 e 390 px. Nenhuma requisição externa ou erro de JavaScript nos fluxos testados. Relatório em `research/qa/module4-report.json`.
+
 - Sintaxe JavaScript conferida com `node --check`.
 - Referências de imagens, vídeos, documentos e limites dos horários conferidos por `scripts/finalize_content.py`.
-- 593 verificações de navegador aprovadas com Playwright/Chromium: 157 gerais, 50 do módulo 1, 50 do módulo 2, 33 de aparência, 128 da coleção Web e 175 do módulo 3. O site foi aberto diretamente como arquivo local.
+- 810 verificações de navegador aprovadas com Playwright/Chromium: 189 gerais, 50 do módulo 1, 50 do módulo 2, 33 de aparência, 128 da coleção Web, 175 do módulo 3 e 185 do módulo 4. O site foi aberto diretamente como arquivo local.
 - Conferidos ambos os temas, persistência da preferência, fontes offline, preservação das notas e larguras de 1905, 1280, 768 e 390 px. Contraste das combinações de texto principal, secundário e acento sobre suas superfícies conferido acima de 4,5:1 nos dois temas.
-- Conferidos busca, entrada segura de texto, rotas, imagens das 66 aulas, ampliação, notas persistidas, exportação, marcação de progresso, respostas de revisão e reprodução de trecho local.
+- Conferidos busca, entrada segura de texto, rotas, imagens das 82 aulas, ampliação, notas persistidas, exportação, marcação de progresso, respostas de revisão e reprodução de trecho local.
 - Layout conferido em computador (1440 px) e tela pequena (390 px), sem transbordamento horizontal nas páginas testadas.
 - Nenhum erro de JavaScript nos fluxos testados. Relatórios em `research/qa`: `browser-report.json`, `module1-report.json`, `module2-report.json`, `appearance-report.json`, `module2-completion-report.json` e `module3-report.json`.
 

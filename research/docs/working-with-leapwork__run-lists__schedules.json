@@ -1,0 +1,78 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists/schedules",
+  "title": "Schedules",
+  "retrievedAt": "2026-11-15T02:14:19.801331+00:00",
+  "text": "Breadcrumbs\nIf you need your automation flows to run at specific times without manual intervention,\nSchedules\nhelp you plan and execute flows automatically, at fixed times, at regular intervals, or on demand.\nIn this article, you will learn what a schedule is, when to use it, and how to create and configure one step by step.\nWhat is a Schedule?\nA\nSchedule\ndefines when a group of automation flows from a\nRun List\nshould be executed and on which\nAgents\n. Schedules can be triggered:\nOn demand\n: Manually or via API\nAutomatically\n: At specific times or on a recurring basis\nOnce created, schedules are saved in the\nController\n, which is responsible for keeping track of them and executing them on the target environments. You create schedules in Leapwork Flow, and the Controller runs them.\nSchedules are associated with Run Lists and can be accessed from the top menu of Run Lists section:\nWhy use Schedules?\nThe\nLeapwork scheduler\nprovides centralized control over the execution of automation flows, helping to optimize both time and resources. It supports:\nGranular control of when\nflows\nrun, at specific times of day, in specific time zones\nAutomatic calculation of estimated run time, based on historical performance and parallelization options\nControl over recurring schedules, including\nworking hours\n,\nqueue handling\n, and\nconflict resolution\nEasy parallelization, flows can be distributed across selected Agents or run on all simultaneously\nHandling of busy Agents through queue or skip logic\nThe ability to stop a run immediately if a flow fails or exceeds a threshold\nCommon use cases\nSchedules are commonly used to:\nRun large collections of test flows against development or QA environments\nTrigger business processes at specific times\nExecute flows automatically via the public\nREST API\nRun the same flows in different configurations (e.g.,\nbrowsers, environments, OS\n)\nRun nightly regression tests while the team is offline or start a weekly data sync every Monday at 6 AM. This allows teams to automate repetitive tasks and ensure consistency without manual oversight.\nYou can design flows once and configure them to run automatically in different conditions, without further manual input.\nCreate a new Schedule\nFollow these steps to configure and activate a schedule:\nIn Leapwork Flow, open the\nRun Lists\nsection from the left-hand side menu.\nDouble-click the\nRun List\nyou want to schedule.\nClick the\nSchedules\nbutton from the top bar.\nSelect New Schedule from the popup. This opens the schedule configuration window.\nProvide a descriptive title that reflects the purpose of the schedule.\nSelect the run type from the\nTrigger\ndrop-down.\nRun Type\nDescription\nOn Demand\nThe schedule will not be run unless someone explicitly clicks the\nRun Now\nbutton or triggers it to run through the REST API.\nScheduled\nTime-based triggers for the schedule.\nFor the\nScheduled\nrun type, the following parameters should be specified:\nParameter\nDescription\nTime zone\nSelect from the\nTime zone\ndropdown to specify when the schedule should run.\nStart time\nThe\nStart time\nspecifies when the schedule should begin. For recurring schedules, this defines the start point for the repetition pattern.\nRecurring\nThe option to define whether a single trigger or multiple triggers at regular intervals are required.\nNo recurrence:\nRuns only once.\nEvery X Seconds/Minutes/Hours/Days/Weeks/Months:\nRuns at a fixed interval (e.g.,\nevery 1440 minutes\n).\nAfter last run with X seconds delay:\nLoops the execution with a pause between runs.\nWorking hours:\nLimit when the schedule is allowed to run:\nEvery day, all time:\nRuns 24/7 with no restrictions\nCustom:\nChoose specific days and time windows.\nEnd Time\nThe\nEnd time\nis the last time when a run can start and is available only in the case of a recurring schedule.\nChoose the\nAgents\nthat will execute the scheduled flows. Select from the available distribution:\nAll flows on each Agent (when all are available)\nThe entire Run List is executed on\neach\nselected Agent.\nUse case:\nIdeal when you want to validate that the same flows run correctly across different Agent environments, such as different operating systems, browsers, or cloud setups.\nDivide flows on each Agent (when all are available):\nThe flows in the Run List are distributed evenly across all selected Agents.\nUse case:\nEfficient when you want to reduce total execution time by running flows in parallel, with each Agent responsible for part of the workload.\nAll flows on first available Agent:\nOnly one Agent is selected, the first one that becomes available. That Agent will run the entire Run List.\nUse case:\nBest suited when only one execution is needed, and it's acceptable to let any free Agent handle the full workload.\nExample:\nThis example uses a Run List with four flows (Flow A, Flow B, Flow C, and Flow D), and four available Agents:\nRemote Agent\nLeapwork Cloud Agent\nBrowserStack\nGridLastic\nAgent\nAll flows on each Agent\nDivide flows on each Agent\nFirst available\nRemote Agent\nFlow A, B, C, D\nFlow A\nBusy\nLeapwork Cloud Agent\nFlow A, B, C, D\nFlow B\nFlow A, B, C, D\nBrowserStack\nFlow A, B, C, D\nFlow C\nBusy\nGridLastic\nFlow A, B, C, D\nFlow D\nBusy\nChoose how flows should run:\nRun in order:\nFollows the sequence defined in the Run List.\nRun in random order:\nShuffles flow execution order.\nClick the\nVariables\nsection and define one or more entries to assign dynamic input values to your flows. Each variable consists of a\nname\nand a\nvalue\n, and these can be referenced inside the automation flows included in the schedule.\nA single flow can behave differently depending on which schedule triggered it, for example, using different environments, credentials, or configurations.\nTo define automated responses based on execution results, go to the\nActions\nsection and add one or more actions. For each action:\na. Select a\ncondition\nfrom the dropdown.\nWhen automation run is completed\nWhen have failed more than\n(you’ll define how many flows must fail)\nWhen have passed more than\n(define the number of passed flows)\nWhen automation run is completed but has taken longer than\n(define duration in minutes)\nWhen any flow in automation run has taken longer than\n(also define time in minutes)\nb. Choose the\naction type\n.\nSend email.\nOpens fields for:\nEmail address (recipient)\nSubject\nText body.\nSend HTTP(S) request.\nDepending on the selected method (GET, POST, PUT, PATCH, DELETE), different fields will be shown:\nGET / DELETE\n→ URL, Headers.\nPOST / PUT / PATCH\n→ URL, Headers, variables.\nRun PowerShell script on Controller.\nOpens fields for:\nCommand\n(Optional)\nUsername\n(Optional)\nPassword.\nc. In supported text fields, such as\nText\n,\nURL\n,\nHeaders\n,\nPost variables\n,\nUser\n, and\nCommand,\nyou can\nright-click\nand choose to insert:\nA\npredefined token\n, which dynamically includes data from the run.\nA\ncustom variable\ndefined earlier in the schedule.\nThis allows you to personalize messages, payloads, or scripts with context from the current execution. Here are the available tokens:\nToken\nDescription\n[CONDITION]\nThis is the condition selected from dropdown while setting the Action for the Schedule.\n[FAILED FLOWS LIST]\nGives a list of flows which have been failed.\n[FLOWS DONE]\nGives a count of flows which have been completed.\n[FLOWS FAILED]\nGives a count of flows which have been failed.\n[FLOWS PASSED]\nGives a count of flows which have been passed.\n[RESULTS-JSON]\nGives a result in a JSON format.\n[RESULTS-TABLE]\nGives the result in tabular format having list of flows along with their execution status. It also gives the number of flows completed, failed and passed.\n[RESULTS-VIDEO]\nGives the location where the video file of execution of flow is saved.\n[RUN LIST NAME]\nGives the name of the run list executed.\n[SCHEDULE NAME]\nGives the name of schedule executed.\n[START TIME]\nGives a date and time when schedule was started.\n[TIME TAKEN]\nGives a time taken for execution of the flows in run list.\nExplore integrations with Leapwork\nConfigure optional execution behaviors by clicking\nSettings\n:\nThe settings are as follows:\nWhen schedule is already running\n:\nQueue next run\nSkip next run\nStop current run and start next\nWhen selected agent is busy\nQueue runs\nSkip run\nReserve agent strategy\nAll agents for step before starting step\n– All assigned Agents must be free before the next step starts\nAll agents for all steps before starting scheduler\n– All required Agents across all steps must be available before execution starts\nExample:\nIf a schedule is configured to run across 3 Agents using the “All agents for all steps” strategy, and only 2 Agents are currently free, the schedule will wait until the third is also available. This ensures full parallel execution as designed.\nError handling\nStop run if it exceeds a certain % of estimated time\nStop run if it exceeds a fixed number of minutes\nStop and disable schedule if flows fail\nSelect the\nFlow Report type (Enterprise editions only)\n:\nNone\n(default): No PDF report will be generated.\nDetailed\n(Coming soon): Currently disabled; will be available in a future release with a more detailed breakdown of flow contents.\nNotes:\nOnly applies to\nsuccessful\nscheduled runs.\nDoes\nnot\naffect manual or preview executions.\nAvailable\nonly for Admin users\n.\nContributors and Readers\nwill not see or be able to modify this setting.\nClick\nApply\nto create the schedule.\nOnce applied, the schedule appears in the\nSchedules\nlist. If the schedule is active, the\nNext Run Time\nis displayed.\nTo execute the schedule manually, right-click the schedule and select\nRun Now\n.",
+  "links": [
+    {
+      "title": "Run List",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists"
+    },
+    {
+      "title": "Agents",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/agents-overview"
+    },
+    {
+      "title": "Controller",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview"
+    },
+    {
+      "title": "flows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows/sub-flows"
+    },
+    {
+      "title": "REST API",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/public-rest-apis/api-endpoints"
+    },
+    {
+      "title": "Agents",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/agents-overview"
+    },
+    {
+      "title": "Explore integrations with Leapwork",
+      "url": "https://www.leapwork.com/services/learning-center/integrations"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260527-070703.png",
+      "url": "https://docs.leapwork.com/__attachments/a_cad63c845e180fda076c32745662d853db3e84d95e3224cfb3cf641bb53d2225/image-20260527-070703.png?cb=810529a61a0d8abf1555cb0d2b67e998"
+    },
+    {
+      "alt": "image-20260527-070738.png",
+      "url": "https://docs.leapwork.com/__attachments/a_c32fa811968b5edc6a211a506783e70340a0d38a8d0a0b6ca4c31337350944f9/image-20260527-070738.png?cb=ac82a42785485bc91278b236df327b89"
+    },
+    {
+      "alt": "image-20260527-071017.png",
+      "url": "https://docs.leapwork.com/__attachments/a_10917d648e705feaa86a4d4e5d7700326473efba82b78998fd8d58737f98f563/image-20260527-071017.png?cb=132745da216f9a7dc6a64c2e24bcd893"
+    },
+    {
+      "alt": "image-20260527-072149.png",
+      "url": "https://docs.leapwork.com/__attachments/a_00b7dded1dbc6a5929aa8c690503aa69e9a3463050730cd6ec906d3b3b822ef5/image-20260527-072149.png?cb=fcb71280bd26448b162cb21a926402f6"
+    },
+    {
+      "alt": "image-20260527-072416.png",
+      "url": "https://docs.leapwork.com/__attachments/a_27b093ab70dbbb3d1113068413a5e84afbaff32372d46bab07d043cc6a9014b9/image-20260527-072416.png?cb=ef95bd0043df5f814e8cf11b772bc97d"
+    },
+    {
+      "alt": "image-20260527-072513.png",
+      "url": "https://docs.leapwork.com/__attachments/a_2e1f5bc69e8a516b5aa684ffa4dc591a4c79f61ce78c88339d774b4e75db54f4/image-20260527-072513.png?cb=a3d4f7bd32df7bd52dba991893c94d04"
+    },
+    {
+      "alt": "image-20260527-072610.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d1fd8803f6bb18bc7394d8457d1124863ab2ee142bb537e28e5d738e957d10d7/image-20260527-072610.png?cb=42e467fbf8cab44ef9f361ea2f786d02"
+    },
+    {
+      "alt": "image-20260527-091300.png",
+      "url": "https://docs.leapwork.com/__attachments/a_41031f74502e8ecb2bc26ba5bf57c9fd47ce02eafd14b8dfb563eca25ed93e8a/image-20260527-091300.png?cb=ac1096b034fe84c5d30f97e450a4123e"
+    },
+    {
+      "alt": "Untitled design (8).jpg",
+      "url": "https://docs.leapwork.com/__attachments/a_11fa28e4b81fb8a4494b8fba3b8a2023043155d447c2c3fcd8f51a8b57642a0b/Untitled%20design%20(8).jpg?cb=6fc44ed6876099a4ab73e408c3d493e2"
+    },
+    {
+      "alt": "image-20260527-091415.png",
+      "url": "https://docs.leapwork.com/__attachments/a_775b1b1b0a814d2a21695272be781fbd328a564d1b968689d5c4972d5c9d1e3e/image-20260527-091415.png?cb=349bdcf6f3e5262a26f7bd16d669e321"
+    }
+  ]
+}

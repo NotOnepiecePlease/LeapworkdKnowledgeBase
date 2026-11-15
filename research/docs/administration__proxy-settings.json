@@ -1,0 +1,18 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/proxy-settings",
+  "title": "Proxy Settings",
+  "retrievedAt": "2026-11-15T02:15:18.350741+00:00",
+  "text": "Breadcrumbs\nDepending on your organization’s network topology, you may need to access websites and web applications through a proxy. You can configure this in Flow’s\nProxy Settings\nsection.\nNote:\nProxy settings would be available if you are logged in as an administrator.\nYou can set separate proxy settings for Flow and the Controller if they reside in different network zones without a shared proxy. By default, both use the same proxy setting.\nNote\n: Automatic detection of the proxy is supported, depending on the configuration of the proxy.\nAlternatively, it can be configured manually by entering the required parameters for:\nProxy address\nUsername and password to log in to the proxy\nNote\n: These credentials are stored encrypted on the Controller.\nTo read more about setting up proxies for Leapwork, visit\nSecurity section\n.",
+  "links": [
+    {
+      "title": "Security section",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/wip-security"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260610-135329.png",
+      "url": "https://docs.leapwork.com/__attachments/a_46cedf6add789da42ced2d4eb336782a7bc001a37ad489acf00ab63668689e4a/image-20260610-135329.png?cb=937a3a8958b26cdf980da1ce688380ed"
+    }
+  ]
+}

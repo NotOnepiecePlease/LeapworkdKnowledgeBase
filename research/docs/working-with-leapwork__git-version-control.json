@@ -1,0 +1,29 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control",
+  "title": "Git Version Control",
+  "retrievedAt": "2026-11-15T02:14:46.242485+00:00",
+  "text": "Breadcrumbs\nUse Git versioning for flows and subflows\nSet up GitHub for Git versioning\nSet up Azure DevOps for Git versioning\nSet up Bitbucket Cloud for Git versioning\nCheck Git Sync status and resolve upload failures",
+  "links": [
+    {
+      "title": "Use Git versioning for flows and subflows",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control/use-git-versioning-for-flows-and-subflows"
+    },
+    {
+      "title": "Set up GitHub for Git versioning",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control/set-up-github-for-git-versioning"
+    },
+    {
+      "title": "Set up Azure DevOps for Git versioning",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control/set-up-azure-devops-for-git-versioning"
+    },
+    {
+      "title": "Set up Bitbucket Cloud for Git versioning",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control/set-up-bitbucket-cloud-for-git-versioning"
+    },
+    {
+      "title": "Check Git Sync status and resolve upload failures",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/git-version-control/check-git-sync-status-and-resolve-upload-failures"
+    }
+  ],
+  "images": []
+}

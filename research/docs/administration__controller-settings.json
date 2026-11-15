@@ -1,0 +1,26 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/controller-settings",
+  "title": "Controller Settings",
+  "retrievedAt": "2026-11-15T02:14:34.990573+00:00",
+  "text": "Breadcrumbs\nThe Leapwork Controller is the central component in the\nLeapwork Automation Platform\n. Flow is depending on it to gain access to all the flows and related assets. The Controller also manages the Environments used for executing the automation flows.\nNote:\nController settings are available only when you are logged in as an Administrator. Please note that each Controller requires a separate license (1 Controller = 1 License).\nWhen you start Flow the first time, it will automatically show you the available Controller(s) and prompt you to select which Controller to connect to. Before you do this, you cannot use Leapwork.\nOnce connected to a Controller go to Controller Settings section inside Settings.\nHere, you can see the available Leapwork Controllers and identify which one you’re currently connected to.\nDepending on your license agreement, the number of Controllers available will vary. You will be able to see all available Controllers in this list.\nAlso, you can manually add a Controller by clicking on New:\nEach Controller operates independently and requires its own license (1 Controller = 1 License). Users and access levels are managed separately for each Controller, and you must have an account on a specific Controller to access it. For every configured Controller, you can:\nEdit the Controller settings (e.g., configuration details).\nDelete the Controller if it is no longer needed.\nConnect or reconnect to the Controller.",
+  "links": [
+    {
+      "title": "Leapwork Automation Platform",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/what-is-leapwork/architecture-overview"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260227-120137.png",
+      "url": "https://docs.leapwork.com/__attachments/a_0f9b6776b4bd6284b0788f02aa69992a0b5f40b467461d967388200d543fddf9/image-20260227-120137.png?cb=72fde130caff0ef63f335cdad1a7c3a3"
+    },
+    {
+      "alt": "image-20260316-124514.png",
+      "url": "https://docs.leapwork.com/__attachments/a_678d24ed57d2cdfcc923c85921353096c43e2bb23275783bf97fe50c02cae605/image-20260316-124514.png?cb=30397137aff88ea1d01689a231d8f85c"
+    },
+    {
+      "alt": "image-20260316-124533.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5e3fa49ca58a9938dc913eff4de691ae3f46d951dcc3fdeababbdb77a0be9955/image-20260316-124533.png?cb=f0e089cc4a29fa29e09b3524f8b78f47"
+    }
+  ]
+}

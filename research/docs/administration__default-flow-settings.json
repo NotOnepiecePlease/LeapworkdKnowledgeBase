@@ -1,0 +1,46 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/default-flow-settings",
+  "title": "Default Flow Settings",
+  "retrievedAt": "2026-11-15T02:14:48.350202+00:00",
+  "text": "Breadcrumbs\nThe\nDefault Flow Settings\ndefine nine settings:\nIf video recordings are made while flows run.\nThe default timeout value to define for the entire flow.\nThe default OCR engine for all flows using\nImage Text and Recognition building blocks\n.\nThe default IE automation.\nThe default Chrome automation\nThe default Edge automation.\nThe default CoPilot Investigation Analysis setting for failed flows.\nThe SAP system logon.\nThe SAP solution manager.\nThe Green screen application.\nNote:\nDefault Flow settings would be available if you are logged in as an administrator.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nDefault video\nYou can basically choose between video or no video of any the flow runs on the Leapwork Controller. It is\nbest to avoid selecting “No video” unless necessary, such as for disk space reasons.\nTo manage the disk usage efficiently, please read the information about the\nRetention policy settings\n.\nThe video recordings of the flows take up approximately 9 MB of disk-space per minute.\nDefault timeout\nThis property defines the default value for the maximum execution time for a flow.\nBy default, this is set to 600 seconds, which means that all new flows will have the timeout value set to 600 seconds.\nIf many flows time out, increase this value to change the default for new flows.\nSelecting the\nUpdate all Flows\nbutton updates the Max run time value across all flows.\nLeapwork offers timeout at the building block level. Learn more about this in the\nBuilding Blocks documentation\n.\nDefault OCR Engine\nThis property sets the default OCR (Optical Character Recognition) engine for all test flows using the Image Text and Recognition approach. The three options in this category are OCR 1.0, OCR 2.0, and ABBYY.\nNote:\nTo apply it to all flows, select the default OCR engine from these three options, then press the update all flows button.\nABBYY is most advanced and separate license is required for this.\nDefault IE Automation\nThis property defines the default value for\nIE Add-on\nto be used across all the test flows which are using the\nIE browser\nin\nStart Web Browser\nbuilding block.\nThe two available options in this property are IE Add-on and Selenium.\nThe Default IE Automation value can be selected from these three available options.\nTo reflect it across all flow, update all flows button should be selected.\nDefault Chrome Automation\nThis property defines that the default value is chrome extension. The two available options in this property are\nChrome Extension\nand\nSelenium\n.\nChrome extensions are programs you can install in your Chrome browser to change its functionality.\nWhereas Selenium is an open-source tool that automates web browsers.\nDefault Edge Automation\nThis property defines that the default value is edge extension. The two available options in this property are\nEdge Extension\nand\nSelenium\n.\nEdge extensions help you to personalize the browser and be more productive.\nWhereas Selenium is an open-source tool that automates web browsers.\nSAP System Logon\nThis property defines that the default value is SAP Logon. The two available options in this property are\nSAP Logon PAD\nand\nSap Logon\n.\nSAP Logon is a standalone tool in the SAP GUI, which enables you to access, manage, and configure one or more SAP systems.\nWhereas SAP Logon Pad behaves very similar to SAP Logon, but here the configuration options are very limited.\nSAP Solution Manager\nSAP Solution Manager enables you to manage the SAP and non-SAP application in better way.\nThe\nSAP Solution Manager\ncheckbox enables you to enter your SAP Solman credentials and log in.\nA\nUsername\nand\nPassword\nare required to authenticate.\nGreen Screen Application\nThis property defines that the\ndefault value is Undefined\n. The five available options in this property are Undefined, IBM i Access Client Solutions x32, IBM i Access Client Solutions x64, Rumba Plus Desktop Mainframe and Ruma Plus Desktop AS400.\nDefault CoPilot Investigation Analysis\nThis setting defines whether\nAI-based root cause analysis\nshould be triggered automatically for failed flows.\nThe available options are:\nOff:\nCoPilot will not be available.\nOn-Run Lists & Schedules only:\nCoPilot Investigation Analysis runs automatically only during scheduled and batch executions.\nOn-Preview Runs only:\nCoPilot Investigation Analysis will run automatically only during flow previews.\nOn-Both:\nCoPilot Investigation Analysis will be available for both Preview Runs and scheduled runs.\nIf enabled, the analysis appears directly in the Activity Log after a failed run.\nIf disabled, you can still access it manually by clicking the\nCoPilot Analysis\nbutton.\nThe\nSave\nbutton saves all the provided details.",
+  "links": [
+    {
+      "title": "Image Text and Recognition building blocks",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/image-and-text-recognition"
+    },
+    {
+      "title": "Retention policy settings",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/retention-policies"
+    },
+    {
+      "title": "Building Blocks documentation",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks"
+    },
+    {
+      "title": "Start Web Browser",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/building-blocks/web/start-web-browser"
+    },
+    {
+      "title": "CoPilot Analysis",
+      "url": "https://docs.leapwork.com/com/leapwork/www/product/documentation/designing-automation.html"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260313-130827.png",
+      "url": "https://docs.leapwork.com/__attachments/a_0cb556375d9b64846dff2aa6cd34b570faa6d994fb469f2ac1d90db00ed21f77/image-20260313-130827.png?cb=927d264a8dd8b033c666efd4cc9ae666"
+    },
+    {
+      "alt": "image-png-Jan-18-2023-06-33-19-6713-AM-20260611-141826.png",
+      "url": "https://docs.leapwork.com/__attachments/a_c5b1aa8e286e5fdfb9eb0a0f43e1e1eb071005f673511dc0f116fe967578f985/image-png-Jan-18-2023-06-33-19-6713-AM-20260611-141826.png?cb=44f2179c2649051cf6ad362dd08e862b"
+    },
+    {
+      "alt": "image-png-Jan-18-2023-06-43-18-3186-AM-20260611-141904.png",
+      "url": "https://docs.leapwork.com/__attachments/a_bec6851906cdb8680129a82671d8a7ea07b3c332ca86c894f8f0f5b5c06168f2/image-png-Jan-18-2023-06-43-18-3186-AM-20260611-141904.png?cb=2cea3dbd48a4bc43ee06cd291f5b7acb"
+    },
+    {
+      "alt": "image-20260313-131437.png",
+      "url": "https://docs.leapwork.com/__attachments/a_157c45bcae8e1d58fb04dba7d306da46452bb61501cd631b77e28ed6ccbed7a8/image-20260313-131437.png?cb=ecfae65a2afa852083f15886d5952094"
+    }
+  ]
+}

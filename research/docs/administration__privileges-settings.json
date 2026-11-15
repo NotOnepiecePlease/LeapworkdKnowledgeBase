@@ -1,0 +1,38 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/privileges-settings",
+  "title": "Privileges Settings",
+  "retrievedAt": "2026-11-15T02:15:17.888983+00:00",
+  "text": "Breadcrumbs\nThe\nPrivileges settings\nsection is used to change default privileges.\nNote:\nPrivileges settings would be available if you are logged in as an administrator.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nIn the\nPrivileges settings\ntab, you'll find these options:\nAllow Reader to run flows\n(checked by default)\nAllow non-admin user to modify (or create new) Powershell scripts in the schedules\n(checked by default)\nContributor\npermissions\nWhen the\n“\nAllow Reader to run flows\n”\ncheckbox is unchecked, the reader can only view the flows and cannot run them.\nWhen the\nAllow non-admin users to modify (or create new) Powershell scripts in the schedules\ncheckbox is unchecked, non-admin users cannot modify or create Powershell scripts in schedules.\nHowever, non-admin users can execute existing schedules with Powershell scripts set by Admin users.\nContributor permissions\n: Here, you can provide the contributor multiple permissions by checking the checkboxes such as:\nDelete Run Lists\nDelete Reports\nDelete Flows\nDelete Dashboards\nDelete Agents\nDelete Schedules\nTest connection of agents.\nBy default, all the above options are disabled for contributors, meaning all checkboxes are unchecked.\nWhen you select any contributor permissions and click\nsave\nbutton, the chosen options should enable all contributor permissions.\nFor example, if the Delete Flows option is unchecked, the Delete option in the context menu should be disabled when a contributor selects any flow and right-clicks it.\nNote:\nThe screenshot on this page uses the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nBy default, if a contributor presses the\nDelete\nkey after selecting a Run list, Report, Flow, Dashboard, or agent, the delete pop-up should not appear.\nFor example, if the\nTest connections of Agents\noption is checked, the\nTest Connection\nbutton disables when the contributor adds the agent.\nCreate an Agent\nTo add the new agent, refer to\nthis article\n.",
+  "links": [
+    {
+      "title": "this article",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/agents-overview"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260612-153814.png",
+      "url": "https://docs.leapwork.com/__attachments/a_2fa2c021ed3dc62757e07ef0c0bd608ab0c3dac1c1977110c6297cd3c1672206/image-20260612-153814.png?cb=628972ffe5cd89e89b5350324433b616"
+    },
+    {
+      "alt": "image-png-Sep-11-2023-07-54-37-9352-AM-20260612-153954.png",
+      "url": "https://docs.leapwork.com/__attachments/a_08bfa480f09a74d2e495875b9c9b8420534e653d347f2232679293c32ba591c1/image-png-Sep-11-2023-07-54-37-9352-AM-20260612-153954.png?cb=db9652ed51487941053be26c9805529f"
+    },
+    {
+      "alt": "image-png-Sep-11-2023-07-53-51-0529-AM-20260612-154042.png",
+      "url": "https://docs.leapwork.com/__attachments/a_41d40f4defa07f740059c5ff4aed808f118d9845ae162c491fa48591b3fb092e/image-png-Sep-11-2023-07-53-51-0529-AM-20260612-154042.png?cb=ef424e2b596849d3444257b3c9fc95f5"
+    },
+    {
+      "alt": "image-20260612-154412.png",
+      "url": "https://docs.leapwork.com/__attachments/a_232a311a37b2f2c99c662c1557cc37971ffa40e6a79c7fc48a2eb2bacf596657/image-20260612-154412.png?cb=bc85fe08b94413a902759cb776a27d61"
+    },
+    {
+      "alt": "image-png-Sep-11-2023-08-00-25-1938-AM-20260612-154801.png",
+      "url": "https://docs.leapwork.com/__attachments/a_8fcb465d9e18db7ef598d0e5d8b92deb38065363f631c84c14d05867d6f2f830/image-png-Sep-11-2023-08-00-25-1938-AM-20260612-154801.png?cb=9c98faa3435e00e0c3f4f98da54b11c4"
+    },
+    {
+      "alt": "image-png-Sep-11-2023-08-01-09-5121-AM-20260612-154825.png",
+      "url": "https://docs.leapwork.com/__attachments/a_0b7f824465bca9abc3c29243ab3de7b1e019f906172f2aecc53b0ca62a744cd2/image-png-Sep-11-2023-08-01-09-5121-AM-20260612-154825.png?cb=3b220bf068f2b2fb4dc6633c1bb03b83"
+    }
+  ]
+}

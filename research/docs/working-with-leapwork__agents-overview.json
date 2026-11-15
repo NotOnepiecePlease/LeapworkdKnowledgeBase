@@ -1,0 +1,110 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/agents-overview",
+  "title": "Agents Overview",
+  "retrievedAt": "2026-11-15T02:14:19.212758+00:00",
+  "text": "Breadcrumbs\nAn agent is a machine or cloud environment where Leapwork runs automation flows. This importamt component allows you to run flows on remote systems, in parallel, or in different configurations, without interrupting your main workspace.\nYou can assign agents when setting up schedules or when running flows in preview mode.\nThis article explains how to create and use agents in Leapwork. It covers the two main types of Leapwork Agents, remote and cloud-based, and the supported third-party web execution providers. You’ll also learn how to assign, reassign, and manage agents effectively across your automation setup.\nAgent Overview\nFrom the main menu, you can now manage Agents and see which schedules they’re used in, along with their current status.\nThe\nAgents\nsection displays all Agents, their associated schedules and the following details:\nRun List\nSchedule\nStatus\nLast Run\nAgents\nOnce you click on any Agent, the Agent overview list is filtered out. It can be filtered using the filter drop-down menu:\nCreate an Agent\nTo configure a Leapwork Agent, follow these steps:\nOpen Leapwork Flow and navigate to the\nAgents\nsection.\nClick on the\nNew\nbutton from the Agents menu.\nSelect the appropriate Agent type and configure the necessary settings.\nSave the configuration and test the connection.\nFor detailed setup instructions, refer to each Agent type below.\nNote\n: The screenshots on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nAgent Types\nRemote Agent\nThe Remote Agent is Leapwork’s proprietary runtime agent for distributed automation execution. It supports\nWeb, Desktop UI, and Virtual Desktop automation\n.\nSetup Steps:\nSelect\nRemote Agent\nfrom the\nAgent type\ndrop-down.\nEnter a unique\nAgent name\n(e.g., “\nLocal Agent\n”).\nEnter a description if needed. This field is optional and can be used to keep some notes/description about the Agent\nSpecify the\nhostname\n.\nNote:\nIf the Agent is installed on the same machine as Leapwork Flow, use localhost. Otherwise, specify the\nIP address, machine name, or DNS name\nof the remote machine.\nSet the\nport\n.\nNote:\nDefault port is\n6777\n.\nConfirm that this port is open on the firewall to ensure connectivity.\nSelect\nAuthentication\nMethod:\nWindows login\n– Requires manual login with Windows credentials.\nWindows login - auto\n– Allows predefined automation users (preferably service accounts) to automatically log in during execution.\nPassword\n– The Agent is protected by a password known only to team members.\nChoose the\nscreen resolution\n.\nTo record only the selected display, even if multiple screens are available on the agent, check\nLock recording on selected screen\n.\nSelect the desired\ndisplay\nfor execution.\nSelect the\nSAP System Logon\n.\nSelect the\nGreen Screen application\ntype from the available options.\nSelect the\nproxy configuration\nmethod from the following options:\nNo proxy\n– The agent will not use a proxy.\nAutomatic detection\n– The agent will automatically detect proxy settings.\nAutomatic from URL\n– The agent will retrieve proxy settings from a specified URL.\nManual settings\n– Manually configure the proxy settings.\nTo automatically lock the session after disconnecting from the agent, check\nLock session after disconnecting from Agent\n.\nTest the connection\nSave the configuration.\nIf the Agent is configured correctly, Leapwork will open a terminal window displaying the host computer's desktop. At this point, you can log in with the Windows account that the Agent should use. This session remains active until the Agent machine is restarted.\nSave the configuration to complete the setup.\nFor more details, see\nRemote Agents documentation.\nLeapwork Cloud Agent\nLeapwork offers\nCloud Agents\nas part of its fully managed cloud-based infrastructure. Cloud Agents provide a scalable execution environment without requiring on-premise infrastructure and support web automation.\nCloud Agents support web automation and OCR-based automation using Image and Text Recognition, plus Mouse and Keyboard actions.\nMobile automation can be executed using supported third-party cloud testing providers such as LambdaTest, BrowserStack, and Sauce Labs, when those integrations are configured.\nSetup Steps:\nTo set up a Leapwork Cloud agent, follow these steps:\nRequest\nCloud Agent activation\nvia the\nCustomer Portal\n.\nA\nCustomer Success Manager (CSM)\nwill provide the necessary details once the request is approved.\nEnter a\ntitle\nfor the Cloud Agent.\nEnter a\ndescription\nif needed.\nSelect the\nagent type\nfrom the ‘Type’ dropdown and choose\nLeapwork Cloud Agent\n.\nSelect the\nspecific Cloud Agent\nassigned to the customer from the ‘Leapwork Cloud Agent’ dropdown.\nSelect the\nscreen resolution\nfor execution.\nTest the connection.\nSave the configuration.\nSelenium Grid\nLeapwork supports integration with Selenium Grid, allowing users to execute\nweb automation tests\nacross multiple browsers and environments in a distributed setup.\nSelenium Grid acts as a proxy\n, distributing automation execution to multiple Selenium nodes instead of using a Leapwork Agent.\nNote:\nUsers must configure their own Selenium Grid before adding the agent in Leapwork.\nVIDEO TUTORIAL: Selenium Grid\nSetup Steps:\nTo set up a Selenium Grid agent, follow these steps:\nEnter a\ntitle\nfor the Selenium Grid Agent.\nEnter a\ndescription\nif needed.\nEnter the\nhostname\nas the IP address, machine name, or DNS name of the Selenium Grid Hub.\nEnter the\nport number\n, which should match the port specified in the Selenium Grid configuration (\ndefault is 4444\n).\nEnter the\nplatform name\nif execution is required on a specific platform available in Selenium Grid; otherwise, leave it blank.\nSelect the\nbrowser\nfrom the available dropdown list:\nChrome\nFirefox\nEdge\nInternet Explorer (IE)\nSafari\nEnter the\nbrowser version\nif execution requires a specific browser version. If left blank, Selenium Grid will use the latest available version.\nNote:\nTo test a specific version, ensure it is available on Selenium Grid. If not, leave the field blank to run tests on any available version of the selected browser.\nEnter the\nuser profile\nto be used for browser execution.\nSelect the\nChrome emulation device type\nfrom the available list, which includes desktop and various smartphone models.\nSelect the\nbrowser size\n, which determines the screen resolution for execution.\nSelect the\nproxy configuration\nmethod:\nNo proxy\nAutomatic detection\nAutomatic from URL\nManual settings\nTest the connection.\nSave the configuration.\nFor more details, see\nSelenium Grid Documentation\n.\nSauce Labs\nLeapwork supports integration with Sauce Labs, a cloud-based testing platform that allows you to run automated\nweb and mobile tests\nacross a wide variety of\nbrowsers, operating systems, and devices\n.\nThis agent type is ideal when you want to\nvalidate cross-browser and cross-platform compatibility\nwithout maintaining your own infrastructure. Use it to execute automation flows on real browsers and devices in the cloud—especially useful when testing environments are not available locally.\nNote:\nYou must have a valid Sauce Labs account and access credentials before proceeding with the setup.\nVIDEO TUTORIAL: Learn how to set up an Agent for Sauce Labs.\nSetup Steps:\nTo set up a Sauce Labs agent, follow these steps:\nEnter a\ntitle\nfor the Sauce Labs Agent.\nEnter a\ndescription\nif needed.\nSelect the\nAgent Type\nas\nWeb Only – Sauce Labs\n.\nEnter your\nSauce Labs username\n.\nEnter your\nSauce Labs access key\n.\nSelect the\nplatform & operating system\nfrom the available list.\nSelect the\nplatform version\n.\nSelect the\nbrowser\nfrom the available dropdown list.\nEnter the\nbrowser version\n, or leave it blank to use the latest available version.\nNote:\nIn case version info is not available,\nlatest\nshould be chosen as the option.\nSelect the\nscreen resolution\nfor test execution.\nTest the connection. If the Agent is set up correctly, Leapwork displays a green\nSuccessfully connected\nmessage.\nSave the configuration.\nFor more details, see\nSauce Labs Documentation\n.\nBrowser Stack\nLeapwork supports integration with BrowserStack, a cloud-based testing platform that enables automated testing across a wide range of\nbrowsers, operating systems, and mobile devices\n.\nThis agent is ideal when you need to\nrun web tests on real devices and browsers in the cloud\n, especially for validating\ncross-browser compatibility\nand ensuring coverage on systems not available in your local setup.\nNote:\nYou must have an active BrowserStack account and access credentials before configuring this agent.\nVideo tutorial: Learn how to set up an Agent for BrowserStack.\nSetup Steps:\nTo set up a BrowserStack agent, follow these steps:\nEnter a\ntitle\nfor the BrowserStack Agent.\nEnter a\ndescription\nif needed.\nSelect the\nAgent Type\nas\nWeb Only – Browser Stack\n.\nEnter your\nBrowserStack username\n.\nEnter your\nBrowserStack access key\n.\nSelect the\nplatform & operating system\nfrom the available list.\nSelect the\nplatform version\n.\nSelect the\nbrowser\nfrom the available dropdown list:\nEnter the\nbrowser version\n, or leave it blank to use the latest available version.\nNote:\nIn case version info is not available,\nlatest\nshould be chosen as the option.\nSelect the\nChrome emulation device\nif needed, choosing from desktop or a wide variety of smartphones.\nEnable\nLocal identifier\nand enter a value in the input field to test a locally hosted application.\nNote:\nThis setup uses BrowserStack Local to test internal or private servers, as well as public URLs, through the BrowserStack cloud infrastructure. It supports firewalls, proxies, and Active Directory.\nSelect the\nscreen resolution\nfor test execution.\nChoose the\nbrowser console logs\nlevel from the dropdown.\nTest the connection. If the Agent is set up correctly, Leapwork displays a green\nSuccessfully connected\nmessage.\nSave the configuration.\nFor more details, see\nBrowser Stack Documentation\n.\nGridLastic\nLeapwork supports integration with Gridlastic, a cloud-based Selenium Grid service that enables cross-browser testing across different operating systems and browsers, without needing to maintain your own Selenium infrastructure.\nThis agent is ideal when you want to\nrun web automation flows in a cloud-hosted Selenium environment\nwhile keeping full control over your configurations and test distributions across multiple browsers and OS combinations.\nNote:\nYou must have an active Gridlastic account and access credentials before configuring this agent.\nSetup Steps:\nTo set up a Gridlastic agent, follow these steps:\nEnter a\ntitle\nfor the Gridlastic Agent.\nEnter a\ndescription\nif needed.\nSelect the\nAgent Type\nas\nWeb Only – Gridlastic\n.\nEnter your\nGridlastic subdomain\n.\nEnter the\nport number\n(default is 80, but it can be modified if required).\nEnter your\nHub username\n.\nEnter your\nHub password\n.\nSelect the\nplatform & operating system\nfrom the available list.\nSelect the\nplatform version\nto define where the test will be executed.\nSelect the\nbrowser\nfrom the available dropdown list.\nEnter the\nbrowser version\n, or leave it blank to use the latest available version.\nSelect the\nChrome emulation device\nif needed, choosing from desktop or a wide variety of smartphones.\nSelect the\nscreen resolution\nto define how the browser is displayed during test execution.\nTest the connection. If the Agent is set up correctly, Leapwork displays a green\nSuccessfully connected\nmessage.\nSave the configuration.\nFor more information, refer to\nGridlastic’s official documentation\n.\nLambdaTest\nLeapwork supports integration with LambdaTest, a cloud-based cross-browser testing platform that allows you to automate web application testing across more than 3,000 browsers, operating systems, and real devices.\nThis agent is ideal when you need to\nvalidate how your web application behaves across a broad range of browsers and OS combinations\n, without managing your own test infrastructure.\nNote:\nYou must have an active LambdaTest account and access credentials before configuring this agent.\nSetup Steps:\nTo set up a Gridlastic agent, follow these steps:\nEnter a\ntitle\nfor the LambdaTest Agent.\nEnter a\ndescription\nif needed.\nSelect the\nAgent Type\nas\nWeb Only – LambdaTest\n.Enter the\nhostname\n(IP address, machine name, or DNS name of the LambdaTest hub).\nEnter the\nport number\n(default is 80, but can be modified if needed).\nEnter your\nLambdaTest username\n.Enter your\nLambdaTest access key\n.\nSelect the\nplatform & operating system\nfrom the available list.\nSelect the\nplatform version\n.\nEnter the\nbrowser version\n, or leave it blank to use the latest available version.\nSelect the\nscreen resolution\nto define how the browser is displayed during execution.\nEnter the\ncustom capabilities\nin JSON format if required.\nNote:\nCustom capabilities allow you to define advanced execution settings, such as browser options or test metadata, supported by LambdaTest.\nTest the connection. If the Agent is set up correctly, Leapwork displays a green\nSuccessfully connected\nmessage.\nSave the configuration.\nUsing Agents\nUse configured Agents in\nschedules\nand\npreview runs\nwithin the Leapwork Automation Platform.\nReassign Agents Between Teams\nAdministrators can reassign agents between\nteams\ndirectly from the Agents view, as long as the agent is not currently assigned to a schedule, runlist, or test. This enables more flexible resource management in multi-team environments.\nNote:\nThis feature is available starting from\nRelease 2025.2.0,\nand only for users with admin rights under licenses that support multiple teams.\nAdditional Resources\nFor further reference and in-depth guidance, please see:\nAgents FAQ\nAgents Troubleshooting",
+  "links": [
+    {
+      "title": "",
+      "url": "https://www.leapwork.com/services/learning-center/testing-on-remote-environments"
+    },
+    {
+      "title": "Customer Portal",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/customer-portal"
+    },
+    {
+      "title": "VIDEO TUTORIAL: Selenium Grid",
+      "url": "https://www.leapwork.com/services/learning-center/selenium-grid"
+    },
+    {
+      "title": "Selenium Grid Documentation",
+      "url": "https://www.seleniumhq.org/docs/07_selenium_grid.jsp"
+    },
+    {
+      "title": "VIDEO TUTORIAL: Learn how to set up an Agent for Sauce Labs.",
+      "url": "https://www.leapwork.com/services/learning-center/scheduling-web-cases"
+    },
+    {
+      "title": "Sauce Labs Documentation",
+      "url": "https://docs.saucelabs.com/overview/"
+    },
+    {
+      "title": "Video tutorial: Learn how to set up an Agent for BrowserStack.",
+      "url": "https://www.leapwork.com/services/learning-center/scheduling-web-cases"
+    },
+    {
+      "title": "Browser Stack Documentation",
+      "url": "https://docs.saucelabs.com/"
+    },
+    {
+      "title": "Gridlastic’s official documentation",
+      "url": "https://www.gridlastic.com/documentation.html"
+    },
+    {
+      "title": "schedules",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/run-lists/schedules"
+    },
+    {
+      "title": "preview runs",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/designing-automation-flows#Steps-to-Design-a-Flow"
+    },
+    {
+      "title": "teams",
+      "url": "https://docs.leapwork.com/leapwork-flow/latest/working-with-leapwork/teams"
+    },
+    {
+      "title": "Agents FAQ",
+      "url": "https://docs.leapwork.com/faq/latest/leapwork-flow-faq/agent-faq"
+    },
+    {
+      "title": "Agents Troubleshooting",
+      "url": "https://docs.leapwork.com/troubleshooting/latest/leapwork-flow-troubleshooting/agent-troubleshooting"
+    }
+  ],
+  "images": [
+    {
+      "alt": "Architecure_overview_image_1-20260526-112536.png",
+      "url": "https://docs.leapwork.com/__attachments/a_cae0b4394c53589407d301b84338bb189c35c34f4846b87f04552f5c733674ac/Architecure_overview_image_1-20260526-112536.png?cb=fa66ec55c0cc3fe0175745405bd33b49"
+    },
+    {
+      "alt": "image-png-Jun-18-2023-11-08-11-3275-AM.png?width=792&height=141&name=image-png-Jun-18-2023-11-08-11-3275-AM.png",
+      "url": "https://docs.leapwork.com/__attachments/a_61ab9dcbf37494add2a3e3bd7472a86ae677ab77a510309c41bfe319c2bbebf4/image-png-Jun-18-2023-11-08-11-3275-AM.png%3Fwidth=792&height=141&name=image-png-Jun-18-2023-11-08-11-3275-AM.png?cb=827d5bba94e7724e4f853ba6aa1f45a6"
+    },
+    {
+      "alt": "image-20260526-112734.png",
+      "url": "https://docs.leapwork.com/__attachments/a_6cf47bc03e7f2dc7f794e98ea9692ff7a2451c68b47044fa420e0c21133b6b97/image-20260526-112734.png?cb=322684aba43c474ad7d8e9ff82330731"
+    },
+    {
+      "alt": "image-20260526-113046.png",
+      "url": "https://docs.leapwork.com/__attachments/a_5ba519eb3f605d285f62f0e82ff09c5e3da2168d698ac02f484613819d3a6880/image-20260526-113046.png?cb=e1ca0d026f44777218c3b84ad476b1c5"
+    },
+    {
+      "alt": "Leapwork-cloud-agent",
+      "url": "https://docs.leapwork.com/__attachments/a_9a1ef389438f94f6c70201abc21ac46400694f29b7ea2e32477673a0f50e1f7e/Leapwork-cloud-agent.png%3Fwidth=300&height=344&name=Leapwork-cloud-agent.png?cb=04496bbd361df1748f31c66f2efc334c"
+    },
+    {
+      "alt": "image-png-Mar-07-2023-04-40-05-6477-AM.png?width=297&height=598&name=image-png-Mar-07-2023-04-40-05-6477-AM.png",
+      "url": "https://docs.leapwork.com/__attachments/a_d14682efae9d878a15645f6becdf51ed17adc0f1da647e245dbc318edcd03023/image-png-Mar-07-2023-04-40-05-6477-AM.png%3Fwidth=297&height=598&name=image-png-Mar-07-2023-04-40-05-6477-AM.png?cb=f41cea5c466a28082c066a75e128d7b2"
+    },
+    {
+      "alt": "image-png-Mar-07-2023-04-38-29-2550-AM.png?width=301&height=458&name=image-png-Mar-07-2023-04-38-29-2550-AM.png",
+      "url": "https://docs.leapwork.com/__attachments/a_7c556362a398cd0ad850fa9531a41a03d192f8f70b68c86d4dc802e142fd5ffe/image-png-Mar-07-2023-04-38-29-2550-AM.png%3Fwidth=301&height=458&name=image-png-Mar-07-2023-04-38-29-2550-AM.png?cb=1fee1025547b47063fdb4f1a25ad31e7"
+    },
+    {
+      "alt": "image-png-Mar-07-2023-04-37-23-3594-AM.png?width=319&height=572&name=image-png-Mar-07-2023-04-37-23-3594-AM.png",
+      "url": "https://docs.leapwork.com/__attachments/a_2b8a0a0748e601a552b72c9ba2a03d727cbb0e3c7dd2343e5d86a020908f32d0/image-png-Mar-07-2023-04-37-23-3594-AM.png%3Fwidth=319&height=572&name=image-png-Mar-07-2023-04-37-23-3594-AM.png?cb=170fca1091ff8903d655520f0be7dd45"
+    },
+    {
+      "alt": "image-png-Mar-07-2023-04-34-12-5674-AM.png?width=330&height=626&name=image-png-Mar-07-2023-04-34-12-5674-AM.png",
+      "url": "https://docs.leapwork.com/__attachments/a_ca63a193ce09b7011de7b5fb0e4d68affcd181feb487450b9abe41c826ff2166/image-png-Mar-07-2023-04-34-12-5674-AM.png%3Fwidth=330&height=626&name=image-png-Mar-07-2023-04-34-12-5674-AM.png?cb=2faac4f94698bfde0eecb18dcbc3b67c"
+    },
+    {
+      "alt": "Agent-lambdatest",
+      "url": "https://docs.leapwork.com/__attachments/a_08b992dc47ff96f82706fe4dbe35d033f8ddf07128b7fa61687d3355df25e316/Agent-lambdatest.png%3Fwidth=332&height=624&name=Agent-lambdatest.png?cb=4a0c16636e80a1b004063703d415ba08"
+    },
+    {
+      "alt": "Untitled design (7).jpg",
+      "url": "https://docs.leapwork.com/__attachments/a_a76cabdac1ba3c0190d81d9cc29e9cdac9bf5e76b52aae68d0f369615adc546f/Untitled%20design%20(7).jpg?cb=3a7951fac3bf92c5f0794c2858a62cb1"
+    }
+  ]
+}

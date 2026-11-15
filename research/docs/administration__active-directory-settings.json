@@ -1,0 +1,34 @@
+{
+  "url": "https://docs.leapwork.com/leapwork-flow/latest/administration/active-directory-settings",
+  "title": "Active Directory Settings",
+  "retrievedAt": "2026-11-15T02:15:19.424877+00:00",
+  "text": "Breadcrumbs\nActive Directory (AD) settings in Leapwork allow administrators to integrate users and groups from domains, subdomains, and trusted forests into the platform. This enables centralized user management aligned with enterprise authentication policies.\nNote:\nYou can access this settings tab only if you have administrator rights.\nNote\n: The images on this page use the\nElegance Design\n, introduced in\n2025.3\n. If you are using an earlier version, your layout may look different.\nEnabling AD Integration\nLeapwork supports two flexible methods for enabling AD integration, depending on your environment:\nEnable AD Forest\nThis option allows Leapwork to automatically discover and connect with all domains within trusted forests.\nOnce the checkbox\nEnable AD Forest\nis selected, the following settings become available:\nAllowed Domains:\nEnter a comma-separated list of domains to restrict discovery. If left blank, all domains in trusted forests will be included.\nRecommended for performance and security: restrict to relevant domains.\nForest Searcher Timeout:\nDefault is 5 seconds; can be increased up to 30 seconds in slow or complex network environments.\nUse SID first for directory searcher:\nEnabled by default. Disabling this may improve login performance in some cases.\nClick\nSave\nto apply changes.\nFor more information about AD Forest, refer the link:\nhttps://learn.microsoft.com/en-us/azure/active-directory-domain-services/concepts-resource-forest\nEnable Domains\nThis option allows administrators to manually configure access to a specific AD domain using explicit credentials.\nOnce the\nEnable Domains\ntoggle is activated, the three fields are shown:\nDomain\nUsername\nPassword\nEnter valid AD credentials and click\nSave\n. Leapwork will:\nValidate connectivity and authentication.\nStore the configuration securely.\nProvide one of the following system messages:\n\"\nDomain successfully enabled.\"\n\"\nDomain configuration updated successfully\n.\"\n\"\nInvalid credentials. Please check the username and password.\n\"\n\"\nUnable to connect to the domain. Please verify the domain name and network settings.\n\"\n\"\nThis domain is already configured. Saving will overwrite existing settings. Continue?\n\"\nThis approach suits restricted or segmented environments where automatic discovery is disallowed or inadequate.\nDisabling AD Forest:\nUnchecking the\nEnable AD Forest\ncheckbox triggers a confirmation warning:\n\"\nDisabling AD Forest feature may delete some users and AD groups.\n\"\nEffects:\nAll users and groups from other domains/forests will be deleted.\nAny logged-in user from those domains will be logged out immediately.\nAny flow or team mapping assigned to a removed user will be reset.\nUser impact after disabling:\nAffected users will see a popup on login.\nAdministrators will need to re-add users and remap teams where necessary.\nNote:\nIf an AD user was directly part of User Management and linked to a flow, that flow will lose its assignee.\nDisabling Domain Configuration\nUnchecking the\nEnable Domains\ncheckbox will deactivate the current domain configuration.\nEffects:\nThe system will stop using the configured domain for authentication.\nUsers authenticated through that domain may no longer log in, depending on fallback login settings.\nAny user or group mappings relying on that domain may stop working until it is re-enabled.\nTo re-enable:\nRe-enter valid domain credentials.\nClick\nSave\n.\nBest Practice:\nAlways notify affected users when updating domain credentials.",
+  "links": [
+    {
+      "title": "https://learn.microsoft.com/en-us/azure/active-directory-domain-services/concepts-resource-forest",
+      "url": "https://learn.microsoft.com/en-us/azure/active-directory-domain-services/concepts-resource-forest"
+    }
+  ],
+  "images": [
+    {
+      "alt": "image-20260701-152059.png",
+      "url": "https://docs.leapwork.com/__attachments/a_8915f430d7a84b2b980ee281b949d02a3cf2617ad9082bdf5d0cb56802a285d4/image-20260701-152059.png?cb=8cd0d92cedb8a2cebf2cafa3c1e3d5d7"
+    },
+    {
+      "alt": "image-20260313-144340.png",
+      "url": "https://docs.leapwork.com/__attachments/a_8842b8ecb7cd8fcb1a8a91c2084dfaa83db52e45deddb048973d520f571e2bcb/image-20260313-144340.png?cb=14e238a58e6ee9dcf0f8a8c756b6ac51"
+    },
+    {
+      "alt": "image-20260313-144411.png",
+      "url": "https://docs.leapwork.com/__attachments/a_802a8a4f99d260d3c3fa598fff1482902e9c5b2bd0e73cd3cf44c806f2b716b5/image-20260313-144411.png?cb=42ce623d583505f22395190dafb485cf"
+    },
+    {
+      "alt": "AD settings4-png-20260629-142913.png",
+      "url": "https://docs.leapwork.com/__attachments/a_25e3420f6a3b92c42d8803dae263ed34c5c6037bbff313652798f152787e5cfb/AD%20settings4-png-20260629-142913.png?cb=6b8e34e7474b5d56b5670319705fd66b"
+    },
+    {
+      "alt": "image-20260120-080746.png",
+      "url": "https://docs.leapwork.com/__attachments/a_f9076aa1d855ea10f06d94f96ce5e89350108e3214b185b4421136a3f368a459/image-20260120-080746.png?cb=d5b7e3691d9a30c9dd15bd4f795cc9b1"
+    }
+  ]
+}
